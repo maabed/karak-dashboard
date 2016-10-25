@@ -472,21 +472,126 @@ canvas {
 }
 
 .InboxLeftSide {
-    background-color: #2d3446;
+    /*background-color: #2d3446;
     border-radius: 0 !important;
-    min-height: 100vh;
-    max-height: 100vh;
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    height: 100%;
+    overflow-y: auto;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;*/
+    background: #2d3446;
+    width: 250px;
+    float: left;
+    padding-left: 47px;
+    height: 100vh;
+    overflow: scroll;
+    overflow: hidden;
+    border-radius: 0 !important;
+    left: 250px;
+    position: fixed;
+}
+
+.split-view {
+    float: right;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    padding: 0 !important;
+    left: 500px;
+    border-radius: 0px !important;
+}
+
+.Split-left-sidr {
+    width:30%;
+    float: left;
+    overflow-y: auto;
+    border: 1px solid #e6e6e6;
+}
+
+.Split-right-sidr {
+    width: 70%;
+    border: 1px solid #e6e6e6;
+    float: right;
+    height: 100%;
+    overflow-y: auto;
+    background:#FAFAFA;
+    text-align :center ;
+
+}
+    .Split-right-sidr h2 { font-weight :lighter ;
+                           color :#788195;
+                           line-height :50%;
+    }
+
+.AllEmails {
+    float: left;
+    width: 360px;
+    background: #fff;
+    height: 100%;
+    overflow-y: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    border-right: 1px solid #e6e6e6;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.Emails {
+    width: 100%;
+    border-bottom :1px solid #E4E5E7;  
+     -webkit-overflow-scrolling: touch;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    
+}
+ .Emails :hover { background-color  :#daeffd;
+}
+.Emails .email-title {padding-bottom :1.5em;}
+.Inbox-time {
+    width: 30%;
+    font-size: 0.7em; padding-top :1.5em;
+}
+
+.inbox-user-image {
+    width: 20%;
+    text-align: center;
+}
+
+    .inbox-user-image img {
+        border: 2px solid #3B97D2;
+        border-radius: 180px;
+        width: 3em;
+        height: 3em;
+    }
+
+.inbox-username {
+    color: #788195;
+    font-size: 0.9em;
+    padding-top :1.5em;
 }
 
 
+#inbox-date {background :#f0f0f0;
+            padding :0.5em;
+            color :rgba(98,98,98,0.7);
+            width:100%;
+}
+#inbox-date  a i { float :right ;
+               margin-right :1em;color :rgba(98,98,98,0.7);
+}
+.Split-left-sidr a {
+    -webkit-overflow-scrolling: touch;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
 
-
-
-
-
-
-
-
+    .Split-left-sidr a:hover {
+        text-decoration: none;
+    }
 
 
 @media(min-width:768px) {
