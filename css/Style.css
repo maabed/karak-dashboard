@@ -62,7 +62,7 @@ body {
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
     cursor: pointer;
-     box-shadow: 0px 3px 10px #888888;
+    box-shadow: 0px 3px 10px #888888;
 }
 
 .CenteredDiv {
@@ -504,6 +504,7 @@ canvas {
     padding: 0 !important;
     left: 500px;
     border-radius: 0px !important;
+    overflow :scroll ;
 }
 
 .Split-left-sidr {
@@ -528,26 +529,74 @@ canvas {
         font-weight: lighter;
         color: #788195;
     }
-#email-content { display :none ;
-}
-.email-header{
-    width :100%;
-  height :4em;
-    background :#FAFAFA;
-    border-bottom  :1px solid #E4E5E7;
-    padding :0.7em 0em;
-    
-}
-.user-image { float :left ;
-}
-.user-image img { height :4em;
-                  width :4em;
-                  border :2px solid #3B97D2;
-                  border-radius :180px;
+
+#email-content {
+    display: none;
 }
 
-.Delete > li > a { color :red;
+.email-header {
+    width: 100%;
+    height: 4em;
+    background: #FAFAFA;
+    border-bottom: 1px solid #E4E5E7;
+    padding: 0.7em 0em;
+    margin-bottom: 1em;
+    position: fixed;
+    z-index: 999;
+    top:6.5em;
 }
+
+.user-image {
+    float: left;
+    margin: 0em 1em;
+}
+
+    .user-image img {
+        height: 3.5em;
+        width: 3.5em;
+        border: 3px solid #3B97D2;
+        border-radius: 180px;
+    }
+
+.sender-info {
+    float: left;
+    width: 50%;
+}
+
+    .sender-info h5 {
+        color: #34495E;
+        text-align: left;
+        font-weight: bold;
+        line-height: 0;
+    }
+
+    .sender-info p {
+        color: #B7B7B7;
+        text-align: left;
+    }
+
+.email-content-top {
+    padding-top: 6em;
+}
+
+    .email-content-top h4 {
+        text-align: left;
+        color: #3b4752;
+        margin-left: 1em;
+    }
+
+.Emai-text {
+    color: #626262;
+    text-align: left;
+    font-size: 0.9em;
+    padding: 1.6em;
+    width: 90%;
+}
+
+.Delete > li > a {
+    color: red;
+}
+
 .AllEmails {
     float: left;
     width: 360px;
@@ -560,15 +609,30 @@ canvas {
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
-.btn-primary { background-color :#FAFAFA !important ; border-color :#FAFAFA; color :#9E9E9E; font-weight :lighter ;  border-radius :0; -webkit-overflow-scrolling: touch;
+
+.btn-primary {
+    background-color: #FAFAFA !important;
+    border-color: #FAFAFA;
+    color: #9E9E9E;
+    font-weight: lighter;
+    border-radius: 0;
+    -webkit-overflow-scrolling: touch;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
-    .btn-primary:hover { color :#3F4754; border :none ;
+
+    .btn-primary:hover {
+        color: #3F4754;
+        border: none;
     }
 
-.Message-btns { float :left ;
-} 
+#txtEditor {
+    text-align: left !important;
+}
+
+.Message-btns {
+    float: left;
+}
 
 .Emails {
     width: 100%;
@@ -633,6 +697,38 @@ canvas {
     .Split-left-sidr a:hover {
         text-decoration: none;
     }
+
+.Compose-table { width :90%; margin-left :1em;
+}
+ 
+    .Compose-table tr td { padding :0em 0.5em; height :4em;  
+    }
+
+.Compose-style {border :none;  border-bottom  :1px solid #E4E5E7; box-shadow :none ; border-radius :0;  
+}
+    .Compose-style:focus { border :none ; border-bottom :1px solid #3B97D2; box-shadow :none ;
+    }
+.Email-lable { color :#888888 !important;
+}
+.Send-btn { background-color :#3B97D2; color :#fff; margin-left :1em;    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.Send-btn:hover{color:#fff; background :#2980B9}
+.Cancel-email { margin-left :1em;    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+
+
+
+
+
+
+
 
 
 @media(min-width:768px) {

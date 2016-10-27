@@ -9,6 +9,9 @@
     <title>Blue Dashboard</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <link href="../css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="../css/editor.css" rel="stylesheet" />
     <!-- Bootstrap Core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
@@ -105,7 +108,7 @@
                 <div class="form-group">
                     <div class="icon-addon addon-md">
                         <input type="text" placeholder="Type anywhere to search" class="form-control" id="searchTB">
-                        <i class="fa fa-search glyphicon glyphicon-search" aria-hidden="true"></i>
+                        <i class="fa fa-search" aria-hidden="true"></i>
                     </div>
                 </div>
                 <div id="user">
@@ -295,7 +298,35 @@
                                     <div class="user-image">
                                         <img class="img-responsive" alt="user image" src="../images/Sami.jpg" />
                                     </div>
+                                    <div class="sender-info">
+                                        <h5>David Nester</h5>
+                                        <p>Today at 1:33pm</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <h4>Email Title Gose Here Email Title Gose Here</h4>
                                 </div>
+                                <p class="Emai-text">
+                                    Dear Sir or Madam:
+                                    <br />
+
+                                    I have recently ordered a new pair of soccer cleats (item #6542951) from your website on June 21. I received the order on June 26. Unfortunately, when I opened it, I saw that the cleats were used. The cleats had dirt all over it and there was a small tear in front of the part where the left toe would go. My order number is AF26168156.<br /><br />
+
+
+                                    To resolve the problem, I would like you to credit my account for the amount charged for my cleats; I have already went out and bought a new pair of cleats at my local sporting goods store so sending another would result in me having two pairs of the same cleats.<br /><br />
+
+
+                                    Than you for taking the time to read this letter. I have been a satisfied customer of your company for many years and this is the first time I have encountered a problem. If you need to contact me, you can reach me at (555) 555-5555.<br /><br />
+
+
+
+                                    Sincerely,
+                                    <br /><br />
+
+                                    Signature
+                                </p>
+                                <textarea id="txtEditor"></textarea> 
+                                <div class="clearfix"></div>
+
                             </div>
                         </div>
                     </div>
@@ -336,5 +367,13 @@
         <script src="../js/vendors/Chart.bundle.js"></script>
         <script src="../js/vendors/bootstrap.js"></script>
         <script src="../js/main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script>
+			$(document).ready(function() {
+				$("#txtEditor").Editor();
+			});
+        </script>
+        <script src="../js/vendors/editor.js"></script>
 </body>
 </html>
