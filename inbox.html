@@ -183,11 +183,11 @@
                             </ul>
                         </nav>
                     </div>
-                
+
                     <div class="col-md-8 split-view">
                         <div class="Split-left-sidr">
                             <div id="inbox-date">TODAY APRIL 23<a href="#"><i class="fa fa-refresh" aria-hidden="true"></i></a></div>
-                            <a href="#">
+                            <a class="ShowMessage" href="#">
                                 <table class="Emails">
                                     <tr>
                                         <td class="inbox-user-image" rowspan="2"><img alt="David Nester" src="images/Sami.jpg" /></td>
@@ -195,7 +195,7 @@
                                         <td class="Inbox-time">5 Mins ago</td>
                                     </tr>
                                     <tr>
-                                        <td  class="email-title" colspan="2">Email Title Gose Here Email Title Gose Here</td>
+                                        <td class="email-title" colspan="2">Email Title Gose Here Email Title Gose Here</td>
                                     </tr>
                                 </table>
                             </a>
@@ -207,7 +207,7 @@
                                         <td class="Inbox-time">5 Mins ago</td>
                                     </tr>
                                     <tr>
-                                        <td  class="email-title"  colspan="2">Email Title Gose Here Email Title Gose Here</td>
+                                        <td class="email-title" colspan="2">Email Title Gose Here Email Title Gose Here</td>
                                     </tr>
                                 </table>
                             </a>
@@ -219,7 +219,7 @@
                                         <td class="Inbox-time">5 Mins ago</td>
                                     </tr>
                                     <tr>
-                                        <td  class="email-title"  colspan="2">Email Title Gose Here Email Title Gose Here</td>
+                                        <td class="email-title" colspan="2">Email Title Gose Here Email Title Gose Here</td>
                                     </tr>
                                 </table>
                             </a>
@@ -231,7 +231,7 @@
                                         <td class="Inbox-time">5 Mins ago</td>
                                     </tr>
                                     <tr>
-                                        <td  class="email-title"  colspan="2">Email Title Gose Here Email Title Gose Here</td>
+                                        <td class="email-title" colspan="2">Email Title Gose Here Email Title Gose Here</td>
                                     </tr>
                                 </table>
                             </a>
@@ -243,7 +243,7 @@
                                         <td class="Inbox-time">5 Mins ago</td>
                                     </tr>
                                     <tr>
-                                        <td  class="email-title"  colspan="2">Email Title Gose Here Email Title Gose Here</td>
+                                        <td class="email-title" colspan="2">Email Title Gose Here Email Title Gose Here</td>
                                     </tr>
                                 </table>
                             </a>
@@ -273,46 +273,67 @@
                             </a>
                         </div>
                         <div class="Split-right-sidr">
-                    
-                                <h2>No email has been selected</h2>
+                            <h2 id="No-email-selected">No email has been selected</h2>
+                            <div id="email-content">
+                                <div class="email-header">
+                                    <div class="btn-group Message-btns">
+                                        <button type="button" class="btn btn-primary">Reply</button>
+                                        <button type="button" class="btn btn-primary">Reply all</button>
+                                        <button type="button" class="btn btn-primary">Forward</button>
+                                        <button type="button" class="btn btn-primary">Mark as read</button>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu Delete" role="menu">
+                                                <li><a href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="email-content-top">
+                                    <div class="user-image">
+                                        <img class="img-responsive" alt="user image" src="images/Sami.jpg" />
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- /#page-content-wrapper -->
         </div>
-        <!-- /#page-content-wrapper -->
-    </div>
-    <!-- /#wrapper -->
-    <div id="Right-Side-Section">
-        <div id="Right-Side-Section-Togle">
-            <i class="fa fa-pencil-square-o" id="Edit" aria-hidden="true"></i>
+        <!-- /#wrapper -->
+        <div id="Right-Side-Section">
+            <div id="Right-Side-Section-Togle">
+                <i class="fa fa-pencil-square-o" id="Edit" aria-hidden="true"></i>
+            </div>
+            <div class="table">
+                <table>
+                    <tr>
+                        <td colspan="4">
+                            <div onclick="closeToggel()" id="Close">
+                                <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
         </div>
-        <div class="table">
-            <table>
-                <tr>
-                    <td colspan="4">
-                        <div onclick="closeToggel()" id="Close">
-                            <i class="fa fa-times-circle-o" aria-hidden="true"></i>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-        </div>
-    </div>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
 </body>
 </html>

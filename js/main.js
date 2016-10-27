@@ -99,3 +99,16 @@ function closeToggel() {
     a.style.width = "0px";
     $('#Right-Side-Section-Togle').show(100);
 }
+
+/*Message Veiw in inbox*/
+function viewMessage() {
+    document.getElementById("No-email-selected").style.display("none");
+}
+
+$(document).ready(function () {
+    $(".ShowMessage").click(function () {
+        $("#No-email-selected").hide(300);
+        $("#email-content").show(300);
+    });
+
+});
