@@ -256,7 +256,6 @@ body {
     padding-top: 0.5em;
     height: 3.55em;
     color: #fff;
-    overflow: hidden;
 }
 
 .selected {
@@ -408,15 +407,15 @@ body {
     color: #fff !important;
 }
 
-
-#user {
-    float: right;
+.right-side-head { float :right; 
+}
+.user-box {
     color: #fff;
     font-size: 14px;
     font-weight: lighter;
 }
 
-    #user img {
+    .user-box img {
         width: 35px;
         height: 35px;
         border: 1px solid #fff;
@@ -425,7 +424,7 @@ body {
         margin-right: 0.5em;
     }
 
-    #user p {
+    .user-box p {
         margin-top: 0.5em;
         float: right;
     }
@@ -442,17 +441,19 @@ body {
     font-size: 10px;
 }
 
-.Notefications {
-    float: right;
-    margin-right: 2em;
+.head-box{
+    float: left ;
+    margin-left  :1.5em;
     position: relative;
+   
 }
 
-    .Notefications i {
+    .head-box  i {
         color: #fff;
-        float: right;
+       
     }
-
+.btn-group-lg > .btn, .btn-lg {padding :0.3em 0.6em;
+}
 
 
 canvas {
