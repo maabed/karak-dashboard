@@ -112,3 +112,22 @@ $(document).ready(function () {
     });
 
 });
+/*Text Editor*/
+$(document).ready(function () {
+    $("#txtEditor").Editor();
+});
+
+$('#tokenfield').tokenfield({
+    autocomplete: {
+        source: ['red', 'blue', 'green', 'yellow', 'violet', 'brown', 'purple', 'black', 'white'],
+        delay: 100
+    },
+    showAutocompleteOnFocus: true
+})
+
+
+/*Tool Tip*/
+
+$(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+});
