@@ -791,9 +791,13 @@ canvas {
     height: auto;
 }
 
+hr {
+    border-color: #E4E5E7;
+}
+
 .pos-txt {
     background: rgba(255, 255, 255, 0.8);
-    border :1px solid #48b0f7 !important ;
+    border: 1px solid #48b0f7 !important;
 }
 
 
@@ -808,31 +812,97 @@ canvas {
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    font-weight:bold;
+    font-weight: bold;
 }
 
     .post-btn:hover {
         background-color: #2980B9;
     }
 
-.post-icons {
+.post .post-icons {
     color: #3B97D2;
-    font-size:1em;
-    width:15%;
-    vertical-align:middle !important ;
+    font-size: 1em;
+    width: 15%;
+    vertical-align: middle !important;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 
-    .post-icons:hover { color :#2980B9;
+.previous-post .post-icons {
+    color: #9E9E9E;
+    font-size: 0.9em;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    width: 15%;
+    padding: 0.5em 0em;
+}
+
+.post-icons:hover {
+    color: #2980B9;
+}
+
+.post-icons i {
+    margin-right: 0.5em;
+}
+
+.previous-post {
+    background-color: #fff;
+    width: 100%;
+    padding: 1em;
+}
+
+.post-time {
+    color: #9E9E9E;
+    float: left;
+    font-size: 0.9em;
+}
+
+.post-user-name {
+    float: left;
+    margin-right: 0.5em;
+    font-weight: bold;
+}
+
+
+.post-textbox-row img {
+    border-radius: 3px;
+    width: 100%;
+    height: auto;
+}
+
+.textual-post {
+    color: #464646;
+}
+
+.social-right-title { margin :0  !important ;   
+}
+.social-right-section .post-container .post {
+    background-color :#fff;
+}
+.singl-right-div { 
+                   width :100%; margin :1em 0em;
+                   
+}
+    .singl-right-div h5 { font-weight :bold ;margin :0 0 0.5em 0;
     }
-    .post-icons i {margin-right :0.5em;
+    .singl-right-div p { color :#9E9E9E; float :left ; 
     }
-
-
-
+    .singl-right-div a p { float :right ;color :#3B97D2; text-decoration :underline ;
+    }
+    .singl-right-div img { width :3.5em;
+                           height :3.5em;
+                           float :left ;
+                           border:2px solid #3B97D2;
+                           border-radius :180px;
+                           margin-right :0.5em;
+                          
+    }
+.view-all { text-align :center; width:100%;
+}
 @media(min-width:768px) {
     #wrapper {
         padding-left: 250px;
