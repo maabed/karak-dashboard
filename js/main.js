@@ -64,7 +64,7 @@ $('.SubMenue').hide();
 $('.MainMenue').click(function (e) {
 
     e.preventDefault();
-    // hide all span
+
     var $this = $(this).parent().find('.Submenue');
     $(".Submenue").not($this).hide(300);
 

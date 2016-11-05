@@ -22,6 +22,12 @@ body {
     min-height: 10em;
 }
 
+.nav-icon {
+    float: left;
+    margin-top: 1em;
+    color: #C6C4DB;
+}
+
 #Right-Side-Section {
     width: 0em;
     height: 100%;
@@ -220,7 +226,8 @@ body {
             display: block;
             text-decoration: none;
             color: #34495E;
-            border: 1px solid #E4E5E7;
+            border-bottom: 1px solid #E4E5E7;
+            border-right: 1px solid #E4E5E7;
             font-weight: lighter;
             font-size: 14px;
         }
@@ -253,13 +260,22 @@ body {
     z-index: 999;
 }
 
-.selected {
+.sidebar-nav .selected a {
     background-color: #F1F3F6 !important;
-    border: none !important;
+    border-right: none !important;
 }
+
+    .sidebar-nav .selected a .nav-icon {
+        color: #3B97D2;
+    }
+
 
 .Submenue {
     display: none;
+    font-size: 0.9em;
+    background-color: #fefbfb;
+    list-style: none;
+    color: #9E9E9E;
 }
 
 
@@ -878,31 +894,148 @@ hr {
     color: #464646;
 }
 
-.social-right-title { margin :0  !important ;   
+.social-right-title {
+    margin: 0 !important;
 }
+
 .social-right-section .post-container .post {
-    background-color :#fff;
+    background-color: #fff;
 }
-.singl-right-div { 
-                   width :100%; margin :1em 0em;
-                   
+
+.singl-right-div {
+    width: 100%;
+    margin: 1em 0em;
 }
-    .singl-right-div h5 { font-weight :bold ;margin :0 0 0.5em 0;
+
+    .singl-right-div h5 {
+        font-weight: bold;
+        margin: 0 0 0.5em 0;
     }
-    .singl-right-div p { color :#9E9E9E; float :left ; 
+
+    .singl-right-div p {
+        color: #9E9E9E;
+        float: left;
     }
-    .singl-right-div a p { float :right ;color :#3B97D2; text-decoration :underline ;
+
+    .singl-right-div a p {
+        float: right;
+        color: #3B97D2;
+        text-decoration: underline;
     }
-    .singl-right-div img { width :3.5em;
-                           height :3.5em;
-                           float :left ;
-                           border:2px solid #3B97D2;
-                           border-radius :180px;
-                           margin-right :0.5em;
-                          
+
+    .singl-right-div img {
+        width: 3.5em;
+        height: 3.5em;
+        float: left;
+        border: 2px solid #3B97D2;
+        border-radius: 180px;
+        margin-right: 0.5em;
     }
-.view-all { text-align :center; width:100%;
+
+.view-all {
+    text-align: center;
+    width: 100%;
 }
+
+.notifecations-box {
+    width: 25em;
+    position: absolute;
+    top: 3.6em;
+    right: 15em;
+    background: #fff;
+    z-index: 999;
+    box-shadow: 0px 3px 10px #888888;
+    display: none;
+}
+
+.messages-box {
+    width: 25em;
+    position: absolute;
+    top: 3.6em;
+    right: 10.5em;
+    background: #fff;
+    z-index: 999;
+    box-shadow: 0px 3px 10px #888888;
+    display: none;
+}
+.messages-box h5 {
+    color: #34495E;
+    font-weight: lighter;
+    border-bottom: 1px solid #E4E5E7;
+    padding: 0em 0em 0em 1em;
+    margin: 0;
+    line-height: 2.5em;
+}
+
+ .notifecations-box h5 {
+    color: #34495E;
+    font-weight: lighter;
+    border-bottom: 1px solid #E4E5E7;
+    padding: 0em 0em 0em 1em;
+    margin: 0;
+    line-height: 2.5em;
+    
+}
+
+.single-not-content {
+    width: 100%;
+    padding: 1em;
+    border-bottom: 1px solid #E4E5E7;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.send-message-link { float :right; margin-right :1em;
+                     font-size :0.9em;
+}
+
+    .single-not-content:hover {
+        background-color: #F1F3F6;
+    }
+
+    .single-not-content a {
+        color: #34495E;
+        text-decoration: none;
+    }
+
+.veiw-all-not {
+    width: 100%;
+    background-color: #F0F0F0;
+    padding: 0.5em 0em;
+    text-align: center;
+}
+
+    .veiw-all-not a {
+        color: #8D8D8D;
+        font-weight: lighter;
+    }
+
+.single-not-content img {
+    width: 4em;
+    height: 4em;
+    border: 1px solid #F1F3F6;
+    float: left;
+    margin-right: 0.5em;
+}
+
+.single-not-content p {
+    width: 100%;
+    font-weight: lighter;
+    font-size: 0.9em;
+}
+
+.arrow-up {
+    width: 0px;
+    height: 0px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 10px solid #fff;
+    margin-top: -0.7em;
+    float: right;
+    margin-right: 1.9em;
+}
+
 @media(min-width:768px) {
     #wrapper {
         padding-left: 250px;
