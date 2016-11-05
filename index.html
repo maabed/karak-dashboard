@@ -63,7 +63,7 @@
                 <li>
                     <a href="#">
                         <i class="fa fa-eye   nav-icon" aria-hidden="true"></i>
-                        UI Elements <span class="label label-success">New</span> <i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                        UI Elements <span class="label label-success nav-lbl">New</span> <i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
                     </a>
                 </li>
                 <li>
@@ -81,7 +81,7 @@
                 <li>
                     <a href="#">
                         <i class="fa fa-share-alt-square nav-icon" aria-hidden="true"></i>
-                        Social<span class="label label-warning">Special</span><i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                        Social<span class="label label-warning nav-lbl">Special</span><i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
                     </a>
                 </li>
                 <li>
@@ -143,10 +143,10 @@
                         <button id="messages" class="btn btn-default btn-lg btn-link">
                             <i class="fa fa-envelope-o" aria-hidden="true"></i>
                         </button>
-                        <span  id="message-badg"  class="badge badge-notify">4</span>
+                        <span id="message-badg" class="badge badge-notify">4</span>
                     </div>
                     <div id="user-box" class="user-box head-box">
-                        <p> Mr.Sami&nbsp;&nbsp;	&nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                        <p> Mr.Sami&nbsp;&nbsp; &nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i></p>
                         <img src="images/Sami.jpg" />
                     </div>
                 </div>
@@ -253,55 +253,82 @@
     </div>
 
 
-    <div  class="notifecations-box">
+    <div class="notifecations-box">
         <div class="arrow-up"></div>
         <h5>Notifications</h5>
         <div class="single-not-content">
             <a href="#">
                 <img src="images/Sami.jpg" />
-                <p><b>Mohammad Meshaal</b>&nbsp;	wants your confirmation on his Leave Request on 12 May 2015</p>
+                <p><b>Mohammad Meshaal</b>&nbsp;    wants your confirmation on his Leave Request on 12 May 2015</p>
             </a>
         </div>
         <div class="single-not-content">
             <a href="#">
                 <img src="images/Sami.jpg" />
-                <p><b>Mohammad Meshaal</b>&nbsp;	wants your confirmation on his Leave Request on 12 May 2015</p>
+                <p><b>Mohammad Meshaal</b>&nbsp;    wants your confirmation on his Leave Request on 12 May 2015</p>
             </a>
         </div>
         <div class="veiw-all-not">
             <a href="#">View All</a>
         </div>
     </div>
-    <div  class="messages-box">
+    <div class="messages-box">
         <div class="arrow-up"></div>
         <h5>Messages <a class="send-message-link " href="#">Send New Message</a></h5>
         <div class="single-not-content">
             <a href="#">
                 <img src="images/Sami.jpg" />
-                <p><b>Mohammad Meshaal</b><br />	Message subject will display here</p>
+                <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
             </a>
         </div>
         <div class="single-not-content">
             <a href="#">
                 <img src="images/Sami.jpg" />
-                <p><b>Mohammad Meshaal</b><br />	Message subject will display here</p>
+                <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
             </a>
         </div>
         <div class="single-not-content">
             <a href="#">
                 <img src="images/Sami.jpg" />
-                <p><b>Mohammad Meshaal</b><br />	Message subject will display here</p>
+                <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
             </a>
         </div>
         <div class="single-not-content">
             <a href="#">
                 <img src="images/Sami.jpg" />
-                <p><b>Mohammad Meshaal</b><br />	Message subject will display here</p>
+                <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
             </a>
         </div>
         <div class="veiw-all-not">
             <a href="#">View All</a>
         </div>
+    </div>
+    <div class="user-info-box">
+        <div class="arrow-up user-arrow"></div>
+        <a href="#">
+            <div class="user-info-content">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                Proﬁle
+            </div>
+        </a>
+        <a href="#">
+            <div class="user-info-content">
+                <i class="fa fa-cog" aria-hidden="true"></i>
+                Settings
+            </div>
+        </a>
+        <a href="#">
+            <div class="user-info-content">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                Help
+            </div>
+        </a>
+        <a href="#">
+            <div class="user-info-content logout">
+                Log Out
+                <i class="fa fa-sign-out" aria-hidden="true"></i>
+            </div>
+        </a>
     </div>
     <script src="js/vendors/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -314,6 +341,7 @@
                 $(".notifecations-box").fadeToggle();
                 $(".messages-box").fadeOut();
                 $("#not-badg").fadeOut();
+                $(".user-info-box").fadeOut();
             });
         });
         $(document).ready(function () {
@@ -321,7 +349,52 @@
                 $(".messages-box").fadeToggle();
                 $(".notifecations-box").fadeOut();
                 $("#message-badg").fadeOut();
-                
+                $(".user-info-box").fadeOut();
+            });
+        });
+        $(document).ready(function () {
+            $("#user-box").click(function () {
+                $(".user-info-box").fadeToggle();
+                $(".notifecations-box").fadeOut();
+                $(".messages-box").fadeOut();
+            });
+        });
+        $(document).mouseup(function (e) {
+            var container = $(".notifecations-box, .messages-box, .user-info-box");
+            if (!container.is(e.target)
+                && container.has(e.target).length === 0) {
+                container.hide();
+            }
+        });
+        $(".proditems").hide();
+        var Item = $(".producttabs .active a").attr("href");
+        $(Item).show();
+        $(".producttabs li").on("click", function () {
+            $(".producttabs .active").removeClass("active");
+            $(this).addClass('active');
+            $(Item).fadeOut("100", function () {
+                Item = $(".producttabs .active a").attr("href");
+                $(Item).fadeIn("100");
+                $(document).ready(function () {
+                    size_li = $(Item + " .pitem").size();
+                    x = 8;
+                    $(Item + ' .pitem:lt(' + x + ')').show();
+                    $(Item + ' > .ploadmore').click(function () {
+                        x = (x + 8 <= size_li) ? x + 8 : size_li;
+                        $(Item + ' .pitem:lt(' + x + ')').show();
+                    });
+                });
+            });
+            return false;
+        });
+        $(document).ready(function () {
+            Item = $(".producttabs .active a").attr("href");
+            size_li = $(Item + " .pitem").size();
+            x = 8;
+            $(Item + ' .pitem:lt(' + x + ')').show();
+            $(Item + ' > .ploadmore').click(function () {
+                x = (x + 8 <= size_li) ? x + 8 : size_li;
+                $(Item + ' .pitem:lt(' + x + ')').show();
             });
         });
     </script>
