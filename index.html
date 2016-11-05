@@ -28,8 +28,14 @@
                 <li class="sidebar-brand">
                     Company Name
                 </li>
+                <li class="selected">
+                    <a href="#"><i class="fa fa-tachometer nav-icon" aria-hidden="true"></i>Dashboard<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i></a>
+                </li>
                 <li>
-                    <a class="MainMenue selected" href="#">Dashboard<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i></a>
+                    <a class="MainMenue" href="#">
+                        <i class="fa fa-file-text nav-icon" aria-hidden="true"></i>
+                        Forms<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                    </a>
                     <ul class="Submenue">
                         <li>
                             Sub Title
@@ -43,54 +49,76 @@
                     </ul>
                 </li>
                 <li>
-                    <a class="MainMenue" href="#">Forms<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i></a>
-                    <ul class="Submenue">
-                        <li>
-                            Sub Title
-                        </li>
-                        <li>
-                            Sub Title
-                        </li>
-                        <li>
-                            Sub Title
-                        </li>
-                    </ul>
+                    <a href="#">
+                        <i class="fa fa-pie-chart  nav-icon" aria-hidden="true"></i>
+                        Charts<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Charts<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i></a>
+                    <a href="#">
+                        <i class="fa fa-envelope nav-icon" aria-hidden="true"></i>
+                        Inbox<span class="label label-primary nav-lbl">2</span><i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Inbox<span class="label label-primary">2</span><i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i></a>
+                    <a href="#">
+                        <i class="fa fa-eye   nav-icon" aria-hidden="true"></i>
+                        UI Elements <span class="label label-success nav-lbl">New</span> <i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="#">UI Elements <span class="label label-success">New</span> <i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i></a>
+                    <a href="#">
+                        <i class="fa fa-windows nav-icon" aria-hidden="true"></i>
+                        Tabs<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Tabs<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i></a>
+                    <a href="#">
+                        <i class="fa fa-calendar-check-o nav-icon" aria-hidden="true"></i>
+                        Calendar<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Calendar<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i></a>
+                    <a href="#">
+                        <i class="fa fa-share-alt-square nav-icon" aria-hidden="true"></i>
+                        Social<span class="label label-warning nav-lbl">Special</span><i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Social<span class="label label-warning">Special</span><i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i></a>
+                    <a href="#">
+                        <i class="fa fa-desktop nav-icon" aria-hidden="true"></i>
+                        Views<i class="fa fa-angle-left LeftArrow " aria-hidden="true"></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Views<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i></a>
+                    <a href="#">
+                        <i class="fa fa-table nav-icon" aria-hidden="true"></i>
+                        Tables<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Tables<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i></a>
+                    <a href="#">
+                        <i class="fa fa-map nav-icon" aria-hidden="true"></i>
+                        Maps<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Maps<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i></a>
+                    <a href="#">
+                        <i class="fa fa-gift nav-icon" aria-hidden="true"></i>
+                        Extra<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Extra<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i></a>
+                    <a href="#">
+                        <i class="fa fa-wikipedia-w nav-icon" aria-hidden="true"></i>
+                        Widget<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Widget<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                    <a href="#">Drag Droup <i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i></a>
+                    <a href="#">
+                        <i class="fa fa-arrows nav-icon" aria-hidden="true"></i>
+                        Drag Droup <i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -106,19 +134,19 @@
                 </div>
                 <div class="right-side-head">
                     <div class="notifecations head-box">
-                        <button class="btn btn-default btn-lg btn-link">
+                        <button id="notifications" class="btn btn-default btn-lg btn-link">
                             <i class="fa fa-bell-o" aria-hidden="true"></i>
                         </button>
-                        <span class="badge badge-notify">2</span>
+                        <span id="not-badg" class="badge badge-notify">2</span>
                     </div>
                     <div class="email head-box">
-                        <button class="btn btn-default btn-lg btn-link">
+                        <button id="messages" class="btn btn-default btn-lg btn-link">
                             <i class="fa fa-envelope-o" aria-hidden="true"></i>
                         </button>
-                        <span class="badge badge-notify">4</span>
+                        <span id="message-badg" class="badge badge-notify">4</span>
                     </div>
-                    <div class="user-box head-box">
-                        <p> Mr.Sami&nbsp;&nbsp;	&nbsp;	<i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                    <div id="user-box" class="user-box head-box">
+                        <p> Mr.Sami&nbsp;&nbsp;	&nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i></p>
                         <img src="images/Sami.jpg" />
                     </div>
                 </div>
@@ -130,37 +158,64 @@
         <div id="page-content-wrapper">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-7 ">
-                        <a class="title" id="randomizeData">Randomize Data</a>
-                        <canvas id="canvas"></canvas>
+                    <div class="col-sm-7">
+                        <div class="col-contint">
+                            <a class="title" id="randomizeData">Randomize Data</a>
+                            <canvas id="canvas"></canvas>
+                        </div>
                     </div>
+                    <div class="col-sm-5 salse-img">
+                        <div class="col-contint">
+                            <img class="img-responsive" src="images/salse.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <section class="productsec">
+                            <div class="container">
+                                <div class="producttabs">
+                                    <ul>
+                                        <li><a href="#con1">Last Year</a></li>
+                                        <li><a href="#con2">Last Month</a></li>
+                                        <li class="active"><a href="#con3">Yesterday</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="proditems" id="con3">
+                                1
+                            </div>
 
-                    <div class="col-md-4 SalseImge">
-                        <img class="img-responsive " src="images/Sales.jpg" />
+                            <div class="proditems" id="con1">
+                                2
+                            </div>
+
+                            <div class="proditems" id="con2">
+                                3
+                            </div>
+                        </section>
+                    </div>
+                   
+
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                      
+                    </div>
+                    <div class="col-sm-6">
+                      
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12">
-                        test
+                    <div class="col-sm-4">
+                       
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        test
+                    <div class="col-sm-4">
+                        
                     </div>
-                    <div class="col-md-6">
-                        test
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        test
-                    </div>
-                    <div class="col-md-4">
-                        test
-                    </div>
-                    <div class="col-md-4">
-                        test
+                    <div class="col-sm-4">
+                       
                     </div>
                 </div>
             </div>
@@ -176,7 +231,7 @@
             <table>
                 <tr>
                     <td colspan="4">
-                        <div onclick="closeToggel()"  id="Close">
+                        <div onclick="closeToggel()" id="Close">
                             <i class="fa fa-times-circle-o" aria-hidden="true"></i>
                         </div>
                     </td>
@@ -196,10 +251,169 @@
             </table>
         </div>
     </div>
+
+
+    <div class="notifecations-box">
+        <div class="arrow-up"></div>
+        <h5>Notifications</h5>
+        <div class="single-not-content">
+            <a href="#">
+                <img src="images/Sami.jpg" />
+                <p><b>Mohammad Meshaal</b>&nbsp;	wants your confirmation on his Leave Request on 12 May 2015</p>
+            </a>
+        </div>
+        <div class="single-not-content">
+            <a href="#">
+                <img src="images/Sami.jpg" />
+                <p><b>Mohammad Meshaal</b>&nbsp;	wants your confirmation on his Leave Request on 12 May 2015</p>
+            </a>
+        </div>
+        <div class="veiw-all-not">
+            <a href="#">View All</a>
+        </div>
+    </div>
+    <div class="messages-box">
+        <div class="arrow-up"></div>
+        <h5>Messages <a class="send-message-link " href="#">Send New Message</a></h5>
+        <div class="single-not-content">
+            <a href="#">
+                <img src="images/Sami.jpg" />
+                <p><b>Mohammad Meshaal</b><br />	Message subject will display here</p>
+            </a>
+        </div>
+        <div class="single-not-content">
+            <a href="#">
+                <img src="images/Sami.jpg" />
+                <p><b>Mohammad Meshaal</b><br />	Message subject will display here</p>
+            </a>
+        </div>
+        <div class="single-not-content">
+            <a href="#">
+                <img src="images/Sami.jpg" />
+                <p><b>Mohammad Meshaal</b><br />	Message subject will display here</p>
+            </a>
+        </div>
+        <div class="single-not-content">
+            <a href="#">
+                <img src="images/Sami.jpg" />
+                <p><b>Mohammad Meshaal</b><br />	Message subject will display here</p>
+            </a>
+        </div>
+        <div class="veiw-all-not">
+            <a href="#">View All</a>
+        </div>
+    </div>
+    <div class="user-info-box">
+        <div class="arrow-up user-arrow"></div>
+        <a href="#">
+            <div class="user-info-content">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                Proﬁle
+            </div>
+        </a>
+        <a href="#">
+            <div class="user-info-content">
+                <i class="fa fa-cog" aria-hidden="true"></i>
+                Settings
+            </div>
+        </a>
+        <a href="#">
+            <div class="user-info-content">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                Help
+            </div>
+        </a>
+        <a href="#">
+            <div class="user-info-content logout">
+                Log Out
+                <i class="fa fa-sign-out" aria-hidden="true"></i>
+            </div>
+        </a>
+    </div>
     <script src="js/vendors/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/vendors/Chart.bundle.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#notifications").click(function () {
+                $(".notifecations-box").fadeToggle();
+                $(".messages-box").fadeOut();
+                $("#not-badg").fadeOut();
+                $(".user-info-box").fadeOut();
+            });
+        });
+        $(document).ready(function () {
+            $("#messages").click(function () {
+                $(".messages-box").fadeToggle();
+                $(".notifecations-box").fadeOut();
+                $("#message-badg").fadeOut();
+                $(".user-info-box").fadeOut();
+            });
+        });
+        $(document).ready(function () {
+            $("#user-box").click(function () {
+                $(".user-info-box").fadeToggle();
+                $(".notifecations-box").fadeOut();
+                $(".messages-box").fadeOut();
+
+
+            });
+        });
+
+        $(document).mouseup(function (e) {
+            var container = $(".notifecations-box, .messages-box, .user-info-box");
+
+            if (!container.is(e.target)
+                && container.has(e.target).length === 0) {
+                container.hide();
+            }
+        });
+
+
+
+
+
+        $(".proditems").hide();
+        var Item = $(".producttabs .active a").attr("href");
+        $(Item).show();
+        $(".producttabs li").on("click", function () {
+
+            $(".producttabs .active").removeClass("active");
+            $(this).addClass('active');
+
+            $(Item).fadeOut("100", function () {
+                Item = $(".producttabs .active a").attr("href");
+                $(Item).fadeIn("100");
+                $(document).ready(function () {
+                    size_li = $(Item + " .pitem").size();
+                    x = 8;
+                    $(Item + ' .pitem:lt(' + x + ')').show();
+                    $(Item + ' > .ploadmore').click(function () {
+                        x = (x + 8 <= size_li) ? x + 8 : size_li;
+                        $(Item + ' .pitem:lt(' + x + ')').show();
+
+                    });
+                });
+
+            });
+
+            return false;
+        });
+        $(document).ready(function () {
+            Item = $(".producttabs .active a").attr("href");
+            size_li = $(Item + " .pitem").size();
+            x = 8;
+            $(Item + ' .pitem:lt(' + x + ')').show();
+            $(Item + ' > .ploadmore').click(function () {
+                x = (x + 8 <= size_li) ? x + 8 : size_li;
+                $(Item + ' .pitem:lt(' + x + ')').show();
+
+            });
+        });
+
+
+    </script>
 </body>
 </html>
