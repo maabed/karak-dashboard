@@ -21,10 +21,6 @@ body {
     min-height: 10em;
 }
 
-.col-sm-7, .col-sm-5 {
-    padding: 0;
-}
-
 .nav-icon {
     float: left;
     margin-top: 1em;
@@ -950,7 +946,6 @@ hr {
     z-index: 999;
     box-shadow: 0px 3px 10px #888888;
     display: none;
-    border-radius: 3px;
 }
 
 .messages-box {
@@ -961,26 +956,25 @@ hr {
     background: #fff;
     z-index: 999;
     box-shadow: 0px 3px 10px #888888;
-    border-radius: 3px;
     display: none;
 }
-
-    .messages-box h5 {
-        color: #34495E;
-        font-weight: lighter;
-        border-bottom: 1px solid #E4E5E7;
-        padding: 0em 0em 0em 1em;
-        margin: 0;
-        line-height: 2.5em;
-    }
-
-.notifecations-box h5 {
+.messages-box h5 {
     color: #34495E;
     font-weight: lighter;
     border-bottom: 1px solid #E4E5E7;
     padding: 0em 0em 0em 1em;
     margin: 0;
     line-height: 2.5em;
+}
+
+ .notifecations-box h5 {
+    color: #34495E;
+    font-weight: lighter;
+    border-bottom: 1px solid #E4E5E7;
+    padding: 0em 0em 0em 1em;
+    margin: 0;
+    line-height: 2.5em;
+    
 }
 
 .single-not-content {
@@ -992,21 +986,18 @@ hr {
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
-
-.send-message-link {
-    float: right;
-    margin-right: 1em;
-    font-size: 0.9em;
+.send-message-link { float :right; margin-right :1em;
+                     font-size :0.9em;
 }
 
-.single-not-content:hover {
-    background-color: #F1F3F6;
-}
+    .single-not-content:hover {
+        background-color: #F1F3F6;
+    }
 
-.single-not-content a {
-    color: #34495E;
-    text-decoration: none;
-}
+    .single-not-content a {
+        color: #34495E;
+        text-decoration: none;
+    }
 
 .veiw-all-not {
     width: 100%;
@@ -1044,93 +1035,6 @@ hr {
     float: right;
     margin-right: 1.9em;
 }
-
-.nav-lbl {
-    position: absolute;
-    text-indent: 0px;
-    right: 3em;
-    top: 1.25em;
-    width: auto !important;
-    text-align: center;
-}
-
-.user-info-box {
-    width: 9em;
-    position: absolute;
-    top: 3.6em;
-    right: 1em;
-    background: #fff;
-    z-index: 999;
-    box-shadow: 0px 3px 10px #888888;
-    border-radius: 3px;
-    display: none;
-}
-
-    .user-info-box a {
-        color: #8D8D8D;
-    }
-
-        .user-info-box a:hover {
-            text-decoration: none;
-        }
-
-.user-info-content .fa {
-    margin-right: 0.5em;
-}
-
-.user-info-content {
-    width: 100%;
-    padding: 0.6em 1em;
-    border-bottom: 1px solid #E4E5E7;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-
-    .user-info-content:hover {
-        background-color: #F1F3F6;
-    }
-
-.logout {
-    border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 3px;
-    background: #F0F0F0;
-}
-
-    .logout .fa {
-        float: right;
-        margin-top: 0.35em;
-    }
-
-.user-arrow {
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 10px solid #fff;
-    margin-top: -0.7em;
-    float: right;
-    margin-right: 0.3em;
-}
-
-.col-contint {
-    overflow: hidden;
-    width: 100%;
-    background-color: #fff;
-    padding: 0.5em;
-    border-radius: 3px;
-    height: 52vh;
-}
-
-.salse-img .col-contint {
-    width: 90%;
-    float: right;
-    padding: 0;
-    background-color: #F1F3F6;
-}
-
-    .salse-img .col-contint img {
-        float: right;
-    }
 
 @media(min-width:768px) {
     #wrapper {
