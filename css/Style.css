@@ -21,9 +21,6 @@ body {
     min-height: 10em;
 }
 
-.col-sm-7, .col-sm-5 {
-    padding: 0;
-}
 
 .nav-icon {
     float: left;
@@ -279,13 +276,14 @@ body {
     color: #34495E;
     font-size: 12px;
     display: inline-block;
-    margin: 5.2em 0em 0em 1.8em !important;
+    margin: 5.2em 0em 0em 3em !important;
     padding: 0 !important;
 }
 
 #head .form-group {
     width: 20%;
     float: left;
+    margin-left :0.5em;
 }
 
 .center-block {
@@ -943,7 +941,7 @@ hr {
 
 .notifecations-box {
     width: 25em;
-    position: absolute;
+    position :fixed ;
     top: 3.6em;
     right: 15em;
     background: #fff;
@@ -955,7 +953,7 @@ hr {
 
 .messages-box {
     width: 25em;
-    position: absolute;
+    position: fixed ;
     top: 3.6em;
     right: 10.5em;
     background: #fff;
@@ -1037,12 +1035,13 @@ hr {
 .arrow-up {
     width: 0px;
     height: 0px;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 10px solid #fff;
-    margin-top: -0.7em;
+    border-left: 8.5px solid transparent;
+    border-right: 8.5px solid transparent;
+    border-bottom: 11px solid #fff;
+    margin-top: -0.8em;
     float: right;
-    margin-right: 1.9em;
+    margin-right: 1.7em;
+
 }
 
 .nav-lbl {
@@ -1056,7 +1055,7 @@ hr {
 
 .user-info-box {
     width: 9em;
-    position: absolute;
+   position :fixed ;
     top: 3.6em;
     right: 1em;
     background: #fff;
@@ -1118,7 +1117,7 @@ hr {
     background-color: #fff;
     padding: 0.5em;
     border-radius: 3px;
-    height: 52vh;
+    height: 49vh;
 }
 
 .salse-img .col-contint {
@@ -1131,6 +1130,94 @@ hr {
     .salse-img .col-contint img {
         float: right;
     }
+
+
+.statistics .statistics-taps {
+    width: 100%;
+    margin :0 auto ; 
+}
+
+    .statistics .statistics-taps ul {
+        list-style: none;
+        height: auto;
+        display: table;
+        text-align: center;
+        padding-left: 0;
+        margin: 0 auto;
+    }
+
+    .statistics .statistics-taps li {
+        float: left;
+        margin: 0em 1em;
+    }
+
+        .statistics .statistics-taps li a {
+            font-size: 1.2em;
+            color: #34495E;
+            text-shadow: none;
+            padding: 1.4em 1em 1em 1em;
+            display: inline-block;
+            position: relative;
+            text-decoration: none;
+            font-weight: bold;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+        }
+
+        .statistics .statistics-taps li.active a, .statistics .statistics-taps li:hover > a {
+            color: #3B97D2;
+            border-bottom: 4px solid #3B97D2;
+        }
+
+        .statistics .statistics-taps li.active > a::after {
+            height: 1em;
+            width: .8em;
+            border-radius: 0 0 25px 25px;
+            -moz-border-radius: 0 0 25px 25px;
+            -webkit-border-radius: 0 0 25px 25px;
+            border-bottom: 5px solid #e1e4d9;
+            display: block;
+            padding-bottom: .2em;
+            margin: 0 auto;
+            position: absolute;
+        }
+
+.no-padding {
+    padding: 0;
+}
+
+.statistics-item {
+    width: 100%;
+    background-color: #fff;
+    padding: 1.5em 0em;
+    border-radius: 3px;
+}
+
+
+    .statistics-item  .row .col-sm-2 {
+        text-align: center;
+        width :20% !important ;
+     
+    }
+
+        .statistics-item  .row .col-sm-2 img {
+            margin: 0 auto;
+        }
+
+        .statistics-item  .row .col-sm-2 h4 {
+            line-height: 1.5em;
+        }
+.bold { font-weight :bold ;
+}
+.lighter {font-weight :lighter ;
+}
+
+
+.section-margin {margin-top :3em;
+}
+
 
 @media(min-width:768px) {
     #wrapper {

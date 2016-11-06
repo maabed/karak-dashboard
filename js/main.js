@@ -131,3 +131,8 @@ $('#tokenfield').tokenfield({
 $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip();
 });
+
+
+
+
+/*Pol-chart*/
