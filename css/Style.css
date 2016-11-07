@@ -265,7 +265,7 @@ body {
 .Submenue {
     display: none;
     font-size: 0.9em;
-    background-color: #fefbfb;
+    background-color: #fbfbfb;
     list-style: none;
     color: #9E9E9E;
 }
@@ -283,7 +283,7 @@ body {
 #head .form-group {
     width: 20%;
     float: left;
-    margin-left :0.5em;
+    margin-left: 0.5em;
 }
 
 .center-block {
@@ -941,7 +941,7 @@ hr {
 
 .notifecations-box {
     width: 25em;
-    position :fixed ;
+    position: fixed;
     top: 3.6em;
     right: 15em;
     background: #fff;
@@ -953,7 +953,7 @@ hr {
 
 .messages-box {
     width: 25em;
-    position: fixed ;
+    position: fixed;
     top: 3.6em;
     right: 10.5em;
     background: #fff;
@@ -1041,7 +1041,6 @@ hr {
     margin-top: -0.8em;
     float: right;
     margin-right: 1.7em;
-
 }
 
 .nav-lbl {
@@ -1055,7 +1054,7 @@ hr {
 
 .user-info-box {
     width: 9em;
-   position :fixed ;
+    position: fixed;
     top: 3.6em;
     right: 1em;
     background: #fff;
@@ -1128,13 +1127,13 @@ hr {
 }
 
     .salse-img .col-contint img {
-        float: right;
+        float: right; 
     }
 
 
 .statistics .statistics-taps {
     width: 100%;
-    margin :0 auto ; 
+    margin: 0 auto;
 }
 
     .statistics .statistics-taps ul {
@@ -1196,28 +1195,125 @@ hr {
 }
 
 
-    .statistics-item  .row .col-sm-2 {
+    .statistics-item .row .col-sm-2 {
         text-align: center;
-        width :20% !important ;
-     
+        width: 20% !important;
     }
 
-        .statistics-item  .row .col-sm-2 img {
+        .statistics-item .row .col-sm-2 img {
             margin: 0 auto;
         }
 
-        .statistics-item  .row .col-sm-2 h4 {
+        .statistics-item .row .col-sm-2 h4 {
             line-height: 1.5em;
         }
-.bold { font-weight :bold ;
+
+.bold {
+    font-weight: bold;
 }
-.lighter {font-weight :lighter ;
+
+.lighter {
+    font-weight: lighter;
 }
 
 
-.section-margin {margin-top :3em;
+.section-margin {
+    margin-top: 3em;
 }
 
+.map-image {
+    margin: 0 auto;
+    margin-top: 2em;
+    width: 100%;
+    z-index: -1;
+}
+
+.mid-height {
+    height: 27em !important;
+    position: relative;
+    z-index: -1;
+}
+
+.activities-year {
+    float: right;
+    color: #3B97D2;
+    font-weight: bold;
+}
+
+.add-task {
+    float: right;
+    color: #3B97D2;
+    font-size: 1.1em;
+}
+
+
+.activities-log, .to-do-list {
+    width: 100%;
+    height: 20em;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+.single-log-box {
+    border-bottom: 1px solid #F1F3F6;
+}
+
+    .single-log-box h5 {
+        color: #3B97D2;
+        text-decoration: underline;
+    }
+
+    .single-log-box p {
+        color: #707A7A;
+        text-align: justify;
+        width: 90%;
+        font-size: 0.9em;
+    }
+
+.single-to-do-box {
+    border-bottom: 1px solid #F1F3F6;
+    color: #707A7A;
+    text-align: left;
+    font-size: 0.9em;
+    padding: 1em 0em;
+}
+
+
+.to-do-checkbox {
+    width: 60%;
+    float: left;
+}
+
+.single-to-do-box h6 {
+    float: right;
+    color: #3B97D2;
+    margin: 0.3em 0.5em;
+}
+
+.single-to-do-box i {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    float: right;
+    color: #DEDEDE;
+    font-size: 1.2em;
+    margin: 0.2em 0.5em;
+}
+
+    .single-to-do-box i:hover {
+        color: #df1515;
+    }
+
+.done-task {
+    text-decoration: line-through;
+}
+
+.made-by {
+    float: right;
+    color: #828282;
+}
 
 @media(min-width:768px) {
     #wrapper {
@@ -1257,5 +1353,9 @@ hr {
         display: block;
         float: left;
         margin-top: 0.8em;
+    }
+
+    #head {
+        overflow: hidden;
     }
 }
