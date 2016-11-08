@@ -20,6 +20,7 @@
     <![endif]-->
     <link href="css/font-awesome.min.css" rel="stylesheet" />
     <link href="css/input_style.css" rel="stylesheet" />
+
 </head>
 <body>
     <div id="wrapper">
@@ -292,6 +293,9 @@
                     <div class="col-sm-4">
                         <div class="col-contint">
                             <p class="title">Transactions</p>
+                            <div id="canvas-holder">
+                                <canvas id="chart-area"></canvas>
+                            </div>
                         </div>
                     </div>
                     <div class="col-sm-4 activities">
@@ -429,7 +433,7 @@
                 </div>
                 <h6 class="made-by">Made By  <b>New Versions</b></h6>
             </div>
-           
+
             <!-- /#page-content-wrapper -->
         </div>
         <!-- /#wrapper -->
@@ -538,85 +542,16 @@
                     <i class="fa fa-sign-out" aria-hidden="true"></i>
                 </div>
             </a>
-            
         </div>
-       
-        </div>
-        <script src="js/vendors/jquery.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/main.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="js/vendors/Chart.bundle.js"></script>
-        <script>
-            $(document).ready(function () {
-                $("#notifications").click(function () {
-                    $(".notifecations-box").fadeToggle();
-                    $(".messages-box").fadeOut();
-                    $("#not-badg").fadeOut();
-                    $(".user-info-box").fadeOut();
-                });
-            });
-            $(document).ready(function () {
-                $("#messages").click(function () {
-                    $(".messages-box").fadeToggle();
-                    $(".notifecations-box").fadeOut();
-                    $("#message-badg").fadeOut();
-                    $(".user-info-box").fadeOut();
-                });
-            });
-            $(document).ready(function () {
-                $("#user-box").click(function () {
-                    $(".user-info-box").fadeToggle();
-                    $(".notifecations-box").fadeOut();
-                    $(".messages-box").fadeOut();
-                });
-            });
-            $(document).mouseup(function (e) {
-                var container = $(".notifecations-box, .messages-box, .user-info-box");
-                if (!container.is(e.target)
-                    && container.has(e.target).length === 0) {
-                    container.hide();
-                }
-            });
-            /*taps*/
-            $(".statistics-item").hide();
-            var Item = $(".statistics-taps .active a").attr("href");
-            $(Item).show();
-            $(".statistics-taps li").on("click", function () {
+    </div>
+    <script src="js/vendors/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/vendors/Chart.bundle.js"></script>
+    <script src="js/notifications_boxs.js"></script>
+    <script src="js/taps.js"></script>
+    <script src="js/polar_chart.js"></script>
 
-                $(".statistics-taps .active").removeClass("active");
-                $(this).addClass('active');
-
-                $(Item).fadeOut("100", function () {
-                    Item = $(".statistics-taps .active a").attr("href");
-                    $(Item).fadeIn("100");
-                    $(document).ready(function () {
-                        size_li = $(Item + " .pitem").size();
-                        x = 8;
-                        $(Item + ' .pitem:lt(' + x + ')').show();
-                        $(Item + ' > .ploadmore').click(function () {
-                            x = (x + 8 <= size_li) ? x + 8 : size_li;
-                            $(Item + ' .pitem:lt(' + x + ')').show();
-
-                        });
-                    });
-
-                });
-
-                return false;
-            });
-            $(document).ready(function () {
-                Item = $(".statistics-taps .active a").attr("href");
-                size_li = $(Item + " .pitem").size();
-                x = 8;
-                $(Item + ' .pitem:lt(' + x + ')').show();
-                $(Item + ' > .ploadmore').click(function () {
-                    x = (x + 8 <= size_li) ? x + 8 : size_li;
-                    $(Item + ' .pitem:lt(' + x + ')').show();
-
-                });
-            });
-
-        </script>
 </body>
 </html>
