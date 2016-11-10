@@ -7,8 +7,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Blue Dashboard</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
     <link href="../css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href="../css/editor.css" rel="stylesheet" />
@@ -24,6 +26,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
 </head>
 <body>
     <div id="wrapper">
@@ -34,7 +37,13 @@
                     Company Name
                 </li>
                 <li>
-                    <a class="MainMenue selected" href="#">Dashboard<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-tachometer nav-icon" aria-hidden="true"></i>Dashboard<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a class="MainMenue" href="#">
+                        <i class="fa fa-file-text nav-icon" aria-hidden="true"></i>
+                        Forms<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                    </a>
                     <ul class="Submenue">
                         <li>
                             Sub Title
@@ -48,61 +57,82 @@
                     </ul>
                 </li>
                 <li>
-                    <a class="MainMenue" href="#">Forms<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i></a>
-                    <ul class="Submenue">
-                        <li>
-                            Sub Title
-                        </li>
-                        <li>
-                            Sub Title
-                        </li>
-                        <li>
-                            Sub Title
-                        </li>
-                    </ul>
+                    <a href="#">
+                        <i class="fa fa-pie-chart  nav-icon" aria-hidden="true"></i>
+                        Charts<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="selected">
+                    <a href="#">
+                        <i class="fa fa-envelope nav-icon" aria-hidden="true"></i>
+                        Inbox<span class="label label-primary nav-lbl">2</span><i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Charts<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i></a>
+                    <a href="#">
+                        <i class="fa fa-eye   nav-icon" aria-hidden="true"></i>
+                        UI Elements <span class="label label-success nav-lbl">New</span> <i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Inbox<span class="label label-primary">2</span><i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i></a>
+                    <a href="#">
+                        <i class="fa fa-windows nav-icon" aria-hidden="true"></i>
+                        Tabs<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="#">UI Elements <span class="label label-success">New</span> <i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i></a>
+                    <a href="#">
+                        <i class="fa fa-calendar-check-o nav-icon" aria-hidden="true"></i>
+                        Calendar<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Tabs<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i></a>
+                    <a href="#">
+                        <i class="fa fa-share-alt-square nav-icon" aria-hidden="true"></i>
+                        Social<span class="label label-warning nav-lbl">Special</span><i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Calendar<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i></a>
+                    <a href="#">
+                        <i class="fa fa-desktop nav-icon" aria-hidden="true"></i>
+                        Views<i class="fa fa-angle-left LeftArrow " aria-hidden="true"></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Social<span class="label label-warning">Special</span><i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i></a>
+                    <a href="#">
+                        <i class="fa fa-table nav-icon" aria-hidden="true"></i>
+                        Tables<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Views<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i></a>
+                    <a href="#">
+                        <i class="fa fa-map nav-icon" aria-hidden="true"></i>
+                        Maps<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Tables<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i></a>
+                    <a href="#">
+                        <i class="fa fa-gift nav-icon" aria-hidden="true"></i>
+                        Extra<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Maps<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i></a>
+                    <a href="#">
+                        <i class="fa fa-wikipedia-w nav-icon" aria-hidden="true"></i>
+                        Widget<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Extra<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                    <a href="#">Widget<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                    <a href="#">Drag Droup <i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i></a>
+                    <a href="#">
+                        <i class="fa fa-arrows nav-icon" aria-hidden="true"></i>
+                        Drag Droup <i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                    </a>
                 </li>
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
         <div id="head">
-            <div class="container-fluid">
-
+            <div class="container-fluid header-container">
                 <i href="#menu-toggle" id="menu-toggle" class="fa fa-bars" aria-hidden="true"></i>
                 <div class="form-group">
                     <div class="icon-addon addon-md">
@@ -112,19 +142,19 @@
                 </div>
                 <div class="right-side-head">
                     <div class="notifecations head-box">
-                        <button class="btn btn-default btn-lg btn-link">
+                        <button id="notifications" class="btn btn-default btn-lg btn-link">
                             <i class="fa fa-bell-o" aria-hidden="true"></i>
                         </button>
-                        <span class="badge badge-notify">2</span>
+                        <span id="not-badg" class="badge badge-notify">2</span>
                     </div>
                     <div class="email head-box">
-                        <button class="btn btn-default btn-lg btn-link">
+                        <button id="messages" class="btn btn-default btn-lg btn-link">
                             <i class="fa fa-envelope-o" aria-hidden="true"></i>
                         </button>
-                        <span class="badge badge-notify">4</span>
+                        <span id="message-badg" class="badge badge-notify">4</span>
                     </div>
-                    <div class="user-box head-box">
-                        <p> Mr.Sami&nbsp;&nbsp;	&nbsp;	<i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                    <div id="user-box" class="user-box head-box">
+                        <p> Mr.Sami&nbsp;&nbsp; &nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i></p>
                         <img src="../images/Sami.jpg" />
                     </div>
                 </div>
@@ -169,16 +199,89 @@
                 </table>
             </div>
         </div>
+        <div class="notifecations-box">
+            <div class="arrow-up"></div>
+            <h5>Notifications</h5>
+            <div class="single-not-content">
+                <a href="#">
+                    <img src="../images/Sami.jpg" />
+                    <p><b>Mohammad Meshaal</b>&nbsp;    wants your confirmation on his Leave Request on 12 May 2015</p>
+                </a>
+            </div>
+            <div class="single-not-content">
+                <a href="#">
+                    <img src="../images/Sami.jpg" />
+                    <p><b>Mohammad Meshaal</b>&nbsp;    wants your confirmation on his Leave Request on 12 May 2015</p>
+                </a>
+            </div>
+            <div class="veiw-all-not">
+                <a href="#">View All</a>
+            </div>
+        </div>
+        <div class="messages-box">
+            <div class="arrow-up"></div>
+            <h5>Messages <a class="send-message-link " href="#">Send New Message</a></h5>
+            <div class="single-not-content">
+                <a href="#">
+                    <img src="../images/Sami.jpg" />
+                    <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
+                </a>
+            </div>
+            <div class="single-not-content">
+                <a href="#">
+                    <img src="../images/Sami.jpg" />
+                    <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
+                </a>
+            </div>
+            <div class="single-not-content">
+                <a href="#">
+                    <img src="../images/Sami.jpg" />
+                    <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
+                </a>
+            </div>
+            <div class="single-not-content">
+                <a href="#">
+                    <img src="../images/Sami.jpg" />
+                    <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
+                </a>
+            </div>
+            <div class="veiw-all-not">
+                <a href="#">View All</a>
+            </div>
+        </div>
+        <div class="user-info-box">
+            <div class="arrow-up user-arrow"></div>
+            <a href="#">
+                <div class="user-info-content">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    Proﬁle
+                </div>
+            </a>
+            <a href="#">
+                <div class="user-info-content">
+                    <i class="fa fa-cog" aria-hidden="true"></i>
+                    Settings
+                </div>
+            </a>
+            <a href="#">
+                <div class="user-info-content">
+                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                    Help
+                </div>
+            </a>
+            <a href="#">
+                <div class="user-info-content logout">
+                    Log Out
+                    <i class="fa fa-sign-out" aria-hidden="true"></i>
+                </div>
+            </a>
+        </div>
     </div>
 
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="../js/vendors/Chart.bundle.js"></script>
-    <script src="../js/vendors/bootstrap.js"></script>
-    <script src="../js/main.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="../js/vendors/editor.js"></script>
-    <script src="../js/vendors/script-min.js"></script>
+
 
     <link href='../lib/cupertino/jquery-ui.min.css' rel='stylesheet' />
     <link href='../lib/fullcalendar.min.css' rel='stylesheet' />
@@ -189,5 +292,8 @@
     <script src='../lib/fullcalendar.min.js'></script>
     <script src="../lib/default/scheduler.min.js"></script>
     <script src="../js/calender.js"></script>
+    <script src="../js/notifications_boxs.js"></script>
+
+    <script src="../js/main.js"></script>
 </body>
 </html>

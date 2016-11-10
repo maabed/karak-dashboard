@@ -1,6 +1,5 @@
 ﻿
 
-/*taps*/
 $(".statistics-item").hide();
 var Item = $(".statistics-taps .active a").attr("href");
 $(Item).show();

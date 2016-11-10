@@ -159,9 +159,6 @@ body {
     transition: all 0.5s ease;
 }
 
-#randomizeData {
-    cursor: pointer;
-}
 
 #wrapper.toggled {
     padding-left: 250px;
@@ -212,7 +209,19 @@ body {
         text-indent: 20px;
         line-height: 40px;
         position: relative;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
     }
+
+        .sidebar-nav li:first-child:hover {background-color:#2980B9 ; 
+    }
+    
+
+    .sidebar-nav li:hover {background-color:#fbfbfb ; 
+    }
+    
 
         .sidebar-nav li a {
             display: block;
@@ -487,6 +496,7 @@ canvas {
 .title {
     color: #34495E;
     font-weight: bold;
+    margin :0;
 }
 
 .InboxLeftSide {
@@ -1100,7 +1110,7 @@ hr {
         float: right;
         margin-top: 0.35em;
     }
-    
+
 .user-arrow {
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
@@ -1116,9 +1126,10 @@ hr {
     background-color: #fff;
     padding: 0.5em;
     border-radius: 3px;
-    height: 23.2em;
 }
-.calendar-contint {  overflow: hidden;
+
+.calendar-contint {
+    overflow: hidden;
     width: 100%;
     background-color: #fff;
     padding: 0.5em;
@@ -1322,7 +1333,8 @@ hr {
     float: right;
     color: #828282;
 }
-
+.static-height {height :23.4em;
+}
 @media(min-width:768px) {
     #wrapper {
         padding-left: 250px;
