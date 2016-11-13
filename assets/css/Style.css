@@ -21,7 +21,6 @@ body {
     min-height: 10em;
 }
 
-
 .nav-icon {
     float: left;
     margin-top: 1em;
@@ -160,9 +159,9 @@ body {
 }
 
 
-#wrapper.toggled {
-    padding-left: 250px;
-}
+    #wrapper.toggled {
+        padding-left: 250px;
+    }
 
 #sidebar-wrapper {
     z-index: 1000;
@@ -215,13 +214,15 @@ body {
         transition: all 0.5s ease;
     }
 
-        .sidebar-nav li:first-child:hover {background-color:#2980B9 ; 
-    }
-    
+        .sidebar-nav li:first-child:hover {
+            background-color: #2980B9;
+        }
 
-    .sidebar-nav li:hover {background-color:#fbfbfb ; 
-    }
-    
+
+        .sidebar-nav li:hover {
+            background-color: #fbfbfb;
+        }
+
 
         .sidebar-nav li a {
             display: block;
@@ -496,7 +497,7 @@ canvas {
 .title {
     color: #34495E;
     font-weight: bold;
-    margin :0;
+    margin: 0;
 }
 
 .InboxLeftSide {
@@ -1333,8 +1334,21 @@ hr {
     float: right;
     color: #828282;
 }
-.static-height {height :23.4em;
+
+.static-height {
+    height: 23.4em;
 }
+#container {
+            height: 500px;
+            margin: 0 auto;
+            width:100%;
+        }
+
+        .loading {
+            margin-top: 10em;
+            text-align: center;
+            color: gray;
+        }
 @media(min-width:768px) {
     #wrapper {
         padding-left: 250px;

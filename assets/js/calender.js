@@ -1,65 +1,155 @@
-﻿
-$(function () { // document ready
+﻿$(document).ready(function () {
+    var date = new Date();
+    var d = date.getDate();
+    var m = date.getMonth();
+    var y = date.getFullYear();
 
-    $('#calendar').fullCalendar({
-        theme: true,
-        now: '2016-09-07',
-        editable: true, // enable draggable events
-        aspectRatio: 1.8,
-        scrollTime: '00:00', // undo default 6am scrollTime
-        header: {
-            left: 'today prev,next',
-            center: 'title',
-            right: 'timelineDay,timelineThreeDays,agendaWeek,month,listWeek'
-        },
-        defaultView: 'timelineDay',
-        views: {
-            timelineThreeDays: {
-                type: 'timeline',
-                duration: { days: 3 }
-            }
-        },
-        resourceLabelText: 'Rooms',
-        resources: [
-            { id: 'a', title: 'Auditorium A' },
-            { id: 'b', title: 'Auditorium B', eventColor: 'green' },
-            { id: 'c', title: 'Auditorium C', eventColor: 'orange' },
-            {
-                id: 'd', title: 'Auditorium D', children: [
-                  { id: 'd1', title: 'Room D1' },
-                  { id: 'd2', title: 'Room D2' }
-                ]
-            },
-            { id: 'e', title: 'Auditorium E' },
-            { id: 'f', title: 'Auditorium F', eventColor: 'red' },
-            { id: 'g', title: 'Auditorium G' },
-            { id: 'h', title: 'Auditorium H' },
-            { id: 'i', title: 'Auditorium I' },
-            { id: 'j', title: 'Auditorium J' },
-            { id: 'k', title: 'Auditorium K' },
-            { id: 'l', title: 'Auditorium L' },
-            { id: 'm', title: 'Auditorium M' },
-            { id: 'n', title: 'Auditorium N' },
-            { id: 'o', title: 'Auditorium O' },
-            { id: 'p', title: 'Auditorium P' },
-            { id: 'q', title: 'Auditorium Q' },
-            { id: 'r', title: 'Auditorium R' },
-            { id: 's', title: 'Auditorium S' },
-            { id: 't', title: 'Auditorium T' },
-            { id: 'u', title: 'Auditorium U' },
-            { id: 'v', title: 'Auditorium V' },
-            { id: 'w', title: 'Auditorium W' },
-            { id: 'x', title: 'Auditorium X' },
-            { id: 'y', title: 'Auditorium Y' },
-            { id: 'z', title: 'Auditorium Z' }
-        ],
-        events: [
-            { id: '1', resourceId: 'b', start: '2016-09-07T02:00:00', end: '2016-09-07T07:00:00', title: 'event 1' },
-            { id: '2', resourceId: 'c', start: '2016-09-07T05:00:00', end: '2016-09-07T22:00:00', title: 'event 2' },
-            { id: '3', resourceId: 'd', start: '2016-09-06', end: '2016-09-08', title: 'event 3' },
-            { id: '4', resourceId: 'e', start: '2016-09-07T03:00:00', end: '2016-09-07T08:00:00', title: 'event 4' },
-            { id: '5', resourceId: 'f', start: '2016-09-07T00:30:00', end: '2016-09-07T02:30:00', title: 'event 5' }
-        ]
+    /*  className colors
+
+    className: default(transparent), important(red), chill(pink), success(green), info(blue)
+
+    */
+
+
+    /* initialize the external events
+    -----------------------------------------------------------------*/
+
+    $('#external-events div.external-event').each(function () {
+
+        // create an Event Object (http://arshaw.com/fullcalendar/docs/event_data/Event_Object/)
+        // it doesn't need to have a start or end
+        var eventObject = {
+            title: $.trim($(this).text()) // use the element's text as the event title
+        };
+
+        // store the Event Object in the DOM element so we can get to it later
+        $(this).data('eventObject', eventObject);
+
+        // make the event draggable using jQuery UI
+        $(this).draggable({
+            zIndex: 999,
+            revert: true,      // will cause the event to go back to its
+            revertDuration: 0  //  original position after the drag
+        });
+
     });
+
+
+    /* initialize the calendar
+    -----------------------------------------------------------------*/
+
+    var calendar = $('#calendar').fullCalendar({
+        header: {
+            left: 'title',
+            center: 'agendaDay,agendaWeek,month',
+            right: 'prev,next today'
+        },
+        editable: true,
+        firstDay: 1, //  1(Monday) this can be changed to 0(Sunday) for the USA system
+        selectable: true,
+        defaultView: 'month',
+
+        axisFormat: 'h:mm',
+        columnFormat: {
+            month: 'ddd',    // Mon
+            week: 'ddd d', // Mon 7
+            day: 'dddd M/d',  // Monday 9/7
+            agendaDay: 'dddd d'
+        },
+        titleFormat: {
+            month: 'MMMM yyyy', // September 2009
+            week: "MMMM yyyy", // September 2009
+            day: 'MMMM yyyy'                  // Tuesday, Sep 8, 2009
+        },
+        allDaySlot: false,
+        selectHelper: true,
+        select: function (start, end, allDay) {
+            var title = prompt('Event Title:');
+            if (title) {
+                calendar.fullCalendar('renderEvent',
+                    {
+                        title: title,
+                        start: start,
+                        end: end,
+                        allDay: allDay
+                    },
+                    true // make the event "stick"
+                );
+            }
+            calendar.fullCalendar('unselect');
+        },
+        droppable: true, // this allows things to be dropped onto the calendar !!!
+        drop: function (date, allDay) { // this function is called when something is dropped
+
+            // retrieve the dropped element's stored Event Object
+            var originalEventObject = $(this).data('eventObject');
+
+            // we need to copy it, so that multiple events don't have a reference to the same object
+            var copiedEventObject = $.extend({}, originalEventObject);
+
+            // assign it the date that was reported
+            copiedEventObject.start = date;
+            copiedEventObject.allDay = allDay;
+
+            // render the event on the calendar
+            // the last `true` argument determines if the event "sticks" (http://arshaw.com/fullcalendar/docs/event_rendering/renderEvent/)
+            $('#calendar').fullCalendar('renderEvent', copiedEventObject, true);
+
+            // is the "remove after drop" checkbox checked?
+            if ($('#drop-remove').is(':checked')) {
+                // if so, remove the element from the "Draggable Events" list
+                $(this).remove();
+            }
+
+        },
+
+        events: [
+            {
+                title: 'All Day Event',
+                start: new Date(y, m, 1)
+            },
+            {
+                id: 999,
+                title: 'Repeating Event',
+                start: new Date(y, m, d - 3, 16, 0),
+                allDay: false,
+                className: 'info'
+            },
+            {
+                id: 999,
+                title: 'Repeating Event',
+                start: new Date(y, m, d + 4, 16, 0),
+                allDay: false,
+                className: 'info'
+            },
+            {
+                title: 'Meeting',
+                start: new Date(y, m, d, 10, 30),
+                allDay: false,
+                className: 'important'
+            },
+            {
+                title: 'Lunch',
+                start: new Date(y, m, d, 12, 0),
+                end: new Date(y, m, d, 14, 0),
+                allDay: false,
+                className: 'important'
+            },
+            {
+                title: 'Birthday Party',
+                start: new Date(y, m, d + 1, 19, 0),
+                end: new Date(y, m, d + 1, 22, 30),
+                allDay: false,
+            },
+            {
+                title: 'Click for Google',
+                start: new Date(y, m, 28),
+                end: new Date(y, m, 29),
+                url: 'http://google.com/',
+                className: 'success'
+            }
+        ],
+    });
+
 
 });

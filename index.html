@@ -19,10 +19,14 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
     <link href="assets/css/input_style.css" rel="stylesheet" />
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
-  
+    <!--Calender-->
+    <link href="../assets/vendors/calender/fullcalendar.css" rel="stylesheet" />
+    <script src="../assets/vendors/calender/jquery-1.10.2.js"></script>
+    <script src="../assets/vendors/calender/jquery-ui.custom.min.js"></script>
+    <script src="../assets/vendors/calender/fullcalendar.js"></script>
+    <link href="../assets/vendors/calender/calender_theme.css" rel="stylesheet" />
 
 </head>
 <body>
@@ -282,14 +286,13 @@
                     <div class="col-sm-6">
                         <div class="col-contint">
                             <p class="title">Calendar</p>
-                            <div id='calendar'></div>
+                                <div id='calendar'></div>
                         </div>
                     </div>
                     <div class="col-sm-6">
-                        <div class="col-contint">
+                        <div class="col-contint map-height">
                             <p class="title">Worldwide Annual Sales</p>
-                            <img class="img-responsive map-image" src="assets/images/map.png" />
-                            <p class="text-center"><b>850,000 USD</b>Cumulative Sales</p>
+                            <div id="container"></div>
                         </div>
                     </div>
                 </div>
@@ -297,7 +300,7 @@
                     <div class="col-sm-4">
                         <div class="col-contint static-height">
                             <p class="title">Transactions</p>
-                            <canvas id="chart-area"></canvas>
+                            
                         </div>
                     </div>
                     <div class="col-sm-4 activities">
@@ -548,22 +551,23 @@
     </div>
  
     <script src="assets/js/random_chart.js"></script>
-    <script src="assets/js/vendors/jquery.js"></script>
+ 
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/vendors/Chart.bundle.js"></script>
     <script src="assets/js/notifications_boxs.js"></script>
     <script src="assets/js/taps.js"></script>
 
+   
+    <!--Map-->
+    <script src="assets/js/map.js"></script>
+    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/data.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/mapdata/custom/world.js"></script>
 
-
-    <link href='assets/vendors/lib/cupertino/jquery-ui.min.css' rel='stylesheet' />
-    <link href='assets/vendors/lib/fullcalendar.min.css' rel='stylesheet' />
-    <link href='assets/vendors/lib/fullcalendar.print.css' rel='stylesheet' media='print' />
-    <link href="assets/vendors/lib/default/scheduler.min.css" rel="stylesheet" />
-    <script src='assets/vendors/lib/moment.min.js'></script>
-    <script src='assets/vendors/lib/fullcalendar.min.js'></script>
-    <script src="assets/vendors/lib/default/scheduler.min.js"></script>
+    <!--Calender-->
     <script src="assets/js/calender.js"></script>
+
 </body>
 </html>
