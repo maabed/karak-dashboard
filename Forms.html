@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Blue Dashboard</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <!-- Bootstrap Core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/css/Style.css" rel="stylesheet" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link href="assets/css/input_style.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/vendors/Select_plugin/dist/css/bootstrap-select.css">
+    <link href="assets/css/Rayan.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/vendors/TagInput/dist/bootstrap-tagsinput.css">
+    <link href="assets/vendors/TagInput/examples/assets/app.css">
+    <link rel="stylesheet" href="assets/vendors/DropZone/dropzone.css">
+
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    Company Name
+                </li>
+                <li class="selected">
+                    <a href="index.html"><i class="fa fa-tachometer nav-icon" aria-hidden="true"></i>Dashboard<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a class="MainMenue" href="#">
+                        <i class="fa fa-file-text nav-icon" aria-hidden="true"></i>
+                        Forms<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                    </a>
+                    <ul class="Submenue">
+                        <li>
+                            Sub Title
+                        </li>
+                        <li>
+                            Sub Title
+                        </li>
+                        <li>
+                            Sub Title
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-pie-chart  nav-icon" aria-hidden="true"></i>
+                        Charts<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="layouts/inbox.html">
+                        <i class="fa fa-envelope nav-icon" aria-hidden="true"></i>
+                        Inbox<span class="label label-primary nav-lbl">2</span><i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-eye   nav-icon" aria-hidden="true"></i>
+                        UI Elements <span class="label label-success nav-lbl">New</span> <i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-windows nav-icon" aria-hidden="true"></i>
+                        Tabs<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="layouts/calendar.html">
+                        <i class="fa fa-calendar-check-o nav-icon" aria-hidden="true"></i>
+                        Calendar<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="layouts/social.html">
+                        <i class="fa fa-share-alt-square nav-icon" aria-hidden="true"></i>
+                        Social<span class="label label-warning nav-lbl">Special</span><i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-desktop nav-icon" aria-hidden="true"></i>
+                        Views<i class="fa fa-angle-left LeftArrow " aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-table nav-icon" aria-hidden="true"></i>
+                        Tables<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-map nav-icon" aria-hidden="true"></i>
+                        Maps<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-gift nav-icon" aria-hidden="true"></i>
+                        Extra<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-wikipedia-w nav-icon" aria-hidden="true"></i>
+                        Widget<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-arrows nav-icon" aria-hidden="true"></i>
+                        Drag Droup <i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <div id="head">
+            <div class="container-fluid header-container">
+                <i href="#menu-toggle" id="menu-toggle" class="fa fa-bars" aria-hidden="true"></i>
+                <div class="form-group">
+                    <div class="icon-addon addon-md">
+                        <input type="text" placeholder="Type anywhere to search" class="form-control" id="searchTB">
+                        <i class="fa fa-search glyphicon glyphicon-search" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="right-side-head">
+                    <div class="notifecations head-box">
+                        <button id="notifications" class="btn btn-default btn-lg btn-link">
+                            <i class="fa fa-bell-o" aria-hidden="true"></i>
+                        </button>
+                        <span id="not-badg" class="badge badge-notify">2</span>
+                    </div>
+                    <div class="email head-box">
+                        <button id="messages" class="btn btn-default btn-lg btn-link">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        </button>
+                        <span id="message-badg" class="badge badge-notify">4</span>
+                    </div>
+                    <div id="user-box" class="user-box head-box">
+                        <p> Mr.Sami&nbsp;&nbsp; &nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                        <img src="assets/images/Sami.jpg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page Content -->
+        <a href="#" id="PageTitle">Dashboard  /  Interface</a>
+        <div id="page-content-wrapper">
+            
+            
+            <!-- First Row Forms -->
+
+            <div class="row">
+                <div class=" col-md-6 left-group">
+                    <div class="group-parent jumbotron">
+                        <div class="group-header-left">
+                            <h5>Default Style</h5>
+                            <h6 class="left-group-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget feugiat sapien. Vivamus nunc dui, mollis sit amet molestie in, gravida eu lectus. Pellentesque iaculis odio augue, eget lobortis elit congue.</h6>
+                        </div>
+                        <div class="row">
+                            <div class="inner-partitions col-md-12">
+                                <span class="form-labels">Full Name*</span>
+                                <input type="text" placeholder="Enter Full Name" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="inner-partitions col-md-6">
+                                <span class="form-labels">Email*</span>
+                                <input placeholder="Enter Email" type="text" class="form-control">
+                            </div>
+                            <div class="inner-partitions col-md-6">
+                                <span class="form-labels">Phone*</span>
+                                <input type="text" placeholder="Enter Phone Number" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="inner-partitions col-md-6">
+                                <span class="form-labels">Country*</span>
+                                <select class="Select-display selectpicker empty">
+                                    <option value="Select">Select</option>
+                                </select>
+                            </div>
+                            <div class="inner-partitions col-md-6">
+                                <span class="form-labels">City</span>
+                                <input type="text" placeholder="Enter City" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 right-group">
+                    <div class="group-parent jumbotron row group-upper">
+                        <div class="group-header-right inner-partitions col-md-12">
+                            <h5>Login Style</h5>
+                        </div>
+                        <div class="inner-partitions col-md-12 top">
+                            <span class="form-labels">Username</span>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="inner-partitions col-md-12">
+                            <span class="form-labels">Password</span>
+                            <input type="text" class="form-control">
+                        </div> 
+                    </div>
+                    
+                    <div class="group-parent jumbotron row group-lower">
+                        <div class="group-header-right inner-partitions col-md-12">
+                            <h5>Login With Icons</h5>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 inner-partitions input-with-icons">
+                                <i class="fa fa-user user-icon" aria-hidden="true"></i>
+                                <input type="text" placeholder="Email Address" class="form-control placeholder-position">
+                            </div>
+                            <div class="col-md-6 inner-partitions input-with-icons">
+                                <i class="fa fa-lock user-icon" aria-hidden="true"></i>
+                                <input type="text" placeholder="Password" class="form-control placeholder-position">                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- /First Row Forms End -->
+            <!-- Second Row Of forms -->
+            
+            <div class="row">
+                <div class="col-md-4"><div class="jumbotron"></div></div>
+                <div class="col-md-4 select-boxes-group">
+                    <div class="group-parent jumbotron">
+                        <div class="group-header-middle">
+                            <h5>Select boxes</h5>
+                        </div>
+                        <div class="row">
+                            <div class="inner-partitions col-md-12">
+                                <label class="dropdown-type">Standard</label>
+                                <select class="Select-display selectpicker empty select-width">
+                                    <option value="Select">Select1</option>
+                                    <option value="Select2">Select2</option>
+                                    <option value="Select2">Select3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="inner-partitions col-md-12">
+                                <label class="dropdown-type">Select boxes with optgroups</label>
+                                <select class="Select-display selectpicker empty select-width">
+                                    <optgroup label="First group">
+                                        <option value="Select">Select1</option>
+                                        <option value="Select2">Select2</option>
+                                        <option value="Select2">Select3</option>
+                                    </optgroup>
+                                    <optgroup label="Second Group">
+                                        <option value="Select">Select1</option>
+                                        <option value="Select2">Select2</option>
+                                        <option value="Select2">Select3</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="inner-partitions col-md-12">
+                                <label class="dropdown-type">Multiple select boxes</label>
+                                <select class="Select-display selectpicker empty select-width" multiple>
+                                    <option value="Select1">Select1</option>
+                                    <option value="Select2">Select2</option>
+                                    <option value="Select3">Select3</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="inner-partitions col-md-12">
+                                <label class="dropdown-type">Live search</label>
+                                <select class="Select-display selectpicker empty select-width" data-live-search="true">
+                                    <option value="Select">Select1</option>
+                                    <option value="Select">Select2</option>
+                                    <option value="Select">Select3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="inner-partitions col-md-12">
+                                <label class="dropdown-type">Key words</label>
+                                <select class="Select-display selectpicker empty select-width"  data-live-search="true">
+                                    <option value="Select" data-tokens="first option">Select1</option>
+                                    <option value="Select" data-tokens="second option">Select2</option>
+                                    <option value="Select" data-tokens="third option">Select3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="group-parent jumbotron">
+                        <div class="group-header-right">
+                            <h5>Input helpers</h5>
+                        </div>
+                        <div class="row">
+                            <div class="inner-partitions col-md-12">
+                                <label>Date <span class="helpers">e.g "2013/12/25"</span></label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="inner-partitions col-md-12">
+                                <label>Telephone <span class="helpers">e.g "(324)3243-234"</span></label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="inner-partitions col-md-12">
+                                <label>Custom <span class="helpers">e.g "4324324-23"</span></label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="inner-partitions col-md-12">
+                                <label>Social security number <span class="helpers">e.g "2432-43432"</span></label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="inner-partitions col-md-12">
+                                <label>Dollar prefix <span class="helpers">e.g "45.50$"</span></label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- /Second Row Forms End -->
+            
+            <!-- Tags & drag N'drop row -->
+            
+            <div class="row">
+                <div class=" col-md-6 Tags-group">
+                    <div class="group-parent jumbotron">
+                        <div class="group-header-left">
+                            <h5>Tag Input</h5>
+                        </div>
+                        <div class="row">
+                            <div class="inner-partitions col-md-12">
+                                 <label>Markup</label>
+                                <input type="text" value="Amsterdam,Washington,Sydney,Beijing" data-role="tagsinput" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="inner-partitions col-md-12">
+                                 <label>True multi value</label>
+                                <select multiple data-role="tagsinput">
+                                    <option value="Amsterdam">Amsterdam</option>
+                                    <option value="Washington">Washington</option>
+                                    <option value="Sydney">Sydney</option>
+                                    <option value="Beijing">Beijing</option>
+                                    <option value="Cairo">Cairo</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="inner-partitions col-md-12">
+                                <label>Objects as tags</label>
+                                <input class="objectsAsTags" type="text" data-role="tagsinput"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="inner-partitions col-md-12">
+                                <label>Categorizing tags</label>
+                                <input class="coloredTags" type="text" data-role="tagsinput"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class=" col-md-6 DragNdrop-group">
+                    <div class="group-parent jumbotron">
+                        <div class="group-header-left">
+                            <h5>Drag N' Drop</h5>
+                        </div>
+                        <div class="row">
+                            <div class="inner-partitions col-md-12">
+                                <form style="height:405px;" action="/upload-target" class="dropzone"><img class="dragNdrop center-block" src="assets/vendors/DropZone/download.png">
+</form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Tags & drag N'drop row-->
+        </div>
+        <!-- /#wrapper -->
+        <div id="Right-Side-Section">
+            <div id="Right-Side-Section-Togle">
+                <i class="fa fa-pencil-square-o" id="Edit" aria-hidden="true"></i>
+            </div>
+            <div class="table">
+                <table>
+                    <tr>
+                        <td colspan="4">
+                            <div onclick="closeToggel()" id="Close">
+                                <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="notifecations-box">
+            <div class="arrow-up"></div>
+            <h5>Notifications</h5>
+            <div class="single-not-content">
+                <a href="#">
+                    <img src="assets/images/Sami.jpg" />
+                    <p><b>Mohammad Meshaal</b>&nbsp;    wants your confirmation on his Leave Request on 12 May 2015</p>
+                </a>
+            </div>
+            <div class="single-not-content">
+                <a href="#">
+                    <img src="assets/images/Sami.jpg" />
+                    <p><b>Mohammad Meshaal</b>&nbsp;    wants your confirmation on his Leave Request on 12 May 2015</p>
+                </a>
+            </div>
+            <div class="veiw-all-not">
+                <a href="#">View All</a>
+            </div>
+        </div>
+        <div class="messages-box">
+            <div class="arrow-up"></div>
+            <h5>Messages <a class="send-message-link " href="#">Send New Message</a></h5>
+            <div class="single-not-content">
+                <a href="#">
+                    <img src="assets/images/Sami.jpg" />
+                    <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
+                </a>
+            </div>
+            <div class="single-not-content">
+                <a href="#">
+                    <img src="assets/images/Sami.jpg" />
+                    <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
+                </a>
+            </div>
+            <div class="single-not-content">
+                <a href="#">
+                    <img src="assets/images/Sami.jpg" />
+                    <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
+                </a>
+            </div>
+            <div class="single-not-content">
+                <a href="#">
+                    <img src="assets/images/Sami.jpg" />
+                    <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
+                </a>
+            </div>
+            <div class="veiw-all-not">
+                <a href="#">View All</a>
+            </div>
+        </div>
+        <div class="user-info-box">
+            <div class="arrow-up user-arrow"></div>
+            <a href="#">
+                <div class="user-info-content">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    Proﬁle
+                </div>
+            </a>
+            <a href="#">
+                <div class="user-info-content">
+                    <i class="fa fa-cog" aria-hidden="true"></i>
+                    Settings
+                </div>
+            </a>
+            <a href="#">
+                <div class="user-info-content">
+                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                    Help
+                </div>
+            </a>
+            <a href="#">
+                <div class="user-info-content logout">
+                    Log Out
+                    <i class="fa fa-sign-out" aria-hidden="true"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+ 
+    <script src="assets/js/random_chart.js"></script>
+    <script src="assets/js/vendors/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/vendors/Chart.bundle.js"></script>
+    <script src="assets/js/notifications_boxs.js"></script>
+    <script src="assets/js/taps.js"></script>
+    <script src="assets/vendors/Select_plugin/dist/js/bootstrap-select.js"></script>
+    <script src="assets/vendors/TagInput/dist/bootstrap-tagsinput.js"></script>
+    <script src="assets/vendors/TagInput/typeahead.bundle.min.js"></script>
+    <script src="assets/vendors/TagInput/data.js"></script>
+    <script src="assets/vendors/DropZone/dropzone.js"></script>
+    
+    <link href='assets/vendors/lib/cupertino/jquery-ui.min.css' rel='stylesheet' />
+    <link href='assets/vendors/lib/fullcalendar.min.css' rel='stylesheet' />
+    <link href='assets/vendors/lib/fullcalendar.print.css' rel='stylesheet' media='print' />
+    <link href="assets/vendors/lib/default/scheduler.min.css" rel="stylesheet" />
+    <script src='assets/vendors/lib/moment.min.js'></script>
+    <script src='assets/vendors/lib/fullcalendar.min.js'></script>
+    <script src="assets/vendors/lib/default/scheduler.min.js"></script>
+    <script src="assets/js/calender.js"></script>
+</body>
+</html>
