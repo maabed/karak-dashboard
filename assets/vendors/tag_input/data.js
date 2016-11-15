@@ -5,7 +5,7 @@ var cities = new Bloodhound({
 });
 cities.initialize();
 
-var elt = $('.coloredTags');
+var elt = $('.colored-tags');
 elt.tagsinput({
   tagClass: function(item) {
     switch (item.continent) {
@@ -38,7 +38,7 @@ var cities = new Bloodhound({
 });
 cities.initialize();
 
-var elt = $('.objectsAsTags');
+var elt = $('.objects-as-tags');
 elt.tagsinput({
   itemValue: 'value',
   itemText: 'text',
@@ -50,6 +50,3 @@ elt.tagsinput({
 });
 elt.tagsinput('add', { "value": 1 , "text": "Amsterdam"   , "continent": "Europe"    });
 elt.tagsinput('add', { "value": 4 , "text": "Washington"  , "continent": "America"   });
-elt.tagsinput('add', { "value": 7 , "text": "Sydney"      , "continent": "Australia" });
-elt.tagsinput('add', { "value": 10, "text": "Beijing"     , "continent": "Asia"      });
-elt.tagsinput('add', { "value": 13, "text": "Cairo"       , "continent": "Africa"    });
