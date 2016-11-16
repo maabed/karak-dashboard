@@ -24,10 +24,10 @@
         <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
 
       
-    <link href="assets/css/aseel.css" rel="stylesheet">
-
-    <!--  to creat the yes no checkbox -->
-     
+       
+    <!-- link to checkbox -->
+      <link href="assets/vendors/checkbox/checkbox.css" rel="stylesheet" />
+ 
 
       <!-- to creat the text editor  -->
         
@@ -164,227 +164,176 @@
                     </div>
                 </div>
             </div>
-
             <!-- Page Content -->
             <a href="#" id="PageTitle">Dashboard  /  Interface</a>
             <div id="page-content-wrapper">
-                <div class="container-fluid">
-                    <div class="row">
-                        
-                        
-                    </div>
-
-
-
-
-
-
-
-                    <div class="statistics">
-
-                        <div class="statistics-taps">
-                            <ul>
-                                <li class="active"><a href="#con3">Yesterday</a></li>
-                                <li><a href="#con2">Last Month</a></li>
-                                <li><a href="#con1">Last Year</a></li>
-                            </ul>
-                        </div>
-
-
-
-                     <div class="statistics-item" id="con3">
-                        <div class="row">
-                            <p style ="padding-left: 30px; font-family:Arial; color: #34495E; font-weight: bold; margin: 0;">Checkbox Controls </p>
-
+            <div class="jumbotron">
+                <div class="row section-margin">
+                    <p class ="largetitle"> Checkbox Controls </p>
+                    <form>
                         <div class="col-sm-4">
-          					<h5 class="con3-col"> Color Options </h5>
-          					<p style ="color: #707A7A; margin-left:20px; text-align: justify; width: 90%; font-size: 0.9em;">
-          						Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et </p>
-
-                         <div class="checkbox">
-                            <input id="checkbox1" type="checkbox">
-                            <label class ="fontsize" for="checkbox1"> A simple checkbox </label>
-                        </div>
-
-                        <div class="checkbox checkbox-primary"> 
-                            <input id="checkbox2" type="checkbox" checked="">
-                            <label  class ="fontsize"for="checkbox2"> I agree </label>
-                        </div>
-
-                        <div class="checkbox checkbox-success">
-                            <input id="checkbox3" type="checkbox">
-                            <label  class ="fontsize"for="checkbox3"> Mark </label>
-                        </div>
-
-                        <div class="checkbox checkbox-info">
-                            <input id="checkbox4" type="checkbox">
-                            <label class ="fontsize" for="checkbox4"> Action</label>
-                        </div>
-
-                        <div class="checkbox checkbox-warning">
-                            <input id="checkbox5" type="checkbox" checked="">
-                            <label  class ="fontsize"for="checkbox5"> Keep Me Signed in</label>
-                        </div>
-
-                        <div class="checkbox checkbox-danger">
-                            <input id="checkbox6" type="checkbox" checked="">
-                            <label class ="fontsize" for="checkbox6"> Mark as read</label>
-                        </div>
-
-                        </div>
-
-                    <div class="col-sm-4">
-                        <h5 class="con3-col">Shape Options </h5>
-
-                        <p style ="color: #707A7A; margin-left:20px; text-align: justify; width: 90%; font-size: 0.9em; 
-                            font-weight:solid;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-
-
-                         <div  class="checkbox checkbox-circle">
-                             <input id="checkbox7" type="checkbox">
-                            <label  for="checkbox7">Default</label>
-                        </div>
-
-                        <div class="checkbox checkbox-circle checkbox-primary">
-                            <input   id="checkbox8" type="checkbox" checked="">
-                            <label  class ="fontsize " for="checkbox8">Primary </label>
-                        </div>
-
-                         <div class="checkbox checkbox checkbox-circle checkbox-success">
-                            <input class ="checkradius" id="checkbox9" type="checkbox">
-                            <label  class ="fontsize"for="checkbox9">Success </label>
-                        </div>  
-                     </div>
-
-            
-                    <div class="col-sm-4">
-                                    
-                         <h5 class="con3-col">Yes/No checkboxes </h5>
-
-                         <p style ="color: #707A7A; margin-left:20px; text-align: justify; width: 90%; font-size: 0.9em;">
-                        	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et..</p>
-
-                               
-                         <div class="row" >
-
-                                <div class="col-sm-1.1  yes-no-check" >
-                                     <input id="toggleCheckbox-1" title="Example title" data-group-cls="btn-group-xs">
-                                </div>
-
-                                 <div class="col-sm-1.1 yes-no-check">
-                                    <input id="toggleCheckbox-2" title="Example title"  data-reverse data-group-cls="btn-group-xs">
-                                </div>
-
-                                 <div class="col-sm-1.1 yes-no-check">  
-                                    <input id="toggleCheckbox-3"  data-group-cls="btn-group-xs" checked data-on-active-cls="btn-warning" >
-                                
-                                </div>
-
-                        </div>
-
-                        <div class="row" >
-
-                            <div class ="col-sm-1.1 yes-no-check">
-                                <input id="toggleCheckbox-4" data-off-icon-cls="glyphicon-thumbs-down" data-on-icon-cls="glyphicon-thumbs-up" data-group-cls="btn-group-ms">
+          				    <h5 class="mediumtitle"> Color Options </h5>
+          				    <h6 class="pargraph-design">
+          				    Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et </h6>
+                            <div class="checkbox">
+                                <input id="checkbox1" type="checkbox">
+                                <label class ="fontsize" for="checkbox1"> A simple checkbox </label>
+                            </div>
+                            <div class="checkbox checkbox-primary"> 
+                                <input id="checkbox2" type="checkbox" checked="">
+                                <label  class ="fontsize"for="checkbox2"> I agree </label>
                             </div>
 
-                           <div class ="col-sm-1.1 yes-no-check">
+                            <div class="checkbox checkbox-success">
+                                <input id="checkbox3" type="checkbox">
+                                <label  class ="fontsize"for="checkbox3"> Mark </label>
+                            </div>
+
+                            <div class="checkbox checkbox-info">
+                                <input id="checkbox4" type="checkbox">
+                                <label class ="fontsize" for="checkbox4"> Action</label>
+                            </div>
+
+                            <div class="checkbox checkbox-warning">
+                                <input id="checkbox5" type="checkbox" checked="">
+                                <label  class ="fontsize"for="checkbox5"> Keep Me Signed in</label>
+                            </div>
+
+                            <div class="checkbox checkbox-danger">
+                                <input id="checkbox6" type="checkbox" checked="">
+                                <label class ="fontsize" for="checkbox6"> Mark as read</label>
+                            </div>
+                        </div>
+                    </form>
+
+                <div class="col-sm-4">
+                    <form>
+                        <h5 class="mediumtitle">Shape Options </h5>
+                        <h6 class="pargraph-design">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</h6>
+                        <div class="checkbox checkbox-circle">
+                            <input id="checkbox7" type="checkbox">
+                            <label  for="checkbox7">Default</label>
+                        </div>
+                        <div class="checkbox checkbox-circle checkbox-primary">
+                            <input id="checkbox8" type="checkbox" checked="">
+                            <label class ="fontsize " for="checkbox8">Primary </label>
+                        </div>
+                        <div class="checkbox checkbox checkbox-circle checkbox-success">
+                            <input class ="checkradius" id="checkbox9" type="checkbox">
+                            <label  class ="fontsize"for="checkbox9">Success </label>
+                        </div> 
+                        </form> 
+                </div>
+                <div class="col-sm-4">
+                    <form>           
+                        <h5 class="mediumtitle">Yes/No checkboxes </h5>
+                        <h6  class="pargraph-design">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et..</h6> 
+                        <div class="row" >
+                            <div class="col-sm-1.1  yes-no-check" >
+                            <input id="toggleCheckbox-1" title="Example title" data-group-cls="btn-group-xs" checked="">
+                            </div>
+                            <div class="col-sm-1.1 yes-no-check">
+                            <input id="toggleCheckbox-2" title="Example title"  data-reverse data-group-cls="btn-group-xs" data-on-active-cls="btn-primary" checked="">
+                            </div>
+                            <div class="col-sm-1.1 yes-no-check">  
+                            <input id="toggleCheckbox-3"  data-group-cls="btn-group-xs" checked data-on-active-cls="btn-warning" >
+                            </div>
+
+                        </div>
+                        <div class="row" >
+                            <div class ="col-sm-1.1 yes-no-check">
+                            <input id="toggleCheckbox-4" data-off-icon-cls="glyphicon-thumbs-down" data-on-icon-cls="glyphicon-thumbs-up" data-group-cls="btn-group-ms" checked="" >
+                            </div>
+
+                            <div class ="col-sm-1.1 yes-no-check">
                             <input id="toggleCheckbox-5" data-off-label="false" data-on-label="false" data-off-icon-cls="glyphicon-thumbs-down" data-on-icon-cls="glyphicon-thumbs-up" data-group-cls="btn-group-xs">
-                           </div>
-
+                            </div>
                         </div>
-                        </div>  
-                        </div>
-
-                        </div>
-
-                        </div>
+                    </form>
+                </div>  
+            </div>
         </div>
 
 
-
     <!-- ***************************************Slide Toggle *****************************************-->
-                    <div class="row section-margin">
-                        <div class="col-sm-4">
-                            <div class="col-contint">
-                                <p  class ="titledesign">SlideToggle </p>
+                <div class="row ">
+                    <div class="col-sm-4">
+                        <div class="col-contint">
+                            <p  class ="largetitle">SlideToggle </p>
+                            <h6 style ="color: #707A7A; margin-left:12px;margin-top:15px; margin-bottom:10px; text-align: justify; font-size: 0.9em;font-weight:solid;">Checked</h6> 
 
-                                 <h6 style ="color: #707A7A; margin-left:12px;margin-top:15px; margin-bottom:10px; text-align: justify; font-size: 0.9em; 
-                                 font-weight:solid;">Checked</h6>   
+                            <div class="switch toggleswitch">
+                                <input  id="cmn-toggle-1" class="cmn-toggle cmn-toggle-roundGreen" type="checkbox">
+                                <label for="cmn-toggle-1"></label>
+                            </div>
+                            <h6 style ="color: #707A7A; margin-left:12px;margin-top:10px; margin-bottom:10px; text-align: justify; font-size: 0.9em;  font-weight:solid;">Multiple switches </h6>
 
-                                <div class="switch toggleswitch " >
-                                    <input  id="cmn-toggle-1" class="cmn-toggle cmn-toggle-roundGreen" type="checkbox">
-                                    <label for="cmn-toggle-1"></label>
-                                 </div>
+                            <div class="switch toggleswitch " >
+                                <input  id="cmn-toggle-2" class="cmn-toggle cmn-toggle-roundGreen" type="checkbox" checked="">
+                                <label for="cmn-toggle-2"></label>
+                            </div>
 
+                            <div class="switch toggleswitchspacific " >
+                                <input  id="cmn-toggle-3" class="cmn-toggle cmn-toggle-roundGreen" type="checkbox">
+                                <label for="cmn-toggle-3"></label>
+                            </div>
 
-                                <h6 style ="color: #707A7A; margin-left:12px;margin-top:10px; margin-bottom:10px; text-align: justify; font-size: 0.9em;  font-weight:solid;">Multiple switches </h6>
+                            <div class="switch toggleswitchspacific" >
+                                <input  id="cmn-toggle-4" class="cmn-toggle cmn-toggle-roundGreen" type="checkbox" checked="">
+                                <label for="cmn-toggle-4"></label>
+                            </div>
 
-                                <div class="switch toggleswitch " >
-                                    <input  id="cmn-toggle-2" class="cmn-toggle cmn-toggle-roundGreen" type="checkbox">
-                                    <label for="cmn-toggle-2"></label>
-                                </div>
+                            <h6 style ="color: #707A7A; margin-left:12px;margin-top:10px; margin-bottom:10px; text-align: justify; font-size: 0.9em; font-weight:solid;">Colored
+                            </h6>
 
-                                <div class="switch toggleswitchspacific " >
-                                    <input  id="cmn-toggle-3" class="cmn-toggle cmn-toggle-roundGreen" type="checkbox">
-                                    <label for="cmn-toggle-3"></label>
-                                </div>
-               
-
-                                <div class="switch toggleswitchspacific" >
-                                    <input  id="cmn-toggle-4" class="cmn-toggle cmn-toggle-roundGreen" type="checkbox">
-                                    <label for="cmn-toggle-4"></label>
-                                </div>
-
-                                <h6 style ="color: #707A7A; margin-left:12px;margin-top:10px; margin-bottom:10px; text-align: justify; font-size: 0.9em; font-weight:solid;">Colored
-                                </h6>
-
-                                <div class="switch toggleswitch" >
-                                    <input  id="cmn-toggle-5" class="cmn-toggle cmn-toggle-roundBlue" type="checkbox">
-                                    <label for="cmn-toggle-5"></label>
-                                </div>
+                            <div class="switch toggleswitch" >
+                                <input  id="cmn-toggle-5" class="cmn-toggle cmn-toggle-roundBlue" type="checkbox"checked="">
+                                <label for="cmn-toggle-5"></label>
+                            </div>
                                         
-                                <div class="switch toggleswitch" >
-                                    <input  id="cmn-toggle-6" class="cmn-toggle cmn-toggle-roundPink" type="checkbox">
-                                    <label for="cmn-toggle-6"></label>
-                                </div>
+                            <div class="switch toggleswitch" >
+                                <input  id="cmn-toggle-6" class="cmn-toggle cmn-toggle-roundPink" type="checkbox"checked="">
+                                <label for="cmn-toggle-6"></label>
+                            </div>
 
-                                <div class="switch toggleswitch" >
-                                    <input  id="cmn-toggle-7" class="cmn-toggle cmn-toggle-roundGreen1" type="checkbox">
-                                    <label for="cmn-toggle-7"></label>
-                                </div>
+                            <div class="switch toggleswitch" >
+                                <input  id="cmn-toggle-7" class="cmn-toggle cmn-toggle-roundGreen1" type="checkbox"checked="">
+                                <label for="cmn-toggle-7"></label>
+                            </div>
 
-                                <div class="switch toggleswitch" >
-                                    <input  id="cmn-toggle-8" class="cmn-toggle cmn-toggle-roundRed" type="checkbox">
-                                    <label for="cmn-toggle-8"></label>
-                                </div>
+                            <div class="switch toggleswitch" >
+                                <input  id="cmn-toggle-8" class="cmn-toggle cmn-toggle-roundRed" type="checkbox"checked="">
+                                <label for="cmn-toggle-8"></label>
+                            </div>
 
-                                <h6 style ="color: #707A7A; margin-left:12px;margin-top:10px; margin-bottom:10px; text-align: justify; font-size: 0.9em;  font-weight:solid;">Or the secondary color, which will change the switch shadow and default border:</h6>
+                            <h6 style ="color: #707A7A; margin-left:12px;margin-top:10px; margin-bottom:10px; text-align: justify; font-size: 0.9em;  font-weight:solid;">Or the secondary color, which will change the switch shadow and default border:</h6>
 
-                                   
-                                <div class="switch toggleswitch" >
-                                    <input  id="cmn-toggle-9" class="cmn-toggle cmn-toggle-roundYellow" type="checkbox">
-                                    <label for="cmn-toggle-9"></label>
+                            <div class="switch toggleswitch" >
+                                <input  id="cmn-toggle-9" class="cmn-toggle cmn-toggle-roundYellow" type="checkbox">
+                                <label for="cmn-toggle-9"></label>
                                 </div>
                             </div>
-                        </div>
                     </div>
+                </div>
 
-     <!-- ************************* The text Editor Part **************************-->
-                    <div class="row section-margin">
-                        <div class="col-sm-12">
-                            <div class="col-contint static-height">
-                                <p  class ="titledesign">Text Editor</p>
+     <!--The text Editor Part -->
+                <div class="row section-margin">
+                    <div class="col-sm-12">
+                        <div class="col-contint  static-height">
+                            <p  class ="largetitle">Text Editor</p>
+                            <div class ="texteditordesign">
                                 <div id="summernote">hello </div>
                             </div>
+                        </div>
                         </div> 
                     </div>
 
                     <h6 class="made-by">Made By  <b>New Versions</b></h6>
-                </div>
+            </div>
 
                 <!-- /#page-content-wrapper -->
-            </div>
+        </div>
             <!-- /#wrapper -->
             <div id="Right-Side-Section">
                 <div id="Right-Side-Section-Togle">
@@ -521,56 +470,14 @@
         <script src="assets/js/calender.js"></script>
         <script src="assets/js/summernote.js"></script>
 
-        <script type="text/javascript">
-                $(function() {
-                    $('#summernote').summernote({
-                        height: 200
-                   });
 
-                });
-        </script> 
+        <script src='assets/js/form-aseel.js'></script>
 
-          <script>
-                 
-    $('#toggleCheckbox-1').checkboxpicker();
-    $('#toggleCheckbox-1').change(function() {
+
+<link href="assets/css/aseel.css" rel="stylesheet">
+
+
        
-      $('#toggleCheckbox-1').prop('disabled', false);
-    });
-
-
-
-    $('#toggleCheckbox-2').checkboxpicker();
-    $('#toggleCheckbox-2').change(function() {
-       
-      $('#toggleCheckbox-2').prop('disabled', false);
-    });
-
-    $('#toggleCheckbox-3').checkboxpicker();
-    $('#toggleCheckbox-3').change(function() {
-       
-      $('#toggleCheckbox-3').prop('disabled', false);
-    });
-
-
-
-    $('#toggleCheckbox-4').checkboxpicker();
-    $('#toggleCheckbox-4').change(function() {
-       
-     $('#toggleCheckbox-4').prop('disabled', false);
-    });
-
-
-
-
-    $('#toggleCheckbox-5').checkboxpicker();
-    $('#toggleCheckbox-5').change(function() {
-       
-     $('#toggleCheckbox-5').prop('disabled', false);
-    });
-
-
-                </script>
 
 
     </body>
