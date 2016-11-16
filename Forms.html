@@ -23,11 +23,9 @@
     <link href="assets/css/input_style.css" rel="stylesheet" />
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/vendors/select-plugin/css/bootstrap-select.css">
-    <link href="assets/css/rayan.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/vendors/tag-input/bootstrap-tagsinput.css">
-    <!-- <link href="assets/vendors/tag-input/examples/assets/app.css"> -->
-    <link rel="stylesheet" href="assets/vendors/drop-zone/dropzone.css">
-
+    <link rel="stylesheet" href="assets/vendors/drop-zone/dropzone.css">    
+    
 </head>
 <body>
     <div id="wrapper">
@@ -240,17 +238,164 @@
             </div>
             
             <!-- /First Row Forms End -->
+            <!-- Start of checkboxes group -->  
+            
+            <div class="jumbotron">
+                <div class="row">
+                    <p class ="largetitle"> Checkbox Controls </p>
+                    <form>
+                        <div class="col-sm-4">
+          				    <h5 class="mediumtitle"> Color Options </h5>
+          				    <h6 class="pargraph-design">
+          				    Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et </h6>
+                            <div class="checkbox">
+                                <input id="checkbox1" type="checkbox">
+                                <label class ="fontsize" for="checkbox1"> A simple checkbox </label>
+                            </div>
+                            <div class="checkbox checkbox-primary"> 
+                                <input id="checkbox2" type="checkbox" checked="">
+                                <label  class ="fontsize"for="checkbox2"> I agree </label>
+                            </div>
+
+                            <div class="checkbox checkbox-success">
+                                <input id="checkbox3" type="checkbox">
+                                <label  class ="fontsize"for="checkbox3"> Mark </label>
+                            </div>
+
+                            <div class="checkbox checkbox-info">
+                                <input id="checkbox4" type="checkbox">
+                                <label class ="fontsize" for="checkbox4"> Action</label>
+                            </div>
+
+                            <div class="checkbox checkbox-warning">
+                                <input id="checkbox5" type="checkbox" checked="">
+                                <label  class ="fontsize"for="checkbox5"> Keep Me Signed in</label>
+                            </div>
+
+                            <div class="checkbox checkbox-danger">
+                                <input id="checkbox6" type="checkbox" checked="">
+                                <label class ="fontsize" for="checkbox6"> Mark as read</label>
+                            </div>
+                        </div>
+                    </form>
+
+                <div class="col-sm-4">
+                    <form>
+                        <h5 class="mediumtitle">Shape Options </h5>
+                        <h6 class="pargraph-design">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</h6>
+                        <div class="checkbox checkbox-circle">
+                            <input id="checkbox7" type="checkbox">
+                            <label  for="checkbox7">Default</label>
+                        </div>
+                        <div class="checkbox checkbox-circle checkbox-primary">
+                            <input id="checkbox8" type="checkbox" checked="">
+                            <label class ="fontsize " for="checkbox8">Primary </label>
+                        </div>
+                        <div class="checkbox checkbox checkbox-circle checkbox-success">
+                            <input class ="checkradius" id="checkbox9" type="checkbox">
+                            <label  class ="fontsize"for="checkbox9">Success </label>
+                        </div> 
+                        </form> 
+                </div>
+                <div class="col-sm-4">
+                    <form>           
+                        <h5 class="mediumtitle">Yes/No checkboxes </h5>
+                        <h6  class="pargraph-design">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et..</h6> 
+                        <div class="row" >
+                            <div class="col-sm-1.1  yes-no-check" >
+                            <input id="toggleCheckbox-1" title="Example title" data-group-cls="btn-group-xs" checked="">
+                            </div>
+                            <div class="col-sm-1.1 yes-no-check">
+                            <input id="toggleCheckbox-2" title="Example title"  data-reverse data-group-cls="btn-group-xs" data-on-active-cls="btn-primary" checked="">
+                            </div>
+                            <div class="col-sm-1.1 yes-no-check">  
+                            <input id="toggleCheckbox-3"  data-group-cls="btn-group-xs" checked data-on-active-cls="btn-warning" >
+                            </div>
+
+                        </div>
+                        <div class="row" >
+                            <div class ="col-sm-1.1 yes-no-check">
+                            <input id="toggleCheckbox-4" data-off-icon-cls="glyphicon-thumbs-down" data-on-icon-cls="glyphicon-thumbs-up" data-group-cls="btn-group-ms" checked="" >
+                            </div>
+
+                            <div class ="col-sm-1.1 yes-no-check">
+                            <input id="toggleCheckbox-5" data-off-label="false" data-on-label="false" data-off-icon-cls="glyphicon-thumbs-down" data-on-icon-cls="glyphicon-thumbs-up" data-group-cls="btn-group-xs">
+                            </div>
+                        </div>
+                    </form>
+                </div>  
+            </div>
+        </div>
+            <!-- /End of checkboxes group --> 
+             
             <!-- Second Row Of forms -->
             
             <div class="row">
-                <div class="col-md-4"><div class="jumbotron"></div></div>
-                <div class="col-md-4 select-boxes-group">
+                <div class="col-md-4">
+                                <div class="col-contint">
+                            <p  class ="largetitle">SlideToggle </p>
+                            <h6 style ="color: #707A7A; margin-left:12px;margin-top:15px; margin-bottom:10px; text-align: justify; font-size: 0.9em;font-weight:solid;">Checked</h6> 
+
+                            <div class="switch toggleswitch">
+                                <input  id="cmn-toggle-1" class="cmn-toggle cmn-toggle-roundGreen" type="checkbox">
+                                <label for="cmn-toggle-1"></label>
+                            </div>
+                            <h6 style ="color: #707A7A; margin-left:12px;margin-top:10px; margin-bottom:10px; text-align: justify; font-size: 0.9em;  font-weight:solid;">Multiple switches </h6>
+
+                            <div class="switch toggleswitch " >
+                                <input  id="cmn-toggle-2" class="cmn-toggle cmn-toggle-roundGreen" type="checkbox" checked="">
+                                <label for="cmn-toggle-2"></label>
+                            </div>
+
+                            <div class="switch toggleswitchspacific " >
+                                <input  id="cmn-toggle-3" class="cmn-toggle cmn-toggle-roundGreen" type="checkbox">
+                                <label for="cmn-toggle-3"></label>
+                            </div>
+
+                            <div class="switch toggleswitchspacific" >
+                                <input  id="cmn-toggle-4" class="cmn-toggle cmn-toggle-roundGreen" type="checkbox" checked="">
+                                <label for="cmn-toggle-4"></label>
+                            </div>
+
+                            <h6 style ="color: #707A7A; margin-left:12px;margin-top:10px; margin-bottom:10px; text-align: justify; font-size: 0.9em; font-weight:solid;">Colored
+                            </h6>
+
+                            <div class="switch toggleswitch" >
+                                <input  id="cmn-toggle-5" class="cmn-toggle cmn-toggle-roundBlue" type="checkbox"checked="">
+                                <label for="cmn-toggle-5"></label>
+                            </div>
+                                        
+                            <div class="switch toggleswitch" >
+                                <input  id="cmn-toggle-6" class="cmn-toggle cmn-toggle-roundPink" type="checkbox"checked="">
+                                <label for="cmn-toggle-6"></label>
+                            </div>
+
+                            <div class="switch toggleswitch" >
+                                <input  id="cmn-toggle-7" class="cmn-toggle cmn-toggle-roundGreen1" type="checkbox"checked="">
+                                <label for="cmn-toggle-7"></label>
+                            </div>
+
+                            <div class="switch toggleswitch" >
+                                <input  id="cmn-toggle-8" class="cmn-toggle cmn-toggle-roundRed" type="checkbox"checked="">
+                                <label for="cmn-toggle-8"></label>
+                            </div>
+
+                            <h6 style ="color: #707A7A; margin-left:12px;margin-top:10px; margin-bottom:10px; text-align: justify; font-size: 0.9em;  font-weight:solid;">Or the secondary color, which will change the switch shadow and default border:</h6>
+
+                            <div class="switch toggleswitch" >
+                                <input  id="cmn-toggle-9" class="cmn-toggle cmn-toggle-roundYellow" type="checkbox">
+                                <label for="cmn-toggle-9"></label>
+                                </div>
+                            </div>
+                </div>
+                <div class="col-sm-4 select-boxes-group">
                     <div class="group-parent jumbotron">
                         <div class="group-header-middle">
                             <h4>Select boxes</h4>
                         </div>
                         <div class="row">
-                            <div class="form-section col-md-12">
+                            <div class="form-section col-sm-12">
                                 <label class="dropdown-type">Standard</label>
                                 <select class="select-display selectpicker empty col-12">
                                     <option value="Select">Select1</option>
@@ -260,7 +405,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="form-section col-md-12">
+                            <div class="form-section col-sm-12">
                                 <label class="dropdown-type">Select boxes with optgroups</label>
                                 <select class="select-display selectpicker empty col-12">
                                     <optgroup label="First group">
@@ -277,7 +422,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="form-section col-md-12">
+                            <div class="form-section col-sm-12">
                                 <label class="dropdown-type">Multiple select boxes</label>
                                 <select class="select-display selectpicker empty col-12" multiple>
                                     <option value="Select1">Select1</option>
@@ -288,7 +433,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="form-section col-md-12">
+                            <div class="form-section col-sm-12">
                                 <label class="dropdown-type">Live search</label>
                                 <select class="select-display selectpicker empty col-12" data-live-search="true">
                                     <option value="Select">Select1</option>
@@ -298,7 +443,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="form-section col-md-12">
+                            <div class="form-section col-sm-12">
                                 <label class="dropdown-type">Key words</label>
                                 <select class="select-display selectpicker empty col-12"  data-live-search="true">
                                     <option value="Select" data-tokens="first option">Select1</option>
@@ -310,37 +455,37 @@
                     </div>
                 </div>
                 
-                <div class="col-md-4">
+                <div class="col-sm-4 helpers-group">
                     <div class="group-parent jumbotron">
                         <div class="group-header-right">
                             <h4>Input helpers</h4>
                         </div>
                         <div class="row">
-                            <div class="form-section col-md-12">
+                            <div class="form-section col-sm-12">
                                 <label>Date <span class="helpers">e.g "2013/12/25"</span></label>
                                 <input type="text" class="form-control">
                             </div>
                         </div>
                         <div class="row">
-                            <div class="form-section col-md-12">
+                            <div class="form-section col-sm-12">
                                 <label>Telephone <span class="helpers">e.g "(324)3243-234"</span></label>
                                 <input type="text" class="form-control">
                             </div>
                         </div>
                         <div class="row">
-                            <div class="form-section col-md-12">
+                            <div class="form-section col-sm-12">
                                 <label>Custom <span class="helpers">e.g "4324324-23"</span></label>
                                 <input type="text" class="form-control">
                             </div>
                         </div>
                         <div class="row">
-                            <div class="form-section col-md-12">
+                            <div class="form-section col-sm-12">
                                 <label>Social security number <span class="helpers">e.g "2432-43432"</span></label>
                                 <input type="text" class="form-control">
                             </div>
                         </div>
                         <div class="row">
-                            <div class="form-section col-md-12">
+                            <div class="form-section col-sm-12">
                                 <label>Dollar prefix <span class="helpers">e.g "45.50$"</span></label>
                                 <input type="text" class="form-control">
                             </div>
@@ -350,11 +495,23 @@
             </div>
             
             <!-- /Second Row Forms End -->
+            <!-- Start of text editor --> 
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="col-contint  static-height">
+                        <p  class ="largetitle">Text Editor</p>
+                        <div class ="texteditordesign">
+                            <div id="summernote">hello </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
             
+            <!-- /End of text editor -->
             <!-- Tags & drag N'drop row -->
             
             <div class="row">
-                <div class=" col-md-6 Tags-group">
+                <div class=" col-sm-6 Tags-group">
                     <div class="group-parent jumbotron">
                         <div class="group-header-left">
                             <h4>Tag Input</h4>
@@ -389,13 +546,13 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 DragNdrop-group">
+                <div class="col-sm-6 DragNdrop-group">
                     <div class="group-parent jumbotron">
                         <div class="group-header-left">
                             <h4>Drag N' Drop</h4>
                         </div>
                         <div class="row dropzone-row">
-                            <div class="form-section col-md-12 dropzone-min">
+                            <div class="form-section col-sm-12 dropzone-min">
                                 <form action="/file-upload"class="dropzone" id="my-awesome-dropzone">
                                 </form>
                             </div>
@@ -534,5 +691,18 @@
     <script src='assets/vendors/lib/fullcalendar.min.js'></script>
     <script src="assets/vendors/lib/default/scheduler.min.js"></script>
     <script src="assets/js/calender.js"></script>
+    
+    
+    
+    
+    <script src="assets/vendors/bootstrap-checkbox/bootstrap-checkbox.min.js"></script>
+        
+    <link href="assets/vendors/summernote/summernote.css" rel="stylesheet">
+    <link href="assets/css/forms.css" rel="stylesheet">
+
+       
+
+    <script src="assets/vendors/summernote/summernote.js"></script>
+    <script src='assets/js/forms.js'></script>
 </body>
 </html>
