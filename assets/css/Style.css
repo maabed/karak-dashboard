@@ -1428,6 +1428,15 @@ hr {
 
     .login-text p { line-height:1.4em;font-size :1.3em;
     }
+.rigistration-container {
+    width :35%;
+    padding :1em;
+    margin : 0 auto ;
+    background-color:#fff;
+    border-bottom-right-radius :3px;
+     border-bottom-left-radius  :3px;
+
+}
 
 @media(min-width:768px) {
     #wrapper {
@@ -1482,6 +1491,10 @@ hr {
     }
 
     .forgot-Password {
-        float: none;
+        float: right ;
+    }
+    .login-background { display :none; 
+    }
+    .rigistration-container {width:100%;
     }
 }
