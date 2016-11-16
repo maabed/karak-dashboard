@@ -1,7 +1,7 @@
 var cities = new Bloodhound({
   datumTokenizer: Bloodhound.tokenizers.obj.whitespace('text'),
   queryTokenizer: Bloodhound.tokenizers.whitespace,
-  prefetch: 'assets/cities.json'
+  prefetch: 'assets/vendors/tag-input/cities.json'
 });
 cities.initialize();
 
@@ -34,7 +34,7 @@ elt.tagsinput('add', { "value": 13, "text": "Cairo"       , "continent": "Africa
 var cities = new Bloodhound({
   datumTokenizer: Bloodhound.tokenizers.obj.whitespace('text'),
   queryTokenizer: Bloodhound.tokenizers.whitespace,
-  prefetch: 'assets/cities.json'
+  prefetch: 'assets/vendors/tag-input/cities.json'
 });
 cities.initialize();
 
