@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Blue Dashboard</title>
@@ -166,11 +166,10 @@
         <a href="#" id="PageTitle">Dashboard  /  Interface</a>
         <div id="page-content-wrapper">
             
-            
             <!-- First Row Forms -->
 
             <div class="row">
-                <div class=" col-md-6 left-group">
+                <div class=" col-xs-6 left-group">
                     <div class="group-parent jumbotron">
                         <div class="group-header-left">
                             <h4>Default Style</h4>
@@ -207,34 +206,34 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6 right-group">
+                <div class="col-xs-6 right-group">
                     <div class="group-parent jumbotron row group-upper">
-                        <div class="group-header-right form-section col-md-12">
+                        <div class="group-header-right form-section col-xs-12">
                             <h4>Login Style</h4>
                         </div>
-                        <div class="form-section col-md-12 top">
+                        <div class="form-section col-xs-12 top">
                             <span class="form-labels">Username</span>
                             <input type="text" class="form-control">
                         </div>
-                        <div class="form-section col-md-12">
+                        <div class="form-section col-xs-12">
                             <span class="form-labels">Password</span>
                             <input type="text" class="form-control">
                         </div> 
                     </div>
-                    
+
                     <div class="group-parent jumbotron row group-lower">
-                        <div class="group-header-right form-section col-md-12">
+                        <div class="group-header-right form-section col-xs-12">
                             <h4>Login With Icons</h4>
                         </div>
-                        <div class="row">
-                            <div class="col-md-6 form-section input-with-icons">
-                                <i class="fa fa-user user-icon" aria-hidden="true"></i>
-                                <input type="text" placeholder="Email Address" class="form-control placeholder-position">
-                            </div>
-                            <div class="col-md-6 form-section input-with-icons">
-                                <i class="fa fa-lock user-icon" aria-hidden="true"></i>
-                                <input type="text" placeholder="Password" class="form-control placeholder-position">                              
-                            </div>
+                        <div class="form-section col-xs-6">
+                            <label class="email-label">
+                                <input type="text" class="form-control email-input" placeholder="Email" />
+                            </label>
+                        </div>
+                        <div class="form-section col-xs-6">
+                            <label class="password-label">
+                                <input type="text" class="form-control password-input" placeholder="Password" />
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -396,7 +395,7 @@
                             <h4>Drag N' Drop</h4>
                         </div>
                         <div class="row dropzone-row">
-                            <div class="form-section col-md-12">
+                            <div class="form-section col-md-12 dropzone-min">
                                 <form action="/file-upload"class="dropzone" id="my-awesome-dropzone">
                                 </form>
                             </div>
@@ -525,7 +524,7 @@
     <script src="assets/vendors/select_plugin/dist/js/bootstrap-select.js"></script>
     <script src="assets/vendors/tag_input/dist/bootstrap-tagsinput.js"></script>
     <script src="assets/vendors/tag_input/typeahead.bundle.min.js"></script>
-    <script src="assets/vendors/tag_input/data.js"></script>
+    <script src="assets/js/forms_rayan.js"></script>
     <script src="assets/vendors/drop_zone/dropzone.js"></script>
     
     <link href='assets/vendors/lib/cupertino/jquery-ui.min.css' rel='stylesheet' />

@@ -3,7 +3,7 @@
 }
 .form-section{
     min-height: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 12px;
 }
 .form-labels{
     font-weight: 600;
@@ -21,6 +21,9 @@
 .group-header-right{
     padding-top: 0px !important;
     padding-bottom: 0px !important;
+}
+.dropzone-min{
+    min-height: 415px;
 }
 .top{
     padding-bottom: 0px !important;
@@ -47,17 +50,54 @@
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
 }
-.placeholder-position{
+.icon-input{
     padding-left: 35px;
+}
+.email-input {
+    padding-left: 35px;
+}
+.email-label {
+    position: relative;
+}
+.email-label:before {
+    color: #666;
+    content:"\f007";
+    font-family: FontAwesome;
+    position: absolute;
+    top: 0px;
+    left: 1px;
+    background-color: rgba(204, 204, 204, 0.3);
+    border-top-left-radius: 3px;
+    border-bottom-left-radius:3px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.password-input {
+    padding-left: 35px;
+}
+.password-label {
+    position: relative;
+}
+.password-label:before {
+    color: #666;
+    content:"\f023";
+    font-family: FontAwesome;
+    position: absolute;
+    top: 0px;
+    left: 1px;
+    background-color: rgba(204, 204, 204, 0.3);
+    border-top-left-radius: 3px;
+    border-bottom-left-radius:3px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 .input-with-icons{
     position: relative;
     bottom: 30px;
-}
-@media screen and (min-width: 991px) and (max-width: 1600px) { 
-    .group-parent.jumbotron.row.group-lower{
-       height: 128px;
-    }
 }
 .tag.label.label-info{
     background-color: #48b0f7;
@@ -125,7 +165,7 @@ label{
     color: #dddddd;
 }
 .group-parent.jumbotron.row.group-upper{
-    margin-bottom: 33px;
+    margin-bottom: 25px;
 }
 .form-control{
     box-shadow: none;
