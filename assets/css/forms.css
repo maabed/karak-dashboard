@@ -1,64 +1,64 @@
  
-.titledesign
-{
-  padding-left: 10px;
-	font-family:Arial;
-	color: #34495E; 
-	font-weight: bold; 
-	margin: 0; 
-	margin-top:10px;
+
+.right-group{
+    padding-right: 0px;
+}
+.left-group{
+    padding-right: 0px;
+}
+.title{
+    padding-top: 15px;
+}
+.description{
+    padding: 15px 15px 0px 15px;
+}
+.group-content{
+    margin-left: 0px;
+    margin-right: 0px;
 }
 .pargraph-design 
 {
-  color: #687A9B;
-  margin-left:20px; 
-  text-align: justify;
-  width: 90%;
-  font-size: 0.83em;"
+    color: #687A9B;
+    text-align: justify;
+    width: 90%;
+    font-size: 0.83em;
 
 }
 
 .largetitle
 {
-  padding-top: 1.3em;
-  padding-left: 5px;
-  font-family:Arial;
-  color: #34495E;
-  font-weight: bold;
-  margin: 0;
-  font-size: 15px;
-  margin-left: 5px;
+    padding-top: 1.3em;
+    font-family:Arial;
+    color: #34495E;
+    font-weight: bold;
+    margin: 0;
 }
 
 .mediumtitle
 {
-  color: #3B97D2;
-  margin-left: 20px;
-  margin-top: 20px;
+    color: #3B97D2;
+    margin-top: 20px;
 }
-
-.texteditordesign
-{
-  margin: 1em 1em;
+.one-col{
+    padding-right: 0px;
 }
-
 .jumbotron{
-  background-color: #fff;
-  padding-top: 0.8em;
-  border-radius: 2px;
-  margin-top: .1em; 
-  padding-bottom: 10px;
+    background-color: #fff;
+    padding-top: 0.8em;
+    border-radius: 2px;
+    margin-top: .1em; 
+    padding-bottom: 10px;
 }
 
 .jumbotron p{
-  font-weight: bold;
-  font-size: 15px;
-  margin-bottom: 5px;
-  margin-left: 22px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-left: 22px;
 }
 .yes-no-check .btn
 {
-  padding-left: .9em;
+    padding: 6px 12px 6px 12px;
 }
 .hidden 
 { webkit-box-shadow: none;
@@ -67,293 +67,292 @@
 }
 .fontsize
 {
-  font-size: 12px;
-  font-weight: normal;
+    font-size: 12px;
+    font-weight: normal;
 }
 .checkradius
 {
-  margin-left:15px;
+    margin-left:15px;
 }
 /* override on checkbox*/
 .checkbox 
 {
-  padding-left: 40px;
+    padding-left: 25px;
 }
 .checkbox label 
 {
-  display: inline-block;
-  position: relative;
-  padding-left: 0px;
-  font-size: 12px;
-  font-weight: normal;
-  margin-top:0px;
+    display: inline-block;
+    position: relative;
+    padding-left: 0px;
+    font-size: 12px;
+    font-weight: normal;
+    margin-top:0px;
 }
 .checkbox label::before {
-  margin-left: -25px;
+    margin-left: -25px;
 }
 .checkbox label::after {
-  margin-left: -25px;
+    margin-left: -25px;
 }
 /* to manage the  yes - no checkbox  */
 .yes-no-check 
 {
-  margin-left: 2.9em;
-  float: left;
-  display: inline-block;
-  margin-top: 2em;
-  text-align: justify;
+    margin-left: 0.9em;
+    float: left;
+    display: inline-block;
+    margin-top: 2em;
+    text-align: justify;
 }
 /*
 CSS to create the toggle
 */
 .toggleswitch
 {
-	margin-left: 15px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
 }
 .toggleswitchspacific
 {
-	margin-left: 50px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	display: inline-block;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
 }
 .cmn-toggle {
-  position: absolute;
-  margin-left: -9999px;
-  visibility: hidden;
+    position: absolute;
+    margin-left: -9999px;
+    visibility: hidden;
 }
 .cmn-toggle + label {
-  display: block;
-  position: relative;
-  cursor: pointer;
-  outline: none;
-  user-select: none;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
 }
 /*   to change the background color  to blue color for the toggle*/
 input.cmn-toggle-roundBlue + label {
-  padding: 2px;
-  width: 50px;
-  height: 30px;
-  background-color: #dddddd;
-  border-radius: 60px;
+    padding: 2px;
+    width: 50px;
+    height: 30px;
+    background-color: #dddddd;
+    border-radius: 60px;
 }
 input.cmn-toggle-roundBlue + label:before,
 input.cmn-toggle-roundBlue + label:after {
-  display: inline;
-  position: absolute;
-  top: 1px;
-  left: 1px;
-  bottom: 1px;
-  content: "";
+    display: inline;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    bottom: 1px;
+    content: "";
 }
 input.cmn-toggle-roundBlue + label:before {
-  right: 1px;
-  background-color: #f1f1f1;
-  border-radius: 60px;
-  transition: background 0.1s;
+    right: 1px;
+    background-color: #f1f1f1;
+    border-radius: 60px;
+    transition: background 0.1s;
 }
 input.cmn-toggle-roundBlue + label:after {
-  width: 30px;
-  background-color: #fff;
-  border-radius: 100%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  transition: margin 0.1s;
+    width: 30px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: margin 0.1s;
 }
 input.cmn-toggle-roundBlue:checked + label:before {
-  background-color: #7dcbf2;
+    background-color: #7dcbf2;
 }
 input.cmn-toggle-roundBlue:checked + label:after {
-  margin-left: 20px;
+    margin-left: 20px;
 }
 /*   to change the background color to blue color  for the toggle*/
 /*   to change the background color  to pink color for the toggle*/
 input.cmn-toggle-roundPink + label {
-  padding: 2px;
-  width: 50px;
-  height: 30px;
-  background-color: #dddddd;
-  border-radius: 60px;
+    padding: 2px;
+    width: 50px;
+    height: 30px;
+    background-color: #dddddd;
+    border-radius: 60px;
 }
 input.cmn-toggle-roundPink + label:before,
 input.cmn-toggle-roundPink + label:after {
-  display: inline;
-  position: absolute;
-  top: 1px;
-  left: 1px;
-  bottom: 1px;
-  content: "";
+    display: inline;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    bottom: 1px;
+    content: "";
 }
 input.cmn-toggle-roundPink + label:before {
-  right: 1px;
-  background-color: #f1f1f1;
-  border-radius: 60px;
-  transition: background 0.1s;
+    right: 1px;
+    background-color: #f1f1f1;
+    border-radius: 60px;
+    transition: background 0.1s;
 }
 input.cmn-toggle-roundPink + label:after {
-  width: 30px;
-  background-color: #fff;
-  border-radius: 100%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  transition: margin 0.1s;
+    width: 30px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: margin 0.1s;
 }
 input.cmn-toggle-roundPink:checked + label:before {
-  background-color: #FF7791;
+    background-color: #FF7791;
 }
 input.cmn-toggle-roundPink:checked + label:after {
-  margin-left: 20px;
+    margin-left: 20px;
 }
-  /*   to change the background color  to pink color for the toggle*/
-  /*   to change the background color  to   color for the toggle*/
+/*   to change the background color  to pink color for the toggle*/
+/*   to change the background color  to   color for the toggle*/
 input.cmn-toggle-roundGreen1 + label {
-  padding: 2px;
-  width: 50px;
-  height: 30px;
-  background-color: #dddddd;
-  border-radius: 60px;
+    padding: 2px;
+    width: 50px;
+    height: 30px;
+    background-color: #dddddd;
+    border-radius: 60px;
 }
 input.cmn-toggle-roundGreen1 + label:before,
 input.cmn-toggle-roundGreen1 + label:after {
-  display: inline;
-  position: absolute;
-  top: 1px;
-  left: 1px;
-  bottom: 1px;
-  content: "";
+    display: inline;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    bottom: 1px;
+    content: "";
 }
 input.cmn-toggle-roundGreen1 + label:before {
-  right: 1px;
-  background-color: #f1f1f1;
-  border-radius: 60px;
-  transition: background 0.1s;
+    right: 1px;
+    background-color: #f1f1f1;
+    border-radius: 60px;
+    transition: background 0.1s;
 }
 input.cmn-toggle-roundGreen1 + label:after {
-  width: 30px;
-  background-color: #fff;
-  border-radius: 100%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  transition: margin 0.1s;
+    width: 30px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: margin 0.1s;
 }
 input.cmn-toggle-roundGreen1:checked + label:before {
-  background-color: #3CC8AD;
+    background-color: #3CC8AD;
 }
 input.cmn-toggle-roundGreen1:checked + label:after {
-  margin-left: 20px;
+    margin-left: 20px;
 }
 /*   to change the background color for the toggle*/
 /*   to change the background  color  to  Red  color for the toggle*/
 input.cmn-toggle-roundRed + label {
-  padding: 2px;
-  width: 50px;
-  height: 30px;
-  background-color: #dddddd;
-  border-radius: 60px;
+    padding: 2px;
+    width: 50px;
+    height: 30px;
+    background-color: #dddddd;
+    border-radius: 60px;
 }
 input.cmn-toggle-roundRed + label:before,
 input.cmn-toggle-roundRed + label:after {
-  display: inline;
-  position: absolute;
-  top: 1px;
-  left: 1px;
-  bottom: 1px;
-  content: "";
+    display: inline;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    bottom: 1px;
+    content: "";
 }
 input.cmn-toggle-roundRed + label:before {
-  right: 1px;
-  background-color: #f1f1f1;
-  border-radius: 60px;
-  transition: background 0.1s;
+    right: 1px;
+    background-color: #f1f1f1;
+    border-radius: 60px;
+    transition: background 0.1s;
 }
 input.cmn-toggle-roundRed + label:after {
-  width: 30px;
-  background-color: #fff;
-  border-radius: 100%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  transition: margin 0.1s;
+    width: 30px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: margin 0.1s;
 }
 input.cmn-toggle-roundRed:checked + label:before {
-  background-color: #DB5554;
+    background-color: #DB5554;
 }
 input.cmn-toggle-roundRed:checked + label:after {
-  margin-left: 20px;
+    margin-left: 20px;
 }
-  /*   to change the background color to red color for the toggle*/
+/*   to change the background color to red color for the toggle*/
 
-  /*   to change the background  color  to  Yellow  color for the toggle*/
+/*   to change the background  color  to  Yellow  color for the toggle*/
 input.cmn-toggle-roundYellow + label {
-  padding: 2px;
-  width: 50px;
-  height: 30px;
-  background-color: #dddddd;
-  border-radius: 60px;
+    padding: 2px;
+    width: 50px;
+    height: 30px;
+    background-color: #dddddd;
+    border-radius: 60px;
 }
 input.cmn-toggle-roundYellow + label:before,
 input.cmn-toggle-roundYellow + label:after {
-  display: inline;
-  position: absolute;
-  top: 1px;
-  left: 1px;
-  bottom: 1px;
-  content: "";
+    display: inline;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    bottom: 1px;
+    content: "";
 }
 input.cmn-toggle-roundYellow + label:before {
-  right: 1px;
-  background-color: #f1f1f1;
-  border-radius: 60px;
-  transition: background 0.1s;
+    right: 1px;
+    background-color: #f1f1f1;
+    border-radius: 60px;
+    transition: background 0.1s;
 }
 input.cmn-toggle-roundYellow + label:after {
-  width: 30px;
-  background-color: #fff;
-  border-radius: 100%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  transition: margin 0.1s;
+    width: 30px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: margin 0.1s;
 }
 input.cmn-toggle-roundYellow:checked + label:before {
-  background-color: #FEC200;
+    background-color: #FEC200;
 }
 input.cmn-toggle-roundYellow:checked + label:after {
-  margin-left: 20px;
+    margin-left: 20px;
 }
 /*   to change the background color to Yellow color for the toggle*/
 
 /*to change the background color to Green color for the toggle */
 input.cmn-toggle-roundGreen + label {
-  padding: 2px;
-  width: 50px;
-  height: 30px;
-  background-color: #dddddd;
-  border-radius: 60px;
+    padding: 2px;
+    width: 50px;
+    height: 30px;
+    background-color: #dddddd;
+    border-radius: 60px;
 }
 input.cmn-toggle-roundGreen + label:before,
 input.cmn-toggle-roundGreen + label:after {
-  display: inline;
-  position: absolute;
-  top: 1px;
-  left: 1px;
-  bottom: 1px;
-  content: "";
+    display: inline;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    bottom: 1px;
+    content: "";
 }
 input.cmn-toggle-roundGreen + label:before {
-  right: 1px;
-  background-color: #f1f1f1;
-  border-radius: 60px;
-  transition: background 0.1s;
+    right: 1px;
+    background-color: #f1f1f1;
+    border-radius: 60px;
+    transition: background 0.1s;
 }
 input.cmn-toggle-roundGreen+ label:after {
-  width: 30px;
-  background-color: #fff;
-  border-radius: 100%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  transition: margin 0.1s;
+    width: 30px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: margin 0.1s;
 }
 input.cmn-toggle-roundGreen:checked + label:before {
-  background-color: #8ce196;
+    background-color: #8ce196;
 }
 input.cmn-toggle-roundGreen:checked + label:after {
-  margin-left: 20px;
+    margin-left: 20px;
 }
 /*to change the background color to Green color for the toggle */
 /* the start of rayan's CSS file  */
@@ -364,7 +363,14 @@ input.cmn-toggle-roundGreen:checked + label:after {
 .form-section{
     min-height: 0px;
     margin-bottom: 0px;
+    padding-bottom: 17px;
+}
+.third-section{
     padding-bottom: 16px;
+}
+.third-header{
+    padding-bottom: 16px;
+    padding-left: 0px;
 }
 .form-labels{
     font-weight: 600;
@@ -376,8 +382,33 @@ input.cmn-toggle-roundGreen:checked + label:after {
 .helpers-group{
     padding-top: 15px;
 }
-.select-boxes-group{
+.three-cols{
+    padding-right: 0px;
+}
+.first-third{
     padding-top: 15px;
+    padding-left: 0px;
+}
+.second-third{
+    padding-top: 15px;
+    padding-left: 0px;
+}
+.last-third{
+    padding-top: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+@media only screen and (min-width:425px) and (max-width: 767px){
+   .first-third{
+    padding-top: 15px;
+    padding-left: 0px;
+    padding-right: 0px
+}
+.second-third{
+    padding-top: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+} 
 }
 .Tags-group{
     padding-top: 25px;
@@ -490,9 +521,6 @@ input.cmn-toggle-roundGreen:checked + label:after {
 .group-header-right.inner-partitions.col-md-12>h4{
     font-weight: 600;
 }
-.group-header-middle>h4{
-    font-weight: 600;
-}
 .group-header-right>h4{
     font-weight: 600;
     padding-bottom: 4px;
@@ -503,16 +531,16 @@ input.cmn-toggle-roundGreen:checked + label:after {
     font-size: 10px;
 }
 select option[disabled]:first-child {
-	display: none;
+    display: none;
 }
 select option {
-	color: black;
+    color: black;
 }
 select option:first-child {
-	color: #999;
+    color: #999;
 }
 select.empty {
-	color: #999;
+    color: #999;
 }
 .select-width{
     width: 300px !important;
@@ -562,19 +590,19 @@ label{
     margin-bottom: 40px;
 }
 ::-webkit-input-placeholder {
-   color: rgba(204, 204, 204, 0.6) !important;
+    color: rgba(204, 204, 204, 0.6) !important;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: rgba(204, 204, 204, 0.6) !important;;  
+    color: rgba(204, 204, 204, 0.6) !important;;  
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: rgba(204, 204, 204, 0.6) !important;;  
+    color: rgba(204, 204, 204, 0.6) !important;;  
 }
 
 :-ms-input-placeholder {  
-   color: rgba(204, 204, 204, 0.6) !important;;  
+    color: rgba(204, 204, 204, 0.6) !important;;  
 }
 
 
