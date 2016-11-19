@@ -1339,11 +1339,16 @@ hr {
 }
 
 #container {
-    height: 100vh;
+  height:34em;
     padding-top: 3em;
     width: 100%;
 }
 
+.map-layout{
+     height: 100vh !important ;
+}
+.calender-layout {  height:34em;
+}
 .google-map {
     height: 100vh;
     padding-top: 3em;
