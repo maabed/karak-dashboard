@@ -26,14 +26,14 @@
                 data: data,
                 mapData: Highcharts.maps['custom/world'],
                 joinBy: ['iso-a2', 'code'],
-                name: 'Population density',
+                name: 'Cumulative Sales',
                 states: {
                     hover: {
                         color: '#BADA55'
                     }
                 },
                 tooltip: {
-                    valueSuffix: '/km²'
+                    valueSuffix: '0$'
                 }
             }]
         });
