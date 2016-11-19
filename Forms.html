@@ -1,0 +1,693 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Blue Dashboard</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+        <!-- Bootstrap Core CSS -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="assets/css/style.css" rel="stylesheet" />
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <link href="assets/css/input_style.css" rel="stylesheet" />
+        <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="assets/vendors/select-plugin/css/bootstrap-select.css">
+        <link rel="stylesheet" href="assets/vendors/tag-input/bootstrap-tagsinput.css">
+        <link rel="stylesheet" href="assets/vendors/drop-zone/dropzone.css">    
+
+    </head>
+    <body>
+        <div id="wrapper">
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        Company Name
+                    </li>
+                    <li class="selected">
+                        <a href="index.html"><i class="fa fa-tachometer nav-icon" aria-hidden="true"></i>Dashboard<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a class="MainMenue" href="#">
+                            <i class="fa fa-file-text nav-icon" aria-hidden="true"></i>
+                            Forms<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                        </a>
+                        <ul class="Submenue">
+                            <li>
+                                Sub Title
+                            </li>
+                            <li>
+                                Sub Title
+                            </li>
+                            <li>
+                                Sub Title
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-pie-chart  nav-icon" aria-hidden="true"></i>
+                            Charts<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="layouts/inbox.html">
+                            <i class="fa fa-envelope nav-icon" aria-hidden="true"></i>
+                            Inbox<span class="label label-primary nav-lbl">2</span><i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-eye   nav-icon" aria-hidden="true"></i>
+                            UI Elements <span class="label label-success nav-lbl">New</span> <i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-windows nav-icon" aria-hidden="true"></i>
+                            Tabs<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="layouts/calendar.html">
+                            <i class="fa fa-calendar-check-o nav-icon" aria-hidden="true"></i>
+                            Calendar<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="layouts/social.html">
+                            <i class="fa fa-share-alt-square nav-icon" aria-hidden="true"></i>
+                            Social<span class="label label-warning nav-lbl">Special</span><i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-desktop nav-icon" aria-hidden="true"></i>
+                            Views<i class="fa fa-angle-left LeftArrow " aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-table nav-icon" aria-hidden="true"></i>
+                            Tables<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-map nav-icon" aria-hidden="true"></i>
+                            Maps<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-gift nav-icon" aria-hidden="true"></i>
+                            Extra<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-wikipedia-w nav-icon" aria-hidden="true"></i>
+                            Widget<i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-arrows nav-icon" aria-hidden="true"></i>
+                            Drag Droup <i class="fa fa-angle-left LeftArrow" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /#sidebar-wrapper -->
+            <div id="head">
+                <div class="container-fluid header-container">
+                    <i href="#menu-toggle" id="menu-toggle" class="fa fa-bars" aria-hidden="true"></i>
+                    <div class="form-group">
+                        <div class="icon-addon addon-md">
+                            <input type="text" placeholder="Type anywhere to search" class="form-control" id="searchTB">
+                            <i class="fa fa-search glyphicon glyphicon-search" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="right-side-head">
+                        <div class="notifecations head-box">
+                            <button id="notifications" class="btn btn-default btn-lg btn-link">
+                                <i class="fa fa-bell-o" aria-hidden="true"></i>
+                            </button>
+                            <span id="not-badg" class="badge badge-notify">2</span>
+                        </div>
+                        <div class="email head-box">
+                            <button id="messages" class="btn btn-default btn-lg btn-link">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            </button>
+                            <span id="message-badg" class="badge badge-notify">4</span>
+                        </div>
+                        <div id="user-box" class="user-box head-box">
+                            <p> Mr.Sami&nbsp;&nbsp; &nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                            <img src="assets/images/Sami.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page Content -->
+            <a href="#" id="PageTitle">Dashboard  /  Interface</a>
+            <div id="page-content-wrapper">
+
+                <div class="container-fluid">
+                    <!-- First Row Forms -->
+                    <div class="row">
+                        <div class="col-sm-6 left-group">
+                            <div class="col-contint">
+                                <h4 class="title form-section col-sm-12">Default Style</h4>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget feugiat sapien. Vivamus nunc dui, mollis sit amet molestie in, gravida eu lectus. Pellentesque iaculis odio augue, eget lobortis elit congue.</p>
+                                <div class="row group-content">
+                                    <div class="form-group col-sm-12">
+                                        <label class="form-labels">Full Name*</label>
+                                        <input type="text" placeholder="Enter Full Name" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row group-content">
+                                    <div class="form-group col-sm-6">
+                                        <label class="form-labels">Email*</label>
+                                        <input placeholder="Enter Email" type="text" class="form-control">
+                                    </div>
+                                    <div class="form-group col-sm-6">
+                                        <label class="form-labels">Phone*</label>
+                                        <input type="text" placeholder="Enter Phone Number" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row group-content">
+                                    <div class="form-group col-sm-6">
+                                        <label class="form-labels">Country*</label>
+                                        <select class="select-display selectpicker form-control empty col-12">
+                                            <option value="Select">Select</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-sm-6">
+                                        <label class="form-labels">City</label>
+                                        <input type="text" placeholder="Enter City" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 right-group">
+                            <div class="col-contint group-upper">
+                                <h4 class="title form-section col-sm-12">Login Style</h4>
+                                <div class="form-section col-sm-12 top">
+                                    <span class="form-labels">Username</span>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-section col-sm-12">
+                                    <span class="form-labels">Password</span>
+                                    <input type="text" class="form-control">
+                                </div> 
+                            </div>
+                            <br>
+                            <br>
+                            <div class="col-contint group-lower">
+                                <h4 class="title form-section col-sm-12">Login With Icons</h4>
+                                <div class="form-section col-sm-6">
+                                    <label class="email-label">
+                                        <input type="text" class="form-control email-input" placeholder="Email" />
+                                    </label>
+                                </div>
+                                <div class="form-section col-sm-6">
+                                    <label class="password-label">
+                                        <input type="text" class="form-control password-input" placeholder="Password" />
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- /First Row Forms End -->
+                    <br>
+                    <!-- Start of checkboxes group -->  
+
+                    <div class="row">
+                        <div class="col-sm-12 one-col">
+                            <div class="col-contint">
+                                <h4 class ="title form-section col-xs-12"> Checkbox Controls </h4>
+                                <div class="col-sm-4">
+                                    <h5 class="mediumtitle"> Color Options </h5>
+                                    <h6 class="pargraph-design">
+                                        Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et </h6>
+                                    <div class="checkbox">
+                                        <input id="checkbox1" type="checkbox">
+                                        <label class ="fontsize" for="checkbox1"> A simple checkbox </label>
+                                    </div>
+                                    <div class="checkbox checkbox-primary"> 
+                                        <input id="checkbox2" type="checkbox" checked="">
+                                        <label  class ="fontsize"for="checkbox2"> I agree </label>
+                                    </div>
+
+                                    <div class="checkbox checkbox-success">
+                                        <input id="checkbox3" type="checkbox">
+                                        <label  class ="fontsize"for="checkbox3"> Mark </label>
+                                    </div>
+
+                                    <div class="checkbox checkbox-info">
+                                        <input id="checkbox4" type="checkbox">
+                                        <label class ="fontsize" for="checkbox4"> Action</label>
+                                    </div>
+
+                                    <div class="checkbox checkbox-warning">
+                                        <input id="checkbox5" type="checkbox" checked="">
+                                        <label  class ="fontsize"for="checkbox5"> Keep Me Signed in</label>
+                                    </div>
+
+                                    <div class="checkbox checkbox-danger">
+                                        <input id="checkbox6" type="checkbox" checked="">
+                                        <label class ="fontsize" for="checkbox6"> Mark as read</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <form>
+                                        <h5 class="mediumtitle">Shape Options </h5>
+                                        <h6 class="pargraph-design">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</h6>
+                                        <div class="checkbox checkbox-circle">
+                                            <input id="checkbox7" type="checkbox">
+                                            <label  for="checkbox7">Default</label>
+                                        </div>
+                                        <div class="checkbox checkbox-circle checkbox-primary">
+                                            <input id="checkbox8" type="checkbox" checked="">
+                                            <label class ="fontsize " for="checkbox8">Primary </label>
+                                        </div>
+                                        <div class="checkbox checkbox checkbox-circle checkbox-success">
+                                            <input class ="checkradius" id="checkbox9" type="checkbox">
+                                            <label  class ="fontsize"for="checkbox9">Success </label>
+                                        </div> 
+                                    </form> 
+                                </div>
+                                <div class="col-sm-4">
+                                    <form>           
+                                        <h5 class="mediumtitle">Yes/No checkboxes </h5>
+                                        <h6  class="pargraph-design">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et..</h6> 
+                                        <div class="row" >
+                                            <div class="col-sm-1.1  yes-no-check" >
+                                                <input id="toggleCheckbox-1" title="Example title" data-group-cls="btn-group-xs" checked="">
+                                            </div>
+                                            <div class="col-sm-1.1 yes-no-check">
+                                                <input id="toggleCheckbox-2" title="Example title"  data-reverse data-group-cls="btn-group-xs" data-on-active-cls="btn-primary" checked="">
+                                            </div>
+                                            <div class="col-sm-1.1 yes-no-check">  
+                                                <input id="toggleCheckbox-3"  data-group-cls="btn-group-xs" checked data-on-active-cls="btn-warning" >
+                                            </div>
+
+                                        </div>
+                                        <div class="row" >
+                                            <div class ="col-sm-1.1 yes-no-check">
+                                                <input id="toggleCheckbox-4" data-off-icon-cls="glyphicon-thumbs-down" data-on-icon-cls="glyphicon-thumbs-up" data-group-cls="btn-group-ms" checked="" >
+                                            </div>
+
+                                            <div class ="col-sm-1.1 yes-no-check">
+                                                <input id="toggleCheckbox-5" data-off-label="false" data-on-label="false" data-off-icon-cls="glyphicon-thumbs-down" data-on-icon-cls="glyphicon-thumbs-up" data-group-cls="btn-group-xs">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /End of checkboxes group --> 
+
+                    <!-- Second Row Of forms -->
+
+                    <div class="row">
+                        <div class="col-sm-12 three-cols">
+                            <div class="col-sm-4 first-third">
+                                <div class="col-contint">
+                                    <h4 class ="title third-header col-sm-12">SlideToggle </h4>
+                                    <p style ="color: #707A7A;margin-top:15px; margin-bottom:10px; text-align: justify; font-size: 0.9em;font-weight:solid;">Checked</p> 
+
+                                    <div class="switch toggleswitch">
+                                        <input  id="cmn-toggle-1" class="cmn-toggle cmn-toggle-roundGreen" type="checkbox">
+                                        <label for="cmn-toggle-1"></label>
+                                    </div>
+                                    <h6 style ="color: #707A7A;margin-top:10px; margin-bottom:10px; text-align: justify; font-size: 0.9em;  font-weight:solid;">Multiple switches </h6>
+
+                                    <div class="switch toggleswitch " >
+                                        <input  id="cmn-toggle-2" class="cmn-toggle cmn-toggle-roundGreen" type="checkbox" checked="">
+                                        <label for="cmn-toggle-2"></label>
+                                    </div>
+
+                                    <div class="switch toggleswitchspacific " >
+                                        <input  id="cmn-toggle-3" class="cmn-toggle cmn-toggle-roundGreen" type="checkbox">
+                                        <label for="cmn-toggle-3"></label>
+                                    </div>
+
+                                    <div class="switch toggleswitchspacific" >
+                                        <input  id="cmn-toggle-4" class="cmn-toggle cmn-toggle-roundGreen" type="checkbox" checked="">
+                                        <label for="cmn-toggle-4"></label>
+                                    </div>
+
+                                    <h6 style ="color: #707A7A;margin-top:10px; margin-bottom:10px; text-align: justify; font-size: 0.9em; font-weight:solid;">Colored
+                                    </h6>
+
+                                    <div class="switch toggleswitch" >
+                                        <input  id="cmn-toggle-5" class="cmn-toggle cmn-toggle-roundBlue" type="checkbox"checked="">
+                                        <label for="cmn-toggle-5"></label>
+                                    </div>
+
+                                    <div class="switch toggleswitch" >
+                                        <input  id="cmn-toggle-6" class="cmn-toggle cmn-toggle-roundPink" type="checkbox"checked="">
+                                        <label for="cmn-toggle-6"></label>
+                                    </div>
+
+                                    <div class="switch toggleswitch" >
+                                        <input  id="cmn-toggle-7" class="cmn-toggle cmn-toggle-roundGreen1" type="checkbox"checked="">
+                                        <label for="cmn-toggle-7"></label>
+                                    </div>
+
+                                    <div class="switch toggleswitch" >
+                                        <input  id="cmn-toggle-8" class="cmn-toggle cmn-toggle-roundRed" type="checkbox"checked="">
+                                        <label for="cmn-toggle-8"></label>
+                                    </div>
+
+                                    <h6 style ="color: #707A7A;margin-top:10px; margin-bottom:10px; text-align: justify; font-size: 0.9em;  font-weight:solid;">Or the secondary color, which will change the switch shadow and default border:</h6>
+
+                                    <div class="switch toggleswitch" >
+                                        <input  id="cmn-toggle-9" class="cmn-toggle cmn-toggle-roundYellow" type="checkbox">
+                                        <label for="cmn-toggle-9"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 second-third">
+                                <div class="col-contint">
+                                    <h4 class ="title third-header col-sm-12">Select boxes</h4>
+                                    <div class="row">
+                                        <div class="third-section col-sm-12">
+                                            <label class="dropdown-type">Standard</label>
+                                            <select class="select-display selectpicker empty col-12">
+                                                <option value="Select">Select1</option>
+                                                <option value="Select2">Select2</option>
+                                                <option value="Select2">Select3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="third-section col-sm-12">
+                                            <label class="dropdown-type">Select boxes with optgroups</label>
+                                            <select class="select-display selectpicker empty col-12">
+                                                <optgroup label="First group">
+                                                    <option value="Select">Select1</option>
+                                                    <option value="Select2">Select2</option>
+                                                    <option value="Select2">Select3</option>
+                                                </optgroup>
+                                                <optgroup label="Second Group">
+                                                    <option value="Select">Select1</option>
+                                                    <option value="Select2">Select2</option>
+                                                    <option value="Select2">Select3</option>
+                                                </optgroup>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="third-section col-sm-12">
+                                            <label class="dropdown-type">Multiple select boxes</label>
+                                            <select class="select-display selectpicker empty col-12" multiple>
+                                                <option value="Select1">Select1</option>
+                                                <option value="Select2">Select2</option>
+                                                <option value="Select3">Select3</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="third-section col-sm-12">
+                                            <label class="dropdown-type">Live search</label>
+                                            <select class="select-display selectpicker empty col-12" data-live-search="true">
+                                                <option value="Select">Select1</option>
+                                                <option value="Select">Select2</option>
+                                                <option value="Select">Select3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="third-section col-sm-12">
+                                            <label class="dropdown-type">Key words</label>
+                                            <select class="select-display selectpicker empty col-12"  data-live-search="true">
+                                                <option value="Select" data-tokens="first option">Select1</option>
+                                                <option value="Select" data-tokens="second option">Select2</option>
+                                                <option value="Select" data-tokens="third option">Select3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 last-third">
+                                <div class="col-contint">
+                                    <h4 class ="title third-header col-sm-12">Input helpers</h4>
+                                    <div class="row">
+                                        <div class="form-section col-sm-12">
+                                            <label>Date <span class="helpers">e.g "2013/12/25"</span></label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-section col-sm-12">
+                                            <label>Telephone <span class="helpers">e.g "(324)3243-234"</span></label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-section col-sm-12">
+                                            <label>Custom <span class="helpers">e.g "4324324-23"</span></label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-section col-sm-12">
+                                            <label>Social security number <span class="helpers">e.g "2432-43432"</span></label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-section col-sm-12">
+                                            <label>Dollar prefix <span class="helpers">e.g "45.50$"</span></label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Second Row Forms End -->
+                    <br>
+                    <!-- Start of text editor --> 
+                    <div class="row">
+                        <div class="col-sm-12 one-col">
+                            <div class="col-contint">
+                                <h4 class ="title form-section largetitle">Text Editor</h4>
+                                <div class ="texteditordesign">
+                                    <div id="summernote">hello </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+
+                    <!-- /End of text editor -->
+                    <br>
+                    <!-- Tags & drag N'drop row -->
+
+                    <div class="row">
+                        <div class="col-sm-6 left-group">
+                            <div class="col-contint">
+                                <h4 class ="title form-section largetitle">Tag Input</h4>
+                                <div class="row">
+                                    <div class="form-section col-md-12">
+                                        <label class="form-labels">Markup</label>
+                                        <input type="text" value="Amsterdam,Washington" data-role="tagsinput" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-section col-md-12">
+                                        <label class="form-labels">True multi value</label>
+                                        <select multiple data-role="tagsinput">
+                                            <option value="Amsterdam">Amsterdam</option>
+                                            <option value="Washington">Washington</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-section col-md-12">
+                                        <label class="form-labels">Objects as tags</label>
+                                        <input class="objects-as-tags" type="text" data-role="tagsinput"/>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-section col-md-12">
+                                        <label class="form-labels">Categorizing tags</label>
+                                        <input class="colored-tags" type="text" data-role="tagsinput"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 right-group">
+                            <div class="col-contint">
+                                <h4 class ="title form-section largetitle">Drag N' Drop</h4>
+                                <div class="row dropzone-row">
+                                    <div class="form-section col-sm-12 dropzone-min">
+                                        <form action="/file-upload"class="dropzone" id="my-awesome-dropzone">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Tags & drag N'drop row-->
+                </div>
+            </div>
+            <!-- /#wrapper -->
+            <div id="Right-Side-Section">
+                <div id="Right-Side-Section-Togle">
+                    <i class="fa fa-pencil-square-o" id="Edit" aria-hidden="true"></i>
+                </div>
+                <div class="table">
+                    <table>
+                        <tr>
+                            <td colspan="4">
+                                <div onclick="closeToggel()" id="Close">
+                                    <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="notifecations-box">
+                <div class="arrow-up"></div>
+                <h5>Notifications</h5>
+                <div class="single-not-content">
+                    <a href="#">
+                        <img src="assets/images/Sami.jpg" />
+                        <p><b>Mohammad Meshaal</b>&nbsp;    wants your confirmation on his Leave Request on 12 May 2015</p>
+                    </a>
+                </div>
+                <div class="single-not-content">
+                    <a href="#">
+                        <img src="assets/images/Sami.jpg" />
+                        <p><b>Mohammad Meshaal</b>&nbsp;    wants your confirmation on his Leave Request on 12 May 2015</p>
+                    </a>
+                </div>
+                <div class="veiw-all-not">
+                    <a href="#">View All</a>
+                </div>
+            </div>
+            <div class="messages-box">
+                <div class="arrow-up"></div>
+                <h5>Messages <a class="send-message-link " href="#">Send New Message</a></h5>
+                <div class="single-not-content">
+                    <a href="#">
+                        <img src="assets/images/Sami.jpg" />
+                        <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
+                    </a>
+                </div>
+                <div class="single-not-content">
+                    <a href="#">
+                        <img src="assets/images/Sami.jpg" />
+                        <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
+                    </a>
+                </div>
+                <div class="single-not-content">
+                    <a href="#">
+                        <img src="assets/images/Sami.jpg" />
+                        <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
+                    </a>
+                </div>
+                <div class="single-not-content">
+                    <a href="#">
+                        <img src="assets/images/Sami.jpg" />
+                        <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
+                    </a>
+                </div>
+                <div class="veiw-all-not">
+                    <a href="#">View All</a>
+                </div>
+            </div>
+            <div class="user-info-box">
+                <div class="arrow-up user-arrow"></div>
+                <a href="#">
+                    <div class="user-info-content">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        Proﬁle
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="user-info-content">
+                        <i class="fa fa-cog" aria-hidden="true"></i>
+                        Settings
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="user-info-content">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                        Help
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="user-info-content logout">
+                        Log Out
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <script src="assets/js/vendors/jquery.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/vendors/Chart.bundle.js"></script>
+        <script src="assets/js/notifications_boxs.js"></script>
+        <script src="assets/vendors/select-plugin/js/bootstrap-select.js"></script>
+        <script src="assets/vendors/tag-input/bootstrap-tagsinput.js"></script>
+        <script src="assets/vendors/tag-input/typeahead.bundle.min.js"></script>
+        <script src="assets/vendors/drop-zone/dropzone.js"></script>
+        <script src="assets/js/forms_rayan.js"></script>
+        <link href="assets/vendors/lib/default/scheduler.min.css" rel="stylesheet" />
+        <script src='assets/vendors/lib/moment.min.js'></script>
+        <script src="assets/vendors/lib/default/scheduler.min.js"></script>
+    
+
+
+
+
+        <script src="assets/vendors/bootstrap-checkbox/bootstrap-checkbox.min.js"></script>
+
+        <link href="assets/vendors/summernote/summernote.css" rel="stylesheet">
+        <link href="assets/css/forms.css" rel="stylesheet">
+
+
+
+        <script src="assets/vendors/summernote/summernote.js"></script>
+        <script src='assets/js/forms.js'></script>
+    </body>
+</html>
