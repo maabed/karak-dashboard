@@ -9,6 +9,9 @@
 .title{
     padding-top: 15px;
 }
+.bootstrap-tagsinput{
+    padding-bottom: 6px;
+}
 .description{
     padding: 15px 15px 0px 15px;
 }
@@ -113,8 +116,8 @@
 /* to manage the  yes - no checkbox  */
 .yes-no-check 
 {
-    margin-left: 0.9em;
-    float: left;
+    margin-left:15px;
+    margin-right: 10px;
     display: inline-block;
     margin-top: 2em;
     text-align: justify;
@@ -610,7 +613,30 @@ label{
     min-height: 390px;
 }
 .btn.dropdown-toggle.btn-default{
-    border: 1px solid rgba(204, 204, 204, 0.3);
+    border: 1px solid rgba(204, 204, 204, 0.4);
+}
+.btn-default:hover{
+    background-color: rgba(230, 230, 230, 0.4);
+}
+.btn-default:active{
+    background-color: rgba(230, 230, 230, 0.5);
+}
+.btn-default:active:focus, .btn-default.focus, .btn-default:focus,.btn-default:active:hover, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover{
+    background-color: rgba(230, 230, 230, 0.3);
+}
+.btn-group.btn-group-xs>.btn-primary{
+    color: #000;
+}
+.btn-group.btn-group-xs>.btn-default{
+    color: #000;
+}
+.btn.active.btn-primary:hover{
+    border: 1px solid #265a88;
+}
+.btn-group.btn-group-xs>.btn.active.btn-primary{
+    background-color: #265a88 !important;
+    color: #fff;
+    transition: none;
 }
 .drop-zone-icon{
     font-size: 70px;
