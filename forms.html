@@ -24,7 +24,11 @@
         <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="assets/vendors/select-plugin/css/bootstrap-select.css">
         <link rel="stylesheet" href="assets/vendors/tag-input/bootstrap-tagsinput.css">
-        <link rel="stylesheet" href="assets/vendors/drop-zone/dropzone.css">    
+        <link rel="stylesheet" href="assets/vendors/drop-zone/dropzone.css">
+        <link rel="stylesheet" type="text/css" href="assets/vendors/datepickers/daterangepicker.css" />
+        <link rel="stylesheet" type="text/css" href="assets/vendors/datepickers/datepicker.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/vendors/clockpicker/bootstrap-clockpicker.min.css">
+
 
     </head>
     <body>
@@ -328,7 +332,7 @@
 
                     <div class="row">
                         <div class="col-sm-12 three-cols">
-                            <div class="col-sm-4 first-third">
+                            <div class="col-md-4 first-third">
                                 <div class="col-contint">
                                     <h5 class ="title third-header col-sm-12">SlideToggle </h5>
                                     <div class="inner-container">
@@ -391,7 +395,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-4 second-third">
+                            <div class="col-md-4 second-third">
                                 <div class="col-contint">
                                 <h5 class ="title third-header col-sm-12">Select boxes</h5>
                                 <div class="inner-container">
@@ -456,7 +460,7 @@
                                 </div>
                             </div>
                             </div>
-                            <div class="col-sm-4 last-third">
+                            <div class="col-md-4 last-third">
                                 <div class="col-contint">
                                     <h5 class ="title third-header col-sm-12">Input helpers</h5>
                                     <div class="inner-container">
@@ -496,6 +500,60 @@
                         </div>
                     </div>
                     <!-- /Second Row Forms End -->
+                    <br>
+                    <!-- Date control start -->
+                    <div class="row ">
+                        <div class="col-sm-12 one-col date-control">
+                            <div class="col-contint">
+                                <h5 class ="title form-section largetitle">Date controls</h5>
+                                <div class="row">
+                                    <div class="inner-container">
+                                        <div class="col-md-4">
+                                            <div class="third-section">
+                                                <h5 class="mediumtitle">Simple Date Picker</h5>
+                                                <h6 class="pargraph-design picker-desc">
+                                        Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et                                                     </h6>
+                                                <input type="text" name="birthdate" class="form-control simple" value="10/24/1984" />
+                                            </div>
+                                            <div class="third-section">
+                                                <label class="label-type">Simple Time Picker</label>
+                                                <div class="input-group clockpicker simple" data-placement="right" data-align="top" data-autoclose="true">
+                                                    <input type="text" class="form-control" value="13:14">
+                                                    <span class="input-group-addon">
+                                                        <span class="glyphicon glyphicon-time"></span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="third-section">
+                                                <h5 class="mediumtitle">Range Date Picker</h5>
+                                                <h6 class="pargraph-design picker-desc">
+                                        Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et                                                     </h6>
+                                                <input type="text" name="daterange" class="form-control simple" value="01/01/2015 1:30 PM - 01/01/2015 2:00 PM" />
+                                            </div>
+                                            <div class="third-section">
+                                                 <h6>Predefined Ranges</h6>
+                                                <div id="reportrange" class="simple">
+                                                    <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
+                                                    <span></span> <b class="caret"></b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="third-section">
+                                                <h5 class="mediumtitle">Advanced Datepicker</h5>
+                                                <h6 class="pargraph-design picker-desc">
+                                        Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et                                                     </h6>
+                                                <div class="datepicker-here simple" data-language='en'></div>
+                                            </div>
+                                        </div>
+                                    </div>                                 
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <!-- /Date control end -->
                     <br>
                     <!-- Start of text editor --> 
                     <div class="row">
@@ -672,7 +730,6 @@
                 </a>
             </div>
         </div>
-
         
         <!-- original page scripts -->
         <script src="assets/js/vendors/jquery.js"></script>
@@ -697,6 +754,13 @@
         <link href="assets/vendors/summernote/summernote.css" rel="stylesheet">
         <link href="assets/css/forms.css" rel="stylesheet">
         <script src="assets/vendors/summernote/summernote.js"></script>
+        
+        <!-- datepicker scripts -->
+        <script type="text/javascript" src="assets/vendors/datepickers/daterangepicker.js"></script>
+        <script type="text/javascript" src="assets/vendors/datepickers/datepicker.min.js"></script>
+        <script type="text/javascript" src="assets/vendors/datepickers/datepicker.en.js"></script>
+        <script type="text/javascript" src="assets/vendors/clockpicker/bootstrap-clockpicker.min.js"></script>
         <script src='assets/js/forms.js'></script>
+        
     </body>
 </html>

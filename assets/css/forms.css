@@ -663,5 +663,34 @@ label{
     color: rgba(204, 204, 204, 0.6) !important;;  
 }
 
-
-
+/* Date pickers*/
+#reportrange{
+    background: #fff;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    width: 86%;
+}
+.simple{
+    font-size: 12px;
+    width: 86%;
+}
+.date-control>.col-contint{
+    overflow: visible;
+}
+.picker-desc{
+    width: 86%;
+}
+.col-md-4.first-third{
+    margin-bottom: 0px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.col-md-4.last-third{
+    margin-bottom: 0px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.col-md-4.second-third{
+    margin-bottom: 0px !important;
+}
