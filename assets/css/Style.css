@@ -321,6 +321,24 @@ body {
         clear: both;
     }
 
+.icons-search-textbox { width:40%;
+                        margin :0 auto ;
+}
+
+    .icons-header .icon-addon.addon-md .glyphicon,
+   .icons-header   .icon-addon .glyphicon,
+   .icons-header.icon-addon.addon-md .fa,
+  .icons-header .icon-addon .fa {
+        color :#888888 !important;
+    }
+    
+    #head .icon-addon.addon-md .glyphicon,
+   #head   .icon-addon .glyphicon,
+     #head .icon-addon.addon-md .fa,
+   #head   .icon-addon .fa {
+        color :#fff !important;
+    }
+
     .icon-addon.addon-md .glyphicon,
     .icon-addon .glyphicon,
     .icon-addon.addon-md .fa,
@@ -334,7 +352,6 @@ body {
         text-align: center;
         padding: 10px 0;
         top: 1px;
-        color: #fff;
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
         -o-transition: all 0.3s ease-in-out;
@@ -1640,6 +1657,20 @@ hr {
     
 }
     .submit-btn { background-color:#2ECC71 !important ;
+}
+.icons-header { text-align :center;
+}
+    .icons-header img {
+                       height :5em;
+                       width:auto;
+                       margin:1em auto ;
+    }
+.icon-search-icon { color :#E4E5E7 !important ;
+}
+.icons-header h1 {font-weight :lighter ;
+                  color :#34495E;
+}
+#icons { padding :1em 0em;
 }
 @media(max-width:1028px) {
      .statistics .statistics-taps li {
