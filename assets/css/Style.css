@@ -1707,6 +1707,9 @@ hr {
 }
 .tabs-head-title {margin-top :0;
 }
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+    background-color:#3B97D2;
+}
 @media(max-width:1028px) {
 
 
