@@ -661,17 +661,32 @@ label{
 .col-contint.DragNdrop>.title.form-section.largetitle{
     padding-bottom: 16px !important;
 }
+.datepicker{
+    width: 100% !important;
+} 
 /* Date pickers*/
 #reportrange{
     background: #fff;
     cursor: pointer;
     padding: 5px 10px;
     border: 1px solid #ccc;
-    width: 86%;
+    width: 100%;
 }
 .simple{
     font-size: 12px;
-    width: 86%;
+    width: 100%;
+}
+.daterangepicker td.active, .daterangepicker td.active:hover{
+    background-color: #3b97d2 !important;
+}
+.datepicker--cell.-selected-, .datepicker--cell.-selected-.-current-{
+    background-color: #3b97d2 !important;
+}
+.text-primary{
+    color: #3b97d2 !important;
+}
+.inner-container>.col-md-4{
+    margin-bottom: 0px;
 }
 .date-control>.col-contint{
     overflow: visible;
