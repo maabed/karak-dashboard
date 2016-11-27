@@ -1,11 +1,6 @@
  
 
-.right-group{
-    padding-right: 0px;
-}
-.left-group{
-    padding-right: 0px;
-}
+
 .title{
     padding-top: 15px;
 }
@@ -14,6 +9,10 @@
 }
 .description{
     padding: 15px 15px 0px 15px;
+}
+
+.third-section>.mediumtitle{
+    margin-top: 15px;
 }
 .group-content{
     margin-left: 0px;
@@ -56,10 +55,7 @@
 .mediumtitle
 {
     color: #3B97D2;
-    margin-top: 20px;
-}
-.one-col{
-    padding-right: 0px;
+    margin-top: 0px;
 }
 .jumbotron{
     background-color: #fff;
@@ -382,7 +378,7 @@ input.cmn-toggle-roundGreen:checked + label:after {
 .form-section{
     min-height: 0px;
     margin-bottom: 0px;
-    padding-bottom: 17px;
+    padding-bottom: 15px;
 }
 .third-section{
     padding-bottom: 16px;
@@ -613,7 +609,7 @@ label{
     min-height: 390px;
 }
 .btn.dropdown-toggle.btn-default{
-    border: 1px solid rgba(204, 204, 204, 0.4);
+    border: 1px solid #e0e0e0;
 }
 .btn-default:hover{
     background-color: rgba(230, 230, 230, 0.4);
@@ -662,6 +658,55 @@ label{
 :-ms-input-placeholder {  
     color: rgba(204, 204, 204, 0.6) !important;;  
 }
-
-
-
+.col-contint.DragNdrop>.title.form-section.largetitle{
+    padding-bottom: 16px !important;
+}
+.datepicker{
+    width: 100% !important;
+} 
+/* Date pickers*/
+#reportrange{
+    background: #fff;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+.simple{
+    font-size: 12px;
+    width: 100%;
+}
+.daterangepicker td.active, .daterangepicker td.active:hover{
+    background-color: #3b97d2 !important;
+}
+.datepicker--cell.-selected-, .datepicker--cell.-selected-.-current-{
+    background-color: #3b97d2 !important;
+}
+.text-primary{
+    color: #3b97d2 !important;
+}
+.inner-container>.col-md-4{
+    margin-bottom: 0px;
+}
+.date-control>.col-contint{
+    overflow: visible;
+}
+.col-md-4.first-third{
+    margin-bottom: 0px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.col-md-4.last-third{
+    margin-bottom: 0px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.col-md-4.second-third{
+    margin-bottom: 0px !important;
+}
+.inner-container>.col-md-4{
+    padding-top: 0px !important;
+}
+.largetitle{
+    padding-bottom: 0px !important;
+}
