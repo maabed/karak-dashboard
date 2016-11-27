@@ -1772,6 +1772,57 @@ div.bhoechie-tab-menu {
 
 
 
+div.bhoechie-tab-menu3 {
+    padding: 0px !important;
+    float: right;
+}
+
+    div.bhoechie-tab-menu3 div.list-group {
+        margin-bottom: 0;
+    }
+
+        div.bhoechie-tab-menu3 div.list-group > a {
+            margin-bottom: 0;
+        }
+
+            div.bhoechie-tab-menu3 div.list-group > a .glyphicon,
+            div.bhoechie-tab-menu3 div.list-group > a .fa {
+                color: #3B97D2;
+            }
+
+            div.bhoechie-tab-menu3 div.list-group > a:first-child {
+                border-top-right-radius: 0;
+                -moz-border-top-right-radius: 0;
+            }
+
+            div.bhoechie-tab-menu3 div.list-group > a:last-child {
+                border-bottom-right-radius: 0;
+                -moz-border-bottom-right-radius: 0;
+            }
+
+            div.bhoechie-tab-menu3 div.list-group > a.active,
+            div.bhoechie-tab-menu3 div.list-group > a.active .glyphicon,
+            div.bhoechie-tab-menu3 div.list-group > a.active .fa {
+                background-color: #3B97D2;
+                background-image: #3B97D2;
+                color: #ffffff;
+            }
+
+                div.bhoechie-tab-menu3 div.list-group > a.active:after {
+                    content: '';
+                    position: absolute;
+                    left: 100%;
+                    top: 50%;
+                    margin-top: -13px;
+                    border-left: 0;
+                    border-bottom: 13px solid transparent;
+                    border-top: 13px solid transparent;
+                    border-left: 10px solid #3B97D2;
+                }
+
+
+
+
 
 
 
@@ -1823,6 +1874,20 @@ div.bhoechie-tab-menu2 {
                     border-top: 10px solid #3B97D2;
                 }
 
+
+div.bhoechie-tab-menu3 div.list-group > a.active:after {
+    content: '';
+    position: absolute;
+    left: -0.6em;
+    top: 50%;
+    margin-top: -13px;
+    border-left: 0;
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent;
+    border-right: 10px solid #3B97D2;
+}
+
+
 .list-group-item:first-child {
     border-top-left-radius: 0px !important;
     border-top-right-radius: 0px !important;
@@ -1850,6 +1915,19 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active) {
     text-align: center !important;
 }
 
+div.bhoechie-tab3 div.bhoechie-tab-content:not(.active) {
+    display: none;
+}
+
+.bhoechie-tab3 h1 {
+    color: #3B97D2;
+    font-size: 5em;
+    text-align: center !important;
+}
+
+
+
+
 
 
 div.bhoechie-tab2 div.bhoechie-tab-content:not(.active) {
@@ -1867,8 +1945,51 @@ div.bhoechie-tab2 div.bhoechie-tab-content:not(.active) {
     float: left;
 }
 
-@media(max-width:1028px) {
 
+.single-tap {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+    .single-tap .single-tap-title {
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+        padding: 1em;
+        font-size: 1.2em;
+        color: #3B97D2;
+        width: 100%;
+        background: #fff;
+        text-align: left;
+        border: 1px solid #E4E5E7;
+        border-radius: 3px;
+    }
+
+.single-tap-details {
+    display: none;
+}
+
+.single-tap .single-tap-title:hover {
+    background: #FAFAFA;
+}
+
+.single-tap-title p {
+    text-align: left;
+    font-size: 0.8em;
+    color: #8c8c8c;
+}
+
+
+.toggle-icons {
+    float: right;
+}
+
+
+
+@media(max-width:1028px) {
 
     .statistics .statistics-taps li {
         float: none;
