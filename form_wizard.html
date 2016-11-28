@@ -19,7 +19,6 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <link href="assets/css/input_style.css" rel="stylesheet" />
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
     <script src="assets/vendors/calender/jquery-1.10.2.js"></script>
     <link href="assets/css/prettify.css" rel="stylesheet" />
@@ -225,277 +224,238 @@
         <a href="#" id="PageTitle">Forms  /  Wizard </a>
         <div id="page-content-wrapper">
             <div class="container-fluid">
-
+                <div class="row">
+                    <div class="col-sm-12">
+                        <img class="img-responsive wizard-img" src="assets/images/wizzerd.png" />
+                    </div>
+                </div>
                 <div id="rootwizard">
                     <div class="navbar">
                         <div class="navbar-inner">
-                            <div class="container">
-                                <ul>
-                                    <li><a href="#tab1" data-toggle="tab">First</a></li>
-                                    <li><a href="#tab2" data-toggle="tab">Second</a></li>
-                                    <li><a href="#tab3" data-toggle="tab">Third</a></li>
-                                    <li><a href="#tab4" data-toggle="tab">Forth</a></li>
-                                    <li><a href="#tab5" data-toggle="tab">Fifth</a></li>
-                                    <li><a href="#tab6" data-toggle="tab">Sixth</a></li>
-                                    <li><a href="#tab7" data-toggle="tab">Seventh</a></li>
-                                </ul>
-                            </div>
+                            <ul class="taps-center">
+                                <li class="active"><a href="#tab1" data-toggle="tab"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Personal Information</a></li>
+                                <li><a href="#tab2" data-toggle="tab"><i class="fa fa-credit-card" aria-hidden="true"></i>&nbsp;Payment Information</a></li>
+                                <li><a href="#tab3" data-toggle="tab"><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Summary</a></li>
+                            </ul>
                         </div>
                     </div>
                     <div id="bar" class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <div class="tab-content">
-                        <div class="tab-pane" id="tab1">
-                            1
+                        <div class="tab-pane active" id="tab1">
+                            <div class="row">
+                                <div class="col-sm-4 wizerd-desc">
+                                    <i class="fa fa-user" aria-hidden="true"></i><br />
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                    </p><br />
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                    </p>
+                                </div>
+                                <div class="col-sm-8 wizard-form">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-group">
+                                                <label for="email">Full Name*</label>
+                                                <input placeholder="Enter Full Name" type="text" class="form-control" id="email">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="email">Email*</label>
+                                                <input placeholder="Enter Email" type="email" class="form-control" id="email">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="pwd">Phone*</label>
+                                                <input placeholder="Enter Phone Number" type="text" class="form-control" id="pwd">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="sel1">Country*</label>
+                                                <select class="form-control" id="sel1">
+                                                    <option>Select</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="pwd">City</label>
+                                                <input placeholder="Enter City" type="text" class="form-control" id="pwd">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="tab-pane" id="tab2">
-                            2
+                            <div class="row">
+                                <div class="col-sm-4 wizerd-desc">
+                                    <i class="fa fa-credit-card" aria-hidden="true"></i><br />
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                    </p><br />
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                    </p>
+                                </div>
+                                <div class="col-sm-8 wizard-form">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-group">
+                                                <label for="email">Name on Card*</label>
+                                                <input placeholder="Enter Name on Card" type="text" class="form-control" id="email">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="email">Card Number*</label>
+                                                <input placeholder="Enter Card Number" type="text" class="form-control" id="email">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="pwd">Billing Address*</label>
+                                                <input placeholder="Enter Billing Address" type="text" class="form-control" id="pwd">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="pwd">CVC*</label>
+                                                <input placeholder="ex.381" type="text" class="form-control" id="pwd">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label for="pwd">Expiration*</label>
+                                                        <input placeholder="MM" type="text" class="form-control" id="pwd">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label class="unvisible" for="pwd">Expiration*</label>
+                                                        <input placeholder="YYYY" type="text" class="form-control" id="pwd">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="tab-pane" id="tab3">
-                            3
-                        </div>
-                        <div class="tab-pane" id="tab4">
-                            4
-                        </div>
-                        <div class="tab-pane" id="tab5">
-                            5
-                        </div>
-                        <div class="tab-pane" id="tab6">
-                            6
-                        </div>
-                        <div class="tab-pane" id="tab7">
-                            7
+                            <div class="row">
+                                <div class="col-sm-4 wizerd-desc">
+                                    <i class="fa fa-check" aria-hidden="true"></i><br />
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                    </p><br />
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                    </p>
+                                </div>
+                                <div class="col-sm-8 wizard-form">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th><h5 class="title">Personal Information</h5></th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Full Name</td>
+                                                        <td>Mohammad Meshaal</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Email</td>
+                                                        <td>Mohammadz.meshaal@gmail.com</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Phone</td>
+                                                        <td>00962789785533</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Country</td>
+                                                        <td>Jordan</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>City</td>
+                                                        <td>Amman</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th><h5 class="title">Payment Information</h5></th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Name on Card</td>
+                                                        <td>Mohammad Meshaal</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Card Number</td>
+                                                        <td>888-888-888-888</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Billing Address</td>
+                                                        <td>Amman - Khalda - Building No.1485</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>CVC</td>
+                                                        <td>876</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Expiration</td>
+                                                        <td>17/06</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <a href="#con2" class="btn btn-default next-btn submit-btn">Submit</a>
+                                </div>
+                            </div>
                         </div>
                         <ul class="pager wizard">
-                            <li class="previous first" style="display:none;"><a href="#">First</a></li>
+                            <!--<li class="previous first"><a href="#">First</a></li>-->
                             <li class="previous"><a href="#">Previous</a></li>
-                            <li class="next last" style="display:none;"><a href="#">Last</a></li>
+                            <!--<li class="next last"><a href="#">Last</a></li>-->
                             <li class="next"><a href="#">Next</a></li>
                         </ul>
                     </div>
                 </div>
-                <!--<div class="wizard-container statistics">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <img class="img-responsive wizard-img" src="assets/images/wizzerd.png" />
-                        </div>
-                    </div>
-                    <div class="statistics-taps">
-                        <ul>
-                            <li class="active"><a href="#con3"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Personal Information</a></li>
-                            <li><a href="#con2"><i class="fa fa-credit-card" aria-hidden="true"></i>&nbsp;Payment Information</a></li>
-                            <li><a href="#con1"><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Summary</a></li>
-                        </ul>
-                    </div>
-                    <div class="statistics-item" id="con3">
-                        <div class="row">
-                            <div class="col-sm-4 wizerd-desc">
-                                <i class="fa fa-user" aria-hidden="true"></i><br />
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                                </p><br />
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                                </p>
-                            </div>
-                            <div class="col-sm-8 wizard-form">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                            <label for="email">Full Name*</label>
-                                            <input placeholder="Enter Full Name" type="text" class="form-control" id="email">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label for="email">Email*</label>
-                                            <input placeholder="Enter Email" type="email" class="form-control" id="email">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label for="pwd">Phone*</label>
-                                            <input placeholder="Enter Phone Number" type="text" class="form-control" id="pwd">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label for="sel1">Country*</label>
-                                            <select class="form-control" id="sel1">
-                                                <option>Select</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label for="pwd">City</label>
-                                            <input placeholder="Enter City" type="text" class="form-control" id="pwd">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="statistics-item" id="con2">
-                        <div class="row">
-                            <div class="col-sm-4 wizerd-desc">
-                                <i class="fa fa-credit-card" aria-hidden="true"></i><br />
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                                </p><br />
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                                </p>
-                            </div>
-                            <div class="col-sm-8 wizard-form">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                            <label for="email">Name on Card*</label>
-                                            <input placeholder="Enter Name on Card" type="text" class="form-control" id="email">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label for="email">Card Number*</label>
-                                            <input placeholder="Enter Card Number" type="text" class="form-control" id="email">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label for="pwd">Billing Address*</label>
-                                            <input placeholder="Enter Billing Address" type="text" class="form-control" id="pwd">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label for="pwd">CVC*</label>
-                                            <input placeholder="ex.381" type="text" class="form-control" id="pwd">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label for="pwd">Expiration*</label>
-                                                    <input placeholder="MM" type="text" class="form-control" id="pwd">
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label class="unvisible" for="pwd">Expiration*</label>
-                                                    <input placeholder="YYYY" type="text" class="form-control" id="pwd">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="statistics-item" id="con1">
-                        <div class="row">
-                            <div class="col-sm-4 wizerd-desc">
-                                <i class="fa fa-check" aria-hidden="true"></i><br />
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                                </p><br />
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                                </p>
-                            </div>
-                            <div class="col-sm-8 wizard-form">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <table class="table table-striped">
-                                            <thead>
-                                                <tr>
-                                                    <th><h5 class="title">Personal Information</h5></th>
-                                                    <th></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Full Name</td>
-                                                    <td>Mohammad Meshaal</td>
-
-                                                </tr>
-                                                <tr>
-                                                    <td>Email</td>
-                                                    <td>Mohammadz.meshaal@gmail.com</td>
-
-                                                </tr>
-                                                <tr>
-                                                    <td>Phone</td>
-                                                    <td>00962789785533</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Country</td>
-                                                    <td>Jordan</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>City</td>
-                                                    <td>Amman</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <table class="table table-striped">
-                                            <thead>
-                                                <tr>
-                                                    <th><h5 class="title">Payment Information</h5></th>
-                                                    <th></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Name on Card</td>
-                                                    <td>Mohammad Meshaal</td>
-
-                                                </tr>
-                                                <tr>
-                                                    <td>Card Number</td>
-                                                    <td>888-888-888-888</td>
-
-                                                </tr>
-                                                <tr>
-                                                    <td>Billing Address</td>
-                                                    <td>Amman - Khalda - Building No.1485</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>CVC</td>
-                                                    <td>876</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Expiration</td>
-                                                    <td>17/06</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                                <a href="#con2" class="btn btn-default next-btn submit-btn">Submit</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>-->
                 <h6 class="made-by">Made By  <b>New Versions</b></h6>
             </div>
         </div>
@@ -609,24 +569,13 @@
             </a>
         </div>
     </div>
-      
+
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/notifications_boxs.js"></script>
-    <script src="assets/js/taps.js"></script>
-    
+
     <script src="assets/js/vendors/bootstrap_wizard.js"></script>
     <script src="assets/js/vendors/prettify.js"></script>
-
-    <script>
-        $(document).ready(function() {
-  	$('#rootwizard').bootstrapWizard({onTabShow: function(tab, navigation, index) {
-		var $total = navigation.find('li').length;
-		var $current = index+1;
-		var $percent = ($current/$total) * 100;
-		$('#rootwizard .progress-bar').css({width:$percent+'%'});
-	}});
-});
-    </script>
+    <script src="assets/js/bootstrap_wizard_in_page.js"></script>
 </body>
 </html>

@@ -1987,9 +1987,18 @@ div.bhoechie-tab2 div.bhoechie-tab-content:not(.active) {
     float: right;
 }
 
-
+.navbar {
+    padding :0.5em 0em !important ;
+    margin  :0.5em 0em !important ;
+}
 
 @media(max-width:1028px) {
+    .taps-center { width:100% !important ;
+    }
+
+  .taps-center li { width:100% !important ;
+
+    }
 
     .statistics .statistics-taps li {
         float: none;
@@ -2011,6 +2020,33 @@ div.bhoechie-tab2 div.bhoechie-tab-content:not(.active) {
     .icons-header img {
         height: auto;
     }
+}
+
+.taps-center {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+    .taps-center li {
+        margin: 0 auto;
+        width: 33%;
+        text-align: center;
+    }
+
+.progress {
+    background-color: #F1F3F6;
+    padding: 0.5em;
+}
+
+.progress-bar {
+    background-color: #3B97D2 !important;
+}
+.tab-content {
+
+    background-color:#fff;
+    border-radius :3px;
+    padding :1em 0.5em;
 }
 
 @media(min-width:768px) {
