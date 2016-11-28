@@ -3,12 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Blue Dashboard</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link rel="stylesheet" href="assets/vendors/sidebar/slidebars.css">
     <!-- Bootstrap Core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -22,14 +23,15 @@
     <link href="assets/css/input_style.css" rel="stylesheet" />
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
     <!--Calender-->
-    <link href="assets/vendors/calender/fullcalendar.css" rel="stylesheet" />
     <script src="assets/vendors/calender/jquery-1.10.2.js"></script>
     <script src="assets/vendors/calender/jquery-ui.custom.min.js"></script>
-    <script src="assets/vendors/calender/fullcalendar.js"></script>
-    <link href="assets/vendors/calender/calender_theme.css" rel="stylesheet" />
+    
 </head>
 <body>
-    <div id="wrapper">
+    <div off-canvas="id-2 right push">
+        <p style="color:white;margin-top:100px;">some text</p>
+    </div>
+    <div id="wrapper" canvas="container">
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
@@ -328,14 +330,14 @@
                              </div>
                              <div class="modal-footer">
                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                               <button type="button" class="btn btn-primary">Send message</button>
+                               <button type="button" class="btn btn-success">Send message</button>
                              </div>
                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
+            <button class="toggle-id-2">test</button>
             <!-- /#page-content-wrapper -->
         </div>
         <!-- /#wrapper -->
@@ -446,26 +448,31 @@
             </a>
         </div>
     </div>
-
-    <script src="assets/js/random_chart.js"></script>
-
+    <script src="assets/vendors/sidebar/slidebars.js"></script>
+    <script src="assets/vendors/sidebar/scripts.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/vendors/Chart.bundle.js"></script>
     <script src="assets/js/notifications_boxs.js"></script>
     <script src="assets/js/taps.js"></script>
-
-
     <!--Map-->
     <script src="assets/js/map.js"></script>
     <script src="https://code.highcharts.com/maps/highmaps.js"></script>
     <script src="https://code.highcharts.com/maps/modules/data.js"></script>
     <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
     <script src="https://code.highcharts.com/mapdata/custom/world.js"></script>
-
-    <!--Calender-->
-    <script src="assets/js/calender.js"></script>
-
+    <script>
+      ( function ( $ ) {
+        // Initialize Slidebars
+        var controller = new slidebars();
+        controller.init();
+          $( '.toggle-id-2' ).on( 'click', function ( event ) {
+              event.stopPropagation();
+              controller.toggle( 'id-2' );
+          } );
+      } ) ( jQuery );
+    </script>
+    
     <script>
         $('#exampleModal').on('show.bs.modal', function (event) {
             var button = $(event.relatedTarget) // Button that triggered the modal
