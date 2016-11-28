@@ -1,489 +1,489 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Blue Dashboard</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <link rel="stylesheet" href="assets/vendors/sidebar/slidebars.css">
-    <!-- Bootstrap Core CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="assets/css/style.css" rel="stylesheet" />
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <link href="assets/css/input_style.css" rel="stylesheet" />
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
-    <!--Calender-->
-    <script src="assets/vendors/calender/jquery-1.10.2.js"></script>
-    <script src="assets/vendors/calender/jquery-ui.custom.min.js"></script>
-    
-</head>
-<body>
-    <div off-canvas="id-2 right push">
-        <p style="color:white;margin-top:100px;">some text</p>
-    </div>
-    <div id="wrapper" canvas="container">
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    Company Name
-                </li>
-                <li class="selected">
-                    <a href="index.html"><i class="fa fa-tachometer nav-icon" aria-hidden="true"></i>Dashboard</a>
-                </li>
-                <li>
-                    <a class="MainMenue" href="#">
-                        <i class="fa fa-file-text nav-icon" aria-hidden="true"></i>
-                        Forms<i class="fa fa-angle-left LeftArrow rotate" aria-hidden="true"></i>
-                    </a>
-                    <ul class="Submenue">
-                        <li>
-                            Form Elements
-                        </li>
-                        <li>
-                            Form Wizard
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa fa-pie-chart  nav-icon" aria-hidden="true"></i>
-                        Charts
-                    </a>
-                </li>
-                <li>
-                    <a href="layouts/inbox.html">
-                        <i class="fa fa-envelope nav-icon" aria-hidden="true"></i>
-                        Email<span class="label label-primary nav-lbl">2</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="MainMenue" href="#">
-                        <i class="fa fa-eye   nav-icon" aria-hidden="true"></i>
-                        UI Elements<span class="label label-success nav-lbl">New</span> <i class="fa fa-angle-left LeftArrow rotate" aria-hidden="true"></i>
-                    </a>
-                    <ul class="Submenue">
-                        <li>
-                            Icons
-                        </li>
-                        <li>
-                            Colors
-                        </li>
-                        <li>
-                            Buttons
-                        </li>
-                        <li>
-                            Notifications
-                        </li>
-                        <li>
-                            Modals
-                        </li>
-                        <li>
-                            Taps
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa fa-windows nav-icon" aria-hidden="true"></i>
-                        Tabs
-                    </a>
-                </li>
-                <li>
-                    <a href="layouts/calendar.html">
-                        <i class="fa fa-calendar-check-o nav-icon" aria-hidden="true"></i>
-                        Calendar
-                    </a>
-                </li>
-                <li>
-                    <a href="layouts/social.html">
-                        <i class="fa fa-share-alt-square nav-icon" aria-hidden="true"></i>
-                        Social<span class="label label-warning nav-lbl">Special</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="MainMenue" href="#">
-                        <i class="fa fa-desktop nav-icon" aria-hidden="true"></i>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Blue Dashboard</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+        <!-- Bootstrap Core CSS -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="assets/css/style.css" rel="stylesheet" />
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="assets/css/ui.css" rel="stylesheet">
+        <!--Calender-->
+        <script src="assets/vendors/calender/jquery-1.10.2.js"></script>
+        <script src="assets/vendors/calender/jquery-ui.custom.min.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        Company Name
+                    </li>
+                    <li class="selected">
+                        <a href="index.html"><i class="fa fa-tachometer nav-icon" aria-hidden="true"></i>Dashboard</a>
+                    </li>
+                    <li>
+                        <a class="MainMenue" href="#">
+                            <i class="fa fa-file-text nav-icon" aria-hidden="true"></i>
+                            Forms<i class="fa fa-angle-left LeftArrow rotate" aria-hidden="true"></i>
+                        </a>
+                        <ul class="Submenue">
+                            <li>
+                                Form Elements
+                            </li>
+                            <li>
+                                Form Wizard
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-pie-chart  nav-icon" aria-hidden="true"></i>
+                            Charts
+                        </a>
+                    </li>
+                    <li>
+                        <a href="layouts/inbox.html">
+                            <i class="fa fa-envelope nav-icon" aria-hidden="true"></i>
+                            Email<span class="label label-primary nav-lbl">2</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="MainMenue" href="#">
+                            <i class="fa fa-eye   nav-icon" aria-hidden="true"></i>
+                            UI Elements<span class="label label-success nav-lbl">New</span> <i class="fa fa-angle-left LeftArrow rotate" aria-hidden="true"></i>
+                        </a>
+                        <ul class="Submenue">
+                            <li>
+                                Icons
+                            </li>
+                            <li>
+                                Colors
+                            </li>
+                            <li>
+                                Buttons
+                            </li>
+                            <li>
+                                Notifications
+                            </li>
+                            <li>
+                                Modals
+                            </li>
+                            <li>
+                                Taps
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-windows nav-icon" aria-hidden="true"></i>
+                            Tabs
+                        </a>
+                    </li>
+                    <li>
+                        <a href="layouts/calendar.html">
+                            <i class="fa fa-calendar-check-o nav-icon" aria-hidden="true"></i>
+                            Calendar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="layouts/social.html">
+                            <i class="fa fa-share-alt-square nav-icon" aria-hidden="true"></i>
+                            Social<span class="label label-warning nav-lbl">Special</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="MainMenue" href="#">
+                            <i class="fa fa-desktop nav-icon" aria-hidden="true"></i>
 
-                        Layouts<i class="fa fa-angle-left LeftArrow rotate" aria-hidden="true"></i>
-                    </a>
-                    <ul class="Submenue">
-                        <li>
-                            Default
-                        </li>
-                        <li>
-                            Secondary
-                        </li>
-                        <li>
-                            Boxed
-                        </li>
-                        <li>
-                            RTL
-                        </li>
-                    </ul>
-                </li>
+                            Layouts<i class="fa fa-angle-left LeftArrow rotate" aria-hidden="true"></i>
+                        </a>
+                        <ul class="Submenue">
+                            <li>
+                                Default
+                            </li>
+                            <li>
+                                Secondary
+                            </li>
+                            <li>
+                                Boxed
+                            </li>
+                            <li>
+                                RTL
+                            </li>
+                        </ul>
+                    </li>
 
-                <li>
-                    <a class="MainMenue" href="#">
-                        <i class="fa fa-table nav-icon" aria-hidden="true"></i>
-                        Tables<i class="fa fa-angle-left LeftArrow rotate" aria-hidden="true"></i>
-                    </a>
-                    <ul class="Submenue">
-                        <li>
-                            Basik Table
-                        </li>
-                        <li>
-                            Data Table
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="MainMenue" href="#">
-                        <i class="fa fa-map nav-icon" aria-hidden="true"></i>
-                        Maps<i class="fa fa-angle-left LeftArrow rotate" aria-hidden="true"></i>
-                    </a>
-                    <ul class="Submenue">
-                        <li>
-                            Google Maps
-                        </li>
-                        <li>
-                            Vector Maps
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="MainMenue" href="#">
-                        <i class="fa fa-gift nav-icon" aria-hidden="true"></i>
-                        Extra<i class="fa fa-angle-left LeftArrow rotate" aria-hidden="true"></i>
-                    </a>
-                    <ul class="Submenue">
-                        <li>
-                            Invoice
-                        </li>
-                        <li>
-                            404 Page
-                        </li>
-                        <li>
-                            Login Page
-                        </li>
-                        <li>
-                            Registration
-                        </li>
-                        <li>
-                            Gallary
-                        </li>
-                        <li>
-                            Timeline
-                        </li>
-                    </ul>
-                </li>
+                    <li>
+                        <a class="MainMenue" href="#">
+                            <i class="fa fa-table nav-icon" aria-hidden="true"></i>
+                            Tables<i class="fa fa-angle-left LeftArrow rotate" aria-hidden="true"></i>
+                        </a>
+                        <ul class="Submenue">
+                            <li>
+                                Basik Table
+                            </li>
+                            <li>
+                                Data Table
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="MainMenue" href="#">
+                            <i class="fa fa-map nav-icon" aria-hidden="true"></i>
+                            Maps<i class="fa fa-angle-left LeftArrow rotate" aria-hidden="true"></i>
+                        </a>
+                        <ul class="Submenue">
+                            <li>
+                                Google Maps
+                            </li>
+                            <li>
+                                Vector Maps
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="MainMenue" href="#">
+                            <i class="fa fa-gift nav-icon" aria-hidden="true"></i>
+                            Extra<i class="fa fa-angle-left LeftArrow rotate" aria-hidden="true"></i>
+                        </a>
+                        <ul class="Submenue">
+                            <li>
+                                Invoice
+                            </li>
+                            <li>
+                                404 Page
+                            </li>
+                            <li>
+                                Login Page
+                            </li>
+                            <li>
+                                Registration
+                            </li>
+                            <li>
+                                Gallary
+                            </li>
+                            <li>
+                                Timeline
+                            </li>
+                        </ul>
+                    </li>
 
-                <li>
-                    <a href="#">
-                        <i class="fa fa-arrows nav-icon" aria-hidden="true"></i>
-                        Drag Droup
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <!-- /#sidebar-wrapper -->
-        <div id="head">
-            <div class="container-fluid header-container">
-                <i href="#menu-toggle" id="menu-toggle" class="fa fa-bars" aria-hidden="true"></i>
-                <div class="form-group">
-                    <div class="icon-addon addon-md">
-                        <input type="text" placeholder="Type anywhere to search" class="form-control" id="searchTB">
-                        <i class="fa fa-search glyphicon glyphicon-search" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div class="right-side-head">
-                    <div class="notifecations head-box">
-                        <button id="notifications" class="btn btn-default btn-lg btn-link">
-                            <i class="fa fa-bell-o" aria-hidden="true"></i>
-                        </button>
-                        <span id="not-badg" class="badge badge-notify">2</span>
-                    </div>
-                    <div class="email head-box">
-                        <button id="messages" class="btn btn-default btn-lg btn-link">
-                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                        </button>
-                        <span id="message-badg" class="badge badge-notify">4</span>
-                    </div>
-                    <div id="user-box" class="user-box head-box">
-                        <p> Mr.Sami&nbsp;&nbsp; &nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i></p>
-                        <img src="assets/images/Sami.jpg" />
-                    </div>
-                </div>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-arrows nav-icon" aria-hidden="true"></i>
+                            Drag Droup
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </div>
-
-        <!-- Page Content -->
-        <a href="#" id="PageTitle">Dashboard  /  Interface</a>
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
-                        Default modal demo
-                    </button>
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                      <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                          </div>
-                          <div class="modal-body">
-                            Modal body
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-success">Save changes</button>
-                          </div>
+            <!-- /#sidebar-wrapper -->
+            <div id="head">
+                <div class="container-fluid header-container">
+                    <i href="#menu-toggle" id="menu-toggle" class="fa fa-bars" aria-hidden="true"></i>
+                    <div class="form-group">
+                        <div class="icon-addon addon-md">
+                            <input type="text" placeholder="Type anywhere to search" class="form-control" id="searchTB">
+                            <i class="fa fa-search glyphicon glyphicon-search" aria-hidden="true"></i>
                         </div>
-                      </div>
                     </div>
-                </div>
-                <!--Large modal-->
-                <div class="row">
-                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModalLarge">
-                        Large modal demo
-                    </button>
-
-                    <!-- Modal -->
-                    <div class="modal fade bs-example-modal-lg" id="myModalLarge" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                      <div class="modal-dialog modal-lg" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                          </div>
-                          <div class="modal-body">
-                            Modal body
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-success">Save changes</button>
-                          </div>
+                    <div class="right-side-head">
+                        <div class="notifecations head-box">
+                            <button id="notifications" class="btn btn-default btn-lg btn-link">
+                                <i class="fa fa-bell-o" aria-hidden="true"></i>
+                            </button>
+                            <span id="not-badg" class="badge badge-notify">2</span>
                         </div>
-                      </div>
-                    </div>
-                </div>
-                <!-- Small modal -->
-                <div class="row">
-                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModalSmall">
-                        Small modal demo
-                    </button>
-
-                    <!-- Modal -->
-                    <div class="modal fade bs-example-modal-sm" id="myModalSmall" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                      <div class="modal-dialog modal-sm" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                          </div>
-                          <div class="modal-body">
-                            Modal body
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-success">Save changes</button>
-                          </div>
+                        <div class="email head-box">
+                            <button id="messages" class="btn btn-default btn-lg btn-link">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            </button>
+                            <span id="message-badg" class="badge badge-notify">4</span>
                         </div>
-                      </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
-                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
-                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
-                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
-                        <div class="modal-dialog" role="document">
-                           <div class="modal-content">
-                             <div class="modal-header">
-                               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                               <h4 class="modal-title" id="exampleModalLabel">New message</h4>
-                             </div>
-                             <div class="modal-body">
-                               <form>
-                                 <div class="form-group">
-                                   <label for="recipient-name" class="control-label">Recipient:</label>
-                                   <input type="text" class="form-control" id="recipient-name">
-                                 </div>
-                                 <div class="form-group">
-                                   <label for="message-text" class="control-label">Message:</label>
-                                   <textarea class="form-control" id="message-text"></textarea>
-                                 </div>
-                               </form>
-                             </div>
-                             <div class="modal-footer">
-                               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                               <button type="button" class="btn btn-success">Send message</button>
-                             </div>
-                           </div>
+                        <div id="user-box" class="user-box head-box">
+                            <p> Mr.Sami&nbsp;&nbsp; &nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                            <img src="assets/images/Sami.jpg" />
                         </div>
                     </div>
                 </div>
             </div>
-            <button class="toggle-id-2">test</button>
-            <!-- /#page-content-wrapper -->
-        </div>
-        <!-- /#wrapper -->
-        <div id="Right-Side-Section">
-            <div id="Right-Side-Section-Togle">
-                <i class="fa fa-pencil-square-o" id="Edit" aria-hidden="true"></i>
-            </div>
-            <div class="table">
-                <table>
-                    <tr>
-                        <td colspan="4">
-                            <div onclick="closeToggel()" id="Close">
-                                <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+
+            <!-- Page Content -->
+            <a href="#" id="PageTitle">Dashboard  /  Interface</a>
+            <div id="page-content-wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor neque eget ante dignissim pulvinar. Nunc
+                            luctus eget ipsum id sagittis. Maecenas eget faucibus ipsum. Suspendisse sed feugiat tellus. In sed magna in eros
+                            ullamcorper dignissim. Aenean rhoncus turpis sit amet ex congue, sed mattis lacus mollis. Vestibulum eget ex a enim
+                            tincidunt euismod. Ut velit velit, tristique id magna in, sodales porta magna. Curabitur ac quam ut erat finibus
+                            cursus gravida eu lacus.
+                        </div>
+                        <div class="col-md-6">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor neque eget ante dignissim pulvinar. Nunc
+                            luctus eget ipsum id sagittis. Maecenas eget faucibus ipsum. Suspendisse sed feugiat tellus. In sed magna in eros
+                            ullamcorper dignissim. Aenean rhoncus turpis sit amet ex congue, sed mattis lacus mollis. Vestibulum eget ex a enim
+                            tincidunt euismod. Ut velit velit, tristique id magna in, sodales porta magna. Curabitur ac quam ut erat finibus
+                            cursus gravida eu lacus.
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">
+                                Default modal
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            Modal body
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-success">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </table>
+                        </div>
+                        <!--Large modal-->
+                        <div class="col-md-4">
+                            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModalLarge">
+                                Large modal
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade bs-example-modal-lg" id="myModalLarge" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            Modal body
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-success">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Small modal -->
+                        <div class="col-md-4">
+                            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModalSmall">
+                                Small modal
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade bs-example-modal-sm" id="myModalSmall" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog modal-sm" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            Modal body
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-success">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Date modal</button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="recipient-name" class="control-label">Recipient:</label>
+                                                    <input type="text" class="form-control" id="recipient-name">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="message-text" class="control-label">Message:</label>
+                                                    <textarea class="form-control" id="message-text"></textarea>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-success">Send message</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal2">
+                                Right Sidebar Modal
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content right-slide">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel2">Right Sidebar</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid</p>
+                                        </div>
+                                    </div><!-- modal-content -->
+                                </div><!-- modal-dialog -->
+                            </div><!-- modal -->
+                        </div>
+                    </div>
+                </div>
+                <!-- /#page-content-wrapper -->
+            </div>   
+                     
+            <!-- /#wrapper -->
+            <div id="Right-Side-Section">
+                <div id="Right-Side-Section-Togle">
+                    <i class="fa fa-pencil-square-o" id="Edit" aria-hidden="true"></i>
+                </div>
+                <div class="table">
+                    <table>
+                        <tr>
+                            <td colspan="4">
+                                <div onclick="closeToggel()" id="Close">
+                                    <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="notifecations-box">
+                <div class="arrow-up"></div>
+                <h5>Notifications</h5>
+                <div class="single-not-content">
+                    <a href="#">
+                        <img src="assets/images/Sami.jpg" />
+                        <p><b>Mohammad Meshaal</b>&nbsp;    wants your confirmation on his Leave Request on 12 May 2015</p>
+                    </a>
+                </div>
+                <div class="single-not-content">
+                    <a href="#">
+                        <img src="assets/images/Sami.jpg" />
+                        <p><b>Mohammad Meshaal</b>&nbsp;    wants your confirmation on his Leave Request on 12 May 2015</p>
+                    </a>
+                </div>
+                <div class="veiw-all-not">
+                    <a href="#">View All</a>
+                </div>
+            </div>
+            <div class="messages-box">
+                <div class="arrow-up"></div>
+                <h5>Messages <a class="send-message-link " href="#">Send New Message</a></h5>
+                <div class="single-not-content">
+                    <a href="#">
+                        <img src="assets/images/Sami.jpg" />
+                        <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
+                    </a>
+                </div>
+                <div class="single-not-content">
+                    <a href="#">
+                        <img src="assets/images/Sami.jpg" />
+                        <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
+                    </a>
+                </div>
+                <div class="single-not-content">
+                    <a href="#">
+                        <img src="assets/images/Sami.jpg" />
+                        <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
+                    </a>
+                </div>
+                <div class="single-not-content">
+                    <a href="#">
+                        <img src="assets/images/Sami.jpg" />
+                        <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
+                    </a>
+                </div>
+                <div class="veiw-all-not">
+                    <a href="#">View All</a>
+                </div>
+            </div>
+            <div class="user-info-box">
+                <div class="arrow-up user-arrow"></div>
+                <a href="#">
+                    <div class="user-info-content">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        Proﬁle
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="user-info-content">
+                        <i class="fa fa-cog" aria-hidden="true"></i>
+                        Settings
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="user-info-content">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                        Help
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="user-info-content logout">
+                        Log Out
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                    </div>
+                </a>
             </div>
         </div>
 
-        <div class="notifecations-box">
-            <div class="arrow-up"></div>
-            <h5>Notifications</h5>
-            <div class="single-not-content">
-                <a href="#">
-                    <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b>&nbsp;    wants your confirmation on his Leave Request on 12 May 2015</p>
-                </a>
-            </div>
-            <div class="single-not-content">
-                <a href="#">
-                    <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b>&nbsp;    wants your confirmation on his Leave Request on 12 May 2015</p>
-                </a>
-            </div>
-            <div class="veiw-all-not">
-                <a href="#">View All</a>
-            </div>
-        </div>
-        <div class="messages-box">
-            <div class="arrow-up"></div>
-            <h5>Messages <a class="send-message-link " href="#">Send New Message</a></h5>
-            <div class="single-not-content">
-                <a href="#">
-                    <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
-                </a>
-            </div>
-            <div class="single-not-content">
-                <a href="#">
-                    <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
-                </a>
-            </div>
-            <div class="single-not-content">
-                <a href="#">
-                    <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
-                </a>
-            </div>
-            <div class="single-not-content">
-                <a href="#">
-                    <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
-                </a>
-            </div>
-            <div class="veiw-all-not">
-                <a href="#">View All</a>
-            </div>
-        </div>
-        <div class="user-info-box">
-            <div class="arrow-up user-arrow"></div>
-            <a href="#">
-                <div class="user-info-content">
-                    <i class="fa fa-user" aria-hidden="true"></i>
-                    Proﬁle
-                </div>
-            </a>
-            <a href="#">
-                <div class="user-info-content">
-                    <i class="fa fa-cog" aria-hidden="true"></i>
-                    Settings
-                </div>
-            </a>
-            <a href="#">
-                <div class="user-info-content">
-                    <i class="fa fa-info-circle" aria-hidden="true"></i>
-                    Help
-                </div>
-            </a>
-            <a href="#">
-                <div class="user-info-content logout">
-                    Log Out
-                    <i class="fa fa-sign-out" aria-hidden="true"></i>
-                </div>
-            </a>
-        </div>
-    </div>
-    <script src="assets/vendors/sidebar/slidebars.js"></script>
-    <script src="assets/vendors/sidebar/scripts.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/vendors/Chart.bundle.js"></script>
-    <script src="assets/js/notifications_boxs.js"></script>
-    <script src="assets/js/taps.js"></script>
-    <!--Map-->
-    <script src="assets/js/map.js"></script>
-    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
-    <script src="https://code.highcharts.com/maps/modules/data.js"></script>
-    <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
-    <script src="https://code.highcharts.com/mapdata/custom/world.js"></script>
-    <script>
-      ( function ( $ ) {
-        // Initialize Slidebars
-        var controller = new slidebars();
-        controller.init();
-          $( '.toggle-id-2' ).on( 'click', function ( event ) {
-              event.stopPropagation();
-              controller.toggle( 'id-2' );
-          } );
-      } ) ( jQuery );
-    </script>
-    
-    <script>
-        $('#exampleModal').on('show.bs.modal', function (event) {
-            var button = $(event.relatedTarget) // Button that triggered the modal
-            var recipient = button.data('whatever') // Extract info from data-* attributes
-            // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-            // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-            var modal = $(this)
-            modal.find('.modal-title').text('New message to ' + recipient)
-            modal.find('.modal-body input').val(recipient)
-        });
-    </script>
 
-</body>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/notifications_boxs.js"></script>
+    </body>
 </html>
