@@ -468,6 +468,7 @@ body {
     .user-box p {
         margin-top: 0.5em;
         float: right;
+        color: #fff;
     }
 
 .badge-notify {
@@ -653,7 +654,7 @@ canvas {
     transition: all 0.5s ease;
 }
 
-.btn-primary {
+/*.btn-primary {
     background-color: #FAFAFA !important;
     border-color: #FAFAFA;
     color: #9E9E9E;
@@ -667,7 +668,7 @@ canvas {
     .btn-primary:hover {
         color: #3F4754;
         border: none;
-    }
+    }*/
 
 #txtEditor {
     text-align: left !important;
@@ -1137,7 +1138,6 @@ hr {
 }
 
 .col-contint {
-    overflow: hidden;
     width: 100%;
     background-color: #fff;
     padding: 0.5em;
@@ -1988,17 +1988,153 @@ div.bhoechie-tab2 div.bhoechie-tab-content:not(.active) {
 }
 
 .navbar {
-    padding :0.5em 0em !important ;
-    margin  :0.5em 0em !important ;
+    padding: 0.5em 0em !important;
+    margin: 0.5em 0em !important;
 }
 
+p {
+    color: #707A7A;
+    font-size: 0.9em;
+}
+
+.btns-box .dashboard-default, .dashboard-primary, .dashboard-success, .dashboard-info, .dashboard-warning, .dashboard-danger {
+   
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    margin-bottom: 0.5em;
+}
+
+.btns-box .outline-default, .outline-primary, .outline-success, .outline-info, .outline-warning, .outline-danger {
+  
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    margin-bottom: 0.5em;
+}
+
+.btn-block {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.outline-primary {
+    border-color: #34495e;
+    background-color: #fff;
+    color: #34495e;
+}
+
+    .outline-primary:hover {
+        border-color: #34495e;
+        background-color: #34495e;
+    }
+
+.dashboard-primary {
+    background-color: #34495e;
+    border :#2c3e50;
+}
+
+    .dashboard-primary:hover {
+        background-color: #2c3e50;
+    }
+
+
+.dashboard-success {
+    background-color: #2ecc71;
+}
+
+    .dashboard-success:hover {
+        background-color: #27ae60;
+    }
+
+.outline-success {
+    border-color: #2ecc71;
+    background-color: #fff;
+    color: #2ecc71;
+}
+
+    .outline-success:hover {
+        border-color: #2ecc71;
+        background-color: #2ecc71;
+    }
+
+
+.dashboard-info {
+    background-color: #3498db;
+}
+
+    .dashboard-info:hover {
+        background-color: #2980b9;
+    }
+
+.outline-info {
+    border-color: #3498db;
+    background-color: #fff;
+    color: #3498db;
+}
+
+    .outline-info:hover {
+        border-color: #3498db;
+        background-color: #3498db;
+    }
+
+
+
+.dashboard-warning {
+    background-color: #f1c40f;
+}
+
+    .dashboard-warning:hover {
+        background-color: #f39c12;
+    }
+
+.outline-warning {
+    border-color: #f1c40f;
+    background-color: #fff;
+    color: #f1c40f;
+}
+
+    .outline-warning:hover {
+        border-color: #f1c40f;
+        background-color: #f1c40f;
+    }
+
+.dashboard-danger {
+    background-color: #e74c3c;
+}
+
+    .dashboard-danger:hover {
+        background-color: #c0392b;
+    }
+
+.outline-danger {
+    border-color: #e74c3c;
+    background-color: #fff;
+    color: #e74c3c;
+}
+
+    .outline-danger:hover {
+        border-color: #e74c3c;
+        background-color: #e74c3c;
+    }
+.dashboard-active{ background-color :#34495e;
+    border-color :#34495e;
+}
+
+.btn-group-vertical  button {margin-bottom :0 !important ;
+}
 @media(max-width:1028px) {
-    .taps-center { width:100% !important ;
+    .taps-center {
+        width: 100% !important;
     }
 
-  .taps-center li { width:100% !important ;
-
-    }
+        .taps-center li {
+            width: 100% !important;
+        }
 
     .statistics .statistics-taps li {
         float: none;
@@ -2042,12 +2178,56 @@ div.bhoechie-tab2 div.bhoechie-tab-content:not(.active) {
 .progress-bar {
     background-color: #3B97D2 !important;
 }
-.tab-content {
 
-    background-color:#fff;
-    border-radius :3px;
-    padding :1em 0.5em;
+.tab-content {
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 1em 0.5em;
 }
+
+.flat-colors {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 1em;
+    border: 1px solid #F1F3F6;
+}
+
+    .flat-colors .col-sm-2 {
+        color: #fff;
+        font-weight: lighter;
+        padding-top: 6em;
+    }
+
+        .flat-colors .col-sm-2:first-child {
+            background-color: #34495e;
+            border-bottom: 8px solid #2c3e50;
+        }
+
+        .flat-colors .col-sm-2:nth-child(2) {
+            background-color: #3498db;
+            border-bottom: 8px solid #2980b9;
+        }
+
+        .flat-colors .col-sm-2:nth-child(3) {
+            background-color: #2ecc71;
+            border-bottom: 8px solid #27ae60;
+        }
+
+        .flat-colors .col-sm-2:nth-child(4) {
+            background-color: #f1c40f;
+            border-bottom: 8px solid #f39c12;
+        }
+
+        .flat-colors .col-sm-2:nth-child(5) {
+            background-color: #e74c3c;
+            border-bottom: 8px solid #c0392b;
+        }
+
+        .flat-colors .col-sm-2:last-child {
+            background-color: #fff;
+            color: #34495E;
+            border-bottom: 8px solid #ecf0f1;
+        }
 
 @media(min-width:768px) {
 
