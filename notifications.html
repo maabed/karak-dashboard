@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Blue Dashboard</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+        <!-- Bootstrap Core CSS -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="assets/css/style.css" rel="stylesheet" />
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="assets/css/ui.css" rel="stylesheet">
+        <!--Calender-->
+        <script src="assets/vendors/calender/jquery-1.10.2.js"></script>
+        <script src="assets/vendors/calender/jquery-ui.custom.min.js"></script>
+        <script src="assets/js/notifications.js"></script>
+        <link href="assets/vendors/toastr/toastr.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="assets/vendors/sweet-alert/sweetalert.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        Company Name
+                    </li>
+                    <li class="selected">
+                        <a href="index.html"><i class="fa fa-tachometer nav-icon" aria-hidden="true"></i>Dashboard</a>
+                    </li>
+                    <li>
+                        <a class="MainMenue" href="#">
+                            <i class="fa fa-file-text nav-icon" aria-hidden="true"></i>
+                            Forms<i class="fa fa-angle-left LeftArrow rotate" aria-hidden="true"></i>
+                        </a>
+                        <ul class="Submenue">
+                            <li>
+                                Form Elements
+                            </li>
+                            <li>
+                                Form Wizard
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-pie-chart  nav-icon" aria-hidden="true"></i>
+                            Charts
+                        </a>
+                    </li>
+                    <li>
+                        <a href="layouts/inbox.html">
+                            <i class="fa fa-envelope nav-icon" aria-hidden="true"></i>
+                            Email<span class="label label-primary nav-lbl">2</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="MainMenue" href="#">
+                            <i class="fa fa-eye   nav-icon" aria-hidden="true"></i>
+                            UI Elements<span class="label label-success nav-lbl">New</span> <i class="fa fa-angle-left LeftArrow rotate" aria-hidden="true"></i>
+                        </a>
+                        <ul class="Submenue">
+                            <li>
+                                Icons
+                            </li>
+                            <li>
+                                Colors
+                            </li>
+                            <li>
+                                Buttons
+                            </li>
+                            <li>
+                                Notifications
+                            </li>
+                            <li>
+                                Modals
+                            </li>
+                            <li>
+                                Taps
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-windows nav-icon" aria-hidden="true"></i>
+                            Tabs
+                        </a>
+                    </li>
+                    <li>
+                        <a href="layouts/calendar.html">
+                            <i class="fa fa-calendar-check-o nav-icon" aria-hidden="true"></i>
+                            Calendar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="layouts/social.html">
+                            <i class="fa fa-share-alt-square nav-icon" aria-hidden="true"></i>
+                            Social<span class="label label-warning nav-lbl">Special</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="MainMenue" href="#">
+                            <i class="fa fa-desktop nav-icon" aria-hidden="true"></i>
+
+                            Layouts<i class="fa fa-angle-left LeftArrow rotate" aria-hidden="true"></i>
+                        </a>
+                        <ul class="Submenue">
+                            <li>
+                                Default
+                            </li>
+                            <li>
+                                Secondary
+                            </li>
+                            <li>
+                                Boxed
+                            </li>
+                            <li>
+                                RTL
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a class="MainMenue" href="#">
+                            <i class="fa fa-table nav-icon" aria-hidden="true"></i>
+                            Tables<i class="fa fa-angle-left LeftArrow rotate" aria-hidden="true"></i>
+                        </a>
+                        <ul class="Submenue">
+                            <li>
+                                Basik Table
+                            </li>
+                            <li>
+                                Data Table
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="MainMenue" href="#">
+                            <i class="fa fa-map nav-icon" aria-hidden="true"></i>
+                            Maps<i class="fa fa-angle-left LeftArrow rotate" aria-hidden="true"></i>
+                        </a>
+                        <ul class="Submenue">
+                            <li>
+                                Google Maps
+                            </li>
+                            <li>
+                                Vector Maps
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="MainMenue" href="#">
+                            <i class="fa fa-gift nav-icon" aria-hidden="true"></i>
+                            Extra<i class="fa fa-angle-left LeftArrow rotate" aria-hidden="true"></i>
+                        </a>
+                        <ul class="Submenue">
+                            <li>
+                                Invoice
+                            </li>
+                            <li>
+                                404 Page
+                            </li>
+                            <li>
+                                Login Page
+                            </li>
+                            <li>
+                                Registration
+                            </li>
+                            <li>
+                                Gallary
+                            </li>
+                            <li>
+                                Timeline
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-arrows nav-icon" aria-hidden="true"></i>
+                            Drag Droup
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /#sidebar-wrapper -->
+            <div id="head">
+                <div class="container-fluid header-container">
+                    <i href="#menu-toggle" id="menu-toggle" class="fa fa-bars" aria-hidden="true"></i>
+                    <div class="form-group">
+                        <div class="icon-addon addon-md">
+                            <input type="text" placeholder="Type anywhere to search" class="form-control" id="searchTB">
+                            <i class="fa fa-search glyphicon glyphicon-search" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="right-side-head">
+                        <div class="notifecations head-box">
+                            <button id="notifications" class="btn btn-default btn-lg btn-link">
+                                <i class="fa fa-bell-o" aria-hidden="true"></i>
+                            </button>
+                            <span id="not-badg" class="badge badge-notify">2</span>
+                        </div>
+                        <div class="email head-box">
+                            <button id="messages" class="btn btn-default btn-lg btn-link">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            </button>
+                            <span id="message-badg" class="badge badge-notify">4</span>
+                        </div>
+                        <div id="user-box" class="user-box head-box">
+                            <p> Mr.Sami&nbsp;&nbsp; &nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                            <img src="assets/images/Sami.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page Content -->
+            <a href="#" id="PageTitle">Dashboard  /  Interface</a>
+            <div id="page-content-wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-contint">
+                                <div class="col-md-6">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor neque eget ante dignissim pulvinar. N
+                                    luctus eget ipsum id sagittis. Maecenas eget faucibus ipsum. Suspendisse sed feugiat tellus. In sed magna in 
+                                    ullamcorper dignissim. Aenean rhoncus turpis sit amet ex congue, sed mattis lacus mollis. Vestibulum eget ex 
+                                    tincidunt euismod. Ut velit velit, tristique id magna in, sodales porta magna. Curabitur ac quam ut erat fin
+                                    cursus gravida eu lacus.
+                                </div>
+                                <div class="col-md-6">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor neque eget ante dignissim pulvinar. 
+                                    luctus eget ipsum id sagittis. Maecenas eget faucibus ipsum. Suspendisse sed feugiat tellus. In sed magna in 
+                                    ullamcorper dignissim. Aenean rhoncus turpis sit amet ex congue, sed mattis lacus mollis. Vestibulum eget ex 
+                                    tincidunt euismod. Ut velit velit, tristique id magna in, sodales porta magna. Curabitur ac quam ut erat fi
+                                    cursus gravida eu lacus.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="col-contint inner-contint">
+                                <h5 class ="title form-section"> Bootstrap alerts </h5>
+                                <select class="form-control select-width" id="alert-select">
+                                    <option value="success">Success</option>
+                                    <option value="info">Info</option>
+                                    <option value="warning">Warning</option>
+                                    <option value="danger">Danger</option>
+                                </select>
+                                <button id="alert-generate" type="button" class="btn btn-default generate-display">Generate</button>
+                                <div class="alerts-container">
+                                    <div class="alert alert-success alert-dismissable">
+                                        <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+                                        This alert box could indicate a successful or positive action.
+                                    </div>
+                                    <div class="alert alert-info alert-dismissable">
+                                      <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+                                      This alert box could indicate an informative change or action.
+                                    </div>
+                                    <div class="alert alert-warning alert-dismissable">
+                                      <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+                                      This alert box could indicate a warning.
+                                    </div>
+                                    <div class="alert alert-danger alert-dismissable">
+                                      <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+                                      This alert box could indicate a potentially negative action.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="col-contint inner-contint">
+                                <h5 class ="title form-section"> Toastr alerts </h5>
+                                <div class="dashboard-container">
+                                    <form id="toastr-form">
+                                        <div class="radio">
+                                          <label><input type="radio" name="optradio" value="TopRight">Top Right</label>
+                                        </div>
+                                        <div class="radio">
+                                          <label><input type="radio" name="optradio" value="BottomRight">Bottom Right</label>
+                                        </div>
+                                        <div class="radio">
+                                          <label><input type="radio" name="optradio" value="BottomLeft">Bottom Left</label>
+                                        </div>                                        
+                                        <div class="radio">
+                                          <label><input type="radio" name="optradio" value="TopLeft">Top Left</label>
+                                        </div>
+                                        <div class="radio">
+                                          <label><input type="radio" name="optradio" value="TopFull">Top Full Width</label>
+                                        </div>
+                                        <div class="radio">
+                                          <label><input type="radio" name="optradio" value="BottomFull">Bottom Full Width</label>
+                                        </div>
+                                        <div class="radio">
+                                          <label><input type="radio" name="optradio" value="TopCenter">Top Center</label>
+                                        </div>
+                                        <div class="radio">
+                                          <label><input type="radio" name="optradio" value="BottomCenter">Bottom Center</label>
+                                        </div>
+                                    </form>
+                                    <button id="toastr-generate" type="button" class="btn btn-default generate-display">Generate</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-contint inner-contint">
+                                <h5 class ="title form-section"> Sweet alert </h5>
+                                <div class="col-sm-3 col-padding">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt metus odio, at congue tellus
+                                        dignissim eget. Vestibulum nec faucibus eros. In libero augue, volutpat vitae ex quis, tincidunt finibus
+                                        risus. Curabitur facilisis nec erat eu commodo. Integer maximus eros non mi mattis, sit amet molestie dui
+                                    </p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <div class="row">
+                                        <div class="col-sm-3"><label>Basic message</label></div>
+                                        <div class="col-sm-3"><label>Success message!</label></div>
+                                        <div class="col-sm-3"><label>Warning message!</label></div>
+                                        <div class="col-sm-3"><label>Execute something else for "Cancel"</label></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-3"><button id="basic" type="button" class="btn btn-default">Generate</button></div>
+                                        <div class="col-sm-3"><button id="success" type="button" class="btn btn-default">Generate</button></div>
+                                        <div class="col-sm-3"><button id="warning" type="button" class="btn btn-default">Generate</button></div>
+                                        <div class="col-sm-3"><button id="execute" type="button" class="btn btn-default">Generate</button></div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-sm-3"><label>Custom icon</label></div>
+                                        <div class="col-sm-3"><label>An HTML message</label></div>
+                                        <div class="col-sm-3"><label>A message with auto close timer</label></div>
+                                        <div class="col-sm-3"><label>Prompt function</label></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-3"><button id="custom" type="button" class="btn btn-default">Generate</button></div>
+                                        <div class="col-sm-3"><button id="HTML" type="button" class="btn btn-default">Generate</button></div>
+                                        <div class="col-sm-3"><button id="Timer" type="button" class="btn btn-default">Generate</button></div>
+                                        <div class="col-sm-3"><button id="Prompt" type="button" class="btn btn-default">Generate</button></div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-sm-3"><label>With a loader</label></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-3"><button id="loader" type="button" class="btn btn-default">Generate</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /#page-content-wrapper -->
+            </div>   
+                     
+            <!-- /#wrapper -->
+            <div id="Right-Side-Section">
+                <div id="Right-Side-Section-Togle">
+                    <i class="fa fa-pencil-square-o" id="Edit" aria-hidden="true"></i>
+                </div>
+                <div class="table">
+                    <table>
+                        <tr>
+                            <td colspan="4">
+                                <div onclick="closeToggel()" id="Close">
+                                    <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="notifecations-box">
+                <div class="arrow-up"></div>
+                <h5>Notifications</h5>
+                <div class="single-not-content">
+                    <a href="#">
+                        <img src="assets/images/Sami.jpg" />
+                        <p><b>Mohammad Meshaal</b>&nbsp;    wants your confirmation on his Leave Request on 12 May 2015</p>
+                    </a>
+                </div>
+                <div class="single-not-content">
+                    <a href="#">
+                        <img src="assets/images/Sami.jpg" />
+                        <p><b>Mohammad Meshaal</b>&nbsp;    wants your confirmation on his Leave Request on 12 May 2015</p>
+                    </a>
+                </div>
+                <div class="veiw-all-not">
+                    <a href="#">View All</a>
+                </div>
+            </div>
+            <div class="messages-box">
+                <div class="arrow-up"></div>
+                <h5>Messages <a class="send-message-link " href="#">Send New Message</a></h5>
+                <div class="single-not-content">
+                    <a href="#">
+                        <img src="assets/images/Sami.jpg" />
+                        <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
+                    </a>
+                </div>
+                <div class="single-not-content">
+                    <a href="#">
+                        <img src="assets/images/Sami.jpg" />
+                        <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
+                    </a>
+                </div>
+                <div class="single-not-content">
+                    <a href="#">
+                        <img src="assets/images/Sami.jpg" />
+                        <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
+                    </a>
+                </div>
+                <div class="single-not-content">
+                    <a href="#">
+                        <img src="assets/images/Sami.jpg" />
+                        <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
+                    </a>
+                </div>
+                <div class="veiw-all-not">
+                    <a href="#">View All</a>
+                </div>
+            </div>
+            <div class="user-info-box">
+                <div class="arrow-up user-arrow"></div>
+                <a href="#">
+                    <div class="user-info-content">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        Proﬁle
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="user-info-content">
+                        <i class="fa fa-cog" aria-hidden="true"></i>
+                        Settings
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="user-info-content">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                        Help
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="user-info-content logout">
+                        Log Out
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/notifications_boxs.js"></script>
+        <script src="assets/vendors/toastr/toastr.js"></script>
+        <script src="assets/vendors/sweet-alert/sweetalert.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#test").click(function(){
+                    swal("Hello world!");
+                });
+            });
+        </script>
+    </body>
+</html>

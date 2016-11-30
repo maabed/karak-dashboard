@@ -25,3 +25,32 @@
 .col-contint > img{
     width: 100%;
 }
+.form-section{
+    min-height: 0px;
+    margin-bottom: 0px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.inner-contint{
+    padding: 15px;
+}
+.select-width{
+    width: 50%;
+    display: inline;
+}
+.generate-display{
+    float: right;
+}
+#toastr-form>.radio{
+    margin-bottom: 19px;
+}
+.select-width{
+    margin-bottom: 15px;
+}
+.generate-display{
+    margin-bottom: 15px;
+}
+.col-padding{
+    padding-left: 0px;
+}
