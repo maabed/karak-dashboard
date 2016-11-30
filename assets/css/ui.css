@@ -54,3 +54,15 @@
 .col-padding{
     padding-left: 0px;
 }
+.dashboard-container>img{
+    width: 60%;
+    padding-top: 25px;
+}
+.alert{
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+.form-labels{
+    display: block;
+    font-size: 13px;
+}

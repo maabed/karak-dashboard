@@ -18,7 +18,7 @@ $(document).ready(function(){
 
  $(document).ready(function(){
                 $("#toastr-generate").click(function(){
-                    if($('input[name=optradio]:checked').val() == "TopRight"){
+                    if($('select[name=toastr-select]').val() == "TopRight"){
                         toastr.options = {
                             "positionClass": "toast-top-right",
                             "onclick": null,
@@ -30,7 +30,7 @@ $(document).ready(function(){
                         }
                         Command: toastr["success"]("Top Right!")
                     }
-                    else if($('input[name=optradio]:checked').val() == "BottomRight"){
+                    else if($('select[name=toastr-select]').val() == "BottomRight"){
                          toastr.options = {
                             "positionClass": "toast-bottom-right",
                             "onclick": null,
@@ -42,7 +42,7 @@ $(document).ready(function(){
                         }
                         Command: toastr["info"]("Bottom Right!")
                     }
-                    else if($('input[name=optradio]:checked').val() == "BottomLeft"){
+                    else if($('select[name=toastr-select]').val() == "BottomLeft"){
                          toastr.options = {
                             "positionClass": "toast-bottom-left",
                             "onclick": null,
@@ -54,7 +54,7 @@ $(document).ready(function(){
                         }
                         Command: toastr["warning"]("Bottom Left!")
                     }
-                    else if($('input[name=optradio]:checked').val() == "TopLeft"){
+                    else if($('select[name=toastr-select]').val() == "TopLeft"){
                          toastr.options = {
                             "positionClass": "toast-top-left",
                             "onclick": null,
@@ -66,7 +66,7 @@ $(document).ready(function(){
                         }
                         Command: toastr["error"]("Top Left!")
                     }
-                    else if($('input[name=optradio]:checked').val() == "topFull"){
+                    else if($('select[name=toastr-select]').val() == "TopFull"){
                          toastr.options = {
                             "positionClass": "toast-top-full-width",
                             "onclick": null,
@@ -78,7 +78,7 @@ $(document).ready(function(){
                         }
                         Command: toastr["success"]("top full width!")
                     }
-                    else if($('input[name=optradio]:checked').val() == "BottomFull"){
+                    else if($('select[name=toastr-select]').val() == "BottomFull"){
                          toastr.options = {
                             "positionClass": "toast-bottom-full-width",
                             "onclick": null,
@@ -90,7 +90,7 @@ $(document).ready(function(){
                         }
                         Command: toastr["info"]("bottom full width!")
                     }
-                    else if($('input[name=optradio]:checked').val() == "TopCenter"){
+                    else if($('select[name=toastr-select]').val() == "TopCenter"){
                          toastr.options = {
                             "positionClass": "toast-top-center",
                             "onclick": null,
@@ -102,7 +102,7 @@ $(document).ready(function(){
                         }
                         Command: toastr["warning"]("Top Center!")
                     }
-                    else if($('input[name=optradio]:checked').val() == "BottomCenter"){
+                    else if($('select[name=toastr-select]').val() == "BottomCenter"){
                          toastr.options = {
                             "positionClass": "toast-bottom-center",
                             "onclick": null,
