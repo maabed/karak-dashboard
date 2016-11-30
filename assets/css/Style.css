@@ -970,7 +970,7 @@ hr {
     width: 25em;
     position: fixed;
     top: 3.6em;
-    right: 15em;
+    right: 14.5em;
     background: #fff;
     z-index: 999;
     box-shadow: 0px 3px 10px #888888;
@@ -982,7 +982,7 @@ hr {
     width: 25em;
     position: fixed;
     top: 3.6em;
-    right: 10.5em;
+    right: 10em;
     background: #fff;
     z-index: 999;
     box-shadow: 0px 3px 10px #888888;
@@ -1198,23 +1198,30 @@ hr {
             transition: all 0.5s ease;
         }
 
-        .statistics .statistics-taps li.active a, .statistics .statistics-taps li:hover > a {
-            color: #3B97D2;
-            border-bottom: 4px solid #3B97D2;
-        }
+.pagination > li > a, .pagination > li > span {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
 
-        .statistics .statistics-taps li.active > a::after {
-            height: 1em;
-            width: .8em;
-            border-radius: 0 0 25px 25px;
-            -moz-border-radius: 0 0 25px 25px;
-            -webkit-border-radius: 0 0 25px 25px;
-            border-bottom: 5px solid #e1e4d9;
-            display: block;
-            padding-bottom: .2em;
-            margin: 0 auto;
-            position: absolute;
-        }
+.statistics .statistics-taps li.active a, .statistics .statistics-taps li:hover > a {
+    color: #3B97D2;
+    border-bottom: 4px solid #3B97D2;
+}
+
+.statistics .statistics-taps li.active > a::after {
+    height: 1em;
+    width: .8em;
+    border-radius: 0 0 25px 25px;
+    -moz-border-radius: 0 0 25px 25px;
+    -webkit-border-radius: 0 0 25px 25px;
+    border-bottom: 5px solid #e1e4d9;
+    display: block;
+    padding-bottom: .2em;
+    margin: 0 auto;
+    position: absolute;
+}
 
 .no-padding {
     padding: 0;
@@ -1998,7 +2005,6 @@ p {
 }
 
 .btns-box .dashboard-default, .dashboard-primary, .dashboard-success, .dashboard-info, .dashboard-warning, .dashboard-danger {
-   
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -2006,8 +2012,14 @@ p {
     margin-bottom: 0.5em;
 }
 
+.btn-info, .dashboard-default, .dashboard-primary, .dashboard-success, .dashboard-info, .dashboard-warning, .dashboard-danger, .outline-default, .outline-primary, .outline-success, .outline-info, .outline-warning, .outline-danger {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
 .btns-box .outline-default, .outline-primary, .outline-success, .outline-info, .outline-warning, .outline-danger {
-  
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -2035,7 +2047,7 @@ p {
 
 .dashboard-primary {
     background-color: #34495e;
-    border :#2c3e50;
+    border: #2c3e50;
 }
 
     .dashboard-primary:hover {
@@ -2121,12 +2133,51 @@ p {
         border-color: #e74c3c;
         background-color: #e74c3c;
     }
-.dashboard-active{ background-color :#34495e;
-    border-color :#34495e;
+
+.dashboard-active {
+    background-color: #34495e;
+    border-color: #34495e;
 }
 
-.btn-group-vertical  button {margin-bottom :0 !important ;
+.btn-group-vertical button {
+    margin-bottom: 0 !important;
 }
+
+.dashboard-vertical {
+    width: 100%;
+}
+
+    .dashboard-vertical button {
+        width: 100%;
+    }
+
+.dashboard-pager {
+    float: left;
+}
+
+.pager li > a, .pager li > span {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.dashboard-pagination {
+    width: 100%;
+}
+
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+    background-color: #3B97D2;
+    border-color: #3B97D2;
+}
+
+.dashboard-circle {
+    border-radius: 180px !important;
+    height: 2.2em;
+    width: 2.2em;
+    padding: 0;
+}
+
 @media(max-width:1028px) {
     .taps-center {
         width: 100% !important;
@@ -2197,6 +2248,14 @@ p {
         font-weight: lighter;
         padding-top: 6em;
     }
+
+        .flat-colors .col-sm-2:last-child p {
+            color: #000;
+        }
+
+        .flat-colors .col-sm-2 p {
+            color: #F1F3F6;
+        }
 
         .flat-colors .col-sm-2:first-child {
             background-color: #34495e;
