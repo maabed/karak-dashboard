@@ -218,4 +218,8 @@ $(document).ready(function(){
             }, 2000);
         });
     });
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+ 
 });

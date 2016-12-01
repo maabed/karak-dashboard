@@ -4,6 +4,13 @@ $(function() {
   });
 
 });
+
+$(function() {
+  $('#summernote-compose').summernote({
+    height: 200,
+  });
+
+});
                      
 $('#toggleCheckbox-1').checkboxpicker();
 $('#toggleCheckbox-1').change(function() {       
