@@ -514,6 +514,7 @@ canvas {
     color: #34495E;
     font-weight: bold;
     margin: 0;
+    margin-top :0.5em;
 }
 
 .InboxLeftSide {
@@ -2176,6 +2177,12 @@ p {
     height: 2.2em;
     width: 2.2em;
     padding: 0;
+}
+.table-width{
+    width:100%;
+}
+.table-head {
+    color :#3B97D2;
 }
 
 @media(max-width:1028px) {
