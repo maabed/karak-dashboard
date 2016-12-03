@@ -514,7 +514,7 @@ canvas {
     color: #34495E;
     font-weight: bold;
     margin: 0;
-    margin-top :0.5em;
+    margin-top: 0.5em;
 }
 
 .InboxLeftSide {
@@ -1139,17 +1139,18 @@ hr {
 }
 
 .col-contint {
-    width: 100% ;
+    width: 100%;
     background-color: #fff;
     padding: 0.5em;
     border-radius: 3px;
-    height :auto ;
-    
+    height: auto;
 }
+
 .col-contint-taps {
-    min-height :10em;
-    overflow :hidden ;
+    min-height: 10em;
+    overflow: hidden;
 }
+
 .calendar-contint {
     overflow: hidden;
     width: 100%;
@@ -2183,12 +2184,36 @@ p {
     width: 2.2em;
     padding: 0;
 }
-.table-width{
-    width:100%;
+
+.table-width {
+    width: 100%;
 }
+
 .table-head {
-    color :#3B97D2;
+    color: #3B97D2;
 }
+
+.dataTables_length label {
+    color: #888888;
+    font-weight: lighter;
+}
+
+    .dataTables_length label select {
+        color: #34495E !important;
+        border: 1px solid #F1F3F6;
+        border-radius: 3px;
+    }
+
+.dataTables_filter label {
+    color: #888888;
+    font-weight: lighter;
+}
+
+    .dataTables_filter label input {
+        color: #34495E !important;
+        border: 1px solid #F1F3F6;
+        border-radius: 3px;
+    }
 
 @media(max-width:1028px) {
     .taps-center {
