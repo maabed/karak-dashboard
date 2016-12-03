@@ -1139,12 +1139,17 @@ hr {
 }
 
 .col-contint {
-    width: 100%;
+    width: 100% ;
     background-color: #fff;
     padding: 0.5em;
     border-radius: 3px;
+    height :auto ;
+    
 }
-
+.col-contint-taps {
+    min-height :10em;
+    overflow :hidden ;
+}
 .calendar-contint {
     overflow: hidden;
     width: 100%;
