@@ -24,9 +24,11 @@
         <!--Calender-->
         <script src="assets/vendors/calender/jquery-1.10.2.js"></script>
         <script src="assets/vendors/calender/jquery-ui.custom.min.js"></script>
-        <script src="assets/js/notifications.js"></script>
-        <link href="assets/vendors/toastr/toastr.css" rel="stylesheet"/>
-        <link rel="stylesheet" href="assets/vendors/sweet-alert/sweetalert.css">
+        <link rel="stylesheet" href="assets/css/progress.css">
+        <link rel="stylesheet" href="assets/vendors/progressjs/progressjs.css">
+        
+        <style>
+        </style>
     </head>
     <body>
         <div id="wrapper">
@@ -232,144 +234,132 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="col-contint col-contint-taps">
-                                <div class="col-md-6">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor neque eget ante dignissim pulvinar. N
-                                    luctus eget ipsum id sagittis. Maecenas eget faucibus ipsum. Suspendisse sed feugiat tellus. In sed magna in 
-                                    ullamcorper dignissim. Aenean rhoncus turpis sit amet ex congue, sed mattis lacus mollis. Vestibulum eget ex 
-                                    tincidunt euismod. Ut velit velit, tristique id magna in, sodales porta magna. Curabitur ac quam ut erat fin
-                                    cursus gravida eu lacus.
-                                </div>
-                                <div class="col-md-6">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor neque eget ante dignissim pulvinar. 
-                                    luctus eget ipsum id sagittis. Maecenas eget faucibus ipsum. Suspendisse sed feugiat tellus. In sed magna in 
-                                    ullamcorper dignissim. Aenean rhoncus turpis sit amet ex congue, sed mattis lacus mollis. Vestibulum eget ex 
-                                    tincidunt euismod. Ut velit velit, tristique id magna in, sodales porta magna. Curabitur ac quam ut erat fi
-                                    cursus gravida eu lacus.
+                                <div class="col-sm-12">
+                                    <h5 class ="title form-section">Progress bars</h5>
+                                    <div class="col-sm-3 col-padding">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt metus odio, at congue tellus
+                                        dignissim eget. Vestibulum nec faucibus eros. In libero augue, volutpat vitae ex quis, tincidunt finibus
+                                        risus. Curabitur facilisis nec erat eu commodo. Integer maximus eros non mi mattis, sit amet molestie
+                                        dui.Curabitur facilisis nec erat eu commodo. Integer maximus eros non mi mattis, sit amet molestie dui
+                                        Curabitur facilisis nec erat eu commodo. Integer maximus eros non mi mattis, sit amet molestie dui.
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <label id="line-progress" class="form-labels">Basic line</label>
+                                        <div class="row">
+                                            <div id="line"></div>
+                                        </div>
+                                        <div class="row">
+                                            <button id="BarGenerate" type="button" class="btn btn-default">Generate</button>                      
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <label class="form-labels colored-progress">Color animation</label>
+                                        <div class="row">
+                                            <div id="colored"></div>
+                                        </div>
+                                        <div class="row">
+                                            <button id="ColorGenerate" type="button" class="btn btn-default center-block">Generate</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <label class="form-labels percent-progress">Percent line</label>
+                                        <div class="row">
+                                            <div id="percent"></div>
+                                        </div>
+                                        <div class="row">
+                                            <button id="PercentGenerate" type="button" class="btn btn-default pull-right">Generate</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-7">
-                            <div class="col-contint inner-contint">
-                                <h5 class ="title form-section"> Bootstrap alerts </h5>
-                                <select class="form-control select-width" id="alert-select">
-                                    <option value="success">Success</option>
-                                    <option value="info">Info</option>
-                                    <option value="warning">Warning</option>
-                                    <option value="danger">Danger</option>
-                                </select>
-                                <button id="alert-generate" type="button" class="btn btn-default generate-display">Generate</button>
-                                <div class="alerts-container">
-                                    <div class="alert alert-success alert-dismissable">
-                                        <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
-                                        This alert box could indicate a successful or positive action.
-                                    </div>
-                                    <div class="alert alert-info alert-dismissable">
-                                      <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
-                                      This alert box could indicate an informative change or action.
-                                    </div>
-                                    <div class="alert alert-warning alert-dismissable">
-                                      <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
-                                      This alert box could indicate a warning.
-                                    </div>
-                                    <div class="alert alert-danger alert-dismissable">
-                                      <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
-                                      This alert box could indicate a potentially negative action.
-                                    </div>
+                        <div class="col-sm-3">
+                            <div class="col-contint col-contint-taps">
+                                <div class="col-sm-12">
+                                    <label id="line-progress" class="form-labels form-section">Basic circle</label>
+                                    <div id="basic" class="center-block"></div>
+                                    <button id="basicGenerate" type="button" class="btn btn-default">Generate</button>                            
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-5">
-                            <div class="col-contint inner-contint">
-                                <h5 class ="title form-section"> Toastr alerts </h5>
-                                <div class="dashboard-container">
-                                    <select class="form-control select-width" name="toastr-select">
-                                        <option value="TopRight">Top Right</option>
-                                        <option value="BottomRight">Bottom Right</option>
-                                        <option value="BottomLeft">Bottom Left</option>
-                                        <option value="TopLeft">Top Left</option>
-                                        <option value="TopFull">Top Full</option>
-                                        <option value="BottomFull">Bottom Full</option>
-                                        <option value="TopCenter">Top Center</option>
-                                        <option value="BottomCenter">BottomCenter</option>
-                                    </select>
-                                    <button id="toastr-generate" type="button" class="btn btn-default generate-display">Generate</button>
-                                    <img src="assets/images/notifications/4.png" class="center-block">
+                        <div class="col-sm-3">
+                            <div class="col-contint col-contint-taps">
+                                <div class="col-sm-12">
+                                    <label id="line-progress" class="form-labels form-section">Bounce easing</label>
+                                    <div id="bounce" class="center-block"></div>
+                                    <button id="BounceGenerate" type="button" class="btn btn-default">Generate</button>                            
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="col-contint col-contint-taps">
+                                <div class="col-sm-12">
+                                    <label id="line-progress" class="form-labels form-section"> Multiple properties</label>
+                                    <div id="multi" class="center-block"></div>
+                                    <button id="multiGenerate" type="button" class="btn btn-default">Generate</button>                            
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="col-contint col-contint-taps">
+                                <div class="col-sm-12">
+                                    <label id="line-progress" class="form-labels form-section"> Semi circle with text</label>
+                                    <div id="semi"></div>
+                                    <button id="semiGenerate" type="button" class="btn btn-default">Generate</button>                            
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <br>
+                    <br>
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="col-contint inner-contint">
-                                <h5 class ="title form-section"> Sweet alert </h5>
-                                <div class="col-sm-3 col-padding">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt metus odio, at congue tellus
-                                        dignissim eget. Vestibulum nec faucibus eros. In libero augue, volutpat vitae ex quis, tincidunt finibus
-                                        risus. Curabitur facilisis nec erat eu commodo. Integer maximus eros non mi mattis, sit amet molestie dui
-                                    </p>
-                                </div>
-                                <div class="col-sm-9">
-                                    <div class="row">
-                                        <div class="col-sm-3"><label class="form-labels">Basic message</label></div>
-                                        <div class="col-sm-3"><label class="form-labels">Success message!</label></div>
-                                        <div class="col-sm-3"><label class="form-labels">Warning message!</label></div>
-                                        <div class="col-sm-3"><label class="form-labels">Execute something else for "Cancel"</label></div>
+                            <div class="col-contint col-contint-taps">
+                                <div class="col-sm-12">
+                                    <h5 class ="title form-section">Loaders and spinners</h5>
+                                    <div class="col-sm-3">
+                                        <div class="panel panel-default">
+                                            <div id="basicspinner" class="panel-body">
+                                                <div id="overlay" class="">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper odio sit amet mi
+                                                    ultrices
+                                                    consequat. Vestibulum et lacinia mauris. Phasellus imperdiet lobortis dictum. 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button id="spinner" type="button" class="btn btn-default">Generate</button>                         
                                     </div>
-                                    <div class="row">
-                                        <div class="col-sm-3"><button id="basic" type="button" class="btn btn-default">Generate</button></div>
-                                        <div class="col-sm-3"><button id="success" type="button" class="btn btn-default">Generate</button></div>
-                                        <div class="col-sm-3"><button id="warning" type="button" class="btn btn-default">Generate</button></div>
-                                        <div class="col-sm-3"><button id="execute" type="button" class="btn btn-default">Generate</button></div>
+                                    <div class="col-sm-5">
+                                        <div class="panel panel-default">
+                                            <div id="basicspinner-dots" class="panel-body">
+                                                <div id="dots-overlay">
+                                                    <label>Username</label>
+                                                    <input id="username" type="text" class="form-control">
+                                                    <label>Password</label>
+                                                    <input id="password" type="password" class="form-control">
+                                                    <button id="spinner-dot" type="button" class="btn btn-default">Login</button>    
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <br>
-                                    <div class="row">
-                                        <div class="col-sm-3"><label class="form-labels">Custom icon</label></div>
-                                        <div class="col-sm-3"><label class="form-labels">An HTML message</label></div>
-                                        <div class="col-sm-3"><label class="form-labels">A message with auto close timer</label></div>
-                                        <div class="col-sm-3"><label class="form-labels">Prompt function</label></div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-3"><button id="custom" type="button" class="btn btn-default">Generate</button></div>
-                                        <div class="col-sm-3"><button id="HTML" type="button" class="btn btn-default">Generate</button></div>
-                                        <div class="col-sm-3"><button id="Timer" type="button" class="btn btn-default">Generate</button></div>
-                                        <div class="col-sm-3"><button id="Prompt" type="button" class="btn btn-default">Generate</button></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="col-contint inner-contint">
-                                <h5 class ="title form-section"> Tool tips </h5>
-                                <div class="col-sm-3 col-padding">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt metus odio, at congue tellus
-                                        dignissim eget. Vestibulum nec faucibus eros. In libero augue, volutpat vitae ex quis, tincidunt finibus
-                                        risus. Curabitur facilisis nec erat eu commodo. Integer maximus eros non mi mattis, sit amet molestie dui
-                                    </p>
-                                </div>
-                                <div class="col-sm-9">
-                                    <div class="row">
-                                        <div class="col-sm-3"><label class="form-labels">Right Tooltip</label></div>
-                                        <div class="col-sm-3"><label class="form-labels">Left Tooltip</label></div>
-                                        <div class="col-sm-3"><label class="form-labels">Top Tooltip</label></div>
-                                        <div class="col-sm-3"><label class="form-labels">Buttom Tooltip</label></div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-3"><button type="button" data-toggle="tooltip" data-placement="right" title="Hooray!" class="btn btn-default">Hover Me!</button></div>
-                                        <div class="col-sm-3"><button type="button" data-toggle="tooltip" data-placement="left" title="Hooray!" class="btn btn-default">Hover Me!</button></div>
-                                        <div class="col-sm-3"><button type="button" data-toggle="tooltip" data-placement="top" title="Hooray!" class="btn btn-default">Hover Me!</button></div>
-                                        <div class="col-sm-3"><button type="button" data-toggle="tooltip" data-placement="bottom" title="Hooray!" class="btn btn-default">Hover Me!</button></div>
+                                    <div class="col-sm-4">
+                                        <div class="panel panel-default">
+                                            <div id="loader-bar" class="panel-body">
+                                                <button id="loading-bar" type="button" class="btn btn-default append">Redirect</button> 
+                                                <hr>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
                 <!-- /#page-content-wrapper -->
-            </div>   
+                </div> 
+            </div>
                      
             <!-- /#wrapper -->
             <div id="Right-Side-Section">
@@ -479,12 +469,14 @@
                 </a>
             </div>
         </div>
-
-
+        <script src="assets/vendors/progressbar/progressbar.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/main.js"></script>
         <script src="assets/js/notifications_boxs.js"></script>
         <script src="assets/vendors/toastr/toastr.js"></script>
         <script src="assets/vendors/sweet-alert/sweetalert.min.js"></script>
+        <script src="assets/js/progress.js"></script>
+        <script src="assets/vendors/spin.js/spin.js"></script>
+        <script src="assets/vendors/progressjs/progress.js"></script>
     </body>
 </html>
