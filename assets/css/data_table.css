@@ -18,6 +18,7 @@ table.dataTable {
     table.dataTable thead th,
     table.dataTable tfoot th {
         font-weight: bold;
+        color: #3b97d2 !important;
     }
 
     table.dataTable thead th,

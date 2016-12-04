@@ -2215,6 +2215,44 @@ p {
         border-radius: 3px;
     }
 
+#ajax_table_wrapper .dt-buttons a {
+    background-color: #3B97D2;
+    padding: 0.5em;
+    border-radius: 3px;
+    color: #fff;
+    margin-right: 0.5em;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#ajax_table_wrapper .dt-buttons {
+    width: 50%;
+    float: left;
+    margin-bottom: 1em;
+}
+
+    #ajax_table_wrapper .dt-buttons a:hover {
+        background-color: #2980B9;
+        text-decoration: none;
+    }
+
+tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+td.details-control {
+    background: url('../images/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+
+tr.shown td.details-control {
+    background: url('../images/details_close.png') no-repeat center center;
+}
+
 @media(max-width:1028px) {
     .taps-center {
         width: 100% !important;
@@ -2246,17 +2284,17 @@ p {
     }
 }
 
-.taps-center {
+.taps-center; {
     width: 70%;
     margin: 0 auto;
     text-align: center;
 }
 
-    .taps-center li {
-        margin: 0 auto;
-        width: 33%;
-        text-align: center;
-    }
+.taps-center li {
+    margin: 0 auto;
+    width: 33%;
+    text-align: center;
+}
 
 .progress {
     background-color: #F1F3F6;
@@ -2327,6 +2365,7 @@ p {
 
 @media(min-width:768px) {
 
+
     #wrapper {
         padding-left: 250px;
     }
@@ -2358,6 +2397,12 @@ p {
 
 
 @media(max-width:768px) {
+    #ajax_table_wrapper .dt-buttons {
+        width: 100%;
+        float: none;
+        margin-bottom: 1em;
+    }
+
     .icons-header img {
         height: auto;
     }
