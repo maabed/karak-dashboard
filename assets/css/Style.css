@@ -514,7 +514,7 @@ canvas {
     color: #34495E;
     font-weight: bold;
     margin: 0;
-    margin-top :0.5em;
+    margin-top: 0.5em;
 }
 
 .InboxLeftSide {
@@ -1139,17 +1139,18 @@ hr {
 }
 
 .col-contint {
-    width: 100% ;
+    width: 100%;
     background-color: #fff;
     padding: 0.5em;
     border-radius: 3px;
-    height :auto ;
-    
+    height: auto;
 }
+
 .col-contint-taps {
-    min-height :10em;
-    overflow :hidden ;
+    min-height: 10em;
+    overflow: hidden;
 }
+
 .calendar-contint {
     overflow: hidden;
     width: 100%;
@@ -2183,13 +2184,53 @@ p {
     width: 2.2em;
     padding: 0;
 }
-.table-width{
-    width:100%;
-}
-.table-head {
-    color :#3B97D2;
+
+.table-width {
+    width: 100%;
 }
 
+.table-head {
+    color: #3B97D2;
+}
+
+.float-right {
+    float: right;
+}
+
+.panel-heading a span {
+    color: #C4C4C4;
+    cursor: pointer;
+    margin-right  :0.5em;
+    margin-top :0.2em;
+}
+
+    .panel-heading a span:hover {
+        color: #7B7B7B;
+    }
+    .panel-actions {
+  margin-top: -20px;
+  margin-bottom: 0;
+  text-align: right;
+}
+.panel-actions p  {
+     color: #C4C4C4;
+}
+ .panel-actions p:hover {
+        color: #7B7B7B;
+    }
+
+.panel-fullscreen {
+    display: block;
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    overflow: auto;
+}
 @media(max-width:1028px) {
     .taps-center {
         width: 100% !important;
