@@ -1,0 +1,53 @@
+
+.colored-progress{
+    text-align: center;
+}
+.percent-progress{
+    text-align: right;
+}
+.right-border{
+    border-right: 1px solid #e4e5e7;
+}
+#basic {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+#bounce{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+#multi{
+    width: 100px;
+    height: 100px; 
+    position: relative;
+    margin-bottom: 10px;
+}
+#semi{
+    margin-bottom: 9px;
+}
+#ColorGenerate{
+    margin-top: 15px;
+}
+#PercentGenerate{
+    margin-top: 15px;
+}
+#BarGenerate{
+    margin-top: 10px;
+}
+.static-col{
+    height: 130px;
+}
+.side-col-margin{
+    margin-top: 15px;
+}
+.btn-sm{
+    margin-bottom: 8px;
+}
+.loading-opacity{
+    opacity: 0.5;
+}
+#spinner-dot{
+    margin-top: 8px;
+}
