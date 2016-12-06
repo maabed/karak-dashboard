@@ -1,5 +1,11 @@
 /* basic circle */ 
 $(document).ready(function(){
+    $("#circleGenerate").click(function(){
+        
+        
+        var value = $('select[name=progress-select]').val();
+        if(value == "basic"){
+        $("#progress-container").append("<div id=''></div>")    
         var basicC = new ProgressBar.Circle(basic, {
             strokeWidth: 6,
             easing: 'easeInOut',
@@ -21,7 +27,8 @@ $(document).ready(function(){
           flag = 0;
         }       
     });
-});
+        }
+    });
 /* bounce circle */ 
 var bounceC = new ProgressBar.Circle(bounce, {
   color: '#FFEA82',
@@ -95,6 +102,9 @@ multiC.animate(1.0);
           flag3 = 0;
         }       
     });
+});
+
+
 
 
 /*lines*/
@@ -108,7 +118,7 @@ var barline = new ProgressBar.Line(line, {
   color: '#FFEA82',
   trailColor: '#eee',
   trailWidth: 1,
-  svgStyle: {width: '30%', height: '100%'}
+  svgStyle: {width: '30%', height: '100%',display : 'block' , marginRight : 'auto' , marginLeft : 'auto'}
 });
 
 barline.animate(1.0);
@@ -133,15 +143,14 @@ barline.animate(1.0);
   color: '#FFEA82',
   trailColor: '#eee',
   trailWidth: 1,
-  svgStyle: {width: '30%', height: '100%' , float : 'right'},
+  svgStyle: {width: '30%', height: '100%',display : 'block' , marginRight : 'auto' , marginLeft : 'auto'},
   text: {
     style: {
       // Text color.
       // Default: same as stroke color (options.color)
       color: '#999',
       position: 'absolute',
-      right: '0',
-      top: '30px',
+      right: '185px',
       padding: 0,
       margin: 0,
       transform: null

@@ -28,13 +28,16 @@
     margin-bottom: 9px;
 }
 #ColorGenerate{
-    margin-top: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 #PercentGenerate{
-    margin-top: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 #BarGenerate{
     margin-top: 10px;
+    margin-bottom: 15px;
 }
 .static-col{
     height: 130px;
@@ -50,4 +53,16 @@
 }
 #spinner-dot{
     margin-top: 8px;
+}
+.line-progress{
+    text-align: center;
+}
+.colored-progress{
+    text-align: center;
+}
+.percent-progress{
+    text-align: center;
+}
+#progress-select{
+    margin-bottom: 10px;
 }

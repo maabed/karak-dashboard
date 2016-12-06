@@ -232,84 +232,65 @@
             <div id="page-content-wrapper">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-6">
                             <div class="col-contint col-contint-taps">
-                                <div class="col-sm-12">
-                                    <h5 class ="title form-section">Progress bars</h5>
-                                    <div class="col-sm-3 col-padding">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt metus odio, at congue tellus
-                                        dignissim eget. Vestibulum nec faucibus eros. In libero augue, volutpat vitae ex quis, tincidunt finibus
-                                        risus. Curabitur facilisis nec erat eu commodo. Integer maximus eros non mi mattis, sit amet molestie
-                                        dui.Curabitur facilisis nec erat eu commodo. Integer maximus eros non mi mattis, sit amet molestie dui
-                                        Curabitur facilisis nec erat eu commodo. Integer maximus eros non mi mattis, sit amet molestie dui.
-                                        </p>
-                                    </div>
-                                    <div class="col-sm-9">
-                                        <label id="line-progress" class="form-labels">Basic line</label>
-                                        <div class="row">
-                                            <div id="line"></div>
-                                        </div>
-                                        <div class="row">
-                                            <button id="BarGenerate" type="button" class="btn btn-default">Generate</button>                      
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-9">
-                                        <label class="form-labels colored-progress">Color animation</label>
-                                        <div class="row">
-                                            <div id="colored"></div>
-                                        </div>
-                                        <div class="row">
-                                            <button id="ColorGenerate" type="button" class="btn btn-default center-block">Generate</button>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-9">
-                                        <label class="form-labels percent-progress">Percent line</label>
-                                        <div class="row">
-                                            <div id="percent"></div>
-                                        </div>
-                                        <div class="row">
-                                            <button id="PercentGenerate" type="button" class="btn btn-default pull-right">Generate</button>
-                                        </div>
-                                    </div>
+                                <h5 class ="title">Progress</h5>
+                                <p class="inner-contint">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt metus odio, at congue tellus
+                                dignissim eget. Vestibulum nec faucibus eros. In libero augue, volutpat vitae ex quis, tincidunt finibus
+                                risus. Curabitur facilisis nec erat eu commodo. Integer maximus eros non mi mattis, sit amet molestie
+                                dui.Curabitur facilisis nec erat eu commodo. Integer maximus eros non mi mattis, sit amet molestie dui
+                                Curabitur facilisis nec erat eu commodo. Integer maximus eros non mi mattis, sit amet molestie dui. Integer
+                                maximus eros non mi mattis, sit amet molestie.
+                                dui.Curabitur facilisis nec erat eu commodo. Integer maximus eros non mi mattis, sit amet molestie dui
+                                Curabitur facilisis nec erat eu commodo. Integer maximus eros non mi mattis, sit amet molestie dui.
+                                Integer maximus eros non mi mattis, sit amet molestie dui
+                                Curabitur facilisis nec erat eu commodo. Integer maximus eros non mi mattis.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="col-contint col-contint-taps">
+                                <label class="form-labels line-progress">Basic line</label>
+                                <div class="row">
+                                    <div id="line"></div>
+                                </div>
+                                <div class="row">
+                                    <button id="BarGenerate" type="button" class="btn btn-default center-block">Generate</button>                  
+                                </div>
+                                <label class="form-labels colored-progress">Color animation</label>
+                                <div class="row">
+                                    <div id="colored"></div>
+                                </div>
+                                <div class="row">
+                                    <button id="ColorGenerate" type="button" class="btn btn-default center-block">Generate</button>
+                                </div>
+                                <label class="form-labels percent-progress">Percent line</label>
+                                <div class="row">
+                                    <div id="percent"></div>
+                                </div>
+                                <div class="row">
+                                    <button id="PercentGenerate" type="button" class="btn btn-default center-block">Generate</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-3">
+                        <div class="col-md-4">
                             <div class="col-contint col-contint-taps">
-                                <div class="col-sm-12">
-                                    <label id="line-progress" class="form-labels form-section">Basic circle</label>
-                                    <div id="basic" class="center-block"></div>
-                                    <button id="basicGenerate" type="button" class="btn btn-default">Generate</button>                            
+                                <h5 class ="title">Circle progress</h5>
+                                <p class="inner-contint">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                                <select class="form-control center-block" id="progress-select">
+                                    <option value="basic">Basic circle</option>
+                                    <option value="bounce">Bounce easing</option>
+                                    <option value="multiple">Multiple properties</option>
+                                </select>
+                                <div id="progress-container" class="center-block">
+                                
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="col-contint col-contint-taps">
-                                <div class="col-sm-12">
-                                    <label id="line-progress" class="form-labels form-section">Bounce easing</label>
-                                    <div id="bounce" class="center-block"></div>
-                                    <button id="BounceGenerate" type="button" class="btn btn-default">Generate</button>                            
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="col-contint col-contint-taps">
-                                <div class="col-sm-12">
-                                    <label id="line-progress" class="form-labels form-section"> Multiple properties</label>
-                                    <div id="multi" class="center-block"></div>
-                                    <button id="multiGenerate" type="button" class="btn btn-default">Generate</button>                            
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="col-contint col-contint-taps">
-                                <div class="col-sm-12">
-                                    <label id="line-progress" class="form-labels form-section"> Semi circle with text</label>
-                                    <div id="semi"></div>
-                                    <button id="semiGenerate" type="button" class="btn btn-default">Generate</button>                            
-                                </div>
+                                <button id="circleGenerate" type="button" class="btn btn-default">Generate</button>                            
                             </div>
                         </div>
                     </div>
