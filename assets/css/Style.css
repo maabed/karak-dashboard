@@ -514,7 +514,7 @@ canvas {
     color: #34495E;
     font-weight: bold;
     margin: 0;
-    margin-top :0.5em;
+    margin-top: 0.5em;
 }
 
 .InboxLeftSide {
@@ -1139,17 +1139,18 @@ hr {
 }
 
 .col-contint {
-    width: 100% ;
+    width: 100%;
     background-color: #fff;
     padding: 0.5em;
     border-radius: 3px;
-    height :auto ;
-    
+    height: auto;
 }
+
 .col-contint-taps {
-    min-height :10em;
-    overflow :hidden ;
+    min-height: 10em;
+    overflow: hidden;
 }
+
 .calendar-contint {
     overflow: hidden;
     width: 100%;
@@ -2183,11 +2184,13 @@ p {
     width: 2.2em;
     padding: 0;
 }
-.table-width{
-    width:100%;
+
+.table-width {
+    width: 100%;
 }
+
 .table-head {
-    color :#3B97D2;
+    color: #3B97D2;
 }
 
 @media(max-width:1028px) {
@@ -2299,6 +2302,30 @@ p {
             color: #34495E;
             border-bottom: 8px solid #ecf0f1;
         }
+
+.col-contint .navbar {
+    padding-top: 0em !important;
+    padding-bottom: 0em !important;
+}
+
+.left-side-menue-height {
+    height: 35.7em;
+    overflow: hidden;
+    padding-bottom: 5em;
+}
+
+    .left-side-menue-height .navbar {
+        width: 100%;
+    }
+
+.menu-padding {
+    padding-right: 0.5em;
+}
+
+.store-menu {
+    height: 32em;
+}
+
 
 @media(min-width:768px) {
 
