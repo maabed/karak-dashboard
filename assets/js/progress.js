@@ -1,16 +1,19 @@
 /* basic circle */ 
 $(document).ready(function(){
     $("#circleGenerate").click(function(){
-        
-        
+        $("#basic").remove();
+        $("#bounce").remove();
+        $("#multi").remove();
+        var FromColor = $("#FromColor").val();
+        var ToColor= $("#ToColor").val();
         var value = $('select[name=progress-select]').val();
         if(value == "basic"){
-        $("#progress-container").append("<div id=''></div>")    
+        $("#progress-container").append("<div id='basic' class='center-block'></div>")    
         var basicC = new ProgressBar.Circle(basic, {
             strokeWidth: 6,
             easing: 'easeInOut',
             duration: 1400,
-            color: '#FFEA82',
+            color: FromColor,
             trailColor: '#eee',
             trailWidth: 1,
             svgStyle: null
@@ -28,8 +31,10 @@ $(document).ready(function(){
         }       
     });
         }
-    });
+
 /* bounce circle */ 
+else if(value == "bounce"){
+$("#progress-container").append("<div id='bounce' class='center-block'></div>")    
 var bounceC = new ProgressBar.Circle(bounce, {
   color: '#FFEA82',
   trailColor: '#eee',
@@ -37,8 +42,8 @@ var bounceC = new ProgressBar.Circle(bounce, {
   duration: 1400,
   easing: 'bounce',
   strokeWidth: 6,
-  from: {color: '#FFEA82', a:0},
-  to: {color: '#ED6A5A', a:1},
+  from: {color: FromColor, a:0},
+  to: {color: ToColor, a:1},
   // Set default step function for all animate calls
   step: function(state, circle) {
     circle.path.setAttribute('stroke', state.color);
@@ -57,8 +62,12 @@ bounceC.animate(1.0);
         }       
     });
 
-
+}
 /* multi circle */ 
+        
+        
+else if(value == "multiple"){
+$("#progress-container").append("<div id='multi' class='center-block'></div>")            
 var multiC = new ProgressBar.Circle(multi, {
   color: '#aaa',
   // This has to be the same size as the maximum width to
@@ -70,8 +79,8 @@ var multiC = new ProgressBar.Circle(multi, {
   text: {
     autoStyleContainer: false
   },
-  from: { color: '#aaa', width: 1 },
-  to: { color: '#333', width: 4 },
+  from: { color: FromColor, width: 1 },
+  to: { color: ToColor, width: 4 },
   // Set default step function for all animate calls
   step: function(state, circle) {
     circle.path.setAttribute('stroke', state.color);
@@ -102,6 +111,8 @@ multiC.animate(1.0);
           flag3 = 0;
         }       
     });
+        
+}
 });
 
 
@@ -340,3 +351,4 @@ bar.animate(1.0);  // Number from 0.0 to 1.0
                     $("#loader-bar").append("<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper odio sit amet miultrices,consequat. Vestibulum et lacinia mauris. Phasellus imperdiet lobortis dictum </p>")
                 }, 1000);
             });
+        });

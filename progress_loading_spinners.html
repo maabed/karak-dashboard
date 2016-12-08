@@ -276,21 +276,37 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <div class="col-contint col-contint-taps">
                                 <h5 class ="title">Circle progress</h5>
                                 <p class="inner-contint">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 </p>
-                                <select class="form-control center-block" id="progress-select">
-                                    <option value="basic">Basic circle</option>
-                                    <option value="bounce">Bounce easing</option>
-                                    <option value="multiple">Multiple properties</option>
-                                </select>
-                                <div id="progress-container" class="center-block">
-                                
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <select class="form-control" id="progress-select" name="progress-select">
+                                            <option value="basic">Basic circle</option>
+                                            <option value="bounce">Bounce easing</option>
+                                            <option value="multiple">Multiple properties</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label>From:</label>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <input type="color" class="pull-right" id="FromColor" value="#ff0000">
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label>To:</label>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <input type="color" class="pull-right" id="ToColor" value="#ff0000">
+                                    </div>
                                 </div>
-                                <button id="circleGenerate" type="button" class="btn btn-default">Generate</button>                            
+                                <div id="progress-container" class="center-block">
+                                    
+                                </div>
+                                <button id="circleGenerate" type="button" class="btn btn-default center-block">Generate</button>
                             </div>
                         </div>
                     </div>
