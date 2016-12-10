@@ -2193,6 +2193,7 @@ p {
     color: #3B97D2;
 }
 
+<<<<<<< HEAD
 .float-right {
     float: right;
 }
@@ -2202,59 +2203,28 @@ p {
     cursor: pointer;
     margin-right  :0.5em;
     margin-top :0.2em;
-}
-
-.panel-heading a span:hover {
-    color: #7B7B7B;}
-}
-
-.panel-actions {
-  margin-top: -20px;
-  margin-bottom: 0;
-  text-align: right;
-}
-.panel-actions p  {
-    color: #C4C4C4;
-}
-
-.panel-actions p:hover {
-    color: #7B7B7B;
-}
-
-.panel-fullscreen {
-    display: block;
-    z-index: 9999;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    overflow: auto;
-}
-
+=======
 .dataTables_length label {
     color: #888888;
     font-weight: lighter;
 }
 
-.dataTables_length label select {
-    color: #34495E !important;
-    border: 1px solid #F1F3F6;
-    border-radius: 3px;
-}
+    .dataTables_length label select {
+        color: #34495E !important;
+        border: 1px solid #F1F3F6;
+        border-radius: 3px;
+    }
 
 .dataTables_filter label {
     color: #888888;
     font-weight: lighter;
 }
 
-        .dataTables_filter label input {
-            color: #34495E !important;
-            border: 1px solid #F1F3F6;
-            border-radius: 3px;
-        }
+    .dataTables_filter label input {
+        color: #34495E !important;
+        border: 1px solid #F1F3F6;
+        border-radius: 3px;
+    }
 
 #ajax_table_wrapper .dt-buttons a {
     background-color: #3B97D2;
@@ -2292,8 +2262,36 @@ td.details-control {
 
 tr.shown td.details-control {
     background: url('../images/details_close.png') no-repeat center center;
+>>>>>>> develop
 }
 
+    .panel-heading a span:hover {
+        color: #7B7B7B;
+    }
+    .panel-actions {
+  margin-top: -20px;
+  margin-bottom: 0;
+  text-align: right;
+}
+.panel-actions p  {
+     color: #C4C4C4;
+}
+ .panel-actions p:hover {
+        color: #7B7B7B;
+    }
+
+.panel-fullscreen {
+    display: block;
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    overflow: auto;
+}
 @media(max-width:1028px) {
     .taps-center {
         width: 100% !important;
