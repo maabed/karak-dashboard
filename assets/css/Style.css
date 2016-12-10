@@ -514,7 +514,7 @@ canvas {
     color: #34495E;
     font-weight: bold;
     margin: 0;
-    margin-top :0.5em;
+    margin-top: 0.5em;
 }
 
 .InboxLeftSide {
@@ -1139,17 +1139,18 @@ hr {
 }
 
 .col-contint {
-    width: 100% ;
+    width: 100%;
     background-color: #fff;
     padding: 0.5em;
     border-radius: 3px;
-    height :auto ;
-    
+    height: auto;
 }
+
 .col-contint-taps {
-    min-height :10em;
-    overflow :hidden ;
+    min-height: 10em;
+    overflow: hidden;
 }
+
 .calendar-contint {
     overflow: hidden;
     width: 100%;
@@ -2183,11 +2184,73 @@ p {
     width: 2.2em;
     padding: 0;
 }
-.table-width{
-    width:100%;
+
+.table-width {
+    width: 100%;
 }
+
 .table-head {
-    color :#3B97D2;
+    color: #3B97D2;
+}
+
+.dataTables_length label {
+    color: #888888;
+    font-weight: lighter;
+}
+
+    .dataTables_length label select {
+        color: #34495E !important;
+        border: 1px solid #F1F3F6;
+        border-radius: 3px;
+    }
+
+.dataTables_filter label {
+    color: #888888;
+    font-weight: lighter;
+}
+
+    .dataTables_filter label input {
+        color: #34495E !important;
+        border: 1px solid #F1F3F6;
+        border-radius: 3px;
+    }
+
+#ajax_table_wrapper .dt-buttons a {
+    background-color: #3B97D2;
+    padding: 0.5em;
+    border-radius: 3px;
+    color: #fff;
+    margin-right: 0.5em;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#ajax_table_wrapper .dt-buttons {
+    width: 50%;
+    float: left;
+    margin-bottom: 1em;
+}
+
+    #ajax_table_wrapper .dt-buttons a:hover {
+        background-color: #2980B9;
+        text-decoration: none;
+    }
+
+tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+td.details-control {
+    background: url('../images/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+
+tr.shown td.details-control {
+    background: url('../images/details_close.png') no-repeat center center;
 }
 
 @media(max-width:1028px) {
@@ -2221,17 +2284,17 @@ p {
     }
 }
 
-.taps-center {
+.taps-center; {
     width: 70%;
     margin: 0 auto;
     text-align: center;
 }
 
-    .taps-center li {
-        margin: 0 auto;
-        width: 33%;
-        text-align: center;
-    }
+.taps-center li {
+    margin: 0 auto;
+    width: 33%;
+    text-align: center;
+}
 
 .progress {
     background-color: #F1F3F6;
@@ -2302,6 +2365,7 @@ p {
 
 @media(min-width:768px) {
 
+
     #wrapper {
         padding-left: 250px;
     }
@@ -2333,6 +2397,12 @@ p {
 
 
 @media(max-width:768px) {
+    #ajax_table_wrapper .dt-buttons {
+        width: 100%;
+        float: none;
+        margin-bottom: 1em;
+    }
+
     .icons-header img {
         height: auto;
     }
