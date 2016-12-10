@@ -21,6 +21,8 @@
     <![endif]-->
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
     <script src="assets/vendors/calender/jquery-1.10.2.js"></script>
+    <link href="assets/css/dragula.css" rel="stylesheet" />
+    <link href="assets/css/drag_drop.css" rel="stylesheet" />
 </head>
 <body>
     <div id="wrapper">
@@ -59,7 +61,7 @@
                         Email<span class="label label-primary nav-lbl">2</span>
                     </a>
                 </li>
-                <li class="selected">
+                <li>
                     <a class="MainMenue" href="#">
                         <i class="fa fa-eye   nav-icon" aria-hidden="true"></i>
                         UI Elements<span class="label label-success nav-lbl">New</span> <i class="fa fa-angle-left LeftArrow rotate" aria-hidden="true"></i>
@@ -132,7 +134,7 @@
                     </a>
                     <ul class="Submenue">
                         <li>
-                            Basik Table
+                            Basic  Table
                         </li>
                         <li>
                             Data Table
@@ -219,275 +221,181 @@
         </div>
 
         <!-- Page Content -->
-        <a href="#" id="PageTitle">Tables  /  Basik Table</a>
+        <a href="#" id="PageTitle">Panels</a>
         <div id="page-content-wrapper">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-8">
                         <div class="col-contint">
-                            <h5 class="title">Bbasic Table</h5>
+                            <h5 class="title">Panel With Header and Footer</h5>
                             <br />
-                            <table class="table table-responsive">
-                                <thead class="table-head">
-                                    <tr>
-                                        <th>First name</th>
-                                        <th>Last name</th>
-                                        <th>Email</th>
-                                        <th>Phone</th>
-                                        <th>Country</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>John</td>
-                                        <td>Doe</td>
-                                        <td>john@example.com</td>
-                                        <td>5555555</td>
-                                        <td>Jordan</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mary</td>
-                                        <td>Moe</td>
-                                        <td>mary@example.com</td>
-                                        <td>446166516</td>
-                                        <td>Korea, North</td>
-                                    </tr>
-                                    <tr>
-                                        <td>July</td>
-                                        <td>Dooley</td>
-                                        <td>july@example.com</td>
-                                        <td>5578255</td>
-                                        <td>Argentina</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Garth</td>
-                                        <td>Moe</td>
-                                        <td>garth@example.com</td>
-                                        <td>4478215</td>
-                                        <td>Colombia</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Raya</td>
-                                        <td>Abraham</td>
-                                        <td>raya@example.com</td>
-                                        <td>55784245</td>
-                                        <td>Burundi</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mosa</td>
-                                        <td>Ahmed</td>
-                                        <td>mosa@example.com</td>
-                                        <td>545755</td>
-                                        <td>Brazil</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">Panel Heading</div>
+                                <div class="panel-body">
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the scrambled it to make a type specimen book.
+                                    </p>
+                                </div>
+                                <div class="panel-footer">Panel Footer</div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="col-contint">
-                            <h5 class="title">Basic Table With Hover</h5>
+                            <h5 class="title">Collapsible Panel</h5>
                             <br />
-                            <table class="table table-responsive table-hover">
-                                <thead class="table-head">
-                                    <tr>
-                                        <th>First name</th>
-                                        <th>Last name</th>
-                                        <th>Phone</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>John</td>
-                                        <td>Doe</td>
-                                        <td>5555555</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mary</td>
-                                        <td>Moe</td>
-                                        <td>446166516</td>
-                                    </tr>
-                                    <tr>
-                                        <td>July</td>
-                                        <td>Dooley</td>
-                                        <td>5578255</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Garth</td>
-                                        <td>Moe</td>
-                                        <td>4478215</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Raya</td>
-                                        <td>Abraham</td>
-                                        <td>55784245</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mosa</td>
-                                        <td>Ahmed</td>
-                                        <td>545755</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="panel-group">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading dashboard-panel">
+                                        Panel Heading
+                                        <a data-toggle="collapse" data-target="#demo">
+                                            <span class="glyphicon glyphicon-chevron-up float-right"></span>
+                                        </a>
+                                    </div>
+                                    <div id="demo" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+                                            <p>
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the scrambled.
+                                            </p>
+                                        </div>
+                                        <div class="panel-footer">Panel Footer</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="close_panel_section" class="row section-margin">
+                    <div class="col-sm-12">
+                        <div class="col-contint">
+                            <h5 class="title">Close Panel</h5>
+                            <br />
+                            <div class="panel panel-default copyright-wrap" id="copyright-wrap">
+                                <div class="panel-heading">
+                                    Panel Heading
+                                    <button id="close_panele" type="button" class="close" data-target="#copyright-wrap" data-dismiss="alert">
+                                        <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                                    </button>
+                                </div>
+                                <div class="panel-body">
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the scrambled it to make a type specimen book.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="row section-margin">
-                    <div class="col-sm-4">
-                        <div class="col-contint">
-                            <h5 class="title">Bordered Table</h5>
-                            <br />
-                            <table class="table table-responsive table-bordered">
-                                <thead class="table-head">
-                                    <tr>
-                                        <th>First name</th>
-                                        <th>Last name</th>
-                                        <th>Phone</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>John</td>
-                                        <td>Doe</td>
-                                        <td>5555555</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mary</td>
-                                        <td>Moe</td>
-                                        <td>446166516</td>
-                                    </tr>
-                                    <tr>
-                                        <td>July</td>
-                                        <td>Dooley</td>
-                                        <td>5578255</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Garth</td>
-                                        <td>Moe</td>
-                                        <td>4478215</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Raya</td>
-                                        <td>Abraham</td>
-                                        <td>55784245</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mosa</td>
-                                        <td>Ahmed</td>
-                                        <td>545755</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
                     <div class="col-sm-8">
                         <div class="col-contint">
-                            <h5 class="title">Striped  Table</h5>
+                            <h5 class="title">Panels With Contextual Classes</h5>
                             <br />
-                            <table class="table table-responsive table-striped">
-                                <thead class="table-head">
-                                    <tr>
-                                        <th>First name</th>
-                                        <th>Last name</th>
-                                        <th>Phone</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>John</td>
-                                        <td>Doe</td>
-                                        <td>5555555</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mary</td>
-                                        <td>Moe</td>
-                                        <td>446166516</td>
-                                    </tr>
-                                    <tr>
-                                        <td>July</td>
-                                        <td>Dooley</td>
-                                        <td>5578255</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Garth</td>
-                                        <td>Moe</td>
-                                        <td>4478215</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Raya</td>
-                                        <td>Abraham</td>
-                                        <td>55784245</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mosa</td>
-                                        <td>Ahmed</td>
-                                        <td>545755</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="panel-group">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">Panel with panel-default class</div>
+                                    <div class="panel-body">Panel Content</div>
+                                </div>
+
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading">Panel with panel-primary class</div>
+                                    <div class="panel-body">Panel Content</div>
+                                </div>
+
+                                <div class="panel panel-success">
+                                    <div class="panel-heading">Panel with panel-success class</div>
+                                    <div class="panel-body">Panel Content</div>
+                                </div>
+
+                                <div class="panel panel-info">
+                                    <div class="panel-heading">Panel with panel-info class</div>
+                                    <div class="panel-body">Panel Content</div>
+                                </div>
+
+                                <div class="panel panel-warning">
+                                    <div class="panel-heading">Panel with panel-warning class</div>
+                                    <div class="panel-body">Panel Content</div>
+                                </div>
+
+                                <div class="panel panel-danger">
+                                    <div class="panel-heading">Panel with panel-danger class</div>
+                                    <div class="panel-body">Panel Content</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="col-contint" id="close_panel_section2">
+                            <h5 class="title">Panels With Close and Collapse</h5>
+                            <br />
+                            <div class="panel-group">
+                                <div class="panel panel-default" id="copyright-wrap2">
+                                    <div class="panel-heading dashboard-panel">
+                                        Panel Heading
+
+                                        <button id="close_panele2" type="button" class="close" data-target="#copyright-wrap2" data-dismiss="alert">
+                                            <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                                        </button>
+                                        <a data-toggle="collapse" data-target="#demo2">
+                                            <span class="glyphicon glyphicon-chevron-up float-right"></span>
+                                        </a>
+                                    </div>
+                                    <div id="demo2" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+                                            <p>
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the scrambled Lorem Ipsum has been the industry's standard dummy text ever since the scrambled Lorem Ipsum has been the industry's.
+                                            </p>
+                                        </div>
+                                        <div class="panel-footer">Panel Footer</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="col-contint">
+                            <h5 class="title">Panels With Fullscreen</h5>
+                            <br />
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    Panel Heading
+                                    <ul class="list-inline panel-actions">
+                                        <li><p id="panel-fullscreen" role="button" title="Toggle fullscreen"><i class="glyphicon glyphicon-resize-full"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="panel-body">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the scrambled Lorem Ipsum has been the industry's standard dummy text ever since the scrambled Lorem Ipsum has been the industry's standard dummy text ever since the scrambled Lorem Ipsum has been.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="row section-margin">
                     <div class="col-sm-12">
                         <div class="col-contint">
-                            <h5 class="title">Bordered Striped Table</h5>
+                            <h5 class="title">Drag and Drop</h5>
                             <br />
-                            <table class="table table-responsive table-striped table-bordered">
-                                <thead class="table-head">
-                                    <tr>
-                                        <th>First name</th>
-                                        <th>Last name</th>
-                                        <th>Email</th>
-                                        <th>Phone</th>
-                                        <th>Country</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>John</td>
-                                        <td>Doe</td>
-                                        <td>john@example.com</td>
-                                        <td>5555555</td>
-                                        <td>Jordan</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mary</td>
-                                        <td>Moe</td>
-                                        <td>mary@example.com</td>
-                                        <td>446166516</td>
-                                        <td>Korea, North</td>
-                                    </tr>
-                                    <tr>
-                                        <td>July</td>
-                                        <td>Dooley</td>
-                                        <td>july@example.com</td>
-                                        <td>5578255</td>
-                                        <td>Argentina</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Garth</td>
-                                        <td>Moe</td>
-                                        <td>garth@example.com</td>
-                                        <td>4478215</td>
-                                        <td>Colombia</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Raya</td>
-                                        <td>Abraham</td>
-                                        <td>raya@example.com</td>
-                                        <td>55784245</td>
-                                        <td>Burundi</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mosa</td>
-                                        <td>Ahmed</td>
-                                        <td>mosa@example.com</td>
-                                        <td>545755</td>
-                                        <td>Brazil</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div id='right-rm-spill' class='dag_container'>
+                                <div>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the scrambled it to make a type specimen book Lorem Ipsum has been the industry's standard dummy text ever since the scrambled it to make a type specimen book.
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the scrambled it to make a type specimen book.
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -603,8 +511,12 @@
             </a>
         </div>
     </div>
+
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/notifications_boxs.js"></script>
+    <script src="assets/js/panels_in_page.js"></script>
+    <script src="assets/js/dragula.js"></script>
+    <script src="assets/js/example.min.js"></script>
 </body>
 </html>
