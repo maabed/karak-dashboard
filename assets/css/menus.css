@@ -1,0 +1,479 @@
+﻿body, html {
+    height: 100%;
+}
+
+/* remove outer padding */
+.main .row {
+    padding: 0px;
+    margin: 0px;
+}
+
+/*Remove rounded coners*/
+
+nav.sidebar.navbar {
+    border-radius: 0px;
+}
+
+nav.sidebar, .main {
+    -webkit-transition: margin 200ms ease-out;
+    -moz-transition: margin 200ms ease-out;
+    -o-transition: margin 200ms ease-out;
+    transition: margin 200ms ease-out;
+}
+
+/* Add gap to nav and right windows.*/
+.main {
+    padding: 10px 10px 0 10px;
+}
+
+/* .....NavBar: Icon only with coloring/layout.....*/
+
+/*small/medium side display*/
+@media (min-width: 768px) {
+
+    /*Allow main to be next to Nav*/
+    .main {
+        position: absolute;
+        width: calc(100% - 40px); /*keeps 100% minus nav size*/
+        margin-left: 40px;
+        float: right;
+    }
+
+    /*lets nav bar to be showed on mouseover*/
+    nav.sidebar:hover + .main {
+        margin-left: 200px;
+    }
+
+    /*Center Brand*/
+    nav.sidebar.navbar.sidebar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+        margin-left: 0px;
+    }
+    /*Center Brand*/
+    nav.sidebar .navbar-brand, nav.sidebar .navbar-header {
+        text-align: center;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    /*Center Icons*/
+    nav.sidebar a {
+        padding-right: 13px;
+    }
+
+    /*adds border top to first nav box */
+    nav.sidebar .navbar-nav > li:first-child {
+        border-top: 1px #e5e5e5 solid;
+    }
+
+    /*adds border to bottom nav boxes*/
+    nav.sidebar .navbar-nav > li {
+        border-bottom: 1px #e5e5e5 solid;
+    }
+
+    /* Colors/style dropdown box*/
+    nav.sidebar .navbar-nav .open .dropdown-menu {
+        position: static;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        background-color: transparent;
+        border: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    /*allows nav box to use 100% width*/
+    nav.sidebar .navbar-collapse, nav.sidebar .container-fluid {
+        padding: 0 0px 0 0px;
+    }
+
+    /*colors dropdown box text */
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+
+    /*gives sidebar width/height*/
+    nav.sidebar {
+        width: 200px;
+        height: 100%;
+        margin-left: -160px;
+        float: left;
+        margin-bottom: 0px;
+    }
+
+        /*give sidebar 100% width;*/
+        nav.sidebar li {
+            width: 100%;
+        }
+
+        /* Move nav to full on mouse over*/
+        nav.sidebar:hover {
+            margin-left: 0px;
+        }
+    /*for hiden things when navbar hidden*/
+    .forAnimate {
+        opacity: 0;
+    }
+}
+
+/* .....NavBar: Fully showing nav bar..... */
+
+@media (min-width: 1330px) {
+
+    /*Allow main to be next to Nav*/
+    .main {
+        width: calc(100% - 200px); /*keeps 100% minus nav size*/
+        margin-left: 200px;
+    }
+
+    /*Show all nav*/
+    nav.sidebar {
+        margin-left: 0px;
+        float: left;
+    }
+        /*Show hidden items on nav*/
+        nav.sidebar .forAnimate {
+            opacity: 1;
+        }
+}
+
+nav.sidebar .navbar-nav .open .dropdown-menu > li > a:hover, nav.sidebar .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #CCC;
+    background-color: transparent;
+}
+
+nav:hover .forAnimate {
+    opacity: 1;
+}
+
+section {
+    padding-left: 15px;
+}
+
+
+
+
+
+
+
+.thumb-dropdown .dropdown-menu > li {
+    position: relative;
+}
+
+    .thumb-dropdown .dropdown-menu > li > a .thumbnail {
+        position: absolute;
+        left: 100%;
+        top: -10px;
+        display: none;
+        width: 350px;
+        height: auto;
+        margin-left: 5px;
+    }
+
+    .thumb-dropdown .dropdown-menu > li > a:hover .thumbnail {
+        display: block;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Code snippet by maridlcrmn for Bootsnipp.com
+Follow me on Twitter @maridlcrmn
+*/
+
+
+
+.navbar-brand {
+    z-index: 2;
+}
+
+.navbar-nav.navbar-right .btn {
+    position: relative;
+    z-index: 2;
+    padding: 4px 20px;
+    margin: 10px auto;
+    transition: transform 0.3s;
+}
+
+.navbar2 .navbar-collapse {
+    position: relative;
+    overflow: hidden !important;
+}
+
+.navbar2 {
+    margin-bottom: 1.2em !important;
+}
+
+.navbar .navbar-collapse .navbar-right > li:last-child {
+    padding-left: 22px;
+}
+
+.navbar .nav-collapse {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding-right: 120px;
+    padding-left: 80px;
+    width: 100%;
+}
+
+.navbar.navbar-default .nav-collapse {
+    background-color: #f8f8f8;
+}
+
+.navbar.navbar-inverse .nav-collapse {
+    background-color: #222;
+}
+
+.navbar .nav-collapse .navbar-form {
+    border-width: 0;
+    box-shadow: none;
+}
+
+.nav-collapse > li {
+    float: right;
+}
+
+.btn.btn-circle {
+    border-radius: 50px;
+}
+
+.btn.btn-outline {
+    background-color: transparent;
+}
+
+.navbar-nav.navbar-right .btn:not(.collapsed) {
+    background-color: #3B97D2;
+    border-color: #3B97D2;
+    color: rgb(255, 255, 255);
+}
+
+.navbar.navbar-default .nav-collapse,
+.navbar.navbar-inverse .nav-collapse {
+    height: auto !important;
+    transition: transform 0.3s;
+    transform: translate(0px,-50px);
+}
+
+    .navbar.navbar-default .nav-collapse.in,
+    .navbar.navbar-inverse .nav-collapse.in {
+        transform: translate(0px,0px);
+    }
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    .navbar .navbar-collapse .navbar-right > li:last-child {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .navbar .nav-collapse {
+        margin: 7.5px auto;
+        padding: 0;
+    }
+
+        .navbar .nav-collapse .navbar-form {
+            margin: 0;
+        }
+
+    .nav-collapse > li {
+        float: none;
+    }
+
+    .navbar.navbar-default .nav-collapse,
+    .navbar.navbar-inverse .nav-collapse {
+        transform: translate(-100%,0px);
+    }
+
+        .navbar.navbar-default .nav-collapse.in,
+        .navbar.navbar-inverse .nav-collapse.in {
+            transform: translate(0px,0px);
+        }
+
+        .navbar.navbar-default .nav-collapse.slide-down,
+        .navbar.navbar-inverse .nav-collapse.slide-down {
+            transform: translate(0px,-100%);
+        }
+
+        .navbar.navbar-default .nav-collapse.in.slide-down,
+        .navbar.navbar-inverse .nav-collapse.in.slide-down {
+            transform: translate(0px,0px);
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Credits:
+Code snippet by @maridlcrmn (Follow me on Twitter)
+Images by Nike.com (http://www.nike.com/us/en_us/)
+Logo by Sneaker-mission.com (http://www.sneaker-mission.com/)
+*/
+
+.navbar-brand {
+    height: 50px;
+    background: url('http://www.sneaker-mission.com/uploads/3/1/2/7/31279819/5617441.png') no-repeat center center;
+    background-size: 50px;
+}
+
+.nav-tabs {
+    display: inline-block;
+    border-bottom: none;
+    padding-top: 15px;
+    font-weight: bold;
+}
+
+    .nav-tabs > li > a,
+    .nav-tabs > li > a:hover,
+    .nav-tabs > li > a:focus,
+    .nav-tabs > li.active > a,
+    .nav-tabs > li.active > a:hover,
+    .nav-tabs > li.active > a:focus {
+        border: none;
+        border-radius: 0;
+    }
+
+.nav-list {
+    border-bottom: 1px solid #eee;
+}
+
+    .nav-list > li {
+        padding: 20px 15px 15px;
+        border-left: 1px solid #eee;
+    }
+
+        .nav-list > li:last-child {
+            border-right: 1px solid #eee;
+        }
+
+        .nav-list > li > a:hover {
+            text-decoration: none;
+        }
+
+        .nav-list > li > a > span {
+            display: block;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+.mega-dropdown {
+    position: static !important;
+}
+
+.mega-dropdown-menu {
+    padding: 20px 15px 15px;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+.mega-dropdown {
+  position: static !important;
+}
+.mega-dropdown-menu {
+    padding: 20px 0px;
+    width: 100%;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.mega-dropdown-menu > li > ul {
+  padding: 0;
+  margin: 0;
+}
+.mega-dropdown-menu > li > ul > li {
+  list-style: none;
+}
+.mega-dropdown-menu > li > ul > li > a {
+  display: block;
+  color: #222;
+  padding: 3px 5px;
+  text-align :left ;
+}
+.mega-dropdown-menu > li ul > li > a:hover,
+.mega-dropdown-menu > li ul > li > a:focus {
+  text-decoration: none;
+}
+.mega-dropdown-menu .dropdown-header {
+  font-size: 18px;
+  color: #ff3546;
+  padding: 5px 60px 5px 5px;
+  line-height: 30px;
+  text-align :left ;
+}
+
+.carousel-control {
+  width: 30px;
+  height: 30px;
+  top: -35px;
+
+}
+.left.carousel-control {
+  right: 30px;
+  left: inherit;
+}
+.carousel-control .glyphicon-chevron-left, 
+.carousel-control .glyphicon-chevron-right {
+  font-size: 12px;
+  line-height: 30px;
+  text-shadow: none;
+  color: #333;
+}
