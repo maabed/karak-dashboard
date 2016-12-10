@@ -1,4 +1,6 @@
-﻿$(document).ready(function () {
+﻿/// <reference path="data_table.js" />
+/// <reference path="data_table.js" />
+$(document).ready(function () {
     $('#table_id').DataTable();
 });
 
@@ -88,7 +90,7 @@ function format(d) {
 
 $(document).ready(function () {
     var table = $('#detailed_table').DataTable({
-        "ajax": "assets/ajax/object2.txt",
+        "ajax": "../ajax/object2.txt",
         "columns": [
             {
                 "className": 'details-control',
