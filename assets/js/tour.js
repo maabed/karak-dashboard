@@ -19,7 +19,7 @@
                     placement: "right"
                 },
                 {
-                    element: "#con3",
+                    element: ".statistics",
                     title: "Tour title",
                     content: "Ut sit amet laoreet nisl. Nam eget ex commodo, finibus dolor ac, aliquet nisi. Aenean blandit sit amet ligula eget commodo.",
                     placement: "top"
