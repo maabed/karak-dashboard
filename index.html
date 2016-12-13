@@ -12,7 +12,7 @@
     <!-- Bootstrap Core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/styles.css" rel="stylesheet" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -23,10 +23,9 @@
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
     <!--Calender-->
     <link href="assets/vendors/calender/fullcalendar.css" rel="stylesheet" />
-    <script src="assets/vendors/calender/jquery-1.10.2.js"></script>
-    <script src="assets/vendors/calender/jquery-ui.custom.min.js"></script>
-    <script src="assets/vendors/calender/fullcalendar.js"></script>
     <link href="assets/vendors/calender/calender_theme.css" rel="stylesheet" />
+    
+
 </head>
 <body>
     <div id="wrapper">
@@ -66,7 +65,7 @@
                     </a>
                 </li>
                 <li>
-                    <a class="MainMenue" href="#">
+                    <a id="ui-elements" class="MainMenue" href="#">
                         <i class="fa fa-eye   nav-icon" aria-hidden="true"></i>
                         UI Elements<span class="label label-success nav-lbl">New</span> <i class="fa fa-angle-left LeftArrow rotate" aria-hidden="true"></i>
                     </a>
@@ -342,8 +341,6 @@
                         </div>
                     </div>
                 </div>
-
-
                 <div class="row section-margin">
                     <div class="col-sm-6">
                         <div class="col-contint">
@@ -367,7 +364,7 @@
                     </div>
                     <div class="col-sm-4 activities">
                         <div class="col-contint static-height">
-                            <p class="title">Activities Log<a class="activities-year">2016</a></p>
+                            <p id="activities-log" class="title">Activities Log<a class="activities-year">2016</a></p>
                             <div class="activities-log">
                                 <div class="single-log-box">
                                     <h5>October</h5>
@@ -611,15 +608,15 @@
             </a>
         </div>
     </div>
-
+    <script src="assets/js/vendors/jquery-1.12.3.js"></script>
     <script src="assets/js/random_chart.js"></script>
-
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/vendors/Chart.bundle.js"></script>
     <script src="assets/js/notifications_boxs.js"></script>
     <script src="assets/js/taps.js"></script>
-
+    <script src="assets/vendors/calender/jquery-ui.custom.min.js"></script>
+    <script src="assets/vendors/calender/fullcalendar.js"></script>
 
     <!--Map-->
     <script src="assets/js/map.js"></script>
@@ -627,7 +624,6 @@
     <script src="https://code.highcharts.com/maps/modules/data.js"></script>
     <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
     <script src="https://code.highcharts.com/mapdata/custom/world.js"></script>
-
     <!--Calender-->
     <script src="assets/js/calender.js"></script>
 

@@ -2191,6 +2191,110 @@ p {
 
 .table-head {
     color: #3B97D2;
+<<<<<<< HEAD:assets/css/Style.css
+=======
+}
+
+.float-right {
+    float: right;
+}
+
+.panel-heading a span {
+    color: #C4C4C4;
+    cursor: pointer;
+    margin-right  :0.5em;
+    margin-top :0.2em;
+}
+
+.panel-heading a span:hover {
+    color: #7B7B7B;}
+}
+
+.panel-actions {
+  margin-top: -20px;
+  margin-bottom: 0;
+  text-align: right;
+}
+.panel-actions p  {
+    color: #C4C4C4;
+}
+
+.panel-actions p:hover {
+    color: #7B7B7B;
+}
+
+.panel-fullscreen {
+    display: block;
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    overflow: auto;
+}
+
+.dataTables_length label {
+    color: #888888;
+    font-weight: lighter;
+}
+
+.dataTables_length label select {
+    color: #34495E !important;
+    border: 1px solid #F1F3F6;
+    border-radius: 3px;
+}
+
+.dataTables_filter label {
+    color: #888888;
+    font-weight: lighter;
+}
+
+        .dataTables_filter label input {
+            color: #34495E !important;
+            border: 1px solid #F1F3F6;
+            border-radius: 3px;
+        }
+
+#ajax_table_wrapper .dt-buttons a {
+    background-color: #3B97D2;
+    padding: 0.5em;
+    border-radius: 3px;
+    color: #fff;
+    margin-right: 0.5em;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#ajax_table_wrapper .dt-buttons {
+    width: 50%;
+    float: left;
+    margin-bottom: 1em;
+}
+
+    #ajax_table_wrapper .dt-buttons a:hover {
+        background-color: #2980B9;
+        text-decoration: none;
+    }
+
+tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+td.details-control {
+    background: url('../images/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+
+tr.shown td.details-control {
+    background: url('../images/details_close.png') no-repeat center center;
+>>>>>>> develop:assets/css/styles.css
 }
 
 @media(max-width:1028px) {
@@ -2224,17 +2328,17 @@ p {
     }
 }
 
-.taps-center {
+.taps-center; {
     width: 70%;
     margin: 0 auto;
     text-align: center;
 }
 
-    .taps-center li {
-        margin: 0 auto;
-        width: 33%;
-        text-align: center;
-    }
+.taps-center li {
+    margin: 0 auto;
+    width: 33%;
+    text-align: center;
+}
 
 .progress {
     background-color: #F1F3F6;
@@ -2258,50 +2362,74 @@ p {
     border: 1px solid #F1F3F6;
 }
 
-    .flat-colors .col-sm-2 {
-        color: #fff;
-        font-weight: lighter;
-        padding-top: 6em;
-    }
+.flat-colors .col-sm-2 {
+    color: #fff;
+    font-weight: lighter;
+    padding-top: 6em;
+}
 
-        .flat-colors .col-sm-2:last-child p {
-            color: #000;
-        }
+.flat-colors .col-sm-2:last-child p {
+    color: #000;
+}
 
-        .flat-colors .col-sm-2 p {
-            color: #F1F3F6;
-        }
+.flat-colors .col-sm-2 p {
+    color: #F1F3F6;
+}
 
-        .flat-colors .col-sm-2:first-child {
-            background-color: #34495e;
-            border-bottom: 8px solid #2c3e50;
-        }
+.flat-colors .col-sm-2:first-child {
+    background-color: #34495e;
+    border-bottom: 8px solid #2c3e50;
+}
 
-        .flat-colors .col-sm-2:nth-child(2) {
-            background-color: #3498db;
-            border-bottom: 8px solid #2980b9;
-        }
+.flat-colors .col-sm-2:nth-child(2) {
+    background-color: #3498db;
+    border-bottom: 8px solid #2980b9;
+}
 
-        .flat-colors .col-sm-2:nth-child(3) {
-            background-color: #2ecc71;
-            border-bottom: 8px solid #27ae60;
-        }
+.flat-colors .col-sm-2:nth-child(3) {
+    background-color: #2ecc71;
+    border-bottom: 8px solid #27ae60;
+}
 
-        .flat-colors .col-sm-2:nth-child(4) {
-            background-color: #f1c40f;
-            border-bottom: 8px solid #f39c12;
-        }
+.flat-colors .col-sm-2:nth-child(4) {
+    background-color: #f1c40f;
+    border-bottom: 8px solid #f39c12;
+}
 
-        .flat-colors .col-sm-2:nth-child(5) {
-            background-color: #e74c3c;
-            border-bottom: 8px solid #c0392b;
-        }
+.flat-colors .col-sm-2:nth-child(5) {
+    background-color: #e74c3c;
+    border-bottom: 8px solid #c0392b;
+}
 
-        .flat-colors .col-sm-2:last-child {
-            background-color: #fff;
-            color: #34495E;
-            border-bottom: 8px solid #ecf0f1;
-        }
+.flat-colors .col-sm-2:last-child {
+    background-color: #fff;
+    color: #34495E;
+    border-bottom: 8px solid #ecf0f1;
+}
+
+.col-contint .navbar {
+    padding-top: 0em !important;
+    padding-bottom: 0em !important;
+}
+
+.left-side-menue-height {
+    height: 35.7em;
+    overflow: hidden;
+    padding-bottom: 5em;
+}
+
+.left-side-menue-height .navbar {
+    width: 100%;
+}
+
+.menu-padding {
+    padding-right: 0.5em;
+}
+
+.store-menu {
+    height: 32em;
+}
+
 
 .col-contint .navbar {
     padding-top: 0em !important;
@@ -2328,6 +2456,7 @@ p {
 
 
 @media(min-width:768px) {
+
 
     #wrapper {
         padding-left: 250px;
@@ -2360,6 +2489,12 @@ p {
 
 
 @media(max-width:768px) {
+    #ajax_table_wrapper .dt-buttons {
+        width: 100%;
+        float: none;
+        margin-bottom: 1em;
+    }
+
     .icons-header img {
         height: auto;
     }
