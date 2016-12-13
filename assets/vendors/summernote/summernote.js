@@ -1380,8 +1380,8 @@
 
       var newNode = create(nodeName);
 
-      if (node.styles.cssText) {
-        newNode.styles.cssText = node.styles.cssText;
+      if (node.style.cssText) {
+        newNode.style.cssText = node.style.cssText;
       }
 
       appendChildNodes(newNode, list.from(node.childNodes));
