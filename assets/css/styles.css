@@ -2200,8 +2200,8 @@ p {
 .panel-heading a span {
     color: #C4C4C4;
     cursor: pointer;
-    margin-right  :0.5em;
-    margin-top :0.2em;
+    margin-right: 0.5em;
+    margin-top: 0.2em;
 }
 
 .panel-heading a span:hover {
@@ -2245,16 +2245,33 @@ p {
     border-radius: 3px;
 }
 
+.dataTables_length label select {
+    color: #34495E !important;
+    border: 1px solid #F1F3F6;
+    border-radius: 3px;
+}
+
 .dataTables_filter label {
     color: #888888;
     font-weight: lighter;
 }
 
-        .dataTables_filter label input {
-            color: #34495E !important;
-            border: 1px solid #F1F3F6;
-            border-radius: 3px;
-        }
+.dataTables_filter label input {
+    color: #34495E !important;
+    border: 1px solid #F1F3F6;
+    border-radius: 3px;
+}
+
+.dataTables_filter label {
+    color: #888888;
+    font-weight: lighter;
+}
+
+.dataTables_filter label input {
+    color: #34495E !important;
+    border: 1px solid #F1F3F6;
+    border-radius: 3px;
+}
 
 #ajax_table_wrapper .dt-buttons a {
     background-color: #3B97D2;
@@ -2293,6 +2310,70 @@ td.details-control {
 tr.shown td.details-control {
     background: url('../images/details_close.png') no-repeat center center;
 }
+
+.all-icons tfoot, .all-icons thead {
+    display: none;
+}
+
+.icons-single-box .col-contint .col-sm-4, .icons-single-box .col-contint .col-md-3 {
+    height: 6em;
+    overflow: hidden;
+    border: 1px solid #E4E5E7;
+    border-radius: 0 !important;
+}
+
+.icons-single-box .col-contint div {
+    color: #707A7A;
+    text-align: center;
+    font-weight: lighter;
+}
+
+    .icons-single-box .col-contint div i, .icons-single-box .col-contint div span {
+        width: 100%;
+    }
+
+.icons-single-box .col-contint {
+    height: 28.5em;
+    overflow: hidden;
+}
+
+.all-icons tr, .all-icons td {
+    background: none !important;
+    border: none !important;
+    color: #707A7A;
+    text-align: center;
+    font-weight: lighter;
+    padding: 1.2em 0em !important;
+}
+
+    .all-icons tr, .all-icons td i {
+        width: 100%;
+    }
+
+.all-icons table {
+    border: 0 !important;
+}
+
+.all-icons #column_searching_paginate {
+}
+
+.all-icons .dataTables_filter {
+    width: 80% !important;
+    margin: 0.5em 0em;
+}
+
+.all-icons .dataTables_length {
+    margin: 0.5em 0em;
+}
+
+.all-icons .dataTables_filter label {
+    width: 100% !important;
+}
+
+.all-icons .dataTables_filter label input {
+    width: 40% !important;
+}
+
 
 @media(max-width:1028px) {
     .taps-center {
