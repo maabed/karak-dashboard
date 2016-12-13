@@ -12,7 +12,7 @@
         <!-- Bootstrap Core CSS -->
         <link href="assets/css/bootstrap.min.css" rel="stylesheet">
         <!-- Custom CSS -->
-        <link href="assets/css/style.css" rel="stylesheet" />
+        <link href="assets/css/styles.css" rel="stylesheet" />
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -26,8 +26,7 @@
         <script src="assets/vendors/calender/jquery-ui.custom.min.js"></script>
         <link rel="stylesheet" href="assets/css/progress.css">
         <link rel="stylesheet" href="assets/vendors/progressjs/progressjs.css">
-        <link rel="stylesheet" href="assets/css/material-preloaders.css">
-
+        
         <style>
         </style>
     </head>
@@ -233,169 +232,14 @@
             <div id="page-content-wrapper">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="col-contint col-contint-taps">
-                                <h5 class ="title">Progress</h5>
-                                <p class="inner-contint">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt metus odio, at congue tellus
-                                dignissim eget. Vestibulum nec faucibus eros. In libero augue, volutpat vitae ex quis, tincidunt finibus
-                                risus. Curabitur facilisis nec erat eu commodo. Integer maximus eros non mi mattis, sit amet molestie
-                                dui.Curabitur facilisis nec erat eu commodo. Integer maximus eros non mi mattis, sit amet molestie dui
-                                Curabitur facilisis nec erat eu commodo. Integer maximus eros non mi mattis, sit amet molestie dui. Integer
-                                maximus eros non mi mattis, sit amet molestie.
-                                dui.Curabitur facilisis nec erat eu commodo. Integer maximus eros non mi mattis, sit amet molestie dui
-                                Curabitur facilisis nec erat eu commodo. Integer maximus eros non mi mattis, sit amet molestie dui.
-                                Integer maximus eros non mi mattis, sit amet molestie dui
-                                Curabitur facilisis nec erat eu commodo. Integer maximus eros non mi mattis.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="col-contint col-contint-taps">
-                                <label class="form-labels line-progress">Basic line</label>
-                                <div class="row">
-                                    <div id="line"></div>
-                                </div>
-                                <div class="row">
-                                    <button id="BarGenerate" type="button" class="btn btn-default center-block">Generate</button>                  
-                                </div>
-                                <label class="form-labels colored-progress">Color animation</label>
-                                <div class="row">
-                                    <div id="colored"></div>
-                                </div>
-                                <div class="row">
-                                    <button id="ColorGenerate" type="button" class="btn btn-default center-block">Generate</button>
-                                </div>
-                                <label class="form-labels percent-progress">Percent line</label>
-                                <div class="row">
-                                    <div id="percent"></div>
-                                </div>
-                                <div class="row">
-                                    <button id="PercentGenerate" type="button" class="btn btn-default center-block">Generate</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="col-contint col-contint-taps">
-                                <h5 class ="title">Circle progress</h5>
-                                <p class="inner-contint">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                </p>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <select class="form-control" id="progress-select" name="progress-select">
-                                            <option value="basic">Basic circle</option>
-                                            <option value="bounce">Bounce easing</option>
-                                            <option value="multiple">Multiple properties</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <label class="color-label">Color:</label>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <input type="color" id="Color" value="#ff0000">
-                                    </div>
-                                </div>
-                                <div id="progress-container" class="center-block">
-                                    
-                                </div>
-                                <button id="circleGenerate" type="button" class="btn btn-default center-block">Generate</button>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="col-contint col-contint-taps">
-                                <h5 class="title">Circle progress</h5>
-                                <p class="inner-contint">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                </p>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <select class="form-control" id="progress-select" name="semi-select">
-                                            <option value="Semi">Basic Semicircle</option>
-                                            <option value="SemiText">Semicircle with text</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <label class="color-label">Color:</label>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <input type="color" id="ColorS" value="#ff0000">
-                                    </div>
-                                </div>
-                                <div id="semi-progress-container" class="center-block">
-                                
-                                </div>
-                                <button id="semi-circleGenerate" type="button" class="btn btn-default center-block">Generate</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
                         <div class="col-md-12">
                             <div class="col-contint col-contint-taps">
-                                <h5 class ="title form-section">Loaders and spinners</h5>
-                                <div class="col-md-3">
-                                    <div class="panel panel-default">
-                                        <div id="basicspinner" class="panel-body">
-                                            <div class="preloader-wrapper loader-position hide-loader active">
-                                                <div class="spinner-layer spinner-blue-only">
-                                                  <div class="circle-clipper left">
-                                                    <div class="circle"></div>
-                                                  </div><div class="gap-patch">
-                                                    <div class="circle"></div>
-                                                  </div><div class="circle-clipper right">
-                                                    <div class="circle"></div>
-                                                  </div>
-                                                </div>
-                                            </div>
-                                            <div id="overlay" class="">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper odio sit amet mi
-                                                ultrices
-                                                consequat. Vestibulum et lacinia mauris. Phasellus imperdiet lobortis dictum.
-                                                Lorem ipsum dolor sit amet.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <button id="spinner" type="button" class="btn btn-default">Generate</button>                         
-                                </div>
-                                <div class="col-md-5">
-                                    <div class="panel panel-default">
-                                        <div id="basicspinner-dots" class="panel-body"> 
-                                            <div class="preloader-wrapper big big-loader-position hide-loader active">
-                                                <div class="spinner-layer spinner-blue-only">
-                                                    <div class="circle-clipper left">
-                                                      <div class="circle"></div>
-                                                    </div><div class="gap-patch">
-                                                      <div class="circle"></div>
-                                                    </div><div class="circle-clipper right">
-                                                      <div class="circle"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div id="dots-overlay">
-                                                <label>Username</label>
-                                                <input id="username" type="text" class="form-control">
-                                                <label>Password</label>
-                                                <input id="password" type="password" class="form-control">
-                                                <button id="spinner-dot" type="button" class="btn btn-default">Login</button>    
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="panel panel-default">
-                                        <div id="progress-bar" class="progress hide-loader">
-                                              <div class="indeterminate"></div>
-                                        </div>
-                                        <img src="assets/images/demo.jpg" class="image-bar"><br>
-                                    </div>
-                                    <button id="loading-bar" type="button" class="btn btn-default append">Redirect</button> 
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
                 <!-- /#page-content-wrapper -->
+                </div> 
             </div>
                      
             <!-- /#wrapper -->

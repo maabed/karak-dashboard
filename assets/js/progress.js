@@ -4,8 +4,7 @@ $("#circleGenerate").click(function(){
 $("#basic").remove();
         $("#bounce").remove();
         $("#multi").remove();
-        var FromColor = $("#FromColor").val();
-        var ToColor = $("#ToColor").val();
+        var Color = $("#Color").val();
         var value = $('select[name=progress-select]').val();
         if (value == "basic"){
 $("#progress-container").append("<div id='basic' class='center-block'></div>")
@@ -13,7 +12,7 @@ $("#progress-container").append("<div id='basic' class='center-block'></div>")
         strokeWidth: 6,
                 easing: 'easeInOut',
                 duration: 1400,
-                color: FromColor,
+                color: Color,
                 trailColor: '#eee',
                 trailWidth: 1,
                 svgStyle: null
@@ -42,8 +41,8 @@ $("#progress-container").append("<div id='bounce' class='center-block'></div>")
                 duration: 1400,
                 easing: 'bounce',
                 strokeWidth: 6,
-                from: {color: FromColor, a:0},
-                to: {color: ToColor, a:1},
+                from: {color: Color, a:0},
+                to: {color: Color, a:1},
                 // Set default step function for all animate calls
                 step: function(state, circle) {
                 circle.path.setAttribute('stroke', state.color);
@@ -78,8 +77,8 @@ $("#progress-container").append("<div id='multi' class='center-block'></div>")
                 text: {
                 autoStyleContainer: false
                 },
-                from: { color: FromColor, width: 1 },
-                to: { color: ToColor, width: 4 },
+                from: { color: Color, width: 1 },
+                to: { color: Color, width: 4 },
                 // Set default step function for all animate calls
                 step: function(state, circle) {
                 circle.path.setAttribute('stroke', state.color);
@@ -211,8 +210,7 @@ colored.animate(1.0)
         $("#semi-circleGenerate").click(function(){
 $("#semi").remove();
         $("#txt").remove();
-        var FromColor = $("#FromColorS").val();
-        var ToColor = $("#ToColorS").val();
+        var ColorS = $("#ColorS").val();
         var value = $('select[name=semi-select]').val();
         if (value == "Semi"){
 $("#semi-progress-container").append("<div id='semi' class='center-block' style='width:40%;margin-bottom:10px;'></div>")
@@ -220,7 +218,7 @@ $("#semi-progress-container").append("<div id='semi' class='center-block' style=
         strokeWidth: 6,
                 easing: 'easeInOut',
                 duration: 1400,
-                color: FromColor,
+                color: ColorS,
                 trailColor: '#eee',
                 trailWidth: 1,
                 svgStyle: null
@@ -242,8 +240,8 @@ $("#semi-progress-container").append("<div id='txt' class='center-block' style='
                 value: '',
                         alignToBottom: false
                 },
-                from: {color: '#FFEA82'},
-                to: {color: '#ED6A5A'},
+                from: {color: ColorS},
+                to: {color: ColorS},
                 // Set default step function for all animate calls
                 step: (state, bar) => {
         bar.path.setAttribute('stroke', state.color);
@@ -267,30 +265,35 @@ $("#semi-progress-container").append("<div id='txt' class='center-block' style='
         /*Spinners colors*/
 
         /*bar spinner*/
-        $("#spinner").click(function(){
-            $("#overlay").addClass("loading-opacity");
+    $("#spinner").click(function(){
+        $(".loader-position").removeClass("hide-loader")
+        $("#overlay").addClass("loading-opacity");
         setTimeout(function(){
+            $(".preloader-wrapper").addClass("hide-loader")
             $("#overlay").removeClass("loading-opacity");
         }, 4500);
-        });
+    });
         /*dots spinners*/
-var targetdots = document.getElementById('basicspinner-dots')
-        $("#spinner-dot").click(function(){
-$("#dots-overlay").addClass("loading-opacity");
-        var spinnerdots = new Spinner(dots).spin(targetdots);
+    $("#spinner-dot").click(function(){
+        $("#dots-overlay").addClass("loading-opacity");
+        $(".big-loader-position").removeClass("hide-loader");
         setTimeout(function(){
-        $("#username").val('');
-                $("#password").val('');
-                spinnerdots.stop(); // To stop the spinner
-                $("#dots-overlay").removeClass("loading-opacity");
+            $("#username").val('');
+            $("#password").val('');
+            $(".big-loader-position").addClass("hide-loader");
+            $("#dots-overlay").removeClass("loading-opacity");
         }, 4500);
-        });
-        $("#loading-bar").click(function(){
-progressJs("#loader-bar").start();
-        progressJs("#loader-bar").set(50);
+    });
+    
+    /*loading bar*/
+    $("#loading-bar").click(function(){
+        $("#progress-bar").removeClass("hide-loader");
+        $(".image-bar").addClass("loading-opacity");
         setTimeout(function(){
-        progressJs("#loader-bar").end();
-                $("#loader-bar").append("<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper odio sit amet miultrices,consequat. Vestibulum et lacinia mauris. Phasellus imperdiet lobortis dictum </p>")
-        }, 1000);
-        });
+            $("#progress-bar").addClass("hide-loader");
+            $(".image-bar").removeClass("loading-opacity");
+        }, 4500);
+    });
+    
+    
         });

@@ -66,3 +66,23 @@
 #progress-select{
     margin-bottom: 15px;
 }
+.loader-position{
+    position: absolute !important;
+    left: 7em;
+    top: 4em;
+}
+.big-loader-position{
+    position: absolute !important;
+    left: 12em;
+    top: 4em;
+    z-index: 99
+}
+.hide-loader{
+    display: none !important;
+}
+.image-bar{
+    width: 100%;
+}
+.color-label{
+    float: right;
+}
