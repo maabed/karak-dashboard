@@ -20,6 +20,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/menus.css" rel="stylesheet" />
 </head>
 <body>
     <div id="wrapper">
@@ -224,176 +225,872 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="col-contint">
-                            <h5 class="title">Menu</h5>
+                            <h5 class="title">Simple Menu</h5>
                             <br />
-                        </div>
-                    </div>
-                </div>
-                <div class="row section-margin">
-                    <div class="col-sm-6">
-                        <div class="col-contint">
-                            <h5 class="title">Menu</h5>
-                            <br />
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="col-contint">
-                            <h5 class="title">Menu</h5>
-                            <br />
+                            <nav class="navbar navbar-inverse">
+                                <div class="container-fluid">
+                                    <div class="navbar-header">
+                                        <a class="navbar-brand" href="#">WebSiteName</a>
+                                    </div>
+                                    <ul class="nav navbar-nav">
+                                        <li class="active"><a href="#">Home</a></li>
+                                        <li class="dropdown">
+                                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Page 1-1</a></li>
+                                                <li><a href="#">Page 1-2</a></li>
+                                                <li><a href="#">Page 1-3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Page 2</a></li>
+                                    </ul>
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+
                         </div>
                     </div>
                 </div>
                 <div class="row section-margin">
                     <div class="col-sm-12">
                         <div class="col-contint">
-                            <h5 class="title">Menu</h5>
+                            <h5 class="title">Dropdown Menu With Search Box</h5>
                             <br />
+                            <nav class="navbar navbar-default" role="navigation">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#dropdown-thumbnail-preview">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    <a class="navbar-brand" href="#">Brand</a>
+                                </div>
+                                <div class="collapse navbar-collapse" id="dropdown-thumbnail-preview">
+                                    <ul class="nav navbar-nav">
+                                        <li class="active"><a href="#">Link</a></li>
+                                        <li><a href="#">Link</a></li>
+                                        <li class="dropdown thumb-dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Snippets <span class="caret"></span></a>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li role="presentation" class="dropdown-header">Simple thumbnail</li>
+                                                <li>
+                                                    <a href="#">
+                                                        Preview carousel indicators
+                                                        <div class="thumbnail">
+                                                            <img class="img-responsive" src="assets/images/post.jpg">
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Simple subscribe form
+                                                        <div class="thumbnail">
+                                                            <img class="img-responsive" src="assets/images/post.jpg">
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Flat user profile
+                                                        <div class="thumbnail">
+                                                            <img class="img-responsive" src="assets/images/post.jpg">
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="divider"></li>
+                                                <li role="presentation" class="dropdown-header">Thumbnail with caption</li>
+                                                <li>
+                                                    <a href="#">
+                                                        Discount labels
+                                                        <div class="thumbnail">
+                                                            <img class="img-responsive" src="assets/images/post.jpg">
+                                                            <div class="caption">
+                                                                <p>You can add any text for describe thumbnail here.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <form class="navbar-form navbar-left" role="search">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Search">
+                                        </div>
+                                        <button type="submit" class="btn btn-default">Search</button>
+                                    </form>
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li><a href="#">Link</a></li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a href="#">Action</a></li>
+                                                <li><a href="#">Another action</a></li>
+                                                <li><a href="#">Something else here</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="#">Separated link</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="row section-margin">
+                    <div class="col-sm-3">
+                        <div class="col-contint left-side-menue-height">
+                            <h5 class="title">Left Side Menu</h5>
+                            <br />
+                            <nav class="navbar navbar-inverse sidebar" role="navigation">
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    <a class="navbar-brand" href="#">Brand</a>
+                                </div>
+                                <!-- Collect the nav links, forms, and other content for toggling -->
+                                <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
+                                    <ul class="nav navbar-nav">
+                                        <li class="active"><a href="#">Home<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+                                        <li><a href="#">Profile<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a></li>
+                                        <li><a href="#">Messages<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-envelope"></span></a></li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Settings <span class="caret"></span><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-cog"></span></a>
+                                            <ul class="dropdown-menu forAnimate" role="menu">
+                                                <li><a href="#">Action</a></li>
+                                                <li><a href="#">Another action</a></li>
+                                                <li><a href="#">Something else here</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="#">Separated link</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="#">One more separated link</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Home<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+                                        <li><a href="#">Profile<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a></li>
+                                        <li><a href="#">Messages<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-envelope"></span></a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="col-contint">
+                                    <h5 class="title">Toggle Menus With Slide Down Animation</h5>
+                                    <br />
+                                    <!--co-->
+                                    <nav class="navbar navbar-default navbar2">
+                                        <!-- Brand and toggle get grouped for better mobile display -->
+                                        <div class="navbar-header">
+                                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+                                                <span class="sr-only">Toggle navigation</span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                            </button>
+                                            <a class="navbar-brand" href="#">Brand</a>
+                                        </div>
+
+                                        <!-- Collect the nav links, forms, and other content for toggling -->
+                                        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                                            <ul class="nav navbar-nav navbar-right menu-padding">
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">About</a></li>
+                                                <li><a href="#">Services</a></li>
+                                                <li><a href="#">Works</a></li>
+                                                <li><a href="#">News</a></li>
+                                                <li><a href="#">Contact</a></li>
+                                                <li>
+                                                    <a class="btn btn-default btn-outline btn-circle collapsed" data-toggle="collapse" href="#nav-collapse1" aria-expanded="false" aria-controls="nav-collapse1">Categories</a>
+                                                </li>
+                                            </ul>
+                                            <ul class="collapse nav navbar-nav nav-collapse" id="nav-collapse1">
+                                                <li><a href="#">Web design</a></li>
+                                                <li><a href="#">Development</a></li>
+                                                <li><a href="#">Graphic design</a></li>
+                                                <li><a href="#">Print</a></li>
+                                                <li><a href="#">Motion</a></li>
+                                                <li><a href="#">Mobile apps</a></li>
+                                            </ul>
+                                        </div><!-- /.navbar-collapse -->
+                                    </nav><!-- /.navbar -->
+                                    <!-- Second navbar for sign in -->
+                                    <nav class="navbar navbar-default navbar2">
+                                        <!-- Brand and toggle get grouped for better mobile display -->
+                                        <div class="navbar-header">
+                                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-2">
+                                                <span class="sr-only">Toggle navigation</span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                            </button>
+                                            <a class="navbar-brand" href="#">Brand</a>
+                                        </div>
+
+                                        <!-- Collect the nav links, forms, and other content for toggling -->
+                                        <div class="collapse navbar-collapse" id="navbar-collapse-2">
+                                            <ul class="nav navbar-nav navbar-right menu-padding">
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">About</a></li>
+                                                <li><a href="#">Services</a></li>
+                                                <li><a href="#">Works</a></li>
+                                                <li><a href="#">News</a></li>
+                                                <li><a href="#">Contact</a></li>
+                                                <li>
+                                                    <a class="btn btn-default btn-outline btn-circle collapsed" data-toggle="collapse" href="#nav-collapse2" aria-expanded="false" aria-controls="nav-collapse2">Sign in</a>
+                                                </li>
+                                            </ul>
+                                            <div class="collapse nav navbar-nav nav-collapse slide-down" id="nav-collapse2">
+                                                <form class="navbar-form navbar-right form-inline" role="form">
+                                                    <div class="form-group">
+                                                        <label class="sr-only" for="Email">Email</label>
+                                                        <input type="email" class="form-control" id="Email" placeholder="Email" autofocus required />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="sr-only" for="Password">Password</label>
+                                                        <input type="password" class="form-control" id="Password" placeholder="Password" required />
+                                                    </div>
+                                                    <button type="submit" class="btn btn-success">Sign in</button>
+                                                </form>
+                                            </div>
+                                        </div><!-- /.navbar-collapse -->
+                                    </nav><!-- /.navbar -->
+                                    <!-- Second navbar for search -->
+                                    <nav class="navbar navbar-inverse navbar2">
+                                        <!-- Brand and toggle get grouped for better mobile display -->
+                                        <div class="navbar-header">
+                                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-3">
+                                                <span class="sr-only">Toggle navigation</span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                            </button>
+                                            <a class="navbar-brand" href="#">Brand</a>
+                                        </div>
+
+                                        <!-- Collect the nav links, forms, and other content for toggling -->
+                                        <div class="collapse navbar-collapse" id="navbar-collapse-3">
+                                            <ul class="nav navbar-nav navbar-right menu-padding">
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">About</a></li>
+                                                <li><a href="#">Services</a></li>
+                                                <li><a href="#">Works</a></li>
+                                                <li><a href="#">News</a></li>
+                                                <li><a href="#">Contact</a></li>
+                                                <li>
+                                                    <a class="btn btn-default btn-outline btn-circle collapsed" data-toggle="collapse" href="#nav-collapse3" aria-expanded="false" aria-controls="nav-collapse3">Search</a>
+                                                </li>
+                                            </ul>
+                                            <div class="collapse nav navbar-nav nav-collapse slide-down" id="nav-collapse3">
+                                                <form class="navbar-form navbar-right" role="search">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" placeholder="Search" />
+                                                    </div>
+                                                    <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                                </form>
+                                            </div>
+                                        </div><!-- /.navbar-collapse -->
+                                    </nav><!-- /.navbar -->
+                                    <!-- Second navbar for profile settings -->
+                                    <nav class="navbar navbar-inverse navbar2">
+                                        <!-- Brand and toggle get grouped for better mobile display -->
+                                        <div class="navbar-header">
+                                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-4">
+                                                <span class="sr-only">Toggle navigation</span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                            </button>
+                                            <a class="navbar-brand" href="#">Brand</a>
+                                        </div>
+
+                                        <!-- Collect the nav links, forms, and other content for toggling -->
+                                        <div class="collapse navbar-collapse" id="navbar-collapse-4">
+                                            <ul class="nav navbar-nav navbar-right menu-padding">
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">About</a></li>
+                                                <li><a href="#">Services</a></li>
+                                                <li><a href="#">Works</a></li>
+                                                <li><a href="#">News</a></li>
+                                                <li><a href="#">Contact</a></li>
+                                                <li>
+                                                    <a class="btn btn-default btn-outline btn-circle collapsed" data-toggle="collapse" href="#nav-collapse4" aria-expanded="false" aria-controls="nav-collapse4">Profile <i class=""></i> </a>
+                                                </li>
+                                            </ul>
+                                            <ul class="collapse nav navbar-nav nav-collapse slide-down" role="search" id="nav-collapse4">
+                                                <li><a href="#">Support</a></li>
+                                                <li class="dropdown">
+                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img class="img-circle" src="assets/images/Sami.jpg" alt="maridlcrmn" width="20" /> Maridlcrmn <span class="caret"></span></a>
+                                                    <ul class="dropdown-menu" role="menu">
+                                                        <li><a href="#">My profile</a></li>
+                                                        <li><a href="#">Favorited</a></li>
+                                                        <li><a href="#">Settings</a></li>
+                                                        <li class="divider"></li>
+                                                        <li><a href="#">Logout</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </nav>
+                                </div>
+                                <div class="row section-margin">
+                                    <div class="col-sm-12">
+                                        <div class="col-contint">
+                                            <h5 class="title">Mega Menu With Tabs Navigation</h5>
+                                            <br />
+                                            <nav class="navbar navbar-default" role="navigation">
+                                                <div class="container-fluid">
+                                                    <!-- Brand and toggle get grouped for better mobile display -->
+                                                    <div class="navbar-header">
+                                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+                                                            <span class="sr-only">Toggle navigation</span>
+                                                            <span class="icon-bar"></span>
+                                                            <span class="icon-bar"></span>
+                                                            <span class="icon-bar"></span>
+                                                        </button>
+                                                        <a class="navbar-brand" href="#">Brand</a>
+                                                    </div>
+                                                    <!-- Collect the nav links, forms, and other content for toggling -->
+                                                    <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+                                                        <ul class="nav navbar-nav">
+                                                            <li><a href="#">Link</a></li>
+                                                            <li><a href="#">Link</a></li>
+                                                            <li class="dropdown2 mega-dropdown active">
+                                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                                                                <div class="dropdown-menu mega-dropdown-menu">
+                                                                    <div class="container-fluid">
+                                                                        <!-- Tab panes -->
+                                                                        <div class="tab-content">
+                                                                            <div class="tab-pane active" id="men">
+                                                                                <ul class="nav-list list-inline">
+                                                                                    <li><a href="#"><img src="assets/images/st-1.png"><span>Title</span></a></li>
+                                                                                    <li><a href="#"><img src="assets/images/st-2.png"><span>Title</span></a></li>
+                                                                                    <li><a href="#"><img src="assets/images/st-3.png"><span>Title</span></a></li>
+                                                                                    <li><a href="#"><img src="assets/images/st-4.png"><span>Title</span></a></li>
+                                                                                    <li><a href="#"><img src="assets/images/st-5.png"><span>Title</span></a></li>
+                                                                                </ul>
+                                                                            </div>
+                                                                            <div class="tab-pane" id="women">
+                                                                                <ul class="nav-list list-inline">
+                                                                                    <li><a href="#"><img src="assets/images/st-1.png"><span>Title</span></a></li>
+                                                                                    <li><a href="#"><img src="assets/images/st-2.png"><span>Title</span></a></li>
+                                                                                    <li><a href="#"><img src="assets/images/st-3.png"><span>Title</span></a></li>
+                                                                                    <li><a href="#"><img src="assets/images/st-4.png"><span>Title</span></a></li>
+                                                                                </ul>
+                                                                            </div>
+                                                                            <div class="tab-pane" id="kids">
+                                                                                <ul class="nav-list list-inline">
+                                                                                    <li><a href="#"><img src="assets/images/st-1.png"><span>Title</span></a></li>
+                                                                                    <li><a href="#"><img src="assets/images/st-2.png"><span>Title</span></a></li>
+                                                                                    <li><a href="#"><img src="assets/images/st-3.png"><span>Title</span></a></li>
+                                                                                    <li><a href="#"><img src="assets/images/st-4.png"><span>Title</span></a></li>
+                                                                                    <li><a href="#"><img src="assets/images/st-5.png"><span>Title</span></a></li>
+                                                                                    <li><a href="#"><img src="assets/images/st-1.png"><span>Title</span></a></li>
+                                                                                </ul>
+                                                                            </div>
+                                                                            <div class="tab-pane" id="sports">
+                                                                                <ul class="nav-list list-inline">
+                                                                                    <li><a href="#"><img src="assets/images/st-1.png"><span>Title</span></a></li>
+                                                                                    <li><a href="#"><img src="assets/images/st-2.png"><span>Title</span></a></li>
+                                                                                    <li><a href="#"><img src="assets/images/st-3.png"><span>Title</span></a></li>
+                                                                                    <li><a href="#"><img src="assets/images/st-4.png"><span>Title</span></a></li>
+                                                                                    <li><a href="#"><img src="assets/images/st-5.png"><span>Title</span></a></li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- Nav tabs -->
+                                                                    <ul class="nav nav-tabs" role="tablist">
+                                                                        <li class="active"><a href="#men" role="tab" data-toggle="tab">Men</a></li>
+                                                                        <li><a href="#women" role="tab" data-toggle="tab">Women</a></li>
+                                                                        <li><a href="#kids" role="tab" data-toggle="tab">Kids</a></li>
+                                                                        <li><a href="#sports" role="tab" data-toggle="tab">Sports</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                        <ul class="nav navbar-nav navbar-right">
+                                                            <li><a href="#">Link</a></li>
+                                                            <li class="dropdown">
+                                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                                                                <ul class="dropdown-menu" role="menu">
+                                                                    <li><a href="#">Action</a></li>
+                                                                    <li><a href="#">Another action</a></li>
+                                                                    <li><a href="#">Something else here</a></li>
+                                                                    <li class="divider"></li>
+                                                                    <li><a href="#">Separated link</a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div><!-- /.navbar-collapse -->
+                                                </div><!-- /.container-fluid -->
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row section-margin">
+                    <div class="col-sm-12">
+                        <div class="col-contint store-menu">
+                            <h5 class="title">Mega Menu Slide Down on Hover With Carousel</h5>
+                            <br />
+                            <nav class="navbar navbar-inverse">
+                                <div class="navbar-header">
+                                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    <a class="navbar-brand" href="#">My Store</a>
+                                </div>
+
+                                <div class="collapse navbar-collapse js-navbar-collapse">
+                                    <ul class="nav navbar-nav">
+                                        <li class="dropdown2 dropdown mega-dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Men <span class="caret"></span></a>
+                                            <ul class="dropdown-menu mega-dropdown-menu">
+                                                <li class="col-sm-3">
+                                                    <ul>
+                                                        <li class="dropdown-header">Men Collection</li>
+                                                        <div id="menCollection" class="carousel slide" data-ride="carousel">
+                                                            <div class="carousel-inner">
+                                                                <div class="item active">
+                                                                    <a href="#"><img src="http://placehold.it/254x150/ff3546/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 1"></a>
+                                                                    <h4><small>Summer dress floral prints</small></h4>
+                                                                    <button class="btn btn-primary" type="button">49,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>
+                                                                </div><!-- End Item -->
+                                                                <div class="item">
+                                                                    <a href="#"><img src="http://placehold.it/254x150/3498db/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 2"></a>
+                                                                    <h4><small>Gold sandals with shiny touch</small></h4>
+                                                                    <button class="btn btn-primary" type="button">9,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>
+                                                                </div><!-- End Item -->
+                                                                <div class="item">
+                                                                    <a href="#"><img src="http://placehold.it/254x150/2ecc71/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 3"></a>
+                                                                    <h4><small>Denin jacket stamped</small></h4>
+                                                                    <button class="btn btn-primary" type="button">49,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>
+                                                                </div><!-- End Item -->
+                                                            </div><!-- End Carousel Inner -->
+                                                            <!-- Controls -->
+                                                            <a class="left carousel-control" href="#menCollection" role="button" data-slide="prev">
+                                                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                                                <span class="sr-only">Previous</span>
+                                                            </a>
+                                                            <a class="right carousel-control" href="#menCollection" role="button" data-slide="next">
+                                                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                                                <span class="sr-only">Next</span>
+                                                            </a>
+                                                        </div><!-- /.carousel -->
+                                                        <li class="divider"></li>
+                                                        <li><a href="#">View all Collection <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="col-sm-3">
+                                                    <ul>
+                                                        <li class="dropdown-header">Features</li>
+                                                        <li><a href="#">Auto Carousel</a></li>
+                                                        <li><a href="#">Carousel Control</a></li>
+                                                        <li><a href="#">Left & Right Navigation</a></li>
+                                                        <li><a href="#">Four Columns Grid</a></li>
+                                                        <li class="divider"></li>
+                                                        <li class="dropdown-header">Fonts</li>
+                                                        <li><a href="#">Glyphicon</a></li>
+                                                        <li><a href="#">Google Fonts</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="col-sm-3">
+                                                    <ul>
+                                                        <li class="dropdown-header">Plus</li>
+                                                        <li><a href="#">Navbar Inverse</a></li>
+                                                        <li><a href="#">Pull Right Elements</a></li>
+                                                        <li><a href="#">Coloured Headers</a></li>
+                                                        <li><a href="#">Primary Buttons & Default</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="col-sm-3">
+                                                    <ul>
+                                                        <li class="dropdown-header">Much more</li>
+                                                        <li><a href="#">Easy to Customize</a></li>
+                                                        <li><a href="#">Calls to action</a></li>
+                                                        <li><a href="#">Custom Fonts</a></li>
+                                                        <li><a href="#">Slide down on Hover</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown2 dropdown mega-dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Women <span class="caret"></span></a>
+                                            <ul class="dropdown-menu mega-dropdown-menu">
+                                                <li class="col-sm-3">
+                                                    <ul>
+                                                        <li class="dropdown-header">Features</li>
+                                                        <li><a href="#">Auto Carousel</a></li>
+                                                        <li><a href="#">Carousel Control</a></li>
+                                                        <li><a href="#">Left & Right Navigation</a></li>
+                                                        <li><a href="#">Four Columns Grid</a></li>
+                                                        <li class="divider"></li>
+                                                        <li class="dropdown-header">Fonts</li>
+                                                        <li><a href="#">Glyphicon</a></li>
+                                                        <li><a href="#">Google Fonts</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="col-sm-3">
+                                                    <ul>
+                                                        <li class="dropdown-header">Plus</li>
+                                                        <li><a href="#">Navbar Inverse</a></li>
+                                                        <li><a href="#">Pull Right Elements</a></li>
+                                                        <li><a href="#">Coloured Headers</a></li>
+                                                        <li><a href="#">Primary Buttons & Default</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="col-sm-3">
+                                                    <ul>
+                                                        <li class="dropdown-header">Much more</li>
+                                                        <li><a href="#">Easy to Customize</a></li>
+                                                        <li><a href="#">Calls to action</a></li>
+                                                        <li><a href="#">Custom Fonts</a></li>
+                                                        <li><a href="#">Slide down on Hover</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="col-sm-3">
+                                                    <ul>
+                                                        <li class="dropdown-header">Women Collection</li>
+                                                        <div id="womenCollection" class="carousel slide" data-ride="carousel">
+                                                            <div class="carousel-inner">
+                                                                <div class="item active">
+                                                                    <a href="#"><img src="http://placehold.it/254x150/3498db/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 1"></a>
+                                                                    <h4><small>Summer dress floral prints</small></h4>
+                                                                    <button class="btn btn-primary" type="button">49,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>
+                                                                </div><!-- End Item -->
+                                                                <div class="item">
+                                                                    <a href="#"><img src="http://placehold.it/254x150/ff3546/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 2"></a>
+                                                                    <h4><small>Gold sandals with shiny touch</small></h4>
+                                                                    <button class="btn btn-primary" type="button">9,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>
+                                                                </div><!-- End Item -->
+                                                                <div class="item">
+                                                                    <a href="#"><img src="http://placehold.it/254x150/2ecc71/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 3"></a>
+                                                                    <h4><small>Denin jacket stamped</small></h4>
+                                                                    <button class="btn btn-primary" type="button">49,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>
+                                                                </div><!-- End Item -->
+                                                            </div><!-- End Carousel Inner -->
+                                                            <!-- Controls -->
+                                                            <a class="left carousel-control" href="#womenCollection" role="button" data-slide="prev">
+                                                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                                                <span class="sr-only">Previous</span>
+                                                            </a>
+                                                            <a class="right carousel-control" href="#womenCollection" role="button" data-slide="next">
+                                                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                                                <span class="sr-only">Next</span>
+                                                            </a>
+                                                        </div><!-- /.carousel -->
+                                                        <li class="divider"></li>
+                                                        <li><a href="#">View all Collection <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Store locator</a></li>
+                                    </ul>
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My account <span class="caret"></span></a>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a href="#">Action</a></li>
+                                                <li><a href="#">Another action</a></li>
+                                                <li><a href="#">Something else here</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="#">Separated link</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">My cart (0) items</a></li>
+                                    </ul>
+                                </div><!-- /.nav-collapse -->
+                            </nav>
                         </div>
                     </div>
                 </div>
                 <div class="row section-margin">
                     <div class="col-sm-12">
                         <div class="col-contint">
-                            <h5 class="title">Menu</h5>
+                            <h5 class="title">Menu With Carousel</h5>
                             <br />
-                        </div>
-                    </div>
-                </div>
-                <div class="row section-margin">
-                    <div class="col-sm-4">
-                        <div class="col-contint">
-                            <h5 class="title">Menu</h5>
-                            <br />
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="col-contint">
-                            <h5 class="title">Menu</h5>
-                            <br />
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="col-contint">
-                            <h5 class="title">Menu</h5>
-                            <br />
+
+                            <nav class="navbar navbar-default" role="navigation">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                                    <ol class="nav navbar-nav nav-indicators">
+                                        <li data-target="#myCarousel" data-slide-to="0" class="myCarousel-target active">
+                                            <a href="#">Slide 1</a>
+                                        </li>
+                                        <li data-target="#myCarousel" data-slide-to="1" class="myCarousel-target">
+                                            <a href="#">Slide 2</a>
+                                        </li>
+                                        <li data-target="#myCarousel" data-slide-to="2" class="myCarousel-target">
+                                            <a href="#">Slide 3</a>
+                                        </li>
+                                        <li data-target="#myCarousel" data-slide-to="3" class="myCarousel-target">
+                                            <a href="#">Slide 4</a>
+                                        </li>
+                                        <li data-target="#myCarousel" data-slide-to="4" class="myCarousel-target">
+                                            <a href="#">Slide 5</a>
+                                        </li>
+                                        <li data-target="#myCarousel" data-slide-to="5" class="myCarousel-target">
+                                            <a href="#">Slide 6</a>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </nav>
+                            <div id="myCarousel" class="carousel slide">
+                                <div class="carousel-inner">
+                                    <div data-slide-no="0" class="item carousel-item active">
+                                        <div class="wrapper">
+                                            <img src="http://placehold.it/600x200?text=Slide+1" class="img-responsive" style="width:100%; height:auto;">
+                                        </div>
+                                    </div>
+                                    <div data-slide-no="1" class="item carousel-item">
+                                        <div class="wrapper">
+                                            <img src="http://placehold.it/600x200?text=Slide+2" class="img-responsive" style="width:100%; height:auto;">
+                                        </div>
+                                    </div>
+                                    <div data-slide-no="2" class="item carousel-item">
+                                        <div class="wrapper">
+                                            <img src="http://placehold.it/600x200?text=Slide+3" class="img-responsive" style="width:100%; height:auto;">
+                                        </div>
+                                    </div>
+                                    <div data-slide-no="3" class="item carousel-item">
+                                        <div class="wrapper">
+                                            <img src="http://placehold.it/600x200?text=Slide+4" class="img-responsive" style="width:100%; height:auto;">
+                                        </div>
+                                    </div>
+                                    <div data-slide-no="4" class="item carousel-item">
+                                        <div class="wrapper">
+                                            <img src="http://placehold.it/600x200?text=Slide+5" class="img-responsive" style="width:100%; height:auto;">
+                                        </div>
+                                    </div>
+                                    <div data-slide-no="5" class="item carousel-item">
+                                        <div class="wrapper">
+                                            <img src="http://placehold.it/600x200?text=Slide+6" class="img-responsive" style="width:100%; height:auto;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <h6 class="made-by">Made By  <b>New Versions</b></h6>
             </div>
         </div>
-        <!-- /#page-content-wrapper -->
-        <!-- /#wrapper -->
-        <div id="Right-Side-Section">
-            <div id="Right-Side-Section-Togle">
-                <i class="fa fa-pencil-square-o" id="Edit" aria-hidden="true"></i>
-            </div>
-            <div class="table">
-                <table>
-                    <tr>
-                        <td colspan="4">
-                            <div onclick="closeToggel()" id="Close">
-                                <i class="fa fa-times-circle-o" aria-hidden="true"></i>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </table>
-            </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+    <!-- /#wrapper -->
+    <div id="Right-Side-Section">
+        <div id="Right-Side-Section-Togle">
+            <i class="fa fa-pencil-square-o" id="Edit" aria-hidden="true"></i>
         </div>
+        <div class="table">
+            <table>
+                <tr>
+                    <td colspan="4">
+                        <div onclick="closeToggel()" id="Close">
+                            <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
 
-        <div class="notifecations-box">
-            <div class="arrow-up"></div>
-            <h5>Notifications</h5>
-            <div class="single-not-content">
-                <a href="#">
-                    <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b>&nbsp;    wants your confirmation on his Leave Request on 12 May 2015</p>
-                </a>
-            </div>
-            <div class="single-not-content">
-                <a href="#">
-                    <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b>&nbsp;    wants your confirmation on his Leave Request on 12 May 2015</p>
-                </a>
-            </div>
-            <div class="veiw-all-not">
-                <a href="#">View All</a>
-            </div>
-        </div>
-        <div class="messages-box">
-            <div class="arrow-up"></div>
-            <h5>Messages <a class="send-message-link " href="#">Send New Message</a></h5>
-            <div class="single-not-content">
-                <a href="#">
-                    <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
-                </a>
-            </div>
-            <div class="single-not-content">
-                <a href="#">
-                    <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
-                </a>
-            </div>
-            <div class="single-not-content">
-                <a href="#">
-                    <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
-                </a>
-            </div>
-            <div class="single-not-content">
-                <a href="#">
-                    <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
-                </a>
-            </div>
-            <div class="veiw-all-not">
-                <a href="#">View All</a>
-            </div>
-        </div>
-        <div class="user-info-box">
-            <div class="arrow-up user-arrow"></div>
+    <div class="notifecations-box">
+        <div class="arrow-up"></div>
+        <h5>Notifications</h5>
+        <div class="single-not-content">
             <a href="#">
-                <div class="user-info-content">
-                    <i class="fa fa-user" aria-hidden="true"></i>
-                    Proﬁle
-                </div>
-            </a>
-            <a href="#">
-                <div class="user-info-content">
-                    <i class="fa fa-cog" aria-hidden="true"></i>
-                    Settings
-                </div>
-            </a>
-            <a href="#">
-                <div class="user-info-content">
-                    <i class="fa fa-info-circle" aria-hidden="true"></i>
-                    Help
-                </div>
-            </a>
-            <a href="#">
-                <div class="user-info-content logout">
-                    Log Out
-                    <i class="fa fa-sign-out" aria-hidden="true"></i>
-                </div>
+                <img src="assets/images/Sami.jpg" />
+                <p><b>Mohammad Meshaal</b>&nbsp;    wants your confirmation on his Leave Request on 12 May 2015</p>
             </a>
         </div>
+        <div class="single-not-content">
+            <a href="#">
+                <img src="assets/images/Sami.jpg" />
+                <p><b>Mohammad Meshaal</b>&nbsp;    wants your confirmation on his Leave Request on 12 May 2015</p>
+            </a>
+        </div>
+        <div class="veiw-all-not">
+            <a href="#">View All</a>
+        </div>
+    </div>
+    <div class="messages-box">
+        <div class="arrow-up"></div>
+        <h5>Messages <a class="send-message-link " href="#">Send New Message</a></h5>
+        <div class="single-not-content">
+            <a href="#">
+                <img src="assets/images/Sami.jpg" />
+                <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
+            </a>
+        </div>
+        <div class="single-not-content">
+            <a href="#">
+                <img src="assets/images/Sami.jpg" />
+                <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
+            </a>
+        </div>
+        <div class="single-not-content">
+            <a href="#">
+                <img src="assets/images/Sami.jpg" />
+                <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
+            </a>
+        </div>
+        <div class="single-not-content">
+            <a href="#">
+                <img src="assets/images/Sami.jpg" />
+                <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
+            </a>
+        </div>
+        <div class="veiw-all-not">
+            <a href="#">View All</a>
+        </div>
+    </div>
+    <div class="user-info-box">
+        <div class="arrow-up user-arrow"></div>
+        <a href="#">
+            <div class="user-info-content">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                Proﬁle
+            </div>
+        </a>
+        <a href="#">
+            <div class="user-info-content">
+                <i class="fa fa-cog" aria-hidden="true"></i>
+                Settings
+            </div>
+        </a>
+        <a href="#">
+            <div class="user-info-content">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                Help
+            </div>
+        </a>
+        <a href="#">
+            <div class="user-info-content logout">
+                Log Out
+                <i class="fa fa-sign-out" aria-hidden="true"></i>
+            </div>
+        </a>
     </div>
     <script src="assets/vendors/jquery/jquery-3.1.1.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/notifications_boxs.js"></script>
+    <script>
+        function htmlbodyHeightUpdate() {
+            var height3 = $(window).height()
+            var height1 = $('.nav').height() + 50
+            height2 = $('.main').height()
+            if (height2 > height3) {
+                $('html').height(Math.max(height1, height3, height2) + 10);
+                $('body').height(Math.max(height1, height3, height2) + 10);
+            }
+            else {
+                $('html').height(Math.max(height1, height3, height2));
+                $('body').height(Math.max(height1, height3, height2));
+            }
+
+        }
+        $(document).ready(function () {
+            htmlbodyHeightUpdate()
+            $(window).resize(function () {
+                htmlbodyHeightUpdate()
+            });
+            $(window).scroll(function () {
+                height2 = $('.main').height()
+                htmlbodyHeightUpdate()
+            });
+        });
+
+
+
+
+
+        $(document).ready(function () {
+            $(".dropdown2").hover(
+                function () {
+                    $('.dropdown-menu', this).stop(true, true).slideDown("fast");
+                    $(this).toggleClass('open');
+                },
+                function () {
+                    $('.dropdown-menu', this).stop(true, true).slideUp("fast");
+                    $(this).toggleClass('open');
+                }
+            );
+        });
+
+
+
+        $(document).ready(function () {
+            $(".dropdown2").hover(
+                function () {
+                    $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).slideDown("400");
+                    $(this).toggleClass('open');
+                },
+                function () {
+                    $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).slideUp("400");
+                    $(this).toggleClass('open');
+                }
+            );
+        });
+
+        $(document).ready(function () {
+            $(".carousel").carousel({
+                interval: 5000
+            });
+            $('#myCarousel').on('slide.bs.carousel', function () {
+
+
+                $(".myCarousel-target.active").removeClass("active");
+
+                $('#myCarousel').on('slid.bs.carousel', function () {
+
+                    var to_slide = $(".carousel-item.active").attr("data-slide-no");
+
+                    $(".nav-indicators li[data-slide-to=" + to_slide + "]").addClass("active");
+
+                });
+            });
+
+        });
+    </script>
 </body>
 </html>
