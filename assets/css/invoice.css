@@ -1,0 +1,39 @@
+.dashboard-info{
+    margin-bottom: 0px;
+}
+.inline-header{
+    display: inline;
+    vertical-align: -webkit-baseline-middle;
+}
+.contint-padding{
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-bottom: 1px solid #e4e5e7;
+}
+.sub-text{
+    font-size: 13px;
+    color: #777;
+}
+.cont-header-container{
+    border: 1px solid #e4e5e7;
+}
+.body-padding{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.sub-info{
+    margin-top: 15px;
+}
+.sub-info-details{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.details-right{
+    text-align: right;
+}
+.details-center{
+    text-align: center;
+}
+.helper-color{
+    color:#ccc;
+}
