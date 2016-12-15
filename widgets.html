@@ -22,6 +22,8 @@
         <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
         <link href="assets/css/ui.css" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/widgets.css">
+        <link rel="stylesheet" href="assets/css/materialize.css">
+        <link rel="stylesheet" href="assets/css/card.css">
 
     </head>
     <body>
@@ -225,110 +227,208 @@
             <div id="page-content-wrapper">
                 <div class="container-fluid">
                     <div class="row">
+                        <div class="col-sm-5">
+                            <div class="col-contint">
+                                <p class="title balancing">Maps</p>
+                                <div id="container"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="col-contint">
+                                <p class="title">To Do List<a class="add-task"><i class="fa fa-plus-circle" aria-hidden="true"></i></a></p>
+                                <div class="to-do-list widgets">
+                                    <div class="single-to-do-box">
+                                        <div class="checkbox checkbox-success checkbox-inline">
+                                            <input type="checkbox" id="inlineCheckbox2" value="option1" checked="">
+                                            <label class="done-task" for="inlineCheckbox2">Lorem ipsum dolor sit.. </label>
+                                        </div>
+                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                        <h6>Today</h6>
+                                    </div>
+                                    <div class="single-to-do-box">
+                                        <div class="checkbox checkbox-success checkbox-inline">
+                                            <input id="checkbox3" type="checkbox">
+                                            <label for="checkbox3">
+                                                Lorem ipsum dolor sit..
+                                            </label>
+                                        </div>
+                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                        <h6>Wednesday</h6>
+                                    </div>
+                                    <div class="single-to-do-box">
+                                        <div class="checkbox checkbox-success checkbox-inline">
+                                            <input id="checkbox3" type="checkbox">
+                                            <label for="checkbox3">
+                                                Lorem ipsum dolor sit..
+                                            </label>
+                                        </div>
+                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                        <h6>05 Oct</h6>
+                                    </div>
+                                    <div class="single-to-do-box">
+                                        <div class="checkbox checkbox-success checkbox-inline">
+                                            <input id="checkbox3" type="checkbox">
+                                            <label for="checkbox3">
+                                                Lorem ipsum dolor sit..
+                                            </label>
+                                        </div>
+                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                        <h6>10 Oct</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                <div class="col-contint">
+                                    <p id="activities-log" class="title">Activities Log<a class="activities-year">2016</a></p>
+                                    <div class="activities-log widgets">
+                                        <div class="single-log-box">
+                                            <h5>October</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                            </p>
+                                        </div>
+                                        <div class="single-log-box">
+                                            <h5>October</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-3">
-                            <div class="col-contint col-contint-taps">
+                            <div class="col-contint">
+                                <p id="activities-log" class="title">Tasks list</p>
                                 <table class="table table-striped">
-                                      <thead>
-                                          <tr>
-                                              <th>Task</th>
-                                              <th>Date</th>
-                                          </tr>
-                                      </thead>
-                                      <tbody>
-                                          <tr>
-                                              <td><span class="success-text">Lorem ipsum</span></td>
-                                              <td><span>Aug 14, 2016</span></td>
-                                          </tr>
-                                          <tr>
-                                              <td><span class="success-text">Lorem ipsum</span></td>
-                                              <td><span>Jan 10, 2017</span></td>
-                                          </tr>
-                                          <tr>
-                                              <td><span class="success-text">Lorem ipsum</span></td>
-                                              <td><span>May 25, 2017</span></td>
-                                          </tr>
-                                      </tbody>
+                                    <thead>
+                                        <tr><th>Task</th>
+                                            <th>Date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><span class="success-text">Lorem ipsum</span></td>
+                                            <td>Aug 14, 2016</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="success-text">Lorem ipsum</span></td>
+                                            <td>Dec 28, 2016</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="success-text">Lorem ipsum</span></td>
+                                            <td>May 22, 2017</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="success-text">Lorem ipsum</span></td>
+                                            <td>Jul 8, 2017</td>
+                                        </tr>
+                                        
+                                    </tbody>
                                 </table>
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="col-contint col-contint-taps">
-                                <table class="table table-striped">
-                                      <thead>
-                                          <tr>
-                                              <th>Task</th>
-                                              <th>Date</th>
-                                          </tr>
-                                      </thead>
-                                      <tbody>
-                                          <tr>
-                                              <td><span class="warning-text">Lorem ipsum</span></td>
-                                              <td><span>Aug 14, 2016</span></td>
-                                          </tr>
-                                          <tr>
-                                              <td><span class="warning-text">Lorem ipsum</span></td>
-                                              <td><span>Jan 10, 2017</span></td>
-                                          </tr>
-                                          <tr>
-                                              <td><span class="warning-text">Lorem ipsum</span></td>
-                                              <td><span>May 25, 2017</span></td>
-                                          </tr>
-                                      </tbody>
-                                </table>
+                        <div class="col-md-4">
+                            <div class="col-contint">
+                                <p id="activities-log" class="title balancing">Pie chart</p>
+                                <div id="piechart"></div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-5">
                             <div class="col-contint col-contint-taps">
-                                <table class="table table-striped">
-                                      <thead>
-                                          <tr>
-                                              <th>Task</th>
-                                              <th>Date</th>
-                                          </tr>
-                                      </thead>
-                                      <tbody>
-                                          <tr>
-                                              <td><span class="primary-text">Lorem ipsum</span></td>
-                                              <td><span>Aug 14, 2016</span></td>
-                                          </tr>
-                                          <tr>
-                                              <td><span class="primary-text">Lorem ipsum</span></td>
-                                              <td><span>Jan 10, 2017</span></td>
-                                          </tr>
-                                          <tr>
-                                              <td><span class="primary-text">Lorem ipsum</span></td>
-                                              <td><span>May 25, 2017</span></td>
-                                          </tr>
-                                      </tbody>
-                                </table>
+                                <p id="activities-log" class="title">Progress bars</p>
+                                <div class="col-sm-3">
+                                    <label class="sync-labels">project 1</label>
+                                    <label class="sync-labels">project 2</label>
+                                    <label class="sync-labels">project 3</label>
+                                    <label class="sync-labels">project 4</label>                               
+                                </div>
+                                <div class="col-sm-9">
+                                <div class="progress-widgets">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                                            40% Complete (success)
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                      <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar"
+                                      aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                        50% Complete (info)
+                                      </div>
+                                    </div>
+                                    <div class="progress">
+                                      <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar"
+                                      aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                        60% Complete (warning)
+                                      </div>
+                                    </div>
+                                    <div class="progress">
+                                      <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar"
+                                      aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                        70% Complete (danger)
+                                      </div>
+                                    </div>
+                                </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
                             <div class="col-contint col-contint-taps">
-                                <table class="table table-striped">
-                                      <thead>
-                                          <tr>
-                                              <th>Task</th>
-                                              <th>Date</th>
-                                          </tr>
-                                      </thead>
-                                      <tbody>
-                                          <tr>
-                                              <td><span class="danger-text">Lorem ipsum</span></td>
-                                              <td><span>Aug 14, 2016</span></td>
-                                          </tr>
-                                          <tr>
-                                              <td><span class="danger-text">Lorem ipsum</span></td>
-                                              <td><span>Jan 10, 2017</span></td>
-                                          </tr>
-                                          <tr>
-                                              <td><span class="danger-text">Lorem ipsum</span></td>
-                                              <td><span>May 25, 2017</span></td>
-                                          </tr>
-                                      </tbody>
-                                </table>
+                                <p id="activities-log" class="title">Form components</p>
+                                <div class="form-section col-sm-12 top">
+                                    <span class="form-labels">Username</span>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-section col-sm-12">
+                                    <span class="form-labels">Password</span>
+                                    <input type="password" class="form-control">
+                                </div> 
+                                <div class="form-section col-sm-12">
+                                    <button type="button" class="btn btn-primary outline-primary">Submit</button>
+                                </div> 
                             </div>
                         </div>
+                        <div class="col-sm-3">
+                            <div class="col-contint col-contint-taps">
+                                <p id="activities-log" class="title">Card</p>
+                                <div class="card blue-grey darken-1">
+                                    <div class="card-content white-text">
+                                        <span class="card-title">Card Title</span>
+                                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                                    </div>
+                                    <div class="card-action">
+                                      <a href="#">This is a link</a>
+                                      <a href="#">This is a link</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="col-contint col-contint-taps">
+                                <p id="activities-log" class="title balancing">List</p>
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item active">First item</a>
+                                    <a href="#" class="list-group-item">Second item</a>
+                                    <a href="#" class="list-group-item">Third item</a>
+                                    <a href="#" class="list-group-item">Forth item</a>
+                                    <a href="#" class="list-group-item">Fifth item</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="col-contint col-contint-taps">
+                                <p id="activities-log" class="title balancing">Image</p>
+                                <img class="img-responsive" src="assets/images/salse.png" />
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
                 <!-- /#page-content-wrapper -->
@@ -442,10 +542,17 @@
                 </a>
             </div>
         </div>
-
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
         <script src="assets/vendors/jquery/jquery-3.1.1.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/main.js"></script>
         <script src="assets/js/notifications_boxs.js"></script>
+        
+        <!--Map-->
+        <script src="assets/js/widget.js"></script>
+<script src="https://code.highcharts.com/maps/highmaps.js"></script>
+<script src="https://code.highcharts.com/maps/modules/data.js"></script>
+<script src="https://code.highcharts.com/mapdata/countries/us/us-all.js"></script>
+        
     </body>
 </html>

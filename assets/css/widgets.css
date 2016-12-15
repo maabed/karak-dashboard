@@ -10,3 +10,40 @@
 .danger-text{
     color: #d9534f;
 }
+.widgets{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.progress{
+    padding: 0px;
+}
+.progress-bar.progress-bar-success.progress-bar-striped{
+    background-color: #5cb85c !important;
+    width:40%
+}
+.progress-bar.progress-bar-info.progress-bar-striped{
+    width:50%;
+}
+.progress-bar.progress-bar-warning.progress-bar-striped{
+    background-color: #f0ad4e !important;
+    width:60%
+}
+.progress-bar.progress-bar-danger.progress-bar-striped{
+    background-color: #d9534f !important;
+    width:70%
+}
+.progress-widgets{
+    margin-top: 8px;
+}
+.balancing{
+    padding-bottom: 5px;
+}
+.sync-labels{
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+#container{
+    padding: 0px;
+    height: auto;
+}
+

@@ -1,4 +1,4 @@
-﻿$(function () {
+$(function () {
 
     $.getJSON('https://www.highcharts.com/samples/data/jsonp.php?filename=world-population-density.json&callback=?', function (data) {
 
