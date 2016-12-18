@@ -2204,22 +2204,25 @@ p {
     margin-top: 0.2em;
 }
 
-.panel-heading a span:hover {
-    color: #7B7B7B;}
+    .panel-heading a span:hover {
+        color: #7B7B7B;
+    }
+
 }
 
 .panel-actions {
-  margin-top: -20px;
-  margin-bottom: 0;
-  text-align: right;
-}
-.panel-actions p  {
-    color: #C4C4C4;
+    margin-top: -20px;
+    margin-bottom: 0;
+    text-align: right;
 }
 
-.panel-actions p:hover {
-    color: #7B7B7B;
-}
+    .panel-actions p {
+        color: #C4C4C4;
+    }
+
+        .panel-actions p:hover {
+            color: #7B7B7B;
+        }
 
 .panel-fullscreen {
     display: block;
@@ -2239,39 +2242,39 @@ p {
     font-weight: lighter;
 }
 
-.dataTables_length label select {
-    color: #34495E !important;
-    border: 1px solid #F1F3F6;
-    border-radius: 3px;
-}
+    .dataTables_length label select {
+        color: #34495E !important;
+        border: 1px solid #F1F3F6;
+        border-radius: 3px;
+    }
 
-.dataTables_length label select {
-    color: #34495E !important;
-    border: 1px solid #F1F3F6;
-    border-radius: 3px;
-}
-
-.dataTables_filter label {
-    color: #888888;
-    font-weight: lighter;
-}
-
-.dataTables_filter label input {
-    color: #34495E !important;
-    border: 1px solid #F1F3F6;
-    border-radius: 3px;
-}
+    .dataTables_length label select {
+        color: #34495E !important;
+        border: 1px solid #F1F3F6;
+        border-radius: 3px;
+    }
 
 .dataTables_filter label {
     color: #888888;
     font-weight: lighter;
 }
 
-.dataTables_filter label input {
-    color: #34495E !important;
-    border: 1px solid #F1F3F6;
-    border-radius: 3px;
+    .dataTables_filter label input {
+        color: #34495E !important;
+        border: 1px solid #F1F3F6;
+        border-radius: 3px;
+    }
+
+.dataTables_filter label {
+    color: #888888;
+    font-weight: lighter;
 }
+
+    .dataTables_filter label input {
+        color: #34495E !important;
+        border: 1px solid #F1F3F6;
+        border-radius: 3px;
+    }
 
 #ajax_table_wrapper .dt-buttons a {
     background-color: #3B97D2;
@@ -2370,8 +2373,87 @@ tr.shown td.details-control {
     width: 100% !important;
 }
 
-.all-icons .dataTables_filter label input {
-    width: 40% !important;
+    .all-icons .dataTables_filter label input {
+        width: 40% !important;
+    }
+
+.primary-ligher {
+    background-color: #ccd1d7 !important;
+}
+
+.primary-light {
+    background-color: #a8a8a8 !important;
+}
+
+.primary-mid {
+    background-color: #677786 !important;
+}
+
+.info-ligher {
+    background-color: #cce5f6 !important;
+}
+
+.info-light {
+    background-color: #99cbed !important;
+}
+
+.info-mid {
+    background-color: #67b2e4 !important;
+}
+
+.success-ligher {
+    background-color: #cbf2db !important;
+}
+
+.success-light {
+    background-color: #96e5b8 !important;
+}
+
+.success-mid {
+    background-color: #62d995 !important;
+}
+
+
+.warning-ligher {
+    background-color: #fbf0c3 !important;
+}
+
+.warning-light {
+    background-color: #f8e187 !important;
+}
+
+.warning-mid {
+    background-color: #f5d34b !important;
+}
+
+
+.danger-ligher {
+    background-color: #f9d2ce !important;
+}
+
+.danger-light {
+    background-color: #f3a59d !important;
+}
+
+.danger-mid {
+    background-color: #ed796d !important;
+}
+
+
+.dashboard-default {
+    background-color: #fff !important;
+}
+
+.default-ligher {
+    background-color: #999999 !important;
+}
+
+.default-dark {
+    background-color: #9b9b9b !important;
+}
+
+.default-mid {
+    background-color: #cdcdcd !important;
 }
 
 
@@ -2406,17 +2488,17 @@ tr.shown td.details-control {
     }
 }
 
-.taps-center; {
+.taps-center {
     width: 70%;
     margin: 0 auto;
     text-align: center;
 }
 
-.taps-center li {
-    margin: 0 auto;
-    width: 33%;
-    text-align: center;
-}
+    .taps-center li {
+        margin: 0 auto;
+        width: 33%;
+        text-align: center;
+    }
 
 .progress {
     background-color: #F1F3F6;
@@ -2440,50 +2522,50 @@ tr.shown td.details-control {
     border: 1px solid #F1F3F6;
 }
 
-.flat-colors .col-sm-2 {
-    color: #fff;
-    font-weight: lighter;
-    padding-top: 6em;
-}
+    .flat-colors .col-sm-2 {
+        color: #fff;
+        font-weight: lighter;
+        padding-top: 6em;
+    }
 
-.flat-colors .col-sm-2:last-child p {
-    color: #000;
-}
+        .flat-colors .col-sm-2:last-child p {
+            color: #000;
+        }
 
-.flat-colors .col-sm-2 p {
-    color: #F1F3F6;
-}
+        .flat-colors .col-sm-2 p {
+            color: #F1F3F6;
+        }
 
-.flat-colors .col-sm-2:first-child {
-    background-color: #34495e;
-    border-bottom: 8px solid #2c3e50;
-}
+        .flat-colors .col-sm-2:first-child {
+            background-color: #34495e;
+            border-bottom: 8px solid #2c3e50;
+        }
 
-.flat-colors .col-sm-2:nth-child(2) {
-    background-color: #3498db;
-    border-bottom: 8px solid #2980b9;
-}
+        .flat-colors .col-sm-2:nth-child(2) {
+            background-color: #3498db;
+            border-bottom: 8px solid #2980b9;
+        }
 
-.flat-colors .col-sm-2:nth-child(3) {
-    background-color: #2ecc71;
-    border-bottom: 8px solid #27ae60;
-}
+        .flat-colors .col-sm-2:nth-child(3) {
+            background-color: #2ecc71;
+            border-bottom: 8px solid #27ae60;
+        }
 
-.flat-colors .col-sm-2:nth-child(4) {
-    background-color: #f1c40f;
-    border-bottom: 8px solid #f39c12;
-}
+        .flat-colors .col-sm-2:nth-child(4) {
+            background-color: #f1c40f;
+            border-bottom: 8px solid #f39c12;
+        }
 
-.flat-colors .col-sm-2:nth-child(5) {
-    background-color: #e74c3c;
-    border-bottom: 8px solid #c0392b;
-}
+        .flat-colors .col-sm-2:nth-child(5) {
+            background-color: #e74c3c;
+            border-bottom: 8px solid #c0392b;
+        }
 
-.flat-colors .col-sm-2:last-child {
-    background-color: #fff;
-    color: #34495E;
-    border-bottom: 8px solid #ecf0f1;
-}
+        .flat-colors .col-sm-2:last-child {
+            background-color: #fff;
+            color: #34495E;
+            border-bottom: 8px solid #ecf0f1;
+        }
 
 .col-contint .navbar {
     padding-top: 0em !important;
@@ -2496,9 +2578,9 @@ tr.shown td.details-control {
     padding-bottom: 5em;
 }
 
-.left-side-menue-height .navbar {
-    width: 100%;
-}
+    .left-side-menue-height .navbar {
+        width: 100%;
+    }
 
 .menu-padding {
     padding-right: 0.5em;
