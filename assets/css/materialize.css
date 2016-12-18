@@ -7,7 +7,6 @@
 .card {
     position: relative;
     margin: 0.5rem 0 1rem 0;
-    background-color: #fff;
     transition: box-shadow .25s;
     border-radius: 2px;
 }
@@ -43,7 +42,7 @@
 .card .card-action {
     position: relative;
     background-color: inherit;
-    border-top: 1px solid rgba(160,160,160,0.2);
+    border-top: 1px solid #ecf0f1;
     padding: 20px;
 }
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
@@ -72,7 +71,6 @@
     padding: 20px;
     margin: 0.5rem 0 1rem 0;
     border-radius: 2px;
-    background-color: #fff;
 }
 .teal {
     background-color: #009688 !important;

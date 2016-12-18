@@ -2056,11 +2056,17 @@ p {
     background-color: #34495e;
     border: #2c3e50;
 }
+.default-light{
+    background-color: #999999;
+}
 
     .dashboard-primary:hover {
         background-color: #2c3e50;
     }
-
+.default-dahsboard-link{
+    color: #fff !important;
+    text-decoration: underline;
+}
 
 .dashboard-success {
     background-color: #2ecc71;
