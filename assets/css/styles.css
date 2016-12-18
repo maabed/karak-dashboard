@@ -2455,8 +2455,18 @@ tr.shown td.details-control {
 .default-mid {
     background-color: #cdcdcd !important;
 }
-
-
+.lock-screen-img {
+    float :left ;
+    border :2px solid #3B97D2;
+    border-radius :3px;
+    width:6em;
+    margin :0em 1em 1em 0em;
+}
+#login-form .title {
+    padding-top  :1.5em;
+}
+.lock-screen-head {text-align :left !important ; background-color:#F1F3F6 !important ;
+}
 @media(max-width:1028px) {
     .taps-center {
         width: 100% !important;
