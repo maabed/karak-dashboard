@@ -2011,7 +2011,6 @@ p {
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    margin-bottom: 0.5em;
 }
 
 .btn-info, .dashboard-default, .dashboard-primary, .dashboard-success, .dashboard-info, .dashboard-warning, .dashboard-danger, .outline-default, .outline-primary, .outline-success, .outline-info, .outline-warning, .outline-danger {
@@ -2463,7 +2462,7 @@ tr.shown td.details-control {
 .code-table tr td {
     border: none !important;
     font-size: 0.9em;
-    padding :1em 0em !important ;
+    padding: 1em 0em !important;
 }
 
 .single-color-box {
@@ -2528,6 +2527,11 @@ tr.shown td.details-control {
     margin-bottom: 1em;
 }
 
+.colors-boxs {
+    width :100%;
+    height :5.2em;
+    border :none !important ;
+}
 
 @media(max-width:1110px) {
     .primary-border {
