@@ -2463,6 +2463,7 @@ tr.shown td.details-control {
 .code-table tr td {
     border: none !important;
     font-size: 0.9em;
+    padding :1em 0em !important ;
 }
 
 .single-color-box {
