@@ -1,0 +1,41 @@
+﻿#head {
+    background-color: #3B97D2;
+}
+
+#searchTB {
+    background-color: #3B97D2;
+}
+
+.sidebar-nav > .sidebar-brand {
+    background-color: #2980B9;
+}
+
+.badge-notify {
+    color: #3B97D2;
+}
+
+#sidebar-wrapper {
+    background-color: #fff;
+}
+
+.sidebar-nav li a {
+    border-bottom: 1px solid #E4E5E7;
+    border-right: 1px solid #E4E5E7;
+    color: #34495E;
+}
+
+.nav-icon {
+    color: #C6C4DB;
+}
+
+.user-box p {
+    color: #fff;
+}
+
+.head-box i {
+    color: #fff;
+}
+
+.sidebar-nav > .sidebar-brand {
+    color: #fff;
+}

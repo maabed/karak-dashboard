@@ -1,5 +1,4 @@
-﻿$(document).ready(function () {
-    $("#preview1").click(function () {
+﻿    $("#preview1").click(function () {
         $("#head").css("background-color", "#3B97D2");
         $("#searchTB ").css("background-color", "#3B97D2");
         $(".sidebar-nav > .sidebar-brand").css("background-color", "#2980B9");
@@ -85,4 +84,3 @@
         $(".user-box p").css("color", "#686868");
         $(".head-box i").css("color", "#686868");
     });
-});

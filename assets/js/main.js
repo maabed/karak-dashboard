@@ -24,7 +24,7 @@ $('.MainMenue').click(function (e) {
 
 $(document).ready(function () {
     $('#Right-Side-Section-Togle').click(function () {
-        var toggleWidth = $("#Right-Side-Section").width() == 300 ? "200px" : "300px";
+        var toggleWidth = $("#Right-Side-Section").width() == 300 ? "200px" : "355px";
         $('#Right-Side-Section').animate({ width: toggleWidth });
 
     });
@@ -35,7 +35,7 @@ $('#Right-Side-Section-Togle').click(function (e) {
     e.preventDefault();
     // hide all span
     var $this = $(this).parent().find('#Right-Side-Section');
-    $("#Right-Side-Section").not($this).width('300px;');
+    $("#Right-Side-Section").not($this).width('355px;');
     $('#Right-Side-Section-Togle').hide(0);
 });
 

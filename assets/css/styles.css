@@ -167,7 +167,6 @@ body {
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
-    background: #fff;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -222,9 +221,6 @@ body {
     .sidebar-nav li a {
         display: block;
         text-decoration: none;
-        color: #34495E;
-        border-bottom: 1px solid #E4E5E7;
-        border-right: 1px solid #E4E5E7;
         font-weight: lighter;
         font-size: 14px;
     }
@@ -249,7 +245,6 @@ body {
 
 #head {
     width: 100%;
-    background-color: #3B97D2;
     padding-top: 0.5em;
     height: 3.55em;
     color: #fff;
@@ -267,7 +262,6 @@ body {
 }
 
     .sidebar-nav .selected a .nav-icon {
-        color: #3B97D2;
     }
 
 
@@ -411,12 +405,9 @@ body {
     font-weight: bold;
     font-size: 17px;
     line-height: 50px;
-    color: #fff;
-    background-color: #2980B9;
 }
 
 #searchTB {
-    background-color: #3B97D2;
     border: none;
     box-shadow: none;
     color: #fff;
@@ -474,7 +465,6 @@ body {
     .user-box p {
         margin-top: 0.5em;
         float: right;
-        color: #fff;
     }
 
 .badge-notify {
@@ -482,7 +472,6 @@ body {
     position: absolute;
     top: 0em;
     right: 0.6em;
-    color: #3B97D2;
     border-radius: 2px;
     font-weight: normal;
     padding: 0.3em 0.5em;
@@ -496,7 +485,6 @@ body {
 }
 
     .head-box i {
-        color: #fff;
     }
 
 .btn-group-lg > .btn, .btn-lg {
@@ -2151,6 +2139,10 @@ p {
     border-color: #34495e;
 }
 
+.margin-bottom {
+    margin-bottom: 0.5em;
+}
+
 .btn-group-vertical button {
     margin-bottom: 0 !important;
 }
@@ -2719,7 +2711,9 @@ tr.shown td.details-control {
         color: #34495E;
         background-color: #E4E5E7;
     }
-.right-zero { right:0 !important ;
+
+.right-zero {
+    right: 0 !important;
 }
 
 @media(max-width:1110px) {
