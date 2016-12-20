@@ -26,10 +26,8 @@
     <div id="wrapper">
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
+            <div class="sidebar-brand" id="company-name">Company Name</div>
             <ul class="sidebar-nav">
-                <li class="sidebar-brand" id="company-name">
-                    Company Name
-                </li>
                 <li>
                     <a href="index.html"><i class="fa fa-tachometer nav-icon" aria-hidden="true"></i>Dashboard</a>
                 </li>
@@ -684,12 +682,14 @@
         $("#apply").click(function () {
             var color = $("#coloepicker").val();
             localStorage.setItem('head', color);
-            $("#head , #searchTB, .sidebar-nav > .sidebar-brand").css("background-color", color);
+            $("#head , #searchTB, .sidebar-brand").css("background-color", color);
+            document.getElementById("company-name").style.opacity = "0.8";
+            document.getElementById("company-name").style.color = "#fff";
         });
         color = localStorage.getItem("head");
-        $("#head , #searchTB, .sidebar-nav > .sidebar-brand").css("background-color", color);
+        $("#head , #searchTB, .sidebar-brand").css("background-color", color);
         document.getElementById("coloepicker").value = color;
-        document.getElementById("company-name").style.opacity = "0.7";
+        document.getElementById("company-name").style.opacity = "0.8";
     </script>
 </body>
 </html>
