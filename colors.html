@@ -27,7 +27,7 @@
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
-                <li class="sidebar-brand">
+                <li class="sidebar-brand" id="company-name">
                     Company Name
                 </li>
                 <li>
@@ -194,7 +194,7 @@
                 <i href="#menu-toggle" id="menu-toggle" class="fa fa-bars" aria-hidden="true"></i>
                 <div class="form-group">
                     <div class="icon-addon addon-md">
-                        <input type="text"  placeholder="Type anywhere to search" class="form-control" id="searchTB">
+                        <input type="text" placeholder="Type anywhere to search" class="form-control" id="searchTB">
                         <i class="fa fa-search glyphicon glyphicon-search" aria-hidden="true"></i>
                     </div>
                 </div>
@@ -582,8 +582,7 @@
                 <a href="#" id="orange-style" onclick="changeCSS('orang.css', 0);">orang</a>
                 <!--<p id="colorpickerHolder"></p>-->
                 <input id="coloepicker" type="color" />
-                <button id="test"></button>
-
+                <button id="apply">Apply</button>
             </div>
         </div>
 
@@ -682,29 +681,15 @@
     <script>
         $('#colorpickerHolder').ColorPicker({ flat: true });
 
-        //change css color file
-        //$('#default-style').click(function () {
-        //    $('link[href="assets/css/colors-options/orang.css"]').attr('href', 'assets/css/colors-options/default.css');
-        //});
-        //$('#orange-style').click(function () {
-        //    $('link[href="assets/css/colors-options/default.css"]').attr('href', 'assets/css/colors-options/orang.css');
-        //});
-
-        var bgColor = document.getElementById('searchTB');
-        bgColor.onchange = function () {
-            $("#head").css("background-color", +"#" + this.value);
-            //document.body.style.backgroundColor = this.value;
-            localStorage.setItem('head', this.value);
-        }
-        bgColor.value = localStorage.getItem('head');
-        bgColor.onchange();
-
-
-        $("#test").click(function () {
-           var color= $("#coloepicker").val();
-           $("#head").css("background-color", color);
-       
+        $("#apply").click(function () {
+            var color = $("#coloepicker").val();
+            localStorage.setItem('head', color);
+            $("#head , #searchTB, .sidebar-nav > .sidebar-brand").css("background-color", color);
         });
+        color = localStorage.getItem("head");
+        $("#head , #searchTB, .sidebar-nav > .sidebar-brand").css("background-color", color);
+        document.getElementById("coloepicker").value = color;
+        document.getElementById("company-name").style.opacity = "0.7";
     </script>
 </body>
 </html>

@@ -2715,7 +2715,9 @@ tr.shown td.details-control {
 .right-zero {
     right: 0 !important;
 }
-
+#coloepicker{border:none !important ;
+             background :none !important ;
+}
 @media(max-width:1110px) {
     .primary-border {
         border-left: 20px solid #34495E !important;
