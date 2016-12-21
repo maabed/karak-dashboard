@@ -6,9 +6,7 @@
     background-color: #3B97D2;
 }
 
-.sidebar-nav > .sidebar-brand {
-    background-color: #2980B9;
-}
+
 
 .badge-notify {
     color: #3B97D2;
@@ -36,6 +34,5 @@
     color: #fff;
 }
 
-.sidebar-nav > .sidebar-brand {
-    color: #fff;
-}
+
+#company-name{background-color:#2980B9 ;color: #fff;}

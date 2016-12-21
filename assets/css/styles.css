@@ -38,25 +38,25 @@ body {
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
     z-index: 9999;
+    overflow-y: scroll;
 }
 
 #Right-Side-Section-Togle {
-    float: left;
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
     padding: 1em 0.7em;
     color: #9E9E9E;
     text-align: center;
-    margin-left: -2.3em;
     background: #fff;
-    margin-top: 15em;
-    position: absolute;
+    position: fixed;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
     cursor: pointer;
     box-shadow: 0px 3px 10px #888888;
+    top: 18em;
+    right:0;
 }
 
 .CenteredDiv {
@@ -2625,6 +2625,7 @@ tr.shown td.details-control {
 .default-menue-color {
     background-color: #3B97D2;
     font-size: 0.9em;
+    position: relative;
 }
 
 .orange-menue-color {
@@ -2723,8 +2724,18 @@ tr.shown td.details-control {
 }
 
 #coloepicker {
-    border: none !important;
-    background: none !important;
+    border:none !important;
+    background: #F1F3F6 !important;
+    width: 100% !important;
+    height: 6em;.btn
+       -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+#coloepicker:hover{
+opacity: 0.7;
 }
 
 button, input {
@@ -2739,6 +2750,7 @@ button, input {
 ::-webkit-scrollbar {
     width: 0.6em;
     z-index: 99999999;
+    padding:3px;
 }
 
 ::-webkit-scrollbar-track {
@@ -2750,6 +2762,41 @@ button, input {
     border-radius: 0px;
     -webkit-box-shadow: inset 0 0 10px rgba(100,100,100,0.7);
 }
+.right-side-table{
+    width: 100%;
+}
+.right-side-table tr td { padding-right: 1em !important;
+    padding-left: 1em !important;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+#Close i {
+    color:#999999;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#Close i:hover{
+color:gray;
+}
+#selected-theme{
+color: #fff;
+font-size: 1.3em;
+right: 0.5em;
+top:0.5em;
+z-index: 999;
+position: absolute;}
+
+.no-padding-righ{padding-right: 0 !important;}
+.apply-color{
+    border-radius: 0 !important;
+    margin-top: 0.5em;
+}
+#company-name{background-color:#2980B9 ;color: #fff;}
 
 @media(max-width:1110px) {
     .primary-border {
@@ -3016,10 +3063,11 @@ button, input {
 
 
 @media(max-width:768px) {
+    .single-menue-color-box{padding-right: 0 !important;}
     .colors-library .col-sm-12 .col-sm-3 {
         text-align: left;
     }
-
+.preview{right: 0 !important;}
     .primary-border {
         border-left: 60px solid #34495E !important;
     }
