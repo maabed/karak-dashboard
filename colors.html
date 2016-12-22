@@ -8,6 +8,20 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Blue Dashboard</title>
+    <script src="assets/vendors/jquery/jquery-3.1.1.js"></script>
+    <script>
+    if (localStorage.getItem("cssfile") && localStorage.getItem("head")) {
+        alert("head color")
+
+    } else if (!localStorage.getItem("cssfile")) {
+        alert("there are no file")
+        $('head').append('<link rel="stylesheet" type="text/css" href="assets/css/colors-options/default.css">');
+    } else {
+        alert("orange file")
+        var color = localStorage.getItem('cssfile');
+        $('head').append('<link rel="stylesheet" type="text/css" href="' + color + '">');
+    }
+    </script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <!-- Bootstrap Core CSS -->
@@ -21,6 +35,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <!--     <link id="default-colors" href="assets/css/colors-options/default.css" rel="stylesheet" /> -->
 </head>
 
 <body>
@@ -770,7 +785,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <div class="col-sm-12 single-menue-color-box no-padding-righ">
+                            <div class="col-sm-6 single-menue-color-box no-padding-righ">
                                 <div class="single-menue-color">
                                     <div class="col-sm-12 default-menue-color">
                                         <p>
@@ -782,13 +797,13 @@
                                     <div class="col-sm-12 simple-border">
                                         <p>
                                             Sidebar Nav
-                                            <br /> #ffffff
+                                            <br /> #fffff
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-12 single-menue-color-box no-padding-righ">
-                                <div class="single-menue-color">
+                            <div class="col-md-6 single-menue-color-box no-padding-righ">
+                                <div id="orang-color-btn" class="single-menue-color">
                                     <div class="col-sm-12 orange-menue-color">
                                         <p>
                                             Header
@@ -803,39 +818,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-12 single-menue-color-box no-padding-righ">
-                                <div class="single-menue-color">
-                                    <div class="col-sm-12 green-menue-color">
-                                        <p>
-                                            Header
-                                            <br /> #62d995
-                                        </p>
-                                    </div>
-                                    <div class="col-sm-12 simple-border">
-                                        <p>
-                                            Sidebar Nav
-                                            <br /> #ffffff
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12 single-menue-color-box no-padding-righ">
-                                <div class="single-menue-color">
-                                    <div class="col-sm-12 dark-menue-color">
-                                        <p>
-                                            Header
-                                            <br /> #2b3643
-                                        </p>
-                                    </div>
-                                    <div class="col-sm-12 dark-nav-color">
-                                        <p>
-                                            Sidebar Nav
-                                            <br /> #364150
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12 single-menue-color-box no-padding-righ">
+                            <div class="col-md-6 single-menue-color-box no-padding-righ">
                                 <div class="single-menue-color">
                                     <div class="col-sm-12 dark-menue-color2">
                                         <p>
@@ -851,7 +834,23 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-12 single-menue-color-box no-padding-righ">
+                            <div class="col-md-6 single-menue-color-box no-padding-righ">
+                                <div class="single-menue-color">
+                                    <div class="col-sm-12 dark-menue-color">
+                                        <p>
+                                            Header
+                                            <br /> #2b3643
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-12 dark-nav-color">
+                                        <p>
+                                            Sidebar Nav
+                                            <br /> #364150
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 single-menue-color-box no-padding-righ">
                                 <div class="single-menue-color">
                                     <div class="col-sm-12 simple-border wight-head">
                                         <p>
@@ -863,6 +862,22 @@
                                         <p>
                                             Sidebar Nav
                                             <br /> #353535
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 single-menue-color-box no-padding-righ">
+                                <div class="single-menue-color">
+                                    <div class="col-sm-12 green-menue-color">
+                                        <p>
+                                            Header
+                                            <br /> #62d995
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-12 simple-border">
+                                        <p>
+                                            Sidebar Nav
+                                            <br /> #ffffff
                                         </p>
                                     </div>
                                 </div>
@@ -969,7 +984,6 @@
         </div>
     </div>
     <script src="assets/js/vendors/colorpicker/jquery.js"></script>
-    <script src="assets/vendors/jquery/jquery-3.1.1.js"></script>
     <script src="assets/js/notifications_boxs.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
@@ -984,20 +998,35 @@
     $('#colorpickerHolder').ColorPicker({
         flat: true
     });
+
+
+
     $("#apply").click(function() {
         var color = $("#coloepicker").val();
         localStorage.setItem('head', color);
         $("#head , #searchTB, .sidebar-brand").css("background-color", color);
         document.getElementById("company-name").style.opacity = "0.8";
         document.getElementById("company-name").style.color = "#fff";
+
     });
     color = localStorage.getItem("head");
     $("#head , #searchTB, .sidebar-brand").css("background-color", color);
     document.getElementById("coloepicker").value = color;
     document.getElementById("company-name").style.opacity = "0.8";
+
+
+
+
+
+    $("#orang-color-btn").click(function() {
+        localStorage.clear();
+        localStorage.setItem('cssfile', 'assets/css/colors-options/orang.css');
+        var csslink = localStorage.getItem("cssfile");
+        document.getElementById("default-colors").href = csslink;
+        return false;
+    });
     </script>
-    
-    <link href="assets/css/colors-options/default.css" rel="stylesheet" />
+    <!-- <link id="default-colors" href="assets/css/colors-options/default.css" rel="stylesheet" /> -->
 </body>
 
 </html>
