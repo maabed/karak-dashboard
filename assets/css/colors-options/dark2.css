@@ -1,0 +1,38 @@
+#head {
+    background-color: #262930;
+}
+
+#searchTB {
+    background-color: #262930;
+}
+
+#company-name {
+    background-color: #282b32;
+}
+
+#sidebar-wrapper {
+    background-color: #2a2e35;
+}
+
+.sidebar-nav li a {
+    border-bottom: 1px solid #262930;
+    border-right: 1px solid #262930;
+    color: #5b616d;
+}
+
+.nav-icon {
+    color: #767d8a;
+}
+
+.user-box p {
+    color: #fff;
+}
+
+.head-box i {
+    color: #fff;
+}
+
+#company-name {
+    color: #fff;
+    opacity: 1;
+}

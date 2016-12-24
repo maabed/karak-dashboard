@@ -1,9 +1,13 @@
-﻿#head {
-    background-color: #3B97D2;
+#head {
+    background-color: #62d995;
 }
 
 #searchTB {
-    background-color: #3B97D2;
+    background-color: #62d995;
+}
+
+.sidebar-nav > .sidebar-brand {
+    background-color: #2ecc71;
 }
 
 
@@ -29,5 +33,7 @@
     color: #fff;
 }
 
-
-#company-name{background-color:#2980B9 ;color: #fff;}
+.sidebar-nav > .sidebar-brand {
+    color: #fff;
+}
+#company-name{background-color:#2ecc71;}

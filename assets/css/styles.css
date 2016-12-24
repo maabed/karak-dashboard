@@ -482,6 +482,7 @@ body {
     font-weight: normal;
     padding: 0.3em 0.5em;
     font-size: 10px;
+    color: #a5a5a5;
 }
 
 .head-box {
@@ -489,9 +490,6 @@ body {
     margin-left: 1.5em;
     position: relative;
 }
-
-    .head-box i {
-    }
 
 .btn-group-lg > .btn, .btn-lg {
     padding: 0.3em 0.6em;
@@ -2796,7 +2794,7 @@ position: absolute;}
     border-radius: 0 !important;
     margin-top: 0.5em;
 }
-#company-name{background-color:#2980B9 ;color: #fff;}
+#company-name{color: #fff;}
 
 @media(max-width:1110px) {
     .primary-border {

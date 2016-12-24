@@ -1,0 +1,12 @@
+.head-box i {
+    color: #fff;
+}
+#sidebar-wrapper {
+    background-color: #fff;
+}
+
+.sidebar-nav li a {
+    border-bottom: 1px solid #E4E5E7;
+    border-right: 1px solid #E4E5E7;
+    color: #34495E;
+}
