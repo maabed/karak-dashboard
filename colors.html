@@ -21,8 +21,9 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="assets/js/vendors/jquery-1.12.3.js"></script>
+    <script src="assets/js/notifications_boxs.js"></script>
 </head>
-
 <body>
     <div id="wrapper">
         <!-- Sidebar -->
@@ -723,10 +724,10 @@
                                             <br /> #ffffff
                                         </p>
                                     </div>
-                                    <div class="col-sm-12 dark-nav-color3">
+                                    <div class="col-sm-12 simple-border wight-head">
                                         <p>
                                             Sidebar Nav
-                                            <br /> #353535
+                                            <br /> #ffffff
                                         </p>
                                     </div>
                                 </div>
@@ -777,7 +778,7 @@
                                             Header
                                             <br /> #3b97d2
                                         </p>
-                                        <i id="selected-theme" class="fa fa-check-circle-o" aria-hidden="true"></i>
+                                        <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
                                     </div>
                                     <div class="col-sm-12 simple-border">
                                         <p>
@@ -794,6 +795,7 @@
                                             Header
                                             <br /> #f5d34b
                                         </p>
+                                        <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
                                     </div>
                                     <div class="col-sm-12 simple-border">
                                         <p>
@@ -810,6 +812,7 @@
                                             Header
                                             <br /> #262930
                                         </p>
+                                        <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
                                     </div>
                                     <div class="col-sm-12 dark-nav-color2">
                                         <p>
@@ -826,6 +829,7 @@
                                             Header
                                             <br /> #2b3643
                                         </p>
+                                        <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
                                     </div>
                                     <div class="col-sm-12 dark-nav-color">
                                         <p>
@@ -842,11 +846,12 @@
                                             Header
                                             <br /> #ffffff
                                         </p>
+                                        <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
                                     </div>
-                                    <div class="col-sm-12 dark-nav-color3">
+                                    <div class="col-sm-12 simple-border wight-head">
                                         <p>
                                             Sidebar Nav
-                                            <br /> #353535
+                                            <br /> #ffffff
                                         </p>
                                     </div>
                                 </div>
@@ -858,6 +863,7 @@
                                             Header
                                             <br /> #62d995
                                         </p>
+                                        <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
                                     </div>
                                     <div class="col-sm-12 simple-border">
                                         <p>
@@ -884,14 +890,7 @@
                             </div>
                         </td>
                     </tr>
-                    <tr>
-                        <td>
-                            <button type="button" id="clear-sorage" class="btn btn-default btn-block apply-color">clear sorage</button>
-                        </td>
-                    </tr>
                 </table>
-                <!-- <a href="#" id="default-style" onclick="changeCSS('default.css', 0);">default</a>
-                <a href="#" id="orange-style" onclick="changeCSS('orang.css', 0);">orang</a>-->
             </div>
         </div>
         <div class="notifecations-box">
@@ -973,7 +972,6 @@
             </a>
         </div>
     </div>
-    <script src="assets/js/vendors/colorpicker/jquery.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/nav_colors_change.js"></script>
@@ -983,147 +981,9 @@
     <script src="assets/js/vendors/colorpicker/eye.js"></script>
     <script src="assets/js/vendors/colorpicker/layout.js"></script>
     <script src="assets/js/vendors/colorpicker/utils.js"></script>
-    <script>
-    $('#colorpickerHolder').ColorPicker({
-        flat: true
-    });
-
-
-
-    $("#apply").click(function() {
-        var color = $("#coloepicker").val();
-        localStorage.setItem('head', color);
-        localStorage.setItem('cssfile', 'assets/css/colors-options/colorpicker-default.css');
-        var csslink = localStorage.getItem("cssfile");
-        document.getElementById("default-color-picker").href = csslink;
-
-        $("#head , #searchTB, .sidebar-brand").css("background-color", color);
-        document.getElementById("company-name").style.color = "#fff";
-
-        document.getElementById("company-name").style.opacity = "0.8";
-        localStorage.setItem("opacity", "0.8");
-             $(".sidebar-nav li a").css("border-bottom", "1px solid #E4E5E7");
-        $(".sidebar-nav li a").css("border-right", "1px solid #E4E5E7");
-        $(".sidebar-nav li a").css("color", "#34495E");
-        $(".nav-icon").css("color", "#C6C4DB")
-        $(".user-box p").css("color", "#fff");
-        $(".head-box i").css("color", "#fff");
-        $("#company-name").css("color", "#fff");
-    });
-
-    var opacity = localStorage.getItem("opacity");
-    document.getElementById("company-name").style.opacity = opacity;
-
-    color = localStorage.getItem("head");
-    $("#head , #searchTB, .sidebar-brand").css("background-color", color);
-    document.getElementById("coloepicker").value = color;
-
-
-    $("#default-color-btn").click(function() {
-        localStorage.clear();
-        localStorage.removeItem("opacity");
-        localStorage.setItem('cssfile', 'assets/css/colors-options/default.css');
-        var csslink = localStorage.getItem("cssfile");
-        document.getElementById("default-color-picker").href = csslink;
-        document.getElementById("company-name").style.opacity = 1;
-        $("#head").css("background-color", "#3B97D2");
-        $("#searchTB ").css("background-color", "#3B97D2");
-        $("#company-name").css("background-color", "#2980B9");
-
-        return false;
-    });
-
-
-
-    $("#orang-color-btn").click(function() {
-        localStorage.clear();
-        localStorage.removeItem("opacity");
-        localStorage.setItem('cssfile', 'assets/css/colors-options/orang.css');
-        var csslink = localStorage.getItem("cssfile");
-        document.getElementById("default-color-picker").href = csslink;
-          document.getElementById("company-name").style.opacity = 1;
-        $("#head").css("background-color", "#f5d34b");
-        $("#searchTB ").css("background-color", "#f5d34b");
-        $("#company-name").css("background-color", "#f1c40f");
-        return false;
-    });
-
-    $("#green-color-btn").click(function() {
-        localStorage.clear();
-        localStorage.removeItem("opacity");
-        localStorage.setItem('cssfile', 'assets/css/colors-options/green.css');
-        var csslink = localStorage.getItem("cssfile");
-        document.getElementById("default-color-picker").href = csslink;
-          document.getElementById("company-name").style.opacity = 1;
-        $("#head").css("background-color", "#62d995");
-        $("#searchTB ").css("background-color", "#62d995");
-        $("#company-name").css("background-color", "#2ecc71");
-        return false;
-    });
-
-    $("#whit-color-btn").click(function() {
-        localStorage.clear();
-        localStorage.removeItem("opacity");
-        localStorage.setItem('cssfile', 'assets/css/colors-options/white.css');
-        var csslink = localStorage.getItem("cssfile");
-        document.getElementById("default-color-picker").href = csslink;
-          document.getElementById("company-name").style.opacity = 1;
-        $("#head").css("background-color", "#fff");
-        $("#head").css("box-shadow", " 2px 2px 2px #ededed");
-        $("#searchTB ").css("background-color", "#828282");
-        $("#company-name").css("background-color", "#828282");
-        $("#company-name").css("color", "#fff");
-        $(".badge-notify").css("background-color", "#e0e0e0");
-        $(".user-box p").css("color", "#686868");
-        $(".head-box i").css("color", "#686868");
-        return false;
-
-    });
-
-    $("#dark1-color-btn").click(function() {
-        localStorage.clear();
-        localStorage.removeItem("opacity");
-        localStorage.setItem('cssfile', 'assets/css/colors-options/dark1.css');
-        var csslink = localStorage.getItem("cssfile");
-        document.getElementById("default-color-picker").href = csslink;
-  document.getElementById("company-name").style.opacity = 1;
-        $("#head").css("background-color", "#2b3643");
-        $("#searchTB ").css("background-color", "#2b3643");
-        $("#company-name").css("background-color", "#303b49");
-        return false;
-    });
-    $("#dark2-color-btn").click(function() {
-        localStorage.clear();
-        localStorage.removeItem("opacity");
-        localStorage.setItem('cssfile', 'assets/css/colors-options/dark2.css');
-          document.getElementById("company-name").style.opacity = 1;
-        var csslink = localStorage.getItem("cssfile");
-        $("#head").css("background-color", "#262930");
-        $("#searchTB ").css("background-color", "#262930");
-        $("#company-name").css("background-color", "#282b32");
-        document.getElementById("default-color-picker").href = csslink;
-        return false;
-    });
-
-    $("#clear-sorage").click(function() {
-        localStorage.clear();
-    });
-    </script>
-    <script src="assets/js/notifications_boxs.js"></script>
-    <script src="assets/vendors/jquery/jquery-3.1.1.js"></script>
-    <script>
-    if (localStorage.getItem("cssfile") && localStorage.getItem("head")) {
-        alert("head color")
-
-    } else if (!localStorage.getItem("cssfile")) {
-        alert("there are no file")
-        $('head').append('<link rel="stylesheet" type="text/css" href="assets/css/colors-options/default.css">');
-    } else {
-        alert("recummended color")
-        var color = localStorage.getItem('cssfile');
-        $('head').append('<link rel="stylesheet" type="text/css" href="' + color + '">');
-    }
-    </script>
+    <script src="assets/js/vendors/colorpicker/utils.js"></script>
+    <script src="assets/js/right-side-colors-change.js"></script>
+    <script src="assets/js/page-ready-theam.js"></script>
     <link id="default-color-picker" rel="stylesheet" />
 </body>
 

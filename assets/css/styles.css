@@ -2781,13 +2781,14 @@ button, input {
 #Close i:hover{
 color:gray;
 }
-#selected-theme{
-color: #fff;
+.selected-theme{
+color: #F1F3F6;
 font-size: 1.3em;
 right: 0.5em;
 top:0.5em;
 z-index: 999;
-position: absolute;}
+position: absolute;
+}
 
 .no-padding-righ{padding-right: 0 !important;}
 .apply-color{
