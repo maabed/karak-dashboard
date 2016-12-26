@@ -11,6 +11,9 @@
         $(".head-box i").css("color", "#fff");
         $("#company-name").css("color", "#fff");
         document.getElementById("company-name").style.opacity = "1";
+    $(".sidebar-nav .selected a").css("border-left", "4px solid #3B97D2");
+         $(".body-header").css("border-left", "5px solid #3B97D2");
+        $(".sidebar-nav .selected a .nav-icon ").css("color", "#3B97D2");
     });
     $("#preview2").click(function () {
         $("#head").css("background-color", "#f5d34b");
@@ -25,6 +28,10 @@
         $(".head-box i").css("color", "#fff");
         $("#company-name").css("color", "#fff");
         document.getElementById("company-name").style.opacity = "1";
+
+    $(".sidebar-nav .selected a").css("border-left", "4px solid #f5d34b");
+         $(".body-header").css("border-left", "5px solid #f5d34b");
+        $(".sidebar-nav .selected a .nav-icon ").css("color", "#f5d34b");
     });
     $("#preview3").click(function () {
         $("#head").css("background-color", "#62d995");
@@ -39,6 +46,10 @@
         $(".head-box i").css("color", "#fff");
         $("#company-name").css("color", "#fff");
         document.getElementById("company-name").style.opacity = "1";
+
+    $(".sidebar-nav .selected a").css("border-left", "4px solid #62d995");
+         $(".body-header").css("border-left", "5px solid #62d995");
+        $(".sidebar-nav .selected a .nav-icon ").css("color", "#62d995");
     });
     $("#preview4").click(function () {
         $("#head").css("background-color", "#2b3643");
@@ -53,6 +64,10 @@
         $(".head-box i").css("color", "#fff");
         $("#company-name").css("color", "#fff");
         document.getElementById("company-name").style.opacity = "1";
+
+    $(".sidebar-nav .selected a").css("border-left", "4px solid #2b3643");
+         $(".body-header").css("border-left", "5px solid #2b3643");
+        $(".sidebar-nav .selected a .nav-icon ").css("color", "#2b3643");
     });
     $("#preview5").click(function () {
         $("#head").css("background-color", "#262930");
@@ -67,6 +82,10 @@
         $(".head-box i").css("color", "#fff");
         $("#company-name").css("color", "#fff");
         document.getElementById("company-name").style.opacity = "1";
+
+    $(".sidebar-nav .selected a").css("border-left", "4px solid #262930");
+         $(".body-header").css("border-left", "5px solid #262930");
+        $(".sidebar-nav .selected a .nav-icon ").css("color", "#262930");
     });
     $("#preview6").click(function () {
         $("#head").css("background-color", "#fff");
@@ -83,4 +102,8 @@
         $(".sidebar-nav li a").css("color", "#34495E");
         $(".nav-icon").css("color", "#C6C4DB")
         document.getElementById("company-name").style.opacity = "1";
+              
+    $(".sidebar-nav .selected a").css("border-left", "4px solid #828282");
+         $(".body-header").css("border-left", "5px solid #828282");
+        $(".sidebar-nav .selected a .nav-icon ").css("color", "#828282");
     });
