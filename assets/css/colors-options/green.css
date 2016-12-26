@@ -1,0 +1,48 @@
+#head {
+    background-color: #62d995;
+}
+
+#searchTB {
+    background-color: #62d995;
+}
+
+.sidebar-nav > .sidebar-brand {
+    background-color: #2ecc71;
+}
+
+
+#sidebar-wrapper {
+    background-color: #fff;
+}
+
+.sidebar-nav li a {
+    border-bottom: 1px solid #E4E5E7;
+    border-right: 1px solid #E4E5E7;
+    color: #34495E;
+}
+
+.nav-icon {
+    color: #C6C4DB;
+}
+
+.user-box p {
+    color: #fff;
+}
+
+.head-box i {
+    color: #fff;
+}
+
+.sidebar-nav > .sidebar-brand {
+    color: #fff;
+}
+#company-name{background-color:#2ecc71;}
+
+.body-header{border-left:5px solid #62d995;}
+
+.sidebar-nav .selected a {
+    border-left: 4px solid #62d995;
+}
+.sidebar-nav .selected a .nav-icon {
+    color: #62d995;
+}
