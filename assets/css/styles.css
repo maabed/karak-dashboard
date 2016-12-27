@@ -2745,9 +2745,49 @@ input {
 .submenu-li a:hover {
     color: #34495E !important;
 }
-
 input[type="email"].form-control::-webkit-input-placeholder {
-  color: #fff;
+    color: #fff;
+}
+
+/*invoice*/
+.invoice-title {
+    color: #34495E;
+    border-bottom: 4px solid #3B97D2;
+    padding-bottom: 1.4em;
+}
+.gray-color {
+    color: #878787;
+}
+.invoice-info {
+    width: 80%;
+    float: right;
+    margin-top: 0.6em;
+}
+.fr {
+    float: right;
+    width: 80%;
+}
+.invoice-info tr td {
+    padding: 0.4em 0em;
+}
+.table-head-info tr td {
+    padding: 0.3em;
+}
+.table-head-info h3 {
+    color: #34495E;
+}
+.table-title {
+    color: #34495E;
+}
+.invoice-table-head {
+    background-color: #3B97D2 !important;
+    color: #fff !important;
+}
+.no-background {
+    background-color: #fff !important;
+}
+.no-background td {
+    border: none !important;
 }
 @media(max-width:1110px) {
     .primary-border {
@@ -2987,6 +3027,17 @@ input[type="email"].form-control::-webkit-input-placeholder {
     }
 }
 @media(max-width:768px) {
+    .invoice-info {
+        width: 100%;
+        float: none;
+        margin-top: 0.6em;
+    }
+    
+    .fr {
+        float: none;
+        width: 100%;
+    }
+    
     .single-menue-color-box {
         padding-right: 0 !important;
     }
@@ -3107,4 +3158,22 @@ input[type="email"].form-control::-webkit-input-placeholder {
     .statistics .statistics-taps li a {
         text-align: center;
     }
+}
+@media print {
+    #sidebar-wrapper {
+        display: none;
+    }
+    
+    #head {
+        display: none;
+    }
+    
+    #PageTitle {
+        display: none;
+    }
+    
+    #Right-Side-Section-Togle {
+        display: none;
+    }
+    .btn{ display: none;}
 }
