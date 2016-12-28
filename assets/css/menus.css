@@ -216,7 +216,7 @@ Follow me on Twitter @maridlcrmn
 }
 
 .navbar2 {
-    margin-bottom: 1.2em !important;
+    margin-bottom: 2.54em !important;
 }
 
 .navbar .navbar-collapse .navbar-right > li:last-child {
@@ -232,7 +232,6 @@ Follow me on Twitter @maridlcrmn
     bottom: 0;
     margin: 0;
     padding-right: 120px;
-    padding-left: 80px;
     width: 100%;
 }
 
