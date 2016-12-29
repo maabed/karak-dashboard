@@ -998,9 +998,13 @@
     $("#error-phone-lbl").hide();
     $("#error-phone-lbl2").hide();
     $("#error-counrty-lbl").hide();
-
     $("#name").focusout(function() {
         var cname = $("#name");
+        if (validateContact()) {
+            alert("true");
+        } else {
+            alert("false");
+        }
         if (cname.val() == "" || cname.val() == " ") {
             cname.addClass("errorForm");
             $("#error-name-lbl").show();
@@ -1010,7 +1014,6 @@
         }
         $("#error-name-lbl").hide();
         cname.removeClass("errorForm");
-
     });
     $("#email").focusout(function() {
         var cemail = $("#email")
@@ -1043,6 +1046,7 @@
             });
             return false;
         }
+        validateContact()
     });
 
     $("#phone").focusout(function() {
@@ -1074,7 +1078,7 @@
             return false;
         }
         $("#error-phone-lbl2").hide();
-
+        validateContact()
     });
 
     $("#ddl").focusout(function() {
@@ -1088,19 +1092,11 @@
             $("#error-counrty-lbl").hide();
             ccontry.removeClass("errorForm");
         }
+        validateContact()
     });
 
     function validateContact() {
 
-        function validateEmail(email) {
-            var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-            return re.test(email);
-        }
-
-        function phonenumber(phone) {
-            var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
-            return phoneno.test(phone);
-        }
 
         var cname = $("#name"),
             cemail = $("#email"),
@@ -1109,33 +1105,25 @@
 
 
         if (cname.val() == "" || cname.val() == " ") {
-            cname.addClass("errorForm");
-            $("#error-name-lbl").show();
-            cname.focus();
+
             $(document).ready(function() {});
             return false;
         }
-        $("#error-name-lbl").hide();
-        cname.removeClass("errorForm");
 
-        $("#error-email-lbl").hide();
-        cemail.removeClass("errorForm");
+
+
         if (cemail.val() == "" || cemail.val() == " ") {
-            cemail.addClass("errorForm");
-            $("#error-email-lbl2").show();
-            cemail.focus();
+
+
+
             $(document).ready(function() {
 
             });
             return false;
         }
-        $("#error-email-lbl2").hide();
-        $("#error-name-lbl").hide();
+
         if (!validateEmail(cemail.val())) {
             cemail.addClass("errorForm");
-            $("#error-email-lbl").show();
-            $("#error-email-lbl2").hide();
-            cemail.focus();
             $(document).ready(function() {
 
             });
@@ -1143,10 +1131,8 @@
         }
 
         $("#error-phone-lbl").hide();
-        cphone.removeClass("errorForm");
+
         if (cphone.val() == "" || cphone.val() == " ") {
-            cphone.addClass("errorForm");
-            $("#error-phone-lbl2").show();
             cphone.focus();
             $(document).ready(function() {
 
@@ -1155,31 +1141,21 @@
         }
 
         if (!phonenumber(cphone.val())) {
-            cphone.addClass("errorForm");
-            $("#error-phone-lbl").show();
-            $("#error-phone-lbl2").hide();
-            cphone.focus();
+
             $(document).ready(function() {});
             return false;
         }
         $("#error-phone-lbl2").hide();
         if (ddl.value === "select") {
-            ccontry.addClass("errorForm");
-            $("#error-counrty-lbl").show();
+
+
             return false;
         } else {
-            $("#error-counrty-lbl").hide();
-            ccontry.removeClass("errorForm");
+
+
         }
 
         return true;
-    }
-
-    if (validateContact()){
-alert("true")
-else {
-    alert("false")
-}
     }
     </script>
 </body>
