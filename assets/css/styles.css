@@ -2819,7 +2819,6 @@ input[type="email"].form-control::-webkit-input-placeholder {
     border-bottom: 3px solid #3B97D2;
     background-color: #fff;
 }
-
 .slider-title {
     color: #fff !important;
     position: absolute;
@@ -2865,18 +2864,41 @@ input[type="email"].form-control::-webkit-input-placeholder {
 .simple-menue .dropdown-menu {
     background-color: #2b3643;
 }
-.nav-style .nav-collapse{
+.nav-style .nav-collapse {
     background: #fff !important;
 }
-.simple-menue  .navbar-collapse, .simple-menue  .navbar-form{
+.simple-menue .navbar-collapse,
+.simple-menue .navbar-form {
     background: #364150 !important;
 }
-.simple-menue .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover{
-color: #333 !important;
+.simple-menue .dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover {
+    color: #333 !important;
 }
-.navbar.simple-menue .nav-collapse{background: #364150 !important;}
-.mega-dropdown-menu .dropdown-header{
+.navbar.simple-menue .nav-collapse {
+    background: #364150 !important;
+}
+.mega-dropdown-menu .dropdown-header {
     color: #3B97D2 !important;
+}
+.errorForm {
+    border: 1px solid red !important;
+}
+#error-email-lbl,
+#error-email-lbl2,
+#error-name-lbl,
+#error-phone-lbl,
+#error-phone-lbl2,
+#error-counrty-lbl {
+    color: red !important;
+    font-size: 0.9;
+    font-weight: lighter;
+    text-align: right;
+    ;
+    float: right;
+}
+.disaple-item{
+   display: none !important;
 }
 @media(max-width:1110px) {
     .primary-border {
