@@ -1,0 +1,66 @@
+#head {
+    background-color: #fff;
+    box-shadow: 2px 2px 2px #ededed;
+}
+
+#searchTB {
+    background-color: #828282;
+}
+
+#company-name {
+    background-color: #828282;
+    color: #fff;
+    opacity: 1 !important;
+}
+
+.badge-notify {
+    background-color: #e0e0e0;
+}
+
+.sidebar-nav li a {
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+.sidebar-nav li a {
+    color: #6b6b6b;
+}
+
+.nav-icon {
+    color: #6b6b6b;
+}
+
+.user-box p {
+    color: #686868;
+}
+
+.sidebar-nav > .sidebar-brand {
+    background-color: #828282;
+    opacity: 1 !important;
+}
+
+.head-box i {
+    color: #686868;
+}
+
+#sidebar-wrapper {
+    background-color: #fff;
+}
+
+.sidebar-nav li a {
+    border-bottom: 1px solid #E4E5E7;
+    border-right: 1px solid #E4E5E7;
+    color: #34495E;
+}
+
+.body-header {
+    border-left: 5px solid #828282;
+}
+
+.sidebar-nav .selected a {
+    border-left: 4px solid #828282;
+}
+
+.sidebar-nav .selected a .nav-icon {
+    color: #828282;
+}
