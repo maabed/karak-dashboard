@@ -21,7 +21,7 @@
         <![endif]-->
         <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
         <link href="assets/css/ui.css" rel="stylesheet">
-        
+        <link rel="stylesheet" href="assets/css/modal.css">
     </head>
     <body>
         <div id="wrapper">
@@ -226,36 +226,23 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="col-contint">
-                            <div class="col-md-6">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor neque eget ante dignissim pulvinar. Nunc
-                                luctus eget ipsum id sagittis. Maecenas eget faucibus ipsum. Suspendisse sed feugiat tellus. In sed magna in eros
-                                ullamcorper dignissim. Aenean rhoncus turpis sit amet ex congue, sed mattis lacus mollis. Vestibulum eget ex a e
-                                tincidunt euismod. Ut velit velit, tristique id magna in, sodales porta magna. Curabitur ac quam ut erat finibus
-                                cursus gravida eu lacus.
-                            </div>
-                            <div class="col-md-6">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor neque eget ante dignissim pulvinar. Nunc
-                                luctus eget ipsum id sagittis. Maecenas eget faucibus ipsum. Suspendisse sed feugiat tellus. In sed magna in eros
-                                ullamcorper dignissim. Aenean rhoncus turpis sit amet ex congue, sed mattis lacus mollis. Vestibulum eget ex a e
-                                tincidunt euismod. Ut velit velit, tristique id magna in, sodales porta magna. Curabitur ac quam ut erat finibus
-                                cursus gravida eu lacus.
-                            </div>
+                            <div class="col-contint body-header">
+                                <h4 class ="title"> Modals </h4>
+                                <br>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla consequat massa egestas fermentum. Maecenas quis est ac ante hendrerit.</p>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-4">
-                            <div class="col-contint">
-                            <img src="assets/images/modals/standard.png" class="center-block">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor neque eget ante dignissim pulvinar.</p>
-                            <button type="button" class="btn btn-info center-block" data-toggle="modal" data-target="#myModal">
-                                Default modal
-                            </button>
-
+                            <div class="col-contint" id="standard-parent">
+                                <h5 class="title"> Standard Modal </h5>
+                                <br>
+                            <i class="fa fa-eye hide-modal" id="view-standard" aria-hidden="true"></i>
+                            <img src="assets/images/modals/standard.png" id="standard" class="center-block img-border"  data-toggle="modal" data-target="#myModal">
                             <!-- Modal -->
                             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                <div class="modal-dialog" role="document">
+                                <div class="modal-dialog middle-modal" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -265,8 +252,8 @@
                                             Modal body
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-success">Save changes</button>
+                                            <button type="button" class="btn btn-primary dashboard-primary btn-md modal-close" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn  btn-info dashboard-info btn-md">Save changes</button>
                                         </div>
                                     </div>
                                 </div>
@@ -275,27 +262,24 @@
                         </div>
                         <!--Large modal-->
                         <div class="col-md-4">
-                            <div class="col-contint">
-                            <img src="assets/images/modals/flat-modal.png" class="center-block">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor neque eget ante dignissim pulvinar.</p>
-                            <button type="button" class="btn btn-info center-block" data-toggle="modal" data-target="#myModalLarge">
-                                Large modal
-                            </button>
-
+                            <div class="col-contint" id="flat-parent">
+                                <h5 class="title"> Flat modal </h5>
+                                <br>
+                            <i class="fa fa-eye hide-modal" id="view-flat" aria-hidden="true"></i>
+                            <img src="assets/images/modals/flat-modal.png" id="flat" class="center-block img-border" data-toggle="modal" data-target="#myModalLarge">
                             <!-- Modal -->
                             <div class="modal fade bs-example-modal-lg" id="myModalLarge" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-dialog middle-modal modal-lg" role="document">
                                     <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            Modal body
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-success">Save changes</button>
+                                        <div class="modal-body flat-static">
+                                            <div class="row positioning">
+                                                <div class="col-sm-9">
+                                                    <input type="email" class="form-control" id="email">
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <button type="button" class="btn  btn-info dashboard-info btn-md">Save changes</button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -304,13 +288,11 @@
                         </div>
                         <!-- Small modal -->
                         <div class="col-md-4">
-                            <div class="col-contint">
-                            <img src="assets/images/modals/small-modal.png" class="center-block">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor neque eget ante dignissim pulvinar.</p>
-                            <button type="button" class="btn btn-info center-block" data-toggle="modal" data-target="#myModalSmall">
-                                Small modal
-                            </button>
-
+                            <div class="col-contint" id="small-parent">
+                                <h5 class="title"> Top modal </h5>
+                                <br>
+                            <i class="fa fa-eye hide-modal" id="view-small" aria-hidden="true"></i>
+                            <img src="assets/images/modals/small-modal.png" id="small" class="center-block img-border" data-toggle="modal" data-target="#myModalSmall">
                             <!-- Modal -->
                             <div class="modal fade bs-example-modal-sm" id="myModalSmall" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog modal-sm" role="document">
@@ -323,8 +305,8 @@
                                             Modal body
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-success">Save changes</button>
+                                            <button type="button" class="btn btn-primary dashboard-primary btn-md modal-close" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn  btn-info dashboard-info btn-md">Save changes</button>
                                         </div>
                                     </div>
                                 </div>
@@ -334,10 +316,11 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="col-contint">
-                            <img src="assets/images/modals/standard.png" class="center-block">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor neque eget ante dignissim pulvinar.</p>
-                            <button type="button" class="btn btn-info center-block" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Date modal</button>
+                            <div class="col-contint" id="data-parent">
+                                <h5 class="title"> Form Modal </h5>
+                                <br>
+                            <i class="fa fa-eye hide-modal" id="view-data" aria-hidden="true"></i>
+                            <img src="assets/images/modals/standard.png" id="data" class="center-block img-border" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
                             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
@@ -358,8 +341,8 @@
                                             </form>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-success">Send message</button>
+                                            <button type="button" class="btn btn-primary dashboard-primary btn-md modal-close" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn  btn-info dashboard-info btn-md">Send message</button>
                                         </div>
                                     </div>
                                 </div>
@@ -367,12 +350,11 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="col-contint">
-                            <img src="assets/images/modals/right-side.png" class="center-block">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor neque eget ante dignissim pulvinar.</p>
-                            <button type="button" class="btn btn-info center-block" data-toggle="modal" data-target="#myModal2">
-                                Right Sidebar Modal
-                            </button>
+                            <div class="col-contint" id="right-parent">
+                                <h5 class="title"> Right side modal </h5>
+                                <br>
+                            <i class="fa fa-eye hide-modal" id="view-right" aria-hidden="true"></i>
+                            <img src="assets/images/modals/right-side.png" id="right" class="center-block img-border" data-toggle="modal" data-toggle="modal" data-target="#myModal2">
                             <!-- Modal -->
                             <div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
                                 <div class="modal-dialog" role="document">
@@ -507,5 +489,6 @@
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/main.js"></script>
         <script src="assets/js/notifications_boxs.js"></script>
+        <script src="assets/js/modal.js"></script>
     </body>
 </html>

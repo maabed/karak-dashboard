@@ -68,32 +68,7 @@ $(document).ready(function(){
     });
     
         /* doughnut charts */
-    var ctx3 = document.getElementById("doughnut");
-    var data = {
-    labels: [
-        "Red",
-        "Blue",
-        "Yellow"
-    ],
-    datasets: [
-        {
-            data: [300, 50, 100],
-            backgroundColor: [
-                "#FF6384",
-                "#36A2EB",
-                "#FFCE56"
-            ],
-            hoverBackgroundColor: [
-                "#FF6384",
-                "#36A2EB",
-                "#FFCE56"
-            ]
-        }]
-    };
-    var myPieChart = new Chart(ctx3,{
-    type: 'doughnut',
-    data: data,
-    });
+
 });
 /* Line chart*/
 var ctx4 = document.getElementById("line");

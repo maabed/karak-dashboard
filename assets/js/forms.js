@@ -143,3 +143,29 @@ $(function() {
 
 $('.clockpicker').clockpicker();
 
+/* ranges */
+
+$("#no-params").ionRangeSlider();
+
+$("#double").ionRangeSlider({
+    type: "double",
+    grid: true,
+    min: 0,
+    max: 1000,
+    from: 200,
+    to: 800,
+    prefix: "$"
+});
+
+$("#strings").ionRangeSlider({
+    grid: true,
+    from: 5,
+    values: [
+        "zero", "one",
+        "two", "three",
+        "four", "five",
+        "six", "seven",
+        "eight", "nine",
+        "ten"
+    ]
+});

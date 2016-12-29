@@ -1,0 +1,82 @@
+#bordered-tab > .active > a{
+    border-top: 5px solid #67b2e4;
+}
+#bordered-tab > li > a{
+    color: #707A7A;
+}
+.nav-col-contint{
+    padding-top: 0px;
+}
+.nav-col-contint > .row{
+    border-bottom: 1px solid #ddd;
+}
+.nav-pills > li > a{
+    border-radius: 0px;
+    color: #707A7A;
+}
+
+div.bhoechie-tab-menu div.list-group > a.active:after{
+    content: '';
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    margin-top: -13px;
+    border-left: 0;
+    border-bottom: 13px solid transparent;
+    border-top: 13px solid transparent;
+    border-left: 10px solid #67b2e4;
+}
+div.bhoechie-tab-menu3 div.list-group > a.active:after {
+    content: '';
+    position: absolute;
+    left: -0.6em;
+    top: 50%;
+    margin-top: -13px;
+    border-left: 0;
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent;
+    border-right: 10px solid #67b2e4;
+}
+div.bhoechie-tab-menu2 div.list-group > a.active:after {
+    content: '';
+    position: absolute;
+    left: 100%;
+    top: 100%;
+    left: 37%;
+    margin-top: 0px;
+    border-left: 0;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-top: 10px solid #67b2e4;
+}
+.list-group-item.active.text-center{
+    background-color: #67b2e4 !important;
+    border-color: #67b2e4;
+}
+div.bhoechie-tab-menu div.list-group > a.active .glyphicon{
+    background: none !important;
+}
+div.bhoechie-tab-menu3 div.list-group > a.active .glyphicon{
+     background: none !important;
+}
+div.bhoechie-tab-menu div.list-group > a .glyphicon, div.bhoechie-tab-menu div.list-group > a .fa{
+    color: #67b2e4;
+}
+div.bhoechie-tab-menu3 div.list-group > a .glyphicon, div.bhoechie-tab-menu3 div.list-group > a .fa{
+    color: #67b2e4;    
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover{
+    background:#67b2e4;    
+}
+.bhoechie-tab h1{
+    color:#67b2e4 !important;
+}
+.bhoechie-tab3 h1{
+    color:#67b2e4 !important;
+}
+.toggle-icon1{
+    float: right;
+}
+#bordered-tab > li:not(.active) > a{
+    border-top: 5px solid #fff;
+}

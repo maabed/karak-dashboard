@@ -1,0 +1,38 @@
+.col-md-6 .fc-header-title h2{
+    font-size: 0.9em;
+    padding-top: 1em;
+}
+.img-responsive{
+    max-height: 320px;
+}
+@media(max-width:768px) {
+    .centerlize-reponsive{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #searchTB{
+        width: 200%;
+    }
+    html .fc, .fc table{
+        font-size: 8px;
+    }
+    .scroll-y{
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    #sankey > div:first-of-type > div:first-of-type {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+}
+}
+.index-icons *{
+    font-size: 1em;
+    padding-right: 10px;
+    padding-left: 14px;
+    color: #34495E;
+}
+#sankey{
+    height: 290px;
+}

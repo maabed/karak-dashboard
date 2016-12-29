@@ -28,6 +28,9 @@
         <link rel="stylesheet" type="text/css" href="assets/vendors/datepickers/daterangepicker.css" />
         <link rel="stylesheet" type="text/css" href="assets/vendors/datepickers/datepicker.min.css">
         <link rel="stylesheet" type="text/css" href="assets/vendors/clockpicker/bootstrap-clockpicker.min.css">
+        <link rel="stylesheet" href="assets/vendors/slider/ion.rangeSlider.css">
+        <link rel="stylesheet" href="assets/vendors/slider/ion.rangeSlider.skinNice.css">
+
 
 
     </head>
@@ -171,78 +174,260 @@
                 <div class="container-fluid">
                     <!-- First Row Forms -->
                     <div class="row">
-                        <div class="col-sm-6 left-group">
+                        <div class="col-md-12">
+                            <div class="col-contint body-header">
+                                <h4 class ="title"> Forms </h4>
+                                <br>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla consequat massa egestas fermentum. Maecenas quis est ac ante hendrerit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 left-group">
                             <div class="col-contint">
-                                <h5 class="title form-section col-sm-12">Default Style</h5>
-                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget feugiat sapien. Vivamus nunc dui, mollis sit amet molestie in, gravida eu lectus. Pellentesque iaculis odio augue, eget lobortis elit congue.</p>
+                                <h5 class="title form-section">Default Style</h5>
+                                <p class="header-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget feugiat sapien. Vivamus nunc dui, mollis sit amet molestie in, gravida eu lectus. Pellentesque iaculis odio augue, eget lobortis elit congue. Integer eget feugiat sapien. Vivamus nunc dui.</p>
                                 <div class="row group-content">
-                                    <div class="form-group col-sm-12">
+                                    <div class="form-group col-sm-12 no-padding">
                                         <label class="form-labels">Full Name*</label>
                                         <input type="text" placeholder="Enter Full Name" class="form-control">
                                     </div>
                                 </div>
                                 <div class="row group-content">
-                                    <div class="form-group col-sm-6">
+                                    <div class="form-group col-sm-6 no-padding-left">
                                         <label class="form-labels">Email*</label>
                                         <input placeholder="Enter Email" type="text" class="form-control">
                                     </div>
-                                    <div class="form-group col-sm-6">
+                                    <div class="form-group col-sm-6 no-padding-right">
                                         <label class="form-labels">Phone*</label>
                                         <input type="text" placeholder="Enter Phone Number" class="form-control">
                                     </div>
                                 </div>
                                 <div class="row group-content">
-                                    <div class="form-group col-sm-6">
+                                    <div class="form-group col-sm-6 no-padding-left">
                                         <label class="form-labels">Country*</label>
                                         <select class="select-display selectpicker form-control empty col-12">
                                             <option value="Select">Select</option>
                                         </select>
                                     </div>
-                                    <div class="form-group col-sm-6">
+                                    <div class="form-group col-sm-6 no-padding-right">
                                         <label class="form-labels">City</label>
                                         <input type="text" placeholder="Enter City" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row group-content">
+                                    <div class="form-group pull-right">
+                                        <button type="button" class="btn btn-default outline-default cancel-send">
+                                            <i class="fa fa-trash" aria-hidden="true"></i>
+                                            Cancel
+                                        </button>
+                                        <button type="button" class="btn btn-primary dashboard-success">
+                                            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                            Send
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-sm-6 right-group">
-                            <div class="col-contint group-upper">
-                                <h5 class="title form-section col-sm-12">Login Style</h5>
-                                <div class="form-section col-sm-12 top">
+                        <div class="col-md-6 right-group">
+                            <div class="col-contint col-contint-taps group-upper">
+                                <h5 class="title form-section">Login Style</h5>
+                                <div class="form-section top">
                                     <span class="form-labels">Username</span>
                                     <input type="text" class="form-control">
                                 </div>
-                                <div class="form-section col-sm-12">
+                                <div class="form-section">
                                     <span class="form-labels">Password</span>
                                     <input type="password" class="form-control">
-                                </div> 
+                                </div>
+                                <div class="form-section pull-right">
+                                    <a href="#" class="forgot-password">Forgot password?</a>
+                                    <button type="button" class="btn btn-primary info-mid">
+                                        <i class="fa fa-sign-in" aria-hidden="true"></i>
+                                        Login
+                                    </button>
+                                </div>
                             </div>
                             <br>
-                            <div class="col-contint group-lower">
-                                <h5 class="title form-section col-sm-12">Login With Icons</h5>
-                                <div class="form-section col-sm-6">
-                                    <label class="email-label">
-                                        <input type="text" class="form-control email-input" placeholder="Email" />
-                                    </label>
+                            <div class="col-contint col-contint-taps group-lower">
+                                <h5 class="title form-section">Login With Icons</h5>
+                                <div class="row">
+                                    <div class="form-section col-sm-6">
+                                        <label class="email-label">
+                                            <input type="text" class="form-control email-input" placeholder="Email" />
+                                        </label>
+                                    </div>
+                                    <div class="form-section col-sm-6">
+                                        <label class="password-label">
+                                            <input type="password" class="form-control password-input" placeholder="Password" />
+                                        </label>
+                                    </div>
                                 </div>
-                                <div class="form-section col-sm-6">
-                                    <label class="password-label">
-                                        <input type="password" class="form-control password-input" placeholder="Password" />
-                                    </label>
+                                <div class="form-section pull-right">
+                                    <a href="#" class="forgot-password">Forgot password?</a>
+                                    <button type="button" class="btn btn-primary info-mid">
+                                        <i class="fa fa-sign-in" aria-hidden="true"></i>
+                                        Login
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- /First Row Forms End -->
-                    <br>
-                    <!-- Start of checkboxes group -->  
+                    
+
+                    <!-- Second Row Of forms -->
 
                     <div class="row">
-                        <div class="col-sm-12 one-col">
-                            <div class="col-contint">
-                                <h5 class ="title form-section col-xs-12"> Checkbox Controls </h5>
+                        <div class="col-md-12">
+                            <div class="col-sm-4 first-third">
+                                <div class="col-contint">
+                                    <h5 class="title form-section">Ranges</h5>
+                                    <h6>Start without params</h6>
+                                    <input type="text" id="no-params" name="example_name" value="" />
+                                    <br>
+                                    <h6>Set type to double and specify range, also showing grid and adding prefix "$"</h6>
+                                    <input type="text" id="double" name="example_name" value="" />
+                                    <br>
+                                    <h6>Using any strings as your values</h6>
+                                    <input type="text" id="strings" name="example_name" value="" />
+                                </div>
+                            </div>
+                            <div class="col-sm-4 second-third">
+                                <div class="col-contint">
+                                    <h5 class="title form-section">Slide Toggle</h5>
+                                        <h6>Checked</h6>
+                                        <div class="row">
+                                            <div class="col-sm-12 switch toggleswitch">
+                                                <input  id="cmn-toggle-1" class="cmn-toggle cmn-toggle-roundGreen" type="checkbox">
+                                                <label for="cmn-toggle-1"></label>
+                                            </div>
+                                        </div>
+                                        <h6>Multiple switches </h6>
+                                        <div class="row">
+                                            <div class="col-sm-4 switch toggleswitch" >
+                                                <input  id="cmn-toggle-2" class="cmn-toggle cmn-toggle-roundGreen" type="checkbox" checked="">
+                                                <label for="cmn-toggle-2"></label>
+                                            </div>
+    
+                                            <div class="col-sm-4 switch toggleswitch " >
+                                                <input  id="cmn-toggle-3" class="cmn-toggle cmn-toggle-roundGreen" type="checkbox">
+                                                <label for="cmn-toggle-3"></label>
+                                            </div>
+        
+                                            <div class="col-sm-4 switch toggleswitch" >
+                                                <input  id="cmn-toggle-4" class="cmn-toggle cmn-toggle-roundGreen" type="checkbox" checked="">
+                                                <label for="cmn-toggle-4"></label>
+                                            </div>
+                                        </div>
+                                        <h6>Colored</h6>
+                                        <div class="row">
+                                             <div class="col-sm-3 switch toggleswitch" >
+                                                 <input  id="cmn-toggle-5" class="cmn-toggle cmn-toggle-roundBlue" type="checkbox"checked="">
+                                                 <label for="cmn-toggle-5"></label>
+                                             </div>
+         
+                                             <div class="col-sm-3 switch toggleswitch" >
+                                                 <input  id="cmn-toggle-6" class="cmn-toggle cmn-toggle-roundPink" type="checkbox"checked="">
+                                                 <label for="cmn-toggle-6"></label>
+                                             </div>
+         
+                                             <div class="col-sm-3 switch toggleswitch" >
+                                                 <input  id="cmn-toggle-7" class="cmn-toggle cmn-toggle-roundGreen1" type="checkbox"checked="">
+                                                 <label for="cmn-toggle-7"></label>
+                                             </div>
+         
+                                             <div class="col-sm-3 switch toggleswitch" >
+                                                 <input  id="cmn-toggle-8" class="cmn-toggle cmn-toggle-roundRed" type="checkbox"checked="">
+                                                 <label for="cmn-toggle-8"></label>
+                                             </div>
+                                        </div>
+                                        <h6>Or the secondary color, which will change the switch shadow and default border:</h6>
+    
+                                        <div class="switch toggleswitch" >
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <input  id="cmn-toggle-9" class="cmn-toggle cmn-toggle-roundYellow" type="checkbox" checked>
+                                                    <label for="cmn-toggle-9"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 last-third">
+                                <div class="col-contint">
+                                    <h5 class="title form-section">Slide Toggle</h5>
+                                    <div class="row">
+                                        <div class="third-section col-sm-12">
+                                            <label class="label-type">Standard</label>
+                                            <select class="select-display selectpicker empty col-12">
+                                                <option value="Select">Select</option>
+                                                <option value="Select2">Select</option>
+                                                <option value="Select2">Select</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="third-section col-sm-12">
+                                            <label class="label-type">Select boxes with optgroups</label>
+                                            <select class="select-display selectpicker empty col-12">
+                                                <optgroup label="First group">
+                                                    <option value="Select">Select</option>
+                                                    <option value="Select2">Selec</option>
+                                                    <option value="Select2">Select</option>
+                                                </optgroup>
+                                                <optgroup label="Second Group">
+                                                    <option value="Select">Select</option>
+                                                    <option value="Select2">Select</option>
+                                                    <option value="Select2">Select</option>
+                                                </optgroup>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="third-section col-sm-12">
+                                            <label class="label-type">Multiple select boxes</label>
+                                            <select class="select-display selectpicker empty col-12" multiple>
+                                                <option value="Select1">Select</option>
+                                                <option value="Select2">Select</option>
+                                                <option value="Select3">Select</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="third-section col-sm-12">
+                                            <label class="label-type">Live search</label>
+                                            <select class="select-display selectpicker empty col-12" data-live-search="true">
+                                                <option value="Select">Select</option>
+                                                <option value="Select">Select</option>
+                                                <option value="Select">Select</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="third-section col-sm-12">
+                                            <label class="label-type">Key words</label>
+                                            <select class="select-display selectpicker empty col-12"  data-live-search="true">
+                                                <option value="Select" data-tokens="first option">Select</option>
+                                                <option value="Select" data-tokens="second option">Select</option>
+                                                <option value="Select" data-tokens="third option">Select</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Second Row Forms End -->
+                    <!-- Start of checkboxes group -->  
+                    <div class="row">
+                        <div class="col-md-12 one-col">
+                            <div class="col-contint col-contint-taps">
+                                <h5 class ="title form-section"> Checkbox Controls </h5>
+                                <div class="row">
                                 <div class="col-sm-4">
                                     <h5 class="mediumtitle"> Color Options </h5>
                                     <p class="pargraph-design">
@@ -322,192 +507,18 @@
                                             </div>
                                         </div>
                                     </form>
-                                </div>  
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /End of checkboxes group --> 
-
-                    <!-- Second Row Of forms -->
-
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="col-md-4 first-third">
-                                <div class="col-contint">
-                                    <h5 class ="title third-header col-sm-12">SlideToggle </h5>
-                                    <div class="inner-container">
-                                        <h6>Checked</h6>
-                                        <div class="row">
-                                            <div class="col-sm-12 switch toggleswitch">
-                                                <input  id="cmn-toggle-1" class="cmn-toggle cmn-toggle-roundGreen" type="checkbox">
-                                                <label for="cmn-toggle-1"></label>
-                                            </div>
-                                        </div>
-                                        <h6>Multiple switches </h6>
-                                        <div class="row">
-                                            <div class="col-sm-4 switch toggleswitch" >
-                                                <input  id="cmn-toggle-2" class="cmn-toggle cmn-toggle-roundGreen" type="checkbox" checked="">
-                                                <label for="cmn-toggle-2"></label>
-                                            </div>
-    
-                                            <div class="col-sm-4 switch toggleswitch " >
-                                                <input  id="cmn-toggle-3" class="cmn-toggle cmn-toggle-roundGreen" type="checkbox">
-                                                <label for="cmn-toggle-3"></label>
-                                            </div>
-        
-                                            <div class="col-sm-4 switch toggleswitch" >
-                                                <input  id="cmn-toggle-4" class="cmn-toggle cmn-toggle-roundGreen" type="checkbox" checked="">
-                                                <label for="cmn-toggle-4"></label>
-                                            </div>
-                                        </div>
-                                        <h6>Colored</h6>
-                                        <div class="row">
-                                             <div class="col-sm-3 switch toggleswitch" >
-                                                 <input  id="cmn-toggle-5" class="cmn-toggle cmn-toggle-roundBlue" type="checkbox"checked="">
-                                                 <label for="cmn-toggle-5"></label>
-                                             </div>
-         
-                                             <div class="col-sm-3 switch toggleswitch" >
-                                                 <input  id="cmn-toggle-6" class="cmn-toggle cmn-toggle-roundPink" type="checkbox"checked="">
-                                                 <label for="cmn-toggle-6"></label>
-                                             </div>
-         
-                                             <div class="col-sm-3 switch toggleswitch" >
-                                                 <input  id="cmn-toggle-7" class="cmn-toggle cmn-toggle-roundGreen1" type="checkbox"checked="">
-                                                 <label for="cmn-toggle-7"></label>
-                                             </div>
-         
-                                             <div class="col-sm-3 switch toggleswitch" >
-                                                 <input  id="cmn-toggle-8" class="cmn-toggle cmn-toggle-roundRed" type="checkbox"checked="">
-                                                 <label for="cmn-toggle-8"></label>
-                                             </div>
-                                        </div>
-                                        <h6>Or the secondary color, which will change the switch shadow and default border:</h6>
-    
-                                        <div class="switch toggleswitch" >
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <input  id="cmn-toggle-9" class="cmn-toggle cmn-toggle-roundYellow" type="checkbox" checked>
-                                                    <label for="cmn-toggle-9"></label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 second-third">
-                                <div class="col-contint">
-                                <h5 class ="title third-header col-sm-12">Select boxes</h5>
-                                <div class="inner-container">
-                                    <div class="row">
-                                        <div class="third-section col-sm-12">
-                                            <label class="label-type">Standard</label>
-                                            <select class="select-display selectpicker empty col-12">
-                                                <option value="Select">Select</option>
-                                                <option value="Select2">Select</option>
-                                                <option value="Select2">Select</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="third-section col-sm-12">
-                                            <label class="label-type">Select boxes with optgroups</label>
-                                            <select class="select-display selectpicker empty col-12">
-                                                <optgroup label="First group">
-                                                    <option value="Select">Select</option>
-                                                    <option value="Select2">Selec</option>
-                                                    <option value="Select2">Select</option>
-                                                </optgroup>
-                                                <optgroup label="Second Group">
-                                                    <option value="Select">Select</option>
-                                                    <option value="Select2">Select</option>
-                                                    <option value="Select2">Select</option>
-                                                </optgroup>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="third-section col-sm-12">
-                                            <label class="label-type">Multiple select boxes</label>
-                                            <select class="select-display selectpicker empty col-12" multiple>
-                                                <option value="Select1">Select</option>
-                                                <option value="Select2">Select</option>
-                                                <option value="Select3">Select</option>
-
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="third-section col-sm-12">
-                                            <label class="label-type">Live search</label>
-                                            <select class="select-display selectpicker empty col-12" data-live-search="true">
-                                                <option value="Select">Select</option>
-                                                <option value="Select">Select</option>
-                                                <option value="Select">Select</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="third-section col-sm-12">
-                                            <label class="label-type">Key words</label>
-                                            <select class="select-display selectpicker empty col-12"  data-live-search="true">
-                                                <option value="Select" data-tokens="first option">Select</option>
-                                                <option value="Select" data-tokens="second option">Select</option>
-                                                <option value="Select" data-tokens="third option">Select</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                            <div class="col-md-4 last-third">
-                                <div class="col-contint">
-                                    <h5 class ="title third-header col-sm-12">Input helpers</h5>
-                                    <div class="inner-container">
-                                    <div class="row">
-                                        <div class="form-section col-sm-12">
-                                            <label class="label-type">Date <span class="helpers">e.g "2013/12/25"</span></label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="form-section col-sm-12">
-                                            <label class="label-type">Telephone <span class="helpers">e.g "(324)3243-234"</span></label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="form-section col-sm-12">
-                                            <label class="label-type">Custom <span class="helpers">e.g "4324324-23"</span></label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="form-section col-sm-12">
-                                            <label class="label-type">Social security number <span class="helpers">e.g "2432-43432"</span></label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="form-section col-sm-12">
-                                            <label class="label-type">Dollar prefix <span class="helpers">e.g "45.50$"</span></label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                </div>
+                                </div> 
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- /Second Row Forms End -->
                     <!-- Date control start -->
                     <div class="row ">
-                        <div class="col-sm-12 date-control">
+                        <div class="col-md-12 date-control">
                             <div class="col-contint">
-                                <h5 class ="title form-section largetitle">Date controls</h5>
+                                <h5 class ="title form-section">Date controls</h5>
                                 <div class="row">
-                                    <div class="inner-container">
-                                        <div class="col-md-4">
+                                        <div class="col-sm-4">
                                             <div class="third-section">
                                                 <h5 class="mediumtitle">Simple Date Picker</h5>
                                                 <p class="pargraph-design picker-desc">
@@ -524,7 +535,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-sm-4">
                                             <div class="third-section">
                                                 <h5 class="mediumtitle">Range Date Picker</h5>
                                                 <p class="pargraph-design picker-desc">
@@ -539,42 +550,25 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-sm-4">
                                             <div class="third-section">
                                                 <h5 class="mediumtitle">Advanced Datepicker</h5>
                                                 <div class="datepicker-here simple" data-language='en'></div>
                                             </div>
                                         </div>
-                                    </div>                                 
                                 </div>
                             </div>
                         </div> 
                     </div>
                     <!-- /Date control end -->
-                    <br>
-                    <!-- Start of text editor --> 
-                    <div class="row">
-                        <div class="col-sm-12 one-col">
-                            <div class="col-contint">
-                                <h5 class ="title form-section largetitle">Text Editor</h5>
-                                <div class ="text-editor-design">
-                                    <div id="summernote">hello </div>
-                                </div>
-                            </div>
-                        </div> 
-                    </div>
-
-                    <!-- /End of text editor -->
-                    <br>
                     <!-- Tags & drag N'drop row -->
 
                     <div class="row">
-                        <div class="col-sm-6 left-group">
+                        <div class="col-md-6 left-group">
                             <div class="col-contint">
-                                <h5 class ="title form-section largetitle">Tag Input</h5>
-                                <div class="inner-container">
+                                <h5 class ="title form-section">Tag Input</h5>
                                 <div class="row">
-                                    <div class="form-section col-md-12">
+                                    <div class="form-section col-sm-12">
                                         <label class="form-labels">Markup</label>
                                         <input type="text" value="Amsterdam,Washington" data-role="tagsinput" />
                                     </div>
@@ -600,13 +594,12 @@
                                         <input class="colored-tags" type="text" data-role="tagsinput"/>
                                     </div>
                                 </div>
-                                </div>
                             </div>
                         </div>
 
-                        <div class="col-sm-6 right-group">
-                            <div class="col-contint DragNdrop">
-                                <h5 class ="title form-section largetitle">Drag N' Drop</h5>
+                        <div class="col-md-6 right-group">
+                            <div class="col-contint col-contint-taps">
+                                <h5 class ="title form-section">Drag N' Drop</h5>
                                 <div class="dropzone-row">
                                     <div class="form-section col-sm-12 dropzone-min">
                                         <form action="/file-upload"class="dropzone" id="my-awesome-dropzone">
@@ -616,6 +609,20 @@
                             </div>
                         </div>
                     </div>
+                    <!-- /End of checkboxes group --> 
+                    <!-- Start of text editor --> 
+                    <div class="row">
+                        <div class="col-md-12 one-col">
+                            <div class="col-contint">
+                                <h5 class ="title form-section">Text Editor</h5>
+                                <div class ="text-editor-design">
+                                    <div id="summernote">hello </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+
+                    <!-- /End of text editor -->
                     <!-- End of Tags & drag N'drop row-->
                 </div>
             </div>
@@ -730,6 +737,7 @@
         
         <!-- original page scripts -->
         <script src="assets/vendors/jquery/jquery-3.1.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/main.js"></script>
         <script src="assets/js/notifications_boxs.js"></script>
@@ -756,8 +764,9 @@
         <script type="text/javascript" src="assets/vendors/datepickers/datepicker.min.js"></script>
         <script type="text/javascript" src="assets/vendors/datepickers/datepicker.en.js"></script>
         <script type="text/javascript" src="assets/vendors/clockpicker/bootstrap-clockpicker.min.js"></script>
+        
+        <!-- no ui slider -->
+        <script src="assets/vendors/slider/ion.rangeSlider.min.js"></script>
         <script src='assets/js/forms.js'></script>
-        
-        
     </body>
 </html>

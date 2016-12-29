@@ -1,4 +1,5 @@
- $(function () {
+$(document).ready(function(){ 
+$(function () {
         // Instance the tour
         var tour = new Tour({
             backdrop: true,
@@ -13,7 +14,7 @@
             },
             steps: [
                 {
-                    element: "#Transactions",
+                    element: "#canvas",
                     title: "Page header",
                     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut vulputate sapien, ac venenatis est.",
                     placement: "right"
@@ -33,8 +34,11 @@
             ]});
         // Initialize the tour
         tour.init();
+        tour.restart();
+
         // Restart the tour
-        $('#startTour').click(function(){
-            tour.restart();
-        });
+//        $('#startTour').click(function(){
+//            tour.restart();
+//        });
  });
+    });

@@ -24,6 +24,7 @@
 
         <link href="assets/vendors/toastr/toastr.css" rel="stylesheet"/>
         <link rel="stylesheet" href="assets/vendors/sweet-alert/sweetalert.css">
+        <link rel="stylesheet" href="assets/css/notifications.css">
 
     </head>
     <body>
@@ -229,139 +230,152 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="col-contint col-contint-taps">
-                                <div class="col-md-6">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor neque eget ante dignissim pulvinar. N
-                                    luctus eget ipsum id sagittis. Maecenas eget faucibus ipsum. Suspendisse sed feugiat tellus. In sed magna in 
-                                    ullamcorper dignissim. Aenean rhoncus turpis sit amet ex congue, sed mattis lacus mollis. Vestibulum eget ex 
-                                    tincidunt euismod. Ut velit velit, tristique id magna in, sodales porta magna. Curabitur ac quam ut erat fin
-                                    cursus gravida eu lacus.
-                                </div>
-                                <div class="col-md-6">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer auctor neque eget ante dignissim pulvinar. 
-                                    luctus eget ipsum id sagittis. Maecenas eget faucibus ipsum. Suspendisse sed feugiat tellus. In sed magna in 
-                                    ullamcorper dignissim. Aenean rhoncus turpis sit amet ex congue, sed mattis lacus mollis. Vestibulum eget ex 
-                                    tincidunt euismod. Ut velit velit, tristique id magna in, sodales porta magna. Curabitur ac quam ut erat fi
-                                    cursus gravida eu lacus.
-                                </div>
+                            <div class="col-contint body-header">
+                                <h4 class ="title"> Notifications </h4>
+                                <br>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla consequat massa egestas fermentum. Maecenas quis est ac ante hendrerit.</p>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-7">
-                            <div class="col-contint inner-contint">
+                        <div class="col-md-6">
+                            <div class="col-contint">
                                 <h5 class ="title form-section"> Bootstrap alerts </h5>
+                                <br>
+                                <label class="small-label">Select type:</label>
                                 <select class="form-control select-width" id="alert-select">
                                     <option value="success">Success</option>
                                     <option value="info">Info</option>
                                     <option value="warning">Warning</option>
                                     <option value="danger">Danger</option>
                                 </select>
-                                <button id="alert-generate" type="button" class="btn btn-default generate-display">Generate</button>
-                                <div class="alerts-container">
-                                    <div class="alert alert-success alert-dismissable">
-                                        <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
-                                        This alert box could indicate a successful or positive action.
-                                    </div>
-                                    <div class="alert alert-info alert-dismissable">
-                                      <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
-                                      This alert box could indicate an informative change or action.
-                                    </div>
-                                    <div class="alert alert-warning alert-dismissable">
-                                      <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
-                                      This alert box could indicate a warning.
-                                    </div>
-                                    <div class="alert alert-danger alert-dismissable">
-                                      <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
-                                      This alert box could indicate a potentially negative action.
-                                    </div>
-                                </div>
+                                <button type="button" id="alert-generate" class="btn btn-default dashboard-default">
+                                    Generate
+                                </button>
                             </div>
                         </div>
-                        <div class="col-md-5">
-                            <div class="col-contint inner-contint">
-                                <h5 class ="title form-section"> Toastr alerts </h5>
-                                <div class="dashboard-container">
-                                    <select class="form-control select-width" name="toastr-select">
-                                        <option value="TopRight">Top Right</option>
-                                        <option value="BottomRight">Bottom Right</option>
-                                        <option value="BottomLeft">Bottom Left</option>
-                                        <option value="TopLeft">Top Left</option>
-                                        <option value="TopFull">Top Full</option>
-                                        <option value="BottomFull">Bottom Full</option>
-                                        <option value="TopCenter">Top Center</option>
-                                        <option value="BottomCenter">BottomCenter</option>
-                                    </select>
-                                    <button id="toastr-generate" type="button" class="btn btn-default generate-display">Generate</button>
-                                    <img src="assets/images/notifications/4.png" class="center-block">
-                                </div>
+                        <div class="col-md-6">
+                            <div class="col-contint">
+                                <h5 class ="title form-section"> Sweet alerts </h5>
+                                <br>
+                                <label class="small-label">Select type:</label>
+                                <select class="form-control select-width" id="sweet-select">
+                                    <option value="basic">Basic message</option>
+                                    <option value="success">Success message</option>
+                                    <option value="warning">Warning message</option>
+                                    <option value="execute">Execute something else for "Cancel"</option>
+                                    <option value="custom">Custom icon</option>
+                                    <option value="HTML">An HTML message</option>
+                                    <option value="Auto">Auto close timer</option>
+                                    <option value="Prompt">Prompt function</option>
+                                </select>
+                                <button type="button" id="sweet-generate" class="btn btn-default dashboard-default">
+                                    Generate
+                                </button>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12">
-                            <div class="col-contint inner-contint">
-                                <h5 class ="title form-section"> Sweet alert </h5>
-                                <div class="col-sm-3 col-padding">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt metus odio, at congue tellus
-                                        dignissim eget. Vestibulum nec faucibus eros. In libero augue, volutpat vitae ex quis, tincidunt finibus
-                                        risus. Curabitur facilisis nec erat eu commodo. Integer maximus eros non mi mattis, sit amet molestie dui
-                                    </p>
-                                </div>
-                                <div class="col-sm-9">
-                                    <div class="row">
-                                        <div class="col-sm-3"><label class="form-labels">Basic message</label></div>
-                                        <div class="col-sm-3"><label class="form-labels">Success message!</label></div>
-                                        <div class="col-sm-3"><label class="form-labels">Warning message!</label></div>
-                                        <div class="col-sm-3"><label class="form-labels">Execute something else for "Cancel"</label></div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-3"><button id="basic" type="button" class="btn btn-default">Generate</button></div>
-                                        <div class="col-sm-3"><button id="success" type="button" class="btn btn-default">Generate</button></div>
-                                        <div class="col-sm-3"><button id="warning" type="button" class="btn btn-default">Generate</button></div>
-                                        <div class="col-sm-3"><button id="execute" type="button" class="btn btn-default">Generate</button></div>
-                                    </div>
-                                    <br>
-                                    <div class="row">
-                                        <div class="col-sm-3"><label class="form-labels">Custom icon</label></div>
-                                        <div class="col-sm-3"><label class="form-labels">An HTML message</label></div>
-                                        <div class="col-sm-3"><label class="form-labels">A message with auto close timer</label></div>
-                                        <div class="col-sm-3"><label class="form-labels">Prompt function</label></div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-3"><button id="custom" type="button" class="btn btn-default">Generate</button></div>
-                                        <div class="col-sm-3"><button id="HTML" type="button" class="btn btn-default">Generate</button></div>
-                                        <div class="col-sm-3"><button id="Timer" type="button" class="btn btn-default">Generate</button></div>
-                                        <div class="col-sm-3"><button id="Prompt" type="button" class="btn btn-default">Generate</button></div>
-                                    </div>
-                                </div>
+                        <div class="col-md-3">
+                            <div class="col-contint top-left">
+                                <h5 class ="title form-section"> Top left </h5><br>                            
+                                <i class="fa fa-eye hide-modal" id="view-left" aria-hidden="true"></i>
+                                <img class="img-border" id="left" src="assets/images/iconsPdf-01.svg">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="col-contint top-right">
+                                <h5 class ="title form-section"> Top right </h5><br>
+                                <i class="fa fa-eye hide-modal" id="view-right" aria-hidden="true"></i>
+                                <img class="img-border" id="right" src="assets/images/iconsPdf-02.svg">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="col-contint top-center">
+                                <h5 class ="title form-section"> Top center </h5><br>
+                                <i class="fa fa-eye hide-modal" id="view-center" aria-hidden="true"></i>
+                                <img class="img-border" id="center" src="assets/images/top_center.svg">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="col-contint top-full">
+                                <h5 class ="title form-section"> Top full </h5><br>
+                                <i class="fa fa-eye hide-modal" id="view-full" aria-hidden="true"></i>
+                                <img class="img-border" id="full" src="assets/images/top_full.svg">
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12">
-                            <div class="col-contint inner-contint">
-                                <h5 class ="title form-section"> Tool tips </h5>
-                                <div class="col-sm-3 col-padding">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt metus odio, at congue tellus
-                                        dignissim eget. Vestibulum nec faucibus eros. In libero augue, volutpat vitae ex quis, tincidunt finibus
-                                        risus. Curabitur facilisis nec erat eu commodo. Integer maximus eros non mi mattis, sit amet molestie dui
-                                    </p>
-                                </div>
-                                <div class="col-sm-9">
+                        <div class="col-md-3">
+                            <div class="col-contint bottom-left">
+                                <h5 class ="title form-section"> bottom left </h5><br>  
+                                <i class="fa fa-eye hide-modal" id="b-left" aria-hidden="true"></i>
+                                <img class="img-border" id="img-left" src="assets/images/iconsPdf-03.svg">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="col-contint bottom-right">
+                                <h5 class ="title form-section"> bottom right </h5><br>
+                                <i class="fa fa-eye hide-modal" id="b-right" aria-hidden="true"></i>
+                                <img class="img-border" id="img-right" src="assets/images/iconsPdf-04.svg">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="col-contint bottom-center">
+                                <h5 class ="title form-section"> bottom center </h5><br>   
+                                <i class="fa fa-eye hide-modal" id="b-center" aria-hidden="true"></i>
+                                <img class="img-border" id="img-center" src="assets/images/bottom_center.svg">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="col-contint bottom-full">
+                                <h5 class ="title form-section"> bottom full </h5><br>
+                                <i class="fa fa-eye hide-modal" id="b-full" aria-hidden="true"></i>
+                                <img class="img-border" id="img-full" src="assets/images/bottom_full.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-contint">
+                                    <h5 class ="title form-section"> Labels </h5><br>
                                     <div class="row">
-                                        <div class="col-sm-3"><label class="form-labels">Right Tooltip</label></div>
-                                        <div class="col-sm-3"><label class="form-labels">Left Tooltip</label></div>
-                                        <div class="col-sm-3"><label class="form-labels">Top Tooltip</label></div>
-                                        <div class="col-sm-3"><label class="form-labels">Buttom Tooltip</label></div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-3"><button type="button" data-toggle="tooltip" data-placement="right" title="Hooray!" class="btn btn-default">Hover Me!</button></div>
-                                        <div class="col-sm-3"><button type="button" data-toggle="tooltip" data-placement="left" title="Hooray!" class="btn btn-default">Hover Me!</button></div>
-                                        <div class="col-sm-3"><button type="button" data-toggle="tooltip" data-placement="top" title="Hooray!" class="btn btn-default">Hover Me!</button></div>
-                                        <div class="col-sm-3"><button type="button" data-toggle="tooltip" data-placement="bottom" title="Hooray!" class="btn btn-default">Hover Me!</button></div>
+                                        <div class="col-sm-12 bottom-margin">
+                                            <span class="label dashboard-info no-margin-left">New</span>
+                                            <span class="label dashboard-success no-margin-left">New</span>
+                                            <span class="label dashboard-primary no-margin-left">New</span>
+                                            <span class="label dashboard-warning no-margin-left">New</span>
+                                            <span class="label dashboard-danger no-margin-left">New</span>
+                                        </div>
                                     </div>
                                 </div>
+                            </div>  
+                            <br>
+                            <div class="row">
+                                <div class="col-contint">
+                                    <h5 class ="title form-section"> Badges </h5><br>
+                                    <div class="row">
+                                        <div class="col-sm-12 bottom-margin">
+                                            <span class="label dashboard-info no-margin-left">9</span>
+                                            <span class="label dashboard-success no-margin-left">2</span>
+                                            <span class="label dashboard-primary no-margin-left">5</span>
+                                            <span class="label dashboard-warning no-margin-left">10</span>
+                                            <span class="label dashboard-danger no-margin-left">15</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="col-contint col-contint-taps">
+                                <h5 class ="title form-section"> Tool tips </h5><br>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla consequat massa egestas fermentum. Maecenas quis est ac ante hendrerit lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla consectetur adipiscing elit. Etiam fringilla.</p>
+                                <br>
+                                <div class="col-sm-3 no-padding-left bottom-margin"><button type="button" data-toggle="tooltip" data-placement="right" title="Hooray!" class="btn btn-default">Hover Me!</button></div>
+                                <div class="col-sm-3 no-padding-left bottom-margin"><button type="button" data-toggle="tooltip" data-placement="left" title="Hooray!" class="btn btn-default">Hover Me!</button></div>
+                                <div class="col-sm-3 no-padding-left bottom-margin"><button type="button" data-toggle="tooltip" data-placement="top" title="Hooray!" class="btn btn-default">Hover Me!</button></div>
+                                <div class="col-sm-3 no-padding-left bottom-margin"><button type="button" data-toggle="tooltip" data-placement="bottom" title="Hooray!" class="btn btn-default">Hover Me!</button></div>
                             </div>
                         </div>
                     </div>

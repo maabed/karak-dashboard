@@ -22,6 +22,7 @@
         <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
         <link href="assets/css/ui.css" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/lists.css">
+        <link rel="stylesheet" href="assets/vendors/toggle/bootstrap-switch.css"> 
 
     </head>
     <body>
@@ -226,62 +227,188 @@
             <div id="page-content-wrapper">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-sm-8">
-                            <div class="col-contint col-contint-taps inner-contint">
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <h5 class ="title form-section"> Basic list </h5>
-                                        <div class="list-group">
-                                            <a href="#" class="list-group-item">First item</a>
-                                            <a href="#" class="list-group-item">Second item</a>
-                                            <a href="#" class="list-group-item">Third item</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <h5 class ="title form-section"> List with badges </h5>
-                                        <ul class="list-group">
-                                            <li class="list-group-item">New <span class="label label-primary nav-lbl">12</span></li>
-                                            <li class="list-group-item">Deleted <span class="label label-primary nav-lbl">5</span></li> 
-                                            <li class="list-group-item">Warnings <span class="label label-primary nav-lbl">3</span></li>
-                                        </ul>
-                                    </div>
+                        <div class="col-md-12">
+                            <div class="col-contint body-header">
+                                <h4 class ="title"> Lists </h4>
+                                <br>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla consequat massa egestas fermentum. Maecenas quis est ac ante hendrerit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="col-contint col-contint-taps">
+                                <h5 class ="title form-section"> Basic list </h5>
+                                <br>
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item"><div class="glyphicon glyphicon-text-size"></div>  First item</a>
+                                    <a href="#" class="list-group-item"><div class="glyphicon glyphicon-menu-hamburger"></div>  Second item</a>
+                                    <a href="#" class="list-group-item"><div class="glyphicon glyphicon-stats"></div>  Third item</a>
+                                    <a href="#" class="list-group-item"><div class="glyphicon glyphicon-send"></div>  Forth item</a>
+                                    <a href="#" class="list-group-item"><div class="glyphicon glyphicon-flash"></div>  Fifth item</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-4">
-                            <div class="col-contint col-contint-taps inner-contint">
-                                <h5 class ="title form-section"> List with active item </h5>
+                        <div class="col-md-6">
+                            <div class="col-contint col-contint-taps">
+                            <h5 class ="title form-section"> Blog list </h5>
+                                <br>
                                 <div class="list-group">
-                                    <a href="#" class="list-group-item active">First item</a>
-                                    <a href="#" class="list-group-item">Second item</a>
-                                    <a href="#" class="list-group-item">Third item</a>
+                                    <a href="#" class="list-group-item">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <img src="assets/images/cards3.gif" class="blog-img side-line">
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <span class="list-par">Title goes here Title goes here Title goes here Title goes here.</span><br>
+                                                <p class="list-date">Oct 22, 2016</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <img src="assets/images/cards.png-2.gif" class="blog-img side-line">
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <span  class="list-par">Title goes here Title goes here Title goes here Title goes here.</span><br>
+                                                <p class="list-date">Aug 20, 2017</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="col-contint col-contint-taps">
+                                <h5 class ="title form-section"> List with badges </h5>
+                                <br>
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item"><div class="glyphicon glyphicon-text-size"></div> New<span class="label info-mid nav-lbl">12</span></a>
+                                    <a href="#" class="list-group-item"><div class="glyphicon glyphicon-flash"></div> Deleted<span class="label info-mid nav-lbl">5</span></a> 
+                                    <a href="#" class="list-group-item"><div class="glyphicon glyphicon-send"></div> Warnings<span class="label info-mid nav-lbl">3</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="col-contint col-contint-taps">
+                                <h5 class ="title form-section"> List with active item </h5>
+                                <br>
+                                <ul class="list-group">
+                                    <li class="list-group-item info-mid"><div class="glyphicon glyphicon-text-size"></div> First item</li>
+                                    <li class="list-group-item"><div class="glyphicon glyphicon-flash"></div> Second item</li>
+                                    <li class="list-group-item"><div class="glyphicon glyphicon-send"></div> Third item</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="col-contint col-contint-taps">
+                                <h5 class ="title form-section"> Toggle list </h5>
+                                <br>
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item"> First item
+                                        <input class="toggle-align" type="checkbox" name="my-checkbox" checked data-size="mini">
+                                    </a>
+                                    <a href="#" class="list-group-item"> Second item
+                                        <input class="toggle-align" type="checkbox" name="my-checkbox" data-size="mini">
+                                    </a>
+                                    <a href="#" class="list-group-item"> Third item
+                                        <input class="toggle-align" type="checkbox" name="my-checkbox" checked data-size="mini">
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <br>
                     <div class="row">
-                        <div class="col-sm-4">
-                            <div class="col-contint col-contint-taps inner-contint">
+                        <div class="col-sm-7">
+                            <div class="col-contint col-contint-taps">
+                                <h5 class ="title form-section"> Events list </h5>
+                                <br>
+                                <div class="list-group">
+                                    <a class="list-group-item">
+                                        <div class="row">
+                                            <div class="col-sm-1 side-line"><h3 class="side-date">07</h3><h4>sep</h4></div>
+                                            <div class="col-sm-10">
+                                                <p class="event">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                                                    eget.consectetur adipiscing elit. Suspendisse eget.</p>
+                                            </div>  
+                                        </div>
+                                    </a>
+                                    <a class="list-group-item">                                        
+                                        <div class="row">
+                                            <div class="col-sm-1 side-line"><h3 class="side-date">14</h3><h4>aug</h4></div>
+                                            <div class="col-sm-10">
+                                                <p class="event">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                                                    eget.consectetur adipiscing elit. Suspendisse eget.</p>
+                                            </div>  
+                                        </div>
+                                    </a>
+                                    <a class="list-group-item">                                        
+                                        <div class="row">
+                                            <div class="col-sm-1 side-line"><h3 class="side-date">22</h3><h4>dec</h4></div>
+                                             <div class="col-sm-10">
+                                                 <p class="event">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                                                     eget.consectetur adipiscing elit. Suspendisse eget.</p>
+                                            </div>  
+                                        </div>
+                                    </a>
+                                    <a class="list-group-item">                                        
+                                        <div class="row">
+                                            <div class="col-sm-1 side-line"><h3 class="side-date">12</h3><h4>jan</h4></div>
+                                             <div class="col-sm-10">
+                                                 <p class="event">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                                                     eget.consectetur adipiscing elit. Suspendisse eget.</p>
+                                            </div>  
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-5">
+                            <div class="col-contint col-contint-taps">
                                 <h5 class ="title form-section"> Colored list </h5>
+                                <br>
                                 <ul class="list-group">
-                                    <li class="list-group-item list-group-item-success">First item</li>
-                                    <li class="list-group-item list-group-item-info">Second item</li>
-                                    <li class="list-group-item list-group-item-warning">Third item</li>
-                                    <li class="list-group-item list-group-item-danger">Fourth item</li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col-sm-10 no-padding-right">
+                                                <h5 class="title-border">First</h5>
+                                            </div>
+                                            <div class="col-sm-2 no-padding-left">
+                                                <div class="glyphicon glyphicon-flash icon-list-border"></div>
+                                            </div>
+                                        </div>
+                                        <p class="box-size">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut fringilla libero. Nullam a rhoncus.</p>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col-sm-10 no-padding-right">
+                                                <h5 class="title-border">Second</h5>
+                                            </div>
+                                            <div class="col-sm-2 no-padding-left">
+                                                <div class="glyphicon glyphicon-text-size icon-list-border"></div>
+                                            </div>
+                                        </div>
+                                        <p class="box-size">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut fringilla libero. Nullam a rhoncus.</p>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col-sm-10 no-padding-right">
+                                                <h5 class="title-border">third</h5>
+                                            </div>
+                                            <div class="col-sm-2 no-padding-left">
+                                                <div class="glyphicon  glyphicon-stats icon-list-border"></div>
+                                            </div>
+                                        </div>
+                                        <p class="box-size">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-sm-8">
-                            <div class="col-contint col-contint-taps inner-contint">
-                                <h5 class ="title form-section"> Lists with images </h5>
-                                <ul class="list-group">
-                                    <li class="list-group-item"><img class="list-image" src="assets/images/Sami.jpg">First item <span class="label label-success nav-lbl">New</span></li>
-                                    <li class="list-group-item"><img class="list-image" src="assets/images/Sami.jpg">Second item <span class="label label-success nav-lbl">New</span></li>
-                                    <li class="list-group-item"><img class="list-image" src="assets/images/Sami.jpg">Third item <span class="label label-success nav-lbl">New</span></li>
-                                </ul>
-                            </div>
-                        </div>
+                        <h6 class="made-by">Made By  <b>New Versions</b></h6>
                     </div>
                 </div>
                 <!-- /#page-content-wrapper -->
@@ -401,7 +528,9 @@
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/main.js"></script>
         <script src="assets/js/notifications_boxs.js"></script>
-        <script src="assets/vendors/toastr/toastr.js"></script>
-        <script src="assets/vendors/sweet-alert/sweetalert.min.js"></script>
+        <script src="assets/vendors/toggle/bootstrap-switch.js"></script>
+        <script>
+            $("[name='my-checkbox']").bootstrapSwitch();
+        </script>
     </body>
 </html>

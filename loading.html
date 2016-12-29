@@ -231,46 +231,85 @@
             <div id="page-content-wrapper">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="col-contint col-contint-taps">
-                                <h5 class ="title">Progress</h5>
-                                <p class="inner-contint">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt metus odio, at congue tellus
-                                dignissim eget. Vestibulum nec faucibus eros. In libero augue, volutpat vitae ex quis, tincidunt finibus
-                                risus. Curabitur facilisis nec erat eu commodo. Integer maximus eros non mi mattis, sit amet molestie
-                                dui.Curabitur facilisis nec erat eu commodo. Integer maximus eros non mi mattis, sit amet molestie dui
-                                Curabitur facilisis nec erat eu commodo. Integer maximus eros non mi mattis, sit amet molestie dui. Integer
-                                maximus eros non mi mattis, sit amet molestie.
-                                dui.Curabitur facilisis nec erat eu commodo. Integer maximus eros non mi mattis, sit amet molestie dui
-                                Curabitur facilisis nec erat eu commodo. Integer maximus eros non mi mattis, sit amet molestie dui.
-                                Integer maximus eros non mi mattis, sit amet molestie dui
-                                Curabitur facilisis nec erat eu commodo. Integer maximus eros non mi mattis.
-                                </p>
+                        <div class="col-md-12">
+                            <div class="col-contint body-header">
+                                <h4 class ="title"> Loaders </h4>
+                                <br>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla consequat massa egestas fermentum. Maecenas quis est ac ante hendrerit.</p>
                             </div>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-6">
-                            <div class="col-contint col-contint-taps">
-                                <label class="form-labels line-progress">Basic line</label>
+                            <div class="col-contint col-contint-taps static-height">
+                                <h5 class="title form-section">Progress bars</h5>
+                                <br>
+                                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rutrum pellentesque magna eget scelerisque. Quisque.</p>
+                                <br>
                                 <div class="row">
-                                    <div id="line"></div>
+                                    <div class="col-sm-12">
+                                        <h5 class="medium-title">Simple bar </h5>
+                                    </div>
                                 </div>
                                 <div class="row">
-                                    <button id="BarGenerate" type="button" class="btn btn-default center-block">Generate</button>                  
-                                </div>
-                                <label class="form-labels colored-progress">Color animation</label>
-                                <div class="row">
-                                    <div id="colored"></div>
-                                </div>
-                                <div class="row">
-                                    <button id="ColorGenerate" type="button" class="btn btn-default center-block">Generate</button>
-                                </div>
-                                <label class="form-labels percent-progress">Percent line</label>
-                                <div class="row">
-                                    <div id="percent"></div>
+                                    <div class="col-sm-11 button-sync">
+                                        <div id="line"></div>
+                                    </div>
+                                    <div class="col-sm-1">
+                                        <span id="BasicLGenerate" class="glyphicon glyphicon-cog"></span>
+                                    </div>
                                 </div>
                                 <div class="row">
-                                    <button id="PercentGenerate" type="button" class="btn btn-default center-block">Generate</button>
+                                    <div class="col-sm-12">
+                                        <h5 class="medium-title">Colored bar </h5>
+                                    </div>
                                 </div>
+                                <div class="row">
+                                    <div class="col-sm-11 button-sync">
+                                        <div id="colored"></div>
+                                    </div>
+                                    <div class="col-sm-1">
+                                        <span id="ColorGenerate" class="glyphicon glyphicon-cog"></span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <h5 class="medium-title">Percentage bar </h5>
+                                    </div>
+                                </div> 
+                                <div class="row">
+                                    <div class="col-sm-11 button-sync">
+                                        <div id="percent"></div>
+                                    </div>
+                                    <div class="col-sm-1">
+                                        <span id="PercentGenerate" class="glyphicon glyphicon-cog"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="col-contint col-contint-taps static-height">
+                                <h5 class="title form-section">Color options</h5>
+                                <br>
+                                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rutrum pellentesque magna eget scelerisque. Quisque.</p>
+                                <br>
+                                <div id="BasicInfoLine"></div><br>
+                                <div id="BasicSuccessLine"></div><br>
+                                <div id="BasicPrimaryLine"></div><br>
+                                <div id="BasicWarningLine"></div><br>
+                                <div id="BasicDangerLine"></div><br>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="col-contint col-contint-taps static-height">
+                                <h5 class="title form-section">Bar sizes</h5>
+                                <br>
+                                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rutrum pellentesque magna eget scelerisque. Quisque.</p>
+                                <br>
+                                <code>.progress-thick</code>
+                                <div id="BasicthickLine" class="progress-thick"></div>
+                                <code>.progress-thin</code>
+                                <div id="BasicthinLine" class="progress-thin"></div>
                             </div>
                         </div>
                     </div>
@@ -278,124 +317,80 @@
                         <div class="col-md-6">
                             <div class="col-contint col-contint-taps">
                                 <h5 class ="title">Circle progress</h5>
-                                <p class="inner-contint">
+                                <br>
+                                <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 </p>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <select class="form-control" id="progress-select" name="progress-select">
-                                            <option value="basic">Basic circle</option>
-                                            <option value="bounce">Bounce easing</option>
-                                            <option value="multiple">Multiple properties</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <label class="color-label">Color:</label>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <input type="color" id="Color" value="#ff0000">
-                                    </div>
-                                </div>
+
+                                <label class="small-label">Select type:</label>
+                                <select class="form-control" id="progress-select" name="progress-select">
+                                    <option value="basic">Basic circle</option>
+                                    <option value="bounce">Bounce easing</option>
+                                    <option value="multiple">Multiple properties</option>
+                                    <option value="Semi">Basic Semicircle</option>
+                                    <option value="SemiText">Semicircle with text</option>
+                                </select>
+                                <label class="small-label">Select color:</label>
+                                <input type="color" id="Color" value="#3498db">
+                                <span id="circleGenerate" class="glyphicon glyphicon-cog"></span>
                                 <div id="progress-container" class="center-block">
-                                    
                                 </div>
-                                <button id="circleGenerate" type="button" class="btn btn-default center-block">Generate</button>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="col-contint col-contint-taps">
-                                <h5 class="title">Circle progress</h5>
-                                <p class="inner-contint">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                </p>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <select class="form-control" id="progress-select" name="semi-select">
-                                            <option value="Semi">Basic Semicircle</option>
-                                            <option value="SemiText">Semicircle with text</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <label class="color-label">Color:</label>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <input type="color" id="ColorS" value="#ff0000">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="col-contint col-contint-taps">
+                                        <h5 class ="title">Placeholder loader</h5>
+                                        <br>
+                                        <div class="timeline-item">
+                                          <div class="animated-background facebook">
+                                            <div class="background-masker header-top"></div>
+                                            <div class="background-masker header-left"></div>
+                                            <div class="background-masker header-right"></div>
+                                            <div class="background-masker header-bottom"></div>
+                                            <div class="background-masker subheader-left"></div>
+                                            <div class="background-masker subheader-right"></div>
+                                            <div class="background-masker subheader-bottom"></div>
+                                            <div class="background-masker content-top"></div>
+                                            <div class="background-masker content-first-end"></div>
+                                            <div class="background-masker content-second-line"></div>
+                                            <div class="background-masker content-second-end"></div>
+                                            <div class="background-masker content-third-line"></div>
+                                            <div class="background-masker content-third-end"></div>
+                                          </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div id="semi-progress-container" class="center-block">
-                                
-                                </div>
-                                <button id="semi-circleGenerate" type="button" class="btn btn-default center-block">Generate</button>
                             </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="col-contint col-contint-taps">
-                                <h5 class ="title form-section">Loaders and spinners</h5>
-                                <div class="col-md-3">
-                                    <div class="panel panel-default">
-                                        <div id="basicspinner" class="panel-body">
-                                            <div class="preloader-wrapper loader-position hide-loader active">
-                                                <div class="spinner-layer spinner-blue-only">
-                                                  <div class="circle-clipper left">
-                                                    <div class="circle"></div>
-                                                  </div><div class="gap-patch">
-                                                    <div class="circle"></div>
-                                                  </div><div class="circle-clipper right">
-                                                    <div class="circle"></div>
-                                                  </div>
-                                                </div>
-                                            </div>
-                                            <div id="overlay" class="">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper odio sit amet mi
-                                                ultrices
-                                                consequat. Vestibulum et lacinia mauris. Phasellus imperdiet lobortis dictum.
-                                                Lorem ipsum dolor sit amet.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <button id="spinner" type="button" class="btn btn-default">Generate</button>                         
-                                </div>
-                                <div class="col-md-5">
-                                    <div class="panel panel-default">
-                                        <div id="basicspinner-dots" class="panel-body"> 
-                                            <div class="preloader-wrapper big big-loader-position hide-loader active">
-                                                <div class="spinner-layer spinner-blue-only">
-                                                    <div class="circle-clipper left">
-                                                      <div class="circle"></div>
-                                                    </div><div class="gap-patch">
-                                                      <div class="circle"></div>
-                                                    </div><div class="circle-clipper right">
-                                                      <div class="circle"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div id="dots-overlay">
-                                                <label>Username</label>
-                                                <input id="username" type="text" class="form-control">
-                                                <label>Password</label>
-                                                <input id="password" type="password" class="form-control">
-                                                <button id="spinner-dot" type="button" class="btn btn-default">Login</button>    
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="panel panel-default">
-                                        <div id="progress-bar" class="progress hide-loader">
+                            
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="col-contint col-contint-taps">
+                                        <h5 class ="title">Indeterminate loader</h5>
+                                        <br>
+                                        <div id="progress-bar" class="progress">
                                               <div class="indeterminate"></div>
                                         </div>
-                                        <img src="assets/images/demo.jpg" class="image-bar"><br>
+                                        <div class="preloader-wrapper loader-position active">
+                                            <div class="spinner-layer spinner-blue-only">
+                                              <div class="circle-clipper left">
+                                                <div class="circle"></div>
+                                              </div><div class="gap-patch">
+                                                <div class="circle"></div>
+                                              </div><div class="circle-clipper right">
+                                                <div class="circle"></div>
+                                              </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <button id="loading-bar" type="button" class="btn btn-default append">Redirect</button> 
                                 </div>
                             </div>
                         </div>
                     </div>
                 <!-- /#page-content-wrapper -->
             </div>
-                     
+            </div>    
             <!-- /#wrapper -->
             <div id="Right-Side-Section">
                 <div id="Right-Side-Section-Togle">
