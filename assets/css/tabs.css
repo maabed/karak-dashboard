@@ -14,6 +14,7 @@
     border-radius: 0px;
     color: #707A7A;
 }
+
 div.bhoechie-tab-menu div.list-group > a.active:after{
     content: '';
     position: absolute;
