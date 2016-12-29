@@ -4,12 +4,14 @@
 .bootstrap-tagsinput{
     padding-bottom: 6px;
 }
+.cancel-send{
+    margin-right: 10px;
+}
+.forgot-password{
+    margin-right: 20px;
+}
 .description{
     padding: 15px 15px 0px 15px;
-}
-
-.third-section>.mediumtitle{
-    margin-top: 15px;
 }
 .group-content{
     margin-left: 0px;
@@ -27,9 +29,7 @@
     padding-right: 15px;
 }
 .text-editor-design{
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 15px;
+    padding-top: 5px;
 }
 .largetitle
 {
@@ -174,7 +174,7 @@ input.cmn-toggle-roundBlue + label:after {
     transition: margin 0.1s;
 }
 input.cmn-toggle-roundBlue:checked + label:before {
-    background-color: #7dcbf2;
+    background-color: #3498db;
 }
 input.cmn-toggle-roundBlue:checked + label:after {
     margin-left: 20px;
@@ -211,7 +211,7 @@ input.cmn-toggle-roundPink + label:after {
     transition: margin 0.1s;
 }
 input.cmn-toggle-roundPink:checked + label:before {
-    background-color: #FF7791;
+    background-color: #e74c3c;
 }
 input.cmn-toggle-roundPink:checked + label:after {
     margin-left: 20px;
@@ -248,7 +248,7 @@ input.cmn-toggle-roundGreen1 + label:after {
     transition: margin 0.1s;
 }
 input.cmn-toggle-roundGreen1:checked + label:before {
-    background-color: #3CC8AD;
+    background-color: #34495e;
 }
 input.cmn-toggle-roundGreen1:checked + label:after {
     margin-left: 20px;
@@ -285,7 +285,7 @@ input.cmn-toggle-roundRed + label:after {
     transition: margin 0.1s;
 }
 input.cmn-toggle-roundRed:checked + label:before {
-    background-color: #DB5554;
+    background-color: #ffffff;
 }
 input.cmn-toggle-roundRed:checked + label:after {
     margin-left: 20px;
@@ -361,7 +361,7 @@ input.cmn-toggle-roundGreen+ label:after {
     transition: margin 0.1s;
 }
 input.cmn-toggle-roundGreen:checked + label:before {
-    background-color: #8ce196;
+    background-color: #2ecc71;
 }
 input.cmn-toggle-roundGreen:checked + label:after {
     margin-left: 20px;
@@ -385,10 +385,6 @@ input.cmn-toggle-roundGreen:checked + label:after {
     padding-left: 15px;
     padding-bottom: 17px;
 }
-.form-labels{
-    font-weight: 600;
-    font-family: Arial;
-}
 .group-parent{
     background-color: #fff;
 }
@@ -399,15 +395,12 @@ input.cmn-toggle-roundGreen:checked + label:after {
     padding-right: 0px;
 }
 .first-third{
-    padding-top: 15px;
     padding-left: 0px;
 }
 .second-third{
-    padding-top: 15px;
     padding-left: 0px;
 }
 .last-third{
-    padding-top: 15px;
     padding-left: 0px;
     padding-right: 0px;
 }
@@ -452,7 +445,6 @@ input.cmn-toggle-roundGreen:checked + label:after {
 .dropzone-min{
     padding-top: 10px;
     min-height: 410px;
-    background-color: #f8f8f8;
 }
 .top{
     padding-bottom: 15px !important;
@@ -471,7 +463,7 @@ input.cmn-toggle-roundGreen:checked + label:after {
     border-radius: 6px;
 }
 .DragNdrop{
-    padding: 0px 0px 0px 0px;
+    padding: 0px;
 }
 .user-icon{
     position: relative;
@@ -508,6 +500,7 @@ input.cmn-toggle-roundGreen:checked + label:after {
 }
 .password-input {
     padding-left: 35px;
+    width: 106%;
 }
 .password-label {
     position: relative;
@@ -591,6 +584,8 @@ label{
     display: block;
     line-height: 30px;
     font-size: 13px;
+    font-family: Arial;
+    color: #707A7A;
 }
 .filter-option {
     color: #dddddd;
@@ -706,4 +701,22 @@ label{
 }
 .largetitle{
     padding-bottom: 0px !important;
+}
+.no-padding-left{
+    padding-left: 0px;
+}
+.no-padding-right{
+    padding-right: 0px;
+}
+.header-text{
+    text-align: justify;
+}
+.c-1-color { background: #2ecc71; }
+.c-2-color { background: #3498db; }
+.c-3-color { background: #f1c40f; }
+.c-4-color { background: #34495e; }
+.c-5-color { background: #e74c3c; }
+h6{
+    margin-top: 0px;
+    margin-bottom: 10px;
 }

@@ -1,4 +1,4 @@
-﻿/// <reference path="data_table.js" />
+/// <reference path="data_table.js" />
 /// <reference path="data_table.js" />
 $(document).ready(function () {
     $('#table_id').DataTable();
@@ -18,7 +18,7 @@ $(document).ready(function () {
         }
     };
     $('#ajax_table').DataTable({
-        ajax: 'assets/ajax/object.txt',
+        ajax: '../ajax/object.txt',
         columns: [
             { data: 'name' },
             { data: 'position' },
@@ -90,7 +90,7 @@ function format(d) {
 
 $(document).ready(function () {
     var table = $('#detailed_table').DataTable({
-        "ajax": "../ajax/object2.txt",
+        "ajax": "assets/ajax/object2.txt",
         "columns": [
             {
                 "className": 'details-control',
@@ -122,4 +122,23 @@ $(document).ready(function () {
             tr.addClass('shown');
         }
     });
+});
+$(document).ready(function(){
+    $(".buttons-copy").attr("id","copy-button");
+    $("#copy-button").removeAttr("class");
+    $("#copy-button").addClass("btn btn-default outline-default");
+    $("#copy-button").append("<i id='Copy-table-icon' class='fa fa-files-o' aria-hidden='true'></i>");
+
+    
+    $(".buttons-excel").attr("id","excel-button");
+    $("#excel-button").removeAttr("class");
+    $("#excel-button").addClass("btn btn-success dashboard-success");
+    $("#excel-button").append("<i id='Excel-table-icon' class='fa fa-file-excel-o' aria-hidden='true'></i>");
+
+    
+    $(".buttons-pdf").attr("id","pdf-button");
+    $("#pdf-button").removeAttr("class");
+    $("#pdf-button").addClass("btn btn-danger dashboard-danger");
+    $("#pdf-button").append("<i id='Pdf-table-icon' class='fa fa-file-pdf-o' aria-hidden='true'></i>");
+
 });

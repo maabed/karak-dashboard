@@ -1,4 +1,4 @@
-﻿$("#menu-toggle").click(function (e) {
+$("#menu-toggle").click(function (e) {
     e.preventDefault();
     $("#wrapper").toggleClass("toggled");
 });
@@ -45,4 +45,8 @@ function closeToggel() {
     $('#Right-Side-Section-Togle').show(0);
 }
 
+// Left side section
+$("#left-Side-Section-Togle").click(function(){
+    $(".InboxLeftSide").toggleClass("show-left");
+});
 

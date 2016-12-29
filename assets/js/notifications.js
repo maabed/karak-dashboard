@@ -2,27 +2,41 @@ $(document).ready(function () {
     /* Bootstrap alerts */
     $("#alert-generate").click(function () {
         if ($("#alert-select").val() == "success") {
-            $(".alerts-container").prepend("<div class='alert alert-success alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>×</a>This alert box could indicate a successful or positive action.</div>")
+            $(".alert").remove();
+            $("body").prepend("<div class='alert alert-success global-alert alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>×</a>This alert box could indicate a successful or positive action.</div>");
+            setTimeout(function(){
+                $('.alert-success').fadeOut();
+            }, 2000);
         }
         else if ($("#alert-select").val() == "info") {
-            $(".alerts-container").prepend("<div class='alert alert-info alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>×</a>This alert box indicates an informative change or action.</div>")
+            $(".alert").remove();
+            $("body").prepend("<div class='alert alert-info global-alert alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>×</a>This alert box indicates an informative change or action.</div>");
+            setTimeout(function(){
+                $('.alert-info').fadeOut();
+            }, 2000);
         }
         else if ($("#alert-select").val() == "warning") {
-            $(".alerts-container").prepend("<div class='alert alert-warning alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>×</a>This alert box indicates a warning.</div>")
+            $(".alert").remove();
+            $("body").prepend("<div class='alert alert-warning global-alert alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>×</a>This alert box indicates a warning.</div>");
+            setTimeout(function(){
+                $('.alert-warning').fadeOut();
+            }, 2000);
         }
         else {
-            $(".alerts-container").prepend("<div class='alert alert-danger alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>×</a>This alert box indicates a potentially negative action.</div>")
+            $(".alert").remove();
+            $("body").prepend("<div class='alert alert-danger global-alert alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>×</a>This alert box indicates a potentially negative action.</div>");
+            setTimeout(function(){
+                $('.alert-danger').fadeOut();
+            }, 2000);
         }
     });
     
     
     
     /* Toastr alerts */
-    $("#toastr-generate").click(function (event) {
+    $("#right").click(function (event) {
         event.stopPropagation();
         toastr.remove();
-        var value = $('select[name=toastr-select]').val();
-        if (value == "TopRight") {
             toastr.options = {
                 "positionClass": "toast-top-right",
                 "onclick": null,
@@ -33,8 +47,10 @@ $(document).ready(function () {
                 "hideMethod": "fadeOut"
             }
             toastr["success"]("Top Right!")
-        }
-        else if (value == "BottomRight") {
+    });
+    $("#img-right").click(function (event) {
+        event.stopPropagation();
+        toastr.remove();
             toastr.options = {
                 "positionClass": "toast-bottom-right",
                 "onclick": null,
@@ -45,8 +61,12 @@ $(document).ready(function () {
                 "hideMethod": "fadeOut"
             }
             toastr["info"]("Bottom Right!")
-        }
-        else if (value == "BottomLeft") {
+        });
+    
+    
+    $("#img-left").click(function (event) {
+        event.stopPropagation();
+        toastr.remove();
             toastr.options = {
                 "positionClass": "toast-bottom-left",
                 "onclick": null,
@@ -57,8 +77,12 @@ $(document).ready(function () {
                 "hideMethod": "fadeOut"
             }
             toastr["warning"]("Bottom Left!")
-        }
-        else if (value == "TopLeft") {
+        });
+    
+    
+    $("#left").click(function (event) {
+        event.stopPropagation();
+        toastr.remove();
             toastr.options = {
                 "positionClass": "toast-top-left",
                 "onclick": null,
@@ -69,8 +93,12 @@ $(document).ready(function () {
                 "hideMethod": "fadeOut"
             }
             toastr["error"]("Top Left!")
-        }
-        else if (value == "TopFull") {
+        });
+    
+    
+    $("#full").click(function (event) {
+        event.stopPropagation();
+        toastr.remove();
             toastr.options = {
                 "positionClass": "toast-top-full-width",
                 "onclick": null,
@@ -81,8 +109,12 @@ $(document).ready(function () {
                 "hideMethod": "fadeOut"
             }
             toastr["success"]("top full width!")
-        }
-        else if (value == "BottomFull") {
+        });
+    
+    
+    $("#img-full").click(function (event) {
+        event.stopPropagation();
+        toastr.remove();
             toastr.options = {
                 "positionClass": "toast-bottom-full-width",
                 "onclick": null,
@@ -93,8 +125,12 @@ $(document).ready(function () {
                 "hideMethod": "fadeOut"
             }
             toastr["info"]("bottom full width!")
-        }
-        else if (value == "TopCenter") {
+        });
+    
+    
+    $("#center").click(function (event) {
+        event.stopPropagation();
+        toastr.remove();
             toastr.options = {
                 "positionClass": "toast-top-center",
                 "onclick": null,
@@ -105,8 +141,12 @@ $(document).ready(function () {
                 "hideMethod": "fadeOut"
             }
             toastr["warning"]("Top Center!")
-        }
-        else if (value == "BottomCenter") {
+        });
+    
+    
+    $("#img-center").click(function (event) {
+        event.stopPropagation();
+        toastr.remove();
             toastr.options = {
                 "positionClass": "toast-bottom-center",
                 "onclick": null,
@@ -117,18 +157,23 @@ $(document).ready(function () {
                 "hideMethod": "fadeOut"
             }
             toastr["error"]("Bottom Center!")
-        }
-    });
+        });
+        
+ ////////////////////////////////////////////      
+
 
     /* Sweet alerts */
+    $("#sweet-generate").click(function () {
+        if ($("#sweet-select").val() == "basic") {
+            swal("Here's a message!");
+        }
 
-    $('#basic').click(function () {
-        swal("Here's a message!")
-    });
-    $("#success").click(function () {
+    else if ($("#sweet-select").val() == "success") {
         swal("Good job!", "You clicked the button!", "success");
-    });
-    $("#warning").click(function () {
+    }
+        
+        
+    else if ($("#sweet-select").val() == "warning") {
         swal({
             title: "Are you sure?",
             text: "You will not be able to recover this imaginary file!",
@@ -141,8 +186,9 @@ $(document).ready(function () {
         function () {
             swal("Deleted!", "Your imaginary file has been deleted.", "success");
         });
-    });
-    $('#execute').click(function () {
+    }
+
+    else if ($("#sweet-select").val() == "execute") {
         swal({
             title: "Are you sure?",
             text: "You will not be able to recover this imaginary file!",
@@ -161,32 +207,34 @@ $(document).ready(function () {
                 swal("Cancelled", "Your imaginary file is safe :)", "error");
             }
         });
-    });
+    }
 
     /*second row*/
-    $('#custom').click(function () {
+    else if ($("#sweet-select").val() == "custom") {
         swal({
             title: "Sweet!",
             text: "Here's a custom image.",
             imageUrl: "assets/images/notifications/thumbs-up.jpg"
         });
-    });
-    $('#HTML').click(function () {
+    }
+ 
+
+    else if ($("#sweet-select").val() == "HTML") {
         swal({
             title: "HTML <small>Title</small>!",
             text: "A custom <span style='color:#F8BB86'>html<span> message.",
             html: true
         });
-    });
-    $('#Timer').click(function () {
+    }
+    else if ($("#sweet-select").val() == "Auto") {
         swal({
             title: "Auto close alert!",
             text: "I will close in 2 seconds.",
             timer: 2000,
             showConfirmButton: false
         });
-    });
-    $('#Prompt').click(function () {
+    }
+    else if ($("#sweet-select").val() == "Prompt") {
         swal({
             title: "An input!",
             text: "Write something interesting:",
@@ -205,10 +253,90 @@ $(document).ready(function () {
             }
             swal("Nice!", "You wrote: " + inputValue, "success");
         });
+    }
     });
 
     /*Tooltips*/
 
     $('[data-toggle="tooltip"]').tooltip();
+    
+    
+    //////////////////////////////////////////////////////////////
+    
+    
+    $('.top-left').mouseenter(function(){
+        $('#view-left').fadeIn(50);
+        $('#left').css('opacity','0.5');
+    });
+    $('.top-left').mouseleave(function(){
+        $('#view-left').fadeOut(50);
+        $('#left').css('opacity','1');
+    });
+    
+    $('.top-right').mouseenter(function(){
+        $('#view-right').fadeIn(50);
+        $('#right').css('opacity','0.5');
+    });
+    $('.top-right').mouseleave(function(){
+        $('#view-right').fadeOut(50);
+        $('#right').css('opacity','1');
+    });
+    
+    $('.top-center').mouseenter(function(){
+        $('#view-center').fadeIn(50);
+        $('#center').css('opacity','0.5');
+    });
+    $('.top-center').mouseleave(function(){
+        $('#view-center').fadeOut(50);
+        $('#center').css('opacity','1');
+    });
+    
+    $('.top-full').mouseenter(function(){
+        $('#view-full').fadeIn(50);
+        $('#full').css('opacity','0.5');
+    });
+    $('.top-full').mouseleave(function(){
+        $('#view-full').fadeOut(50);
+        $('#full').css('opacity','1');
+    });
+    
+    
+    /* second row */
+    
+    $('.bottom-left').mouseenter(function(){
+        $('#b-left').fadeIn(50);
+        $('#img-left').css('opacity','0.5');
+    });
+    $('.bottom-left').mouseleave(function(){
+        $('#b-left').fadeOut(50);
+        $('#img-left').css('opacity','1');
+    });
+    
+    $('.bottom-right').mouseenter(function(){
+        $('#b-right').fadeIn(50);
+        $('#img-right').css('opacity','0.5');
+    });
+    $('.bottom-right').mouseleave(function(){
+        $('#b-right').fadeOut(50);
+        $('#img-right').css('opacity','1');
+    });
+    
+    $('.bottom-center').mouseenter(function(){
+        $('#b-center').fadeIn(50);
+        $('#img-center').css('opacity','0.5');
+    });
+    $('.bottom-center').mouseleave(function(){
+        $('#b-center').fadeOut(50);
+        $('#img-center').css('opacity','1');
+    });
+    
+    $('.bottom-full').mouseenter(function(){
+        $('#b-full').fadeIn(50);
+        $('#img-full').css('opacity','0.5');
+    });
+    $('.bottom-full').mouseleave(function(){
+        $('#b-full').fadeOut(50);
+        $('#img-full').css('opacity','1');
+    });
 
 });

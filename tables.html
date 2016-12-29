@@ -20,6 +20,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/tables.css">
 </head>
 <body>
     <div id="wrapper">
@@ -222,18 +223,18 @@
         <div id="page-content-wrapper">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-sm-8">
+                    <div class="col-md-8">
                         <div class="col-contint">
-                            <h5 class="title">Bbasic Table</h5>
+                            <h5 class="title">Basic Table</h5>
                             <br />
                             <table class="table table-responsive">
-                                <thead class="table-head">
+                                <thead class="table-head dashboard-info">
                                     <tr>
-                                        <th>First name</th>
-                                        <th>Last name</th>
-                                        <th>Email</th>
-                                        <th>Phone</th>
-                                        <th>Country</th>
+                                        <th class="dashboard-th">First name</th>
+                                        <th class="dashboard-th">Last name</th>
+                                        <th class="dashboard-th">Email</th>
+                                        <th class="dashboard-th">Phone</th>
+                                        <th class="dashboard-th">Country</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -283,7 +284,7 @@
                             </table>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-md-4">
                         <div class="col-contint">
                             <h5 class="title">Basic Table With Hover</h5>
                             <br />
@@ -297,32 +298,32 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>John</td>
+                                        <td><b>John</b></td>
                                         <td>Doe</td>
                                         <td>5555555</td>
                                     </tr>
                                     <tr>
-                                        <td>Mary</td>
+                                        <td><b>Mary</b></td>
                                         <td>Moe</td>
                                         <td>446166516</td>
                                     </tr>
                                     <tr>
-                                        <td>July</td>
+                                        <td><b>July</b></td>
                                         <td>Dooley</td>
                                         <td>5578255</td>
                                     </tr>
                                     <tr>
-                                        <td>Garth</td>
+                                        <td><b>Garth</b></td>
                                         <td>Moe</td>
                                         <td>4478215</td>
                                     </tr>
                                     <tr>
-                                        <td>Raya</td>
+                                        <td><b>Raya</b></td>
                                         <td>Abraham</td>
                                         <td>55784245</td>
                                     </tr>
                                     <tr>
-                                        <td>Mosa</td>
+                                        <td><b>Mosa</b></td>
                                         <td>Ahmed</td>
                                         <td>545755</td>
                                     </tr>
@@ -331,8 +332,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row section-margin">
-                    <div class="col-sm-4">
+                <div class="row">
+                    <div class="col-md-4">
                         <div class="col-contint">
                             <h5 class="title">Bordered Table</h5>
                             <br />
@@ -379,7 +380,7 @@
                             </table>
                         </div>
                     </div>
-                    <div class="col-sm-8">
+                    <div class="col-md-8">
                         <div class="col-contint">
                             <h5 class="title">Striped  Table</h5>
                             <br />
@@ -427,8 +428,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row section-margin">
-                    <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-md-12">
                         <div class="col-contint">
                             <h5 class="title">Bordered Striped Table</h5>
                             <br />
@@ -488,6 +489,145 @@
                                 </tbody>
                             </table>
                         </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                    <div class="col-contint col-contint-taps">
+                        <h5 class="title">Colored table head</h5>
+                    <div class="col-md-4">
+                        <br />
+                        <table class="table table-responsive table-bordered">
+                            <thead class="table-head dashboard-success">
+                                <tr>
+                                    <th class="dashboard-th">First name</th>
+                                    <th class="dashboard-th">Last name</th>
+                                    <th class="dashboard-th">Phone</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>John</td>
+                                    <td>Doe</td>
+                                    <td>5555555</td>
+                                </tr>
+                                <tr>
+                                    <td>Mary</td>
+                                    <td>Moe</td>
+                                    <td>446166516</td>
+                                </tr>
+                                <tr>
+                                    <td>July</td>
+                                    <td>Dooley</td>
+                                    <td>5578255</td>
+                                </tr>
+                                <tr>
+                                    <td>Garth</td>
+                                    <td>Moe</td>
+                                    <td>4478215</td>
+                                </tr>
+                                <tr>
+                                    <td>Raya</td>
+                                    <td>Abraham</td>
+                                    <td>55784245</td>
+                                </tr>
+                                <tr>
+                                    <td>Mosa</td>
+                                    <td>Ahmed</td>
+                                    <td>545755</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-4">
+                        <br />
+                        <table class="table table-responsive table-bordered">
+                            <thead class="table-head dashboard-warning">
+                                <tr>
+                                    <th class="dashboard-th">First name</th>
+                                    <th class="dashboard-th">Last name</th>
+                                    <th class="dashboard-th">Phone</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>John</td>
+                                    <td>Doe</td>
+                                    <td>5555555</td>
+                                </tr>
+                                <tr>
+                                    <td>Mary</td>
+                                    <td>Moe</td>
+                                    <td>446166516</td>
+                                </tr>
+                                <tr>
+                                    <td>July</td>
+                                    <td>Dooley</td>
+                                    <td>5578255</td>
+                                </tr>
+                                <tr>
+                                    <td>Garth</td>
+                                    <td>Moe</td>
+                                    <td>4478215</td>
+                                </tr>
+                                <tr>
+                                    <td>Raya</td>
+                                    <td>Abraham</td>
+                                    <td>55784245</td>
+                                </tr>
+                                <tr>
+                                    <td>Mosa</td>
+                                    <td>Ahmed</td>
+                                    <td>545755</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-4">
+                        <br />
+                        <table class="table table-responsive table-bordered">
+                            <thead class="table-head dashboard-primary">
+                                <tr>
+                                    <th class="dashboard-th">First name</th>
+                                    <th class="dashboard-th">Last name</th>
+                                    <th class="dashboard-th">Phone</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>John</td>
+                                    <td>Doe</td>
+                                    <td>5555555</td>
+                                </tr>
+                                <tr>
+                                    <td>Mary</td>
+                                    <td>Moe</td>
+                                    <td>446166516</td>
+                                </tr>
+                                <tr>
+                                    <td>July</td>
+                                    <td>Dooley</td>
+                                    <td>5578255</td>
+                                </tr>
+                                <tr>
+                                    <td>Garth</td>
+                                    <td>Moe</td>
+                                    <td>4478215</td>
+                                </tr>
+                                <tr>
+                                    <td>Raya</td>
+                                    <td>Abraham</td>
+                                    <td>55784245</td>
+                                </tr>
+                                <tr>
+                                    <td>Mosa</td>
+                                    <td>Ahmed</td>
+                                    <td>545755</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    </div>
                     </div>
                 </div>
                 <h6 class="made-by">Made By  <b>New Versions</b></h6>

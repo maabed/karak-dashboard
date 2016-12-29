@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Table styles
  */
 table.dataTable {
@@ -14,11 +14,25 @@ table.dataTable {
    * Body styles
    */
 }
-
+#Copy-table-icon{
+    float: left;
+    margin-top: 2px;
+    margin-right: 7px;
+}
+#Excel-table-icon{
+    float: left;
+    margin-top: 2px;
+    margin-right: 7px;
+}
+#Pdf-table-icon{
+    float: left;
+    margin-top: 2px;
+    margin-right: 7px;
+}
     table.dataTable thead th,
     table.dataTable tfoot th {
-        font-weight: bold;
-        color: #3b97d2 !important;
+        font-weight: normal;
+        color: #fff !important;
     }
 
     table.dataTable thead th,
@@ -531,4 +545,7 @@ table.dataTable {
     .dataTables_wrapper .dataTables_filter {
         margin-top: 0.5em;
     }
+}
+tfoot input {
+    border: 1px solid #ddd;
 }

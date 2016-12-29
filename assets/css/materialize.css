@@ -197,3 +197,74 @@ i.right {
   font-weight: 400;
   src: local('Material Icons'), local('MaterialIcons-Regular'), url(http://fonts.gstatic.com/s/materialicons/v19/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format('woff2');
 }
+.range-field {
+    position: relative;
+}
+input[type=range] {
+    border: 1px solid white;
+}
+input[type=range] {
+    -webkit-appearance: none;
+}
+input[type=range] {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    margin: 15px 0;
+    padding: 0;
+}
+input[type=range], input[type=range]+.thumb {
+    cursor: pointer;
+}
+.no-select, input[type=range], input[type=range]+.thumb {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+input[type="range" i] {
+    -webkit-appearance: slider-horizontal;
+    color: rgb(144, 144, 144);
+    padding: initial;
+    border: initial;
+    margin: 2px;
+}
+input[type="range" i] {
+    color: rgb(196, 196, 196);
+}
+input[type=range]+.thumb {
+    position: absolute;
+    border: none;
+    height: 0;
+    width: 0;
+    border-radius: 50%;
+    background-color: #26a69a;
+    top: 10px;
+    margin-left: -6px;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+input[type=range], input[type=range]+.thumb {
+    cursor: pointer;
+}
+.no-select, input[type=range], input[type=range]+.thumb {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+input[type=range]+.thumb .value {
+    display: block;
+    width: 30px;
+    text-align: center;
+    color: #26a69a;
+    font-size: 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

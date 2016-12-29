@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -19,13 +19,16 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script src="assets/js/vendors/jquery-1.12.3.js"></script>
     <link href="assets/css/input_style.css" rel="stylesheet" />
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
     <!--Calender-->
     <link href="assets/vendors/calender/fullcalendar.css" rel="stylesheet" />
     <!-- Tour -->
     <link href="assets/vendors/bootstrap-tour/bootstrap-tour.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!--Calender-->
+    <link href="assets/vendors/calender/calender_theme.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/index.css">
 </head>
 <body>
     <div id="wrapper">
@@ -228,17 +231,29 @@
         <a href="#" id="PageTitle">Dashboard  /  Interface</a>
         <div id="page-content-wrapper">
             <div class="container-fluid">
-                <button id="startTour" class="btn  btn-info dashboard-info btn-lg">Start tour</button>
                 <div class="row">
-                    <div class="col-sm-7" id="Transactions">
+                    <div class="col-md-8">
                         <div class="col-contint">
                             <p class="title" id="randomizeData">Transactions</p>
                             <canvas id="canvas"></canvas>
                         </div>
                     </div>
-                    <div class="col-sm-5 salse-img">
-                        <div class="col-contint">
-                            <img class="img-responsive" src="assets/images/salse.png" />
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <img class="img-responsive centerlize-reponsive" src="assets/images/salse.png" />
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="col-contint index-icons">
+                                    <i class="fa fa-chevron-up" aria-hidden="true"></i>15%
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>33%
+                                    <i class="fa fa-bar-chart" aria-hidden="true"></i>50%
+                                    <i class="fa fa-line-chart" aria-hidden="true"></i>90%
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -280,7 +295,6 @@
                                 <h4 class="lighter">Deposits</h4>
                             </div>
                         </div>
-
                     </div>
 
                     <div class="statistics-item" id="con2">
@@ -342,12 +356,25 @@
                         </div>
                     </div>
                 </div>
-
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="col-contint scroll-y">
+                            <p class="title">Calendar</p>
+                            <div id='calendar' class="calender-layout"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="col-contint map-height">
+                            <p class="title">Worldwide Annual Sales</p>
+                            <div id="container"></div>
+                        </div>
+                    </div>
+                </div>
                 <div class="row section-margin">
                     <div class="col-sm-4">
                         <div id="Low-trans" class="col-contint static-height">
                             <p class="title">Transactions</p>
-
+                                <div id="sankey"></div>
                         </div>
                     </div>
                     <div class="col-sm-4 activities">
@@ -597,8 +624,10 @@
         </div>
     </div>
 
+    
+    
+    <script src="assets/js/vendors/jquery-1.12.3.js"></script>
     <script src="assets/js/random_chart.js"></script>
-
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/vendors/bootstrap-tour/bootstrap-tour.min.js"></script>
     <script src="assets/js/main.js"></script>
@@ -606,7 +635,9 @@
     <script src="assets/js/notifications_boxs.js"></script>
     <script src="assets/js/taps.js"></script>
     <script src="assets/js/tour.js"></script>
-
+    <script src="assets/vendors/calender/jquery-ui.custom.min.js"></script>
+    <script src="assets/vendors/calender/fullcalendar.js"></script>
+    
 
     <!--Map-->
     <script src="assets/js/map.js"></script>
@@ -614,6 +645,10 @@
     <script src="https://code.highcharts.com/maps/modules/data.js"></script>
     <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
     <script src="https://code.highcharts.com/mapdata/custom/world.js"></script>
+
+    
+    <script src="assets/js/calender.js"></script>
+    <script src="assets/js/doughnut.js"></script>
 
 
 </body>

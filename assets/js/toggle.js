@@ -1,4 +1,4 @@
-﻿$('.single-tap-details').hide();
+$('.single-tap-details').hide();
 $('.toggle-icon').hide();
 $('.single-tap-title').click(function (e) {
 
@@ -16,9 +16,14 @@ $('.single-tap-title').click(function (e) {
     e.preventDefault();
     // hide all span
     var $this = $(this).parent().find('.toggle-icon2');
-    $(".toggle-icon2").not($this).hide(300);
+    $(".toggle-icon2").not($this).hide(100);
+    
+    var $this2 = $(this).parent().find('.toggle-icon1');
+    $(".toggle-icon1").not($this2).show(100);
+
     // here is what I want to do
-    $this.toggle(300);
+    $this.toggle(100);
+    $this2.toggle(100);
 
 });
 

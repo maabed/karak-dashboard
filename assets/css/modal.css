@@ -1,0 +1,89 @@
+.img-border{
+    border: 2px dashed #ccc;
+    padding: 10px;
+}
+.hide-modal{
+    display: none;
+    position: absolute;
+    font-size: 35px;
+    left: 45%;
+    top: 45%;
+    z-index: 999;
+    color: #999;
+}
+.view-modal{
+    position: absolute;
+    font-size: 35px;
+    left: 45%;
+    top: 45%;
+    z-index: 999;
+    display: block;
+    color: #999;
+}
+.overlay{
+    opacity: 0.5;
+}
+#standard{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#flat{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;   
+}
+#small{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#data{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#right{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#standard:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+#flat:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+#small:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+#data:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+#right:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+.modal-close{
+    float: left
+}
+.middle-modal{
+    top: 30%;
+}
+.flat-static{
+    height: 170px;
+}
+
+.positioning{
+    position: relative;
+    top: 45px;
+}
