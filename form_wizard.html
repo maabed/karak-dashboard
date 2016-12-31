@@ -299,9 +299,9 @@
                                         <div class="col-sm-6">
                                             <div class="form-group">
                                                 <label for="phone">Phone*</label>
-                                                <lable id="error-phone-lbl">This is not a valid phone number</lable>
+                                                <lable id="error-phone-lbl">Phone number must be 10 digits</lable>
                                                 <lable id="error-phone-lbl2">Enter phone number</lable>
-                                                <input placeholder="Enter Phone Number" type="text" class="form-control" id="phone">
+                                                <input onkeypress="return isNumber(event)" placeholder="Enter Phone Number" type="text" class="form-control" id="phone">
                                             </div>
                                         </div>
                                     </div>
@@ -592,7 +592,8 @@
                                         <div class="col-sm-12">
                                             <div class="form-group">
                                                 <label for="email">Name on Card*</label>
-                                                <input placeholder="Enter Name on Card" type="text" class="form-control" id="email">
+                                                <label for="name on card" id="error-nameoncard-lbl">Enter name on card</label>
+                                                <input placeholder="Enter Name on Card" type="text" class="form-control" id="nameoncard">
                                             </div>
                                         </div>
                                     </div>
@@ -600,37 +601,33 @@
                                         <div class="col-sm-6">
                                             <div class="form-group">
                                                 <label for="email">Card Number*</label>
-                                                <input placeholder="Enter Card Number" type="text" class="form-control" id="email">
+                                                <lable id="error-cardno-lbl">This is not a valid number</lable>
+                                                <lable id="error-cardno-lbl2">Enter card number</lable>
+                                                <input onkeypress="return isNumber(event)" placeholder="Enter Card Number" type="text" class="form-control" id="cardnumber">
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-group">
                                                 <label for="pwd">Billing Address*</label>
-                                                <input placeholder="Enter Billing Address" type="text" class="form-control" id="pwd">
+                                                <lable id="error-address-lbl">Enter billing address</lable>
+                                                <input placeholder="Enter Billing Address" type="text" class="form-control" id="address">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <div class="form-group">
-                                                <label for="pwd">CVC*</label>
-                                                <input placeholder="ex.381" type="text" class="form-control" id="pwd">
+                                                <label for="cvc">CVC*</label>
+                                                <lable id="error-cvc-lbl">This is not a valid cvc number</lable>
+                                                <lable id="error-cvc-lbl2">Enter cvc number</lable>
+                                                <input onkeypress="return isNumber(event)" placeholder="ex.381" type="text" class="form-control" maxlength="3" id="cvc" required>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
-                                            <div class="row">
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label for="pwd">Expiration*</label>
-                                                        <input placeholder="MM" type="text" class="form-control" id="pwd">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label class="unvisible" for="pwd">Expiration*</label>
-                                                        <input placeholder="YYYY" type="text" class="form-control" id="pwd">
-                                                    </div>
-                                                </div>
+                                            <div class="form-group">
+                                                <label for="pwd">Expiration*</label>
+                                                <lable id="error-date-lbl">Enter cvc number</lable>
+                                                <input placeholder="MM" type="date" class="form-control" maxlength="2" id="date" required>
                                             </div>
                                         </div>
                                     </div>
@@ -727,7 +724,7 @@
                         </div>
                         <ul class="pager wizard">
                             <li id="previous-btn" class="previous"><a href="#">Previous</a></li>
-                            <li class="next disaple-item"><a href="#">Next</a></li>
+                            <li class="next"><a href="#">Next</a></li>
                         </ul>
                         <!--<ul class="pager wizard">
                             <li class="previous"><a href="#">Previous</a></li>
@@ -995,16 +992,104 @@
     $("#error-email-lbl").hide();
     $("#error-email-lbl2").hide();
     $("#error-name-lbl").hide();
+    $("#error-nameoncard-lbl").hide();
     $("#error-phone-lbl").hide();
     $("#error-phone-lbl2").hide();
     $("#error-counrty-lbl").hide();
+    $("#error-cardno-lbl").hide();
+    $("#error-cardno-lbl2").hide();
+    $("#error-address-lbl").hide();
+    $("#error-cvc-lbl2").hide();
+    $("#error-cvc-lbl").hide();
+    $("#error-date-lbl").hide();
+
+
+    $("#date").focusout(function() {
+        var cdate = $("#date");
+        if (date.val() == "mm/dd/yyyy") {
+            cdate.addClass("errorForm");
+            $("#error-date-lbl").show();
+            cdate.focus();
+            $(document).ready(function() {});
+            return false;
+        } else {
+            $("#error-date-lbl").hide();
+            cdate.removeClass("errorForm");
+        }
+    });
+
+
+    $("#cardnumber").focusout(function() {
+        var ccardnumber = $("#cardnumber");
+
+        function cardnocheck(cardnumber) {
+            if (!cardnumber.match(/^\d+/)) {
+                return false;
+            } else {
+                return true;
+            }
+        }
+
+        $("#error-cardno-lbl").hide();
+        ccardnumber.removeClass("errorForm");
+        if (ccardnumber.val() == "" || ccardnumber.val() == " ") {
+            ccardnumber.addClass("errorForm");
+            $("#error-cardno-lbl2").show();
+            ccardnumber.focus();
+            $(document).ready(function() {
+
+            });
+            return false;
+        }
+
+        if (!cardnocheck(ccardnumber.val())) {
+            ccardnumber.addClass("errorForm");
+            $("#error-cardno-lbl").show();
+            $("#error-cardno-lbl2").hide();
+            ccardnumber.focus();
+            $(document).ready(function() {});
+            return false;
+        }
+        $("#error-cardno-lbl2").hide();
+    });
+
+    $("#cvc").focusout(function() {
+        var ccvc = $("#cvc");
+
+        function cvcnumber(cvc) {
+            if (!cvc.match(/^\d+/)) {
+                return false;
+            } else {
+                return true;
+            }
+        }
+
+        $("#error-cvc-lbl").hide();
+        ccvc.removeClass("errorForm");
+        if (ccvc.val() == "" || ccvc.val() == " ") {
+            ccvc.addClass("errorForm");
+            $("#error-cvc-lbl2").show();
+            ccvc.focus();
+            $(document).ready(function() {
+
+            });
+            return false;
+        }
+
+        if (!cvcnumber(ccvc.val())) {
+            ccvc.addClass("errorForm");
+            $("#error-cvc-lbl").show();
+            $("#error-cvc-lbl2").hide();
+            ccvc.focus();
+            $(document).ready(function() {});
+            return false;
+        }
+        $("#error-cvc-lbl2").hide();
+    });
+
+
     $("#name").focusout(function() {
         var cname = $("#name");
-        if (validateContact()) {
-            alert("true");
-        } else {
-            alert("false");
-        }
         if (cname.val() == "" || cname.val() == " ") {
             cname.addClass("errorForm");
             $("#error-name-lbl").show();
@@ -1014,6 +1099,32 @@
         }
         $("#error-name-lbl").hide();
         cname.removeClass("errorForm");
+    });
+    $("#nameoncard").focusout(function() {
+        var cnameoncard = $("#nameoncard");
+
+        if (cnameoncard.val() == "" || cnameoncard.val() == " ") {
+            cnameoncard.addClass("errorForm");
+            $("#error-nameoncard-lbl").show();
+            cnameoncard.focus();
+            $(document).ready(function() {});
+            return false;
+        }
+        $("#error-nameoncard-lbl").hide();
+        cnameoncard.removeClass("errorForm");
+    });
+
+    $("#address").focusout(function() {
+        var caddress = $("#address");
+        if (caddress.val() == "" || caddress.val() == " ") {
+            caddress.addClass("errorForm");
+            $("#error-address-lbl").show();
+            caddress.focus();
+            $(document).ready(function() {});
+            return false;
+        }
+        $("#error-address-lbl").hide();
+        caddress.removeClass("errorForm");
     });
     $("#email").focusout(function() {
         var cemail = $("#email")
@@ -1155,6 +1266,15 @@
 
         }
 
+        return true;
+    }
+
+    function isNumber(evt) {
+        evt = (evt) ? evt : window.event;
+        var charCode = (evt.which) ? evt.which : evt.keyCode;
+        if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+            return false;
+        }
         return true;
     }
     </script>

@@ -2889,17 +2889,21 @@ input[type="email"].form-control::-webkit-input-placeholder {
 #error-name-lbl,
 #error-phone-lbl,
 #error-phone-lbl2,
-#error-counrty-lbl {
+#error-counrty-lbl,
+#error-nameoncard-lbl,
+#error-cardno-lbl,
+#error-cardno-lbl2,
+#error-address-lbl,
+#error-cvc-lbl,
+#error-cvc-lbl2,
+#error-date-lbl {
     color: red !important;
     font-size: 0.9;
     font-weight: lighter;
     text-align: right;
-    ;
     float: right;
 }
-.disaple-item{
-   display: none !important;
-}
+
 @media(max-width:1110px) {
     .primary-border {
         border-left: 20px solid #34495E !important;
