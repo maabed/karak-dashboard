@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -21,6 +21,7 @@
     <![endif]-->
     <link href="assets/css/input_style.css" rel="stylesheet" />
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/tabs.css">
 </head>
 <body>
     <div id="wrapper">
@@ -223,13 +224,22 @@
         <a href="#" id="PageTitle">UI Elements  /  Tabs </a>
         <div id="page-content-wrapper">
             <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-contint body-header">
+                                <h4 class ="title"> Tabs </h4>
+                                <br>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla consequat massa egestas fermentum. Maecenas quis est ac ante hendrerit.</p>
+                            </div>
+                        </div>
+                    </div>
                 <div class="row statistics">
-                    <div class="col-sm-12">
+                    <div class="col-md-12">
                         <div class="statistics-taps">
                             <ul>
-                                <li class="active"><a href="#con3"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Title Gose Here</a></li>
-                                <li><a href="#con2"><i class="fa fa-credit-card" aria-hidden="true"></i>&nbsp;Title Gose Here</a></li>
-                                <li><a href="#con1"><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Title Gose Here</a></li>
+                                <li class="active"><a href="#con3"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Step 1</a></li>
+                                <li><a href="#con2"><i class="fa fa-credit-card" aria-hidden="true"></i>&nbsp;Step 2</a></li>
+                                <li><a href="#con1"><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Step 3</a></li>
                             </ul>
                         </div>
                         <div class="col-contint">
@@ -325,10 +335,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="row section-margin">
-                    <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-md-6">
                         <div class="col-contint">
-                            <ul class="nav nav-tabs">
+                            <ul id="bordered-tab" class="nav nav-tabs">
                                 <li class="active"><a data-toggle="tab" href="#home">Default</a></li>
                                 <li><a data-toggle="tab" href="#menu1">Tap 1</a></li>
                                 <li><a data-toggle="tab" href="#menu2">Tap 2</a></li>
@@ -355,14 +365,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6">
-                        <div class="col-contint">
-                            <ul class="nav nav-pills">
-                                <li class="active"><a data-toggle="pill" href="#home2">Default</a></li>
-                                <li><a data-toggle="pill" href="#menu4">Tap 1</a></li>
-                                <li><a data-toggle="pill" href="#menu5">Tap 2</a></li>
-                                <li><a data-toggle="pill" href="#menu6">Tap 3</a></li>
-                            </ul>
+                    <div class="col-md-6">
+                        <div class="col-contint nav-col-contint">
+                            <div class="row">
+                                <ul class="nav nav-pills">
+                                    <li class="active"><a data-toggle="pill" href="#home2">Default</a></li>
+                                    <li><a data-toggle="pill" href="#menu4">Tap 1</a></li>
+                                    <li><a data-toggle="pill" href="#menu5">Tap 2</a></li>
+                                    <li><a data-toggle="pill" href="#menu6">Tap 3</a></li>
+                                </ul>
+                            </div>
                             <div class="tab-content">
                                 <div id="home2" class="tab-pane fade in active">
                                     <h3>Default</h3>
@@ -384,8 +396,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row section-margin">
-                    <div class="col-sm-6 ">
+                <div class="row">
+                    <div class="col-md-6 ">
                         <div class="col-contint col-contint-taps">
                             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 bhoechie-tab-menu">
                                 <div class="list-group">
@@ -409,7 +421,7 @@
                             <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 bhoechie-tab">
                                 <!-- flight section -->
                                 <div class="bhoechie-tab-content active">
-                                    <h1 class="glyphicon glyphicon-plane"></h1>
+                                    <h1 class="glyphicon glyphicon-plane mid-blue"></h1>
                                     <h3>Flight Reservation</h3>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -420,7 +432,7 @@
                                 </div>
                                 <!-- train section -->
                                 <div class="bhoechie-tab-content">
-                                    <h1 class="glyphicon glyphicon-road"></h1>
+                                    <h1 class="glyphicon glyphicon-road mid-blue"></h1>
                                     <h3>Train Reservation</h3>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -432,7 +444,7 @@
 
                                 <!-- hotel search -->
                                 <div class="bhoechie-tab-content">
-                                    <h1 class="glyphicon glyphicon-home"></h1>
+                                    <h1 class="glyphicon glyphicon-home mid-blue"></h1>
                                     <h3>Hotel Directory</h3>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -442,7 +454,7 @@
                                     </p>
                                 </div>
                                 <div class="bhoechie-tab-content">
-                                    <h1 class="glyphicon glyphicon-cutlery"></h1>
+                                    <h1 class="glyphicon glyphicon-cutlery mid-blue"></h1>
                                     <h3>Restaurant Diirectory</h3>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -452,7 +464,7 @@
                                     </p>
                                 </div>
                                 <div class="bhoechie-tab-content">
-                                    <h1 class="glyphicon glyphicon-credit-card"></h1>
+                                    <h1 class="glyphicon glyphicon-credit-card mid-blue"></h1>
                                     <h3>Credit Card</h3>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -464,7 +476,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-md-6">
                         <div class="col-contint col-contint-taps">
                             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 bhoechie-tab-menu3">
                                 <div class="list-group">
@@ -544,12 +556,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="row section-margin">
-                    <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-md-6">
                         <div class="col-contint">
                             <div class="single-tap">
                                 <div class="single-tap-title">
                                     Title Goes Here
+                                    <i class="fa fa-plus-circle toggle-icon1" aria-hidden="true"></i>
                                     <div class="toggle-icons"><i class="fa fa-minus-circle toggle-icon toggle-icon2" aria-hidden="true"></i></div>
                                     <p class="single-tap-details">
                                         <br />
@@ -560,6 +573,7 @@
                             <div class="single-tap">
                                 <div class="single-tap-title">
                                     Title Goes Here
+                                    <i class="fa fa-plus-circle toggle-icon1" aria-hidden="true"></i>
                                     <div class="toggle-icons"><i class="fa fa-minus-circle toggle-icon toggle-icon2" aria-hidden="true"></i></div>
                                     <p class="single-tap-details">
                                         <br />
@@ -570,6 +584,7 @@
                             <div class="single-tap">
                                 <div class="single-tap-title">
                                     Title Goes Here
+                                    <i class="fa fa-plus-circle toggle-icon1" aria-hidden="true"></i>
                                     <div class="toggle-icons"><i class="fa fa-minus-circle toggle-icon toggle-icon2" aria-hidden="true"></i></div>
                                     <p class="single-tap-details">
                                         <br />
@@ -579,7 +594,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 ">
+                    <div class="col-md-6 ">
                         <div class="col-contint col-contint-taps">
                             <div class="col-sm-12 bhoechie-tab-menu2">
                                 <div class="list-group">
