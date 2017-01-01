@@ -2903,7 +2903,17 @@ input[type="email"].form-control::-webkit-input-placeholder {
     text-align: right;
     float: right;
 }
-
+.next-wizard {
+    float: right;
+}
+.submit-wizard {
+    float: right;
+}
+.has-error .form-control {
+    border-color: #a94442;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
 @media(max-width:1110px) {
     .primary-border {
         border-left: 20px solid #34495E !important;
@@ -3051,6 +3061,7 @@ input[type="email"].form-control::-webkit-input-placeholder {
 .tab-content {
     background-color: #fff;
     padding: 1em 0.5em;
+    overflow: hidden;
 }
 .flat-colors {
     width: 100%;
