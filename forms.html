@@ -30,6 +30,7 @@
         <link rel="stylesheet" type="text/css" href="assets/vendors/clockpicker/bootstrap-clockpicker.min.css">
         <link rel="stylesheet" href="assets/vendors/slider/ion.rangeSlider.css">
         <link rel="stylesheet" href="assets/vendors/slider/ion.rangeSlider.skinNice.css">
+        
 
 
 
@@ -272,90 +273,112 @@
                             <div class="col-contint">
                                 <h5 class="title form-section">Default Style</h5>
                                 <p class="header-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget feugiat sapien. Vivamus nunc dui, mollis sit amet molestie in, gravida eu lectus. Pellentesque iaculis odio augue, eget lobortis elit congue. Integer eget feugiat sapien. Vivamus nunc dui.</p>
-                                <div class="row group-content">
-                                    <div class="form-group col-sm-12 no-padding">
-                                        <label class="form-labels">Full Name*</label>
-                                        <input type="text" placeholder="Enter Full Name" class="form-control">
+                                <form id="form1">
+                                    <div class="row group-content">
+                                        <div class="form-group col-sm-12 no-padding">
+                                            <label class="form-labels">Full Name*</label>
+                                            <div class="parent">
+                                                <input type="text" name="full_name" placeholder="Enter Full Name" class="form-control">
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="row group-content">
-                                    <div class="form-group col-sm-6 no-padding-left">
-                                        <label class="form-labels">Email*</label>
-                                        <input placeholder="Enter Email" type="text" class="form-control">
+                                    <div class="row group-content">
+                                        <div class="form-group col-sm-6 no-padding-left">
+                                            <label class="form-labels">Email*</label>
+                                            <div class="parent">
+                                                <input placeholder="Enter Email" name="email" type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-sm-6 no-padding-right">
+                                            <label class="form-labels">Phone*</label>
+                                            <div class="parent">
+                                                <input type="text" name="phone" placeholder="Enter Phone Number" class="form-control">
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="form-group col-sm-6 no-padding-right">
-                                        <label class="form-labels">Phone*</label>
-                                        <input type="text" placeholder="Enter Phone Number" class="form-control">
+                                    <div class="row group-content">
+                                        <div class="form-group col-sm-6 no-padding-left">
+                                            <label class="form-labels">Country*</label>
+                                            <select class="select-display selectpicker form-control empty col-12">
+                                                <option value="Select">Select</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-sm-6 no-padding-right">
+                                            <label class="form-labels">City</label>
+                                            <div class="parent">
+                                                <input type="text" name="city" placeholder="Enter City" class="form-control">
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="row group-content">
-                                    <div class="form-group col-sm-6 no-padding-left">
-                                        <label class="form-labels">Country*</label>
-                                        <select class="select-display selectpicker form-control empty col-12">
-                                            <option value="Select">Select</option>
-                                        </select>
+                                    <div class="row group-content">
+                                        <div class="form-group pull-right">
+                                            <button type="button" class="btn btn-default outline-default cancel-send">
+                                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                                Cancel
+                                            </button>
+                                            <button type="submit" class="btn btn-primary dashboard-success">
+                                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                                Send
+                                            </button>
+                                        </div>
                                     </div>
-                                    <div class="form-group col-sm-6 no-padding-right">
-                                        <label class="form-labels">City</label>
-                                        <input type="text" placeholder="Enter City" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="row group-content">
-                                    <div class="form-group pull-right">
-                                        <button type="button" class="btn btn-default outline-default cancel-send">
-                                            <i class="fa fa-trash" aria-hidden="true"></i>
-                                            Cancel
-                                        </button>
-                                        <button type="button" class="btn btn-primary dashboard-success">
-                                            <i class="fa fa-paper-plane" aria-hidden="true"></i>
-                                            Send
-                                        </button>
-                                    </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
 
                         <div class="col-md-6 right-group">
                             <div class="col-contint col-contint-taps group-upper">
                                 <h5 class="title form-section">Login Style</h5>
-                                <div class="form-section top">
-                                    <span class="form-labels">Username</span>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="form-section">
-                                    <span class="form-labels">Password</span>
-                                    <input type="password" class="form-control">
-                                </div>
-                                <div class="form-section pull-right">
-                                    <a href="#" class="forgot-password">Forgot password?</a>
-                                    <button type="button" class="btn btn-primary info-mid">
-                                        <i class="fa fa-sign-in" aria-hidden="true"></i>
-                                        Login
-                                    </button>
-                                </div>
+                                <form id="form2">
+                                    <div class="form-section top">
+                                        <span class="form-labels">Username</span>
+                                        <div class="parent">
+                                            <input type="text" name="user_name" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-section">
+                                        <span class="form-labels">Password</span>
+                                        <div class="parent">
+                                            <input type="password" name="password" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-section pull-right">
+                                        <a href="#" class="forgot-password">Forgot password?</a>
+                                        <button type="submit" class="btn btn-primary info-mid">
+                                            <i class="fa fa-sign-in" aria-hidden="true"></i>
+                                            Login
+                                        </button>
+                                    </div>
+                                </form>
                             </div>
                             <br>
                             <div class="col-contint col-contint-taps group-lower">
                                 <h5 class="title form-section">Login With Icons</h5>
-                                <div class="row">
-                                    <div class="form-section col-sm-6">
-                                        <label class="email-label">
-                                            <input type="text" class="form-control email-input" placeholder="Email" />
-                                        </label>
+                                <form id="form3">
+                                    <div class="row">
+                                        <div class="form-section col-sm-6">
+                                            <label class="email-label">
+                                                <div class="parent">
+                                                    <input type="text" name="email" class="form-control email-input" placeholder="Email" />
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="form-section col-sm-6">
+                                            <label class="password-label">
+                                                <div class="parent">
+                                                    <input type="password" name="password" class="form-control password-input" placeholder="Password" />
+                                                </div>
+                                            </label>
+                                        </div>
                                     </div>
-                                    <div class="form-section col-sm-6">
-                                        <label class="password-label">
-                                            <input type="password" class="form-control password-input" placeholder="Password" />
-                                        </label>
+                                    <div class="form-section pull-right">
+                                        <a href="#" class="forgot-password">Forgot password?</a>
+                                        <button type="submit" class="btn btn-primary info-mid">
+                                            <i class="fa fa-sign-in" aria-hidden="true"></i>
+                                            Login
+                                        </button>
                                     </div>
-                                </div>
-                                <div class="form-section pull-right">
-                                    <a href="#" class="forgot-password">Forgot password?</a>
-                                    <button type="button" class="btn btn-primary info-mid">
-                                        <i class="fa fa-sign-in" aria-hidden="true"></i>
-                                        Login
-                                    </button>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -946,6 +969,7 @@
         </div>
         
         <!-- original page scripts -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <script src="assets/vendors/jquery/jquery-3.1.1.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
@@ -979,16 +1003,19 @@
         <script src="assets/vendors/slider/ion.rangeSlider.min.js"></script>
         <script src='assets/js/forms.js'></script>
         
-                <script src="assets/js/nav_colors_change.js"></script>
-    <link href="assets/css/colorpicker-layout.css" rel="stylesheet" />
-    <link href="assets/css/colorpicker.css" rel="stylesheet" />
-    <script src="assets/js/vendors/colorpicker/colorpicker.js"></script>
-    <script src="assets/js/vendors/colorpicker/eye.js"></script>
-    <script src="assets/js/vendors/colorpicker/layout.js"></script>
-    <script src="assets/js/vendors/colorpicker/utils.js"></script>
-    <script src="assets/js/vendors/colorpicker/utils.js"></script>
-    <script src="assets/js/right-side-colors-change.js"></script>
-    <script src="assets/js/page-ready-theam.js"></script>
-    <link id="default-color-picker" rel="stylesheet" />
+        <script src="assets/js/nav_colors_change.js"></script>
+        <link href="assets/css/colorpicker-layout.css" rel="stylesheet" />
+        <link href="assets/css/colorpicker.css" rel="stylesheet" />
+        <script src="assets/js/vendors/colorpicker/colorpicker.js"></script>
+        <script src="assets/js/vendors/colorpicker/eye.js"></script>
+        <script src="assets/js/vendors/colorpicker/layout.js"></script>
+        <script src="assets/js/vendors/colorpicker/utils.js"></script>
+        <script src="assets/js/vendors/colorpicker/utils.js"></script>
+        <script src="assets/js/right-side-colors-change.js"></script>
+        <script src="assets/js/page-ready-theam.js"></script>
+        <link id="default-color-picker" rel="stylesheet" />
+        <script src="assets/vendors/jquery-validation/jquery.validate.js"></script>
+        <script src="assets/js/validation.js"></script>
+
     </body>
 </html>
