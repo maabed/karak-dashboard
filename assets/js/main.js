@@ -50,3 +50,15 @@ $("#left-Side-Section-Togle").click(function(){
     $(".InboxLeftSide").toggleClass("show-left");
 });
 
+/* search  */
+
+
+$(document).ready(function() {
+  $('#searchTB').keydown(function(e) {
+    if (e.which === 13) {
+      if ($('#searchTB').val() != " ") {
+        window.location = "search.html";
+      }
+    }
+  });
+});
