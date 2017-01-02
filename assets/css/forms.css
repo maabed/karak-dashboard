@@ -500,7 +500,6 @@ input.cmn-toggle-roundGreen:checked + label:after {
 }
 .password-input {
     padding-left: 35px;
-    width: 106%;
 }
 .password-label {
     position: relative;
