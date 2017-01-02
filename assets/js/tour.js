@@ -14,13 +14,13 @@ $(function () {
             },
             steps: [
                 {
-                    element: "#canvas",
+                    element: "#transaction-tour",
                     title: "Page header",
                     content: "You can use a backdrop to highlight the element.",
                     placement: "right"
                 },
                 {
-                    element: ".statistics",
+                    element: "#calender-tour",
                     title: "Tour title",
                     content: "Or turn it off.",
                     placement: "top",
@@ -28,7 +28,7 @@ $(function () {
 
                 },
                 {
-                    element: "#Low-trans",
+                    element: ".activities",
                     title: "Tour title",
                     content: "Nulla tincidunt nunc quam, ac faucibus dolor varius vel.",
                     placement: "right",
