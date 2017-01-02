@@ -16,20 +16,24 @@ $(function () {
                 {
                     element: "#canvas",
                     title: "Page header",
-                    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut vulputate sapien, ac venenatis est.",
+                    content: "You can use a backdrop to highlight the element.",
                     placement: "right"
                 },
                 {
                     element: ".statistics",
                     title: "Tour title",
-                    content: "Ut sit amet laoreet nisl. Nam eget ex commodo, finibus dolor ac, aliquet nisi. Aenean blandit sit amet ligula eget commodo.",
-                    placement: "top"
+                    content: "Or turn it off.",
+                    placement: "top",
+                    backdrop: false,
+
                 },
                 {
                     element: "#Low-trans",
                     title: "Tour title",
                     content: "Nulla tincidunt nunc quam, ac faucibus dolor varius vel.",
-                    placement: "right"
+                    placement: "right",
+                    backdrop: false,
+
                 }
             ]});
         // Initialize the tour
