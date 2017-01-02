@@ -453,7 +453,7 @@ body {
 
 .right-side-head {
     float: right;
-    margin-right: 18.3em;
+    margin-right:19.4em;
 }
 
 .user-box {
@@ -977,7 +977,7 @@ hr {
     width: 25em;
     position: fixed;
     top: 3.6em;
-    right: 14.5em;
+    right: 15.5em;
     background: #fff;
     z-index: 999;
     box-shadow: 0px 3px 10px #888888;
@@ -989,7 +989,7 @@ hr {
     width: 25em;
     position: fixed;
     top: 3.6em;
-    right: 10em;
+    right: 11.16em;
     background: #fff;
     z-index: 999;
     box-shadow: 0px 3px 10px #888888;
@@ -1090,7 +1090,7 @@ hr {
     width: 9em;
     position: fixed;
     top: 3.6em;
-    right: 1em;
+    right: 2em;
     background: #fff;
     z-index: 999;
     box-shadow: 0px 3px 10px #888888;
