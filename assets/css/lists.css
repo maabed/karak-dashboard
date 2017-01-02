@@ -3,3 +3,66 @@
     border-radius: 50%;
     margin-right: 15px;
 }
+.list-par{
+    font-size: 15px;
+    color: #777;
+    font-weight: 600;
+}
+.list-date{
+    font-size: 13px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+.bootstrap-switch.bootstrap-switch-wrapper{
+    float: right;
+}
+.side-date{
+    line-height: 0px;
+}
+.side-line{
+    border-left: 4px solid #67b2e4;
+    padding-left: 5px;
+    margin-left: 15px;
+}
+.glyphicon{
+    margin-right: 10px;
+    color: #C6C4DB;
+}
+.blog-img{
+    width: 108px;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+.bootstrap-switch-handle-on.bootstrap-switch-primary{
+    background-color: #67b2e4 !important;
+}
+.list-group-item.info-mid{
+    color: #fff;
+}
+.title-border{
+    border-bottom: 2px solid #67b2e4;
+    padding-bottom: 5px;
+}
+.icon-list-border{
+    border: 2px solid #67b2e4;
+    padding: 7px;
+    border-radius: 50%;
+    position: relative;
+    top: 15px;
+    margin-bottom: 15px;
+}
+.no-padding-left{
+    padding-left: 0px;
+}
+.no-padding-right{
+    padding-right: 0px;
+}
+.event{
+    padding-top: 13px;
+}
+.box-size{
+    width: 90%;
+}
+.list-group-item.info-mid > .glyphicon{
+    color: #fff;
+} 

@@ -1,0 +1,89 @@
+.email-title{
+    color: #34495e;
+}
+.reply{
+    border: none;
+}
+.bootstrap-tagsinput{
+    border: none;
+    border-bottom: 1px solid #E4E5E7;
+    box-shadow: none;
+    border-radius: 0;
+}
+.bootstrap-tagsinput:focus{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #3B97D2;
+    box-shadow: none;
+}
+.note-editor.note-frame.panel.panel-default{
+    width: 85%;
+    position: relative;
+    left: 35px;
+}
+#left-Side-Section-Togle {
+    float: right;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 1em 0.7em;
+    color: #9E9E9E;
+    text-align: center;
+    background: #fff;
+    margin-top: 3.6em;
+    position: absolute;
+    top: 0px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    box-shadow: 0px 3px 10px #888888;
+    z-index: 9999;
+    display: none;
+}
+@media screen and (max-width: 767px) {
+    .InboxLeftSide {
+        left: 0px;
+    }
+    .Split-left-sidr {
+        width: 100%;
+    }
+    .split-view{
+        left: 250px;
+    }
+}
+@media screen and (max-width: 660px) {
+    .InboxLeftSide{
+        width: 0px;
+    }
+    .split-view{
+        left: 0px;
+    }
+    #left-Side-Section-Togle{
+        display: block;
+    }
+}
+@media screen and (min-width: 767px) and (max-width: 991px) {
+    .Split-left-sidr {
+        width: 100%;
+    }
+}
+.show-left{
+    width: 50%;
+    z-index: 999;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#left-Side-Section {
+    width: 0em;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-left: 1px solid #E4E5E7;
+    box-shadow: 0px 3px 10px #888888;
+    position: fixed;
+    z-index: 9999;
+}

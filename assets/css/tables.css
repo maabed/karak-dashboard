@@ -1,0 +1,15 @@
+.dashboard-th{
+    color: #fff;
+}
+.table-head.dashboard-success:hover{
+    background-color: #2ecc71;
+}
+.table-head.dashboard-warning:hover{
+    background-color: #f1c40f;
+}
+.table-head.dashboard-info:hover{
+    background-color: #3B97D2;
+}
+.table-head.dashboard-primary:hover{
+    background-color: #34495e;
+}
