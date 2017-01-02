@@ -1898,6 +1898,7 @@ div.bhoechie-tab-menu3 div.list-group > a.active:after {
 .list-group-item:first-child {
     border-top-left-radius: 0px !important;
     border-top-right-radius: 0px !important;
+    margin-top: 8px;
 }
 
 .list-group-item:last-child {
