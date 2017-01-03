@@ -33,8 +33,8 @@
 <body>
     <div id="wrapper">
         <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <div class="sidebar-brand" id="company-name">Company Name</div>
+         <div id="sidebar-wrapper">
+            <div class="sidebar-brand" id="company-name">Blue Dashboard</div>
             <ul class="sidebar-nav">
                 <li>
                     <a href="index.html"><i class="fa fa-tachometer nav-icon" aria-hidden="true"></i>Dashboard</a>
@@ -58,17 +58,17 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="charts.html">
                         <i class="fa fa-pie-chart  nav-icon" aria-hidden="true"></i> Charts
                     </a>
                 </li>
                 <li>
-                    <a href="layouts/inbox.html">
+                    <a href="inbox.html">
                         <i class="fa fa-envelope nav-icon" aria-hidden="true"></i> Email
                         <span class="label label-primary nav-lbl">2</span>
                     </a>
                 </li>
-                <li class="selected">
+                <li>
                     <a class="MainMenue" href="#">
                         <i class="fa fa-eye   nav-icon" aria-hidden="true"></i> UI Elements<span class="label label-success nav-lbl">New</span> <i class="fa fa-angle-left LeftArrow rotate" aria-hidden="true"></i>
                     </a>
@@ -115,7 +115,7 @@
                         </li>
                         <li class="submenu-li">
                             <a href="panels.html">
-                           Panals
+                           Panels
                             </a>
                         </li>
                         <li class="submenu-li">
@@ -128,28 +128,33 @@
                            Menus
                             </a>
                         </li>
+                            <li class="submenu-li">
+                            <a href="hover.html">
+                           Hover
+                            </a>
+                        </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="layouts/calendar.html">
+                    <a href="calendar.html">
                         <i class="fa fa-calendar-check-o nav-icon" aria-hidden="true"></i> Calendar
                     </a>
                 </li>
                 <li>
-                    <a href="layouts/social.html">
+                    <a href="social.html">
                         <i class="fa fa-share-alt-square nav-icon" aria-hidden="true"></i> Social
                         <span class="label label-warning nav-lbl">Special</span>
                     </a>
                 </li>
                 <li>
-                    <a class="MainMenue">
+                    <a class="MainMenue" href="#">
                         <i class="fa fa-table nav-icon" aria-hidden="true"></i> Tables
                         <i class="fa fa-angle-left LeftArrow rotate" aria-hidden="true"></i>
                     </a>
                     <ul class="Submenue">
                         <li class="submenu-li">
                             <a href="tables.html">
-                           Basik Table
+                           Basic Table
                             </a>
                         </li>
                         <li class="submenu-li">
@@ -166,18 +171,18 @@
                     </a>
                     <ul class="Submenue">
                         <li class="submenu-li">
-                            <a href="layouts/map.html">
+                            <a href="map.html">
                            Vector Maps
                             </a>
                         </li>
                         <li class="submenu-li">
-                            <a href="layouts/google_map.html">
+                            <a href="google_map.html">
                            Google Maps
                             </a>
                         </li>
                     </ul>
                 </li>
-                <li>
+                <li class="selected">
                     <a class="MainMenue" href="#">
                         <i class="fa fa-gift nav-icon" aria-hidden="true"></i> Extra
                         <i class="fa fa-angle-left LeftArrow rotate" aria-hidden="true"></i>
@@ -199,7 +204,7 @@
                             </a>
                         </li>
                         <li class="submenu-li">
-                            <a href="layouts/login.html">
+                            <a href="login.html">
                            Login & Registration
                             </a>
                         </li>
@@ -218,7 +223,7 @@
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
-       <div id="head">
+        <div id="head">
             <div class="container-fluid header-container">
                 <i href="#menu-toggle" id="menu-toggle" class="fa fa-bars" aria-hidden="true"></i>
                 <div class="form-group">
@@ -247,13 +252,12 @@
                 </div>
             </div>
         </div>
-
         <!-- Page Content -->
-        <a href="#" id="PageTitle">Dashboard  /  Interface</a>
+        <a href="#" id="PageTitle">Extra  /  Tour</a>
         <div id="page-content-wrapper">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-8" id="transaction-tour">
                         <div class="col-contint">
                             <p class="title" id="randomizeData">Transactions</p>
                             <canvas id="canvas"></canvas>
@@ -262,143 +266,152 @@
                     <div class="col-md-4">
                         <div class="row">
                             <div class="col-sm-12">
-                                <img class="img-responsive centerlize-reponsive" src="assets/images/salse.png" />
+                                <img class="img-responsive centerlize-reponsive index-img" src="assets/images/salse.png" />
                             </div>
                         </div>
                         <br>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="col-contint index-icons">
-                                    <i class="fa fa-chevron-up" aria-hidden="true"></i>15%
-                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>33%
-                                    <i class="fa fa-bar-chart" aria-hidden="true"></i>50%
-                                    <i class="fa fa-line-chart" aria-hidden="true"></i>90%
+                                    <div class="col-sm-3">
+                                        <i class="fa fa-chevron-up" aria-hidden="true"></i>15%
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <i class="fa fa-chevron-down" aria-hidden="true"></i>33%
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <i class="fa fa-bar-chart" aria-hidden="true"></i>50%
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <i class="fa fa-line-chart" aria-hidden="true"></i>90%
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="statistics">
-                    <div class="statistics-taps">
-                        <ul>
-                            <li class="active"><a href="#con3">Yesterday</a></li>
-                            <li><a href="#con2">Last Month</a></li>
-                            <li><a href="#con1">Last Year</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="statistics-item" id="con3">
-                        <div class="row">
-                            <div class="col-sm-2">
-                                <img class="img-responsive" src="assets/images/st-1.png" />
-                                <h4 class="bold">220,000 USD</h4>
-                                <h4 class="lighter">Revenue</h4>
-                            </div>
-                            <div class="col-sm-2">
-                                <img class="img-responsive" src="assets/images/st-2.png" />
-                                <h4 class="bold">220,000 USD</h4>
-                                <h4 class="lighter">Transactions</h4>
-                            </div>
-                            <div class="col-sm-2">
-                                <img class="img-responsive" src="assets/images/st-3.png" />
-                                <h4 class="bold">502,000 USD</h4>
-                                <h4 class="lighter">Loans</h4>
-                            </div>
-                            <div class="col-sm-2">
-                                <img class="img-responsive" src="assets/images/st-4.png" />
-                                <h4 class="bold">122,000 USD</h4>
-                                <h4 class="lighter">Investment</h4>
-                            </div>
-                            <div class="col-sm-2">
-                                <img class="img-responsive" src="assets/images/st-5.png" />
-                                <h4 class="bold">750,000 USD</h4>
-                                <h4 class="lighter">Deposits</h4>
+                <div class="row">
+                    <div class="statistics col-md-12">
+                        <div class="statistics-taps">
+                            <ul>
+                                <li class="active"><a href="#con3">Yesterday</a></li>
+                                <li><a href="#con2">Last Month</a></li>
+                                <li><a href="#con1">Last Year</a></li>
+                            </ul>
+                        </div>
+                        <div class="statistics-item" id="con3">
+                            <div class="row">
+                                <div class="col-sm-2 centerlize-reponsive">
+                                    <img class="img-responsive" src="assets/images/st-1.png" />
+                                    <h4 class="bold">220,000 USD</h4>
+                                    <h4 class="lighter">Revenue</h4>
+                                </div>
+                                <div class="col-sm-2 centerlize-reponsive">
+                                    <img class="img-responsive" src="assets/images/st-2.png" />
+                                    <h4 class="bold">220,000 USD</h4>
+                                    <h4 class="lighter">Transactions</h4>
+                                </div>
+                                <div class="col-sm-2 centerlize-reponsive">
+                                    <img class="img-responsive" src="assets/images/st-3.png" />
+                                    <h4 class="bold">502,000 USD</h4>
+                                    <h4 class="lighter">Loans</h4>
+                                </div>
+                                <div class="col-sm-2 centerlize-reponsive">
+                                    <img class="img-responsive" src="assets/images/st-4.png" />
+                                    <h4 class="bold">122,000 USD</h4>
+                                    <h4 class="lighter">Investment</h4>
+                                </div>
+                                <div class="col-sm-2 centerlize-reponsive">
+                                    <img class="img-responsive" src="assets/images/st-5.png" />
+                                    <h4 class="bold">750,000 USD</h4>
+                                    <h4 class="lighter">Deposits</h4>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="statistics-item" id="con2">
-                        <div class="row">
-                            <div class="col-sm-2">
-                                <img class="img-responsive" src="assets/images/st-1.png" />
-                                <h4 class="bold">230,000 USD</h4>
-                                <h4 class="lighter">Revenue</h4>
-                            </div>
-                            <div class="col-sm-2">
-                                <img class="img-responsive" src="assets/images/st-2.png" />
-                                <h4 class="bold">220,000 USD</h4>
-                                <h4 class="lighter">Transactions</h4>
-                            </div>
-                            <div class="col-sm-2">
-                                <img class="img-responsive" src="assets/images/st-3.png" />
-                                <h4 class="bold">502,000 USD</h4>
-                                <h4 class="lighter">Loans</h4>
-                            </div>
-                            <div class="col-sm-2">
-                                <img class="img-responsive" src="assets/images/st-4.png" />
-                                <h4 class="bold">122,000 USD</h4>
-                                <h4 class="lighter">Investment</h4>
-                            </div>
-                            <div class="col-sm-2">
-                                <img class="img-responsive" src="assets/images/st-5.png" />
-                                <h4 class="bold">750,000 USD</h4>
-                                <h4 class="lighter">Deposits</h4>
+                        <div class="statistics-item" id="con2">
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <img class="img-responsive" src="assets/images/st-1.png" />
+                                    <h4 class="bold">230,000 USD</h4>
+                                    <h4 class="lighter">Revenue</h4>
+                                </div>
+                                <div class="col-sm-2">
+                                    <img class="img-responsive" src="assets/images/st-2.png" />
+                                    <h4 class="bold">220,000 USD</h4>
+                                    <h4 class="lighter">Transactions</h4>
+                                </div>
+                                <div class="col-sm-2">
+                                    <img class="img-responsive" src="assets/images/st-3.png" />
+                                    <h4 class="bold">502,000 USD</h4>
+                                    <h4 class="lighter">Loans</h4>
+                                </div>
+                                <div class="col-sm-2">
+                                    <img class="img-responsive" src="assets/images/st-4.png" />
+                                    <h4 class="bold">122,000 USD</h4>
+                                    <h4 class="lighter">Investment</h4>
+                                </div>
+                                <div class="col-sm-2">
+                                    <img class="img-responsive" src="assets/images/st-5.png" />
+                                    <h4 class="bold">750,000 USD</h4>
+                                    <h4 class="lighter">Deposits</h4>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="statistics-item" id="con1">
-                        <div class="row">
-                            <div class="col-sm-2">
-                                <img class="img-responsive" src="assets/images/st-1.png" />
-                                <h4 class="bold">240,000 USD</h4>
-                                <h4 class="lighter">Revenue</h4>
-                            </div>
-                            <div class="col-sm-2">
-                                <img class="img-responsive" src="assets/images/st-2.png" />
-                                <h4 class="bold">220,000 USD</h4>
-                                <h4 class="lighter">Transactions</h4>
-                            </div>
-                            <div class="col-sm-2">
-                                <img class="img-responsive" src="assets/images/st-3.png" />
-                                <h4 class="bold">502,000 USD</h4>
-                                <h4 class="lighter">Loans</h4>
-                            </div>
-                            <div class="col-sm-2">
-                                <img class="img-responsive" src="assets/images/st-4.png" />
-                                <h4 class="bold">122,000 USD</h4>
-                                <h4 class="lighter">Investment</h4>
-                            </div>
-                            <div class="col-sm-2">
-                                <img class="img-responsive" src="assets/images/st-5.png" />
-                                <h4 class="bold">750,000 USD</h4>
-                                <h4 class="lighter">Deposits</h4>
+                        <div class="statistics-item" id="con1">
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <img class="img-responsive" src="assets/images/st-1.png" />
+                                    <h4 class="bold">240,000 USD</h4>
+                                    <h4 class="lighter">Revenue</h4>
+                                </div>
+                                <div class="col-sm-2">
+                                    <img class="img-responsive" src="assets/images/st-2.png" />
+                                    <h4 class="bold">220,000 USD</h4>
+                                    <h4 class="lighter">Transactions</h4>
+                                </div>
+                                <div class="col-sm-2">
+                                    <img class="img-responsive" src="assets/images/st-3.png" />
+                                    <h4 class="bold">502,000 USD</h4>
+                                    <h4 class="lighter">Loans</h4>
+                                </div>
+                                <div class="col-sm-2">
+                                    <img class="img-responsive" src="assets/images/st-4.png" />
+                                    <h4 class="bold">122,000 USD</h4>
+                                    <h4 class="lighter">Investment</h4>
+                                </div>
+                                <div class="col-sm-2">
+                                    <img class="img-responsive" src="assets/images/st-5.png" />
+                                    <h4 class="bold">750,000 USD</h4>
+                                    <h4 class="lighter">Deposits</h4>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6">
-                        <div class="col-contint scroll-y">
+                    <div class="col-md-6" id="calender-tour">
+                        <div class="col-contint scroll-y col-contint-taps">
                             <p class="title">Calendar</p>
+                            <br>
                             <div id='calendar' class="calender-layout"></div>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="col-contint map-height">
+                        <div class="col-contint col-contint-taps">
                             <p class="title">Worldwide Annual Sales</p>
+                            <br>
                             <div id="container"></div>
                         </div>
                     </div>
                 </div>
-                <div class="row section-margin">
-                    <div class="col-sm-4">
-                        <div id="Low-trans" class="col-contint static-height">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="col-contint static-height">
                             <p class="title">Transactions</p>
-                                <div id="sankey"></div>
+                            <div id="sankey"></div>
                         </div>
                     </div>
-                    <div class="col-sm-4 activities">
+                    <div class="col-md-4 activities">
                         <div class="col-contint static-height">
                             <p id="activities-log" class="title">Activities Log<a class="activities-year">2016</a></p>
                             <div class="activities-log">
@@ -435,7 +448,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-md-4">
                         <div class="col-contint static-height">
                             <p class="title">To Do List<a class="add-task"><i class="fa fa-plus-circle" aria-hidden="true"></i></a></p>
                             <div class="to-do-list">
@@ -533,7 +546,6 @@
                 </div>
                 <h6 class="made-by">Made By  <b>New Versions</b></h6>
             </div>
-
             <!-- /#page-content-wrapper -->
         </div>
         <!-- /#wrapper -->
@@ -690,21 +702,19 @@
                 </table>
             </div>
         </div>
-
-
         <div class="notifecations-box">
             <div class="arrow-up"></div>
             <h5>Notifications</h5>
             <div class="single-not-content">
                 <a href="#">
                     <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b>&nbsp;    wants your confirmation on his Leave Request on 12 May 2015</p>
+                    <p><b>Mohammad Meshaal</b>&nbsp; wants your confirmation on his Leave Request on 12 May 2015</p>
                 </a>
             </div>
             <div class="single-not-content">
                 <a href="#">
                     <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b>&nbsp;    wants your confirmation on his Leave Request on 12 May 2015</p>
+                    <p><b>Mohammad Meshaal</b>&nbsp; wants your confirmation on his Leave Request on 12 May 2015</p>
                 </a>
             </div>
             <div class="veiw-all-not">
@@ -717,25 +727,29 @@
             <div class="single-not-content">
                 <a href="#">
                     <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
+                    <p><b>Mohammad Meshaal</b>
+                        <br /> Message subject will display here</p>
                 </a>
             </div>
             <div class="single-not-content">
                 <a href="#">
                     <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
+                    <p><b>Mohammad Meshaal</b>
+                        <br /> Message subject will display here</p>
                 </a>
             </div>
             <div class="single-not-content">
                 <a href="#">
                     <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
+                    <p><b>Mohammad Meshaal</b>
+                        <br /> Message subject will display here</p>
                 </a>
             </div>
             <div class="single-not-content">
                 <a href="#">
                     <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
+                    <p><b>Mohammad Meshaal</b>
+                        <br /> Message subject will display here</p>
                 </a>
             </div>
             <div class="veiw-all-not">
@@ -746,20 +760,17 @@
             <div class="arrow-up user-arrow"></div>
             <a href="#">
                 <div class="user-info-content">
-                    <i class="fa fa-user" aria-hidden="true"></i>
-                    Proﬁle
+                    <i class="fa fa-user" aria-hidden="true"></i> Proﬁle
                 </div>
             </a>
             <a href="#">
                 <div class="user-info-content">
-                    <i class="fa fa-cog" aria-hidden="true"></i>
-                    Settings
+                    <i class="fa fa-cog" aria-hidden="true"></i> Settings
                 </div>
             </a>
             <a href="#">
                 <div class="user-info-content">
-                    <i class="fa fa-info-circle" aria-hidden="true"></i>
-                    Help
+                    <i class="fa fa-info-circle" aria-hidden="true"></i> Help
                 </div>
             </a>
             <a href="#">
@@ -770,8 +781,6 @@
             </a>
         </div>
     </div>
-
-    
     
     <script src="assets/vendors/jquery/jquery-3.1.1.js"></script>
     <script src="assets/js/random_chart.js"></script>

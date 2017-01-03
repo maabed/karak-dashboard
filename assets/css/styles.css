@@ -453,7 +453,7 @@ body {
 
 .right-side-head {
     float: right;
-    margin-right: 18.3em;
+    margin-right:19.4em;
 }
 
 .user-box {
@@ -977,7 +977,7 @@ hr {
     width: 25em;
     position: fixed;
     top: 3.6em;
-    right: 14.5em;
+    right: 15.5em;
     background: #fff;
     z-index: 999;
     box-shadow: 0px 3px 10px #888888;
@@ -989,7 +989,7 @@ hr {
     width: 25em;
     position: fixed;
     top: 3.6em;
-    right: 10em;
+    right: 11.16em;
     background: #fff;
     z-index: 999;
     box-shadow: 0px 3px 10px #888888;
@@ -1090,7 +1090,7 @@ hr {
     width: 9em;
     position: fixed;
     top: 3.6em;
-    right: 1em;
+    right: 2em;
     background: #fff;
     z-index: 999;
     box-shadow: 0px 3px 10px #888888;
@@ -1898,6 +1898,7 @@ div.bhoechie-tab-menu3 div.list-group > a.active:after {
 .list-group-item:first-child {
     border-top-left-radius: 0px !important;
     border-top-right-radius: 0px !important;
+    margin-top: 8px;
 }
 
 .list-group-item:last-child {
@@ -2748,7 +2749,10 @@ input {
     color: #34495E !important;
 }
 input[type="email"].form-control::-webkit-input-placeholder {
-    color: #fff;
+    color: #fff !important;
+}
+input[type="email"]#searchTB::-webkit-input-placeholder {
+    color: #fff  !important;
 }
 
 /*invoice*/
@@ -2913,6 +2917,16 @@ input[type="email"].form-control::-webkit-input-placeholder {
     border-color: #a94442;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+.index-img{
+    width:100%;
+    height: auto !important;
+}
+.Message-btns button{
+    background-color: #fafafa !important;
+}
+.dt-buttons a{
+    margin-right: 0.5em;
 }
 @media(max-width:1110px) {
     .primary-border {
