@@ -1,6 +1,6 @@
-//document.getElementById("compose").onclick = function () {
-//    location.href = "compose.html";
-//};
+document.getElementById("compose").onclick = function () {
+    location.href = "compose.html";
+};
 $(document).ready(function(){
     $(".to").find(".bootstrap-tagsinput").find("input").attr("id","To_tag");
     $("#To_tag").focusin(function(){
