@@ -20,6 +20,7 @@
     <link href="assets/css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/vendors/tag-input/bootstrap-tagsinput.css">
     <link rel="stylesheet" href="assets/css/inbox.css">
+     <link rel="stylesheet" href="assets/css/text-editor.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -251,9 +252,8 @@
         </div>
 
         <!-- Page Content -->
-        <a href="#" id="PageTitle">Email / Compose</a>
         <div id="page-content-wrapper">
-            <div class="container-fluid">
+            <div class="container-fluid inbox-container">
                 <div class="row">
                     <div class="col-md-2 InboxLeftSide">
                         <div class="CenteredDiv">
@@ -310,20 +310,20 @@
                     <div class="col-md-8  split-view">
                         <table class="Compose-table">
                             <tr>
-                                <td>
+                                <td class="col-width">
                                     <div class="form-group to">
                                         <label class="Email-lable" for="inputdefault">TO:</label>
                                         <input type="text" class="form-control Compose-style" id="tokenfield" data-role="tagsinput" value="Mohammad,Ahmad,Mahmoud" />
                                     </div>
                                 </td>
-                                <td>
+                                <td  class="col-width">
                                     <div class="form-group cc">
                                         <label class="Email-lable" for="inputdefault">CC:</label>
                                         <input class="form-control Compose-style" id="inputdefault" type="text" data-role="tagsinput" value="Mohammad">
                                     </div>
                                 </td>
                             </tr>
-                            <tr>
+                            <tr  class="table-col-padding">
                                 <td colspan="2">
                                     <div class="form-group">
                                         <label class="Email-lable" for="inputdefault">SUBJECT:</label>
@@ -332,7 +332,7 @@
                                 </td>
                             </tr>
                         </table>
-                        <div id="summernote-compose">Hello Summernote</div>
+                        <div id="summernote-compose"></div>
                         <div class="clearfix"></div>
                         <button type="button" class="btn btn-default Cancel-email">Cancel</button>
                         <button type="button" class="btn Send-btn">Send</button>

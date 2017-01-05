@@ -1,0 +1,30 @@
+
+.panel-default > .panel-heading{
+    border:0px !important;
+}
+.note-editor.note-frame{
+     border:0px !important;
+}
+.panel-default > .panel-heading{
+	background-color: #f0f0f0;
+}
+.note-btn-group{padding: 0em;}
+.note-btn-group button{
+background-color: #f0f0f0;
+border-radius: 0px;
+padding: 1.5em 1.3em;color: #757575;
+
+border:none !important;
+border-right:1px solid #e6e6e6 !important;
+
+ }
+.note-popover .popover-content>.btn-group, .panel-heading.note-toolbar>.btn-group{
+	margin: 0em !important;
+}
+.note-popover .popover-content, .panel-heading.note-toolbar{
+	padding: 0em !important;
+}
+.note-btn-group button i {color: #757575;}
+.note-editor.note-frame .note-editing-area .note-editable{
+	color: #888888 !important;
+}
