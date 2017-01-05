@@ -66,6 +66,10 @@
 .table-col-padding td{
     padding-right:2em !important; 
 }
+.compose-btn-space{
+    margin-left:1em;
+    margin-right: 1em; 
+}
 @media screen and (max-width: 767px) {
     .InboxLeftSide {
         left: 0px;
