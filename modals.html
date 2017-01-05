@@ -263,8 +263,9 @@
                             <div class="col-contint" id="standard-parent">
                                 <h5 class="title"> Standard Modal </h5>
                                 <br>
-                            <i class="fa fa-eye hide-modal" id="view-standard" aria-hidden="true"></i>
-                            <img src="assets/images/modals/standard.png" id="standard" class="center-block img-border"  data-toggle="modal" data-target="#myModal">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu ipsum in.</p>
+                                <i id="preview1" class="fa fa-eye preview" data-toggle="modal" data-target="#myModal"></i>  
+                                <img src="assets/images/modals/standard.png" id="standard" class="center-block img-border">
                             <!-- Modal -->
                             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog middle-modal" role="document">
@@ -278,7 +279,7 @@
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-primary dashboard-primary btn-md modal-close" data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn  btn-info dashboard-info btn-md">Save changes</button>
+                                            <button type="button " class="btn btn-info button-style icon-btn">Search</button>
                                         </div>
                                     </div>
                                 </div>
@@ -290,20 +291,19 @@
                             <div class="col-contint" id="flat-parent">
                                 <h5 class="title"> Flat modal </h5>
                                 <br>
-                            <i class="fa fa-eye hide-modal" id="view-flat" aria-hidden="true"></i>
-                            <img src="assets/images/modals/flat-modal.png" id="flat" class="center-block img-border" data-toggle="modal" data-target="#myModalLarge">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu ipsum in.</p>
+                                <i id="preview1" class="fa fa-eye preview" data-toggle="modal" data-target="#myModalLarge"></i>  
+                            <img src="assets/images/modals/flat-modal.png" id="flat" class="center-block img-border">
                             <!-- Modal -->
                             <div class="modal fade bs-example-modal-lg" id="myModalLarge" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog middle-modal modal-lg" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-body flat-static">
-                                            <div class="row positioning">
-                                                <div class="col-sm-9">
-                                                    <input type="email" class="form-control" id="email">
-                                                </div>
-                                                <div class="col-sm-3">
-                                                    <button type="button" class="btn  btn-info dashboard-info btn-md">Save changes</button>
-                                                </div>
+                                    <div class="modal-body flat-static">
+                                        <div class="row positioning">
+                                            <div class="col-sm-9">
+                                                <input placeholder="Search" type="email" class="form-control" id="flat_email">
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <button type="button " class="btn btn-info button-style icon-btn">Search</button>
                                             </div>
                                         </div>
                                     </div>
@@ -316,8 +316,9 @@
                             <div class="col-contint" id="small-parent">
                                 <h5 class="title"> Top modal </h5>
                                 <br>
-                            <i class="fa fa-eye hide-modal" id="view-small" aria-hidden="true"></i>
-                            <img src="assets/images/modals/small-modal.png" id="small" class="center-block img-border" data-toggle="modal" data-target="#myModalSmall">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu ipsum in.</p>
+                                <i id="preview1" class="fa fa-eye preview"  data-toggle="modal" data-target="#myModalSmall"></i>  
+                            <img src="assets/images/modals/small-modal.png" id="small" class="center-block img-border">
                             <!-- Modal -->
                             <div class="modal fade bs-example-modal-sm" id="myModalSmall" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog modal-sm" role="document">
@@ -331,7 +332,8 @@
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-primary dashboard-primary btn-md modal-close" data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn  btn-info dashboard-info btn-md">Save changes</button>
+                                            <button type="button " class="btn btn-info button-style icon-btn">Search</button>
+
                                         </div>
                                     </div>
                                 </div>
@@ -344,8 +346,9 @@
                             <div class="col-contint" id="data-parent">
                                 <h5 class="title"> Form Modal </h5>
                                 <br>
-                            <i class="fa fa-eye hide-modal" id="view-data" aria-hidden="true"></i>
-                            <img src="assets/images/modals/standard.png" id="data" class="center-block img-border" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu ipsum in.</p> 
+                                <i id="preview1" class="fa fa-eye modal-preview"  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"></i>  
+                                <img src="assets/images/modals/standard.png" id="data" class="center-block img-border">
                             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
@@ -356,18 +359,22 @@
                                         <div class="modal-body">
                                             <form>
                                                 <div class="form-group">
-                                                    <label for="recipient-name" class="control-label">Recipient:</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
+                                                    <div class="input-field">
+                                                        <input id="email" type="email" class="validate">
+                                                        <label for="email">Email</label>
+                                                    </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="message-text" class="control-label">Message:</label>
-                                                    <textarea class="form-control" id="message-text"></textarea>
+                                                    <div class="input-field">
+                                                        <input id="password" type="password" class="validate">
+                                                        <label for="password" class="">Password</label>
+                                                    </div>
                                                 </div>
                                             </form>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-primary dashboard-primary btn-md modal-close" data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn  btn-info dashboard-info btn-md">Send message</button>
+                                            <button type="button " class="btn btn-info button-style icon-btn">Search</button>
                                         </div>
                                     </div>
                                 </div>
@@ -378,8 +385,9 @@
                             <div class="col-contint" id="right-parent">
                                 <h5 class="title"> Right side modal </h5>
                                 <br>
-                            <i class="fa fa-eye hide-modal" id="view-right" aria-hidden="true"></i>
-                            <img src="assets/images/modals/right-side.png" id="right" class="center-block img-border" data-toggle="modal" data-toggle="modal" data-target="#myModal2">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu ipsum in.</p>
+                                <i id="preview1" class="fa fa-eye modal-preview" data-toggle="modal" data-toggle="modal" data-target="#myModal2"></i>  
+                            <img src="assets/images/modals/right-side.png" id="right" class="center-block img-border">
                             <!-- Modal -->
                             <div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
                                 <div class="modal-dialog" role="document">
@@ -641,7 +649,8 @@
         <script src="assets/js/main.js"></script>
         <script src="assets/js/notifications_boxs.js"></script>
         <script src="assets/js/modal.js"></script>
-                        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+                
         <script src="assets/js/nav_colors_change.js"></script>
         <link href="assets/css/colorpicker-layout.css" rel="stylesheet" />
         <link href="assets/css/colorpicker.css" rel="stylesheet" />
