@@ -250,12 +250,55 @@
                         <div class="col-lg-12">
                             <div class="col-contint body-header">
                                 <a href="index.html" class="page_title pull-right">Charts</a>
-                                <h4 class="title"> Charts JS </h4>
+                                <h4 class="title"> Charts </h4>
                                 <br>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="row">
+                        <div class="col-md-12 no-padding-bottom">
+                            <h5 class="title form-section no-padding-bottom"> HIGH CHARTS </h5>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="col-contint">
+                                <h5 class="title form-section">Spline updating each second</h5><br>
+                                <div id="container" style="height: 300px;"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="col-contint">
+                                <h5 class="title form-section">Click to add a point</h5>
+                                <p>Click the plot area to add a point. Click a point to remove it.</p>
+                                <div id="container2" style="height: 294px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="col-contint">
+                                <h5 class="title form-section">Fixed placement columns</h5><br>
+                                <div id="container3" style="height: 300px"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="col-contint">
+                                <h5 class="title form-section">Scatter with regression line</h5><br>
+                                <div id="container4" style="height: 300px"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-12 no-padding-bottom">
+                            <h5 class="title form-section no-padding-bottom"> CHARTS JS </h5>
+                        </div>
+                    </div>
+                    
                     <div class="row">
                         <div class="col-md-7">
                             <div class="col-contint">
@@ -286,47 +329,6 @@
                             <div class="col-contint">
                                 <h5 class="title form-section">Radar chart</h5>
                                 <canvas id="bar"></canvas>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-12 no-padding-bottom">
-                            <h5 class="title form-section no-padding-bottom"> GOOGLE CHARTS </h5>
-                        </div>
-                    </div>
-                    
-                    <div class="row">
-                        <div class="col-md-7">
-                            <div class="col-contint">
-                                <h5 class="title form-section">Stepped Area Chart</h5>
-                                <div id="chart_div"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-5">
-                            <div class="col-contint">
-                                <h5 class="title form-section">Bubble Chart</h5>
-                                <div id="series_chart_div"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="col-contint">
-                                <h5 class="title form-section">Candlestick Charts</h5>
-                                <div id="candlestick"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="col-contint">
-                                <h5 class="title form-section">Line chart</h5>
-                                <div id="google_line"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="col-contint">
-                                <h5 class="title form-section">Scatter chart</h5>
-                                <div id="scatter"></div>
                             </div>
                         </div>
                     </div>
@@ -567,12 +569,18 @@
                 </a>
             </div>
         </div>
+
         <script src="assets/vendors/jquery/jquery-3.1.1.js"></script>
         <script src="assets/js/vendors/Chart.bundle.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/main.js"></script>
         <script src="assets/js/notifications_boxs.js"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
         <script src="assets/js/charts-init.js"></script>
+        
+        
+
         
         <script src="assets/js/nav_colors_change.js"></script>
     <link href="assets/css/colorpicker-layout.css" rel="stylesheet" />

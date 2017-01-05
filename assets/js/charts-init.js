@@ -156,115 +156,208 @@ $(document).ready(function(){
         }
     });
     
-/*google charts*/
+/*High charts*/
     
-    /*Stepped Area Chart*/
-    google.charts.load('current', {'packages':['corechart']});
-    google.charts.setOnLoadCallback(drawChart);
-    function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-            ['Director (Year)',  'Rotten Tomatoes', 'IMDB'],
-            ['Alfred Hitchcock (1935)', 8.4,         7.9],
-            ['Ralph Thomas (1959)',     6.9,         6.5],
-            ['Don Sharp (1978)',        6.5,         6.4],
-            ['James Hawes (2008)',      4.4,         6.2]
-        ]);
-        var options = {
-            vAxis: {title: 'Accumulated Rating'},
-            isStacked: true
-        };
-        var chart = new google.visualization.SteppedAreaChart(document.getElementById('chart_div'));
-        chart.draw(data, options);
-    }
-    
-    
-    /*Bubble chart*/
-    google.charts.load('current', {'packages':['corechart']});
-    google.charts.setOnLoadCallback(drawSeriesChart);
-    function drawSeriesChart() {
-        var data = google.visualization.arrayToDataTable([
-            ['ID', 'Life Expectancy', 'Fertility Rate', 'Population'],
-            ['DNK',    78.6,               1.84,     5523095],
-            ['EGY',    72.73,              2.78,     79716203],
-            ['IRN',    72.49,              1.7,      73137148],
-            ['IRQ',    68.09,              4.77,     31090763],
-            ['JOR',    81.55,              2.96,     7485600],
-            ['RUS',    68.6,               1.54,     141850000],
-            ['USA',    78.09,              2.05,     307007000]
-        ]);
-        var options = {
-            title: 'Correlation between life expectancy, fertility rate ' +
-            'and population of some world countries (2010)',
-            hAxis: {title: 'Life Expectancy'},
-            vAxis: {title: 'Fertility Rate'},
-            bubble: {textStyle: {fontSize: 11}}
-        };
-        var chart = new google.visualization.BubbleChart(document.getElementById('series_chart_div'));
-        chart.draw(data, options);
-    }
-    
-    
-    /*Candlestick chart*/
-    google.charts.load('current', {'packages':['corechart']});
-    google.charts.setOnLoadCallback(drawcandle);
-    function drawcandle() {
-        var data = google.visualization.arrayToDataTable([
-            ['Mon', 20, 28, 38, 45],
-            ['Tue', 31, 38, 55, 66],
-            ['Wed', 50, 55, 77, 80],
-            ['Thu', 77, 77, 66, 50],
-            ['Fri', 68, 66, 22, 15]
-            // Treat first row as data as well.
-        ], true);
-        var options = {
-            legend:'none'
-        }; 
-        var chart = new google.visualization.CandlestickChart(document.getElementById('candlestick'));
-        chart.draw(data, options);
-    }
-    
-    
-    /*Line chart*/
-    google.charts.load('current', {'packages':['corechart']});
-    google.charts.setOnLoadCallback(drawLine);
-    function drawLine() {
-        var data = google.visualization.arrayToDataTable([
-            ['Year', 'Sales', 'Expenses'],
-            ['2004',  1000,      400],
-            ['2005',  1170,      460],
-            ['2006',  660,       1120],
-            ['2007',  1030,      540]
-        ]);
-        var options = {
-            title: 'Company Performance',
-            curveType: 'function',
-            legend: { position: 'bottom' }
-        };
-        var chart = new google.visualization.LineChart(document.getElementById('google_line'));
-        chart.draw(data, options);
-      }
+    /*Spline updating each second*/
+    Highcharts.setOptions({
+        global: {
+            useUTC: false
+        }
+    });
+    Highcharts.chart('container', {
+        chart: {
+            type: 'spline',
+            animation: Highcharts.svg, // don't animate in old IE
+            marginRight: 10,
+            events: {
+                load: function () {
+                    // set up the updating of the chart each second
+                    var series = this.series[0];
+                    setInterval(function () {
+                        var x = (new Date()).getTime(), // current time
+                            y = Math.random();
+                        series.addPoint([x, y], true, true);
+                    }, 1000);
+                }
+            }
+        },
+        title: {
+            text: ''
+        },
+        xAxis: {
+            type: 'datetime',
+            tickPixelInterval: 150
+        },
+        yAxis: {
+            title: {
+                text: ''
+            },
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+        tooltip: {
+            formatter: function () {
+                return '<b>' + this.series.name + '</b><br/>' +
+                    Highcharts.dateFormat('%Y-%m-%d %H:%M:%S', this.x) + '<br/>' +
+                    Highcharts.numberFormat(this.y, 2);
+            }
+        },
+        legend: {
+            enabled: false
+        },
+        exporting: {
+            enabled: false
+        },
+        series: [{
+            name: 'Random data',
+            data: (function () {
+                // generate an array of random data
+                var data = [],
+                    time = (new Date()).getTime(),
+                    i;
+                for (i = -19; i <= 0; i += 1) {
+                    data.push({
+                        x: time + i * 1000,
+                        y: Math.random()
+                    });
+                }
+                return data;
+            }())
+        }]
+    });
     
     
-    /*Scatter chart*/
-    google.charts.load('current', {'packages':['corechart']});
-    google.charts.setOnLoadCallback(scatter);
-    function scatter() {
-        var data = google.visualization.arrayToDataTable([
-            ['Age', 'Weight'],
-            [ 8,      12],
-            [ 4,      5.5],
-            [ 11,     14],
-            [ 4,      5],
-            [ 3,      3.5],
-            [ 6.5,    7]
-        ]);
-        var options = {
-            title: 'Age vs. Weight comparison',
-            hAxis: {title: 'Age', minValue: 0, maxValue: 15},
-            vAxis: {title: 'Weight', minValue: 0, maxValue: 15},
-            legend: 'none'
-        };
-        var chart = new google.visualization.ScatterChart(document.getElementById('scatter'));
-        chart.draw(data, options);
-      }
+    /*Click to add a point*/
+    Highcharts.chart('container2', {
+        chart: {
+            type: 'scatter',
+            margin: [70, 50, 60, 80],
+            events: {
+                click: function (e) {
+                    // find the clicked values and the series
+                    var x = e.xAxis[0].value,
+                        y = e.yAxis[0].value,
+                        series = this.series[0];
+                    // Add it
+                    series.addPoint([x, y]);
+                }
+            }
+        },
+        title: {
+            text: ''
+        },
+        subtitle: {
+            text: ''
+        },
+        xAxis: {
+            gridLineWidth: 1,
+            minPadding: 0.2,
+            maxPadding: 0.2,
+            maxZoom: 60
+        },
+        yAxis: {
+            title: {
+                text: ''
+            },
+            minPadding: 0.2,
+            maxPadding: 0.2,
+            maxZoom: 60,
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+        legend: {
+            enabled: false
+        },
+        exporting: {
+            enabled: false
+        },
+        plotOptions: {
+            series: {
+                lineWidth: 1,
+                point: {
+                    events: {
+                        'click': function () {
+                            if (this.series.data.length > 1) {
+                                this.remove();
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        series: [{
+            data: [[20, 20], [80, 80]]
+        }]
+    });
+    
+    
+    /*Fixed placement columns*/
+    Highcharts.chart('container3', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: ''
+        },
+        xAxis: {
+            categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'John',
+            data: [5, 3, 4, 7, 2]
+        }, {
+            name: 'Jane',
+            data: [2, -2, -3, 2, 1]
+        }, {
+            name: 'Joe',
+            data: [3, 4, 4, -2, 5]
+        }]
+    });
+    
+    
+    /*Scatter with regression line*/
+    Highcharts.chart('container4', {
+        xAxis: {
+            min: -0.5,
+            max: 5.5
+        },
+        yAxis: {
+            min: 0
+        },
+        title: {
+            text: ''
+        },
+        series: [{
+            type: 'line',
+            name: 'Regression Line',
+            data: [[0, 1.11], [5, 4.51]],
+            marker: {
+                enabled: false
+            },
+            states: {
+                hover: {
+                    lineWidth: 0
+                }
+            },
+            enableMouseTracking: false
+        }, {
+            type: 'scatter',
+            name: 'Observations',
+            data: [1, 1.5, 2.8, 3.5, 3.9, 4.2],
+            marker: {
+                radius: 4
+            }
+        }]
+    });
+    $(".highcharts-container").css("right","10px");
+    $(".highcharts-axis-title").remove();
 });
