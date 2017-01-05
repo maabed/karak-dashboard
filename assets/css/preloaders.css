@@ -13,7 +13,7 @@
   left: -200px;
   width: 200px;
   height: 4px;
-  background-color: #3498db;
+  background-color: #67b2e4;
   animation: loading 2s linear infinite;
 }
 
@@ -255,32 +255,32 @@ showbox {
 @-webkit-keyframes color {
   100%,
   0% {
-    stroke: #d62d20;
+    stroke: #67b2e4;
   }
   40% {
-    stroke: #0057e7;
+    stroke: #62d995;
   }
   66% {
-    stroke: #008744;
+    stroke: #f5d34b;
   }
   80%,
   90% {
-    stroke: #ffa700;
+    stroke: #ed796d;
   }
 }
 @keyframes color {
   100%,
   0% {
-    stroke: #d62d20;
+    stroke: #67b2e4;
   }
   40% {
-    stroke: #0057e7;
+    stroke: #62d995;
   }
   66% {
-    stroke: #008744;
+    stroke: #f5d34b;
   }
   80%,
   90% {
-    stroke: #ffa700;
+    stroke: #ed796d;
   }
 }
