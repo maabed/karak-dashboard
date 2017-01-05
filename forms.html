@@ -30,21 +30,17 @@
         <link rel="stylesheet" type="text/css" href="assets/vendors/clockpicker/bootstrap-clockpicker.min.css">
         <link rel="stylesheet" href="assets/vendors/slider/ion.rangeSlider.css">
         <link rel="stylesheet" href="assets/vendors/slider/ion.rangeSlider.skinNice.css">
-        
-
-
-
     </head>
     <body>
         <div id="wrapper">
             <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <div class="sidebar-brand" id="company-name">Company Name</div>
+         <div id="sidebar-wrapper">
+            <div class="sidebar-brand" id="company-name">Blue Dashboard</div>
             <ul class="sidebar-nav">
                 <li>
                     <a href="index.html"><i class="fa fa-tachometer nav-icon" aria-hidden="true"></i>Dashboard</a>
                 </li>
-                <li>
+                <li class="selected"> 
                     <a class="MainMenue" href="#">
                         <i class="fa fa-file-text nav-icon" aria-hidden="true"></i> Forms
                         <i class="fa fa-angle-left LeftArrow rotate" aria-hidden="true"></i>
@@ -63,17 +59,17 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="charts.html">
                         <i class="fa fa-pie-chart  nav-icon" aria-hidden="true"></i> Charts
                     </a>
                 </li>
                 <li>
-                    <a href="layouts/inbox.html">
+                    <a href="inbox.html">
                         <i class="fa fa-envelope nav-icon" aria-hidden="true"></i> Email
                         <span class="label label-primary nav-lbl">2</span>
                     </a>
                 </li>
-                <li class="selected">
+                <li>
                     <a class="MainMenue" href="#">
                         <i class="fa fa-eye   nav-icon" aria-hidden="true"></i> UI Elements<span class="label label-success nav-lbl">New</span> <i class="fa fa-angle-left LeftArrow rotate" aria-hidden="true"></i>
                     </a>
@@ -120,7 +116,7 @@
                         </li>
                         <li class="submenu-li">
                             <a href="panels.html">
-                           Panals
+                           Panels
                             </a>
                         </li>
                         <li class="submenu-li">
@@ -133,28 +129,33 @@
                            Menus
                             </a>
                         </li>
+                            <li class="submenu-li">
+                            <a href="hover.html">
+                           Hover
+                            </a>
+                        </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="layouts/calendar.html">
+                    <a href="calendar.html">
                         <i class="fa fa-calendar-check-o nav-icon" aria-hidden="true"></i> Calendar
                     </a>
                 </li>
                 <li>
-                    <a href="layouts/social.html">
+                    <a href="social.html">
                         <i class="fa fa-share-alt-square nav-icon" aria-hidden="true"></i> Social
                         <span class="label label-warning nav-lbl">Special</span>
                     </a>
                 </li>
                 <li>
-                    <a class="MainMenue">
+                    <a class="MainMenue" href="#">
                         <i class="fa fa-table nav-icon" aria-hidden="true"></i> Tables
                         <i class="fa fa-angle-left LeftArrow rotate" aria-hidden="true"></i>
                     </a>
                     <ul class="Submenue">
                         <li class="submenu-li">
                             <a href="tables.html">
-                           Basik Table
+                           Basic Table
                             </a>
                         </li>
                         <li class="submenu-li">
@@ -171,12 +172,12 @@
                     </a>
                     <ul class="Submenue">
                         <li class="submenu-li">
-                            <a href="layouts/map.html">
+                            <a href="map.html">
                            Vector Maps
                             </a>
                         </li>
                         <li class="submenu-li">
-                            <a href="layouts/google_map.html">
+                            <a href="google_map.html">
                            Google Maps
                             </a>
                         </li>
@@ -204,7 +205,7 @@
                             </a>
                         </li>
                         <li class="submenu-li">
-                            <a href="layouts/login.html">
+                            <a href="login.html">
                            Login & Registration
                             </a>
                         </li>
@@ -254,7 +255,7 @@
         </div>
 
             <!-- Page Content -->
-            <a href="#" id="PageTitle">Dashboard  /  Interface</a>
+            <a href="#" id="PageTitle">Dashboard  /  Forms</a>
             <div id="page-content-wrapper">
 
                 <div class="container-fluid">
@@ -316,7 +317,7 @@
                                                 <i class="fa fa-trash" aria-hidden="true"></i>
                                                 Cancel
                                             </button>
-                                            <button type="submit" class="btn btn-primary dashboard-success">
+                                            <button type="submit" class="btn btn-success dashboard-success btn-md">
                                                 <i class="fa fa-paper-plane" aria-hidden="true"></i>
                                                 Send
                                             </button>
@@ -344,7 +345,7 @@
                                     </div>
                                     <div class="form-section pull-right">
                                         <a href="#" class="forgot-password">Forgot password?</a>
-                                        <button type="submit" class="btn btn-primary info-mid">
+                                        <button type="submit" class="btn btn-info dashboard-info btn-md margin-bottom ">
                                             <i class="fa fa-sign-in" aria-hidden="true"></i>
                                             Login
                                         </button>
@@ -357,23 +358,23 @@
                                 <form id="form3">
                                     <div class="row">
                                         <div class="form-section col-sm-6">
-                                            <label class="email-label">
+                                            <div class="email-label">
                                                 <div class="parent">
                                                     <input type="text" name="email" class="form-control email-input" placeholder="Email" />
                                                 </div>
-                                            </label>
+                                            </div>
                                         </div>
                                         <div class="form-section col-sm-6">
-                                            <label class="password-label">
+                                            <div class="password-label">
                                                 <div class="parent">
                                                     <input type="password" name="password" class="form-control password-input" placeholder="Password" />
                                                 </div>
-                                            </label>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="form-section pull-right">
                                         <a href="#" class="forgot-password">Forgot password?</a>
-                                        <button type="submit" class="btn btn-primary info-mid">
+                                        <button type="submit" class="btn btn-info dashboard-info btn-md margin-bottom ">
                                             <i class="fa fa-sign-in" aria-hidden="true"></i>
                                             Login
                                         </button>
@@ -1014,7 +1015,7 @@
         <script src="assets/js/right-side-colors-change.js"></script>
         <script src="assets/js/page-ready-theam.js"></script>
         <link id="default-color-picker" rel="stylesheet" />
-        <script src="assets/vendors/jquery-validation/jquery.validate.js"></script>
+    <script src="assets/js/vendors/jquery.validate.js"></script>
         <script src="assets/js/validation.js"></script>
 
     </body>
