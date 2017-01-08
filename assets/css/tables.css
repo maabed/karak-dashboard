@@ -10,6 +10,12 @@
 .table-head.dashboard-primary:hover{
     background-color: #34495e;
 }
+.table-image{
+    width: 60px;
+    border-radius: 50%;
+}
+
+
 .selected{
     background-color: #fef6dd !important;
 }
@@ -19,6 +25,7 @@
     font-weight: 100;
     font-size: 13px;
     color: #626262;
+    vertical-align: middle !important;
 }
 .dashboard-th{
     color: #fff;
@@ -26,9 +33,6 @@
 .basic-th{
     color:rgba(44,44,44,0.35);
     border-bottom-width: 1px !important;
-}
-.static-width{
-    width: 36%;
 }
 .table.table-hover{
     margin-top: 8px;
