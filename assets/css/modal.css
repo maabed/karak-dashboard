@@ -105,7 +105,7 @@
     position: relative;
     margin-top: 1rem;
 }
-input:not([type]), input[type=text], input[type=password], input[type=email]:not(#searchTB):not(#flat_email), input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
+input:not([type]), input[type=text]:not(#flat_email), input[type=password], input[type=email]:not(#searchTB):not(#flat_email), input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #9e9e9e;
@@ -120,6 +120,9 @@ input:not([type]), input[type=text], input[type=password], input[type=email]:not
     box-sizing: content-box;
     transition: all 0.3s;
 }
+#flat_email{
+    padding-left: 10px;
+}
 input:not(#searchTB):not(#flat_email) {
     line-height: normal;
 }
@@ -131,9 +134,6 @@ button, input:not(#searchTB):not(#flat_email), optgroup, select, textarea {
 input:not([type]), input[type="email" i]:not(#searchTB):not(#flat_email), input[type="number" i], input[type="password" i], input[type="tel" i], input[type="url" i], input[type="text" i] {
     padding: 1px 0px;
 }
-
-
-user agent stylesheet
 input:not(#searchTB):not(#flat_email), textarea, keygen, select, button {
     text-rendering: auto;
     color: initial;
@@ -145,10 +145,6 @@ input:not(#searchTB):not(#flat_email), textarea, keygen, select, button {
     display: inline-block;
     text-align: start;
     margin: 0em 0em 0em 0em;
-    font: 13.3333px Arial;
-}
-input:not(#searchTB):not(#flat_email), textarea, keygen, select, button, meter, progress {
-    -webkit-writing-mode: horizontal-tb;
 }
 input:not([type]).validate+label, input[type=text].validate+label, input[type=password].validate+label, input[type=email]:not(#searchTB):not(#flat_email).validate+label, input[type=url].validate+label, input[type=time].validate+label, input[type=date].validate+label, input[type=datetime].validate+label, input[type=datetime-local].validate+label, input[type=tel].validate+label, input[type=number].validate+label, input[type=search].validate+label, textarea.materialize-textarea.validate+label {
     width: 100%;
@@ -162,7 +158,7 @@ input:not([type]).validate+label, input[type=text].validate+label, input[type=pa
     position: absolute;
     top: 0.8rem;
     left: 0;
-    font-size: 1rem;
+    font-size: 13px;
     cursor: text;
     transition: .2s ease-out;
 }
@@ -176,7 +172,6 @@ input:not([type])+label:after, input[type=text]+label:after, input[type=password
     position: absolute;
     top: 60px;
     opacity: 0;
-    transition: .2s opacity ease-out, .2s color ease-out;
 }
 input:not([type])+label:after, input[type=text]+label:after, input[type=password]+label:after, input[type=email]:not(#searchTB):not(#flat_email)+label:after, input[type=url]+label:after, input[type=time]+label:after, input[type=date]+label:after, input[type=datetime]+label:after, input[type=datetime-local]+label:after, input[type=tel]+label:after, input[type=number]+label:after, input[type=search]+label:after, textarea.materialize-textarea+label:after {
     display: block;
@@ -184,11 +179,19 @@ input:not([type])+label:after, input[type=text]+label:after, input[type=password
     position: absolute;
     top: 60px;
     opacity: 0;
-    transition: .2s opacity ease-out, .2s color ease-out;
 }
 .input-field label.active {
-    font-size: 0.8rem;
+    font-size: 10px;
+    color: #67b2e4;
     -webkit-transform: translateY(-140%);
     transform: translateY(-140%);
 }
-
+input:not(#searchTB):focus{
+    border-bottom: 1px solid #67b2e4 !important;
+}
+.input-field > label{
+    font-weight: 400;
+}
+#flat_email{
+    border-radius: 0px;
+}
