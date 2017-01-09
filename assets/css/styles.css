@@ -3113,6 +3113,7 @@ input[type="email"]#searchTB::-webkit-input-placeholder {
 }
 
 @media(max-width:1110px) {
+    .backgroundimg{display: none;}
     .primary-border {
         border-left: 20px solid #34495E !important;
     }
