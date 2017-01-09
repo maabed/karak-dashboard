@@ -1,46 +1,53 @@
-﻿  
-        #wrap {
-            width: 100%;
-            margin: 0 auto;
-        }
+﻿  #wrap {
+      width: 100%;
+      margin: 0 auto;
+  }
+  
+  #external-events {
+      float: left;
+      width: 150px;
+      padding: 0 10px;
+      text-align: left;
+  }
+  
+  #external-events h4 {
+      font-size: 16px;
+      margin-top: 0;
+      padding-top: 1em;
+  }
+  
+  .external-event {
+      /* try to mimick the look of a real event */
+      margin: 10px 0;
+      padding: 2px 4px;
+      background: #3366CC;
+      color: #fff;
+      font-size: .85em;
+      cursor: pointer;
+  }
+  
+  #external-events p {
+      margin: 1.5em 0;
+      font-size: 11px;
+      color: #666;
+  }
+  
+  #external-events p input {
+      margin: 0;
+      vertical-align: middle;
+  }
+  
+  #calendar {
+      /*        float: right; */
+      margin: 0 auto;
+      width: 100%;
+      background-color: #FFFFFF;
+      border: 1px solid #e9e9e9;
+      padding-top: 4em;
+  }
 
-        #external-events {
-            float: left;
-            width: 150px;
-            padding: 0 10px;
-            text-align: left;
-        }
-
-            #external-events h4 {
-                font-size: 16px;
-                margin-top: 0;
-                padding-top: 1em;
-            }
-
-        .external-event { /* try to mimick the look of a real event */
-            margin: 10px 0;
-            padding: 2px 4px;
-            background: #3366CC;
-            color: #fff;
-            font-size: .85em;
-            cursor: pointer;
-        }
-
-        #external-events p {
-            margin: 1.5em 0;
-            font-size: 11px;
-            color: #666;
-        }
-
-            #external-events p input {
-                margin: 0;
-                vertical-align: middle;
-            }
-
-        #calendar {
-            /* 		float: right; */
-            margin: 0 auto;
-            width: 100%;
-            background-color: #FFFFFF;
-            border :1px solid #e9e9e9;
-        }
+  .fc-header-title h2 {
+      color: #34495e !important;
+      font-weight: lighter;
+      font-size:1.7em;
+  }
