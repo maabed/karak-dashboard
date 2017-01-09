@@ -1,4 +1,4 @@
-﻿.checkbox {
+.checkbox {
   padding-left: 20px; }
   .checkbox label {
     display: inline-block;
@@ -50,32 +50,32 @@
     margin-top: 0; }
 
 .checkbox-primary input[type="checkbox"]:checked + label::before {
-  background-color: #428bca;
-  border-color: #428bca; }
+  background-color: #67b2e4;
+  border-color: #67b2e4; }
 .checkbox-primary input[type="checkbox"]:checked + label::after {
   color: #fff; }
 
 .checkbox-danger input[type="checkbox"]:checked + label::before {
-  background-color: #d9534f;
-  border-color: #d9534f; }
+  background-color: #ed796d;
+  border-color: #ed796d; }
 .checkbox-danger input[type="checkbox"]:checked + label::after {
   color: #fff; }
 
 .checkbox-info input[type="checkbox"]:checked + label::before {
-  background-color: #5bc0de;
-  border-color: #5bc0de; }
+  background-color: #99cbed;
+  border-color: #99cbed; }
 .checkbox-info input[type="checkbox"]:checked + label::after {
   color: #fff; }
 
 .checkbox-warning input[type="checkbox"]:checked + label::before {
-  background-color: #f0ad4e;
-  border-color: #f0ad4e; }
+  background-color: #f5d34b;
+  border-color: #f5d34b; }
 .checkbox-warning input[type="checkbox"]:checked + label::after {
   color: #fff; }
 
 .checkbox-success input[type="checkbox"]:checked + label::before {
-  background-color: #5cb85c;
-  border-color: #5cb85c; }
+  background-color: #62d995;
+  border-color: #62d995; }
 .checkbox-success input[type="checkbox"]:checked + label::after {
   color: #fff; }
 

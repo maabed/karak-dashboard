@@ -169,3 +169,6 @@ $("#strings").ionRangeSlider({
         "ten"
     ]
 });
+$(document).ready(function(){
+    $(".bootstrap-tagsinput").find("input").addClass("normal-text");
+});

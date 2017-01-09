@@ -30,6 +30,7 @@
         <link rel="stylesheet" type="text/css" href="assets/vendors/clockpicker/bootstrap-clockpicker.min.css">
         <link rel="stylesheet" href="assets/vendors/slider/ion.rangeSlider.css">
         <link rel="stylesheet" href="assets/vendors/slider/ion.rangeSlider.skinNice.css">
+        <link rel="stylesheet" href="assets/css/text-editor.css">   
     </head>
     <body>
         <div id="wrapper">
@@ -277,38 +278,41 @@
                                 <form id="form1">
                                     <div class="row group-content">
                                         <div class="form-group col-sm-12 no-padding">
-                                            <label class="form-labels">Full Name*</label>
-                                            <div class="parent">
-                                                <input type="text" name="full_name" placeholder="Enter Full Name" class="form-control">
+                                            <div class="input-field parent">
+                                                <input name="full_name" type="text" class="validate">
+                                                <label for="email">Full Name*</label>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row group-content">
                                         <div class="form-group col-sm-6 no-padding-left">
-                                            <label class="form-labels">Email*</label>
-                                            <div class="parent">
-                                                <input placeholder="Enter Email" name="email" type="text" class="form-control">
+                                            <div class="input-field parent">
+                                                <input name="email" type="email" class="validate">
+                                                <label for="email">Email*</label>
                                             </div>
                                         </div>
                                         <div class="form-group col-sm-6 no-padding-right">
-                                            <label class="form-labels">Phone*</label>
-                                            <div class="parent">
-                                                <input type="text" name="phone" placeholder="Enter Phone Number" class="form-control">
+                                            <div class="input-field parent">
+                                                <input name="phone" type="text" class="validate">
+                                                <label for="phone">Phone*</label>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row group-content">
                                         <div class="form-group col-sm-6 no-padding-left">
-                                            <label class="form-labels">Country*</label>
                                             <select class="select-display selectpicker form-control empty col-12">
-                                                <option value="Select">Select</option>
+                                                <option class="Selected">Country</option>
+                                                <option>Jordan</option>
+                                                <option>Usa</option>
+                                                <option>UK</option>
+                                                <option>China</option>
                                             </select>
                                         </div>
                                         <div class="form-group col-sm-6 no-padding-right">
-                                            <label class="form-labels">City</label>
-                                            <div class="parent">
-                                                <input type="text" name="city" placeholder="Enter City" class="form-control">
-                                            </div>
+                                            <div class="input-field parent">
+                                                <input name="city" type="text" class="validate">
+                                                <label for="city">City*</label>
+                                            </div>    
                                         </div>
                                     </div>
                                     <div class="row group-content">
@@ -317,7 +321,7 @@
                                                 <i class="fa fa-trash" aria-hidden="true"></i>
                                                 Cancel
                                             </button>
-                                            <button type="submit" class="btn btn-success dashboard-success btn-md">
+                                            <button type="submit" class="btn btn-success button-style">
                                                 <i class="fa fa-paper-plane" aria-hidden="true"></i>
                                                 Send
                                             </button>
@@ -332,20 +336,19 @@
                                 <h5 class="title form-section">Login Style</h5>
                                 <form id="form2">
                                     <div class="form-section top">
-                                        <span class="form-labels">Username</span>
-                                        <div class="parent">
-                                            <input type="text" name="user_name" class="form-control">
-                                        </div>
+                                        <div class="input-field parent">
+                                            <input name="user_name" type="text" class="validate">
+                                            <label for="username">Username</label>
+                                        </div>    
                                     </div>
                                     <div class="form-section">
-                                        <span class="form-labels">Password</span>
-                                        <div class="parent">
-                                            <input type="password" name="password" class="form-control">
-                                        </div>
+                                        <div class="input-field parent">
+                                            <input  name="password" type="password" class="validate">
+                                            <label for="password">Password</label>
+                                        </div> 
                                     </div>
                                     <div class="form-section pull-right">
-                                        <a href="#" class="forgot-password">Forgot password?</a>
-                                        <button type="submit" class="btn btn-info dashboard-info btn-md margin-bottom ">
+                                        <button type="submit" class="btn btn-info button-style">
                                             <i class="fa fa-sign-in" aria-hidden="true"></i>
                                             Login
                                         </button>
@@ -358,23 +361,24 @@
                                 <form id="form3">
                                     <div class="row">
                                         <div class="form-section col-sm-6">
-                                            <div class="email-label">
-                                                <div class="parent">
-                                                    <input type="text" name="email" class="form-control email-input" placeholder="Email" />
-                                                </div>
+                                            <div class="input-field parent">
+                                              <i class="material-icons prefix"><i class="fa fa-user" aria-hidden="true"></i>
+</i>
+                                              <input id="user_prefix" name="email" type="text" class="validate">
+                                              <label for="user_prefix">Username</label>
                                             </div>
                                         </div>
                                         <div class="form-section col-sm-6">
-                                            <div class="password-label">
-                                                <div class="parent">
-                                                    <input type="password" name="password" class="form-control password-input" placeholder="Password" />
-                                                </div>
+                                            <div class="input-field parent">
+                                              <i class="material-icons prefix"><i class="fa fa-lock" aria-hidden="true"></i>
+</i>
+                                              <input id="pass_prefix" name="password" type="password" class="validate">
+                                              <label for="icon_prefix">Password</label>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form-section pull-right">
-                                        <a href="#" class="forgot-password">Forgot password?</a>
-                                        <button type="submit" class="btn btn-info dashboard-info btn-md margin-bottom ">
+                                        <button type="submit" class="btn btn-info button-style">
                                             <i class="fa fa-sign-in" aria-hidden="true"></i>
                                             Login
                                         </button>
@@ -394,27 +398,27 @@
                             <div class="col-sm-4 first-third">
                                 <div class="col-contint">
                                     <h5 class="title form-section">Ranges</h5>
-                                    <h6>Start without params</h6>
+                                    <label class="label-type">Start without params</label>
                                     <input type="text" id="no-params" name="example_name" value="" />
                                     <br>
-                                    <h6>Set type to double and specify range, also showing grid and adding prefix "$"</h6>
+                                    <label class="label-type">Set type to double and specify range, also showing grid and adding prefix "$"</label>
                                     <input type="text" id="double" name="example_name" value="" />
                                     <br>
-                                    <h6>Using any strings as your values</h6>
+                                    <label class="label-type">Using any strings as your values</label>
                                     <input type="text" id="strings" name="example_name" value="" />
                                 </div>
                             </div>
                             <div class="col-sm-4 second-third">
                                 <div class="col-contint">
                                     <h5 class="title form-section">Slide Toggle</h5>
-                                        <h6>Checked</h6>
+                                        <label class="label-type">Checked</label>
                                         <div class="row">
                                             <div class="col-sm-12 switch toggleswitch">
                                                 <input  id="cmn-toggle-1" class="cmn-toggle cmn-toggle-roundGreen" type="checkbox">
                                                 <label for="cmn-toggle-1"></label>
                                             </div>
                                         </div>
-                                        <h6>Multiple switches </h6>
+                                        <label class="label-type">Multiple switches </label>
                                         <div class="row">
                                             <div class="col-sm-4 switch toggleswitch" >
                                                 <input  id="cmn-toggle-2" class="cmn-toggle cmn-toggle-roundGreen" type="checkbox" checked="">
@@ -431,7 +435,7 @@
                                                 <label for="cmn-toggle-4"></label>
                                             </div>
                                         </div>
-                                        <h6>Colored</h6>
+                                        <label class="label-type">Colored</label>
                                         <div class="row">
                                              <div class="col-sm-3 switch toggleswitch" >
                                                  <input  id="cmn-toggle-5" class="cmn-toggle cmn-toggle-roundBlue" type="checkbox"checked="">
@@ -453,8 +457,7 @@
                                                  <label for="cmn-toggle-8"></label>
                                              </div>
                                         </div>
-                                        <h6>Or the secondary color, which will change the switch shadow and default border:</h6>
-    
+                                        <label class="label-type">Or the secondary color, which will change the switch shadow and default border:</label>
                                         <div class="switch toggleswitch" >
                                             <div class="row">
                                                 <div class="col-sm-12">
@@ -970,9 +973,7 @@
         </div>
         
         <!-- original page scripts -->
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <script src="assets/vendors/jquery/jquery-3.1.1.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/main.js"></script>
         <script src="assets/js/notifications_boxs.js"></script>
@@ -1002,7 +1003,6 @@
         
         <!-- no ui slider -->
         <script src="assets/vendors/slider/ion.rangeSlider.min.js"></script>
-        <script src='assets/js/forms.js'></script>
         
         <script src="assets/js/nav_colors_change.js"></script>
         <link href="assets/css/colorpicker-layout.css" rel="stylesheet" />
@@ -1015,8 +1015,11 @@
         <script src="assets/js/right-side-colors-change.js"></script>
         <script src="assets/js/page-ready-theam.js"></script>
         <link id="default-color-picker" rel="stylesheet" />
-    <script src="assets/js/vendors/jquery.validate.js"></script>
+        <script src="assets/js/vendors/jquery.validate.js"></script>
         <script src="assets/js/validation.js"></script>
+        
+        
+        <script src='assets/js/forms.js'></script>
 
     </body>
 </html>
