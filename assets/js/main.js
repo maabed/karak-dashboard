@@ -62,3 +62,63 @@ $(document).ready(function() {
     }
   });
 });
+
+
+/* Tour init */
+
+
+$(document).ready(function(){ 
+    $(function () {
+        // Instance the tour
+        var tour = new Tour({
+            backdrop: true,
+            template: "<div class='popover tour'> \
+            <div class='arrow'></div> \
+            <h3 class='popover-title'></h3> \
+            <div class='popover-content'></div> \
+            <div class='popover-navigation'> \
+            <a class='btn btn-info button-style hvr-icon-back' data-role='prev'><i class='fa fa-angle-left'></i> &nbsp &nbsp Prev</a> \
+            <a class='btn btn-info button-style hvr-icon-back pull-right' data-role='next'>Next &nbsp &nbsp <i class='fa fa-angle-right'></i></a> \
+            <button type='button' class='btn btn-danger button-style full-width' data-role='end'>End tour</button> \
+            </div> \
+            </div>",
+            onShown: function(tour) {
+                // ISSUE    - https://github.com/sorich87/bootstrap-tour/issues/189
+                // FIX      - https://github.com/sorich87/bootstrap-tour/issues/189#issuecomment-49007822
+                // You have to write your used animated effect class
+                // Standard animated class
+                $('.animated').removeClass('fadeIn');
+                // Animate class from animate-panel plugin
+                $('.animated-panel').removeClass('zoomIn');
+            },
+            steps: [
+                {
+                    element: "#transaction-tour",
+                    title: "Page header",
+                    content: "You can use a backdrop to highlight the element.",
+                    placement: "right",
+                    backdrop: false,
+                },
+                {
+                    element: "#calender-tour",
+                    title: "Tour title",
+                    content: "Or turn it off.",
+                    placement: "top",
+                    backdrop: false,
+
+
+                },
+                {
+                    element: ".activities",
+                    title: "Tour title",
+                    content: "Nulla tincidunt nunc quam, ac faucibus dolor varius vel.",
+                    placement: "right",
+                    backdrop: false,
+
+                }
+            ]});
+        // Initialize the tour
+        tour.init();
+        tour.restart();
+    });
+});
