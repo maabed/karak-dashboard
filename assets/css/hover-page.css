@@ -85,7 +85,8 @@ p,
   margin: .4em;
   padding: 1em;
   cursor: pointer;
-  background: #e1e1e1;
+  background: #fff;
+  border: 1px solid #ccc;
   text-decoration: none !important ;
   color: #666;
   /* Prevent highlight colour when element is tapped */
