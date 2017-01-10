@@ -69,7 +69,7 @@
                 calendar.fullCalendar('renderEvent',
                     {
                         title: title,
-                        start: start,
+                         start: start,
                         end: end,
                         allDay: allDay
                     },
@@ -147,6 +147,23 @@
                 end: new Date(y, m, 29),
                 url: 'http://google.com/',
                 className: 'success'
+            }
+,
+                  {
+                title: 'Click for Google',
+                start: new Date(y, m, 2),
+                end: new Date(y, m, 5),
+                url: 'http://google.com/',
+                className: 'success'
+            }
+
+            ,
+                 {
+                title: 'Event Name',
+                start: new Date(y, m, 16),
+                end: new Date(y, m, 18),
+                url: 'http://google.com/',
+                className: 'worning'
             }
         ],
     });
