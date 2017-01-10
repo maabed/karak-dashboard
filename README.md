@@ -1,4 +1,4 @@
-### Blue-dashboard template
+﻿### Blue-dashboard template
 Blue-dashboard template is a premium admin dashboard theme with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, LESS and Sass.
 
 ### Issues
@@ -21,6 +21,6 @@ Please check out Slack and the [issues](https://github.com/New-versions/Blue-das
     - Reactjs version
     - ASP.NET MVC 5 version 
     - Cordova version
--------
+-----
 
 Copyright © 2016 New Versions.
