@@ -77,9 +77,9 @@ $(document).ready(function(){
             <h3 class='popover-title'></h3> \
             <div class='popover-content'></div> \
             <div class='popover-navigation'> \
-            <a class='btn btn-info button-style hvr-icon-back' data-role='prev'><i class='fa fa-angle-left'></i> &nbsp &nbsp Prev</a> \
-            <a class='btn btn-info button-style hvr-icon-back pull-right' data-role='next'>Next &nbsp &nbsp <i class='fa fa-angle-right'></i></a> \
-            <button type='button' class='btn btn-danger button-style full-width' data-role='end'>End tour</button> \
+            <button type='button' class='btn btn-xs btn-info' data-role='prev'><i class='fa fa-angle-left'></i> &nbsp Prev</button> \
+            <button type='button' class='btn btn-xs btn-info' data-role='next'>Next &nbsp <i class='fa fa-angle-right'></i></button> \
+            <button type='button' class='btn btn-xs btn-danger' data-role='end'>End tour</button> \
             </div> \
             </div>",
             onShown: function(tour) {
@@ -95,27 +95,39 @@ $(document).ready(function(){
                 {
                     element: "#transaction-tour",
                     title: "Page header",
-                    content: "You can use a backdrop to highlight the element.",
+                    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget.",
                     placement: "right",
-                    backdrop: false,
                 },
+                {
+                    element: "#tour-element-email",
+                    title: "Tour title",
+                    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget.",
+                    placement: "right",
+
+                },
+                {
+                    element: ".index-icons",
+                    title: "Tour title",
+                    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget.",
+                    placement: "left",
+                },                 {
+                    element: "#tour-img",
+                    title: "Tour title",
+                    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget.",
+                    placement: "left",
+                }, 
                 {
                     element: "#calender-tour",
                     title: "Tour title",
-                    content: "Or turn it off.",
+                    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget.",
                     placement: "top",
-                    backdrop: false,
-
-
                 },
                 {
                     element: ".activities",
                     title: "Tour title",
-                    content: "Nulla tincidunt nunc quam, ac faucibus dolor varius vel.",
+                    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget.",
                     placement: "right",
-                    backdrop: false,
-
-                }
+                }           
             ]});
         // Initialize the tour
         tour.init();
