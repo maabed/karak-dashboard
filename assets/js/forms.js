@@ -171,4 +171,6 @@ $("#strings").ionRangeSlider({
 });
 $(document).ready(function(){
     $(".bootstrap-tagsinput").find("input").addClass("normal-text");
+    $(".dropdown-toggle").find(".caret").addClass("caret-static");
+    $(".caret-static").removeClass("caret");
 });

@@ -870,12 +870,19 @@ input {
     margin-left: 2em !important;
     width: 85% !important;
 }
-
-
+.btn-group:focus{
+    outline: none;
+}
+.checkbox > label:focus{
+    outline: none;
+}
 /*Drop down*/
-.open > .dropdown-menu{
-    position: absolute;
-    top: -5px;
+.dropdown-menu.inner>li>a{
+    padding: 14px 16px;
+}
+a:focus {
+    outline: none;
+    outline-offset: none;
 }
 .text{
     font-size: 13px;
@@ -908,4 +915,25 @@ input {
 }
 .caret{
     color:#000;
+}
+.caret-static{
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    margin-top: -2px;
+    vertical-align: middle;
+}
+.caret-static{
+    margin-left: 0;
+}
+.caret-static{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid\9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
 }
