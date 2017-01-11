@@ -56,16 +56,6 @@
 .modal-close{
     float: left
 }
-.middle-modal{
-    top: 30%;
-}
-.flat-static{
-    height: 170px;
-}
-.positioning{
-    position: relative;
-    top: 45px;
-}
 .modal-content{
     border-radius: 0px;
 }
@@ -83,6 +73,9 @@
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
     cursor: pointer;
+}
+.right-side-body{
+    top: 20%;
 }
 .preview {
     color: #888888;
@@ -119,9 +112,6 @@ input:not([type]), input[type=text]:not(#flat_email), input[type=password], inpu
     box-shadow: none;
     box-sizing: content-box;
     transition: all 0.3s;
-}
-#flat_email{
-    padding-left: 10px;
 }
 input:not(#searchTB):not(#flat_email) {
     line-height: normal;
@@ -186,12 +176,45 @@ input:not([type])+label:after, input[type=text]+label:after, input[type=password
     -webkit-transform: translateY(-140%);
     transform: translateY(-140%);
 }
-input:not(#searchTB):focus{
-    border-bottom: 1px solid #67b2e4 !important;
-}
 .input-field > label{
     font-weight: 400;
 }
 #flat_email{
     border-radius: 0px;
+    height: 50px;
+    font-size: 16px;
+    border: none;
+    box-shadow: none;
+    background-color: #eee; 
+    padding-left: 10px;
+    width: 92%;
+    display: inline;
+}
+.modal-body > .jumbotron{
+    padding-left: 5px !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    padding-right: 5px !important;
+    border-radius: 0px;
+}
+.middle-dialog{
+    top:22%;
+}
+.jumbotron > .glyphicon-search{
+    font-size: 26px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: #9b9b9b;
+}
+#email-label{
+    font-size: 10px;
+    color: #67b2e4;
+    -webkit-transform: translateY(-140%);
+    transform: translateY(-140%);
+}
+#password-label{
+    font-size: 10px;
+    color: #67b2e4;
+    -webkit-transform: translateY(-140%);
+    transform: translateY(-140%);
 }
