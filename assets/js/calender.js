@@ -1,69 +1,4 @@
-﻿$(document).ready(function() {
-    //     $onload.(function(){
-    //         localStorage.setItems('events', [
-    //             {
-    //                 title: 'All Day Event',
-    //                 start: new Date(y, m, 1)
-    //             },
-    //             {
-    //                 id: 999,
-    //                 title: 'Repeating Event',
-    //                 start: new Date(y, m, d - 3, 16, 0),
-    //                 allDay: false,
-    //                 className: 'info'
-    //             },
-    //             {
-    //                 id: 999,
-    //                 title: 'Repeating Event',
-    //                 start: new Date(y, m, d + 4, 16, 0),
-    //                 allDay: false,
-    //                 className: 'info'
-    //             },
-    //             {
-    //                 title: 'Meeting',
-    //                 start: new Date(y, m, d, 10, 30),
-    //                 allDay: false,
-    //                 className: 'important'
-    //             },
-    //             {
-    //                 title: 'Lunch',
-    //                 start: new Date(y, m, d, 12, 0),
-    //                 end: new Date(y, m, d, 14, 0),
-    //                 allDay: false,
-    //                 className: 'important'
-    //             },
-    //             {
-    //                 title: 'Birthday Party',
-    //                 start: new Date(y, m, d + 1, 19, 0),
-    //                 end: new Date(y, m, d + 1, 22, 30),
-    //                 allDay: false,
-    //             },
-    //             {
-    //                 title: 'Click for Google',
-    //                 start: new Date(y, m, 28),
-    //                 end: new Date(y, m, 29),
-    //                 url: 'http://google.com/',
-    //                 className: 'success'
-    //             }
-    // ,
-    //                   {
-    //                 title: 'Click for Google',
-    //                 start: new Date(y, m, 2),
-    //                 end: new Date(y, m, 5),
-    //                 url: 'http://google.com/',
-    //                 className: 'success'
-    //             }
-
-    //             ,
-    //                  {
-    //                 title: 'Event Name',
-    //                 start: new Date(y, m, 16),
-    //                 end: new Date(y, m, 18),
-    //                 url: 'http://google.com/',
-    //                 className: 'worning'
-    //             }
-    //         ])
-    //     })
+﻿$(document).ready(function () {
     var date = new Date();
     var d = date.getDate();
     var m = date.getMonth();
@@ -79,7 +14,7 @@
     /* initialize the external events
     -----------------------------------------------------------------*/
 
-    $('#external-events div.external-event').each(function() {
+    $('#external-events div.external-event').each(function () {
 
         // create an Event Object (http://arshaw.com/fullcalendar/docs/event_data/Event_Object/)
         // it doesn't need to have a start or end
@@ -93,8 +28,8 @@
         // make the event draggable using jQuery UI
         $(this).draggable({
             zIndex: 999,
-            revert: true, // will cause the event to go back to its
-            revertDuration: 0 //  original position after the drag
+            revert: true,      // will cause the event to go back to its
+            revertDuration: 0  //  original position after the drag
         });
 
     });
@@ -116,87 +51,35 @@
 
         axisFormat: 'h:mm',
         columnFormat: {
-            month: 'ddd', // Mon
+            month: 'ddd',    // Mon
             week: 'ddd d', // Mon 7
-            day: 'dddd M/d', // Monday 9/7
+            day: 'dddd M/d',  // Monday 9/7
             agendaDay: 'dddd d'
         },
         titleFormat: {
-            month: 'MMMM yyyy dddd', // September 2009
-            week: "MMMM yyyy", // September 2009
-            day: 'MMMM yyyy' // Tuesday, Sep 8, 2009
+            month: 'MMMM yyyy , dddd', // September 2009
+            week: "MMMM yyyy ,dddd", // September 2009
+            day: 'MMMM yyyy ,dddd'                  // Tuesday, Sep 8, 2009
         },
         allDaySlot: false,
         selectHelper: true,
-        // eventClick: function(calEvent, jsEvent, view) { // when click on event itself
-        //     console.log('Event: ' + calEvent.title);
-        //     console.log('Coordinates: ' + jsEvent.pageX + ',' + jsEvent.pageY);
-        //     console.log('View: ' + view.name);
-
-        //     // change the border color just for fun
-        //     $(this).css('border-color', 'red');
-        // },
-        select: function(start, end, allDay, e) {
-            $(".popover").remove()
-            e.preventDefault();
-            var screenwidth = $(window).width();
-            var newscreenwidth = screenwidth * 50 / 100;
-            var popoverplacement = 'left';
-            var clickx = e.pageX;
-            var num = Math.random(); // remove later on
-
-            // if ($('.popover')) {
-            //     console.log('popover found');
-            //     $('.popover').popover('destroy');
-            // }
-
-            if (clickx < newscreenwidth) {
-                popoverplacement = 'right';
-            } else {
-                popoverplacement = 'left';
+        select: function (start, end, allDay) {
+            var title = prompt('Event Title:');
+            if (title) {
+                calendar.fullCalendar('renderEvent',
+                    {
+                        title: title,
+                        start: start,
+                        end: end,
+                        allDay: allDay
+                    },
+                    true // make the event "stick"
+                );
             }
-
-            console.log(num);
-            $(e.target).popover({
-                title: 'Testing',
-                html: true,
-                template: '<div class="popover" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"> TEST content</div></div>',
-                content: 'testing contents' + num,
-                placement: popoverplacement,
-            });
-            $(e.target).popover('show');
-
-
-            // calendar.fullCalendar('renderEvent', {
-            //     title: 'title',
-            //     start: new Date(y, m, d + 1, 19, 0),
-            //     end: new Date(y, m, d + 1, 22, 30),
-            //     allDay: false,
-            // }, true // make the event "stick"
-            // );
-
-            // $(e.target).remove();
-            // $('.popover').remove('', function(){
-            //     console.log('bla');
-            // });
-            // var eventsArry = localStorage.getitems('events');
-            // eventsArry.pop({
-            //         id: 999,
-            //         title: 'Repeating Event',
-            //         start: new Date(y, m, d - 3, 16, 0),
-            //         allDay: false,
-            //         className: 'info'
-            //     });
-            // localStorage.setItems('events', eventsArry);
-
-            //calendar.fullCalendar('unselect');
-        },
-        unselect: function(view, e) {
-            // $(".popover").remove()
-            $('.popover').popover('destroy');
+            calendar.fullCalendar('unselect');
         },
         droppable: true, // this allows things to be dropped onto the calendar !!!
-        drop: function(date, allDay) { // this function is called when something is dropped
+        drop: function (date, allDay) { // this function is called when something is dropped
 
             // retrieve the dropped element's stored Event Object
             var originalEventObject = $(this).data('eventObject');
@@ -220,52 +103,52 @@
 
         },
 
-        events: [{
+        events: [
+            {
                 title: 'All Day Event',
                 start: new Date(y, m, 1)
-            }, {
+            },
+            {
                 id: 999,
                 title: 'Repeating Event',
                 start: new Date(y, m, d - 3, 16, 0),
                 allDay: false,
                 className: 'info'
-            }, {
+            },
+            {
                 id: 999,
                 title: 'Repeating Event',
                 start: new Date(y, m, d + 4, 16, 0),
                 allDay: false,
                 className: 'info'
-            }, {
+            },
+            {
                 title: 'Meeting',
                 start: new Date(y, m, d, 10, 30),
                 allDay: false,
                 className: 'important'
-            }, {
+            },
+            {
                 title: 'Lunch',
                 start: new Date(y, m, d, 12, 0),
                 end: new Date(y, m, d, 14, 0),
                 allDay: false,
                 className: 'important'
-            }, {
+            },
+            {
                 title: 'Birthday Party',
                 start: new Date(y, m, d + 1, 19, 0),
                 end: new Date(y, m, d + 1, 22, 30),
                 allDay: false,
-            }, {
+            },
+            {
                 title: 'Click for Google',
                 start: new Date(y, m, 28),
                 end: new Date(y, m, 29),
                 url: 'http://google.com/',
                 className: 'success'
-            }, {
-                title: 'Click for Google',
-                start: new Date(y, m, 2),
-                end: new Date(y, m, 5),
-                url: 'http://google.com/',
-                className: 'success'
-            }
-
-            , {
+            }, 
+            {
                 title: 'Event Name',
                 start: new Date(y, m, 16),
                 end: new Date(y, m, 18),
