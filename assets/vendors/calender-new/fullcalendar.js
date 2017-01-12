@@ -630,8 +630,8 @@ FC.divideDurationByDuration = divideDurationByDuration;
 FC.multiplyDuration = multiplyDuration;
 FC.durationHasTime = durationHasTime;
 
-var dayIDs = [ 'sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat' ];
-var intervalUnits = [ 'year', 'month', 'week', 'day', 'hour', 'minute', 'second', 'millisecond' ];
+var dayIDs = [ 'Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+var intervalUnits = [ 'Year', 'Month', 'Week', 'Day', 'Hour', 'Minute', 'Second', 'Millisecond' ];
 
 
 // Diffs the two moments into a Duration where full-days are recorded first, then the remaining time.
@@ -11140,7 +11140,7 @@ Calendar.defaults = {
 	// locale
 	isRTL: false,
 	buttonText: {
-		prev: "prev",
+		prev: "Previedscsdc",
 		next: "next",
 		prevYear: "prev year",
 		nextYear: "next year",
