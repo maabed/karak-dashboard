@@ -19,6 +19,7 @@
     <!-- Custom CSS -->
     <link href="assets/css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/inbox.css">
+    <link rel="stylesheet" href="assets/css/text-editor.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -249,9 +250,8 @@
             </div>
         </div>
         <!-- Page Content -->
-        <a href="#" id="PageTitle">Email</a>
         <div id="page-content-wrapper">
-            <div class="container-fluid">
+            <div class="container-fluid inbox-container">
                 <div class="row">
                     <div class="col-md-2 InboxLeftSide">
                         <div class="CenteredDiv">
@@ -264,7 +264,7 @@
                                     <h6> BROWSE</h6>
                                     <ul>
                                         <li>
-                                            <a class="SelectedEmail" href="#"> <i class="fa fa-inbox" aria-hidden="true"></i> Inbox<span class="label label-primary">2</span></a>
+                                            <a class="SelectedEmail" href="inbox.html"> <i class="fa fa-inbox" aria-hidden="true"></i> Inbox<span class="label label-primary">2</span></a>
 
                                         </li>
                                         <li>
@@ -305,9 +305,9 @@
                         </nav>
                     </div>
 
-                    <div class="col-md-8 split-view">
+                    <div class="col-md-10 split-view">
                         <div class="Split-left-sidr">
-                            <div id="inbox-date">TODAY APRIL 23<a href="#"><i class="fa fa-refresh" aria-hidden="true"></i></a></div>
+                            <div id="inbox-date"><div class="current-date">Today &nbsp&nbsp</div><a href="#"><i id="refresh-page" class="fa fa-refresh" aria-hidden="true"></i></a></div>
                             <a class="ShowMessage" href="#">
                                 <table class="Emails">
                                     <tr>
@@ -320,72 +320,60 @@
                                     </tr>
                                 </table>
                             </a>
-                            <a href="#">
+                            <a class="ShowMessage2" href="#">
                                 <table class="Emails">
                                     <tr>
-                                        <td class="inbox-user-image" rowspan="2"><img alt="David Nester" src="assets/images/Sami.jpg" /></td>
-                                        <td class="inbox-username">David Nester</td>
-                                        <td class="Inbox-time">5 Mins ago</td>
+                                        <td class="inbox-user-image" rowspan="2"><img alt="David Nester" src="assets/images/user.png" /></td>
+                                        <td class="inbox-username">Sherman Knox</td>
+                                        <td class="Inbox-time">20 Mins ago</td>
                                     </tr>
                                     <tr>
                                         <td class="email-title" colspan="2">Email Title Gose Here Email Title Gose Here</td>
                                     </tr>
                                 </table>
                             </a>
-                            <a href="#">
+                            <a class="ShowMessage3" href="#">
                                 <table class="Emails">
                                     <tr>
-                                        <td class="inbox-user-image" rowspan="2"><img alt="David Nester" src="assets/images/Sami.jpg" /></td>
-                                        <td class="inbox-username">David Nester</td>
-                                        <td class="Inbox-time">5 Mins ago</td>
+                                        <td class="inbox-user-image" rowspan="2"><img alt="David Nester" src="assets/images/member-3.png" /></td>
+                                        <td class="inbox-username">Garrett Calvin</td>
+                                        <td class="Inbox-time">45 Mins ago</td>
                                     </tr>
                                     <tr>
                                         <td class="email-title" colspan="2">Email Title Gose Here Email Title Gose Here</td>
                                     </tr>
                                 </table>
                             </a>
-                            <a href="#">
+                            <a class="ShowMessage4" href="#">
                                 <table class="Emails">
                                     <tr>
-                                        <td class="inbox-user-image" rowspan="2"><img alt="David Nester" src="assets/images/Sami.jpg" /></td>
-                                        <td class="inbox-username">David Nester</td>
-                                        <td class="Inbox-time">5 Mins ago</td>
+                                        <td class="inbox-user-image" rowspan="2"><img alt="David Nester" src="assets/images/team1.jpg" /></td>
+                                        <td class="inbox-username">Elaina Annmarie</td>
+                                        <td class="Inbox-time">1 hour ago</td>
                                     </tr>
                                     <tr>
                                         <td class="email-title" colspan="2">Email Title Gose Here Email Title Gose Here</td>
                                     </tr>
                                 </table>
                             </a>
-                            <a href="#">
+                            <a class="ShowMessage5" href="#">
                                 <table class="Emails">
                                     <tr>
-                                        <td class="inbox-user-image" rowspan="2"><img alt="David Nester" src="assets/images/Sami.jpg" /></td>
-                                        <td class="inbox-username">David Nester</td>
-                                        <td class="Inbox-time">5 Mins ago</td>
+                                        <td class="inbox-user-image" rowspan="2"><img alt="David Nester" src="assets/images/team-member.jpg" /></td>
+                                        <td class="inbox-username">Shirley Garnet</td>
+                                        <td class="Inbox-time">6 hours ago</td>
                                     </tr>
                                     <tr>
                                         <td class="email-title" colspan="2">Email Title Gose Here Email Title Gose Here</td>
                                     </tr>
                                 </table>
                             </a>
-                            <a href="#">
+                            <a class="ShowMessage6" href="#">
                                 <table class="Emails">
                                     <tr>
-                                        <td class="inbox-user-image" rowspan="2"><img alt="David Nester" src="assets/images/Sami.jpg" /></td>
-                                        <td class="inbox-username">David Nester</td>
-                                        <td class="Inbox-time">5 Mins ago</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="email-title" colspan="2">Email Title Gose Here Email Title Gose Here</td>
-                                    </tr>
-                                </table>
-                            </a>
-                            <a href="#">
-                                <table class="Emails">
-                                    <tr>
-                                        <td class="inbox-user-image" rowspan="2"><img alt="David Nester" src="assets/images/Sami.jpg" /></td>
-                                        <td class="inbox-username">David Nester</td>
-                                        <td class="Inbox-time">5 Mins ago</td>
+                                        <td class="inbox-user-image" rowspan="2"><img alt="David Nester" src="assets/images/team-member-5.jpg" /></td>
+                                        <td class="inbox-username">Cheyenne Lauren</td>
+                                        <td class="Inbox-time">1 day ago</td>
                                     </tr>
                                     <tr>
                                         <td class="email-title" colspan="2">Email Title Gose Here Email Title Gose Here</td>
@@ -393,14 +381,22 @@
                                 </table>
                             </a>
                         </div>
-                        <div class="Split-right-sidr">
-                            <h2 id="No-email-selected">No email has been selected</h2>
-                            <div id="email-content">
+                        
+                        <div class="Split-right-sidr no-selection">
+                            <h2 class="No-email-selected2">No email has been selected</h2>
+                        </div>
+                        
+                        
+                        <!--------------------------------- message 1 ----------------------------------------------------------->
+
+                        
+                        <div class="Split-right-sidr message1" style="overflow:scroll">
+                            <div class="email-content1">
                                 <div class="email-header">
                                     <div class="btn-group Message-btns">
-                                        <button type="button" class="btn btn-default outline-default reply">Reply</button>
-                                        <button type="button" class="btn btn-default outline-default reply">Reply all</button>
-                                        <button type="button" class="btn btn-default outline-default reply">Forward</button>
+                                        <button type="button" class="btn btn-default outline-default reply focus1">Reply</button>
+                                        <button type="button" class="btn btn-default outline-default reply focus1">Reply all</button>
+                                        <button type="button" class="btn btn-default outline-default reply focus1">Forward</button>
                                         <button type="button" class="btn btn-default outline-default reply">Mark as read</button>
                                         <div class="btn-group">
                                             <button type="button" class="btn btn-default outline-default reply dropdown-toggle" data-toggle="dropdown">
@@ -415,6 +411,164 @@
                                 <div class="email-content-top">
                                     <div class="user-image">
                                         <img class="img-responsive" alt="user image" src="assets/images/Sami.jpg" />
+                                    </div>
+                                    <div class="sender-info">
+                                        <h5>David Nester</h5>
+                                        <p>Today at 1:33pm</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <h4>Email Title Gose Here Email Title Gose Here</h4>
+                                </div>
+                                <p class="Emai-text">
+                                    Dear Sir or Madam:
+                                    <br />
+                                    I have recently ordered a new pair of soccer cleats (item #6542951) from your website on June 21. I received the order on June 26. Unfortunately, when I opened it, I saw that the cleats were used. The cleats had dirt all over it and there was a small tear in front of the part where the left toe would go. My order number is AF26168156.<br /><br />
+                                    Sincerely,
+                                    <br /><br />
+
+                                    Signature
+                                </p>
+                                <textarea id="txtEditor1">
+                                </textarea>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-sm-offset-7">
+                                    <button type="button " class="btn btn-success dashboard-success button-style icon-btn">
+                                        <span class="glyphicon glyphicon-envelope"></span> Send
+                                    </button>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <!--------------------------------- message 2 ----------------------------------------------------------->
+                        
+               
+                        <div class="Split-right-sidr message2">
+                            <div class="email-content2">
+                                <div class="email-header">
+                                    <div class="btn-group Message-btns">
+                                        <button type="button" class="btn btn-default outline-default reply focus2">Reply</button>
+                                        <button type="button" class="btn btn-default outline-default reply focus2">Reply all</button>
+                                        <button type="button" class="btn btn-default outline-default reply focus2">Forward</button>
+                                        <button type="button" class="btn btn-default outline-default reply">Mark as read</button>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default outline-default reply dropdown-toggle" data-toggle="dropdown">
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu Delete" role="menu">
+                                                <li><a href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="email-content-top">
+                                    <div class="user-image">
+                                        <img class="img-responsive" alt="user image" src="assets/images/user.png" />
+                                    </div>
+                                    <div class="sender-info">
+                                        <h5>David Nester</h5>
+                                        <p>Today at 1:33pm</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <h4>Email Title Gose Here Email Title Gose Here</h4>
+                                </div>
+                                <p class="Emai-text">
+                                    Dear Sir or Madam:
+                                    <br />
+
+                                    I have recently ordered a new pair of soccer cleats (item #6542951) from your website on June 21. I received the order on June 26. Unfortunately, when I opened it, I saw that the cleats were used. The cleats had dirt all over it and there was a small tear in front of the part where the left toe would go. My order number is AF26168156.<br /><br />
+
+
+                                    To resolve the problem, I would like you to credit my account for the amount charged for my cleats; I have already went out and bought a new pair of cleats at my local sporting goods store so sending another would result in me having two pairs of the same cleats.<br /><br />
+
+                                    Sincerely,
+                                    <br /><br />
+
+                                    Signature
+                                </p>
+                                <textarea id="txtEditor2"></textarea>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        
+                        
+                        <!--------------------------------- message 3 ----------------------------------------------------------->
+
+                        
+                        <div class="Split-right-sidr message3">
+                            <div class="email-content3">
+                                <div class="email-header">
+                                    <div class="btn-group Message-btns">
+                                        <button type="button" class="btn btn-default outline-default reply focus3">Reply</button>
+                                        <button type="button" class="btn btn-default outline-default reply focus3">Reply all</button>
+                                        <button type="button" class="btn btn-default outline-default reply focus3">Forward</button>
+                                        <button type="button" class="btn btn-default outline-default reply">Mark as read</button>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default outline-default reply dropdown-toggle" data-toggle="dropdown">
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu Delete" role="menu">
+                                                <li><a href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="email-content-top">
+                                    <div class="user-image">
+                                        <img class="img-responsive" alt="user image" src="assets/images/member-3.png" />
+                                    </div>
+                                    <div class="sender-info">
+                                        <h5>David Nester</h5>
+                                        <p>Today at 1:33pm</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <h4>Email Title Gose Here Email Title Gose Here</h4>
+                                </div>
+                                <p class="Emai-text">
+                                    Dear Sir or Madam:
+                                    <br />
+
+                                    I have recently ordered a new pair of soccer cleats (item #6542951) from your website on June 21. I received the order on June 26. Unfortunately, when I opened it, I saw that the cleats were used. The cleats had dirt all over it and there was a small tear in front of the part where the left toe would go. My order number is AF26168156.<br /><br />
+
+
+                                    Sincerely,
+                                    <br /><br />
+
+                                    Signature
+                                </p>
+                                <textarea id="txtEditor3"></textarea>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        
+                        
+                        <!--------------------------------- message 4 ----------------------------------------------------------->
+
+                        
+                        <div class="Split-right-sidr message4">
+                            <div class="email-content4">
+                                <div class="email-header">
+                                    <div class="btn-group Message-btns">
+                                        <button type="button" class="btn btn-default outline-default reply focus4">Reply</button>
+                                        <button type="button" class="btn btn-default outline-default reply focus4">Reply all</button>
+                                        <button type="button" class="btn btn-default outline-default reply focus4">Forward</button>
+                                        <button type="button" class="btn btn-default outline-default reply">Mark as read</button>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default outline-default reply dropdown-toggle" data-toggle="dropdown">
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu Delete" role="menu">
+                                                <li><a href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="email-content-top">
+                                    <div class="user-image">
+                                        <img class="img-responsive" alt="user image" src="assets/images/team1.jpg" />
                                     </div>
                                     <div class="sender-info">
                                         <h5>David Nester</h5>
@@ -442,11 +596,126 @@
 
                                     Signature
                                 </p>
-                                <textarea id="txtEditor"></textarea>
+                                <textarea id="txtEditor4"></textarea>
                                 <div class="clearfix"></div>
-
                             </div>
                         </div>
+                        
+                        
+                        <!--------------------------------- message 5 ----------------------------------------------------------->
+
+                        
+                        <div class="Split-right-sidr message5">
+                            <div class="email-content5">
+                                <div class="email-header">
+                                    <div class="btn-group Message-btns">
+                                        <button type="button" class="btn btn-default outline-default reply focus5">Reply</button>
+                                        <button type="button" class="btn btn-default outline-default reply focus5">Reply all</button>
+                                        <button type="button" class="btn btn-default outline-default reply focus5">Forward</button>
+                                        <button type="button" class="btn btn-default outline-default reply">Mark as read</button>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default outline-default reply dropdown-toggle" data-toggle="dropdown">
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu Delete" role="menu">
+                                                <li><a href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="email-content-top">
+                                    <div class="user-image">
+                                        <img class="img-responsive" alt="user image" src="assets/images/team-member.jpg" />
+                                    </div>
+                                    <div class="sender-info">
+                                        <h5>David Nester</h5>
+                                        <p>Today at 1:33pm</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <h4>Email Title Gose Here Email Title Gose Here</h4>
+                                </div>
+                                <p class="Emai-text">
+                                    Dear Sir or Madam:
+                                    <br />
+
+                                    I have recently ordered a new pair of soccer cleats (item #6542951) from your website on June 21. I received the order on June 26. Unfortunately, when I opened it, I saw that the cleats were used. The cleats had dirt all over it and there was a small tear in front of the part where the left toe would go. My order number is AF26168156.<br /><br />
+
+
+                                    To resolve the problem, I would like you to credit my account for the amount charged for my cleats; I have already went out and bought a new pair of cleats at my local sporting goods store so sending another would result in me having two pairs of the same cleats.<br /><br />
+
+
+                                    Than you for taking the time to read this letter. I have been a satisfied customer of your company for many years and this is the first time I have encountered a problem. If you need to contact me, you can reach me at (555) 555-5555.<br /><br />
+
+
+
+                                    Sincerely,
+                                    <br /><br />
+
+                                    Signature
+                                </p>
+                                <textarea id="txtEditor5"></textarea>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        
+                        
+                        <!--------------------------------- message 5 ----------------------------------------------------------->
+
+                        
+                        <div class="Split-right-sidr message6">
+                            <div class="email-content6">
+                                <div class="email-header">
+                                    <div class="btn-group Message-btns">
+                                        <button type="button" class="btn btn-default outline-default reply focus6">Reply</button>
+                                        <button type="button" class="btn btn-default outline-default reply focus6">Reply all</button>
+                                        <button type="button" class="btn btn-default outline-default reply focus6">Forward</button>
+                                        <button type="button" class="btn btn-default outline-default reply">Mark as read</button>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default outline-default reply dropdown-toggle" data-toggle="dropdown">
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu Delete" role="menu">
+                                                <li><a href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="email-content-top">
+                                    <div class="user-image">
+                                        <img class="img-responsive" alt="user image" src="assets/images/team-member-5.jpg" />
+                                    </div>
+                                    <div class="sender-info">
+                                        <h5>David Nester</h5>
+                                        <p>Today at 1:33pm</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <h4>Email Title Gose Here Email Title Gose Here</h4>
+                                </div>
+                                <p class="Emai-text">
+                                    Dear Sir or Madam:
+                                    <br />
+
+                                    I have recently ordered a new pair of soccer cleats (item #6542951) from your website on June 21. I received the order on June 26. Unfortunately, when I opened it, I saw that the cleats were used. The cleats had dirt all over it and there was a small tear in front of the part where the left toe would go. My order number is AF26168156.<br /><br />
+
+
+                                    To resolve the problem, I would like you to credit my account for the amount charged for my cleats; I have already went out and bought a new pair of cleats at my local sporting goods store so sending another would result in me having two pairs of the same cleats.<br /><br />
+
+
+                                    Than you for taking the time to read this letter. I have been a satisfied customer of your company for many years and this is the first time I have encountered a problem. If you need to contact me, you can reach me at (555) 555-5555.<br /><br />
+
+
+
+                                    Sincerely,
+                                    <br /><br />
+
+                                    Signature
+                                </p>
+                                <textarea id="txtEditor6"></textarea>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    
+                    
                     </div>
                 </div>
             </div>
@@ -702,16 +971,13 @@
     <script src="assets/js/notifications_boxs.js"></script>
     <script src="assets/js/compose.js"></script>
 
-        <script src="assets/js/nav_colors_change.js"></script>
-    <link href="assets/css/colorpicker-layout.css" rel="stylesheet" />
-    <link href="assets/css/colorpicker.css" rel="stylesheet" />
     <script src="assets/js/vendors/colorpicker/colorpicker.js"></script>
-    <script src="assets/js/vendors/colorpicker/eye.js"></script>
-    <script src="assets/js/vendors/colorpicker/layout.js"></script>
-    <script src="assets/js/vendors/colorpicker/utils.js"></script>
-    <script src="assets/js/vendors/colorpicker/utils.js"></script>
     <script src="assets/js/right-side-colors-change.js"></script>
     <script src="assets/js/page-ready-theam.js"></script>
-        <link id="default-color-picker" rel="stylesheet" />
+    <link id="default-color-picker" rel="stylesheet" />
+    <script src="assets/vendors/momentjs/moment.js"></script>
+    <script>
+        $(".current-date").append(moment().format('ll'));
+    </script>
 </body>
 </html>

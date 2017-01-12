@@ -40,6 +40,10 @@
 .inbox-container{
     margin-top:2.7em; 
 }
+.Inbox-time{
+    text-align: right;
+    padding-right: 6px;
+}
 .Compose-table tr td{
     padding: 1.6em 0em 0em 0em;
 }
@@ -58,7 +62,30 @@
 .Compose-style:focus{
     border-bottom:1px solid #67b2e4 !important;
 }
-
+.email-content{
+    display: none;
+}
+.message1{
+    display: none;
+}
+.message2{
+    display: none;
+}
+.message3{
+    display: none;
+}
+.message4{
+    display: none;
+}
+.message5{
+    display: none;
+}
+.message6{
+    display: none;
+}
+.current-date{
+    display: inline;
+}
 .col-width{
     width: 50% !important;
     padding-right:2em !important; 

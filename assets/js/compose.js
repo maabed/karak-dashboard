@@ -18,4 +18,8 @@ $(document).ready(function(){
     $("#cc_tag").focusout(function(){
         $("#cc_tag").parent().css("border-bottom","1px solid #E4E5E7");
     });
+    
+    $('#refresh-page').click(function() {
+        location.reload();
+    });
 });
