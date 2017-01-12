@@ -450,3 +450,23 @@ h3 {
     margin: 0 2%;
   }
 }
+.hvr-border-fade,.hvr-ripple-out,.hvr-outline-out{
+    background: #2c3e50;
+    color: #fff;
+}
+.hvr-border-fade:hover,.hvr-ripple-out:hover,.hvr-outline-out:hover{
+    background: #2c3e50;
+    color: #fff;
+}
+.hvr-outline-out:before{
+    border: #2c3e50 solid 6px;
+}
+.hvr-ripple-out:before{
+    border: #2c3e50 solid 6px;
+}
+.hvr-border-fade{
+    box-shadow: inset 0 0 0 4px #2c3e50, 0 0 1px transparent;
+}
+.hvr-bubble-top,.hvr-bubble-right,.hvr-bubble-bottom,.hvr-bubble-left,.hvr-bubble-float-top,.hvr-bubble-float-right,.hvr-bubble-float-bottom,.hvr-bubble-float-left{
+    background-color: #e1e1e1;
+}
