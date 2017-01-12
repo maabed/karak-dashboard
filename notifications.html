@@ -266,6 +266,27 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="col-contint">
+                                <h5 class ="title form-section"> Sweet alerts </h5>
+                                <br>
+                                <img class="img-border" src="assets/images/notifications/sweet-01.png">
+                                <br>
+                                <br>
+                                <label class="small-label">Select type:</label>
+                                <select class="form-control select-width" id="sweet-select">
+                                    <option value="basic">Basic message</option>
+                                    <option value="success">Success message</option>
+                                    <option value="warning">Warning message</option>
+                                    <option value="execute">Execute something else for "Cancel"</option>
+                                    <option value="custom">Custom icon</option>
+                                    <option value="HTML">An HTML message</option>
+                                    <option value="Auto">Auto close timer</option>
+                                    <option value="Prompt">Prompt function</option>
+                                </select>
+                                <span id="sweet-generate" class="glyphicon glyphicon-cog"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="col-contint">
                                 <h5 class ="title form-section"> Bootstrap alerts </h5>
                                 <br>
                                 <div class="alert alert-success">
@@ -282,26 +303,6 @@
                                 <div class="alert alert-danger">
                                   <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="col-contint">
-                                <h5 class ="title form-section"> Sweet alerts </h5>
-                                <br>
-                                <label class="small-label">Select type:</label>
-                                <select class="form-control select-width" id="sweet-select">
-                                    <option value="basic">Basic message</option>
-                                    <option value="success">Success message</option>
-                                    <option value="warning">Warning message</option>
-                                    <option value="execute">Execute something else for "Cancel"</option>
-                                    <option value="custom">Custom icon</option>
-                                    <option value="HTML">An HTML message</option>
-                                    <option value="Auto">Auto close timer</option>
-                                    <option value="Prompt">Prompt function</option>
-                                </select>
-                                <button type="button" id="sweet-generate" class="btn btn-default dashboard-default">
-                                    Generate
-                                </button>
                             </div>
                         </div>
                     </div>
