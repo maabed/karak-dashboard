@@ -282,7 +282,7 @@ html .fc,
     /* default BORDER color */
     background-color: #fafafa;
     /* default BACKGROUND color */
-    
+border-left:2px solid #cdcdcd !important;
     color: #6B6E6E;
     /* default TEXT color */
     font-size: 12px;
@@ -297,16 +297,21 @@ html .fc,
     background-color: #f3dcf8;
 }
 .fc-event.info {
-    background-color: #DAEFFD;
+    background-color: #cce5f6;
+border-left:2px solid #67b2e4 !important;
 }
 .fc-event.important {
-    background-color: #FDDDDD;
+    background-color: #f9d2ce;
+border-left:2px solid #ed796d !important;
 }
 .fc-event.success {
-    background-color: #CFF5F2;
+    background-color: #cbf2db;
+border-left:2px solid #62d995 !important;
 }
 .fc-event.worning {
-    background-color: #FEF8E7;
+    background-color: #fbf0c3;
+border-left:2px solid #f5d34b !important;
+
 }
 .fc-event:hover {
     opacity: 0.7;
