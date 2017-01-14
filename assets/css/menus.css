@@ -1,4 +1,4 @@
-﻿body, html {
+body, html {
     height: 100%;
 }
 
@@ -475,4 +475,13 @@ Logo by Sneaker-mission.com (http://www.sneaker-mission.com/)
   line-height: 30px;
   text-shadow: none;
   color: #333;
+}
+
+
+/* Rayan's review */
+#bs-sidebar-navbar-collapse-1 > ul > li > a {
+    color: #cdcdcd;
+}
+.forAnimate > li > a {
+    color: #cdcdcd;
 }
