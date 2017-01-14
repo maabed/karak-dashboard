@@ -15,20 +15,24 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/styles.css" rel="stylesheet" />
-    <link href="assets/vendors/calender/calender_theme.css" rel="stylesheet" /> 
-
-
-
+    <link href="assets/vendors/calender/calender_theme.css" rel="stylesheet" />
     <link href='assets/vendors/calender-new/fullcalendar.css' rel='stylesheet' />
     <link href="assets/vendors/calender-new/fullcalendar.print.css" rel='stylesheet' media='print' />
     <script src="assets/vendors/calender-new/lib/moment.min.js"></script>
     <script src="assets/vendors/calender-new/lib/jquery.min.js"></script>
     <script src="assets/vendors/calender-new/fullcalendar.min.js"></script>
- <!--    <link href='assets/vendors/calender-new/lib/cupertino/jquery-ui.min.css' rel='stylesheet' /> -->
+    <!--    <link href='assets/vendors/calender-new/lib/cupertino/jquery-ui.min.css' rel='stylesheet' /> -->
     <script>
-    $(document).ready(function() {
-        
+    // var myCalendar = $('#calendar'); 
+    // myCalendar.fullCalendar();
+    // var myEvent = {
+    //   title:"my new event",
+    //   allDay: true,
+    //   start: new Date(),
+    //   end: new Date()
+    // };
 
+    $(document).ready(function() {
 
         $('#calendar').fullCalendar({
             theme: true,
@@ -41,8 +45,21 @@
             navLinks: true, // can click day/week names to navigate views
             editable: true,
             eventLimit: true, // allow "more" link when too many events
-            events: [
-                {
+
+
+            select: function(start, end , jsEvent, view) {
+
+                alert('Clicked on: ');
+
+                // alert('Coordinates: ' + jsEvent.pageX + ',' + jsEvent.pageY);
+
+                // alert('Current view: ' + view.name);
+
+                // // change the day's background color just for fun
+                // $(this).css('background-color', 'red');
+            },
+
+            events: [{
                     title: 'All Day Event',
                     start: '2016-12-01',
                     className: 'info'
@@ -53,70 +70,65 @@
                     start: '2016-12-07',
                     end: '2016-12-10',
                     className: 'important'
-                },
-                {
+                }, {
                     id: 999,
                     title: 'Repeating Event',
                     start: '2016-12-09T16:00:00',
                     className: 'important'
-                },
-                {
+                }, {
                     id: 999,
                     title: 'Repeating Event',
                     start: '2016-12-16T16:00:00',
                     className: 'success'
-                },
-                {
+                }, {
                     title: 'Conference',
                     start: '2016-12-11',
                     end: '2016-12-13',
                     className: 'success'
-                },
-                {
+                }, {
                     title: 'Meeting',
                     start: '2016-12-12T10:30:00',
                     end: '2016-12-12T12:30:00',
                     className: 'info'
-                },
-                {
+                }, {
                     title: 'Lunch',
                     start: '2016-12-12T12:00:00',
                     className: 'info'
-                },
-                {
+                }, {
                     title: 'Meeting',
                     start: '2016-12-12T14:30:00',
-                    
-                },
-                {
+
+                }, {
                     title: 'Happy Hour',
                     start: '2016-12-12T17:30:00',
-                    
-                },
-                {
+
+                }, {
                     title: 'Dinner',
                     start: '2016-12-12T20:00:00',
                     className: 'info'
-                },
-                {
+                }, {
                     title: 'Birthday Party',
                     start: '2016-12-13T07:00:00',
                     className: 'success'
-                },
-                {
+                }, {
                     title: 'Click for Google',
                     url: 'http://google.com/',
                     start: '2016-12-28',
                     className: 'important'
-                }
+                }, {
+                    title: 'Event Name',
+                    start: '2016-12-5',
+                    end: '2016-12-6',
+                    className: 'worning'
+                },
+
             ]
 
 
         });
-        
-    });
 
-</script>
+    });
+    </script>
 </head>
 
 <body>

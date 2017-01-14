@@ -27,13 +27,15 @@ table thead {
 
 table tr td {
     border: 0 !important;
-    border-right: 15px solid #fff !important;
-    border-left: 15px solid #fff !important;
 }
+
 
 .fc-day-top {
     border-top: 1px solid #e5e5e5 !important;
 }
+
+hr {
+border-color: #fff !important;}
 
 
 /* Colors
@@ -208,7 +210,10 @@ NOTE: use percentage font sizes or else old IE chokes
     padding-left: 1em !important;
     padding-right: 1em !important;
 }
-
+.fc-prev-button:hover , .fc-next-button:hover {
+    background-color: #e6e6e6 !important;
+    color :#fff;
+}
 .fc-next-button {
     background-image: url('../../images/left.svg');
     background-repeat: no-repeat;
@@ -236,7 +241,7 @@ NOTE: use percentage font sizes or else old IE chokes
     background-color: #2c3e50 !important;
     font-weight: lighter !important;
 }
-
+.fc-today-button:hover{ border-color:#677786;  background-color: #677786 !important;}
 .fc button {
     /* force height to include the border and padding */
     -moz-box-sizing: border-box;
@@ -517,7 +522,6 @@ a[data-goto]:hover {
 .fc .fc-row {
     /* extra precedence to overcome themes w/ .ui-widget-content forcing a 1px border */
     /* no visible border by default. but make available if need be (scrollbar width compensation) */
-    border-style: solid;
     border-width: 0;
 }
 
@@ -587,7 +591,8 @@ temporary rendered events).
     padding-bottom: 2px;
     /* matches the space above the events */
 }
-
+.ui-widget-content .fc-day-grid .fc-row .fc-bg table tbody {
+    border-top:1px solid #e5e5e5 !important; } 
 .fc-row .fc-helper-skeleton {
     z-index: 5;
 }
@@ -650,13 +655,19 @@ temporary rendered events).
 
 .fc-event,
 .fc-event-dot {
-    background-color: #3a87ad;
+    background-color: #8A8F9B;
     /* default BACKGROUND color */
 }
 
 
 /* overpower some of bootstrap's and jqui's styles on <a> tags */
-
+#Right-Side-Section-Togle{
+    z-index: 9999999999 !important;
+    background-color: #fff !important;
+}
+#Right-Side-Section-Togle:hover{
+background-color:#CDCDCD !important;
+}
 .fc-event,
 .fc-event:hover,
 .ui-widget .fc-event {
@@ -1006,6 +1017,9 @@ a.fc-more:hover {
 
 .fc-toolbar .fc-left {
     float: right;
+    z-index: 99 !important;
+        position: relative;
+
 }
 
 .fc-toolbar .fc-right {
@@ -1241,10 +1255,13 @@ a.fc-more:hover {
     vertical-align: middle;
     border: 0 !important;
     white-space: nowrap;
+    padding-right:1em; 
+    padding-left:1em;
 }
 
 .fc-ltr .fc-axis {
     text-align: right;
+    border-bottom: 0 !important;
 }
 
 .fc-rtl .fc-axis {
@@ -1348,10 +1365,15 @@ a.fc-more:hover {
     /* each cell is responsible for its top border */
 }
 
+
 .fc-time-grid .fc-slats .fc-minor td {
     border-top-style: dotted;
 }
 
+
+.ui-widget-header{
+
+}
 .fc-time-grid .fc-slats .ui-widget-content {
     /* for jqui theme */
     background: none;
@@ -1456,6 +1478,10 @@ be a descendant of the grid when it is being dragged.
 .fc-time-grid-event .fc-time,
 .fc-time-grid-event .fc-title {
     padding: 0 1px;
+
+}
+.fc-time , .fc-axis , .fc-time  .ui-widget-content{
+    border-bottom: 0 !important;
 }
 
 .fc-time-grid-event .fc-time {
@@ -1620,7 +1646,7 @@ be a descendant of the grid when it is being dragged.
 /* day headings with the list */
 
 .fc-list-heading {
-    border-bottom-width: 1px;
+   border-bottom: 1px solid #e5e5e5;
 }
 
 .fc-list-heading td {
@@ -1629,8 +1655,16 @@ be a descendant of the grid when it is being dragged.
 
 .fc-ltr .fc-list-heading-main {
     float: left;
+    color: #67b2e4;
+    font-weight: lighter;
+    font-family: 'Open Sans', sans-serif;
 }
 
+.fc-list-heading-alt{color: #67b2e4;font-weight: lighter;}
+.fc-list-item{
+    color:rgba(0,0,0,0.5);
+    font-weight: lighter;
+}
 .fc-ltr .fc-list-heading-alt {
     float: right;
 }
