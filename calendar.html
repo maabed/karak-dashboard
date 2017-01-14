@@ -45,9 +45,10 @@
             navLinks: true, // can click day/week names to navigate views
             editable: true,
             eventLimit: true, // allow "more" link when too many events
+            selectable: true,
+            selectHelper: true,
 
-
-            select: function(start, end , jsEvent, view) {
+            select: function(start, end, jsEvent, view) {
 
                 alert('Clicked on: ');
 
