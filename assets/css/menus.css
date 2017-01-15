@@ -214,10 +214,6 @@ Follow me on Twitter @maridlcrmn
     margin-bottom: 2.54em !important;
 }
 
-.navbar .navbar-collapse .navbar-right > li:last-child {
-    padding-left: 40px;
-}
-
 .navbar .nav-collapse {
     position: absolute;
     z-index: 1;
@@ -476,20 +472,18 @@ Logo by Sneaker-mission.com (http://www.sneaker-mission.com/)
 
 
 /* Rayan's review */
-#bs-sidebar-navbar-collapse-1 > ul > li > a {
-    color: #cdcdcd;
-}
 .forAnimate > li > a {
-    color: #cdcdcd;
+    color: #9b9b9b;
 }
-
-
-
-
-
+#nav-collapse3 > form > .glyphicon-search{
+    color: #fff;   
+}
+.drop-li{
+    padding-left: 0px !important;
+}
 .input-field {
     position: relative;
-    margin-top: 1rem;
+    bottom: 3px;
 }
 input:not([type]), input[type=text]:not(#flat_email):not(.normal-text):not(.input-mini), input[type=password], input[type=email]:not(#searchTB):not(#flat_email), input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
     background-color: transparent;
@@ -592,4 +586,25 @@ input:not(#searchTB):focus{
 }
 a.btn-info:hover{
     background-color: #2980b9 !important;
+}
+#navbar-collapse-1{
+    padding-left: 0px;
+}
+#nav-collapse3 > form > div > input{
+    color: #fff !important;
+}
+#navbar-collapse-2{
+    padding-left: 0px;
+}
+#navbar-collapse-3{
+    padding-left: 0px;
+}
+#navbar-collapse-4{
+    padding-left: 0px;
+}
+#bs-megadropdown-tabs{
+    padding-left: 0px;
+}
+#dropdown-thumbnail-preview{
+    padding-left: 0px;
 }

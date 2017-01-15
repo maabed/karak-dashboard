@@ -246,9 +246,18 @@
             </div>
         </div>
         <!-- Page Content -->
-        <a href="#" id="PageTitle">UI Elements / Menus & Navbar</a>
         <div id="page-content-wrapper">
             <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-contint body-header">
+                            <h4 class ="title"> Menus </h4>
+                            <br>
+                            <a href="menus.html" class="page_title pull-right">Menus</a>  
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-lg-12 no-left-right-padding">
                         <div class="col-sm-3">
@@ -411,9 +420,10 @@
                                 <nav class="navbar navbar-default nav-style" role="navigation">
                                     <div class="collapse navbar-collapse" id="dropdown-thumbnail-preview">
                                         <ul class="nav navbar-nav">
-                                            <li class="active"><a>Active</a></li>
+                                            <li class="active"><a>Home</a></li>
+                                            <li><a>Services</a></li>
                                             <li class="dropdown thumb-dropdown">
-                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">My work <span class="caret"></span></a>
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gallery <span class="caret"></span></a>
                                                 <ul class="dropdown-menu" role="menu">
                                                     <li role="presentation" class="dropdown-header">Simple thumbnail</li>
                                                     <li>
@@ -455,15 +465,15 @@
                                                     </li>
                                                 </ul>
                                             </li>
-                                            <li>
-                                                <form class="navbar-form navbar-left" role="search">
+                                        </ul>
+                                        <ul>
+                                            <li class="nav navbar-nav navbar-right">
+                                                <div class="navbar-form" role="search">
                                                     <div class="form-group">
                                                         <input type="text" class="form-control" placeholder="Search">
                                                     </div>
-                                                    <button type="submit" class="btn btn-default">
-                                                        <span class="glyphicon glyphicon-search "></span> Search
-                                                    </button>
-                                                </form>
+                                                    <span class="glyphicon glyphicon-search "></span>
+                                                </div>
                                             </li>
                                         </ul>
                                     </div>
@@ -479,10 +489,10 @@
                                         <!-- Collect the nav links, forms, and other content for toggling -->
                                         <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
                                             <ul class="nav navbar-nav">
-                                                <li><a>Item</a></li>
-                                                <li><a>Link</a></li>
+                                                <li><a>Home</a></li>
+                                                <li><a>About</a></li>
                                                 <li class="dropdown2 mega-dropdown active">
-                                                    <a class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                                                    <a class="dropdown-toggle" data-toggle="dropdown">Categories<span class="caret"></span></a>
                                                     <div class="dropdown-menu mega-dropdown-menu">
                                                         <div class="container-fluid">
                                                             <!-- Tab panes -->
@@ -575,19 +585,6 @@
                                                     </div>
                                                 </li>
                                             </ul>
-                                            <ul class="nav navbar-nav navbar-right">
-                                                <li><a>Item</a></li>
-                                                <li class="dropdown">
-                                                    <a class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
-                                                    <ul class="dropdown-menu" role="menu">
-                                                        <li><a>Action</a></li>
-                                                        <li><a>Another action</a></li>
-                                                        <li><a>Something else here</a></li>
-                                                        <li class="divider"></li>
-                                                        <li><a>Separated link</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
                                         </div>
                                         <!-- /.navbar-collapse -->
                                     </div>
@@ -609,6 +606,8 @@
                                             <li><a>About</a></li>
                                             <li><a>Services</a></li>
                                             <li><a>Contact</a></li>
+                                        </ul>
+                                        <ul class="nav navbar-nav navbar-right">
                                             <li>
                                                 <button class="btn btn-info button-style collapsed" data-toggle="collapse" href="#nav-collapse1" aria-expanded="false" aria-controls="nav-collapse1">Categories</button>
                                             </li>
@@ -635,6 +634,8 @@
                                             <li><a>About</a></li>
                                             <li><a>Services</a></li>
                                             <li><a>Contact</a></li>
+                                        </ul>
+                                        <ul class="nav navbar-nav navbar-right">
                                             <li>
                                                 <button class="btn btn-info button-style collapsed" data-toggle="collapse" href="#nav-collapse2" aria-expanded="false" aria-controls="nav-collapse2">Sign in
                                                 </button>
@@ -671,14 +672,18 @@
                                             <li><a>About</a></li>
                                             <li><a>Services</a></li>
                                             <li><a>Contact</a></li>
+                                        </ul>
+                                        <ul class="nav navbar-nav navbar-right">
                                             <li>
-                                                <a class="btn btn-info button-style collapsed" data-toggle="collapse" href="#nav-collapse4" aria-expanded="false" aria-controls="nav-collapse4">Profile  </a>
+                                                <button class="btn btn-info button-style collapsed" data-toggle="collapse" href="#nav-collapse4" aria-expanded="false" aria-controls="nav-collapse4">Profile  </button>
                                             </li>
                                         </ul>
                                         <ul class="collapse nav navbar-nav nav-collapse slide-down" role="search" id="nav-collapse4">
                                             <li><a>Support</a></li>
-                                            <li><a>Privacy</a></li>
-                                            <li><a>Info</a></li>
+                                            <li><a>Settings</a></li>
+                                            <li class="drop-li">
+                                                <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img class="img-circle" src="assets/images/Sami.jpg" alt="maridlcrmn" width="20" /> Maridlcrmn <span class="caret"></span></a>
+                                            </li>                                            
                                         </ul>
                                     </div>
                                 </nav>
@@ -691,8 +696,10 @@
                                             <li><a>About</a></li>
                                             <li><a>Services</a></li>
                                             <li><a>Contact</a></li>
+                                        </ul>
+                                        <ul class="nav navbar-nav navbar-right">
                                             <li>
-                                                <a class="btn btn-info button-style collapsed" data-toggle="collapse" href="#nav-collapse3" aria-expanded="false" aria-controls="nav-collapse3">Search</a>
+                                                <button class="btn btn-info button-style collapsed" data-toggle="collapse" href="#nav-collapse3" aria-expanded="false" aria-controls="nav-collapse3">Search</button>
                                             </li>
                                         </ul>
                                         <div class="collapse nav navbar-nav nav-collapse slide-down" id="nav-collapse3">
@@ -700,7 +707,7 @@
                                                 <div class="form-group">
                                                     <input type="text" class="form-control" placeholder="Search" />
                                                 </div>
-                                                <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
                                             </form>
                                         </div>
                                     </div>
@@ -741,21 +748,22 @@
                                                                 <div class="item active">
                                                                     <a><img src="assets/images/man-holding-iphone-in-his-car-picjumbo-com.jpg" class="img-responsive" alt="product 1"></a>
                                                                     <h4><small>Summer dress floral prints</small></h4>
-                                                                    <button class="btn btn-info button-style">49,99 €</button>                                                                    <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>
+                                                                    <button class="btn btn-info button-style">49,99 €</button>
+                                                                    <button  class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>
                                                                 </div>
                                                                 <!-- End Item -->
                                                                 <div class="item">
-                                                                    <a href="#"><img src="assets/images/autumn-fashion-inspiration-for-women-picjumbo-com.jpg" class="img-responsive" alt="product 2"></a>
+                                                                    <a><img src="assets/images/autumn-fashion-inspiration-for-women-picjumbo-com.jpg" class="img-responsive" alt="product 2"></a>
                                                                     <h4><small>Gold sandals with shiny touch</small></h4>
                                                                     <button class="btn btn-info button-style">9,99 €</button>   
-                                                                    <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>
+                                                                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>
                                                                 </div>
                                                                 <!-- End Item -->
                                                                 <div class="item">
                                                                     <a href="#"><img src="assets/images/fashion-sunglasses-on-a-macbook-picjumbo-com.jpg" class="img-responsive" alt="product 3"></a>
                                                                     <h4><small>Denin jacket stamped</small></h4>
                                                                     <button class="btn btn-info button-style">49,99 €</button>   
-                                                                    <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>
+                                                                    <button  class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>
                                                                 </div>
                                                                 <!-- End Item -->
                                                             </div>
@@ -850,21 +858,21 @@
                                                                 <div class="item active">
                                                                     <a><img src="assets/images/fashion-sunglasses-on-a-macbook-picjumbo-com.jpg" class="img-responsive" alt="product 1"></a>
                                                                     <h4><small>Summer dress floral prints</small></h4>
-                                                                    <button class="btn btn-primary" type="button">49,99 €</button>
+                                                                    <button class="btn btn-info button-style">49,99 €</button>   
                                                                     <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>
                                                                 </div>
                                                                 <!-- End Item -->
                                                                 <div class="item">
                                                                     <a><img src="assets/images/man-holding-iphone-in-his-car-picjumbo-com.jpg" class="img-responsive" alt="product 2"></a>
                                                                     <h4><small>Gold sandals with shiny touch</small></h4>
-                                                                    <button class="btn btn-primary" type="button">9,99 €</button>
+                                                                    <button class="btn btn-info button-style">49,99 €</button>   
                                                                     <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>
                                                                 </div>
                                                                 <!-- End Item -->
                                                                 <div class="item">
                                                                     <a href="#"><img src="assets/images/man-holding-iphone-in-his-car-picjumbo-com.jpg" class="img-responsive" alt="product 3"></a>
                                                                     <h4><small>Denin jacket stamped</small></h4>
-                                                                    <button class="btn btn-primary" type="button">49,99 €</button>
+                                                                    <button class="btn btn-info button-style">49,99 €</button>   
                                                                     <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>
                                                                 </div>
                                                                 <!-- End Item -->
@@ -993,15 +1001,13 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/notifications_boxs.js"></script>
-    <link href="assets/css/colorpicker-layout.css" rel="stylesheet" />
-    <link href="assets/css/colorpicker.css" rel="stylesheet" />
+
     <script src="assets/js/vendors/colorpicker/colorpicker.js"></script>
-    <script src="assets/js/vendors/colorpicker/eye.js"></script>
-    <script src="assets/js/vendors/colorpicker/layout.js"></script>
-    <script src="assets/js/vendors/colorpicker/utils.js"></script>
-    <script src="assets/js/vendors/colorpicker/utils.js"></script>
-    <script src="assets/js/menus.js"></script>
+    <script src="assets/js/right-side-colors-change.js"></script>
+    <script src="assets/js/page-ready-theam.js"></script>
     <link id="default-color-picker" rel="stylesheet" />
+    <script src="assets/js/menus.js"></script>
+
 </body>
 
 </html>
