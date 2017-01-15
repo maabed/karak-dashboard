@@ -16,154 +16,13 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/styles.css" rel="stylesheet" />
     <link href="assets/vendors/calender/calender_theme.css" rel="stylesheet" />
-    <link href='assets/vendors/calender-new/fullcalendar.css' rel='stylesheet' />
-    <link href="assets/vendors/calender-new/fullcalendar.print.css" rel='stylesheet' media='print' />
-    <script src="assets/vendors/calender-new/lib/moment.min.js"></script>
-    <script src="assets/vendors/calender-new/lib/jquery.min.js"></script>
+    <link href='assets/vendors/calender/fullcalendar.css' rel='stylesheet' />
+    <link href="assets/vendors/calender/fullcalendar.print.css" rel='stylesheet' media='print' />
+    <script src="assets/vendors/calender/lib/moment.min.js"></script>
+    <script src="assets/vendors/calender/lib/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-    <script src="assets/vendors/calender-new/fullcalendar.min.js"></script>
-    <!--    <link href='assets/vendors/calender-new/lib/cupertino/jquery-ui.min.css' rel='stylesheet' /> -->
-    <script>
-    $(document).ready(function() {
-
-        $('#calendar').fullCalendar({
-            theme: true,
-            header: {
-                left: 'prev,next today',
-                center: 'title',
-                right: 'month,agendaWeek,agendaDay,listMonth'
-            },
-            defaultDate: '2016-12-12',
-            navLinks: true, // can click day/week names to navigate views
-            editable: true,
-            eventLimit: true, // allow "more" link when too many events
-            selectable: true,
-            selectHelper: true,
-
-            // select: function(start, end, allDay) {
-            //     $('#add-event').modal('show');
-
-            //     endtime = $.fullCalendar.formatDate(end, 'h:mm tt');
-            //     starttime = $.fullCalendar.formatDate(start, 'ddd, MMM d, h:mm tt');
-            //     var mywhen = starttime + ' - ' + endtime;
-            //     $('#add-event #apptStartTime').val(start);
-            //     $('#add-event #apptEndTime').val(end);
-            //     $('#add-event #apptAllDay').val(allDay);
-            //     $('#add-event #when').text(mywhen);
-            // },
-
-            select: function(start, end, jsEvent, view) {
-                var allDay = !start.hasTime() && !end.hasTime();
-                var eventstart = moment(start).format('MMM, D dddd');
-                var evntend = moment(end).format('MMM, D dddd');
-                $('#add-event #apptStartTime').text(eventstart);
-                $('#add-event #apptEndTime').text(evntend);
-                $('#add-event #apptAllDay').text(allDay);
-                $('#add-event').modal('show');
-
-
-                // alert(["Event Start date: " + eventstart,
-                //     "Event End date: " + evntend,
-                //     "AllDay: " + allDay
-                // ].join("\n"));
-            },
-
-            events: [{
-                    title: 'All Day Event',
-                    start: '2016-12-01',
-                    className: 'info'
-                },
-
-                {
-                    title: 'Long Event',
-                    start: '2016-12-07',
-                    end: '2016-12-10',
-                    className: 'important'
-                }, {
-                    id: 999,
-                    title: 'Repeating Event',
-                    start: '2016-12-09T16:00:00',
-                    className: 'important'
-                }, {
-                    id: 999,
-                    title: 'Repeating Event',
-                    start: '2016-12-16T16:00:00',
-                    className: 'success'
-                }, {
-                    title: 'Conference',
-                    start: '2016-12-11',
-                    end: '2016-12-13',
-                    className: 'success'
-                }, {
-                    title: 'Meeting',
-                    start: '2016-12-12T10:30:00',
-                    end: '2016-12-12T12:30:00',
-                    className: 'info'
-                }, {
-                    title: 'Lunch',
-                    start: '2016-12-12T12:00:00',
-                    className: 'info'
-                }, {
-                    title: 'Meeting',
-                    start: '2016-12-12T14:30:00',
-
-                }, {
-                    title: 'Happy Hour',
-                    start: '2016-12-12T17:30:00',
-
-                }, {
-                    title: 'Dinner',
-                    start: '2016-12-12T20:00:00',
-                    className: 'info'
-                }, {
-                    title: 'Birthday Party',
-                    start: '2016-12-13T07:00:00',
-                    className: 'success'
-                }, {
-                    title: 'Click for Google',
-                    url: 'http://google.com/',
-                    start: '2016-12-28',
-                    className: 'important'
-                }, {
-                    title: 'Event Name',
-                    start: '2016-12-5',
-                    end: '2016-12-6',
-                    className: 'worning'
-                },
-
-            ]
-        });
-
-        $('#submitButton').on('click', function(e) {
-            // We don't want this to act as a link so cancel the link action
-            e.preventDefault();
-
-            doSubmit();
-        });
-
-        function doSubmit() {
-            $("#add-event").modal('hide');
-            var starttime = $('#apptStartTime').text();
-            var endtime = $('#apptEndTime').text();
-            var eventtitle = $('#patientName').val();
-            var boolcase = $('#apptAllDay').val();
-            alert(starttime + endtime + eventtitle);
-
-            var myCalendar = $('#calendar');
-            myCalendar.fullCalendar();
-
-            var myEvent = {
-                title: eventtitle,
-                start: starttime,
-                end: endtime,
-                className: 'important'
-
-            };
-            myCalendar.fullCalendar('renderEvent', myEvent, 'stick');
-        }
-
-    });
-    </script>
+    <script src="assets/vendors/calender/fullcalendar.min.js"></script>
+    <script src="assets/vendors/calender/calender.js"></script>
 </head>
 
 <body>
@@ -419,6 +278,14 @@
                                         <input name="Notes" type="text" class="validate">
                                         <label for="Notes"><i class="fa fa-sticky-note" aria-hidden="true"></i>&nbsp;Notes</label>
                                     </div>
+                                    <select id="eventclassName" class="select-display selectpicker form-control empty">
+                                        <option id="default-event-color" value="default" class="Selected">Default Color</option>
+                                        <option value="worning">Warning</option>
+                                        <option value="info">Info</option>
+                                        <option value="success">Success</option>
+                                        <option value="important">Important</option>
+                                    </select>
+
                                     <label id="apptAllDay"></label>
                                 </div>
                             </div>
