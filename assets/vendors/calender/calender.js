@@ -27,10 +27,28 @@ $(document).ready(function() {
             //     $('#add-event #when').text(mywhen);
             // },
 
-            select: function(start, end, jsEvent, view) {
+            select: function (start, end, jsEvent, view) {
+
+
+                $('#patientName').val('');
+                $('#patientName').removeClass("active");
+                $("#patientName").blur();
+
+                $('#eventclassName').val('default');
+                $('#eventclassName').removeClass("active");
+                $("#eventclassName").blur();
+
+                $('#notes').val('');
+                $('#notes').removeClass("active");
+                $("#notes").blur();
+
+                $('#location').val('');
+                $('#location').removeClass("active");
+                $("#location").blur();
+
                 var allDay = !start.hasTime() && !end.hasTime();
-                var eventstart = moment(start).format('MMM, D dddd');
-                var evntend = moment(end).format('MMM, D dddd');
+                var eventstart = moment(start).format('YYYY-MM-DD');
+                var evntend = moment(end).format('YYYY-MM-DD');
                 $('#add-event #apptStartTime').text(eventstart);
                 $('#add-event #apptEndTime').text(evntend);
                 $('#add-event #apptAllDay').text(allDay);
@@ -123,25 +141,43 @@ $(document).ready(function() {
             var eventtitle = $('#patientName').val();
             var boolcase = $('#apptAllDay').val();
             var eventclasename = $('#eventclassName').val();
-            var myCalendar = $('#calendar');
-            myCalendar.fullCalendar();
+            
+            localStorage.setItem('title2', eventtitle);
+            var eventnamemodal = localStorage.getItem("title2");
+
+            localStorage.setItem('start2', $('#apptStartTime').text());
+            var apptStartTimemodal = localStorage.getItem("start2");
+
+            localStorage.setItem('end2', $('#apptEndTime').text());
+            var apptEndTimemodal = localStorage.getItem("end2");
+
+
+            localStorage.setItem('boolcase2', apptAllDay);
+            var apptAllDaymodal = localStorage.getItem("boolcase2");
+
+            localStorage.setItem('className2', eventclasename);
+            var eventclasenamemodal = localStorage.getItem("className2");
+
+
+            //alert(eventnamemodal + apptStartTimemodal + apptEndTimemodal + eventclasenamemodal);
+
 
             var myEvent = {
-                title: eventtitle,
-                start: starttime,
-                end: endtime,
-                className: eventclasename
+                title: eventnamemodal,
+                start: apptStartTimemodal,
+                end: apptEndTimemodal,
+                className: eventclasenamemodal
             };
 
-            alert(myEvent.className);
+          
 
+            $('#calendar').fullCalendar('renderEvent', myEvent, true);
+            return myEvent;
+           
 
-            myCalendar.fullCalendar('renderEvent', myEvent, true);
-
-
-
-            calendar.fullCalendar('unselect');
         }
+
+
 
     });
 
