@@ -1,7 +1,4 @@
 $(document).ready(function(){
-    
-    
-    
     /*Bar chart */
     var ctx = document.getElementById("bar");
     var bar = new Chart(ctx, {
@@ -166,6 +163,7 @@ $(document).ready(function(){
     });
     Highcharts.chart('container', {
         chart: {
+            margin: [20, 45, 45, 40],
             type: 'spline',
             animation: Highcharts.svg, // don't animate in old IE
             marginRight: 10,
@@ -234,7 +232,7 @@ $(document).ready(function(){
     Highcharts.chart('container2', {
         chart: {
             type: 'scatter',
-            margin: [70, 50, 60, 80],
+            margin: [20, 0, 45, 45],
             events: {
                 click: function (e) {
                     // find the clicked values and the series
@@ -300,32 +298,78 @@ $(document).ready(function(){
     /*Fixed placement columns*/
     Highcharts.chart('container3', {
         chart: {
-            type: 'column'
+            margin: [20, 0, 80, 35],
+            type: 'spline'
         },
         title: {
-            text: ''
+            text: 'Monthly Average Temperature'
         },
         xAxis: {
-            categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
         },
-        credits: {
-            enabled: false
+        yAxis: {
+            title: {
+                text: 'Temperature'
+            },
+            labels: {
+                formatter: function () {
+                    return this.value + '°';
+                }
+            }
+        },
+        tooltip: {
+            crosshairs: true,
+            shared: true
+        },
+        plotOptions: {
+            spline: {
+                marker: {
+                    radius: 4,
+                    lineColor: '#666666',
+                    lineWidth: 1
+                }
+            }
+        },
+        exporting: {
+            buttons: [
+                {
+                    symbol: '',
+                }
+            ]
         },
         series: [{
-            name: 'John',
-            data: [5, 3, 4, 7, 2]
+            name: 'Tokyo',
+            marker: {
+                symbol: 'square'
+            },
+            data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, {
+                y: 26.5,
+                marker: {
+                    symbol: 'url(https://www.highcharts.com/samples/graphics/sun.png)'
+                }
+            }, 23.3, 18.3, 13.9, 9.6]
+
         }, {
-            name: 'Jane',
-            data: [2, -2, -3, 2, 1]
-        }, {
-            name: 'Joe',
-            data: [3, 4, 4, -2, 5]
+            name: 'London',
+            marker: {
+                symbol: 'diamond'
+            },
+            data: [{
+                y: 3.9,
+                marker: {
+                    symbol: 'url(https://www.highcharts.com/samples/graphics/snow.png)'
+                }
+            }, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
         }]
     });
     
     
     /*Scatter with regression line*/
     Highcharts.chart('container4', {
+        chart: {
+            margin: [20, 0, 80, 25],
+        },
         xAxis: {
             min: -0.5,
             max: 5.5
@@ -335,6 +379,13 @@ $(document).ready(function(){
         },
         title: {
             text: ''
+        },
+        exporting: {
+            buttons: [
+                {
+                    symbol: '',
+                }
+            ]
         },
         series: [{
             type: 'line',
@@ -358,6 +409,155 @@ $(document).ready(function(){
             }
         }]
     });
-    $(".highcharts-container").css("right","10px");
-    $(".highcharts-axis-title").remove();
+    
+    
+    /*Time series, zoomable*/
+$(function () {
+    $.getJSON('https://www.highcharts.com/samples/data/jsonp.php?filename=usdeur.json&callback=?', function (data) {
+
+        Highcharts.chart('container5', {
+            chart: {
+                margin: [20, 0, 80, 25],
+                zoomType: 'x'
+            },
+            exporting: {
+                buttons: [
+                    {
+                        symbol: '',
+                    }
+                ]
+            },
+            title: {
+                text: 'USD to EUR exchange rate over time'
+            },
+            subtitle: {
+                text: document.ontouchstart === undefined ?
+                        'Click and drag in the plot area to zoom in' : 'Pinch the chart to zoom in'
+            },
+            xAxis: {
+                type: 'datetime'
+            },
+            yAxis: {
+                title: {
+                    text: 'Exchange rate'
+                }
+            },
+            legend: {
+                enabled: false
+            },
+            plotOptions: {
+                area: {
+                    fillColor: {
+                        linearGradient: {
+                            x1: 0,
+                            y1: 0,
+                            x2: 0,
+                            y2: 1
+                        },
+                        stops: [
+                            [0, Highcharts.getOptions().colors[0]],
+                            [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+                        ]
+                    },
+                    marker: {
+                        radius: 2
+                    },
+                    lineWidth: 1,
+                    states: {
+                        hover: {
+                            lineWidth: 1
+                        }
+                    },
+                    threshold: null
+                }
+            },
+
+            series: [{
+                type: 'area',
+                name: 'USD to EUR',
+                data: data
+            }]
+        });
+    });
+});
+    
+    
+    /*    */
+    
+    
+        Highcharts.chart('container6', {
+        chart: {
+            margin: [20, 10, 80, 35],
+            type: 'area'
+        },
+        exporting: {
+            buttons: [
+                {
+                    symbol: '',
+                }
+            ]
+        },
+        title: {
+            text: 'US and USSR nuclear stockpiles'
+        },
+        subtitle: {
+            text: 'Source: <a href="http://thebulletin.metapress.com/content/c4120650912x74k7/fulltext.pdf">' +
+                'thebulletin.metapress.com</a>'
+        },
+        xAxis: {
+            allowDecimals: false,
+            labels: {
+                formatter: function () {
+                    return this.value; // clean, unformatted number for year
+                }
+            }
+        },
+        yAxis: {
+            title: {
+                text: 'Nuclear weapon states'
+            },
+            labels: {
+                formatter: function () {
+                    return this.value / 1000 + 'k';
+                }
+            }
+        },
+        tooltip: {
+            pointFormat: '{series.name} produced <b>{point.y:,.0f}</b><br/>warheads in {point.x}'
+        },
+        plotOptions: {
+            area: {
+                pointStart: 1940,
+                marker: {
+                    enabled: false,
+                    symbol: 'circle',
+                    radius: 2,
+                    states: {
+                        hover: {
+                            enabled: true
+                        }
+                    }
+                }
+            }
+        },
+        series: [{
+            name: 'USA',
+            data: [null, null, null, null, null, 6, 11, 32, 110, 235, 369, 640,
+                1005, 1436, 2063, 3057, 4618, 6444, 9822, 15468, 20434, 24126,
+                27387, 29459, 31056, 31982, 32040, 31233, 29224, 27342, 26662,
+                26956, 27912, 28999, 28965, 27826, 25579, 25722, 24826, 24605,
+                24304, 23464, 23708, 24099, 24357, 24237, 24401, 24344, 23586,
+                22380, 21004, 17287, 14747, 13076, 12555, 12144, 11009, 10950,
+                10871, 10824, 10577, 10527, 10475, 10421, 10358, 10295, 10104]
+        }, {
+            name: 'USSR/Russia',
+            data: [null, null, null, null, null, null, null, null, null, null,
+                5, 25, 50, 120, 150, 200, 426, 660, 869, 1060, 1605, 2471, 3322,
+                4238, 5221, 6129, 7089, 8339, 9399, 10538, 11643, 13092, 14478,
+                15915, 17385, 19055, 21205, 23044, 25393, 27935, 30062, 32049,
+                33952, 35804, 37431, 39197, 45000, 43000, 41000, 39000, 37000,
+                35000, 33000, 31000, 29000, 27000, 25000, 24000, 23000, 22000,
+                21000, 20000, 19000, 18000, 18000, 17000, 16000]
+        }]
+    });
 });
