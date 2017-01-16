@@ -32,7 +32,6 @@ table.dataTable {
     table.dataTable thead th,
     table.dataTable tfoot th {
         font-weight: normal;
-        color: #fff !important;
     }
 
     table.dataTable thead th,
@@ -547,5 +546,10 @@ table.dataTable {
     }
 }
 tfoot input {
-    border: 1px solid #ddd;
+    border: 0px;
+    border-bottom: 1px solid #ddd;
+    font-weight: normal;
+    font-style: italic;
+}
+tfoot input:focus{ border-bottom: 1px solid #67b2e4;
 }
