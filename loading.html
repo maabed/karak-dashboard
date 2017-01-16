@@ -250,15 +250,96 @@
             </div>
         </div>
             <!-- Page Content -->
-            <a href="#" id="PageTitle">UI Elements  /  Loading & Progress</a>
             <div id="page-content-wrapper">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="col-contint body-header">
+                                <a href="loading.html" class="page_title pull-right">Loading & Progress</a>  
                                 <h4 class ="title"> Loading & Progress </h4>
                                 <br>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla consequat massa egestas fermentum. Maecenas quis est ac ante hendrerit.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="row">
+                        <div class="col-md-6">
+                            <div class="col-contint col-contint-taps">
+                                <h5 class ="title">Circle progress</h5>
+                                <br>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+
+                                <label class="small-label">Select type:</label>
+                                <select class="form-control" id="progress-select" name="progress-select">
+                                    <option value="basic">Basic circle</option>
+                                    <option value="bounce">Bounce easing</option>
+                                    <option value="multiple">Multiple properties</option>
+                                    <option value="Semi">Basic Semicircle</option>
+                                    <option value="SemiText">Semicircle with text</option>
+                                </select>
+                                <label class="small-label">Select color:</label>
+                                <input type="color" id="Color" value="#67b2e4">
+                                <span id="circleGenerate" class="glyphicon glyphicon-cog"></span>
+                                <div id="progress-container" class="center-block">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="col-contint col-contint-taps">
+                                        <h5 class ="title">Placeholder loader</h5>
+                                        <br>
+                                        <div class="timeline-item">
+                                          <div class="animated-background facebook">
+                                            <div class="background-masker header-top"></div>
+                                            <div class="background-masker header-left"></div>
+                                            <div class="background-masker header-right"></div>
+                                            <div class="background-masker header-bottom"></div>
+                                            <div class="background-masker subheader-left"></div>
+                                            <div class="background-masker subheader-right"></div>
+                                            <div class="background-masker subheader-bottom"></div>
+                                            <div class="background-masker content-top"></div>
+                                            <div class="background-masker content-first-end"></div>
+                                            <div class="background-masker content-second-line"></div>
+                                            <div class="background-masker content-second-end"></div>
+                                            <div class="background-masker content-third-line"></div>
+                                            <div class="background-masker content-third-end"></div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="col-contint col-contint-taps">
+                                        <h5 class ="title">Indeterminate loader</h5>
+                                        <br>
+                                        <div class="col-sm-4">
+                                            <div class="showbox">
+                                              <div class="loader1">
+                                                <svg class="circular" viewBox="25 25 50 50">
+                                                  <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+                                                </svg>
+                                              </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="loader"></div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div id="loader" class="vertical--center">
+                                            <div class="vertical-center__element">
+                                              <span class="preloader preloader--top"></span>
+                                              <span class="preloader preloader--bottom"></span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -333,78 +414,6 @@
                                 <div id="BasicthickLine" class="progress-thick"></div>
                                 <code>.progress-thin</code>
                                 <div id="BasicthinLine" class="progress-thin"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="col-contint col-contint-taps">
-                                <h5 class ="title">Circle progress</h5>
-                                <br>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                </p>
-
-                                <label class="small-label">Select type:</label>
-                                <select class="form-control" id="progress-select" name="progress-select">
-                                    <option value="basic">Basic circle</option>
-                                    <option value="bounce">Bounce easing</option>
-                                    <option value="multiple">Multiple properties</option>
-                                    <option value="Semi">Basic Semicircle</option>
-                                    <option value="SemiText">Semicircle with text</option>
-                                </select>
-                                <label class="small-label">Select color:</label>
-                                <input type="color" id="Color" value="#3498db">
-                                <span id="circleGenerate" class="glyphicon glyphicon-cog"></span>
-                                <div id="progress-container" class="center-block">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="col-contint col-contint-taps">
-                                        <h5 class ="title">Placeholder loader</h5>
-                                        <br>
-                                        <div class="timeline-item">
-                                          <div class="animated-background facebook">
-                                            <div class="background-masker header-top"></div>
-                                            <div class="background-masker header-left"></div>
-                                            <div class="background-masker header-right"></div>
-                                            <div class="background-masker header-bottom"></div>
-                                            <div class="background-masker subheader-left"></div>
-                                            <div class="background-masker subheader-right"></div>
-                                            <div class="background-masker subheader-bottom"></div>
-                                            <div class="background-masker content-top"></div>
-                                            <div class="background-masker content-first-end"></div>
-                                            <div class="background-masker content-second-line"></div>
-                                            <div class="background-masker content-second-end"></div>
-                                            <div class="background-masker content-third-line"></div>
-                                            <div class="background-masker content-third-end"></div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="col-contint col-contint-taps">
-                                        <h5 class ="title">Indeterminate loader</h5>
-                                        <br>
-                                        <div class="col-sm-6">
-                                            <div class="loader"></div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div id="loader" class="vertical--center">
-                                            <div class="vertical-center__element">
-                                              <span class="preloader preloader--top"></span>
-                                              <span class="preloader preloader--bottom"></span>
-                                            </div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
