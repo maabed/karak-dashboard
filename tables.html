@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,16 +20,16 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/tables.css">
     <link rel="stylesheet" href="assets/css/forms.css">
     <link rel="stylesheet" href="assets/css/input_style.css">
 </head>
+
 <body>
     <div id="wrapper">
         <!-- Sidebar -->
-         <div id="sidebar-wrapper">
+        <div id="sidebar-wrapper">
             <div class="sidebar-brand" id="company-name">Blue Dashboard</div>
             <ul class="sidebar-nav">
                 <li>
@@ -123,7 +124,7 @@
                            Menus
                             </a>
                         </li>
-                            <li class="submenu-li">
+                        <li class="submenu-li">
                             <a href="hover.html">
                            Hover
                             </a>
@@ -217,8 +218,8 @@
                 </li>
             </ul>
         </div>
-        <!-- /#sidebar-wrapper -->        
-       <div id="head">
+        <!-- /#sidebar-wrapper -->
+        <div id="head">
             <div class="container-fluid header-container">
                 <i href="#menu-toggle" id="menu-toggle" class="fa fa-bars" aria-hidden="true"></i>
                 <div class="form-group">
@@ -259,97 +260,87 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
-                    </div>
+                </div>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="col-contint">
-                            <h5 class="title">Basic Table</h5>
+                            <h5 class="title">Users Table</h5>
+                            <br>
+                            <p>
+                                Just apply the Activation classes(e.g:<code>.active-user-row</code>/<code>.not-active-user-row</code>) to make user row appropriate colors.
+                            </p>
                             <table class="table table-hover">
                                 <thead class="table-head">
                                     <tr>
-                                        <th class="basic-th">
-                                            <div class="checkbox">
-                                                <input id="checkbox1" name="checkboxRow" type="checkbox">
-                                                <label class ="fontsize" for="checkbox1"></label>
-                                            </div>
-                                        </th>
-                                        <th class="basic-th">AVATAR</th>
-                                        <th class="basic-th">NAME</th>
-                                        <th class="basic-th">CITY</th>
-                                        <th class="basic-th">EMAIL</th>
-                                        <th class="basic-th">LAST UPDATE</th>
-                                        <th class="basic-th">
-                                            <button id="delete-row" type="button" class="btn btn-default dashboard-default">
-                                                <i class="fa fa-trash" aria-hidden="true"></i>
-                                            </button>
-                                        </th>
+                                        <th class="basic-th col-sm-3">User info.</th>
+                                        <th class="basic-th col-sm-3">Job Description</th>
+                                        <th class="basic-th col-sm-1">Country</th>
+                                        <th class="basic-th col-sm-2">Email</th>
+                                        <th class="basic-th col-sm-2">Last Update</th>
+                                        <th class="basic-th col-sm-1">Activation</th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr>
+                                <tbody class="users-table-format">
+                                    <tr class="active-user-acount">
                                         <td class="content-padding">
-                                            <div class="checkbox">
-                                                <input id="checkbox1" name="checkboxRow" type="checkbox">
-                                                <label class ="fontsize" for="checkbox1"></label>
-                                            </div>
+                                            <img src="assets/images/Sami.jpg" />
+                                            <p><b>Mohammad Meshaal</b>
+                                                <br> Project Manager</p>
                                         </td>
-                                        <td class="content-padding"><img class="table-image" src="assets/images/Sami.jpg"></td>
-                                        <td class="content-padding">Sami</td>
-                                        <td class="content-padding static-width">New york</td>
-                                        <td class="content-padding email-field">Sami@yahoo.com</td>
+                                        <td class="content-padding">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                        <td class="content-padding static-width">Jordan</td>
+                                        <td class="content-padding email-field">email@domin.com</td>
                                         <td class="content-padding">April 13,2014 10:13</td>
+                                        <td class="content-padding active-user-row"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>&nbsp;Active</td>
                                     </tr>
-                                    <tr>
+                                    <tr class="active-user-acount">
                                         <td class="content-padding">
-                                            <div class="checkbox">
-                                                <input id="checkbox2" name="checkboxRow" type="checkbox">
-                                                <label class ="fontsize" for="checkbox2"></label>
-                                            </div>    
+                                            <img src="assets/images/member-4.png" />
+                                            <p><b>Rania Jaber</b>
+                                                <br> UI Designer</p>
                                         </td>
-                                        <td class="content-padding"><img class="table-image" src="assets/images/user.png"></td>
-                                        <td class="content-padding">Mohammad</td>
-                                        <td class="content-padding static-width">Amman</td>
-                                        <td class="content-padding email-field">Mohammd@gmail.com</td>
+                                        <td class="content-padding">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </td>
+                                        <td class="content-padding static-width">Jordan</td>
+                                        <td class="content-padding email-field">email@domin.com</td>
                                         <td class="content-padding">April 13,2014 10:13</td>
+                                        <td class="content-padding active-user-row"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>&nbsp;Active</td>
                                     </tr>
-                                    <tr>
+                                    <tr class="active-user-acount">
                                         <td class="content-padding">
-                                            <div class="checkbox">
-                                                <input id="checkbox3" name="checkboxRow" type="checkbox">
-                                                <label class ="fontsize" for="checkbox3"></label>
-                                            </div>    
+                                            <img src="assets/images/user1.jpg" />
+                                            <p><b>Albert Bailee</b>
+                                                <br>Web Developer</p>
                                         </td>
-                                        <td class="content-padding"><img class="table-image" src="assets/images/member-3.png"></td>
-                                        <td class="content-padding">Ahmad</td>
-                                        <td class="content-padding static-width">Baghdad</td>
-                                        <td class="content-padding email-field">Ahmad@gmail.com</td>
+                                        <td class="content-padding">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </td>
+                                        <td class="content-padding static-width">Jordan</td>
+                                        <td class="content-padding email-field">email@domin.com</td>
                                         <td class="content-padding">April 13,2014 10:13</td>
+                                        <td class="content-padding active-user-row"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>&nbsp;Active</td>
                                     </tr>
-                                    <tr>
+                                    <tr class="not-active-user-acount">
                                         <td class="content-padding">
-                                            <div class="checkbox">
-                                                <input id="checkbox4" name="checkboxRow" type="checkbox">
-                                                <label class ="fontsize" for="checkbox4"></label>
-                                            </div> 
+                                            <img src="assets/images/user2.jpg" />
+                                            <p><b>Ahmad Yousef</b>
+                                                <br>Account Manager</p>
                                         </td>
-                                        <td class="content-padding"><img class="table-image" src="assets/images/member-4.png"></td>
-                                        <td class="content-padding">Dana</td>
-                                        <td class="content-padding static-width">London</td>
-                                        <td class="content-padding email-field">Dana@yahoo.com</td>
+                                        <td class="content-padding">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </td>
+                                        <td class="content-padding static-width">Jordan</td>
+                                        <td class="content-padding email-field">email@domin.com</td>
                                         <td class="content-padding">April 13,2014 10:13</td>
+                                        <td class="content-padding not-active-user-row"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i> &nbsp;Not Active
+                                        </td>
                                     </tr>
-                                    <tr>
+                                    <tr class="not-active-user-acount">
                                         <td class="content-padding">
-                                            <div class="checkbox">
-                                                <input id="checkbox5" name="checkboxRow" type="checkbox">
-                                                <label class ="fontsize" for="checkbox5"></label>
-                                            </div>    
+                                            <img src="assets/images/user3.jpg" />
+                                            <p><b>Adallah Mohammad</b>
+                                                <br>UX Researcher</p>
                                         </td>
-                                        <td class="content-padding"><img class="table-image" src="assets/images/person3.jpg"></td>
-                                        <td class="content-padding">Jenny</td>
-                                        <td class="content-padding static-width">Paris</td>
-                                        <td class="content-padding">Jenny@yahoo.com</td>
+                                        <td class="content-padding">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </td>
+                                        <td class="content-padding static-width">Jordan</td>
+                                        <td class="content-padding email-field">email@domin.com</td>
                                         <td class="content-padding">April 13,2014 10:13</td>
+                                        <td class="content-padding not-active-user-row"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i> &nbsp;Not Active</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -357,302 +348,113 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
-                        <div class="col-contint">
-                            <h5 class="title">Bordered Table</h5>
-                            <br />
-                            <table class="table table-responsive table-bordered">
-                                <thead class="table-head">
-                                    <tr>
-                                        <th>Country</th>
-                                        <th>Population</th>
-                                        <th>Area <sub>KM<sup>2</sup></sub></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Jordan</td>
-                                        <td>7,747,800</td>
-                                        <td>89,342</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Usa</td>
-                                        <td>324,118,787</td>
-                                        <td>9.834 Million</td>
-                                    </tr>
-                                    <tr>
-                                        <td>UK</td>
-                                        <td>65,111,143</td>
-                                        <td>243,610</td>
-                                    </tr>
-                                    <tr>
-                                        <td>China</td>
-                                        <td>1,382,323,332</td>
-                                        <td>9.597 Million</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Iraq</td>
-                                        <td>37,547,686</td>
-                                        <td>437,072</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Japan</td>
-                                        <td>126,323,715</td>
-                                        <td>377,972</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
                     <div class="col-md-8">
                         <div class="col-contint">
-                            <h5 class="title">Striped Table</h5>
-                            <br />
-                            <table class="table table-responsive table-striped">
-                                <thead class="table-head">
+                            <h5 class="title">Dashed Table Design</h5>
+                            <br>
+                            <p>
+                                Just apply the Dashed class(<code>.dashed-row-style</code>) to make the table Dashed style.
+                            </p>
+                            <table class="table dashed-row-style">
+                                <thead class="table-head no-left-right-padding">
                                     <tr>
-                                        <th>Name</th>
-                                        <th>Rank</th>
-                                        <th>Gender</th>
+                                        <th class="basic-th col-sm-4">Operation Name</th>
+                                        <th class="basic-th col-sm-3">From</th>
+                                        <th class="basic-th col-sm-3">To</th>
+                                        <th class="basic-th col-sm-2">Status</th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>John</td>
-                                        <td>5</td>
-                                        <td>Male</td>
+                                <tbody class="users-table-format ">
+                                    <tr class="active-user-acount no-left-right-padding">
+                                        <td class="content-padding">
+                                            <b>Requirements Gathering</b>
+                                        </td>
+                                        <td class="content-padding static-width">Jan, 18 Wednesday</td>
+                                        <td class="content-padding email-field">February, 20 Thursday</td>
+                                        <td class="content-padding email-field done-task"><i class="fa fa-check" aria-hidden="true"></i> &nbsp;Done
+                                        </td>
                                     </tr>
-                                    <tr>
-                                        <td>Mary</td>
-                                        <td>10</td>
-                                        <td>Female</td>
+                                    <tr class="active-user-acount">
+                                        <td class="content-padding">
+                                            <b>UX/UI Design</b>
+                                        </td>
+                                        <td class="content-padding static-width">Jan, 18 Wednesday</td>
+                                        <td class="content-padding email-field">February, 20 Thursday</td>
+                                        <td class="content-padding email-field done-task"><i class="fa fa-check" aria-hidden="true"></i> &nbsp;Done
+                                        </td>
                                     </tr>
-                                    <tr>
-                                        <td>Abby</td>
-                                        <td>22</td>
-                                        <td>Female</td>
+                                    <tr class="active-user-acount">
+                                        <td class="content-padding">
+                                            <b>Fron-end & Back-end Development</b>
+                                        </td>
+                                        <td class="content-padding static-width">Jan, 18 Wednesday</td>
+                                        <td class="content-padding email-field">February, 20 Thursday</td>
+                                        <td class="content-padding email-field inprogress-task"><i class="fa fa-spinner" aria-hidden="true"></i>&nbsp;Inprogress
+                                        </td>
                                     </tr>
-                                    <tr>
-                                        <td>Garth</td>
-                                        <td>8</td>
-                                        <td>Male</td>
+                                    <tr class="active-user-acount">
+                                        <td class="content-padding">
+                                            <b>Testing</b>
+                                        </td>
+                                        <td class="content-padding static-width">Jan, 18 Wednesday</td>
+                                        <td class="content-padding email-field">February, 20 Thursday</td>
+                                        <td class="content-padding email-field hold-task"><i class="fa fa-ban" aria-hidden="true"></i>&nbsp;Hold
+                                        </td>
                                     </tr>
-                                    <tr>
-                                        <td>Raya</td>
-                                        <td>12</td>
-                                        <td>Female</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mosa</td>
-                                        <td>18</td>
-                                        <td>Male</td>
+                                    <tr class="active-user-acount">
+                                        <td class="content-padding">
+                                            <b>Maintenance</b>
+                                        </td>
+                                        <td class="content-padding static-width">Jan, 18 Wednesday</td>
+                                        <td class="content-padding email-field">February, 20 Thursday</td>
+                                        <td class="content-padding hold-task"><i class="fa fa-ban" aria-hidden="true"></i>&nbsp;Hold
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="col-contint">
-                            <h5 class="title">Bordered Striped Table</h5>
-                            <br />
-                            <table class="table table-responsive table-striped table-bordered">
-                                <thead class="table-head">
-                                    <tr>
-                                        <th>First name</th>
-                                        <th>Last name</th>
-                                        <th>Email</th>
-                                        <th>Phone</th>
-                                        <th>Country</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>John</td>
-                                        <td>Doe</td>
-                                        <td>john@example.com</td>
-                                        <td>5555555</td>
-                                        <td>Jordan</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mary</td>
-                                        <td>Moe</td>
-                                        <td>mary@example.com</td>
-                                        <td>446166516</td>
-                                        <td>Korea, North</td>
-                                    </tr>
-                                    <tr>
-                                        <td>July</td>
-                                        <td>Dooley</td>
-                                        <td>july@example.com</td>
-                                        <td>5578255</td>
-                                        <td>Argentina</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Garth</td>
-                                        <td>Moe</td>
-                                        <td>garth@example.com</td>
-                                        <td>4478215</td>
-                                        <td>Colombia</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Raya</td>
-                                        <td>Abraham</td>
-                                        <td>raya@example.com</td>
-                                        <td>55784245</td>
-                                        <td>Burundi</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mosa</td>
-                                        <td>Ahmed</td>
-                                        <td>mosa@example.com</td>
-                                        <td>545755</td>
-                                        <td>Brazil</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                    <div class="col-md-4">
+                        <div class="col-contint col-contint-taps">
+                            <h5 class="title">Colored Table</h5>
+                            <br>
+                            <p>You can change the table's heads color using add any color class (eg:<code>.info-mid</code>).</p>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <table class="table table-responsive">
+                                        <thead class="table-head info-mid colo">
+                                            <tr>
+                                                <th class="dashboard-th colored-table-head">Player name</th>
+                                                <th class="dashboard-th colored-table-head">Team</th>
+                                                <th class="dashboard-th colored-table-head">Country</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="content-padding">Messi</td>
+                                                <td class="content-padding">Barcelona</td>
+                                                <td class="content-padding">Argentina</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="content-padding">Ronaldinho</td>
+                                                <td class="content-padding">Querétaro</td>
+                                                <td class="content-padding">Brazil</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="content-padding">Cristiano Ronaldo</td>
+                                                <td class="content-padding">Real Madrid</td>
+                                                <td class="content-padding">Portugal</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="content-padding">Gonzalo Higuain</td>
+                                                <td class="content-padding">Juventus</td>
+                                                <td class="content-padding">Argentina</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                    <div class="col-contint col-contint-taps">
-                        <h5 class="title">Colored table head</h5>
-                        <br>
-                        <p>You can change the table's heads color using add any color class (eg:<code>.dashboard-info</code>)</p>
-                        <div class="row">
-                        <div class="col-md-4">
-                        <table class="table table-responsive table-bordered">
-                            <thead class="table-head info-mid">
-                                <tr>
-                                    <th class="dashboard-th">Player name</th>
-                                    <th class="dashboard-th">Team</th>
-                                    <th class="dashboard-th">Country</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Messi</td>
-                                    <td>Barcelona</td>
-                                    <td>Argentina</td>
-                                </tr>
-                                <tr>
-                                    <td>Ronaldinho</td>
-                                    <td>Querétaro</td>
-                                    <td>Brazil</td>
-                                </tr>
-                                <tr>
-                                    <td>Cristiano Ronaldo</td>
-                                    <td>Real Madrid</td>
-                                    <td>Portugal</td>
-                                </tr>
-                                <tr>
-                                    <td>Gonzalo Higuain</td>
-                                    <td>Juventus</td>
-                                    <td>Argentina</td>
-                                </tr>
-                                <tr>
-                                    <td>Antoine Griezmann</td>
-                                    <td>Atletico Madrid</td>
-                                    <td>France</td>
-                                </tr>
-                                <tr>
-                                    <td>Neymar</td>
-                                    <td>Barcelona</td>
-                                    <td>Brazil</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="col-md-4">
-                        <table class="table table-responsive table-bordered">
-                            <thead class="table-head success-mid">
-                                <tr>
-                                    <th class="dashboard-th">Player name</th>
-                                    <th class="dashboard-th">Team</th>
-                                    <th class="dashboard-th">Country</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Messi</td>
-                                    <td>Barcelona</td>
-                                    <td>Argentina</td>
-                                </tr>
-                                <tr>
-                                    <td>Ronaldinho</td>
-                                    <td>Querétaro</td>
-                                    <td>Brazil</td>
-                                </tr>
-                                <tr>
-                                    <td>Cristiano Ronaldo</td>
-                                    <td>Real Madrid</td>
-                                    <td>Portugal</td>
-                                </tr>
-                                <tr>
-                                    <td>Gonzalo Higuain</td>
-                                    <td>Juventus</td>
-                                    <td>Argentina</td>
-                                </tr>
-                                <tr>
-                                    <td>Antoine Griezmann</td>
-                                    <td>Atletico Madrid</td>
-                                    <td>France</td>
-                                </tr>
-                                <tr>
-                                    <td>Neymar</td>
-                                    <td>Barcelona</td>
-                                    <td>Brazil</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="col-md-4">
-                        <table class="table table-responsive table-bordered">
-                            <thead class="table-head primary-mid">
-                                <tr>
-                                    <th class="dashboard-th">Player name</th>
-                                    <th class="dashboard-th">Team</th>
-                                    <th class="dashboard-th">Country</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Messi</td>
-                                    <td>Barcelona</td>
-                                    <td>Argentina</td>
-                                </tr>
-                                <tr>
-                                    <td>Ronaldinho</td>
-                                    <td>Querétaro</td>
-                                    <td>Brazil</td>
-                                </tr>
-                                <tr>
-                                    <td>Cristiano Ronaldo</td>
-                                    <td>Real Madrid</td>
-                                    <td>Portugal</td>
-                                </tr>
-                                <tr>
-                                    <td>Gonzalo Higuain</td>
-                                    <td>Juventus</td>
-                                    <td>Argentina</td>
-                                </tr>
-                                <tr>
-                                    <td>Antoine Griezmann</td>
-                                    <td>Atletico Madrid</td>
-                                    <td>France</td>
-                                </tr>
-                                <tr>
-                                    <td>Neymar</td>
-                                    <td>Barcelona</td>
-                                    <td>Brazil</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    </div>
-                    </div>
                     </div>
                 </div>
                 <h6 class="made-by">Made By  <b>New Versions</b></h6>
@@ -660,7 +462,7 @@
         </div>
         <!-- /#page-content-wrapper -->
         <!-- /#wrapper -->
-           <div id="Right-Side-Section-Togle">
+        <div id="Right-Side-Section-Togle">
             <i class="fa fa-pencil-square-o" id="Edit" aria-hidden="true"></i>
         </div>
         <div id="Right-Side-Section">
@@ -813,21 +615,19 @@
                 </table>
             </div>
         </div>
-
-
         <div class="notifecations-box">
             <div class="arrow-up"></div>
             <h5>Notifications</h5>
             <div class="single-not-content">
                 <a href="#">
                     <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b>&nbsp;    wants your confirmation on his Leave Request on 12 May 2015</p>
+                    <p><b>Mohammad Meshaal</b>&nbsp; wants your confirmation on his Leave Request on 12 May 2015</p>
                 </a>
             </div>
             <div class="single-not-content">
                 <a href="#">
                     <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b>&nbsp;    wants your confirmation on his Leave Request on 12 May 2015</p>
+                    <p><b>Mohammad Meshaal</b>&nbsp; wants your confirmation on his Leave Request on 12 May 2015</p>
                 </a>
             </div>
             <div class="veiw-all-not">
@@ -840,25 +640,29 @@
             <div class="single-not-content">
                 <a href="#">
                     <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
+                    <p><b>Mohammad Meshaal</b>
+                        <br /> Message subject will display here</p>
                 </a>
             </div>
             <div class="single-not-content">
                 <a href="#">
                     <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
+                    <p><b>Mohammad Meshaal</b>
+                        <br /> Message subject will display here</p>
                 </a>
             </div>
             <div class="single-not-content">
                 <a href="#">
                     <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
+                    <p><b>Mohammad Meshaal</b>
+                        <br /> Message subject will display here</p>
                 </a>
             </div>
             <div class="single-not-content">
                 <a href="#">
                     <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
+                    <p><b>Mohammad Meshaal</b>
+                        <br /> Message subject will display here</p>
                 </a>
             </div>
             <div class="veiw-all-not">
@@ -869,20 +673,17 @@
             <div class="arrow-up user-arrow"></div>
             <a href="#">
                 <div class="user-info-content">
-                    <i class="fa fa-user" aria-hidden="true"></i>
-                    Proﬁle
+                    <i class="fa fa-user" aria-hidden="true"></i> Proﬁle
                 </div>
             </a>
             <a href="#">
                 <div class="user-info-content">
-                    <i class="fa fa-cog" aria-hidden="true"></i>
-                    Settings
+                    <i class="fa fa-cog" aria-hidden="true"></i> Settings
                 </div>
             </a>
             <a href="#">
                 <div class="user-info-content">
-                    <i class="fa fa-info-circle" aria-hidden="true"></i>
-                    Help
+                    <i class="fa fa-info-circle" aria-hidden="true"></i> Help
                 </div>
             </a>
             <a href="#">
@@ -899,7 +700,6 @@
     <script src="assets/js/notifications_boxs.js"></script>
     <script src="assets/js/tables.js"></script>
     <script src="assets/vendors/bootstrap-checkbox/bootstrap-checkbox.min.js"></script>
-
     <script src="assets/js/nav_colors_change.js"></script>
     <link href="assets/css/colorpicker-layout.css" rel="stylesheet" />
     <link href="assets/css/colorpicker.css" rel="stylesheet" />
@@ -912,4 +712,5 @@
     <script src="assets/js/page-ready-theam.js"></script>
     <link id="default-color-picker" rel="stylesheet" />
 </body>
+
 </html>
