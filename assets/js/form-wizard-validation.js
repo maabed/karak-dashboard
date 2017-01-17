@@ -304,3 +304,4 @@
         });
    });
 
+        $('select').selectpicker();
