@@ -17,6 +17,8 @@
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
     <link href="assets/css/prettify.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/wizard.css" />
+    <link rel="stylesheet" href="assets/vendors/sweet-alert/sweetalert.css">
+    <link rel="stylesheet" href="assets/vendors/select-plugin/css/bootstrap-select.css">
 </head>
 
 <body>
@@ -317,9 +319,8 @@
                                             <div class="col-sm-6">
                                                 <div class="col-sm-12">
                                                     <div class="form-group col-val">
-                                                        <label for="sel1">Country*</label>
-                                                        <select class="form-control" id="ddl" name="country" title="Please select your country!" required>
-                                                            <option></option>
+                                                        <select class="select-display text-drop form-control required empty" id="ddl" name="country">
+                                                            <option value="">Please select your country!</option>
                                                             <option value="AF">Afghanistan</option>
                                                             <option value="AX">Åland Islands</option>
                                                             <option value="AL">Albania</option>
@@ -576,7 +577,7 @@
                                             <div class="col-sm-6">
                                                 <div class="col-sm-12">
                                                     <div class="form-group">
-                                                        <div class="input-field text-drop">
+                                                        <div class="input-field text-drop2">
                                                             <input type="text" id="city">
                                                             <label for="city">Enter City</label>
                                                         </div>
@@ -648,7 +649,7 @@
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="col-sm-12">
-                                                    <div class="form-group col-val">
+                                                    <div id="date-valid" class="form-group col-val">
                                                         <input placeholder="MM" type="date" class="form-control" id="date" name="date" required>
                                                     </div>
                                                 </div>
@@ -766,8 +767,13 @@
                                 </div>
                             </div>
                             <div class="col-sm-12">
-                                <a class="btn btn-primary button-style" id="previous"><span class="glyphicon glyphicon-chevron-left"></span>Previous</a>
-                                <button type="submit" class="btn btn-primary button-style next-wizard" name="signup1" value="Sign up" id="next-btn-wizard">Next<span class="glyphicon glyphicon-chevron-right"></span></button>
+                                <button class="btn btn-primary button-style icon-btn button-style" id="previous">
+                                    <span class="glyphicon glyphicon-chevron-left prev-config"></span> Previous
+                                </button>
+                                <button type="submit" class="btn btn-primary button-style icon-btn next-wizard" name="signup1" value="Sign up" id="next-btn-wizard">
+                                    <span class="glyphicon glyphicon-chevron-right"></span> Next
+                                </button>
+                                
                             </div>
                         </div>
                     </form>
@@ -1026,6 +1032,11 @@
     <link id="default-color-picker" rel="stylesheet" />
     
     <script src="assets/js/form-wizard-validation.js"></script>
+    <script src="assets/vendors/sweet-alert/sweetalert.min.js"></script>
+    <script src="assets/vendors/select-plugin/js/bootstrap-select.min.js"></script>
+    <script>
+        $('select').selectpicker();
+    </script>
 </body>
 
 </html>

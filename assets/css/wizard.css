@@ -98,7 +98,7 @@ input:not(#searchTB):not(.has-error > input):not(.has-success > input):focus{
     margin-top: 10px !important;
 }
 .text-drop{
-    margin-top: 25px;
+    margin-top: 8px;
 }
 .nav-pills > li.active > a{
     background-color: #67b2e4;
@@ -118,3 +118,56 @@ input:not(#searchTB):not(.has-error > input):not(.has-success > input):focus{
 .input-field.col-val.has-feedback.has-success > input:not(#searchTB):focus{
     border-bottom: 1px solid #3c763d !important;
 }
+input:focus{
+    border-bottom: 1px solid #67b2e4 !important;
+}
+.btn.dropdown-toggle.btn-default:not(.btn-sm){
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    border-radius: 0px;
+    padding-left: 0px;
+}
+.filter-option {
+    color: #9e9e9e;
+    font-size: 13px;
+}
+select.empty {
+    color: #999;
+}
+.form-control {
+    box-shadow: none;
+    border: 1px solid rgba(204, 204, 204, 0.6);
+}
+.select-display {
+    display: block;
+    width: 100%;
+    height: 35px;
+    border-radius: 3px;
+    border-color: #cccccc;
+}
+.text-drop2{
+    
+}
+.dropdown-menu.open{
+    height: 25% !important;
+}
+.dropdown-menu.inner{
+    height: 25% !important;
+}
+.ok-pos{
+    right: 30px !important;
+    top: 8px;
+}
+#date-valid > input {
+    padding: 0px;
+}
+.prev-config{
+    float: left !important;
+    padding-left: 0px !important;
+    padding-right: 2em !important;
+}
+fieldset{
+    display: none;
+}
+
+
