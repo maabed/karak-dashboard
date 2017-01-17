@@ -124,12 +124,11 @@ button {
  */
 .dag_container > div,
 .gu-mirror {
-    margin: 0.7em 0px;
+    margin-bottom: 0.7em;
     padding: 10px;
     background-color: #fff;
     transition: opacity 0.4s ease-in-out;
-    border: 1px solid #3B97D2;
-    border-radius: 3px;
+    border: 1px solid #99cbed;
 }
 
 .dag_container > div {
