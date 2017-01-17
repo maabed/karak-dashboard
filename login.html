@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -9,10 +9,8 @@
     <title>Blue Dashboard</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href="assets/css/input_style.css" rel="stylesheet" />
     <!-- Bootstrap Core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
@@ -25,85 +23,77 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="assets/js/vendors/jquery-1.12.3.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link href="assets/css/login.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="black-layer">
-        <img class="img-responsive login-background" src="assets/images/post.jpg" />
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3">
-                    <div class="panel panel-login">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-6">
-                                    <a href="#" class="active" id="login-form-link">Login</a>
-                                </div>
-                                <div class="col-xs-6">
-                                    <a href="#" id="register-form-link">Register</a>
-                                </div>
-                            </div>
-                            <hr>
-                        </div>
-                        <div class="panel-body">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <form id="login-form" method="post" role="form" class="login-modal">
-                                        <div class="form-group">
-                                            <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
-                                        </div>
-                                        <div class="form-group text-center">
-                                            <div class="checkbox checkbox-info">
-                                                <input id="checkbox4" type="checkbox">
-                                                <label class="keep-me-login" for="checkbox4">
-                                                    Keep Me Signed in
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-sm-6 col-sm-offset-3">
-                                                    <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Log In">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="forgot-Password">
-                                            <a href="#">Forgot Password?</a>
-                                        </div>
-                                    </form>
-                                    <form id="register-form" method="post" role="form" class="registration-modal">
-                                        <div class="form-group">
-                                            <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password">
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-sm-6 col-sm-offset-3">
-                                                    <input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" value="Register Now">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+    <div class="backgroundimg">
+    </div>
+    <div class="container">
+        <div class="card margin-top"></div>
+        <div class="card">
+            <form>
+                <div class="login">
+                    <h2 class="title">Login</h2>
+                    <div class="input-container">
+                        <input type="text" id="#{label}" required="required" />
+                        <label for="#{label}">Username</label>
+                        <div class="bar"></div>
                     </div>
+                    <div class="input-container">
+                        <input type="password" id="#{label}" required="required" />
+                        <label for="#{label}">Password</label>
+                        <div class="bar"></div>
+                    </div>
+                    <div class="button-container">
+                        <button><span>SIGN IN</span></button>
+                    </div>
+                    <div class="footer"><a href="#" id="forgot">Forgot your password?</a></div>
                 </div>
-            </div>
+                <div class="forgot">
+                    <h2 class="title">Forgot password</h2>
+                    <div class="input-container">
+                        <input type="text" required="required" />
+                        <label>Email</label>
+                        <div class="bar"></div>
+                    </div>
+                    <div class="button-container">
+                        <button><span>Send email</span></button>
+                    </div>
+                    <div class="footer"><a href="#" id="login">Login</a></div>
+                </div>
+            </form>
+        </div>
+        <div class="card alt">
+            <div class="toggle"></div>
+            <h1 class="title">
+                Register
+                <div class="close"></div>
+            </h1>
+            <form>
+                <div class="input-container">
+                    <input type="text" id="#{label}" required="required" />
+                    <label for="#{label}">Username</label>
+                    <div class="bar"></div>
+                </div>
+                <div class="input-container">
+                    <input type="password" id="#{label}" required="required" />
+                    <label for="#{label}">Password</label>
+                    <div class="bar"></div>
+                </div>
+                <div class="input-container">
+                    <input type="password" id="#{label}" required="required" />
+                    <label for="#{label}">Repeat Password</label>
+                    <div class="bar"></div>
+                </div>
+                <div class="button-container">
+                    <button><span>REGISTRATION</span></button>
+                </div>
+            </form>
         </div>
     </div>
-    
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="assets/js/login.js"></script>
+    <h6 class="made-by ">Made By  <b>New Versions</b></h6>
+
+    <script src="assets/js/login-page.js"></script>
 </body>
 </html>
