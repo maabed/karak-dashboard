@@ -20,6 +20,18 @@
     border-left :15px solid #fff !important;
 }
 
+
+
+.table > tbody > tr > td, .table > tbody > tr > th,  .table > thead > tr > td, .table > thead > tr > th{
+    border-bottom: 1px solid #ddd !important;
+    border-top: 0 !important;
+}
+
+.table > tfoot > tr > td, .table > tfoot > tr > th{
+     border-top: 0 !important;
+}
+
+
 .users-table-format tr td img {
     width :6em;
     height: auto;

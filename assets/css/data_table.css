@@ -7,6 +7,7 @@ table.dataTable {
     clear: both;
     border-collapse: separate;
     border-spacing: 0;
+    border-bottom: 0 !important;
     /*
    * Header and footer styles
    */
@@ -472,7 +473,8 @@ table.dataTable {
 .dataTables_wrapper .dataTables_info,
 .dataTables_wrapper .dataTables_processing,
 .dataTables_wrapper .dataTables_paginate {
-    color: #585858;
+    color: #707A7A;
+    font-weight: lighter;
 }
 
 .dataTables_wrapper .dataTables_scroll {
