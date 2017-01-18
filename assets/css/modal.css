@@ -74,8 +74,11 @@
     transition: all 0.5s ease;
     cursor: pointer;
 }
-.right-side-body{
-    top: 20%;
+#myModal2 > .modal-dialog > .modal-content{
+    border-top: 0px;
+}
+.row.right-side-buttons > .col-sm-6 > .btn-primary{
+    float: right;
 }
 .preview {
     color: #888888;
@@ -198,7 +201,7 @@ input:not([type])+label:after, input[type=text]+label:after, input[type=password
     border-radius: 0px;
 }
 .middle-dialog{
-    top:22%;
+    top:15%;
 }
 .jumbotron > .glyphicon-search{
     font-size: 26px;
