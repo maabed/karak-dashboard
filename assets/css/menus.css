@@ -257,12 +257,14 @@ Follow me on Twitter @maridlcrmn
     color: rgb(255, 255, 255);
 }
 
+/*
 .navbar.navbar-default .nav-collapse,
 .navbar.navbar-inverse .nav-collapse {
     height: auto !important;
     transition: transform 0.1s;
     transform: translate(0px,-50px);
 }
+*/
 
     .navbar.navbar-default .nav-collapse.in,
     .navbar.navbar-inverse .nav-collapse.in {
@@ -389,12 +391,7 @@ Logo by Sneaker-mission.com (http://www.sneaker-mission.com/)
 
     .nav-list > li {
         padding: 20px 15px 15px;
-        border-left: 1px solid #eee;
     }
-
-        .nav-list > li:last-child {
-            border-right: 1px solid #eee;
-        }
 
         .nav-list > li > a:hover {
             text-decoration: none;
@@ -607,4 +604,10 @@ a.btn-info:hover{
 }
 #dropdown-thumbnail-preview{
     padding-left: 0px;
+}
+.email-toggle{
+    margin-right: 25px;
+}
+.nav.nav-tabs > .active{
+    border-bottom: 3px solid #3B97D2;
 }
