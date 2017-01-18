@@ -69,6 +69,33 @@ $(document).ready(function(){
     });
     
     
+    /* doughnut chart */
+    var ctxd = document.getElementById("doughnut");
+    var datad = {
+    labels: [
+        "Red",
+        "Blue",
+        "Yellow"
+    ],
+    datasets: [
+        {
+            data: [300, 50, 100],
+            backgroundColor: [
+                "#FF6384",
+                "#36A2EB",
+                "#FFCE56"
+            ],
+            hoverBackgroundColor: [
+                "#FF6384",
+                "#36A2EB",
+                "#FFCE56"
+            ]
+        }]
+    };
+    var myDoughnutChart = new Chart(ctxd, {
+        type: 'doughnut',
+        data: datad,
+    });
     
     /* Line chart*/
     var ctx4 = document.getElementById("line");
@@ -113,45 +140,34 @@ $(document).ready(function(){
     });
     
     
-    /*Radar chart*/
-    var ctx5 = document.getElementById("radar");
-    var myRadarChart = new Chart(ctx5, {
-        type: 'radar',
-        data: {
-            labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
-            datasets: [
-                {
-                    label: "My First dataset",
-                    backgroundColor: "rgba(179,181,198,0.2)",
-                    borderColor: "rgba(179,181,198,1)",
-                    pointBackgroundColor: "rgba(179,181,198,1)",
-                    pointBorderColor: "#fff",
-                    pointHoverBackgroundColor: "#fff",
-                    pointHoverBorderColor: "rgba(179,181,198,1)",
-                    data: [65, 59, 90, 81, 56, 55, 40]
-                },
-                {
-                    label: "My Second dataset",
-                    backgroundColor: "rgba(255,99,132,0.2)",
-                    borderColor: "rgba(255,99,132,1)",
-                    pointBackgroundColor: "rgba(255,99,132,1)",
-                    pointBorderColor: "#fff",
-                    pointHoverBackgroundColor: "#fff",
-                    pointHoverBorderColor: "rgba(255,99,132,1)",
-                    data: [28, 48, 40, 19, 96, 27, 100]
-                }
-            ]
-        },
-        options: {
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        beginAtZero:true
-                    }
-                }]
-            }
-        }
+    /*polar chart*/
+    var ctxp = document.getElementById("polar");
+    var datap = {
+    datasets: [{
+        data: [
+            7,
+            3,
+            14
+        ],
+        backgroundColor: [
+            "#FFCE56",
+            "#E7E9ED",
+            "#36A2EB"
+        ],
+        label: 'My dataset' // for legend
+    }],
+    labels: [
+        "Yellow",
+        "Grey",
+        "Blue"
+    ]
+    };
+    new Chart(ctxp, {
+        data: datap,
+        type: 'polarArea',
     });
+    
+    
     
 /*High charts*/
     
