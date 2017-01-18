@@ -937,3 +937,9 @@ a:focus {
     border-right: 4px solid transparent;
     border-left: 4px solid transparent;
 }
+.dropdown-menu.open{
+    z-index: 996;
+}
+.daterangepicker.dropdown-menu{
+    z-index: 996;
+}

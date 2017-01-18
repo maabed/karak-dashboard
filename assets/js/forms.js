@@ -97,10 +97,6 @@ $(function() {
     $('input[name="birthdate"]').daterangepicker({
         singleDatePicker: true,
         showDropdowns: false
-    }, 
-    function(start, end, label) {
-        var years = moment().diff(start, 'years');
-        alert("You are " + years + " years old.");
     });
 });
         
@@ -112,6 +108,8 @@ $(function() {
             format: 'MM/DD/YYYY h:mm A'
         }
     });
+    $(".daterangepicker").find(".calendar.left").css("width","50%");
+    $(".daterangepicker").find(".calendar.right").css("width","49%");
 });
 
 
@@ -138,11 +136,10 @@ $(function() {
     }, cb);
 
     cb(start, end);
-    
+    $(".cancelBtn.btn.btn-sm.btn-default").remove();
 });   
 
 $('.clockpicker').clockpicker();
-
 /* ranges */
 
 $("#no-params").ionRangeSlider();
@@ -173,4 +170,7 @@ $(document).ready(function(){
     $(".bootstrap-tagsinput").find("input").addClass("normal-text");
     $(".dropdown-toggle").find(".caret").addClass("caret-static");
     $(".caret-static").removeClass("caret");
+    $(".select-display").click(function(){
+        $(".select-display").find(".selected").removeClass("active");
+    });
 });
