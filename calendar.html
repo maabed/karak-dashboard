@@ -23,6 +23,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
     <script src="assets/vendors/calender/fullcalendar.min.js"></script>
     <script src="assets/vendors/calender/calender.js"></script>
+    <link href="assets/vendors/Select2/css/cdncss.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+    <script src="assets/vendors/Select2/js/select2.min.js"></script>
 </head>
 
 <body>
@@ -252,22 +255,25 @@
         <!-- Modal -->
         <div class="modal right fade" id="add-event" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
             <div class="modal-dialog" role="document">
-                <div class="modal-content">
+                <div class="modal-content add-event-modal">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         <h4 class="modal-title" id="myModalLabel2">
                          From: <label id="apptStartTime"></label><br>
                                   To:  <label id="apptEndTime"></label>
+
+                                  <!-- hidden Items-->
+                                 <label id="apptStartpost"></label><br>
+                                  <label id="apptEndpost"></label>
+                                  <!-- end hidden items -->
                                     </h4>
                     </div>
                     <div class="modal-body">
                         <form id="createAppointmentForm" class="form-horizontal">
                             <div class="control-group">
                                 <div class="controls">
-                                    <!--          <input type="text" name="patientName" id="patientName" tyle="margin: 0 auto;" data-provide="typeahead" data-items="4" data-source="[&quot;Value 1&quot;,&quot;Value 2&quot;,&quot;Value 3&quot;]">
-                                    <label id="apptAllDay"></label> -->
                                     <div class="input-field parent">
-                                        <input name="patientName" id="patientName"  type="text" class="validate">
+                                        <input name="patientName" id="patientName" type="text" class="validate">
                                         <label for="name"><i class="fa fa-calendar-o" aria-hidden="true"></i>&nbsp;Event Name</label>
                                     </div>
                                     <div class="input-field parent">
@@ -278,23 +284,19 @@
                                         <input name="Notes" id="notes" type="text" class="validate">
                                         <label for="Notes"><i class="fa fa-sticky-note" aria-hidden="true"></i>&nbsp;Notes</label>
                                     </div>
-                                    <select id="eventclassName" class="select-display selectpicker form-control empty">
-                                        <option id="default-event-color" value="default" class="Selected">Default Color</option>
+                                    <select id="eventclassName" style="width:100%" class="select-display selectpicker form-control empty js-example-templating ">
+                                        <option value="default">Default Color</option>
                                         <option value="worning">Warning</option>
                                         <option value="info">Info</option>
                                         <option value="success">Success</option>
                                         <option value="important">Important</option>
                                     </select>
-
                                     <label id="apptAllDay"></label>
                                 </div>
                             </div>
                         </form>
-                        <button type="submit" id="submitButton" class="btn btn-info icon-btn">
-                            <span class="glyphicon glyphicon-floppy-saved"></span> Save Event</button>
-                        <button aria-hidden="true" data-dismiss="modal" type="button " class="btn btn-default icon-btn">
-                            <span class="glyphicon glyphicon-print"></span> Delete
-                        </button>
+                        <button type="submit" id="submitButton" class="btn btn-info icon-btn btn-block">
+                            <span class="fa fa-plus"></span> Add Event</button>
                     </div>
                 </div>
             </div>
@@ -551,6 +553,35 @@
     <script src="assets/js/right-side-colors-change.js"></script>
     <script src="assets/js/page-ready-theam.js"></script>
     <link id="default-color-picker" rel="stylesheet" />
+    <script>
+    // $('select').select2();
+    // function formatState(state) {
+    //     if (!state.id) {
+    //         return state.text;
+    //     }
+    //     var $state = $(
+    //         '<span><i class="fa fa-stop default-icon" aria-hidden="true"></i>&nbsp;' + state.element.value.text + '</span>'
+    //     );
+    //     return $state;
+    // };
+    // $(".js-example-templating").select2({
+    //     templateResult: formatState
+    // });
+
+
+
+    function formatState (state) {
+  if (!state.id) { return state.text; }
+  var $state = $(
+    '<span><img src="assets/images/' + state.element.value.toLowerCase() + '.png"  /> ' + state.text + '</span>'
+  );
+  return $state;
+};
+
+$(".js-example-templating").select2({
+  templateResult: formatState
+});
+    </script>
 </body>
 
 </html>
