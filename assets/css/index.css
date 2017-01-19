@@ -26,16 +26,20 @@
         margin-left: auto;
 }
 }
-.index-icons *{
-    font-size: 1em;
-    padding-right: 10px;
-    padding-left: 14px;
-    color: #34495E;
+.index-icons {
+    font-size: 0.9em;
+    color: #626262;
 
 }
+
+.index-icons .col-sm-3{ text-align: center; }
 .index-icons{
     overflow: hidden;
 }
 #sankey{
     height: 290px;
 }
+.statistics .statistics-taps li a{
+    padding:0em 1em 1em 1em !important;
+}
+.statistics .statistics-taps li.active a, .statistics .statistics-taps li:hover > a{background-color : #F1F3F6 !important;}

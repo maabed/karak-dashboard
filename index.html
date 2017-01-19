@@ -10,16 +10,8 @@
     <title>Blue Dashboard</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <!-- Bootstrap Core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
     <link href="assets/css/styles.css" rel="stylesheet" />
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <link href="assets/css/input_style.css" rel="stylesheet" />
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
@@ -32,7 +24,7 @@
 <body>
     <div id="wrapper">
         <!-- Sidebar -->
-         <div id="sidebar-wrapper">
+        <div id="sidebar-wrapper">
             <div class="sidebar-brand" id="company-name">Blue Dashboard</div>
             <ul class="sidebar-nav">
                 <li class="selected">
@@ -127,7 +119,7 @@
                            Menus
                             </a>
                         </li>
-                            <li class="submenu-li">
+                        <li class="submenu-li">
                             <a href="hover.html">
                            Hover
                             </a>
@@ -252,45 +244,57 @@
             </div>
         </div>
         <!-- Page Content -->
-        <a href="#" id="PageTitle">Dashboard  /  Interface</a>
         <div id="page-content-wrapper">
             <div class="container-fluid">
                 <div class="row">
+                    <div class="col-lg-12">
+                        <div class="col-contint body-header">
+                            <h4 class="title">Welcome to Blue Dashboard</h4>
+                            <br />
+                            <p>
+                                Special Dashboard for small, medium and large webapp with very clean and aesthetic style and feel.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-md-8">
                         <div class="col-contint">
-                            <p class="title" id="randomizeData">Transactions</p>
-                            <canvas id="canvas"></canvas>
+                            <div id="containerspline"></div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="row">
-                            <div class="col-sm-12">
-                                <img class="img-responsive centerlize-reponsive index-img" src="assets/images/salse.png" />
+                            <div class="col-sm-6">
+                                <!-- <img class="img-responsive centerlize-reponsive index-img" src="assets/images/salse.png" /> -->
+                                <div class="col-contint all-income">
+                                    <h1><i class="fa fa-line-chart" aria-hidden="true"></i></h1>
+                                    <h2>$1 250,33</h2>
+                                    <h3>All Income</h3>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="col-contint all-income-invers">
+                                    <h1><i class="fa fa-exchange" aria-hidden="true"></i></h1>
+                                    <h2>$3 620,12</h2>
+                                    <h3>Transactions</h3>
+                                </div>
                             </div>
                         </div>
                         <br>
                         <div class="row">
-                            <div class="col-md-12">
-                                <div class="col-contint index-icons">
-                                    <div class="col-sm-3">
-                                        <i class="fa fa-chevron-up" aria-hidden="true"></i>15%
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <i class="fa fa-chevron-down" aria-hidden="true"></i>33%
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <i class="fa fa-bar-chart" aria-hidden="true"></i>50%
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <i class="fa fa-line-chart" aria-hidden="true"></i>90%
-                                    </div>
+                            <div class="col-sm-12">
+                                <div class="col-contint">
+                                    <h5 class="title">Today Income <span class="flat-style"><i class="fa fa-money" aria-hidden="true"></i>860K</span></h5>
+                                    <br>
+                                    <div id="containerexchange"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="statistics col-md-12">
+                <div class="row statistics">
+                    <div class="col-md-12">
                         <div class="statistics-taps">
                             <ul>
                                 <li class="active"><a href="#con3">Yesterday</a></li>
@@ -298,90 +302,92 @@
                                 <li><a href="#con1">Last Year</a></li>
                             </ul>
                         </div>
-                        <div class="statistics-item" id="con3">
-                            <div class="row">
-                                <div class="col-sm-2 centerlize-reponsive">
-                                    <img class="img-responsive" src="assets/images/st-1.png" />
-                                    <h4 class="bold">220,000 USD</h4>
-                                    <h4 class="lighter">Revenue</h4>
-                                </div>
-                                <div class="col-sm-2 centerlize-reponsive">
-                                    <img class="img-responsive" src="assets/images/st-2.png" />
-                                    <h4 class="bold">220,000 USD</h4>
-                                    <h4 class="lighter">Transactions</h4>
-                                </div>
-                                <div class="col-sm-2 centerlize-reponsive">
-                                    <img class="img-responsive" src="assets/images/st-3.png" />
-                                    <h4 class="bold">502,000 USD</h4>
-                                    <h4 class="lighter">Loans</h4>
-                                </div>
-                                <div class="col-sm-2 centerlize-reponsive">
-                                    <img class="img-responsive" src="assets/images/st-4.png" />
-                                    <h4 class="bold">122,000 USD</h4>
-                                    <h4 class="lighter">Investment</h4>
-                                </div>
-                                <div class="col-sm-2 centerlize-reponsive">
-                                    <img class="img-responsive" src="assets/images/st-5.png" />
-                                    <h4 class="bold">750,000 USD</h4>
-                                    <h4 class="lighter">Deposits</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="statistics-item" id="con2">
-                            <div class="row">
-                                <div class="col-sm-2">
-                                    <img class="img-responsive" src="assets/images/st-1.png" />
-                                    <h4 class="bold">230,000 USD</h4>
-                                    <h4 class="lighter">Revenue</h4>
-                                </div>
-                                <div class="col-sm-2">
-                                    <img class="img-responsive" src="assets/images/st-2.png" />
-                                    <h4 class="bold">220,000 USD</h4>
-                                    <h4 class="lighter">Transactions</h4>
-                                </div>
-                                <div class="col-sm-2">
-                                    <img class="img-responsive" src="assets/images/st-3.png" />
-                                    <h4 class="bold">502,000 USD</h4>
-                                    <h4 class="lighter">Loans</h4>
-                                </div>
-                                <div class="col-sm-2">
-                                    <img class="img-responsive" src="assets/images/st-4.png" />
-                                    <h4 class="bold">122,000 USD</h4>
-                                    <h4 class="lighter">Investment</h4>
-                                </div>
-                                <div class="col-sm-2">
-                                    <img class="img-responsive" src="assets/images/st-5.png" />
-                                    <h4 class="bold">750,000 USD</h4>
-                                    <h4 class="lighter">Deposits</h4>
+                        <div class="col-contint">
+                            <div class="statistics-item" id="con3">
+                                <div class="row">
+                                    <div class="col-sm-2 centerlize-reponsive">
+                                        <img class="img-responsive" src="assets/images/st-1.png" />
+                                        <h4 class="bold">220,000 USD</h4>
+                                        <h4 class="lighter">Revenue</h4>
+                                    </div>
+                                    <div class="col-sm-2 centerlize-reponsive">
+                                        <img class="img-responsive" src="assets/images/st-2.png" />
+                                        <h4 class="bold">120,000 USD</h4>
+                                        <h4 class="lighter">Transactions</h4>
+                                    </div>
+                                    <div class="col-sm-2 centerlize-reponsive">
+                                        <img class="img-responsive" src="assets/images/st-3.png" />
+                                        <h4 class="bold">502,000 USD</h4>
+                                        <h4 class="lighter">Loans</h4>
+                                    </div>
+                                    <div class="col-sm-2 centerlize-reponsive">
+                                        <img class="img-responsive" src="assets/images/st-4.png" />
+                                        <h4 class="bold">122,000 USD</h4>
+                                        <h4 class="lighter">Investment</h4>
+                                    </div>
+                                    <div class="col-sm-2 centerlize-reponsive">
+                                        <img class="img-responsive" src="assets/images/st-5.png" />
+                                        <h4 class="bold">750,000 USD</h4>
+                                        <h4 class="lighter">Deposits</h4>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="statistics-item" id="con1">
-                            <div class="row">
-                                <div class="col-sm-2">
-                                    <img class="img-responsive" src="assets/images/st-1.png" />
-                                    <h4 class="bold">240,000 USD</h4>
-                                    <h4 class="lighter">Revenue</h4>
+                            <div class="statistics-item" id="con2">
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <img class="img-responsive" src="assets/images/st-1.png" />
+                                        <h4 class="bold">1220,000 USD</h4>
+                                        <h4 class="lighter">Revenue</h4>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <img class="img-responsive" src="assets/images/st-2.png" />
+                                        <h4 class="bold">400,000 USD</h4>
+                                        <h4 class="lighter">Transactions</h4>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <img class="img-responsive" src="assets/images/st-3.png" />
+                                        <h4 class="bold">602,000 USD</h4>
+                                        <h4 class="lighter">Loans</h4>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <img class="img-responsive" src="assets/images/st-4.png" />
+                                        <h4 class="bold">2,000 USD</h4>
+                                        <h4 class="lighter">Investment</h4>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <img class="img-responsive" src="assets/images/st-5.png" />
+                                        <h4 class="bold">550,000 USD</h4>
+                                        <h4 class="lighter">Deposits</h4>
+                                    </div>
                                 </div>
-                                <div class="col-sm-2">
-                                    <img class="img-responsive" src="assets/images/st-2.png" />
-                                    <h4 class="bold">220,000 USD</h4>
-                                    <h4 class="lighter">Transactions</h4>
-                                </div>
-                                <div class="col-sm-2">
-                                    <img class="img-responsive" src="assets/images/st-3.png" />
-                                    <h4 class="bold">502,000 USD</h4>
-                                    <h4 class="lighter">Loans</h4>
-                                </div>
-                                <div class="col-sm-2">
-                                    <img class="img-responsive" src="assets/images/st-4.png" />
-                                    <h4 class="bold">122,000 USD</h4>
-                                    <h4 class="lighter">Investment</h4>
-                                </div>
-                                <div class="col-sm-2">
-                                    <img class="img-responsive" src="assets/images/st-5.png" />
-                                    <h4 class="bold">750,000 USD</h4>
-                                    <h4 class="lighter">Deposits</h4>
+                            </div>
+                            <div class="statistics-item" id="con1">
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <img class="img-responsive" src="assets/images/st-1.png" />
+                                        <h4 class="bold">290,000 USD</h4>
+                                        <h4 class="lighter">Revenue</h4>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <img class="img-responsive" src="assets/images/st-2.png" />
+                                        <h4 class="bold">130,000 USD</h4>
+                                        <h4 class="lighter">Transactions</h4>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <img class="img-responsive" src="assets/images/st-3.png" />
+                                        <h4 class="bold">420,000 USD</h4>
+                                        <h4 class="lighter">Loans</h4>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <img class="img-responsive" src="assets/images/st-4.png" />
+                                        <h4 class="bold">324,000 USD</h4>
+                                        <h4 class="lighter">Investment</h4>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <img class="img-responsive" src="assets/images/st-5.png" />
+                                        <h4 class="bold">950,000 USD</h4>
+                                        <h4 class="lighter">Deposits</h4>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -390,66 +396,62 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="col-contint scroll-y col-contint-taps">
-                            <p class="title">Calendar</p>
+                            <h5 class="title">Calendar</h5>
                             <br>
                             <div id='calendar' class="calender-layout"></div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="col-contint col-contint-taps">
-                            <p class="title">Worldwide Annual Sales</p>
+                            <h5 class="title">Worldwide Annual Sales</h5>
                             <br>
                             <div id="container"></div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-6 activities">
                         <div class="col-contint static-height">
-                            <p class="title">Transactions</p>
-                            <div id="sankey"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 activities">
-                        <div class="col-contint static-height">
-                            <p id="activities-log" class="title">Activities Log<a class="activities-year">2016</a></p>
+                            <h5 id="activities-log" class="title">Activities Log<a class="activities-year">2016</a></h5>
+                            <br>
                             <div class="activities-log">
                                 <div class="single-log-box">
-                                    <h5>October</h5>
+                                    <h5>Jan, 18 Wednesday <span class="flat-style"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;3:15 PM</span></h5>
+                                    <p>
+                                        Dipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    </p>
+                                </div>
+                                <div class="single-log-box">
+                                    <h5>Feb, 6 Monday<span class="flat-style"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;6:10 PM</span></h5>
+                                    <p>
+                                        Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    </p>
+                                </div>
+                                <div class="single-log-box">
+                                    <h5>Jun, 6 Tuesday<span class="flat-style"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;11:15 AM</span></h5>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                     </p>
                                 </div>
                                 <div class="single-log-box">
-                                    <h5>October</h5>
+                                    <h5>Jul, 6 Thursday<span class="flat-style"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;7:00 AM</span></h5>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                                     </p>
                                 </div>
                                 <div class="single-log-box">
-                                    <h5>October</h5>
+                                    <h5>Aug, 6 Sunday<span class="flat-style"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;4:15 PM</span></h5>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </p>
-                                </div>
-                                <div class="single-log-box">
-                                    <h5>October</h5>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </p>
-                                </div>
-                                <div class="single-log-box">
-                                    <h5>October</h5>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="col-contint static-height">
-                            <p class="title">To Do List<a class="add-task"><i class="fa fa-plus-circle" aria-hidden="true"></i></a></p>
+                            <h5 class="title">To Do List<a class="add-task"><i class="fa fa-plus-circle" aria-hidden="true"></i></a></h5>
+                            <br>
                             <div class="to-do-list">
                                 <div class="single-to-do-box">
                                     <div class="checkbox checkbox-success checkbox-inline">
@@ -463,7 +465,7 @@
                                     <div class="checkbox checkbox-success checkbox-inline">
                                         <input id="checkbox3" type="checkbox">
                                         <label for="checkbox3">
-                                            Lorem ipsum dolor sit..
+                                            Consectetur adipiscing elit..
                                         </label>
                                     </div>
                                     <i class="fa fa-trash" aria-hidden="true"></i>
@@ -473,7 +475,7 @@
                                     <div class="checkbox checkbox-success checkbox-inline">
                                         <input id="checkbox3" type="checkbox">
                                         <label for="checkbox3">
-                                            Lorem ipsum dolor sit..
+                                            Consectetur adipiscing elit..
                                         </label>
                                     </div>
                                     <i class="fa fa-trash" aria-hidden="true"></i>
@@ -483,7 +485,7 @@
                                     <div class="checkbox checkbox-success checkbox-inline">
                                         <input id="checkbox3" type="checkbox">
                                         <label for="checkbox3">
-                                            Lorem ipsum dolor sit..
+                                            Sit amet, consectetur adipiscing..
                                         </label>
                                     </div>
                                     <i class="fa fa-trash" aria-hidden="true"></i>
@@ -493,7 +495,7 @@
                                     <div class="checkbox checkbox-success checkbox-inline">
                                         <input id="checkbox3" type="checkbox">
                                         <label for="checkbox3">
-                                            Lorem ipsum dolor sit..
+                                            Adipiscing elit consectetur ..
                                         </label>
                                     </div>
                                     <i class="fa fa-trash" aria-hidden="true"></i>
@@ -513,7 +515,7 @@
                                     <div class="checkbox checkbox-success checkbox-inline">
                                         <input id="checkbox3" type="checkbox">
                                         <label for="checkbox3">
-                                            Lorem ipsum dolor sit..
+                                           Sit amet, consectetur..
                                         </label>
                                     </div>
                                     <i class="fa fa-trash" aria-hidden="true"></i>
@@ -523,7 +525,7 @@
                                     <div class="checkbox checkbox-success checkbox-inline">
                                         <input id="checkbox3" type="checkbox">
                                         <label for="checkbox3">
-                                            Lorem ipsum dolor sit..
+                                            Consectetur adipiscing..
                                         </label>
                                     </div>
                                     <i class="fa fa-trash" aria-hidden="true"></i>
@@ -543,7 +545,20 @@
                         </div>
                     </div>
                 </div>
-                <h6 class="made-by">Made By  <b>New Versions</b></h6>
+                <div class="container-fixed-lg footer">
+                    <div class="copyright sm-text-center">
+                        <p class="small no-margin pull-left sm-pull-reset">
+                            <span class="hint-text">Copyright © 2017 </span>
+                            <span class="font-montserrat"><b>New Release</b></span>.
+                            <span class="hint-text">All rights reserved. </span>
+                            <span class="sm-block"><a href="#" class="m-l-10 m-r-10">Terms of use</a> | <a href="#" class="m-l-10">Privacy Policy</a></span>
+                        </p>
+                        <p class="small no-margin pull-right sm-pull-reset">
+                            <h6 class="made-by">Made By  <b>New Release</b></h6>
+                        </p>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
             </div>
             <!-- /#page-content-wrapper -->
         </div>
@@ -781,7 +796,6 @@
         </div>
     </div>
     <script src="assets/js/vendors/jquery-1.12.3.js"></script>
-    <script src="assets/js/random_chart.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/vendors/Chart.bundle.js"></script>
@@ -790,8 +804,9 @@
     <script src="assets/vendors/calender/jquery-ui.custom.min.js"></script>
     <script src="assets/vendors/calender/fullcalendar.js"></script>
     <!--Map-->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="assets/js/map.js"></script>
-    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="http://code.highcharts.com/maps/modules/map.js"></script>
     <script src="https://code.highcharts.com/maps/modules/data.js"></script>
     <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
     <script src="https://code.highcharts.com/mapdata/custom/world.js"></script>
@@ -799,16 +814,162 @@
     <script src="assets/js/calender.js"></script>
     <script src="assets/js/doughnut.js"></script>
     <script src="assets/js/nav_colors_change.js"></script>
-    <link href="assets/css/colorpicker-layout.css" rel="stylesheet" />
-    <link href="assets/css/colorpicker.css" rel="stylesheet" />
     <script src="assets/js/vendors/colorpicker/colorpicker.js"></script>
-    <script src="assets/js/vendors/colorpicker/eye.js"></script>
-    <script src="assets/js/vendors/colorpicker/layout.js"></script>
-    <script src="assets/js/vendors/colorpicker/utils.js"></script>
-    <script src="assets/js/vendors/colorpicker/utils.js"></script>
     <script src="assets/js/right-side-colors-change.js"></script>
     <script src="assets/js/page-ready-theam.js"></script>
     <link id="default-color-picker" rel="stylesheet" />
+    <script>
+    $(function() {
+        $(document).ready(function() {
+            Highcharts.setOptions({
+                global: {
+                    useUTC: false
+                }
+            });
+
+            Highcharts.chart('containerspline', {
+                chart: {
+                    type: 'spline',
+                    animation: Highcharts.svg, // don't animate in old IE
+                    marginRight: 10,
+                    margin: [20, 20, 20, 35],
+                    events: {
+                        load: function() {
+
+                            // set up the updating of the chart each second
+                            var series = this.series[0];
+                            setInterval(function() {
+                                var x = (new Date()).getTime(), // current time
+                                    y = Math.random();
+                                series.addPoint([x, y], true, true);
+                            }, 1000);
+                        }
+                    }
+                },
+                title: {
+                    text: ''
+                },
+                xAxis: {
+                    type: 'datetime',
+                    tickPixelInterval: 150
+                },
+                yAxis: {
+                    title: {
+                        text: 'Value'
+                    },
+                    plotLines: [{
+                        value: 0,
+                        width: 1,
+                        color: '#808080'
+                    }]
+                },
+                tooltip: {
+                    formatter: function() {
+                        return '<b>' + this.series.name + '</b><br/>' +
+                            Highcharts.dateFormat('%Y-%m-%d %H:%M:%S', this.x) + '<br/>' +
+                            Highcharts.numberFormat(this.y, 2);
+                    }
+                },
+                legend: {
+                    enabled: false
+                },
+                exporting: {
+                    enabled: false
+                },
+                series: [{
+                    name: 'Random data',
+                    data: (function() {
+                        // generate an array of random data
+                        var data = [],
+                            time = (new Date()).getTime(),
+                            i;
+
+                        for (i = -19; i <= 0; i += 1) {
+                            data.push({
+                                x: time + i * 1000,
+                                y: Math.random()
+                            });
+                        }
+                        return data;
+                    }())
+                }]
+            });
+        });
+    });
+
+
+
+
+
+
+    $(function() {
+        $.getJSON('https://www.highcharts.com/samples/data/jsonp.php?filename=usdeur.json&callback=?', function(data) {
+
+            Highcharts.chart('containerexchange', {
+                chart: {
+                    zoomType: 'x',
+                    margin: [10, 0, 20, 35],
+                    height: 150,
+                },
+                title: {
+                    text: ''
+                },
+                subtitle: {
+                    text: document.ontouchstart === undefined ?
+                        '' : 'Pinch the chart to zoom in'
+                },
+                xAxis: {
+                    type: 'datetime'
+                },
+                yAxis: {
+                    title: {
+                        text: 'Exchange rate'
+                    }
+                },
+                legend: {
+                    enabled: false
+                },
+                plotOptions: {
+                    area: {
+                        fillColor: {
+                            linearGradient: {
+                                x1: 0,
+                                y1: 0,
+                                x2: 0,
+                                y2: 1
+                            },
+                            stops: [
+                                [0, Highcharts.getOptions().colors[0]],
+                                [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+                            ]
+                        },
+                        marker: {
+                            radius: 2
+                        },
+                        lineWidth: 1,
+                        states: {
+                            hover: {
+                                lineWidth: 1
+                            }
+                        },
+                        threshold: null
+                    }
+                },
+                exporting: {
+                    buttons: [{
+                        symbol: '',
+                    }]
+                },
+
+                series: [{
+                    type: 'area',
+                    name: 'USD to EUR',
+                    data: data
+                }]
+            });
+        });
+    });
+    </script>
 </body>
 
 </html>
