@@ -18,8 +18,11 @@ $(document).ready(function(){
     $("#cc_tag").focusout(function(){
         $("#cc_tag").parent().css("border-bottom","1px solid #E4E5E7");
     });
-    
     $('#refresh-page').click(function() {
-        location.reload();
+        $(".overlay-container").addClass("overlay");
+        setTimeout(function(){
+            $(".overlay-container").removeClass("overlay") 
+        }, 2000);
     });
+    $(".current-date").append(moment().format('ll'));
 });

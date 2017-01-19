@@ -308,6 +308,7 @@
                     <div class="col-md-10 split-view">
                         <div class="Split-left-sidr">
                             <div id="inbox-date"><div class="current-date">Today &nbsp&nbsp</div><a href="#"><i id="refresh-page" class="fa fa-refresh" aria-hidden="true"></i></a></div>
+                            <div class="overlay-container">
                             <a class="ShowMessage" href="#">
                                 <table class="Emails">
                                     <tr>
@@ -380,6 +381,7 @@
                                     </tr>
                                 </table>
                             </a>
+                            </div>
                         </div>
                         
                         <div class="Split-right-sidr no-selection">
@@ -976,8 +978,5 @@
     <script src="assets/js/page-ready-theam.js"></script>
     <link id="default-color-picker" rel="stylesheet" />
     <script src="assets/vendors/momentjs/moment.js"></script>
-    <script>
-        $(".current-date").append(moment().format('ll'));
-    </script>
 </body>
 </html>
