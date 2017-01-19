@@ -291,17 +291,25 @@
    }
    $('#submit-wizard').click(function() {
        swal({
-            title: "Are you sure?",
-            text: "Are you sure you want ti submit this form",
-            type: "warning",
-            showCancelButton: true,
-            confirmButtonColor: "#DD6B55",
-            confirmButtonText: "Yes",
-            closeOnConfirm: false
-        },
-        function () {
-           location.reload();
-        });
+           title: "Your form has been submited",
+           text: "",
+           showConfirmButton: true
+       });
    });
+$('select').selectpicker();
 
-        $('select').selectpicker();
+
+$(function() {
+    $('input[name="date"]').daterangepicker({
+        autoUpdateInput:false,
+        singleDatePicker: true,
+        showDropdowns: false
+    });
+$('input[name="date"]').on('apply.daterangepicker', function(ev, picker) {
+      $(this).val(picker.startDate.format('MM/DD/YYYY'));
+  });
+
+$('input[name="date"]').on('cancel.daterangepicker', function(ev, picker) {
+      $(this).val('');
+  });
+});

@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="assets/css/wizard.css" />
     <link rel="stylesheet" href="assets/vendors/sweet-alert/sweetalert.css">
     <link rel="stylesheet" href="assets/vendors/select-plugin/css/bootstrap-select.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/datepickers/daterangepicker.css" />
+    <link rel="stylesheet" type="text/css" href="assets/vendors/datepickers/datepicker.min.css">
 </head>
 
 <body>
@@ -244,14 +246,18 @@
             </div>
         </div>
         <!-- Page Content -->
-        <a href="#" id="PageTitle">Forms  /  Wizard </a>
         <div id="page-content-wrapper">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-sm-12">
-                        <img class="img-responsive wizard-img" src="assets/images/wizzerd.png" />
+                    <div class="col-md-12">
+                        <div class="col-contint body-header">
+                            <a href="loading.html" class="page_title pull-right">Form-wizard</a>  
+                            <h4 class ="title"> Form-wizard </h4>
+                            <br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
                     </div>
-                </div>
+                    </div>
                 <div id="rootwizard">
                     <div class="navbar">
                         <div class="navbar-inner">
@@ -650,7 +656,8 @@
                                             <div class="col-sm-6">
                                                 <div class="col-sm-12">
                                                     <div id="date-valid" class="form-group col-val">
-                                                        <input placeholder="MM" type="date" class="form-control" id="date" name="date" required>
+        <input placeholder="MM" type="text" name="date" class="form-control" id="date" name="date" value="" required/>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -767,9 +774,9 @@
                                 </div>
                             </div>
                             <div class="col-sm-12">
-                                <button class="btn btn-primary button-style icon-btn button-style" id="previous">
+                                <a class="btn btn-primary button-style icon-btn button-style" id="previous">
                                     <span class="glyphicon glyphicon-chevron-left prev-config"></span> Previous
-                                </button>
+                                </a>
                                 <button type="submit" class="btn btn-primary button-style icon-btn next-wizard" name="signup1" value="Sign up" id="next-btn-wizard">
                                     <span class="glyphicon glyphicon-chevron-right"></span> Next
                                 </button>
@@ -1030,6 +1037,14 @@
     <script src="assets/js/right-side-colors-change.js"></script>
     <script src="assets/js/page-ready-theam.js"></script>
     <link id="default-color-picker" rel="stylesheet" />
+    
+    
+    <script src='assets/vendors/lib/moment.min.js'></script>
+
+    <script type="text/javascript" src="assets/vendors/datepickers/daterangepicker.js"></script>
+    <script type="text/javascript" src="assets/vendors/datepickers/datepicker.min.js"></script>
+    <script type="text/javascript" src="assets/vendors/datepickers/datepicker.en.js"></script>
+    <script type="text/javascript" src="assets/vendors/clockpicker/bootstrap-clockpicker.min.js"></script>
     
     <script src="assets/vendors/sweet-alert/sweetalert.min.js"></script>
     <script src="assets/vendors/select-plugin/js/bootstrap-select.min.js"></script>
