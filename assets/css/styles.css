@@ -3156,6 +3156,7 @@ input[type="email"]#searchTB::-webkit-input-placeholder {
     font-weight: lighter;
 }
 @media(max-width:1110px) {
+    
     .primary-border {
         border-left: 20px solid #34495E !important;
     }
@@ -3204,7 +3205,17 @@ input[type="email"]#searchTB::-webkit-input-placeholder {
         border-left: 20px solid #ecf0f1 !important;
     }
 }
+@media(max-width:1400px) {
+       
+        .all-income h2 {font-size:1.5em !important;}
+        .all-income h3 {font-size:1.3em !important;}
+
+        .all-income-invers h2 {font-size:1.5em !important;}
+        .all-income-invers h3 {font-size:1.3em !important;}
+    
+}
 @media(max-width:1028px) {
+ 
     .primary-border {
         border-left: 10px solid #34495E !important;
     }
