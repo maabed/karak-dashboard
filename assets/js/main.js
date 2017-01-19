@@ -65,5 +65,5 @@ $(document).ready(function() {
 
 $(document).ready(function(){
     $(".sidebar-nav").find("li.selected").find(".Submenue").css("display","block");
-    $("li.selected").find(".Submenue").attr("style","padding:0px;position:relative;left:40px;display:block")
+    $(".Submenue").css({"padding":"0px","position":"relative","left":"40px"});
 });
