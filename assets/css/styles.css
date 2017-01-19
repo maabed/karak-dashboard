@@ -2759,7 +2759,11 @@ input {
 .apply-color {
     border-radius: 0 !important;
     margin-top: 0.5em;
+
+
 }
+
+
 #company-name {
     color: #fff;
     border-bottom: 1px solid #F1F3F6;
