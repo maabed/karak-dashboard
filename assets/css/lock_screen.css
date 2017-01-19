@@ -33,7 +33,6 @@ body {
     height :100%;
     position :absolute;
     top:0;
-     background-image:url('../images/lock-screen.jpg');
   background-position:center;
   background-repeat:no-repeat;
    background-size: 100% auto;
@@ -197,7 +196,7 @@ body {
 .card {
   position: relative;
   background: #ffffff;
-  border-radius: 5px;
+  border-radius: 0px;
   padding: 60px 0 40px 0;
   box-sizing: border-box;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -212,7 +211,7 @@ body {
 .card:first-child {
   background: #fafafa;
   height: 10px;
-  border-radius: 5px 5px 0 0;
+  border-radius: 0px 0px 0 0;
   margin: 0 10px;
   padding: 0;
 }
@@ -463,7 +462,9 @@ body {
 .card.alt .button-container button:active:before, .card.alt .button-container button:focus:before {
   display: none;
 }
-
+.forgot{
+    display: none;
+}
 /* Keyframes */
 @-webkit-keyframes buttonFadeInUp {
   0% {
