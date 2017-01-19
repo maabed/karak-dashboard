@@ -80,6 +80,9 @@ p,
 [class^="hvr-"] {
     font-family: 'Roboto', sans-serif;
 }
+.icon-hover:before {
+    right: 0.5em !important;
+}
 
 [class^="hvr-"] {
   margin: .4em;
