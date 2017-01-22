@@ -663,8 +663,6 @@ canvas {
     transition: all 0.5s ease;
 }
 
-
-
 #txtEditor {
     text-align: left !important;
 }
@@ -1206,8 +1204,6 @@ hr {
     border-bottom: 4px solid #3B97D2;
     background-color: #000 !important;
 }
-
-
 
 .statistics .statistics-taps li.active > a::after {
     height: 1em;
@@ -2075,6 +2071,7 @@ p {
     background-color: #fff;
     color: #62d995;
 }
+
 .outline-success:focus {
     border-color: #2ecc71;
     background-color: #fff;
@@ -2100,11 +2097,13 @@ p {
     background-color: #fff;
     color: #67b2e4;
 }
+
 .outline-info:focus {
-     border-color: #3498db;
+    border-color: #3498db;
     background-color: #fff;
     color: #3498db !important;
 }
+
 .outline-info:hover {
     border-color: #3498db;
     background-color: #3498db;
@@ -2124,11 +2123,13 @@ p {
     background-color: #fff;
     color: #f5d34b;
 }
+
 .outline-warning:focus {
-      border-color: #f1c40f;
+    border-color: #f1c40f;
     background-color: #fff;
     color: #f1c40f;
 }
+
 .outline-warning:hover {
     border-color: #f1c40f;
     background-color: #f1c40f;
@@ -2144,12 +2145,13 @@ p {
 }
 
 .outline-danger {
-    border-color: #ed796d; 
+    border-color: #ed796d;
     background-color: #fff;
     color: #ed796d;
 }
+
 .outline-danger:focus {
-        border-color: #e74c3c;
+    border-color: #e74c3c;
     background-color: #fff;
     color: #e74c3c;
 }
@@ -2191,7 +2193,7 @@ p {
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    border-radius:0px !important;
+    border-radius: 0px !important;
     color: #828282;
 }
 
@@ -2205,21 +2207,27 @@ p {
 .pagination > .active > span,
 .pagination > .active > span:focus,
 .pagination > .active > span:hover {
-    background-color:#69b1e2 !important;
+    background-color: #69b1e2 !important;
     border-color: #69b1e2 !important;
 }
 
-.pagination > li > a, .pagination > li > span{
+.pagination > li > a,
+.pagination > li > span {
     color: #828282;
 }
-.pagination>li:first-child>a, .pagination>li:first-child>span{
-     border-bottom-left-radius: 0px !important;
-       border-top-left-radius: 0px !important;
+
+.pagination>li:first-child>a,
+.pagination>li:first-child>span {
+    border-bottom-left-radius: 0px !important;
+    border-top-left-radius: 0px !important;
 }
-.pagination > li:last-child > a, .pagination > li:last-child > span{
-     border-bottom-right-radius: 0px !important;
-       border-top-right-radius: 0px !important;
+
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+    border-bottom-right-radius: 0px !important;
+    border-top-right-radius: 0px !important;
 }
+
 .btn-circle {
     border-radius: 180px !important;
     height: 2.2em;
@@ -2282,12 +2290,13 @@ p {
 .dataTables_length label select {
     color: #34495E !important;
     border: 1px solid #F1F3F6;
-    border-radius: 3px;
+    background-color: #fff !important;
 }
 .dataTables_length label select {
     color: #34495E !important;
     border: 1px solid #F1F3F6;
     border-radius: 3px;
+    outline: none;
 }
 .dataTables_filter label {
     color: #888888;
@@ -2295,8 +2304,22 @@ p {
 }
 .dataTables_filter label input {
     color: #34495E !important;
-    border: 1px solid #F1F3F6;
-    border-radius: 3px;
+    border: 0px !important;
+    border-bottom: 1px solid #F1F3F6 !important;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+        -webkit-appearance: none;
+    border-width: 0px 0px 1px !important;
+    border-style:  !important;
+    border-color:  !important;
+    border-image: initial !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.0666667) !important;
+    border-radius: 0px !important;
+}
+.dataTables_filter label input:focus {
+    border-bottom: 1px solid #67b2e4 !important;
 }
 .dataTables_filter label {
     color: #888888;
@@ -2392,6 +2415,8 @@ tr.shown td.details-control {
 .all-icons .dataTables_filter label {
     width: 100% !important;
 }
+
+
 .all-icons .dataTables_filter label input {
     width: 40% !important;
 }
@@ -3050,13 +3075,10 @@ input[type="email"]#searchTB::-webkit-input-placeholder {
     padding-left: 2em;
     padding-top: 0.1em;
 }
-
-
-.btn-primary{
+.btn-primary {
     background-color: #2c3e50 !important;
     border-color: : #2c3e50 !important;
 }
-
 .btn-info,
 .outline-default,
 .outline-primary,
@@ -3080,30 +3102,28 @@ input[type="email"]#searchTB::-webkit-input-placeholder {
     margin-right: 0.5em;
     padding: 0.4em 1.5em;
 }
-.icon-button-style{
+.icon-button-style {
     margin-bottom: 0.5em;
 }
-
-.page_title{
-   font-weight: lighter;
-    color: #6a6c6f ;   font-size: 12px;
-   display: inline-block;
-   float: right;
+.page_title {
+    font-weight: lighter;
+    color: #6a6c6f;
+    font-size: 12px;
+    display: inline-block;
+    float: right;
 }
-.page_title:hover{
-  text-decoration: none;
-   cursor: pointer;
+.page_title:hover {
+    text-decoration: none;
+    cursor: pointer;
 }
-.body-header{
-   margin-top: 3.8em;
+.body-header {
+    margin-top: 3.8em;
 }
-
-
-.notifecations .head-box .btn-default:hover{
+.notifecations .head-box .btn-default:hover {
     background-color: none !important;
-    border:none !important;
+    border: none !important;
 }
-.code-table-btns{
+.code-table-btns {
     margin-bottom: 1em !important;
 }
 .code-table-btns tr td {
@@ -3111,7 +3131,6 @@ input[type="email"]#searchTB::-webkit-input-placeholder {
     font-size: 0.9em;
     padding: 1em 0em !important;
 }
-
 @media(max-width:1110px) {
     .backgroundimg{display: none;}
     .primary-border {
@@ -3129,7 +3148,6 @@ input[type="email"]#searchTB::-webkit-input-placeholder {
     .info-border-hover {
         border-left: 20px solid #2980b9 !important;
     }
-
     
     .success-border {
         border-left: 20px solid #2ecc71 !important;
@@ -3352,18 +3370,17 @@ input[type="email"]#searchTB::-webkit-input-placeholder {
         margin-right: 0;
     }
 }
-
 @media(max-width:768px) {
     .page_title {
-   float: none !important;
-   margin-bottom: 10px;
-    margin-top: 0;
-}
-
-  
-.body-header{
-   margin-top: 50px;
-}
+        float: none !important;
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+    
+    .body-header {
+        margin-top: 50px;
+    }
+    
     .invoice-info {
         width: 100%;
         float: none;
