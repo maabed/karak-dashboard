@@ -57,27 +57,14 @@
             agendaDay: 'dddd d'
         },
         titleFormat: {
-            month: 'MMMM yyyy', // September 2009
-            week: "MMMM yyyy", // September 2009
-            day: 'MMMM yyyy'                  // Tuesday, Sep 8, 2009
+            month: 'MMMM yyyy , dddd', // September 2009
+            week: "MMMM yyyy ,dddd", // September 2009
+            day: 'MMMM yyyy ,dddd'                  // Tuesday, Sep 8, 2009
         },
         allDaySlot: false,
         selectHelper: true,
-        select: function (start, end, allDay) {
-            var title = prompt('Event Title:');
-            if (title) {
-                calendar.fullCalendar('renderEvent',
-                    {
-                        title: title,
-                        start: start,
-                        end: end,
-                        allDay: allDay
-                    },
-                    true // make the event "stick"
-                );
-            }
-            calendar.fullCalendar('unselect');
-        },
+
+      
         droppable: true, // this allows things to be dropped onto the calendar !!!
         drop: function (date, allDay) { // this function is called when something is dropped
 
@@ -147,6 +134,13 @@
                 end: new Date(y, m, 29),
                 url: 'http://google.com/',
                 className: 'success'
+            }, 
+            {
+                title: 'Event Name',
+                start: new Date(y, m, 16),
+                end: new Date(y, m, 18),
+                url: 'http://google.com/',
+                className: 'worning'
             }
         ],
     });
