@@ -2702,13 +2702,15 @@ input {
 }
 #notifications,
 #messages:active {
+    border: 1px solid #3B97D2 !important;
     background: none !important;
-    border: none !important;
 }
 #messages:hover {
     background: none !important;
-    border: none !important;
+    border: 1px solid #3B97D2 !important;
 }
+#notifications{ border:none !important;}
+
 ::-webkit-scrollbar {
     width: 0.6em;
     z-index: 99999999;
