@@ -3,7 +3,30 @@
         display: none;
     }
 }
-figure{
-    height:460px;
-    width:600px;
+
+.demo-content figure{
+	  height:560px;
+    width:100%;
+}
+
+.margin-top{
+	margin-top: 3.8em;
+}
+
+.single-trending-content img{
+	width: 4em;
+	height: 4em;
+	float: left;
+	border : 1px solid #3B97D2;
+margin-right: 0.5em;
+}
+
+.single-trending-content {
+	width: 100%;
+	border-bottom: 1px solid #eee;
+	padding:1em 0em 2em 0em !important;
+}
+
+.single-trending-content:last-child{
+	border-bottom: 1px solid #fff;
 }
