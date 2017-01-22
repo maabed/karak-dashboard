@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
     $('#calendar').fullCalendar({
         theme: true,
         defaultView: 'month',
@@ -14,62 +13,48 @@ $(document).ready(function() {
         eventLimit: true,
         selectable: true,
         selectHelper: true,
-
         select: function(start, end, jsEvent, view) {
-
             $('#patientName').val('');
             $('#patientName').removeClass("active");
             $("#patientName").blur();
-
             $('#eventclassName').val('default');
             $('#eventclassName').removeClass("active");
             $("#eventclassName").blur();
-
             $('#notes').val('');
             $('#notes').removeClass("active");
             $("#notes").blur();
-
             $('#location').val('');
             $('#location').removeClass("active");
             $("#location").blur();
 
             var allDay = !start.hasTime() && !end.hasTime();
-            var eventstart = moment(start).format('MMM,DD ddd');
-            var evntend = moment(end).format('MMM,DD ddd');
-
-            var  eventstartpost= moment(start).format('YYYY-MM-DD');
-            var  evntendpost= moment(end).format('YYYY-MM-DD');
-
+            var eventstart = moment(start).format('DD MMM hh:mm A');
+            var evntend = moment(end).format('DD MMM hh:mm A');
+            var eventstartpost= moment(start).format('YYYY-MM-DD hh:mm');
+            var evntendpost= moment(end).format('YYYY-MM-DD hh:mm');
 
             $('#add-event #apptStartpost').text(eventstartpost);
             $('#add-event #apptEndpost').text(evntendpost);
-
             $('#add-event #apptStartTime').text(eventstart);
             $('#add-event #apptEndTime').text(evntend);
-
-
             $('#add-event #apptAllDay').text(allDay);
             $('#add-event').modal('show');
         },
-
         events: [{
                 title: 'All Day Event',
                 start: '2017-12-01',
                 className: 'info'
             },
-
             {
                 title: 'Long Event',
                 start: '2017-12-07',
                 end: '2017-12-10',
                 className: 'important'
             }, {
-                id: 999,
                 title: 'Repeating Event',
                 start: '2017-12-09T16:00:00',
                 className: 'important'
             }, {
-                id: 999,
                 title: 'Repeating Event',
                 start: '2017-12-16T16:00:00',
                 className: 'success'
@@ -114,56 +99,29 @@ $(document).ready(function() {
                 end: '2017-12-6',
                 className: 'worning'
             },
-
         ]
     });
 
     $('#submitButton').on('click', function(e) {
         e.preventDefault();
-
-        doSubmit();
-    });
-
-
-
-    function doSubmit() {
         $("#add-event").modal('hide');
+        var targetEv = {
+            title: $('#patientName').val(),
+            start: $('#apptStartpost').text(),
+            end: $('#apptEndpost').text(),
+            className2: $('#eventclassName').val(),
+        }
 
-        var starttime = $('#apptStartpost').text();
-        var endtime = $('#apptEndpost').text();
-        
-        var eventtitle = $('#patientName').val();
-        var boolcase = $('#apptAllDay').val();
-        var eventclasename = $('#eventclassName').val();
-
-        localStorage.setItem('title2', eventtitle);
-        var eventnamemodal = localStorage.getItem("title2");
-
-        localStorage.setItem('start2', $('#apptStartpost').text());
-        var apptStartTimemodal = localStorage.getItem("start2");
-
-        localStorage.setItem('end2', $('#apptEndpost').text());
-        var apptEndTimemodal = localStorage.getItem("end2");
-
-
-        localStorage.setItem('boolcase2', apptAllDay);
-        var apptAllDaymodal = localStorage.getItem("boolcase2");
-
-        localStorage.setItem('className2', eventclasename);
-        var eventclasenamemodal = localStorage.getItem("className2");
-
+        localStorage.setItem('targetedEv', JSON.stringify(targetEv));
         var myEvent = {
-            title: eventnamemodal,
-            start: apptStartTimemodal,
-            end: apptEndTimemodal,
-            className: eventclasenamemodal
+            title: JSON.parse(localStorage.getItem('targetedEv')).title,
+            start: JSON.parse(localStorage.getItem('targetedEv')).start,
+            end: JSON.parse(localStorage.getItem('targetedEv')).end,
+            className: JSON.parse(localStorage.getItem('targetedEv')).className2
         };
-
 
         $('#calendar').fullCalendar('renderEvent', myEvent, true);
         return myEvent;
-
-
-    }
+    });
 
 });
