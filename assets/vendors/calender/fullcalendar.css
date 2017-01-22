@@ -1382,8 +1382,7 @@ a.fc-more:hover {
 
 .fc-time-grid .fc-slats td {
     height: 1.5em;
-    border-bottom: 0;
-    border-bottom: 1px solid #e5e5e5 !important;
+    border-top: 1px solid #e5e5e5 !important;
     /* each cell is responsible for its top border */
 }
 
