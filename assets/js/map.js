@@ -15,6 +15,9 @@
                     verticalAlign: 'bottom'
                 }
             },
+             mapNavigation: {
+                enabled: false,
+            },
 
             colorAxis: {
                 min: 1,

@@ -3158,10 +3158,11 @@ input[type="email"]#searchTB::-webkit-input-placeholder {
     font-weight: lighter;
 }
 @media(max-width:1110px) {
-    .backgroundimg{
-        display: none;
-    }
-
+<<<<<<< HEAD
+    
+=======
+    .backgroundimg{display: none;}
+>>>>>>> 2373266a0d96e5c9ddeeb816a14399c781566454
     .primary-border {
         border-left: 20px solid #34495E !important;
     }
@@ -3211,13 +3212,14 @@ input[type="email"]#searchTB::-webkit-input-placeholder {
     }
 }
 @media(max-width:1400px) {
-    .all-income h2 {font-size:1.5em !important;}
-    .all-income h3 {font-size:1.3em !important;}
+       
+        .all-income h2 {font-size:1.5em !important;}
+        .all-income h3 {font-size:1.3em !important;}
 
-    .all-income-invers h2 {font-size:1.5em !important;}
-    .all-income-invers h3 {font-size:1.3em !important;}
+        .all-income-invers h2 {font-size:1.5em !important;}
+        .all-income-invers h3 {font-size:1.3em !important;}
+    
 }
-
 @media(max-width:1028px) {
  
     .primary-border {
