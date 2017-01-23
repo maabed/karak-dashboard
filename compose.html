@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,6 +21,7 @@
     <link href="assets/css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/vendors/tag-input/bootstrap-tagsinput.css">
     <link rel="stylesheet" href="assets/css/inbox.css">
+    <link rel="stylesheet" href="assets/css/text-editor.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -27,10 +29,11 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+
 <body>
     <div id="wrapper">
         <!-- Sidebar -->
-         <div id="sidebar-wrapper">
+        <div id="sidebar-wrapper">
             <div class="sidebar-brand" id="company-name">Blue Dashboard</div>
             <ul class="sidebar-nav">
                 <li>
@@ -59,7 +62,7 @@
                         <i class="fa fa-pie-chart  nav-icon" aria-hidden="true"></i> Charts
                     </a>
                 </li>
-                <li class="selected"> 
+                <li class="selected">
                     <a href="inbox.html">
                         <i class="fa fa-envelope nav-icon" aria-hidden="true"></i> Email
                         <span class="label label-primary nav-lbl">2</span>
@@ -125,7 +128,7 @@
                            Menus
                             </a>
                         </li>
-                            <li class="submenu-li">
+                        <li class="submenu-li">
                             <a href="hover.html">
                            Hover
                             </a>
@@ -249,25 +252,21 @@
                 </div>
             </div>
         </div>
-
         <!-- Page Content -->
-        <a href="#" id="PageTitle">Email / Compose</a>
         <div id="page-content-wrapper">
-            <div class="container-fluid">
+            <div class="container-fluid inbox-container">
                 <div class="row">
                     <div class="col-md-2 InboxLeftSide">
                         <div class="CenteredDiv">
                             <button type="button" class="btn btn-default compose">COMPOSE</button>
                         </div>
                         <nav class="InboxLeftNav">
-
                             <ul>
                                 <li>
                                     <h6> BROWSE</h6>
                                     <ul>
                                         <li>
-                                            <a class="SelectedEmail" href="#"> <i class="fa fa-inbox" aria-hidden="true"></i> Inbox<span class="label label-primary">2</span></a>
-
+                                            <a class="SelectedEmail" href="inbox.html"> <i class="fa fa-inbox" aria-hidden="true"></i> Inbox<span class="label label-primary">2</span></a>
                                         </li>
                                         <li>
                                             <a href="#"> <i class="fa fa-folder" aria-hidden="true"></i> All mail</a>
@@ -280,7 +279,6 @@
                                                 </li>
                                             </ul>
                                         </li>
-
                                         <li>
                                             <a href="#"> <i class="fa fa-paper-plane" aria-hidden="true"></i>Sent</a>
                                         </li>
@@ -306,24 +304,23 @@
                             </ul>
                         </nav>
                     </div>
-
                     <div class="col-md-8  split-view">
                         <table class="Compose-table">
                             <tr>
-                                <td>
+                                <td class="col-width">
                                     <div class="form-group to">
                                         <label class="Email-lable" for="inputdefault">TO:</label>
-                                        <input type="text" class="form-control Compose-style" id="tokenfield" data-role="tagsinput" value="Mohammad,Ahmad,Mahmoud" />
+                                        <input type="text" class="form-control Compose-style" id="tokenfield" data-role="tagsinput" value="Mohammad,Ahmad" />
                                     </div>
                                 </td>
-                                <td>
+                                <td class="col-width">
                                     <div class="form-group cc">
                                         <label class="Email-lable" for="inputdefault">CC:</label>
                                         <input class="form-control Compose-style" id="inputdefault" type="text" data-role="tagsinput" value="Mohammad">
                                     </div>
                                 </td>
                             </tr>
-                            <tr>
+                            <tr class="table-col-padding">
                                 <td colspan="2">
                                     <div class="form-group">
                                         <label class="Email-lable" for="inputdefault">SUBJECT:</label>
@@ -332,183 +329,187 @@
                                 </td>
                             </tr>
                         </table>
-                        <div id="summernote-compose">Hello Summernote</div>
+                        <div id="summernote-compose"></div>
                         <div class="clearfix"></div>
-                        <button type="button" class="btn btn-default Cancel-email">Cancel</button>
-                        <button type="button" class="btn Send-btn">Send</button>
+                        <button type="button " class="btn btn-success dashboard-success button-style icon-btn compose-btn-space">
+                            <span class="glyphicon glyphicon-envelope"></span> Send
+                        </button>
+                        <button type="button " class="btn btn-default icon-button-style pull-right">
+                            <span class="glyphicon glyphicon-remove"></span>
+                        </button>
                     </div>
                 </div>
             </div>
             <!-- /#page-content-wrapper -->
         </div>
         <!-- /#wrapper -->
-   <div id="Right-Side-Section-Togle">
-                <i class="fa fa-pencil-square-o" id="Edit" aria-hidden="true"></i>
+        <div id="Right-Side-Section-Togle">
+            <i class="fa fa-pencil-square-o" id="Edit" aria-hidden="true"></i>
+        </div>
+        <!-- /#wrapper -->
+        <div id="Right-Side-Section">
+            <div class="table">
+                <table class="right-side-table">
+                    <tr>
+                        <td>
+                            <div onclick="closeToggel()" id="Close">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h5 class="title">Color Options</h5>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Color makes it different
+                                <br> Customize and Preview your dashboard.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h5 class="title">Recommended</h5>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="col-sm-6 single-menue-color-box no-padding-righ">
+                                <div id="default-color-btn" class="single-menue-color pointer-hover">
+                                    <div class="col-sm-12 default-menue-color">
+                                        <p>
+                                            Header
+                                            <br /> #3b97d2
+                                        </p>
+                                        <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="col-sm-12 simple-border">
+                                        <p>
+                                            Sidebar Nav
+                                            <br /> #fffff
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 single-menue-color-box no-padding-righ">
+                                <div id="orang-color-btn" class="single-menue-color pointer-hover">
+                                    <div class="col-sm-12 orange-menue-color">
+                                        <p>
+                                            Header
+                                            <br /> #f5d34b
+                                        </p>
+                                        <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="col-sm-12 simple-border">
+                                        <p>
+                                            Sidebar Nav
+                                            <br /> #ffffff
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 single-menue-color-box no-padding-righ">
+                                <div id="dark2-color-btn" class="single-menue-color pointer-hover">
+                                    <div class="col-sm-12 dark-menue-color2">
+                                        <p>
+                                            Header
+                                            <br /> #262930
+                                        </p>
+                                        <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="col-sm-12 dark-nav-color2">
+                                        <p>
+                                            Sidebar Nav
+                                            <br /> #2a2e35
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 single-menue-color-box no-padding-righ">
+                                <div id="dark1-color-btn" class="single-menue-color pointer-hover">
+                                    <div class="col-sm-12 dark-menue-color">
+                                        <p>
+                                            Header
+                                            <br /> #2b3643
+                                        </p>
+                                        <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="col-sm-12 dark-nav-color">
+                                        <p>
+                                            Sidebar Nav
+                                            <br /> #364150
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 single-menue-color-box no-padding-righ">
+                                <div id="whit-color-btn" class="single-menue-color pointer-hover">
+                                    <div class="col-sm-12 simple-border wight-head">
+                                        <p>
+                                            Header
+                                            <br /> #ffffff
+                                        </p>
+                                        <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="col-sm-12 simple-border wight-head">
+                                        <p>
+                                            Sidebar Nav
+                                            <br /> #ffffff
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 single-menue-color-box no-padding-righ">
+                                <div id="green-color-btn" class="single-menue-color pointer-hover">
+                                    <div class="col-sm-12 green-menue-color">
+                                        <p>
+                                            Header
+                                            <br /> #62d995
+                                        </p>
+                                        <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="col-sm-12 simple-border">
+                                        <p>
+                                            Sidebar Nav
+                                            <br /> #ffffff
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h5 class="title">Select Your Favorite Color</h5>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="col-sm-12 no-padding">
+                                <input id="coloepicker" type="color" />
+                            </div>
+                            <div class="col-sm-12 no-padding">
+                                <button type="button" id="apply" class="btn btn-default btn-block apply-color">Apply</button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
             </div>
-            <!-- /#wrapper -->
-            <div id="Right-Side-Section">
-                <div class="table">
-                    <table class="right-side-table">
-                        <tr>
-                            <td>
-                                <div onclick="closeToggel()" id="Close">
-                                    <i class="fa fa-times" aria-hidden="true"></i>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h5 class="title">Color Options</h5>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p>Color makes it different
-                                    <br> Customize and Preview your dashboard.</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h5 class="title">Recommended</h5>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="col-sm-6 single-menue-color-box no-padding-righ">
-                                    <div id="default-color-btn" class="single-menue-color pointer-hover">
-                                        <div class="col-sm-12 default-menue-color">
-                                            <p>
-                                                Header
-                                                <br /> #3b97d2
-                                            </p>
-                                            <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="col-sm-12 simple-border">
-                                            <p>
-                                                Sidebar Nav
-                                                <br /> #fffff
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 single-menue-color-box no-padding-righ">
-                                    <div id="orang-color-btn" class="single-menue-color pointer-hover">
-                                        <div class="col-sm-12 orange-menue-color">
-                                            <p>
-                                                Header
-                                                <br /> #f5d34b
-                                            </p>
-                                            <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="col-sm-12 simple-border">
-                                            <p>
-                                                Sidebar Nav
-                                                <br /> #ffffff
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 single-menue-color-box no-padding-righ">
-                                    <div id="dark2-color-btn" class="single-menue-color pointer-hover">
-                                        <div class="col-sm-12 dark-menue-color2">
-                                            <p>
-                                                Header
-                                                <br /> #262930
-                                            </p>
-                                            <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="col-sm-12 dark-nav-color2">
-                                            <p>
-                                                Sidebar Nav
-                                                <br /> #2a2e35
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 single-menue-color-box no-padding-righ">
-                                    <div id="dark1-color-btn" class="single-menue-color pointer-hover">
-                                        <div class="col-sm-12 dark-menue-color">
-                                            <p>
-                                                Header
-                                                <br /> #2b3643
-                                            </p>
-                                            <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="col-sm-12 dark-nav-color">
-                                            <p>
-                                                Sidebar Nav
-                                                <br /> #364150
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 single-menue-color-box no-padding-righ">
-                                    <div id="whit-color-btn" class="single-menue-color pointer-hover">
-                                        <div class="col-sm-12 simple-border wight-head">
-                                            <p>
-                                                Header
-                                                <br /> #ffffff
-                                            </p>
-                                            <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="col-sm-12 simple-border wight-head">
-                                            <p>
-                                                Sidebar Nav
-                                                <br /> #ffffff
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 single-menue-color-box no-padding-righ">
-                                    <div id="green-color-btn" class="single-menue-color pointer-hover">
-                                        <div class="col-sm-12 green-menue-color">
-                                            <p>
-                                                Header
-                                                <br /> #62d995
-                                            </p>
-                                            <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="col-sm-12 simple-border">
-                                            <p>
-                                                Sidebar Nav
-                                                <br /> #ffffff
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h5 class="title">Select Your Favorite Color</h5>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="col-sm-12 no-padding">
-                                    <input id="coloepicker" type="color" />
-                                </div>
-                                <div class="col-sm-12 no-padding">
-                                    <button type="button" id="apply" class="btn btn-default btn-block apply-color">Apply</button>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
+        </div>
         <div class="notifecations-box">
             <div class="arrow-up"></div>
             <h5>Notifications</h5>
             <div class="single-not-content">
                 <a href="#">
                     <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b>&nbsp;    wants your confirmation on his Leave Request on 12 May 2015</p>
+                    <p><b>Mohammad Meshaal</b>&nbsp; wants your confirmation on his Leave Request on 12 May 2015</p>
                 </a>
             </div>
             <div class="single-not-content">
                 <a href="#">
                     <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b>&nbsp;    wants your confirmation on his Leave Request on 12 May 2015</p>
+                    <p><b>Mohammad Meshaal</b>&nbsp; wants your confirmation on his Leave Request on 12 May 2015</p>
                 </a>
             </div>
             <div class="veiw-all-not">
@@ -521,25 +522,29 @@
             <div class="single-not-content">
                 <a href="#">
                     <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
+                    <p><b>Mohammad Meshaal</b>
+                        <br /> Message subject will display here</p>
                 </a>
             </div>
             <div class="single-not-content">
                 <a href="#">
                     <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
+                    <p><b>Mohammad Meshaal</b>
+                        <br /> Message subject will display here</p>
                 </a>
             </div>
             <div class="single-not-content">
                 <a href="#">
                     <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
+                    <p><b>Mohammad Meshaal</b>
+                        <br /> Message subject will display here</p>
                 </a>
             </div>
             <div class="single-not-content">
                 <a href="#">
                     <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
+                    <p><b>Mohammad Meshaal</b>
+                        <br /> Message subject will display here</p>
                 </a>
             </div>
             <div class="veiw-all-not">
@@ -550,20 +555,17 @@
             <div class="arrow-up user-arrow"></div>
             <a href="#">
                 <div class="user-info-content">
-                    <i class="fa fa-user" aria-hidden="true"></i>
-                    Proﬁle
+                    <i class="fa fa-user" aria-hidden="true"></i> Proﬁle
                 </div>
             </a>
             <a href="#">
                 <div class="user-info-content">
-                    <i class="fa fa-cog" aria-hidden="true"></i>
-                    Settings
+                    <i class="fa fa-cog" aria-hidden="true"></i> Settings
                 </div>
             </a>
             <a href="#">
                 <div class="user-info-content">
-                    <i class="fa fa-info-circle" aria-hidden="true"></i>
-                    Help
+                    <i class="fa fa-info-circle" aria-hidden="true"></i> Help
                 </div>
             </a>
             <a href="#">
@@ -590,16 +592,11 @@
     <script src="assets/vendors/tag-input/typeahead.bundle.min.js"></script>
     <script src="assets/js/compose.js"></script>
 
-      <script src="assets/js/nav_colors_change.js"></script>
-    <link href="assets/css/colorpicker-layout.css" rel="stylesheet" />
-    <link href="assets/css/colorpicker.css" rel="stylesheet" />
+    
     <script src="assets/js/vendors/colorpicker/colorpicker.js"></script>
-    <script src="assets/js/vendors/colorpicker/eye.js"></script>
-    <script src="assets/js/vendors/colorpicker/layout.js"></script>
-    <script src="assets/js/vendors/colorpicker/utils.js"></script>
-    <script src="assets/js/vendors/colorpicker/utils.js"></script>
     <script src="assets/js/right-side-colors-change.js"></script>
     <script src="assets/js/page-ready-theam.js"></script>
-        <link id="default-color-picker" rel="stylesheet" />
+    <link id="default-color-picker" rel="stylesheet" />
 </body>
+
 </html>
