@@ -290,11 +290,15 @@
        return true;
    }
    $('#submit-wizard').click(function() {
-       swal({
-           title: "Your form has been submited",
-           text: "",
-           showConfirmButton: true
-       });
+       setTimeout(function() {
+           swal({
+               title: "Your for was suvmited successfully",
+               text: "",
+               type: "success"
+           }, function() {
+               location.reload();	
+           });
+       }, 100);		
    });
 $('select').selectpicker();
 
