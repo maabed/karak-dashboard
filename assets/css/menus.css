@@ -609,5 +609,11 @@ a.btn-info:hover{
     margin-right: 25px;
 }
 .nav.nav-tabs > .active{
-    border-bottom: 3px solid #3B97D2;
+    border-top: 3px solid #3B97D2;
+}
+.nav-list.list-inline > li > a >span {
+    color: #3498db;
+}
+.nav-list.list-inline > li > a >span:hover {
+    color: #2980b9;
 }
