@@ -221,3 +221,9 @@ input:not([type])+label:after, input[type=text]+label:after, input[type=password
     -webkit-transform: translateY(-140%);
     transform: translateY(-140%);
 }
+.custome-margin{
+    margin-top: 40%;
+}
+.right-modal-content{
+    text-align: center;
+}
