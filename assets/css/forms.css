@@ -1005,3 +1005,8 @@ a:focus {
 .select2-container--default .select2-selection--single .select2-selection__rendered{
     color: #9e9e9e !important;
 }
+.select2-search__field{
+    border-top: none !important;
+    border-right: none !important;
+    border-left: none !important;
+}
