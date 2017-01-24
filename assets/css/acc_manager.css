@@ -1,0 +1,115 @@
+.acc-personal-info {
+    color: rgba(0, 0, 0, 0.51) !important;
+    font-weight: lighter;
+}
+
+.acc-personal-info img {
+    border: 2px solid #67b2e4;
+    border-radius: 180px;
+    margin: 0 auto;
+    width: 8em;
+    height: auto;
+}
+
+.acc-personal-info h4 {
+    font-weight: lighter;
+    color: #67b2e4;
+    text-align: center;
+}
+
+.user-acc-info span {
+    text-align: left !important;
+    line-height: 2.2em;
+    color: rgba(0, 0, 0, 0.51) !important;
+    font-size: 1em;
+}
+
+.acc-personal-info .title {
+    text-align: center;
+}
+
+.user-acc-info span i {
+    color: #67b2e4;
+    margin-right: 0.5em;
+}
+
+.acc-personal-info label {
+    font-weight: lighter;
+}
+
+.acc-personal-info .change-acc-select {
+    color: #67b2e4;
+    font-weight: lighter;
+    margin-top: 1em;
+}
+
+.acc-personal-info select {
+    width: 100%;
+    border: 0 !important;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    height: 28px;
+    user-select: none;
+    -webkit-user-select: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07) !important;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    background-color: #fff;
+}
+
+.acc-personal-info select:focus {
+    outline: none;
+    border-bottom: 1px solid #67b2e4 !important;
+}
+
+.datepicker-inline .datepicker {
+    border: none;
+    width: 100%;
+}
+
+.datepicker--nav-title {
+    color: #67b2e4;
+}
+
+.datepicker--nav-title,
+.datepicker--nav-action {
+    font-weight: lighter !important;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.datepicker--nav-action path {
+    stroke: rgba(0, 0, 0, 0.07) !important;
+}
+
+.datepicker--nav-action:hover,
+.datepicker--nav-title:hover {
+    background-color: #fff !important;
+    stroke: #888 !important;
+    stroke: #888 !important;
+}
+
+.datepicker--day-name {
+    color:rgba(0, 0, 0, 0.51) !important;
+    font-weight: lighter;
+	border-radius: 0 !important;
+}
+.datepicker--cell:hover{
+border-radius: 0 !important;
+}
+.datepicker--day-name:hover{
+
+	
+}
+.datepicker--cell-day{
+	    color:rgba(0, 0, 0, 0.51) !important;
+    font-weight: lighter;
+}
+.datepicker--cell.-selected-, .datepicker--cell.-selected-.-current-{
+	color :#fff !important;
+	border-radius: 0 !important;
+	background-color: #67b2e4 !important;
+}
