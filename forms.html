@@ -22,7 +22,7 @@
 
         <link href="assets/css/input_style.css" rel="stylesheet" />
         <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
-        <link rel="stylesheet" href="assets/vendors/select-plugin/css/bootstrap-select.css">
+        <link rel="stylesheet" href="assets/vendors/select2/css/select2.min.css">
         <link rel="stylesheet" href="assets/vendors/tag-input/bootstrap-tagsinput.css">
         <link rel="stylesheet" href="assets/vendors/drop-zone/dropzone.css">
         <link rel="stylesheet" type="text/css" href="assets/vendors/datepickers/daterangepicker.css" />
@@ -31,6 +31,7 @@
         <link rel="stylesheet" href="assets/vendors/slider/ion.rangeSlider.css">
         <link rel="stylesheet" href="assets/vendors/slider/ion.rangeSlider.skinNice.css">
         <link rel="stylesheet" href="assets/css/text-editor.css">   
+
     </head>
     <body>
         <div id="wrapper">
@@ -299,8 +300,8 @@
                                         </div>
                                     </div>
                                     <div class="row group-content">
-                                        <div class="form-group col-sm-6 no-padding-left">
-                                            <select class="select-display selectpicker form-control empty col-12">
+                                        <div class="form-group col-sm-6 no-padding-left form-select">
+                                            <select class="select-display js-example-basic-single col-12">
                                                 <option class="Selected">Country</option>
                                                 <option>Jordan</option>
                                                 <option>Usa</option>
@@ -470,26 +471,30 @@
                             </div>
                             <div class="col-sm-4 last-third">
                                 <div class="col-contint">
-                                    <h5 class="title form-section">Slide Toggle</h5>
+                                    <h5 class="title form-section">Dropdown select</h5>
                                     <div class="row">
                                         <div class="third-section col-sm-12">
                                             <label class="label-type">Standard</label>
-                                            <select class="select-display selectpicker empty col-12">
-                                                <option value="Select2">Male</option>
-                                                <option value="Select2">Female</option>
+                                            <select class="select-display js-example-basic-single selectpicker empty col-12">
+                                                <option value="">Select</option>
+                                                <option value="Select1">Oklahoma</option>
+                                                <option value="Select2">New york</option>
+                                                <option value="Select3">California</option>
+                                                <option value="Select4">Texas</option>
+                                                <option value="Select4">Florida</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="third-section col-sm-12">
                                             <label class="label-type">Select boxes with optgroups</label>
-                                            <select class="select-display selectpicker empty col-12">
-                                                <optgroup label="First group">
+                                            <select class="select-display js-example-basic-single selectpicker empty col-12">
+                                                <optgroup class="optgroup" label="First group">
                                                     <option value="Select">Football</option>
                                                     <option value="Select2">Basketball</option>
                                                     <option value="Select2">Baseball</option>
                                                 </optgroup>
-                                                <optgroup label="Second Group">
+                                                <optgroup class="optgroup" label="Second Group">
                                                     <option value="Select">Swimming</option>
                                                     <option value="Select2">Formula 1</option>
                                                     <option value="Select2">Running</option>
@@ -500,30 +505,31 @@
                                     <div class="row">
                                         <div class="third-section col-sm-12">
                                             <label class="label-type">Multiple select boxes</label>
-                                            <select class="select-display selectpicker empty col-12" multiple>
-                                                <option value="Select1">Pepsi</option>
-                                                <option value="Select2">Cola</option>
-                                                <option value="Select3">Mountain Dew</option>
+                                            <select class="js-example-basic-multiple" multiple="multiple">
+                                                <option value="AL">Alabama</option>
+                                                ...
+                                                <option value="WY">Wyoming</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="third-section col-sm-12">
                                             <label class="label-type">Live search</label>
-                                            <select class="select-display selectpicker empty col-12" data-live-search="true">
-                                                <option value="Select">Select</option>
-                                                <option value="Select">Select</option>
-                                                <option value="Select">Select</option>
+                                            <select class="js-data-example-ajax">
+                                                <option value="3620194" selected="selected">Select a value.</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="third-section col-sm-12">
                                             <label class="label-type">Key words</label>
-                                            <select class="select-display selectpicker empty col-12"  data-live-search="true">
-                                                <option value="Select" data-tokens="first option">Select</option>
-                                                <option value="Select" data-tokens="second option">Select</option>
-                                                <option value="Select" data-tokens="third option">Select</option>
+                                            <select class="select-display js-example-templating selectpicker empty col-12">
+                                                <option value="">Select</option>
+                                                <option value="jordan">Jordan</option>
+                                                <option value="usa">USA</option>
+                                                <option value="iraq">Iraq</option>
+                                                <option value="uk">UK</option>
+                                                <option value="lebanon">Lebanon</option>
                                             </select>
                                         </div>
                                     </div>
@@ -628,6 +634,21 @@
                             <div class="col-contint">
                                 <h5 class ="title form-section">Date Controls</h5>
                                 <div class="row">
+                                       <div class="col-sm-5">
+                                            <div class="third-section">
+                                                <h5 class="mediumtitle">Range Date Picker</h5>
+                                                <p class="pargraph-design picker-desc">
+                                        Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et                                                     </p>
+                                                <input type="text" name="daterange" class="form-control simple" value="01/01/2015 1:30 PM - 01/01/2015 2:00 PM" />
+                                            </div>
+                                            <div class="third-section">
+                                                 <h6>Predefined Ranges</h6>
+                                                <div id="reportrange" class="simple">
+                                                    <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
+                                                    <span></span> <b class="caret"></b>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="col-sm-4">
                                             <div class="third-section">
                                                 <h5 class="mediumtitle">Simple Date Picker</h5>
@@ -645,22 +666,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-sm-4">
-                                            <div class="third-section">
-                                                <h5 class="mediumtitle">Range Date Picker</h5>
-                                                <p class="pargraph-design picker-desc">
-                                        Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et                                                     </p>
-                                                <input type="text" name="daterange" class="form-control simple" value="01/01/2015 1:30 PM - 01/01/2015 2:00 PM" />
-                                            </div>
-                                            <div class="third-section">
-                                                 <h6>Predefined Ranges</h6>
-                                                <div id="reportrange" class="simple">
-                                                    <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
-                                                    <span></span> <b class="caret"></b>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
+                                        <div class="col-sm-3">
                                             <div class="third-section">
                                                 <h5 class="mediumtitle">Advanced Datepicker</h5>
                                                 <div class="datepicker-here simple" data-language='en'></div>
@@ -992,7 +998,7 @@
         <script src="assets/js/notifications_boxs.js"></script>
         
         <!-- dropdown scripts -->
-        <script src="assets/vendors/select-plugin/js/bootstrap-select.min.js"></script>
+        <script src="assets/vendors/select2/js/select2.min.js"></script>
         
         <!-- tags scripts -->
         <script src="assets/vendors/tag-input/bootstrap-tagsinput.js"></script>
@@ -1021,7 +1027,7 @@
         <script src="assets/js/right-side-colors-change.js"></script>
         <script src="assets/js/page-ready-theam.js"></script>
         <link id="default-color-picker" rel="stylesheet" />
-        
+    
         <script src='assets/js/forms.js'></script>
         <script src="assets/js/vendors/jquery.validate.js"></script>
         <script src="assets/js/vendors/jquery.validate.js"></script>

@@ -420,6 +420,7 @@ input.cmn-toggle-roundGreen:checked + label:after {
 .DragNdrop-group{
     padding-top: 25px;
 }
+/*
 .select-display{
     display: block;
     width: 100%;
@@ -427,6 +428,7 @@ input.cmn-toggle-roundGreen:checked + label:after {
     border-radius: 3px;
     border-color: #cccccc;
 }
+*/
 .form-control:focus{
     box-shadow: none;
 }
@@ -543,6 +545,7 @@ select option[disabled]:first-child {
 }
 select option {
     color: black;
+    padding: 15px;
 }
 select option:first-child {
     color: #999;
@@ -589,9 +592,11 @@ label{
 .dropzone{
     min-height: 390px;
 }
+/*
 .btn.dropdown-toggle.btn-default{
     border: 1px solid #e0e0e0;
 }
+*/
 .btn-default:hover{
     background-color: #fff;
 }
@@ -725,11 +730,38 @@ h6{
     background-color: #ed796d;
     border-color: #ed796d;   
 }
-.btn.dropdown-toggle.btn-default:not(.btn-sm){
-    border: none;
-    border-bottom: 1px solid #9e9e9e;
-    border-radius: 0px;
-    padding-left: 0px;
+.select2-selection{
+    border:none !important;
+    border-radius: 0px !important;
+}
+
+.btn.dropdown-toggle.btn-default:not(.btn-sm),.select2{
+    border: none  !important;
+    border-bottom: 1px solid #9e9e9e  !important;
+    border-radius: 0px !important;
+    padding-left: 0px !important;
+}
+.select2-results__option {
+    padding: 14px 16px !important;
+}
+.select2-container--default .select2-results__option--highlighted[aria-selected]{
+    text-decoration: none !important;
+    background-color: #f5f5f5 !important;
+    font-size: 13px !important;
+    color: #9A9A9A !important;
+}
+.select2-results__option{
+    font-size: 13px !important;
+    color: #9A9A9A !important;
+}
+.select2{
+    width: 100% !important;
+}
+.select2-selection:focus{
+    outline: none;
+}
+.select2-container--default .select2-results__option[role=group]{
+    padding: 0px !important;
 }
 /*materializecss*/
 
@@ -825,6 +857,9 @@ input:not(#searchTB):focus{
 }
 .btn-group.bootstrap-select.select-display.form-control.empty.col-12{
     margin-top: 8px;
+}
+.select-display{
+    width: 100%;
 }
 .btn.dropdown-toggle.btn-default:focus{
     outline: none !important;
@@ -942,4 +977,31 @@ a:focus {
 }
 .daterangepicker.dropdown-menu{
     z-index: 996;
+}
+.hourselect{
+    border: 0px;
+    border-bottom: 1px solid #9e9e9e;
+}
+.hourselect:focus{
+    outline: none;
+}
+.minuteselect{
+    border: 0px;
+    border-bottom: 1px solid #9e9e9e;    
+}
+.minuteselect:focus{
+    outline: none;
+}
+.ampmselect{
+    border: 0px;
+    border-bottom: 1px solid #9e9e9e;     
+}
+.ampmselect:focus{
+    outline: none;
+}
+.form-select{
+    margin-top: 12px;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+    color: #9e9e9e !important;
 }
