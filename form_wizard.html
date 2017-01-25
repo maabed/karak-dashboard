@@ -16,6 +16,12 @@
     <link href="assets/css/styles.css" rel="stylesheet" />
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
     <link href="assets/css/prettify.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/wizard.css" />
+    <link rel="stylesheet" href="assets/vendors/sweet-alert/sweetalert.css">
+    <link rel="stylesheet" href="assets/vendors/select-plugin/css/bootstrap-select.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/datepickers/daterangepicker.css" />
+    <link rel="stylesheet" type="text/css" href="assets/vendors/datepickers/datepicker.min.css">
+    <link rel="stylesheet" href="forms.html" />
 </head>
 
 <body>
@@ -241,14 +247,18 @@
             </div>
         </div>
         <!-- Page Content -->
-        <a href="#" id="PageTitle">Forms  /  Wizard </a>
         <div id="page-content-wrapper">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-sm-12">
-                        <img class="img-responsive wizard-img" src="assets/images/wizzerd.png" />
+                    <div class="col-md-12">
+                        <div class="col-contint body-header">
+                            <a href="loading.html" class="page_title pull-right">Form-wizard</a>  
+                            <h4 class ="title"> Form-wizard </h4>
+                            <br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
                     </div>
-                </div>
+                    </div>
                 <div id="rootwizard">
                     <div class="navbar">
                         <div class="navbar-inner">
@@ -266,53 +276,36 @@
                         <div class="tab-content">
                             <div class="tab-pane active" id="tab1">
                                 <div class="row">
-                                    <div class="col-sm-4 wizerd-desc">
-                                        <i class="fa fa-user" aria-hidden="true"></i>
-                                        <br />
-                                        <p>
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                                        </p>
-                                        <br />
-                                        <p>
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                                        </p>
-                                    </div>
-                                    <div class="col-sm-8 wizard-form">
+                                    <div class="col-sm-12 wizard-form">
                                         <div class="row">
                                             <div class="col-sm-12">
-                                                <div class="col-sm-12 col-val">
-                                                    <div class="form-group">
-                                                        <label for="name">Full Name*</label>
-                                                        <input placeholder="Enter Full Name" type="text" class="form-control" id="firstname1" name="firstname1">
+                                                <div class="col-sm-12">
+                                                    <div class="form-group">                                                        
+                                                        <div class="input-field col-val">
+                                                        <input type="text" id="firstname1" name="firstname1">
+                                                            <label for="firstname1">Enter Full Name</label>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-sm-6">
-                                                <div class="col-sm-12 col-val">
+                                                <div class="col-sm-12">
                                                     <div class="form-group">
-                                                        <label for="email">Email*</label>
-                                                        <input placeholder="Enter Email" class="form-control" id="email1" name="email1">
+                                                        <div class="input-field col-val">
+                                                            <input type="text" id="email1" name="email1">
+                                                            <label for="email1">Enter Email</label>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
+                                            
                                             <div class="col-sm-6">
-                                                <div class="col-sm-12 col-val">
-                                                    <div class="form-group">
-                                                        <label for="phone">Phone*</label>
-                                                        <input id="phone" name="phone"  onkeypress="return isNumber(event)" required type="number" rangelength="[7,14]" class="form-control" placeholder="Enter Phone Number">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <div class="col-sm-12  col-val">
-                                                    <div class="form-group">
-                                                        <label for="sel1">Country*</label>
-                                                        <select class="form-control" id="ddl" name="country" title="Please select your country!" required>
-                                                            <option></option>
+                                                <div class="col-sm-12">
+                                                    <div class="form-group col-val">
+                                                        <select class="select-display text-drop form-control required empty" id="ddl" name="country">
+                                                            <option value="">Please select your country!</option>
                                                             <option value="AF">Afghanistan</option>
                                                             <option value="AX">Åland Islands</option>
                                                             <option value="AL">Albania</option>
@@ -566,11 +559,25 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                        </div>
+                                        <div class="row">
                                             <div class="col-sm-6">
                                                 <div class="col-sm-12">
                                                     <div class="form-group">
-                                                        <label for="city">City</label>
-                                                        <input placeholder="Enter City" type="text" class="form-control" id="city">
+                                                        <div class="input-field text-drop2">
+                                                            <input type="text" id="city">
+                                                            <label for="city">Enter City</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="col-sm-12">
+                                                    <div class="form-group">
+                                                        <div class="input-field col-val">
+                                                            <input id="phone" name="phone"  onkeypress="return isNumber(event)" required type="text" rangelength="[7,14]">                         
+                                                            <label for="phone">Enter Phone</label>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -580,60 +587,57 @@
                             </div>
                             <div class="tab-pane" id="tab2">
                                 <div class="row">
-                                    <div class="col-sm-4 wizerd-desc">
-                                        <i class="fa fa-credit-card" aria-hidden="true"></i>
-                                        <br />
-                                        <p>
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                                        </p>
-                                        <br />
-                                        <p>
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                                        </p>
-                                    </div>
-                                    <div class="col-sm-8 wizard-form">
+                                    <div class="col-sm-12 wizard-form">
                                         <div class="row">
                                             <div class="col-sm-12">
-                                                <div class="col-sm-12 col-val">
-                                                    <div class="form-group">
-                                                        <label for="email">Name on Card*</label>
-                                                        <input placeholder="Enter Name on Card" type="text" class="form-control" id="nameoncard" name="nameoncard">
+                                                <div class="col-sm-12">
+                                                    <div class="form-group">                                                        
+                                                        <div class="input-field col-val">
+                                                            <input type="text" class="form-control" id="nameoncard" name="nameoncard">
+                                                            <label for="nameoncard">Name on Card</label>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-sm-6">
-                                                <div class="col-sm-12 col-val">
+                                                <div class="col-sm-12">
                                                     <div class="form-group">
-                                                        <label for="email">Card Number*</label>
-                                                        <input placeholder="Enter Card Number" onkeypress="return isNumber(event)" type="text" required type="number" class="form-control" id="cardnumber" rangelength="[10,14]" name="cardnom">
+                                                        <div class="input-field col-val">
+                                                            <input  onkeypress="return isNumber(event)" type="text" required type="number" class="form-control" id="cardnumber" rangelength="[10,14]" name="cardnom">                                                           
+                                                            <label for="cardnumber">Card Number</label>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
-                                                <div class="col-sm-12 col-val">
+                                                <div class="col-sm-12">
                                                     <div class="form-group">
-                                                        <label for="pwd">Billing Address*</label>
-                                                        <input placeholder="Enter Billing Address" type="text" class="form-control" id="address" name="address">
+                                                        <div class="input-field col-val">
+                                                            <input type="text" id="address" name="address">
+                                                            <label for="address">Billing Address</label>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-sm-6">
-                                                <div class="col-sm-12 col-val">
+                                                <div class="col-sm-12">
                                                     <div class="form-group">
-                                                        <label for="cvc">CVC*</label>
-                                                        <input onkeypress="return isNumber(event)" placeholder="ex.381" type="text" class="form-control" minlength="3" maxlength="3" id="cvc" required>
+                                                        <div class="input-field col-val">
+                                                            <input onkeypress="return isNumber(event)" type="text" class="form-control" minlength="3" maxlength="3" id="cvc" required> 
+                                                            <label for="cvc">CVC</label>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
-                                                <div class="col-sm-12 col-val">
-                                                    <div class="form-group">
-                                                        <label for="pwd">Expiration*</label>
-                                                        <input placeholder="MM" type="date" class="form-control" id="date" name="date" required>
+                                                <div class="col-sm-12">
+                                                    <div id="date-valid" class="form-group col-val">
+        <input placeholder="MM" type="text" name="date" class="form-control" id="date" name="date" value="" required/>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -643,18 +647,7 @@
                             </div>
                             <div class="tab-pane" id="tab3">
                                 <div class="row">
-                                    <div class="col-sm-4 wizerd-desc">
-                                        <i class="fa fa-check" aria-hidden="true"></i>
-                                        <br />
-                                        <p>
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                                        </p>
-                                        <br />
-                                        <p>
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                                        </p>
-                                    </div>
-                                    <div class="col-sm-8 wizard-form">
+                                    <div class="col-sm-12">
                                         <div class="row">
                                             <div class="col-sm-12">
                                                 <table class="table table-striped">
@@ -745,13 +738,18 @@
                                                 </table>
                                             </div>
                                         </div>
-                                        <button id="submit-wizard" href="#con2" class="btn btn-success outline-success submit-wizard">Submit</button>
+                                        <button id="submit-wizard" href="#con2" class="btn btn-success button-style submit-wizard">Submit</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-sm-12">
-                                <a class="btn btn-primary outline-primary" id="previous"><span class="glyphicon glyphicon-chevron-left"></span>Previous</a>
-                                <button type="submit" class="btn btn-primary outline-primary next-wizard" name="signup1" value="Sign up" id="next-btn-wizard">Next<span class="glyphicon glyphicon-chevron-right"></span></button>
+                                <a class="btn btn-primary button-style icon-btn button-style" id="previous">
+                                    <span class="glyphicon glyphicon-chevron-left prev-config"></span> Previous
+                                </a>
+                                <button type="submit" class="btn btn-primary button-style icon-btn next-wizard" name="signup1" value="Sign up" id="next-btn-wizard">
+                                    <span class="glyphicon glyphicon-chevron-right"></span> Next
+                                </button>
+                                
                             </div>
                         </div>
                     </form>
@@ -995,6 +993,7 @@
         </div>
     </div>
     <script src="assets/vendors/jquery/jquery-3.1.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
     <script src="assets/js/vendors/jquery.validate.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
@@ -1002,17 +1001,22 @@
     <script src="assets/js/vendors/bootstrap_wizard.js"></script>
     <script src="assets/js/vendors/prettify.js"></script>
     <script src="assets/js/bootstrap_wizard_in_page.js"></script>
-    <script src="assets/js/nav_colors_change.js"></script>
-    <link href="assets/css/colorpicker-layout.css" rel="stylesheet" />
-    <link href="assets/css/colorpicker.css" rel="stylesheet" />
+    
     <script src="assets/js/vendors/colorpicker/colorpicker.js"></script>
-    <script src="assets/js/vendors/colorpicker/eye.js"></script>
-    <script src="assets/js/vendors/colorpicker/layout.js"></script>
-    <script src="assets/js/vendors/colorpicker/utils.js"></script>
-    <script src="assets/js/vendors/colorpicker/utils.js"></script>
     <script src="assets/js/right-side-colors-change.js"></script>
     <script src="assets/js/page-ready-theam.js"></script>
     <link id="default-color-picker" rel="stylesheet" />
+    
+    
+    <script src='assets/vendors/lib/moment.min.js'></script>
+
+    <script type="text/javascript" src="assets/vendors/datepickers/daterangepicker.js"></script>
+    <script type="text/javascript" src="assets/vendors/datepickers/datepicker.min.js"></script>
+    <script type="text/javascript" src="assets/vendors/datepickers/datepicker.en.js"></script>
+    <script type="text/javascript" src="assets/vendors/clockpicker/bootstrap-clockpicker.min.js"></script>
+    
+    <script src="assets/vendors/sweet-alert/sweetalert.min.js"></script>
+    <script src="assets/vendors/select-plugin/js/bootstrap-select.min.js"></script>
     <script src="assets/js/form-wizard-validation.js"></script>
 </body>
 

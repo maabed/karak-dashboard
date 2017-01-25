@@ -257,12 +257,14 @@
                // Add the span element, if doesn't exists, and apply the icon classes to it.
                if (!element.next("span")[0]) {
                    $("<span class='glyphicon glyphicon-remove form-control-feedback'></span>").insertAfter(element);
+                   $("#date-valid").find("span").addClass("ok-pos");   
                }
            },
            success: function(label, element) {
                // Add the span element, if doesn't exists, and apply the icon classes to it.
                if (!$(element).next("span")[0]) {
                    $("<span class='glyphicon glyphicon-ok form-control-feedback'></span>").insertAfter($(element));
+                   $("#date-valid").find("span").addClass("ok-pos");   
                }
            },
            highlight: function(element, errorClass, validClass) {
@@ -274,8 +276,10 @@
                $(element).next("span").addClass("glyphicon-ok").removeClass("glyphicon-remove");
            }
        });
+       $('.select-display.text-drop').on('change', function () {
+           $(this).valid();
+       });
    });
-
 
    function isNumber(evt) {
        evt = (evt) ? evt : window.event;
@@ -285,7 +289,31 @@
        }
        return true;
    }
-
    $('#submit-wizard').click(function() {
-       location.reload();
+       setTimeout(function() {
+           swal({
+               title: "Your form was submitted successfully",
+               text: "",
+               type: "success"
+           }, function() {
+               location.reload();	
+           });
+       }, 100);		
    });
+$('select').selectpicker();
+
+
+$(function() {
+    $('input[name="date"]').daterangepicker({
+        autoUpdateInput:false,
+        singleDatePicker: true,
+        showDropdowns: false
+    });
+$('input[name="date"]').on('apply.daterangepicker', function(ev, picker) {
+      $(this).val(picker.startDate.format('MM/DD/YYYY'));
+  });
+
+$('input[name="date"]').on('cancel.daterangepicker', function(ev, picker) {
+      $(this).val('');
+  });
+});
