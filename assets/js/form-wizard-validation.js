@@ -292,7 +292,7 @@
    $('#submit-wizard').click(function() {
        setTimeout(function() {
            swal({
-               title: "Your for was suvmited successfully",
+               title: "Your form was submitted successfully",
                text: "",
                type: "success"
            }, function() {
