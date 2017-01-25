@@ -229,4 +229,5 @@ input:not([type])+label:after, input[type=text]+label:after, input[type=password
 }
 .right-button{
     width: 50%;
+    margin-bottom: 10px;
 }
