@@ -56,7 +56,7 @@
     -webkit-border-radius: 0px;
     background-color: #fff;
     color:#9e9e9e;
-        margin: 0.7em 0em 0.5em 0em;
+        margin: 0.7em 0em 1.5em 0em;
     padding-bottom: 0.5em;
     font-weight: lighter;
 }
@@ -292,4 +292,18 @@ input:not(#searchTB):focus {
 
 .top-margin{
     margin-top:0.5em;
+}
+.has-error > input {
+    border-bottom: 1px solid #a94442 !important;
+}
+
+.has-success > input {
+    border-bottom: 1px solid green !important;
+}
+
+.has-error > .select-style {
+    border-bottom: 1px solid #a94442 !important;
+}
+.form-group{
+	margin-bottom: 0.8em;
 }

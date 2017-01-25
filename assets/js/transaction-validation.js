@@ -12,7 +12,7 @@ $("#translateform").validate({
         }
     },
     messages: {
-        cchangeacc: "Please Select Account",
+        changeacc: "Please Select The Account",
         Beneficiary: "Please Enter Beneficiary Account No.",
         amount: "Please Enter Transfer Amount",
         details: "Please Enter Transfer Details",
@@ -45,12 +45,14 @@ $("#translateform").validate({
         // Add the span element, if doesn't exists, and apply the icon classes to it.
         if (!element.next("span")[0]) {
             $("<span class='glyphicon glyphicon-remove form-control-feedback'></span>").insertAfter(element);
+            $("#date-valid").find("span").addClass("ok-pos");
         }
     },
     success: function(label, element) {
         // Add the span element, if doesn't exists, and apply the icon classes to it.
         if (!$(element).next("span")[0]) {
             $("<span class='glyphicon glyphicon-ok form-control-feedback'></span>").insertAfter($(element));
+            $("#date-valid").find("span").addClass("ok-pos");
         }
     },
     highlight: function(element, errorClass, validClass) {
@@ -62,7 +64,9 @@ $("#translateform").validate({
         $(element).next("span").addClass("glyphicon-ok").removeClass("glyphicon-remove");
     }
 });
-
+$('.select-display.text-drop').on('change', function() {
+    $(this).valid();
+});
 
 function isNumber(evt) {
     evt = (evt) ? evt : window.event;
