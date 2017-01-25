@@ -227,3 +227,6 @@ input:not([type])+label:after, input[type=text]+label:after, input[type=password
 .right-modal-content{
     text-align: center;
 }
+.right-button{
+    width: 50%;
+}
