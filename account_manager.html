@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="assets/vendors/animatecss/animate.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/vendors/datepickers/daterangepicker.css" />
     <link rel="stylesheet" type="text/css" href="assets/vendors/datepickers/datepicker.min.css">
+    <link href="assets/css/data_table.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/tables.css">
 </head>
 
 <body>
@@ -412,7 +414,423 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        
+                        <div class="col-contint">
+                            <h5 class="title">Reports</h5>
+                            <br>
+                            <select class="select-style select-custom-width" name="reports" id="reports" required>
+                                <option value="Transactions Report">Transactions Report</option>
+                                <option value="99 2344 3456 343">Deposits Report</option>
+                                <option value="98 3443 6456 241">withdraw Report</option>
+                            </select>
+                            <table id="column_searching" class="table table-responsive">
+                                <thead class="table-head data-table-head">
+                                    <tr>
+                                        <th class="basic-th">Name</th>
+                                        <th class="basic-th">Position</th>
+                                        <th class="basic-th">Office</th>
+                                        <th class="basic-th">Age</th>
+                                        <th class="basic-th">Start date</th>
+                                        <th class="basic-th">Salary</th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <th class="content-padding">Name</th>
+                                        <th class="content-padding">Position</th>
+                                        <th class="content-padding">Office</th>
+                                        <th class="content-padding">Age</th>
+                                        <th class="content-padding">Start date</th>
+                                        <th class="content-padding">Salary</th>
+                                    </tr>
+                                </tfoot>
+                                <tbody>
+                                    <tr>
+                                        <td class="content-padding">Tiger Nixon</td>
+                                        <td class="content-padding">System Architect</td>
+                                        <td class="content-padding">Edinburgh</td>
+                                        <td class="content-padding">61</td>
+                                        <td class="content-padding">2011/04/25</td>
+                                        <td class="content-padding">$320,800</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Garrett Winters</td>
+                                        <td class="content-padding">Accountant</td>
+                                        <td class="content-padding">Tokyo</td>
+                                        <td class="content-padding">63</td>
+                                        <td class="content-padding">2011/07/25</td>
+                                        <td class="content-padding">$170,750</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Ashton Cox</td>
+                                        <td class="content-padding">Junior Technical Author</td>
+                                        <td class="content-padding">San Francisco</td>
+                                        <td class="content-padding">66</td>
+                                        <td class="content-padding">2009/01/12</td>
+                                        <td class="content-padding">$86,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Cedric Kelly</td>
+                                        <td class="content-padding">Senior Javascript Developer</td>
+                                        <td class="content-padding">Edinburgh</td>
+                                        <td class="content-padding">22</td>
+                                        <td class="content-padding">2012/03/29</td>
+                                        <td class="content-padding">$433,060</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Airi Satou</td>
+                                        <td class="content-padding">Accountant</td>
+                                        <td class="content-padding">Tokyo</td>
+                                        <td class="content-padding">33</td>
+                                        <td class="content-padding">2008/11/28</td>
+                                        <td class="content-padding">$162,700</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Brielle Williamson</td>
+                                        <td class="content-padding">Integration Specialist</td>
+                                        <td class="content-padding">New York</td>
+                                        <td class="content-padding">61</td>
+                                        <td class="content-padding">2012/12/02</td>
+                                        <td class="content-padding">$372,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Herrod Chandler</td>
+                                        <td class="content-padding">Sales Assistant</td>
+                                        <td class="content-padding">San Francisco</td>
+                                        <td class="content-padding">59</td>
+                                        <td class="content-padding">2012/08/06</td>
+                                        <td class="content-padding">$137,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Rhona Davidson</td>
+                                        <td class="content-padding">Integration Specialist</td>
+                                        <td class="content-padding">Tokyo</td>
+                                        <td class="content-padding">55</td>
+                                        <td class="content-padding">2010/10/14</td>
+                                        <td class="content-padding">$327,900</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Tiger Nixon</td>
+                                        <td class="content-padding">System Architect</td>
+                                        <td class="content-padding">Edinburgh</td>
+                                        <td class="content-padding">61</td>
+                                        <td class="content-padding">2011/04/25</td>
+                                        <td class="content-padding">$320,800</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Garrett Winters</td>
+                                        <td class="content-padding">Accountant</td>
+                                        <td class="content-padding">Tokyo</td>
+                                        <td class="content-padding">63</td>
+                                        <td class="content-padding">2011/07/25</td>
+                                        <td class="content-padding">$170,750</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Ashton Cox</td>
+                                        <td class="content-padding">Junior Technical Author</td>
+                                        <td class="content-padding">San Francisco</td>
+                                        <td class="content-padding">66</td>
+                                        <td class="content-padding">2009/01/12</td>
+                                        <td class="content-padding">$86,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Cedric Kelly</td>
+                                        <td class="content-padding">Senior Javascript Developer</td>
+                                        <td class="content-padding">Edinburgh</td>
+                                        <td class="content-padding">22</td>
+                                        <td class="content-padding">2012/03/29</td>
+                                        <td class="content-padding">$433,060</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Airi Satou</td>
+                                        <td class="content-padding">Accountant</td>
+                                        <td class="content-padding">Tokyo</td>
+                                        <td class="content-padding">33</td>
+                                        <td class="content-padding">2008/11/28</td>
+                                        <td class="content-padding">$162,700</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Brielle Williamson</td>
+                                        <td class="content-padding">Integration Specialist</td>
+                                        <td class="content-padding">New York</td>
+                                        <td class="content-padding">61</td>
+                                        <td class="content-padding">2012/12/02</td>
+                                        <td class="content-padding">$372,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Herrod Chandler</td>
+                                        <td class="content-padding">Sales Assistant</td>
+                                        <td class="content-padding">San Francisco</td>
+                                        <td class="content-padding">59</td>
+                                        <td class="content-padding">2012/08/06</td>
+                                        <td class="content-padding">$137,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Rhona Davidson</td>
+                                        <td class="content-padding">Integration Specialist</td>
+                                        <td class="content-padding">Tokyo</td>
+                                        <td class="content-padding">55</td>
+                                        <td class="content-padding">2010/10/14</td>
+                                        <td class="content-padding">$327,900</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Tiger Nixon</td>
+                                        <td class="content-padding">System Architect</td>
+                                        <td class="content-padding">Edinburgh</td>
+                                        <td class="content-padding">61</td>
+                                        <td class="content-padding">2011/04/25</td>
+                                        <td class="content-padding">$320,800</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Garrett Winters</td>
+                                        <td class="content-padding">Accountant</td>
+                                        <td class="content-padding">Tokyo</td>
+                                        <td class="content-padding">63</td>
+                                        <td class="content-padding">2011/07/25</td>
+                                        <td class="content-padding">$170,750</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Ashton Cox</td>
+                                        <td class="content-padding">Junior Technical Author</td>
+                                        <td class="content-padding">San Francisco</td>
+                                        <td class="content-padding">66</td>
+                                        <td class="content-padding">2009/01/12</td>
+                                        <td class="content-padding">$86,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Cedric Kelly</td>
+                                        <td class="content-padding">Senior Javascript Developer</td>
+                                        <td class="content-padding">Edinburgh</td>
+                                        <td class="content-padding">22</td>
+                                        <td class="content-padding">2012/03/29</td>
+                                        <td class="content-padding">$433,060</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Airi Satou</td>
+                                        <td class="content-padding">Accountant</td>
+                                        <td class="content-padding">Tokyo</td>
+                                        <td class="content-padding">33</td>
+                                        <td class="content-padding">2008/11/28</td>
+                                        <td class="content-padding">$162,700</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Brielle Williamson</td>
+                                        <td class="content-padding">Integration Specialist</td>
+                                        <td class="content-padding">New York</td>
+                                        <td class="content-padding">61</td>
+                                        <td class="content-padding">2012/12/02</td>
+                                        <td class="content-padding">$372,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Herrod Chandler</td>
+                                        <td class="content-padding">Sales Assistant</td>
+                                        <td class="content-padding">San Francisco</td>
+                                        <td class="content-padding">59</td>
+                                        <td class="content-padding">2012/08/06</td>
+                                        <td class="content-padding">$137,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Rhona Davidson</td>
+                                        <td class="content-padding">Integration Specialist</td>
+                                        <td class="content-padding">Tokyo</td>
+                                        <td class="content-padding">55</td>
+                                        <td class="content-padding">2010/10/14</td>
+                                        <td class="content-padding">$327,900</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Tiger Nixon</td>
+                                        <td class="content-padding">System Architect</td>
+                                        <td class="content-padding">Edinburgh</td>
+                                        <td class="content-padding">61</td>
+                                        <td class="content-padding">2011/04/25</td>
+                                        <td class="content-padding">$320,800</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Garrett Winters</td>
+                                        <td class="content-padding">Accountant</td>
+                                        <td class="content-padding">Tokyo</td>
+                                        <td class="content-padding">63</td>
+                                        <td class="content-padding">2011/07/25</td>
+                                        <td class="content-padding">$170,750</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Ashton Cox</td>
+                                        <td class="content-padding">Junior Technical Author</td>
+                                        <td class="content-padding">San Francisco</td>
+                                        <td class="content-padding">66</td>
+                                        <td class="content-padding">2009/01/12</td>
+                                        <td class="content-padding">$86,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Cedric Kelly</td>
+                                        <td class="content-padding">Senior Javascript Developer</td>
+                                        <td class="content-padding">Edinburgh</td>
+                                        <td class="content-padding">22</td>
+                                        <td class="content-padding">2012/03/29</td>
+                                        <td class="content-padding">$433,060</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Airi Satou</td>
+                                        <td class="content-padding">Accountant</td>
+                                        <td class="content-padding">Tokyo</td>
+                                        <td class="content-padding">33</td>
+                                        <td class="content-padding">2008/11/28</td>
+                                        <td class="content-padding">$162,700</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Brielle Williamson</td>
+                                        <td class="content-padding">Integration Specialist</td>
+                                        <td class="content-padding">New York</td>
+                                        <td class="content-padding">61</td>
+                                        <td class="content-padding">2012/12/02</td>
+                                        <td class="content-padding">$372,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Herrod Chandler</td>
+                                        <td class="content-padding">Sales Assistant</td>
+                                        <td class="content-padding">San Francisco</td>
+                                        <td class="content-padding">59</td>
+                                        <td class="content-padding">2012/08/06</td>
+                                        <td class="content-padding">$137,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Rhona Davidson</td>
+                                        <td class="content-padding">Integration Specialist</td>
+                                        <td class="content-padding">Tokyo</td>
+                                        <td class="content-padding">55</td>
+                                        <td class="content-padding">2010/10/14</td>
+                                        <td class="content-padding">$327,900</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Tiger Nixon</td>
+                                        <td class="content-padding">System Architect</td>
+                                        <td class="content-padding">Edinburgh</td>
+                                        <td class="content-padding">61</td>
+                                        <td class="content-padding">2011/04/25</td>
+                                        <td class="content-padding">$320,800</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Garrett Winters</td>
+                                        <td class="content-padding">Accountant</td>
+                                        <td class="content-padding">Tokyo</td>
+                                        <td class="content-padding">63</td>
+                                        <td class="content-padding">2011/07/25</td>
+                                        <td class="content-padding">$170,750</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Ashton Cox</td>
+                                        <td class="content-padding">Junior Technical Author</td>
+                                        <td class="content-padding">San Francisco</td>
+                                        <td class="content-padding">66</td>
+                                        <td class="content-padding">2009/01/12</td>
+                                        <td class="content-padding">$86,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Cedric Kelly</td>
+                                        <td class="content-padding">Senior Javascript Developer</td>
+                                        <td class="content-padding">Edinburgh</td>
+                                        <td class="content-padding">22</td>
+                                        <td class="content-padding">2012/03/29</td>
+                                        <td class="content-padding">$433,060</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Airi Satou</td>
+                                        <td class="content-padding">Accountant</td>
+                                        <td class="content-padding">Tokyo</td>
+                                        <td class="content-padding">33</td>
+                                        <td class="content-padding">2008/11/28</td>
+                                        <td class="content-padding">$162,700</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Brielle Williamson</td>
+                                        <td class="content-padding">Integration Specialist</td>
+                                        <td class="content-padding">New York</td>
+                                        <td class="content-padding">61</td>
+                                        <td class="content-padding">2012/12/02</td>
+                                        <td class="content-padding">$372,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Herrod Chandler</td>
+                                        <td class="content-padding">Sales Assistant</td>
+                                        <td class="content-padding">San Francisco</td>
+                                        <td class="content-padding">59</td>
+                                        <td class="content-padding">2012/08/06</td>
+                                        <td class="content-padding">$137,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Rhona Davidson</td>
+                                        <td class="content-padding">Integration Specialist</td>
+                                        <td class="content-padding">Tokyo</td>
+                                        <td class="content-padding">55</td>
+                                        <td class="content-padding">2010/10/14</td>
+                                        <td class="content-padding">$327,900</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Tiger Nixon</td>
+                                        <td class="content-padding">System Architect</td>
+                                        <td class="content-padding">Edinburgh</td>
+                                        <td class="content-padding">61</td>
+                                        <td class="content-padding">2011/04/25</td>
+                                        <td class="content-padding">$320,800</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Garrett Winters</td>
+                                        <td class="content-padding">Accountant</td>
+                                        <td class="content-padding">Tokyo</td>
+                                        <td class="content-padding">63</td>
+                                        <td class="content-padding">2011/07/25</td>
+                                        <td class="content-padding">$170,750</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Ashton Cox</td>
+                                        <td class="content-padding">Junior Technical Author</td>
+                                        <td class="content-padding">San Francisco</td>
+                                        <td class="content-padding">66</td>
+                                        <td class="content-padding">2009/01/12</td>
+                                        <td class="content-padding">$86,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Cedric Kelly</td>
+                                        <td class="content-padding">Senior Javascript Developer</td>
+                                        <td class="content-padding">Edinburgh</td>
+                                        <td class="content-padding">22</td>
+                                        <td class="content-padding">2012/03/29</td>
+                                        <td class="content-padding">$433,060</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Airi Satou</td>
+                                        <td class="content-padding">Accountant</td>
+                                        <td class="content-padding">Tokyo</td>
+                                        <td class="content-padding">33</td>
+                                        <td class="content-padding">2008/11/28</td>
+                                        <td class="content-padding">$162,700</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Brielle Williamson</td>
+                                        <td class="content-padding">Integration Specialist</td>
+                                        <td class="content-padding">New York</td>
+                                        <td class="content-padding">61</td>
+                                        <td class="content-padding">2012/12/02</td>
+                                        <td class="content-padding">$372,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Herrod Chandler</td>
+                                        <td class="content-padding">Sales Assistant</td>
+                                        <td class="content-padding">San Francisco</td>
+                                        <td class="content-padding">59</td>
+                                        <td class="content-padding">2012/08/06</td>
+                                        <td class="content-padding">$137,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="content-padding">Rhona Davidson</td>
+                                        <td class="content-padding">Integration Specialist</td>
+                                        <td class="content-padding">Tokyo</td>
+                                        <td class="content-padding">55</td>
+                                        <td class="content-padding">2010/10/14</td>
+                                        <td class="content-padding">$327,900</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -675,6 +1093,15 @@
     <!-- Valedation -->
     <script src="assets/js/vendors/jquery.validate.js"></script>
     <script src="assets/js/transaction-validation.js"></script>
+    <!-- Data Tabel -->
+    <script src="assets/js/vendors/jquery.dataTables.js"></script>
+    <script src="assets/js/vendors/jquery.dataTables.min.js"></script>
+    <script src="assets/js/vendors/dataTables.buttons.min.js"></script>
+    <script src="assets/js/vendors/jszip.min.js"></script>
+    <script src="assets/js/vendors/pdfmake.min.js"></script>
+    <script src="assets/js/vendors/vfs_fonts.js"></script>
+    <script src="assets/js/vendors/buttons.html5.min.js"></script>
+    <script src="assets/js/data_table.js"></script>
     <script>
     $(function() {
         $(document).ready(function() {

@@ -307,3 +307,19 @@ input:not(#searchTB):focus {
 .form-group{
 	margin-bottom: 0.8em;
 }
+.all-income{
+	text-align: center;
+}
+.all-income h3{
+	font-weight: lighter;
+}
+#column_searching_length, #column_searching_filter{
+	display: none;
+}
+.select-custom-width{width:30%;
+color: rgba(0, 0, 0, 0.4);
+border-bottom: 1px solid rgba(0, 0, 0, 0.4) !important;}
+
+table.dataTable thead .sorting_asc {
+	float: left !important;
+}

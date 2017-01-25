@@ -2295,12 +2295,13 @@ p {
 .dataTables_length label select {
     color: #34495E !important;
     border: 1px solid #F1F3F6;
-    border-radius: 3px;
+    background-color: #fff !important;
 }
 .dataTables_length label select {
     color: #34495E !important;
     border: 1px solid #F1F3F6;
     border-radius: 3px;
+    outline: none;
 }
 .dataTables_filter label {
     color: #888888;
@@ -2308,8 +2309,22 @@ p {
 }
 .dataTables_filter label input {
     color: #34495E !important;
-    border: 1px solid #F1F3F6;
-    border-radius: 3px;
+    border: 0px !important;
+    border-bottom: 1px solid #F1F3F6 !important;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+        -webkit-appearance: none;
+    border-width: 0px 0px 1px !important;
+    border-style:  !important;
+    border-color:  !important;
+    border-image: initial !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.0666667) !important;
+    border-radius: 0px !important;
+}
+.dataTables_filter label input:focus {
+    border-bottom: 1px solid #67b2e4 !important;
 }
 .dataTables_filter label {
     color: #888888;
@@ -2405,6 +2420,8 @@ tr.shown td.details-control {
 .all-icons .dataTables_filter label {
     width: 100% !important;
 }
+
+
 .all-icons .dataTables_filter label input {
     width: 40% !important;
 }
@@ -3129,6 +3146,7 @@ input[type="email"]#searchTB::-webkit-input-placeholder {
     font-size: 0.9em;
     padding: 1em 0em !important;
 }
+<<<<<<< HEAD
 .all-income {
     text-align: center;
     color: #626262;
@@ -3157,6 +3175,8 @@ input[type="email"]#searchTB::-webkit-input-placeholder {
     color: #848484;
     font-weight: lighter;
 }
+=======
+>>>>>>> 2f634e78b10de97d413597d4d70e948ef9959e48
 @media(max-width:1110px) {
     .backgroundimg{
         display: none;
