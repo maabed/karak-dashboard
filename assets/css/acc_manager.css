@@ -337,3 +337,32 @@ table.dataTable thead .sorting_asc {
 @media print {
 .hide-on-print {display: none;}
 }
+
+.all-income {
+    text-align: center;
+    color: #626262;
+}
+.all-income h2 {
+    font-weight: lighter;
+}
+.all-income h3 {
+    font-weight: lighter;
+    color: #67b2e4;
+}
+.all-income-invers {
+    text-align: center;
+    color: #fff;
+    background-color: #67b2e4 !important;
+}
+.all-income-invers h2 {
+    font-weight: lighter;
+}
+.all-income-invers h3 {
+    font-weight: lighter;
+    color: #fff;
+}
+.flat-style {
+    float: right;
+    color: #848484;
+    font-weight: lighter;
+}
