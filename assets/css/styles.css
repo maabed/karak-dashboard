@@ -787,12 +787,10 @@ canvas {
 .social-left-section,
 .social-right-section {
     min-height: 40em;
-    padding: 0em;
 }
 
 .post-container {
     background-color: #fff;
-    width: 96%;
     height: 20em;
 }
 
@@ -800,8 +798,6 @@ canvas {
     background-color: #ceecfc;
     width: 100%;
     padding: 1em;
-    border-top-right-radius: 3px;
-    border-top-left-radius: 3px;
 }
 
 .social-right-section .post-container {
@@ -834,6 +830,7 @@ hr {
 .pos-txt {
     background: rgba(255, 255, 255, 0.8);
     border: 1px solid #48b0f7 !important;
+    border-radius: 0 !important;
 }
 
 .post-btn {
@@ -863,6 +860,7 @@ hr {
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    font-weight: lighter;
 }
 
 .previous-post .post-icons {
@@ -903,7 +901,6 @@ hr {
 }
 
 .post-textbox-row img {
-    border-radius: 3px;
     width: 100%;
     height: auto;
 }
@@ -921,8 +918,9 @@ hr {
 }
 
 .singl-right-div {
-    width: 100%;
-    margin: 1em 0em;
+    float: left;
+    text-align: center;
+    margin:0em 2em 0em 0em;
 }
 
 .singl-right-div h5 {
@@ -935,19 +933,19 @@ hr {
     float: left;
 }
 
-.singl-right-div a p {
-    float: right;
+.singl-right-div a {
+   text-align: center;
+   font-weight: lighter;
     color: #3B97D2;
-    text-decoration: underline;
+ 
 }
 
 .singl-right-div img {
-    width: 3.5em;
-    height: 3.5em;
-    float: left;
+    width: 4.5em;
+    height: 4.5em;
     border: 2px solid #3B97D2;
     border-radius: 180px;
-    margin-right: 0.5em;
+    margin: 0.5em auto;
 }
 
 .view-all {
