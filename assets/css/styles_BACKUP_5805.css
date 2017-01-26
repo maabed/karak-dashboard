@@ -787,10 +787,12 @@ canvas {
 .social-left-section,
 .social-right-section {
     min-height: 40em;
+    padding: 0em;
 }
 
 .post-container {
     background-color: #fff;
+    width: 96%;
     height: 20em;
 }
 
@@ -798,6 +800,8 @@ canvas {
     background-color: #ceecfc;
     width: 100%;
     padding: 1em;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
 }
 
 .social-right-section .post-container {
@@ -830,7 +834,6 @@ hr {
 .pos-txt {
     background: rgba(255, 255, 255, 0.8);
     border: 1px solid #48b0f7 !important;
-    border-radius: 0 !important;
 }
 
 .post-btn {
@@ -860,7 +863,6 @@ hr {
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    font-weight: lighter;
 }
 
 .previous-post .post-icons {
@@ -901,6 +903,7 @@ hr {
 }
 
 .post-textbox-row img {
+    border-radius: 3px;
     width: 100%;
     height: auto;
 }
@@ -918,9 +921,8 @@ hr {
 }
 
 .singl-right-div {
-    float: left;
-    text-align: center;
-    margin:0em 2em 0em 0em;
+    width: 100%;
+    margin: 1em 0em;
 }
 
 .singl-right-div h5 {
@@ -933,19 +935,19 @@ hr {
     float: left;
 }
 
-.singl-right-div a {
-   text-align: center;
-   font-weight: lighter;
+.singl-right-div a p {
+    float: right;
     color: #3B97D2;
- 
+    text-decoration: underline;
 }
 
 .singl-right-div img {
-    width: 4.5em;
-    height: 4.5em;
+    width: 3.5em;
+    height: 3.5em;
+    float: left;
     border: 2px solid #3B97D2;
     border-radius: 180px;
-    margin: 0.5em auto;
+    margin-right: 0.5em;
 }
 
 .view-all {
@@ -2296,13 +2298,12 @@ p {
 .dataTables_length label select {
     color: #34495E !important;
     border: 1px solid #F1F3F6;
-    background-color: #fff !important;
+    border-radius: 3px;
 }
 .dataTables_length label select {
     color: #34495E !important;
     border: 1px solid #F1F3F6;
     border-radius: 3px;
-    outline: none;
 }
 .dataTables_filter label {
     color: #888888;
@@ -2310,22 +2311,8 @@ p {
 }
 .dataTables_filter label input {
     color: #34495E !important;
-    border: 0px !important;
-    border-bottom: 1px solid #F1F3F6 !important;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-        -webkit-appearance: none;
-    border-width: 0px 0px 1px !important;
-    border-style:  !important;
-    border-color:  !important;
-    border-image: initial !important;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.0666667) !important;
-    border-radius: 0px !important;
-}
-.dataTables_filter label input:focus {
-    border-bottom: 1px solid #67b2e4 !important;
+    border: 1px solid #F1F3F6;
+    border-radius: 3px;
 }
 .dataTables_filter label {
     color: #888888;
@@ -2425,8 +2412,6 @@ tr.shown td.details-control {
 .all-icons .dataTables_filter label {
     width: 100% !important;
 }
-
-
 .all-icons .dataTables_filter label input {
     width: 40% !important;
 }
@@ -3151,6 +3136,37 @@ input[type="email"]#searchTB::-webkit-input-placeholder {
     font-size: 0.9em;
     padding: 1em 0em !important;
 }
+<<<<<<< HEAD
+=======
+.all-income {
+    text-align: center;
+    color: #626262;
+}
+.all-income h2 {
+    font-weight: lighter;
+}
+.all-income h3 {
+    font-weight: lighter;
+    color: #67b2e4;
+}
+.all-income-invers {
+    text-align: center;
+    color: #fff;
+    background-color: #67b2e4 !important;
+}
+.all-income-invers h2 {
+    font-weight: lighter;
+}
+.all-income-invers h3 {
+    font-weight: lighter;
+    color: #fff;
+}
+.flat-style {
+    float: right;
+    color: #848484;
+    font-weight: lighter;
+}
+>>>>>>> c105f75987e815972bd22f4d3156977e13835205
 @media(max-width:1110px) {
     .backgroundimg{
         display: none;
@@ -3213,7 +3229,14 @@ input[type="email"]#searchTB::-webkit-input-placeholder {
 }
 
 @media(max-width:1028px) {
-
+<<<<<<< HEAD
+    .code-padding {
+        font-size: 0.5em;
+    }
+    
+=======
+ 
+>>>>>>> c105f75987e815972bd22f4d3156977e13835205
     .primary-border {
         border-left: 10px solid #34495E !important;
     }
@@ -3566,40 +3589,3 @@ input[type="email"]#searchTB::-webkit-input-placeholder {
         display: none;
     }
 }
-
-@media(max-width:1110px) {
-       .code-padding {
-        font-size: 0.5em;
-    }
-}
-.all-income {
-    text-align: center;
-    color: #626262;
-}
-.all-income h2 {
-    font-weight: lighter;
-}
-.all-income h3 {
-    font-weight: lighter;
-    color: #67b2e4;
-}
-.all-income-invers {
-    text-align: center;
-    color: #fff;
-    background-color: #67b2e4 !important;
-}
-.all-income-invers h2 {
-    font-weight: lighter;
-}
-.all-income-invers h3 {
-    font-weight: lighter;
-    color: #fff;
-}
-.flat-style {
-    float: right;
-    color: #848484;
-    font-weight: lighter;
-}
-
-
- 

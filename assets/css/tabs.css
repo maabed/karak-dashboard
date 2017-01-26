@@ -49,6 +49,18 @@ div.bhoechie-tab-menu2 div.list-group > a.active:after {
     border-right: 13px solid transparent;
     border-top: 10px solid #67b2e4;
 }
+.list-group-item{
+    border: 0 !important;
+}
+
+.nav-style li {width :25%;
+    text-align: center;
+}
+
+.nav-pills > li + li{
+    margin:0 !important;
+}
+
 .list-group-item.active.text-center{
     background-color: #67b2e4 !important;
     border-color: #67b2e4;
@@ -68,6 +80,16 @@ div.bhoechie-tab-menu3 div.list-group > a .glyphicon, div.bhoechie-tab-menu3 div
 .nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover{
     background:#67b2e4;    
 }
+
+.nav-tabs > li > a{
+    border-left:0 !important;
+        border-right:0 !important;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover{
+    border-right:0 !important;
+     border-left:0 !important;
+        border-top: 5px solid #67b2e4;
+}
 .bhoechie-tab h1{
     color:#67b2e4 !important;
 }
@@ -79,4 +101,16 @@ div.bhoechie-tab-menu3 div.list-group > a .glyphicon, div.bhoechie-tab-menu3 div
 }
 #bordered-tab > li:not(.active) > a{
     border-top: 5px solid #fff;
+}
+.nav-tabs{
+    border:0px !important;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover{
+    border-top-right-radius: 0 !important;
+     border-top-left-radius: 0 !important;
+}
+
+
+.statistics .statistics-taps li a{
+padding: 0em 1em 1em 1em !important;
 }
