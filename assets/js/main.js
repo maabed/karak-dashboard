@@ -7,14 +7,15 @@ $("#menu-toggle").click(function (e) {
 $('.SubMenue').hide();
 
 $('.MainMenue').click(function (e) {
+
     e.preventDefault();
-    $(this).toggleClass("open");
-    
+
     var $this = $(this).parent().find('.Submenue');
     $(".Submenue").not($this).hide(300);
 
     // here is what I want to do
     $this.toggle(300);
+
 });
 
 
@@ -60,10 +61,4 @@ $(document).ready(function() {
       }
     }
   });
-});
-
-
-$(document).ready(function(){
-    $(".sidebar-nav").find("li.selected").find(".Submenue").css("display","block");
-    $(".Submenue").css({"padding":"0px","position":"relative","left":"40px"});
 });
