@@ -63,74 +63,7 @@ $(document).ready(function() {
   });
 });
 
-
-/* Tour init */
-
-
-$(document).ready(function(){ 
-    $(function () {
-        // Instance the tour
-        var tour = new Tour({
-            backdrop: true,
-            template: "<div class='popover tour'> \
-            <div class='arrow'></div> \
-            <h3 class='popover-title'></h3> \
-            <div class='popover-content'></div> \
-            <div class='popover-navigation'> \
-            <button type='button' class='btn btn-xs btn-info' data-role='prev'><i class='fa fa-angle-left'></i> &nbsp Prev</button> \
-            <button type='button' class='btn btn-xs btn-info' data-role='next'>Next &nbsp <i class='fa fa-angle-right'></i></button> \
-            <button type='button' class='btn btn-xs btn-danger' data-role='end'>End tour</button> \
-            </div> \
-            </div>",
-            onShown: function(tour) {
-                // ISSUE    - https://github.com/sorich87/bootstrap-tour/issues/189
-                // FIX      - https://github.com/sorich87/bootstrap-tour/issues/189#issuecomment-49007822
-                // You have to write your used animated effect class
-                // Standard animated class
-                $('.animated').removeClass('fadeIn');
-                // Animate class from animate-panel plugin
-                $('.animated-panel').removeClass('zoomIn');
-            },
-            steps: [
-                {
-                    element: "#transaction-tour",
-                    title: "Page header",
-                    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget.",
-                    placement: "right",
-                },
-                {
-                    element: "#tour-element-email",
-                    title: "Tour title",
-                    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget.",
-                    placement: "right",
-
-                },
-                {
-                    element: ".index-icons",
-                    title: "Tour title",
-                    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget.",
-                    placement: "left",
-                },                 {
-                    element: "#tour-img",
-                    title: "Tour title",
-                    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget.",
-                    placement: "left",
-                }, 
-                {
-                    element: "#calender-tour",
-                    title: "Tour title",
-                    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget.",
-                    placement: "top",
-                },
-                {
-                    element: ".activities",
-                    title: "Tour title",
-                    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget.",
-                    placement: "right",
-                }           
-            ]});
-        // Initialize the tour
-        tour.init();
-        tour.restart();
-    });
-});
+$(document).ready(function(){
+    $(".sidebar-nav").find("li.selected").find(".Submenue").css("display","block");
+    $(".Submenue").css({"padding":"0px","position":"relative","left":"40px"});
+})
