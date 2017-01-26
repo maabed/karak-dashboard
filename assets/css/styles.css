@@ -2365,6 +2365,9 @@ tr.shown td.details-control {
     border: 1px solid #E4E5E7;
     border-radius: 0 !important;
 }
+.icons-single-box  i {
+    font-size: 1.2em;
+}
 .icons-single-box .col-contint div {
     color: #707A7A;
     text-align: center;
@@ -2386,6 +2389,7 @@ tr.shown td.details-control {
     text-align: center;
     font-weight: lighter;
     padding: 1.2em 0em !important;
+    font-size:1.05em !important;
 }
 .all-icons tr,
 .all-icons td i {
