@@ -63,7 +63,7 @@ table.dataTable {
     table.dataTable thead .sorting_asc_disabled,
     table.dataTable thead .sorting_desc_disabled {
         background-repeat: no-repeat;
-        background-position: center right;
+        background-position: center left;
     }
 
     table.dataTable thead .sorting {
