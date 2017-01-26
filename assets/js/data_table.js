@@ -132,13 +132,13 @@ $(document).ready(function(){
     
     $(".buttons-excel").attr("id","excel-button");
     $("#excel-button").removeAttr("class");
-    $("#excel-button").addClass("btn btn-success dashboard-success");
-    $("#excel-button").append("<i id='Excel-table-icon' class='fa fa-file-excel-o' aria-hidden='true'></i>");
+    $("#excel-button").addClass("btn btn-default outline-default");
+    $("#excel-button").append("<span id='Excel-table-icon' class='fa fa-file-excel-o' aria-hidden='true'></span>");
 
     
     $(".buttons-pdf").attr("id","pdf-button");
     $("#pdf-button").removeAttr("class");
-    $("#pdf-button").addClass("btn btn-danger dashboard-danger");
+    $("#pdf-button").addClass("btn btn-default outline-default");
     $("#pdf-button").append("<i id='Pdf-table-icon' class='fa fa-file-pdf-o' aria-hidden='true'></i>");
 
 });
