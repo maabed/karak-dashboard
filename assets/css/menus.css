@@ -611,6 +611,22 @@ a.btn-info:hover{
 .nav.nav-tabs > .active{
     border-top: 3px solid #3B97D2;
 }
+.nav.nav-tabs > .active > a{
+    background-color: #e7e7e7;
+    margin-right: 0px;
+}
+.nav.nav-tabs > li > a{
+    background-color: #fff;
+    color: #3498db;
+}
+.nav.nav-tabs > li:not(.active) > a:hover{
+    background-color: #fff;
+    color: #3498db;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover{
+    background-color: #e7e7e7;
+    color: #3498db;
+}
 .nav-list.list-inline > li > a >span {
     color: #3498db;
 }
