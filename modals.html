@@ -246,7 +246,6 @@
             </div>
         </div>
             <!-- Page Content -->
-            <a href="#" id="PageTitle">UI Elements  /  Modals</a>
             <div id="page-content-wrapper">
                 <div class="container-fluid">
                     <div class="row">
@@ -261,24 +260,37 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="col-contint" id="standard-parent">
-                                <h5 class="title"> Standard Modal </h5>
+                                <h5 class="title"> Middle of the page Modal </h5>
                                 <br>
-                            <i class="fa fa-eye hide-modal" id="view-standard" aria-hidden="true"></i>
-                            <img src="assets/images/modals/standard.png" id="standard" class="center-block img-border"  data-toggle="modal" data-target="#myModal">
+                                <p>Standard modal, just add <code>.middle-dialog</code> to get it to work.</p>
+                                <i id="preview1" class="fa fa-eye preview" data-toggle="modal" data-target="#myModal"></i>  
+                                <img src="assets/images/modals/middle.svg" id="standard" class="center-block img-border">
                             <!-- Modal -->
                             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                <div class="modal-dialog middle-modal" role="document">
+                                <div class="modal-dialog middle-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                             <h4 class="modal-title" id="myModalLabel">Modal title</h4>
                                         </div>
                                         <div class="modal-body">
-                                            Modal body
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare urna turpis, et 
+                                            dignissim quam vestibulum ac. Phasellus scelerisque massa quis ligula lacinia, eget rhoncus 
+                                            dolor tincidunt. Sed in aliquet dui, in vehicula nisi. Mauris molestie sem vitae volutpat 
+                                            luctus.
+                                            <br>
+                                            <br>
+                                            Quisque nulla mauris, aliquam ac iaculis sed, placerat at nulla. Class aptent taciti sociosqu 
+                                            ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas nec eleifend nisl. 
+                                            Proin posuere, enim in aliquet condimentum, justo dui gravida dolor, eget auctor massa nisl 
+                                            quis risus. Sed nibh lacus, pulvinar a ullamcorper at, condimentum vel ante. Cras enim justo, 
+                                            interdum sit amet magna eu, tincidunt iaculis turpis. Nunc consectetur egestas aliquet. Cras 
+                                            scelerisque consequat enim, at efficitur nibh. Donec in nulla non mi euismod porta id faucibus 
+                                            dui. Nulla semper et est nec varius. Cras iaculis sed turpis vel aliquet.
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-primary dashboard-primary btn-md modal-close" data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn  btn-info dashboard-info btn-md">Save changes</button>
+                                            <button type="button " class="btn btn-info button-style icon-btn">Search</button>
                                         </div>
                                     </div>
                                 </div>
@@ -290,21 +302,16 @@
                             <div class="col-contint" id="flat-parent">
                                 <h5 class="title"> Flat modal </h5>
                                 <br>
-                            <i class="fa fa-eye hide-modal" id="view-flat" aria-hidden="true"></i>
-                            <img src="assets/images/modals/flat-modal.png" id="flat" class="center-block img-border" data-toggle="modal" data-target="#myModalLarge">
+                                <p>A modal without the <code>.modal-content</code><code>.modal-header</code><code>.modal-footer</code> classes</p>
+                                <i id="preview1" class="fa fa-eye preview" data-toggle="modal" data-target="#myModalLarge"></i>  
+                            <img src="assets/images/modals/flat.svg" id="flat" class="center-block img-border">
                             <!-- Modal -->
-                            <div class="modal fade bs-example-modal-lg" id="myModalLarge" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                <div class="modal-dialog middle-modal modal-lg" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-body flat-static">
-                                            <div class="row positioning">
-                                                <div class="col-sm-9">
-                                                    <input type="email" class="form-control" id="email">
-                                                </div>
-                                                <div class="col-sm-3">
-                                                    <button type="button" class="btn  btn-info dashboard-info btn-md">Save changes</button>
-                                                </div>
-                                            </div>
+                            <div class="modal fade" id="myModalLarge" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-body">
+                                        <div class="jumbotron">
+                                            <input type="text" placeholder="Type anywhere to search" class="form-control" id="flat_email">
+                                            <i class="fa fa-search glyphicon glyphicon-search" aria-hidden="true"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -316,10 +323,11 @@
                             <div class="col-contint" id="small-parent">
                                 <h5 class="title"> Top modal </h5>
                                 <br>
-                            <i class="fa fa-eye hide-modal" id="view-small" aria-hidden="true"></i>
-                            <img src="assets/images/modals/small-modal.png" id="small" class="center-block img-border" data-toggle="modal" data-target="#myModalSmall">
+                                <p>Small modal, just add <code>.modal-sm</code> to the <code>.modal-dialog</code> to get it to work.</p>
+                                <i id="preview1" class="fa fa-eye preview"  data-toggle="modal" data-target="#myModalSmall"></i>  
+                            <img src="assets/images/modals/top.svg" id="small" class="center-block img-border">
                             <!-- Modal -->
-                            <div class="modal fade bs-example-modal-sm" id="myModalSmall" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal fade" id="myModalSmall" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog modal-sm" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
@@ -327,11 +335,16 @@
                                             <h4 class="modal-title" id="myModalLabel">Modal title</h4>
                                         </div>
                                         <div class="modal-body">
-                                            Modal body
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tristique rhoncus arcu, id 
+                                            ornare felis. Vivamus sollicitudin elit rhoncus, tempus. 
+                                            <br><br>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tristique rhoncus arcu, id 
+                                            ornare felis. Vivamus sollicitudin elit rhoncus, tempus.
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-primary dashboard-primary btn-md modal-close" data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn  btn-info dashboard-info btn-md">Save changes</button>
+                                            <button type="button " class="btn btn-info button-style icon-btn">Search</button>
+
                                         </div>
                                     </div>
                                 </div>
@@ -344,8 +357,9 @@
                             <div class="col-contint" id="data-parent">
                                 <h5 class="title"> Form Modal </h5>
                                 <br>
-                            <i class="fa fa-eye hide-modal" id="view-data" aria-hidden="true"></i>
-                            <img src="assets/images/modals/standard.png" id="data" class="center-block img-border" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu ipsum in.</p> 
+                                <i id="preview1" class="fa fa-eye modal-preview"  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"></i>  
+                                <img src="assets/images/modals/top.svg" id="data" class="center-block img-border">
                             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
@@ -354,20 +368,28 @@
                                             <h4 class="modal-title" id="exampleModalLabel">New message</h4>
                                         </div>
                                         <div class="modal-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc iaculis venenatis felis at 
+                                            venenatis. Sed eros neque, vestibulum sit amet.
+                                            <br>
+                                            <br>
                                             <form>
                                                 <div class="form-group">
-                                                    <label for="recipient-name" class="control-label">Recipient:</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
+                                                    <div class="input-field">
+                                                        <input id="email" type="email" class="validate">
+                                                        <label for="email" id="email-label">Email</label>
+                                                    </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="message-text" class="control-label">Message:</label>
-                                                    <textarea class="form-control" id="message-text"></textarea>
+                                                    <div class="input-field">
+                                                        <input id="password" type="password" class="validate">
+                                                        <label for="password" id="password-label">Password</label>
+                                                    </div>
                                                 </div>
                                             </form>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-primary dashboard-primary btn-md modal-close" data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn  btn-info dashboard-info btn-md">Send message</button>
+                                            <button type="button " class="btn btn-info button-style icon-btn">Search</button>
                                         </div>
                                     </div>
                                 </div>
@@ -378,18 +400,34 @@
                             <div class="col-contint" id="right-parent">
                                 <h5 class="title"> Right side modal </h5>
                                 <br>
-                            <i class="fa fa-eye hide-modal" id="view-right" aria-hidden="true"></i>
-                            <img src="assets/images/modals/right-side.png" id="right" class="center-block img-border" data-toggle="modal" data-toggle="modal" data-target="#myModal2">
+                                <p>Just add the class <code>.right</code> with the <code>.modal</code> class to have a right side modal.</p>
+                                <i id="preview1" class="fa fa-eye modal-preview" data-toggle="modal" data-toggle="modal" data-target="#myModal2"></i>  
+                            <img src="assets/images/modals/right.svg" id="right" class="center-block img-border">
                             <!-- Modal -->
                             <div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
                                 <div class="modal-dialog" role="document">
-                                    <div class="modal-content right-slide">
+                                    <div class="modal-content">
                                         <div class="modal-header">
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                             <h4 class="modal-title" id="myModalLabel2">Right Sidebar</h4>
                                         </div>
-                                        <div class="modal-body">
-                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid</p>
+                                        <div class="modal-body custome-margin">
+                                            <p class="right-modal-content">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad 
+                                                squid
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum.
+                                                Lorem ipsum dolor sit amet.
+                                            </p>
+                                            <br>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <button type="button" class="btn btn-info center-block right-button">Action</button>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <button type="button" class="btn btn-primary center-block right-button">Cancel</button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div><!-- modal-content -->
                                 </div><!-- modal-dialog -->
@@ -397,6 +435,21 @@
                         </div>
                         </div>
                     </div>
+                    
+                <div class="container-fixed-lg footer">
+                    <div class="copyright sm-text-center">
+                        <p class="small no-margin pull-left sm-pull-reset">
+                            <span class="hint-text">Copyright © 2017 </span>
+                            <span class="font-montserrat"><b>New Release</b></span>.
+                            <span class="hint-text">All rights reserved. </span>
+                            <span class="sm-block"><a href="#" class="m-l-10 m-r-10">Terms of use</a> | <a href="#" class="m-l-10">Privacy Policy</a></span>
+                        </p>
+                        <p class="small no-margin pull-right sm-pull-reset">
+                            <h6 class="made-by">Made By  <b>New Release</b></h6>
+                        </p>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
                 </div>
                 <!-- /#page-content-wrapper -->
             </div>   
@@ -641,7 +694,8 @@
         <script src="assets/js/main.js"></script>
         <script src="assets/js/notifications_boxs.js"></script>
         <script src="assets/js/modal.js"></script>
-                        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+                
         <script src="assets/js/nav_colors_change.js"></script>
         <link href="assets/css/colorpicker-layout.css" rel="stylesheet" />
         <link href="assets/css/colorpicker.css" rel="stylesheet" />
