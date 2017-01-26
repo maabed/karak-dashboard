@@ -1,4 +1,4 @@
-﻿body, html {
+body, html {
     height: 100%;
 }
 
@@ -152,10 +152,6 @@ section {
 
 
 
-
-
-
-
 .thumb-dropdown .dropdown-menu > li {
     position: relative;
 }
@@ -209,7 +205,6 @@ Follow me on Twitter @maridlcrmn
     margin: 10px auto;
     transition: transform 0.3s;
 }
-
 .navbar2 .navbar-collapse {
     position: relative;
     overflow: hidden !important;
@@ -217,10 +212,6 @@ Follow me on Twitter @maridlcrmn
 
 .navbar2 {
     margin-bottom: 2.54em !important;
-}
-
-.navbar .navbar-collapse .navbar-right > li:last-child {
-    padding-left: 22px;
 }
 
 .navbar .nav-collapse {
@@ -249,7 +240,7 @@ Follow me on Twitter @maridlcrmn
 }
 
 .nav-collapse > li {
-    float: right;
+    float: left;
 }
 
 .btn.btn-circle {
@@ -266,18 +257,22 @@ Follow me on Twitter @maridlcrmn
     color: rgb(255, 255, 255);
 }
 
+/*
 .navbar.navbar-default .nav-collapse,
 .navbar.navbar-inverse .nav-collapse {
     height: auto !important;
-    transition: transform 0.3s;
+    transition: transform 0.1s;
     transform: translate(0px,-50px);
 }
+*/
 
     .navbar.navbar-default .nav-collapse.in,
     .navbar.navbar-inverse .nav-collapse.in {
         transform: translate(0px,0px);
     }
-
+.navbar-form.navbar-right{
+    float: left !important
+}
 
 
 
@@ -396,12 +391,7 @@ Logo by Sneaker-mission.com (http://www.sneaker-mission.com/)
 
     .nav-list > li {
         padding: 20px 15px 15px;
-        border-left: 1px solid #eee;
     }
-
-        .nav-list > li:last-child {
-            border-right: 1px solid #eee;
-        }
 
         .nav-list > li > a:hover {
             text-decoration: none;
@@ -475,4 +465,171 @@ Logo by Sneaker-mission.com (http://www.sneaker-mission.com/)
   line-height: 30px;
   text-shadow: none;
   color: #333;
+}
+
+
+/* Rayan's review */
+.forAnimate > li > a {
+    color: #9b9b9b;
+}
+#nav-collapse3 > form > .glyphicon-search{
+    color: #fff;   
+}
+.drop-li{
+    padding-left: 0px !important;
+}
+.input-field {
+    position: relative;
+    bottom: 3px;
+}
+input:not([type]), input[type=text]:not(#flat_email):not(.normal-text):not(.input-mini), input[type=password], input[type=email]:not(#searchTB):not(#flat_email), input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    border-radius: 0;
+    outline: none;
+    height: 3rem;
+    width: 100%;
+    font-size: 13px;
+    margin: 0 0 0 0;
+    padding: 0;
+    box-shadow: none;
+    box-sizing: content-box;
+    transition: all 0.3s;
+}
+#flat_email{
+    padding-left: 10px;
+}
+input:not(#searchTB):not(#flat_email):not(.normal-text):not(.input-mini) {
+    line-height: normal;
+}
+button, input:not(#searchTB):not(#flat_email):not(.normal-text):not(.input-mini), optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+input:not(#searchTB):not(#flat_email):not(.normal-text):not(.input-mini), textarea, keygen, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em 0em 0em 0em;
+}
+input:not([type]).validate+label, input[type=text].validate+label, input[type=password].validate+label, input[type=email]:not(#searchTB):not(#flat_email).validate+label, input[type=url].validate+label, input[type=time].validate+label, input[type=date].validate+label, input[type=datetime].validate+label, input[type=datetime-local].validate+label, input[type=tel].validate+label, input[type=number].validate+label, input[type=search].validate+label, textarea.materialize-textarea.validate+label {
+    width: 100%;
+    pointer-events: none;
+}
+.input-field.col label {
+    left: 0.75rem;
+}
+.input-field label {
+    color: #9e9e9e;
+    position: absolute;
+    top: 0.8rem;
+    left: 0;
+    font-size: 13px;
+    cursor: text;
+    transition: .2s ease-out;
+}
+input:not([type])+label:after, input[type=text]+label:after, input[type=password]+label:after, input[type=email]:not(#searchTB):not(#flat_email)+label:after, input[type=url]+label:after, input[type=time]+label:after, input[type=date]+label:after, input[type=datetime]+label:after, input[type=datetime-local]+label:after, input[type=tel]+label:after, input[type=number]+label:after, input[type=search]+label:after, textarea.materialize-textarea+label:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 60px;
+    opacity: 0;
+}
+input:not([type])+label:after, input[type=text]+label:after, input[type=password]+label:after, input[type=email]:not(#searchTB):not(#flat_email)+label:after, input[type=url]+label:after, input[type=time]+label:after, input[type=date]+label:after, input[type=datetime]+label:after, input[type=datetime-local]+label:after, input[type=tel]+label:after, input[type=number]+label:after, input[type=search]+label:after, textarea.materialize-textarea+label:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 60px;
+    opacity: 0;
+}
+.input-field label.active {
+    font-size: 10px;
+    color: #67b2e4;
+    -webkit-transform: translateY(-140%);
+    transform: translateY(-140%);
+}
+input:not(#searchTB):focus{
+    border-bottom: 1px solid #67b2e4 !important;
+}
+.input-field > label{
+    font-weight: 400;
+}
+#flat_email{
+    border-radius: 0px;
+}
+.btn-group.bootstrap-select.select-display.form-control.empty.col-12{
+    margin-top: 8px;
+}
+.btn.dropdown-toggle.btn-default:focus{
+    outline: none !important;
+}
+.toggle-form{
+    width: 35%;
+}
+.navbar-form.navbar-left{
+    padding: 0px;
+}
+.nav.navbar-nav.navbar-right.menu-padding{
+    float: left !important;
+}
+a.btn-info:hover{
+    background-color: #2980b9 !important;
+}
+#navbar-collapse-1{
+    padding-left: 0px;
+}
+#nav-collapse3 > form > div > input{
+    color: #fff !important;
+}
+#navbar-collapse-2{
+    padding-left: 0px;
+}
+#navbar-collapse-3{
+    padding-left: 0px;
+}
+#navbar-collapse-4{
+    padding-left: 0px;
+}
+#bs-megadropdown-tabs{
+    padding-left: 0px;
+}
+#dropdown-thumbnail-preview{
+    padding-left: 0px;
+}
+.email-toggle{
+    margin-right: 25px;
+}
+.nav.nav-tabs > .active{
+    border-top: 3px solid #3B97D2;
+}
+.nav.nav-tabs > .active > a{
+    background-color: #e7e7e7;
+    margin-right: 0px;
+}
+.nav.nav-tabs > li > a{
+    background-color: #fff;
+    color: #3498db;
+}
+.nav.nav-tabs > li:not(.active) > a:hover{
+    background-color: #fff;
+    color: #3498db;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover{
+    background-color: #e7e7e7;
+    color: #3498db;
+}
+.nav-list.list-inline > li > a >span {
+    color: #3498db;
+}
+.nav-list.list-inline > li > a >span:hover {
+    color: #2980b9;
 }

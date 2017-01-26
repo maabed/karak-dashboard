@@ -97,10 +97,6 @@ $(function() {
     $('input[name="birthdate"]').daterangepicker({
         singleDatePicker: true,
         showDropdowns: false
-    }, 
-    function(start, end, label) {
-        var years = moment().diff(start, 'years');
-        alert("You are " + years + " years old.");
     });
 });
         
@@ -112,6 +108,8 @@ $(function() {
             format: 'MM/DD/YYYY h:mm A'
         }
     });
+    $(".daterangepicker").find(".calendar.left").css("width","50%");
+    $(".daterangepicker").find(".calendar.right").css("width","49%");
 });
 
 
@@ -138,11 +136,10 @@ $(function() {
     }, cb);
 
     cb(start, end);
-    
+    $(".cancelBtn.btn.btn-sm.btn-default").remove();
 });   
 
 $('.clockpicker').clockpicker();
-
 /* ranges */
 
 $("#no-params").ionRangeSlider();
@@ -169,3 +166,88 @@ $("#strings").ionRangeSlider({
         "ten"
     ]
 });
+$(document).ready(function(){
+    $(".bootstrap-tagsinput").find("input").addClass("normal-text");
+    $(".dropdown-toggle").find(".caret").addClass("caret-static");
+    $(".caret-static").removeClass("caret");
+    $(".select-display").click(function(){
+        $(".select-display").find(".selected").removeClass("active");
+    });
+});
+
+
+/* Select2 */
+
+$(document).ready(function() {
+    $(".js-example-basic-single").select2();
+    $(".js-example-basic-multiple").select2();
+});
+
+function formatState (state) {
+    if (!state.id) { return state.text; }
+    var $state = $(
+        '<span><img src="assets/images/' + state.element.value.toLowerCase() + '.png" width="30px" class="img-flag" /> ' + state.text + 
+        '</span>'
+    );
+    return $state;
+};
+$(".js-example-templating").select2({
+    templateResult: formatState
+});       
+        
+function formatRepo (repo) {
+    if (repo.loading) return repo.text;
+    var markup = '<div class="clearfix">' +
+        '<div class="row">'+
+        '<div class="col-sm-6">' +
+        '<img src="' + repo.owner.avatar_url + '" style="max-width: 100%" />' +
+        '</div>' +
+        '<div class="col-sm-6">' +
+        '<div class="clearfix">' +
+        '<div class="row">'+
+        '<div class="col-sm-12">' + repo.full_name + '</div><br>' +
+        '</div>'+
+        '</div>'+
+        '</div>';
+    if (repo.description) {
+        markup += '<div>' + repo.description + '</div>';
+    }
+
+    markup += '</div></div><div class="row">'+
+        '<div class="col-sm-6"><i class="fa fa-code-fork"></i> ' + repo.forks_count + '</div>' +
+        '<div class="col-sm-6"><i class="fa fa-star"></i> ' + repo.stargazers_count + '</div></div>';
+    return markup;
+}
+function formatRepoSelection (repo) {
+    return repo.full_name || repo.text;
+}
+
+$(document).ready(function(){
+    $(".js-data-example-ajax").select2({
+        ajax: {
+            url: "https://api.github.com/search/repositories",
+            dataType: 'json',
+            delay: 250,
+            data: function (params) {
+                return {
+                    q: params.term, // search term
+                    page: params.page
+                };
+            },
+            processResults: function (data, page) {
+                // parse the results into the format expected by Select2.
+                // since we are using custom formatting functions we do not need to
+                // alter the remote JSON data
+                return {
+                    results: data.items  
+                };
+            },
+            cache: true
+        },
+        escapeMarkup: function (markup) { return markup; }, // let our custom formatter work
+        minimumInputLength: 1,
+        templateResult: formatRepo, // omitted for brevity, see the source of this page
+        templateSelection: formatRepoSelection // omitted for brevity, see the source of this page  
+        
+    });
+}); 
