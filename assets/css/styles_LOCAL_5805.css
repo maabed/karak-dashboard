@@ -1281,28 +1281,24 @@ hr {
 .activities-log,
 .to-do-list {
     width: 100%;
-    height: 85%;
+    height: 90%;
     overflow-y: scroll;
     overflow-x: hidden;
 }
 
 .single-log-box {
     border-bottom: 1px solid #F1F3F6;
-    padding-top: 0.4em;
-    padding-bottom: 0.4em;
 }
 
 .single-log-box h5 {
     color: #3B97D2;
     text-decoration: underline;
-    width: 99%;
-    font-weight: lighter;
 }
 
 .single-log-box p {
     color: #707A7A;
     text-align: justify;
-    width: 99%;
+    width: 90%;
     font-size: 0.9em;
 }
 
@@ -1347,11 +1343,10 @@ hr {
 .made-by {
     float: right;
     color: #828282;
-    margin: 0 !important;
 }
 
 .static-height {
-    height: 24em;
+    height: 23.4em;
 }
 
 #container {
@@ -2368,9 +2363,6 @@ tr.shown td.details-control {
     border: 1px solid #E4E5E7;
     border-radius: 0 !important;
 }
-.icons-single-box  i {
-    font-size: 1.2em;
-}
 .icons-single-box .col-contint div {
     color: #707A7A;
     text-align: center;
@@ -2392,7 +2384,6 @@ tr.shown td.details-control {
     text-align: center;
     font-weight: lighter;
     padding: 1.2em 0em !important;
-    font-size:1.05em !important;
 }
 .all-icons tr,
 .all-icons td i {
@@ -2709,27 +2700,25 @@ input {
 }
 #notifications,
 #messages:active {
-    border: 1px solid #3B97D2 !important;
     background: none !important;
+    border: none !important;
 }
 #messages:hover {
     background: none !important;
-    border: 1px solid #3B97D2 !important;
+    border: none !important;
 }
-#notifications{ border:none !important;}
-
 ::-webkit-scrollbar {
     width: 0.6em;
     z-index: 99999999;
     padding: 3px;
 }
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: inset 0 0 6px rgba(100, 100, 100, 0.5);
     border-radius: 0px;
 }
 ::-webkit-scrollbar-thumb {
     border-radius: 0px;
-    -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: inset 0 0 10px rgba(100, 100, 100, 0.7);
 }
 .right-side-table {
     width: 100%;
@@ -2751,9 +2740,6 @@ input {
 #Close i:hover {
     color: gray;
 }
-.highcharts-credits {
-    display: none;
-}
 .selected-theme {
     color: #F1F3F6;
     font-size: 1.3em;
@@ -2768,14 +2754,9 @@ input {
 .apply-color {
     border-radius: 0 !important;
     margin-top: 0.5em;
-
-
 }
-
-
 #company-name {
     color: #fff;
-    border-bottom: 1px solid #F1F3F6;
 }
 .pointer-hover {
     cursor: pointer;
@@ -3136,12 +3117,7 @@ input[type="email"]#searchTB::-webkit-input-placeholder {
     font-size: 0.9em;
     padding: 1em 0em !important;
 }
-
 @media(max-width:1110px) {
-    .backgroundimg{
-        display: none;
-    }
-
     .primary-border {
         border-left: 20px solid #34495E !important;
     }
@@ -3190,16 +3166,11 @@ input[type="email"]#searchTB::-webkit-input-placeholder {
         border-left: 20px solid #ecf0f1 !important;
     }
 }
-@media(max-width:1400px) {
-    .all-income h2 {font-size:1.5em !important;}
-    .all-income h3 {font-size:1.3em !important;}
-
-    .all-income-invers h2 {font-size:1.5em !important;}
-    .all-income-invers h3 {font-size:1.3em !important;}
-}
-
 @media(max-width:1028px) {
-
+    .code-padding {
+        font-size: 0.5em;
+    }
+    
     .primary-border {
         border-left: 10px solid #34495E !important;
     }
@@ -3552,40 +3523,3 @@ input[type="email"]#searchTB::-webkit-input-placeholder {
         display: none;
     }
 }
-
-@media(max-width:1110px) {
-       .code-padding {
-        font-size: 0.5em;
-    }
-}
-.all-income {
-    text-align: center;
-    color: #626262;
-}
-.all-income h2 {
-    font-weight: lighter;
-}
-.all-income h3 {
-    font-weight: lighter;
-    color: #67b2e4;
-}
-.all-income-invers {
-    text-align: center;
-    color: #fff;
-    background-color: #67b2e4 !important;
-}
-.all-income-invers h2 {
-    font-weight: lighter;
-}
-.all-income-invers h3 {
-    font-weight: lighter;
-    color: #fff;
-}
-.flat-style {
-    float: right;
-    color: #848484;
-    font-weight: lighter;
-}
-
-
- 

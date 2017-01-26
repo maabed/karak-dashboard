@@ -110,6 +110,7 @@ div.bhoechie-tab-menu3 div.list-group > a .glyphicon, div.bhoechie-tab-menu3 div
      border-top-left-radius: 0 !important;
 }
 
-div.bhoechie-tab-menu div.list-group > a{
 
+.statistics .statistics-taps li a{
+padding: 0em 1em 1em 1em !important;
 }

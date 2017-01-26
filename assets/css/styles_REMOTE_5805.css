@@ -1202,6 +1202,7 @@ hr {
 .statistics .statistics-taps li:hover > a {
     color: #3B97D2;
     border-bottom: 4px solid #3B97D2;
+    background-color: #000 !important;
 }
 
 .statistics .statistics-taps li.active > a::after {
@@ -1706,14 +1707,8 @@ hr {
     color: #34495E;
 }
 
-.code-padding {
-    margin: 0.5em;
-}
-
 .tabs-head-title {
     margin-top: 0;
-    font-weight: lighter;
-    color: rgba(0, 0, 0, 0.7);
 }
 
 .nav-pills > li.active > a,
@@ -1830,7 +1825,6 @@ div.bhoechie-tab-menu3 div.list-group > a.active:after {
 
 div.bhoechie-tab-menu2 {
     padding: 0px !important;
-    margin-bottom: 1em;
 }
 
 div.bhoechie-tab-menu2 div.list-group {
@@ -1892,6 +1886,7 @@ div.bhoechie-tab-menu3 div.list-group > a.active:after {
 .list-group-item:first-child {
     border-top-left-radius: 0px !important;
     border-top-right-radius: 0px !important;
+    margin-top: 8px;
 }
 
 .list-group-item:last-child {
@@ -1901,6 +1896,9 @@ div.bhoechie-tab-menu3 div.list-group > a.active:after {
 
 div.bhoechie-tab-content {
     background-color: #ffffff;
+    /* border: 1px solid #eeeeee; */
+    padding-left: 20px;
+    padding-top: 10px;
 }
 
 div.bhoechie-tab div.bhoechie-tab-content:not(.active) {
@@ -1952,7 +1950,6 @@ div.bhoechie-tab2 div.bhoechie-tab-content:not(.active) {
     transition: all .3s ease-in-out;
     padding: 1em;
     font-size: 1.2em;
-    font-weight: lighter;
     color: #3B97D2;
     width: 100%;
     background: #fff;
@@ -3136,7 +3133,34 @@ input[type="email"]#searchTB::-webkit-input-placeholder {
     font-size: 0.9em;
     padding: 1em 0em !important;
 }
-
+.all-income {
+    text-align: center;
+    color: #626262;
+}
+.all-income h2 {
+    font-weight: lighter;
+}
+.all-income h3 {
+    font-weight: lighter;
+    color: #67b2e4;
+}
+.all-income-invers {
+    text-align: center;
+    color: #fff;
+    background-color: #67b2e4 !important;
+}
+.all-income-invers h2 {
+    font-weight: lighter;
+}
+.all-income-invers h3 {
+    font-weight: lighter;
+    color: #fff;
+}
+.flat-style {
+    float: right;
+    color: #848484;
+    font-weight: lighter;
+}
 @media(max-width:1110px) {
     .backgroundimg{
         display: none;
@@ -3199,7 +3223,7 @@ input[type="email"]#searchTB::-webkit-input-placeholder {
 }
 
 @media(max-width:1028px) {
-
+ 
     .primary-border {
         border-left: 10px solid #34495E !important;
     }
@@ -3552,40 +3576,3 @@ input[type="email"]#searchTB::-webkit-input-placeholder {
         display: none;
     }
 }
-
-@media(max-width:1110px) {
-       .code-padding {
-        font-size: 0.5em;
-    }
-}
-.all-income {
-    text-align: center;
-    color: #626262;
-}
-.all-income h2 {
-    font-weight: lighter;
-}
-.all-income h3 {
-    font-weight: lighter;
-    color: #67b2e4;
-}
-.all-income-invers {
-    text-align: center;
-    color: #fff;
-    background-color: #67b2e4 !important;
-}
-.all-income-invers h2 {
-    font-weight: lighter;
-}
-.all-income-invers h3 {
-    font-weight: lighter;
-    color: #fff;
-}
-.flat-style {
-    float: right;
-    color: #848484;
-    font-weight: lighter;
-}
-
-
- 
