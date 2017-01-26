@@ -3136,7 +3136,37 @@ input[type="email"]#searchTB::-webkit-input-placeholder {
     font-size: 0.9em;
     padding: 1em 0em !important;
 }
-
+<<<<<<< HEAD
+=======
+.all-income {
+    text-align: center;
+    color: #626262;
+}
+.all-income h2 {
+    font-weight: lighter;
+}
+.all-income h3 {
+    font-weight: lighter;
+    color: #67b2e4;
+}
+.all-income-invers {
+    text-align: center;
+    color: #fff;
+    background-color: #67b2e4 !important;
+}
+.all-income-invers h2 {
+    font-weight: lighter;
+}
+.all-income-invers h3 {
+    font-weight: lighter;
+    color: #fff;
+}
+.flat-style {
+    float: right;
+    color: #848484;
+    font-weight: lighter;
+}
+>>>>>>> c105f75987e815972bd22f4d3156977e13835205
 @media(max-width:1110px) {
     .backgroundimg{
         display: none;
@@ -3199,7 +3229,14 @@ input[type="email"]#searchTB::-webkit-input-placeholder {
 }
 
 @media(max-width:1028px) {
-
+<<<<<<< HEAD
+    .code-padding {
+        font-size: 0.5em;
+    }
+    
+=======
+ 
+>>>>>>> c105f75987e815972bd22f4d3156977e13835205
     .primary-border {
         border-left: 10px solid #34495E !important;
     }
@@ -3552,40 +3589,3 @@ input[type="email"]#searchTB::-webkit-input-placeholder {
         display: none;
     }
 }
-
-@media(max-width:1110px) {
-       .code-padding {
-        font-size: 0.5em;
-    }
-}
-.all-income {
-    text-align: center;
-    color: #626262;
-}
-.all-income h2 {
-    font-weight: lighter;
-}
-.all-income h3 {
-    font-weight: lighter;
-    color: #67b2e4;
-}
-.all-income-invers {
-    text-align: center;
-    color: #fff;
-    background-color: #67b2e4 !important;
-}
-.all-income-invers h2 {
-    font-weight: lighter;
-}
-.all-income-invers h3 {
-    font-weight: lighter;
-    color: #fff;
-}
-.flat-style {
-    float: right;
-    color: #848484;
-    font-weight: lighter;
-}
-
-
- 
