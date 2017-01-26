@@ -1,5 +1,6 @@
-﻿   <!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,15 +20,12 @@
     <![endif]-->
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script src="assets/js/map.js"></script>
-    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
-    <script src="https://code.highcharts.com/maps/modules/data.js"></script>
-    <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
-    <script src="https://code.highcharts.com/mapdata/custom/world.js"></script>
+    <link rel="stylesheet" href="assets/css/google-map.css">
 </head>
+
 <body>
     <div id="wrapper">
-          <div id="sidebar-wrapper">
+        <div id="sidebar-wrapper">
             <div class="sidebar-brand" id="company-name">Blue Dashboard</div>
             <ul class="sidebar-nav">
                 <li>
@@ -122,7 +120,7 @@
                            Menus
                             </a>
                         </li>
-                            <li class="submenu-li">
+                        <li class="submenu-li">
                             <a href="hover.html">
                            Hover
                             </a>
@@ -247,14 +245,10 @@
             </div>
         </div>
         <!-- Page Content -->
-      
-           
-                <div class="map-layout">
-                     <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d13534.93704230455!2d35.85736250186766!3d31.99521853216941!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2sjo!4v1479553453647" frameborder="0" allowfullscreen></iframe>
-                </div>
-          
-            <!-- /#page-content-wrapper -->
-      
+        <div class="map-layout">
+            <div id="map"></div>
+        </div>
+        <!-- /#page-content-wrapper -->
         <!-- /#wrapper -->
         <div id="Right-Side-Section-Togle">
             <i class="fa fa-pencil-square-o" id="Edit" aria-hidden="true"></i>
@@ -415,13 +409,13 @@
             <div class="single-not-content">
                 <a href="#">
                     <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b>&nbsp;    wants your confirmation on his Leave Request on 12 May 2015</p>
+                    <p><b>Mohammad Meshaal</b>&nbsp; wants your confirmation on his Leave Request on 12 May 2015</p>
                 </a>
             </div>
             <div class="single-not-content">
                 <a href="#">
                     <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b>&nbsp;    wants your confirmation on his Leave Request on 12 May 2015</p>
+                    <p><b>Mohammad Meshaal</b>&nbsp; wants your confirmation on his Leave Request on 12 May 2015</p>
                 </a>
             </div>
             <div class="veiw-all-not">
@@ -434,25 +428,29 @@
             <div class="single-not-content">
                 <a href="#">
                     <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
+                    <p><b>Mohammad Meshaal</b>
+                        <br /> Message subject will display here</p>
                 </a>
             </div>
             <div class="single-not-content">
                 <a href="#">
                     <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
+                    <p><b>Mohammad Meshaal</b>
+                        <br /> Message subject will display here</p>
                 </a>
             </div>
             <div class="single-not-content">
                 <a href="#">
                     <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
+                    <p><b>Mohammad Meshaal</b>
+                        <br /> Message subject will display here</p>
                 </a>
             </div>
             <div class="single-not-content">
                 <a href="#">
                     <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b><br />    Message subject will display here</p>
+                    <p><b>Mohammad Meshaal</b>
+                        <br /> Message subject will display here</p>
                 </a>
             </div>
             <div class="veiw-all-not">
@@ -463,20 +461,17 @@
             <div class="arrow-up user-arrow"></div>
             <a href="#">
                 <div class="user-info-content">
-                    <i class="fa fa-user" aria-hidden="true"></i>
-                    Proﬁle
+                    <i class="fa fa-user" aria-hidden="true"></i> Proﬁle
                 </div>
             </a>
             <a href="#">
                 <div class="user-info-content">
-                    <i class="fa fa-cog" aria-hidden="true"></i>
-                    Settings
+                    <i class="fa fa-cog" aria-hidden="true"></i> Settings
                 </div>
             </a>
             <a href="#">
                 <div class="user-info-content">
-                    <i class="fa fa-info-circle" aria-hidden="true"></i>
-                    Help
+                    <i class="fa fa-info-circle" aria-hidden="true"></i> Help
                 </div>
             </a>
             <a href="#">
@@ -487,20 +482,27 @@
             </a>
         </div>
     </div>
-
     <script src="assets/js/main.js"></script>
     <script src="assets/js/notifications_boxs.js"></script>
-
-        <script src="assets/js/nav_colors_change.js"></script>
-    <link href="assets/css/colorpicker-layout.css" rel="stylesheet" />
-    <link href="assets/css/colorpicker.css" rel="stylesheet" />
+    <script src="assets/js/nav_colors_change.js"></script>
     <script src="assets/js/vendors/colorpicker/colorpicker.js"></script>
-    <script src="assets/js/vendors/colorpicker/eye.js"></script>
-    <script src="assets/js/vendors/colorpicker/layout.js"></script>
-    <script src="assets/js/vendors/colorpicker/utils.js"></script>
-    <script src="assets/js/vendors/colorpicker/utils.js"></script>
     <script src="assets/js/right-side-colors-change.js"></script>
     <script src="assets/js/page-ready-theam.js"></script>
     <link id="default-color-picker" rel="stylesheet" />
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0bxmUytZ20M6YA2DA7auQPOB97kzjlHw&callback=initMap" async defer></script>
+    <script>
+    function initMap() {
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+            center: {
+                lat: -34.397,
+                lng: 150.644
+            },
+            scrollwheel: false,
+            zoom: 8
+        });
+    }
+    </script>
 </body>
+
 </html>
