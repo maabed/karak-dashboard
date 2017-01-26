@@ -21,7 +21,7 @@
 }
 .side-line{
     border-left: 4px solid #67b2e4;
-    padding-left: 5px;
+    padding-left: 10px;
     margin-left: 15px;
 }
 .glyphicon{
@@ -66,3 +66,22 @@
 .list-group-item.info-mid > .glyphicon{
     color: #fff;
 } 
+.bootstrap-switch.bootstrap-switch-wrapper:focus{
+    outline: none;
+}
+.bootstrap-switch.bootstrap-switch-focused{
+    border-color: #fff !important;
+    box-shadow: none !important;
+}
+.bootstrap-switch{
+    border-radius: 0px !important;
+}
+
+.bootstrap-switch .bootstrap-switch-handle-on {
+    border-bottom-left-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+}
+.bootstrap-switch .bootstrap-switch-handle-off {
+    border-bottom-left-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+}

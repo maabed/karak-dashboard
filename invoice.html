@@ -257,8 +257,8 @@
                         <div class="col-contint col-contint-taps">
                             <div class="col-sm-8 invoice-title">
                                 <h1>
-                       <i class="fa fa-credit-card" aria-hidden="true"></i>&nbsp;<b>Invoice</b>
-                   </h1>
+                                    <i class="fa fa-credit-card" aria-hidden="true"></i>&nbsp;<b>Invoice</b>
+                                </h1>
                             </div>
                             <div class="col-sm-4">
                                 <table class="invoice-info">
@@ -349,8 +349,8 @@
                             <br />
                             <div class="col-sm-12">
                                 <h3 class="table-title">Invoice Summary</h3>
-                                <table class="table table-responsive table-striped table-bordered">
-                                    <thead class="table-head invoice-table-head">
+                                <table class="table table-responsive table-bordered">
+                                    <thead class="table-head">
                                         <tr>
                                             <th>Month</th>
                                             <th>Deduction From salary</th>
@@ -389,13 +389,13 @@
                                             <td>1</td>
                                             <td>$2951.00</td>
                                         </tr>
-                                        <tr class="no-background">
+                                        <tr>
                                             <td class="sub-total" colspan="2">
                                             </td>
-                                            <td class="sub-total">
+                                            <td class="sub-total top-sub">
                                                 <b>Subtotal</b>
                                             </td>
-                                            <td>
+                                            <td class="top-sub">
                                                 <b>$9860.00</b>
                                             </td>
                                         </tr>
@@ -420,16 +420,34 @@
                                             </td>
                                         </tr>
                                         <tr class="no-background">
-                                            <td class="sub-total" colspan="3">
-                                            </td>
-                                            <td class="sub-total">
-                                                <button type="button" onclick="printbtn()" class="btn btn-default dashboard-default"><span class="glyphicon glyphicon-print"></span>&nbsp;&nbsp;Save & Print</button>
+                                            <td class="sub-total" colspan="2">
                                             </td>
                                         </tr>
                                     </tbody>
                                 </table>
+                                <div class="row">
+                                    <div class="col-sm-2 col-sm-offset-10">
+                                        <button type="button" onclick="printbtn()" class="btn btn-default button-style outline-icon-btn">
+                                            <span class="glyphicon glyphicon-print "></span>Save & Print
+                                        </button>                                        
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                <div class="container-fixed-lg footer">
+                    <div class="copyright sm-text-center">
+                        <p class="small no-margin pull-left sm-pull-reset">
+                            <span class="hint-text">Copyright © 2017 </span>
+                            <span class="font-montserrat"><b>New Release</b></span>.
+                            <span class="hint-text">All rights reserved. </span>
+                            <span class="sm-block"><a href="#" class="m-l-10 m-r-10">Terms of use</a> | <a href="#" class="m-l-10">Privacy Policy</a></span>
+                        </p>
+                        <p class="small no-margin pull-right sm-pull-reset">
+                            <h6 class="made-by">Made By  <b>New Release</b></h6>
+                        </p>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
                     </div>
                 </div>
                 <!-- /#page-content-wrapper -->
@@ -670,14 +688,7 @@
         <script src="assets/vendors/jquery/jquery-3.1.1.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/main.js"></script>
-        <script src="assets/js/nav_colors_change.js"></script>
-        <link href="assets/css/colorpicker-layout.css" rel="stylesheet" />
-        <link href="assets/css/colorpicker.css" rel="stylesheet" />
         <script src="assets/js/vendors/colorpicker/colorpicker.js"></script>
-        <script src="assets/js/vendors/colorpicker/eye.js"></script>
-        <script src="assets/js/vendors/colorpicker/layout.js"></script>
-        <script src="assets/js/vendors/colorpicker/utils.js"></script>
-        <script src="assets/js/vendors/colorpicker/utils.js"></script>
         <script src="assets/js/right-side-colors-change.js"></script>
         <script src="assets/js/page-ready-theam.js"></script>
         <link id="default-color-picker" rel="stylesheet" />
@@ -687,5 +698,4 @@
         }
         </script>
 </body>
-
 </html>

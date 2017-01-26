@@ -24,12 +24,13 @@
         <!-- Charts -->
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
         <link rel="stylesheet" href="assets/css/forms.css">
+
     </head>
     <body>
         <div id="wrapper">
             <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <div class="sidebar-brand" id="company-name">Blue Dashboard</div>
+       <div id="sidebar-wrapper">
+            <div class="sidebar-brand" id="company-name">Company Name</div>
             <ul class="sidebar-nav">
                 <li>
                     <a href="index.html"><i class="fa fa-tachometer nav-icon" aria-hidden="true"></i>Dashboard</a>
@@ -53,12 +54,12 @@
                     </ul>
                 </li>
                 <li  class="selected">
-                    <a href="charts.html">
+                    <a  href="#">
                         <i class="fa fa-pie-chart  nav-icon" aria-hidden="true"></i> Charts
                     </a>
                 </li>
                 <li>
-                    <a href="inbox.html">
+                    <a href="layouts/inbox.html">
                         <i class="fa fa-envelope nav-icon" aria-hidden="true"></i> Email
                         <span class="label label-primary nav-lbl">2</span>
                     </a>
@@ -110,7 +111,7 @@
                         </li>
                         <li class="submenu-li">
                             <a href="panels.html">
-                           Panels
+                           Panals
                             </a>
                         </li>
                         <li class="submenu-li">
@@ -123,33 +124,28 @@
                            Menus
                             </a>
                         </li>
-                            <li class="submenu-li">
-                            <a href="hover.html">
-                           Hover
-                            </a>
-                        </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="calendar.html">
+                    <a href="layouts/calendar.html">
                         <i class="fa fa-calendar-check-o nav-icon" aria-hidden="true"></i> Calendar
                     </a>
                 </li>
                 <li>
-                    <a href="social.html">
+                    <a href="layouts/social.html">
                         <i class="fa fa-share-alt-square nav-icon" aria-hidden="true"></i> Social
                         <span class="label label-warning nav-lbl">Special</span>
                     </a>
                 </li>
                 <li>
-                    <a class="MainMenue" href="#">
+                    <a class="MainMenue">
                         <i class="fa fa-table nav-icon" aria-hidden="true"></i> Tables
                         <i class="fa fa-angle-left LeftArrow rotate" aria-hidden="true"></i>
                     </a>
                     <ul class="Submenue">
                         <li class="submenu-li">
                             <a href="tables.html">
-                           Basic Table
+                           Basik Table
                             </a>
                         </li>
                         <li class="submenu-li">
@@ -166,12 +162,12 @@
                     </a>
                     <ul class="Submenue">
                         <li class="submenu-li">
-                            <a href="map.html">
+                            <a href="layouts/map.html">
                            Vector Maps
                             </a>
                         </li>
                         <li class="submenu-li">
-                            <a href="google_map.html">
+                            <a href="layouts/google_map.html">
                            Google Maps
                             </a>
                         </li>
@@ -199,7 +195,7 @@
                             </a>
                         </li>
                         <li class="submenu-li">
-                            <a href="login.html">
+                            <a href="layouts/login.html">
                            Login & Registration
                             </a>
                         </li>
@@ -248,34 +244,90 @@
             </div>
         </div>
              <!-- Page Content -->
-            <a href="#" id="PageTitle">Charts</a>
             <div id="page-content-wrapper">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="col-contint body-header">
-                                <h4 class="title"> Charts JS </h4>
+                                <a href="index.html" class="page_title pull-right">Charts</a>
+                                <h4 class="title"> Charts </h4>
                                 <br>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla consequat massa egestas fermentum. Maecenas quis est ac ante hendrerit.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-12 no-padding-bottom">
+                            <h5 class="title form-section no-padding-bottom"> HIGH CHARTS </h5>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="col-contint">
+                                <h5 class="title form-section">Scatter with regression line</h5><br>
+                                <p class="paragraph">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis.
+                                </p><br>
+                                <div id="container4" style="height: 300px"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="col-contint">
+                                <h5 class="title form-section"> Time series, zoomable</h5><br>
+                                <p class="paragraph">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis.
+                                </p><br>
+                                <div id="container5" style="height: 300px"></div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-7">
+                        <div class="col-md-6">
                             <div class="col-contint">
-                                <h5 class="title form-section">Bar chart</h5>
-                                <canvas id="bar"></canvas>
+                                <h5 class="title form-section">Spline with symbols</h5><br>
+                                <p class="paragraph">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis.
+                                </p><br>
+                                <div id="container3" style="height: 300px"></div>
                             </div>
                         </div>
-                        <div class="col-md-5">
+                        <div class="col-md-6">
                             <div class="col-contint">
-                                <h5 class="title form-section">Pie chart</h5>
-                                <p class="paragraph-design">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at dolor a metus malesuada porta. Quisque id
-                                    lorem lectus. Integer scelerisque, libero non mollis accumsan.
-                                </p>
-                                <canvas id="pie"></canvas>
+                                <h5 class="title form-section">Spline updating each second</h5><br>
+                                <p class="paragraph">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis.
+                                </p><br>
+                                <div id="container" style="height: 300px;"></div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="col-contint">
+                                <h5 class="title form-section">Click to add a point</h5><br>
+                                <p class="paragraph">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis.
+                                </p><br>
+                                <p>Click the plot area to add a point. Click a point to remove it.</p>
+                                <div id="container2" style="height: 294px;"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="col-contint">
+                                <h5 class="title form-section">Scatter with regression line</h5><br>
+                                <p class="paragraph">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis.
+                                </p><br>
+                                <div id="container6" style="height: 300px"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-12 no-padding-bottom">
+                            <h5 class="title form-section no-padding-bottom"> CHARTS JS </h5>
                         </div>
                     </div>
                     <div class="row">
@@ -288,50 +340,38 @@
                         <div class="col-md-6">
                             <div class="col-contint">
                                 <h5 class="title form-section">Radar chart</h5>
-                                <canvas id="radar"></canvas>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="col-contint">
-                                <h4 class="title form-section"> Google charts </h4>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="row">
-                        <div class="col-md-7">
-                            <div class="col-contint">
-                                <h5 class="title form-section">Stepped Area Chart</h5>
-                                <div id="chart_div"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-5">
-                            <div class="col-contint">
-                                <h5 class="title form-section">Pie Chart</h5>
-                                <div id="google_pie"></div>
+                                <canvas id="bar"></canvas>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-4">
                             <div class="col-contint">
-                                <h5 class="title form-section">Candlestick Charts</h5>
-                                <div id="candlestick"></div>
+                                <h5 class="title form-section">Polar Area Chart</h5>
+                                <p class="paragraph-design">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing ipsum dolor sit amet elit.
+                                    Aliquam at dolor a metus malesuada porta.
+                                </p>
+                                <canvas id="polar"></canvas>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="col-contint">
-                                <h5 class="title form-section">Line chart</h5>
-                                <div id="google_line"></div>
+                                <h5 class="title form-section">Doughnut chart</h5>
+                                <p class="paragraph-design">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing ipsum dolor sit amet elit.
+                                    Aliquam at dolor a metus malesuada porta.
+                                </p>
+                                <canvas id="doughnut"></canvas>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="col-contint">
-                                <h5 class="title form-section">Scatter chart</h5>
-                                <div id="scatter"></div>
+                            <div class="col-contint fixed">
+                                <h5 class="title form-section">Pie chart</h5>
+                                <p class="paragraph-design">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing ipsum dolor sit amet elit.
+                                    Aliquam at dolor a metus malesuada porta.
+                                <canvas id="pie" width="290" height="150"></canvas>
                             </div>
                         </div>
                     </div>
@@ -572,21 +612,20 @@
                 </a>
             </div>
         </div>
+
         <script src="assets/vendors/jquery/jquery-3.1.1.js"></script>
         <script src="assets/js/vendors/Chart.bundle.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/main.js"></script>
         <script src="assets/js/notifications_boxs.js"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
         <script src="assets/js/charts-init.js"></script>
         
-        <script src="assets/js/nav_colors_change.js"></script>
-    <link href="assets/css/colorpicker-layout.css" rel="stylesheet" />
-    <link href="assets/css/colorpicker.css" rel="stylesheet" />
+        
+
+        
     <script src="assets/js/vendors/colorpicker/colorpicker.js"></script>
-    <script src="assets/js/vendors/colorpicker/eye.js"></script>
-    <script src="assets/js/vendors/colorpicker/layout.js"></script>
-    <script src="assets/js/vendors/colorpicker/utils.js"></script>
-    <script src="assets/js/vendors/colorpicker/utils.js"></script>
     <script src="assets/js/right-side-colors-change.js"></script>
     <script src="assets/js/page-ready-theam.js"></script>
     <link id="default-color-picker" rel="stylesheet" />

@@ -22,7 +22,7 @@
 
         <link href="assets/css/input_style.css" rel="stylesheet" />
         <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
-        <link rel="stylesheet" href="assets/vendors/select-plugin/css/bootstrap-select.css">
+        <link rel="stylesheet" href="assets/vendors/select2/css/select2.min.css">
         <link rel="stylesheet" href="assets/vendors/tag-input/bootstrap-tagsinput.css">
         <link rel="stylesheet" href="assets/vendors/drop-zone/dropzone.css">
         <link rel="stylesheet" type="text/css" href="assets/vendors/datepickers/daterangepicker.css" />
@@ -30,6 +30,8 @@
         <link rel="stylesheet" type="text/css" href="assets/vendors/clockpicker/bootstrap-clockpicker.min.css">
         <link rel="stylesheet" href="assets/vendors/slider/ion.rangeSlider.css">
         <link rel="stylesheet" href="assets/vendors/slider/ion.rangeSlider.skinNice.css">
+        <link rel="stylesheet" href="assets/css/text-editor.css">   
+
     </head>
     <body>
         <div id="wrapper">
@@ -255,7 +257,6 @@
         </div>
 
             <!-- Page Content -->
-            <a href="#" id="PageTitle">Dashboard  /  Forms</a>
             <div id="page-content-wrapper">
 
                 <div class="container-fluid">
@@ -263,9 +264,10 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="col-contint body-header">
+                                <a href="loading.html" class="page_title pull-right">Dashboard  /  Forms</a>  
                                 <h4 class ="title"> Forms </h4>
                                 <br>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla consequat massa egestas fermentum. Maecenas quis est ac ante hendrerit.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
                         </div>
                     </div>
@@ -277,49 +279,52 @@
                                 <form id="form1">
                                     <div class="row group-content">
                                         <div class="form-group col-sm-12 no-padding">
-                                            <label class="form-labels">Full Name*</label>
-                                            <div class="parent">
-                                                <input type="text" name="full_name" placeholder="Enter Full Name" class="form-control">
+                                            <div class="input-field parent">
+                                                <input name="full_name" type="text" class="validate">
+                                                <label for="email">Full Name*</label>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row group-content">
                                         <div class="form-group col-sm-6 no-padding-left">
-                                            <label class="form-labels">Email*</label>
-                                            <div class="parent">
-                                                <input placeholder="Enter Email" name="email" type="text" class="form-control">
+                                            <div class="input-field parent">
+                                                <input name="email" type="email" class="validate">
+                                                <label for="email">Email*</label>
                                             </div>
                                         </div>
                                         <div class="form-group col-sm-6 no-padding-right">
-                                            <label class="form-labels">Phone*</label>
-                                            <div class="parent">
-                                                <input type="text" name="phone" placeholder="Enter Phone Number" class="form-control">
+                                            <div class="input-field parent">
+                                                <input name="phone" type="text" class="validate">
+                                                <label for="phone">Phone*</label>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row group-content">
-                                        <div class="form-group col-sm-6 no-padding-left">
-                                            <label class="form-labels">Country*</label>
-                                            <select class="select-display selectpicker form-control empty col-12">
-                                                <option value="Select">Select</option>
+                                        <div class="form-group col-sm-6 no-padding-left form-select">
+                                            <select class="select-display js-example-basic-single col-12">
+                                                <option class="Selected">Country</option>
+                                                <option>Jordan</option>
+                                                <option>Usa</option>
+                                                <option>UK</option>
+                                                <option>China</option>
                                             </select>
                                         </div>
                                         <div class="form-group col-sm-6 no-padding-right">
-                                            <label class="form-labels">City</label>
-                                            <div class="parent">
-                                                <input type="text" name="city" placeholder="Enter City" class="form-control">
-                                            </div>
+                                            <div class="input-field parent">
+                                                <input name="city" type="text" class="validate">
+                                                <label for="city">City*</label>
+                                            </div>    
                                         </div>
                                     </div>
                                     <div class="row group-content">
                                         <div class="form-group pull-right">
-                                            <button type="button" class="btn btn-default outline-default cancel-send">
-                                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                            <button type="button" class="btn btn-default icon-btn">
+                                                <span class="glyphicon glyphicon-trash "></span>
                                                 Cancel
                                             </button>
-                                            <button type="submit" class="btn btn-success dashboard-success btn-md">
-                                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
-                                                Send
+                                            
+                                            <button type="submit" class="btn btn-success dashboard-success icon-btn">
+                                                <span class="glyphicon glyphicon-envelope"></span> Send
                                             </button>
                                         </div>
                                     </div>
@@ -332,22 +337,20 @@
                                 <h5 class="title form-section">Login Style</h5>
                                 <form id="form2">
                                     <div class="form-section top">
-                                        <span class="form-labels">Username</span>
-                                        <div class="parent">
-                                            <input type="text" name="user_name" class="form-control">
-                                        </div>
+                                        <div class="input-field parent">
+                                            <input name="user_name" type="text" class="validate">
+                                            <label for="username">Username</label>
+                                        </div>    
                                     </div>
                                     <div class="form-section">
-                                        <span class="form-labels">Password</span>
-                                        <div class="parent">
-                                            <input type="password" name="password" class="form-control">
-                                        </div>
+                                        <div class="input-field parent">
+                                            <input  name="password" type="password" class="validate">
+                                            <label for="password">Password</label>
+                                        </div> 
                                     </div>
                                     <div class="form-section pull-right">
-                                        <a href="#" class="forgot-password">Forgot password?</a>
-                                        <button type="submit" class="btn btn-info dashboard-info btn-md margin-bottom ">
-                                            <i class="fa fa-sign-in" aria-hidden="true"></i>
-                                            Login
+                                        <button type="submit" class="btn btn-info icon-btn">
+                                            <span class="glyphicon glyphicon-log-in"></span> login
                                         </button>
                                     </div>
                                 </form>
@@ -358,25 +361,25 @@
                                 <form id="form3">
                                     <div class="row">
                                         <div class="form-section col-sm-6">
-                                            <div class="email-label">
-                                                <div class="parent">
-                                                    <input type="text" name="email" class="form-control email-input" placeholder="Email" />
-                                                </div>
+                                            <div class="input-field parent">
+                                              <i class="material-icons prefix"><i class="fa fa-user" aria-hidden="true"></i>
+</i>
+                                              <input id="user_prefix" name="email" type="text" class="validate">
+                                              <label for="user_prefix">Username</label>
                                             </div>
                                         </div>
                                         <div class="form-section col-sm-6">
-                                            <div class="password-label">
-                                                <div class="parent">
-                                                    <input type="password" name="password" class="form-control password-input" placeholder="Password" />
-                                                </div>
+                                            <div class="input-field parent">
+                                              <i class="material-icons prefix"><i class="fa fa-lock" aria-hidden="true"></i>
+</i>
+                                              <input id="pass_prefix" name="password" type="password" class="validate">
+                                              <label for="password">Password</label>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form-section pull-right">
-                                        <a href="#" class="forgot-password">Forgot password?</a>
-                                        <button type="submit" class="btn btn-info dashboard-info btn-md margin-bottom ">
-                                            <i class="fa fa-sign-in" aria-hidden="true"></i>
-                                            Login
+                                        <button type="submit" class="btn btn-info icon-btn">
+                                            <span class="glyphicon glyphicon-log-in"></span> login
                                         </button>
                                     </div>
                                 </form>
@@ -394,27 +397,27 @@
                             <div class="col-sm-4 first-third">
                                 <div class="col-contint">
                                     <h5 class="title form-section">Ranges</h5>
-                                    <h6>Start without params</h6>
+                                    <label class="label-type">Start without params</label>
                                     <input type="text" id="no-params" name="example_name" value="" />
                                     <br>
-                                    <h6>Set type to double and specify range, also showing grid and adding prefix "$"</h6>
+                                    <label class="label-type">Set type to double and specify range, also showing grid and adding prefix "$"</label>
                                     <input type="text" id="double" name="example_name" value="" />
                                     <br>
-                                    <h6>Using any strings as your values</h6>
+                                    <label class="label-type">Using any strings as your values</label>
                                     <input type="text" id="strings" name="example_name" value="" />
                                 </div>
                             </div>
                             <div class="col-sm-4 second-third">
                                 <div class="col-contint">
                                     <h5 class="title form-section">Slide Toggle</h5>
-                                        <h6>Checked</h6>
+                                        <label class="label-type">Checked</label>
                                         <div class="row">
                                             <div class="col-sm-12 switch toggleswitch">
                                                 <input  id="cmn-toggle-1" class="cmn-toggle cmn-toggle-roundGreen" type="checkbox">
                                                 <label for="cmn-toggle-1"></label>
                                             </div>
                                         </div>
-                                        <h6>Multiple switches </h6>
+                                        <label class="label-type">Multiple switches </label>
                                         <div class="row">
                                             <div class="col-sm-4 switch toggleswitch" >
                                                 <input  id="cmn-toggle-2" class="cmn-toggle cmn-toggle-roundGreen" type="checkbox" checked="">
@@ -431,7 +434,7 @@
                                                 <label for="cmn-toggle-4"></label>
                                             </div>
                                         </div>
-                                        <h6>Colored</h6>
+                                        <label class="label-type">Colored</label>
                                         <div class="row">
                                              <div class="col-sm-3 switch toggleswitch" >
                                                  <input  id="cmn-toggle-5" class="cmn-toggle cmn-toggle-roundBlue" type="checkbox"checked="">
@@ -453,8 +456,7 @@
                                                  <label for="cmn-toggle-8"></label>
                                              </div>
                                         </div>
-                                        <h6>Or the secondary color, which will change the switch shadow and default border:</h6>
-    
+                                        <label class="label-type">Or the secondary color, which will change the switch shadow and default border:</label>
                                         <div class="switch toggleswitch" >
                                             <div class="row">
                                                 <div class="col-sm-12">
@@ -467,30 +469,32 @@
                             </div>
                             <div class="col-sm-4 last-third">
                                 <div class="col-contint">
-                                    <h5 class="title form-section">Slide Toggle</h5>
+                                    <h5 class="title form-section">Dropdown select</h5>
                                     <div class="row">
                                         <div class="third-section col-sm-12">
                                             <label class="label-type">Standard</label>
-                                            <select class="select-display selectpicker empty col-12">
-                                                <option value="Select">Select</option>
-                                                <option value="Select2">Select</option>
-                                                <option value="Select2">Select</option>
+                                            <select class="select-display js-example-basic-single selectpicker empty col-12">
+                                                <option value="Select1">Oklahoma</option>
+                                                <option value="Select2">New york</option>
+                                                <option value="Select3">California</option>
+                                                <option value="Select4">Texas</option>
+                                                <option value="Select4">Florida</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="third-section col-sm-12">
                                             <label class="label-type">Select boxes with optgroups</label>
-                                            <select class="select-display selectpicker empty col-12">
-                                                <optgroup label="First group">
-                                                    <option value="Select">Select</option>
-                                                    <option value="Select2">Selec</option>
-                                                    <option value="Select2">Select</option>
+                                            <select class="select-display js-example-basic-single selectpicker empty col-12">
+                                                <optgroup class="optgroup" label="First group">
+                                                    <option value="Select">Football</option>
+                                                    <option value="Select2">Basketball</option>
+                                                    <option value="Select2">Baseball</option>
                                                 </optgroup>
-                                                <optgroup label="Second Group">
-                                                    <option value="Select">Select</option>
-                                                    <option value="Select2">Select</option>
-                                                    <option value="Select2">Select</option>
+                                                <optgroup class="optgroup" label="Second Group">
+                                                    <option value="Select">Swimming</option>
+                                                    <option value="Select2">Formula 1</option>
+                                                    <option value="Select2">Running</option>
                                                 </optgroup>
                                             </select>
                                         </div>
@@ -498,31 +502,30 @@
                                     <div class="row">
                                         <div class="third-section col-sm-12">
                                             <label class="label-type">Multiple select boxes</label>
-                                            <select class="select-display selectpicker empty col-12" multiple>
-                                                <option value="Select1">Select</option>
-                                                <option value="Select2">Select</option>
-                                                <option value="Select3">Select</option>
-
+                                            <select class="js-example-basic-multiple" multiple="multiple">
+                                                <option value="AL">Alabama</option>
+                                                ...
+                                                <option value="WY">Wyoming</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="third-section col-sm-12">
                                             <label class="label-type">Live search</label>
-                                            <select class="select-display selectpicker empty col-12" data-live-search="true">
-                                                <option value="Select">Select</option>
-                                                <option value="Select">Select</option>
-                                                <option value="Select">Select</option>
+                                            <select class="js-data-example-ajax">
+                                                <option value="3620194" selected="selected">Select a value.</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="third-section col-sm-12">
                                             <label class="label-type">Key words</label>
-                                            <select class="select-display selectpicker empty col-12"  data-live-search="true">
-                                                <option value="Select" data-tokens="first option">Select</option>
-                                                <option value="Select" data-tokens="second option">Select</option>
-                                                <option value="Select" data-tokens="third option">Select</option>
+                                            <select class="select-display js-example-templating selectpicker empty col-12">
+                                                <option value="jordan">Jordan</option>
+                                                <option value="usa">USA</option>
+                                                <option value="iraq">Iraq</option>
+                                                <option value="uk">UK</option>
+                                                <option value="lebanon">Lebanon</option>
                                             </select>
                                         </div>
                                     </div>
@@ -625,8 +628,23 @@
                     <div class="row ">
                         <div class="col-md-12 date-control">
                             <div class="col-contint">
-                                <h5 class ="title form-section">Date controls</h5>
+                                <h5 class ="title form-section">Date Controls</h5>
                                 <div class="row">
+                                       <div class="col-sm-5">
+                                            <div class="third-section">
+                                                <h5 class="mediumtitle">Range Date Picker</h5>
+                                                <p class="pargraph-design picker-desc">
+                                        Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et                                                     </p>
+                                                <input type="text" name="daterange" class="form-control simple" value="01/01/2015 1:30 PM - 01/01/2015 2:00 PM" />
+                                            </div>
+                                            <div class="third-section">
+                                                 <h6>Predefined Ranges</h6>
+                                                <div id="reportrange" class="simple">
+                                                    <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
+                                                    <span></span> <b class="caret"></b>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="col-sm-4">
                                             <div class="third-section">
                                                 <h5 class="mediumtitle">Simple Date Picker</h5>
@@ -644,22 +662,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-sm-4">
-                                            <div class="third-section">
-                                                <h5 class="mediumtitle">Range Date Picker</h5>
-                                                <p class="pargraph-design picker-desc">
-                                        Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et                                                     </p>
-                                                <input type="text" name="daterange" class="form-control simple" value="01/01/2015 1:30 PM - 01/01/2015 2:00 PM" />
-                                            </div>
-                                            <div class="third-section">
-                                                 <h6>Predefined Ranges</h6>
-                                                <div id="reportrange" class="simple">
-                                                    <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
-                                                    <span></span> <b class="caret"></b>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
+                                        <div class="col-sm-3">
                                             <div class="third-section">
                                                 <h5 class="mediumtitle">Advanced Datepicker</h5>
                                                 <div class="datepicker-here simple" data-language='en'></div>
@@ -733,6 +736,20 @@
 
                     <!-- /End of text editor -->
                     <!-- End of Tags & drag N'drop row-->
+                <div class="container-fixed-lg footer">
+                    <div class="copyright sm-text-center">
+                        <p class="small no-margin pull-left sm-pull-reset">
+                            <span class="hint-text">Copyright © 2017 </span>
+                            <span class="font-montserrat"><b>New Release</b></span>.
+                            <span class="hint-text">All rights reserved. </span>
+                            <span class="sm-block"><a href="#" class="m-l-10 m-r-10">Terms of use</a> | <a href="#" class="m-l-10">Privacy Policy</a></span>
+                        </p>
+                        <p class="small no-margin pull-right sm-pull-reset">
+                            <h6 class="made-by">Made By  <b>New Release</b></h6>
+                        </p>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
                 </div>
             </div>
             <!-- /#wrapper -->
@@ -970,7 +987,6 @@
         </div>
         
         <!-- original page scripts -->
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <script src="assets/vendors/jquery/jquery-3.1.1.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
@@ -978,7 +994,7 @@
         <script src="assets/js/notifications_boxs.js"></script>
         
         <!-- dropdown scripts -->
-        <script src="assets/vendors/select-plugin/js/bootstrap-select.min.js"></script>
+        <script src="assets/vendors/select2/js/select2.min.js"></script>
         
         <!-- tags scripts -->
         <script src="assets/vendors/tag-input/bootstrap-tagsinput.js"></script>
@@ -1002,21 +1018,15 @@
         
         <!-- no ui slider -->
         <script src="assets/vendors/slider/ion.rangeSlider.min.js"></script>
-        <script src='assets/js/forms.js'></script>
         
-        <script src="assets/js/nav_colors_change.js"></script>
-        <link href="assets/css/colorpicker-layout.css" rel="stylesheet" />
-        <link href="assets/css/colorpicker.css" rel="stylesheet" />
         <script src="assets/js/vendors/colorpicker/colorpicker.js"></script>
-        <script src="assets/js/vendors/colorpicker/eye.js"></script>
-        <script src="assets/js/vendors/colorpicker/layout.js"></script>
-        <script src="assets/js/vendors/colorpicker/utils.js"></script>
-        <script src="assets/js/vendors/colorpicker/utils.js"></script>
         <script src="assets/js/right-side-colors-change.js"></script>
         <script src="assets/js/page-ready-theam.js"></script>
         <link id="default-color-picker" rel="stylesheet" />
-    <script src="assets/js/vendors/jquery.validate.js"></script>
+    
+        <script src='assets/js/forms.js'></script>
+        <script src="assets/js/vendors/jquery.validate.js"></script>
+        <script src="assets/js/vendors/jquery.validate.js"></script>
         <script src="assets/js/validation.js"></script>
-
     </body>
 </html>

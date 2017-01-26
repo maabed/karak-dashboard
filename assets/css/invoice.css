@@ -37,3 +37,33 @@
 .helper-color{
     color:#ccc;
 }
+.invoice-info tr td{
+    padding: 0px;
+}
+.table-head-info tr td{
+    padding: 0px;
+}
+.table-bordered > tbody > tr > td, .table-bordered > tbody > tr, .table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr, .table-bordered > thead > tr > td, .table-bordered > thead > tr{
+    border: none;
+}
+.table-bordered{
+    border:none;
+}
+th{
+    color: #333;
+    font-size: 15px;
+    border: none !important;
+    border-bottom: 1px solid #E4E5E7 !important;
+}
+.table-title{
+    margin-top: 35px;
+}
+.sub-total > button {
+    margin-left: 58%;
+}
+.top-sub{
+    border-top: 1px solid #E4E5E7 !important;
+}
+.custom-margin-left{
+    margin-left: 79%;
+}

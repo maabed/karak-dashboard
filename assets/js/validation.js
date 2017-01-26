@@ -7,7 +7,10 @@ $.validator.setDefaults( {
 		$( document ).ready( function () {
 			$( "#form1" ).validate( {
 				rules: {
-					full_name: "required",
+					full_name: {
+						required: true,
+						minlength: 2
+					},
                     email: {
 						required: true,
 						email: true
@@ -26,7 +29,7 @@ $.validator.setDefaults( {
 					email: "Please enter your email",
 					phone: {
 						required: "Please enter a phone number",
-						minlength: "Your username must consist of at least 10 digits"
+						minlength: "Your phone number must consist of at least 10 digits"
 					},
 					city: {
 						required: "Please provide a city",
