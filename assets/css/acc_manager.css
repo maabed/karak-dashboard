@@ -333,3 +333,7 @@ table.dataTable thead .sorting_asc {
 .static-width{
 	width :30%;
 }
+
+@media print {
+.hide-on-print {display: none;}
+}
