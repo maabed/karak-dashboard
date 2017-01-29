@@ -176,5 +176,10 @@ fieldset{
     display: inline-block;
     margin-top: 50px;
 }
-
-
+.select2-container--default .select2-results>.select2-results__options{
+    overflow-y: scroll !important;
+    max-height: 200px !important;
+}
+.custom-top{
+    margin-top: 12px !important;
+}

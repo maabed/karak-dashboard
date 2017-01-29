@@ -538,24 +538,19 @@ canvas {
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;*/
     background: #2d3446;
-    width: 250px;
     float: left;
     padding-left: 47px;
     height: 100vh;
     overflow: scroll;
     overflow: hidden;
     border-radius: 0 !important;
-    left: 250px;
-    position: fixed;
 }
 
 .split-view {
     float: right;
     height: 100vh;
     background-color: #fff;
-    position: fixed;
     padding: 0 !important;
-    left: 500px;
     border-radius: 0px !important;
     overflow: scroll;
 }

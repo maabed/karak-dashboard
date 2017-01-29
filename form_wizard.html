@@ -16,12 +16,15 @@
     <link href="assets/css/styles.css" rel="stylesheet" />
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
     <link href="assets/css/prettify.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/wizard.css" />
     <link rel="stylesheet" href="assets/vendors/sweet-alert/sweetalert.css">
     <link rel="stylesheet" href="assets/vendors/select-plugin/css/bootstrap-select.css">
     <link rel="stylesheet" type="text/css" href="assets/vendors/datepickers/daterangepicker.css" />
     <link rel="stylesheet" type="text/css" href="assets/vendors/datepickers/datepicker.min.css">
-    <link rel="stylesheet" href="forms.html" />
+    <link rel="stylesheet" href="assets/vendors/select2/css/select2.min.css">
+    <link rel="stylesheet" href="assets/css/forms.css" />
+    <link rel="stylesheet" href="assets/css/wizard.css" />
+    <link rel="stylesheet" type="text/css" href="assets/vendors/datepickers/daterangepicker.css" />
+    <link rel="stylesheet" type="text/css" href="assets/vendors/datepickers/datepicker.min.css">
 </head>
 
 <body>
@@ -303,8 +306,8 @@
                                             
                                             <div class="col-sm-6">
                                                 <div class="col-sm-12">
-                                                    <div class="form-group col-val">
-                                                        <select class="select-display text-drop form-control required empty" id="ddl" name="country">
+                                                    <div class="form-group col-val custom-top">
+                                                        <select class="select-display js-example-basic-single text-drop form-control required empty" id="ddl" name="country">
                                                             <option value="">Please select your country!</option>
                                                             <option value="AF">Afghanistan</option>
                                                             <option value="AX">Åland Islands</option>
@@ -636,7 +639,7 @@
                                             <div class="col-sm-6">
                                                 <div class="col-sm-12">
                                                     <div id="date-valid" class="form-group col-val">
-        <input placeholder="MM" type="text" name="date" class="form-control" id="date" name="date" value="" required/>
+                                                        <input placeholder="MM" type="text" name="date" class="form-control" id="date" name="date" value="" required/>
 
                                                     </div>
                                                 </div>
@@ -1030,6 +1033,17 @@
     <script src="assets/vendors/sweet-alert/sweetalert.min.js"></script>
     <script src="assets/vendors/select-plugin/js/bootstrap-select.min.js"></script>
     <script src="assets/js/form-wizard-validation.js"></script>
+    <script src="assets/vendors/select2/js/select2.min.js"></script>
+    
+    <script type="text/javascript" src="assets/vendors/datepickers/daterangepicker.js"></script>
+    <script type="text/javascript" src="assets/vendors/datepickers/datepicker.min.js"></script>
+    <script type="text/javascript" src="assets/vendors/datepickers/datepicker.en.js"></script>
+    
+    <script type="text/javascript">
+$(document).ready(function() {
+  $(".js-example-basic-single").select2();
+});
+</script>
 </body>
 
 </html>
