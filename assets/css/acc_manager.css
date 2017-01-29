@@ -366,3 +366,19 @@ table.dataTable thead .sorting_asc {
     color: #848484;
     font-weight: lighter;
 }
+.green-trans{
+    color: #62d995;
+}
+.red-trans{
+    color: #ed796d;
+}
+.transaction-drop{
+    margin-bottom: 0px !important;
+    margin-top: 19px;
+}
+.btn.dropdown-toggle.btn-default:not(.btn-sm), .select2{
+    border-bottom: 1px solid rgba(0,0,0,0.07) !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+    font-weight: 200 !important;
+}
