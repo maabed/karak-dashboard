@@ -4,7 +4,9 @@ $(function () {
 
         // Initiate the chart
         $('#container').highcharts('Map', {
-
+            chart: {
+                margin: [0, 0, 130, 25],
+            },
             title: {
                 text: ''
             },
@@ -32,7 +34,13 @@ $(function () {
                 max: 1000,
                 type: 'logarithmic'
             },
-
+            exporting: {
+                buttons: [
+                    {
+                        symbol: '',
+                    }
+                ]
+            },
             series: [{
                 data: data,
                 mapData: Highcharts.maps['custom/world'],

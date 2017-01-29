@@ -18,6 +18,9 @@
     <!--Calender-->
     <link href="assets/vendors/calender/fullcalendar.css" rel="stylesheet" />
     <link href="assets/vendors/calender/calender_theme.css" rel="stylesheet" />
+    <link href="assets/vendors/calender/calender_theme.css" rel="stylesheet" />
+    <link href='assets/vendors/calender/fullcalendar.css' rel='stylesheet' />
+    <link href="assets/vendors/calender/fullcalendar.print.css" rel='stylesheet' media='print' />
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/vendors/animatecss/animate.min.css" />
 </head>
@@ -402,6 +405,55 @@
                             <div id='calendar' class="calender-layout"></div>
                         </div>
                     </div>
+                         <div class="modal right fade" id="add-event" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content add-event-modal">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel2">
+                         From: <label id="apptStartTime"></label><br>
+                                  To:  <label id="apptEndTime"></label>
+
+                                  <!-- hidden Items-->
+                                 <label id="apptStartpost"></label><br>
+                                  <label id="apptEndpost"></label>
+                                  <!-- end hidden items -->
+                                    </h4>
+                    </div>
+                    <div class="modal-body">
+                        <form id="createAppointmentForm" class="form-horizontal">
+                            <div class="control-group">
+                                <div class="controls">
+                                    <div class="input-field parent">
+                                        <input name="patientName" id="patientName" type="text" class="validate">
+                                        <label for="name"><i class="fa fa-calendar-o" aria-hidden="true"></i>&nbsp;Event Name</label>
+                                    </div>
+                                    <div class="input-field parent">
+                                        <input id="location" name="Location" type="text" class="validate">
+                                        <label for="Location"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;Location</label>
+                                    </div>
+                                    <div class="input-field parent">
+                                        <input name="Notes" id="notes" type="text" class="validate">
+                                        <label for="Notes"><i class="fa fa-sticky-note" aria-hidden="true"></i>&nbsp;Notes</label>
+                                    </div>
+                                    <select id="eventclassName" style="width:100%" class="select-display selectpicker form-control empty js-example-templating ">
+                                        <option value="default">Default Color</option>
+                                        <option value="worning">Warning</option>
+                                        <option value="info">Info</option>
+                                        <option value="success">Success</option>
+                                        <option value="important">Important</option>
+                                    </select>
+                                    <label id="apptAllDay"></label>
+                                </div>
+                            </div>
+                        </form>
+                        <button type="submit" id="submitButton" class="btn btn-info icon-btn btn-block">
+                            <span class="fa fa-plus"></span> Add Event</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
                     <div class="col-md-6 animated fadeInUp">
                         <div class="col-contint col-contint-taps">
                             <h5 class="title">Worldwide Annual Sales</h5>
@@ -797,13 +849,16 @@
         </div>
     </div>
     <script src="assets/js/vendors/jquery-1.12.3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/vendors/Chart.bundle.js"></script>
     <script src="assets/js/notifications_boxs.js"></script>
     <script src="assets/js/taps.js"></script>
-    <script src="assets/vendors/calender/jquery-ui.custom.min.js"></script>
-    <script src="assets/vendors/calender/fullcalendar.js"></script>
+    
+    <script src="assets/vendors/calender/lib/moment.min.js"></script>
+    <script src="assets/vendors/calender/fullcalendar.min.js"></script>
+    <script src="assets/vendors/calender/calender.js"></script>
     <!--Map-->
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="assets/js/map.js"></script>
@@ -819,158 +874,10 @@
     <script src="assets/js/right-side-colors-change.js"></script>
     <script src="assets/js/page-ready-theam.js"></script>
     <link id="default-color-picker" rel="stylesheet" />
-    <script>
-    $(function() {
-        $(document).ready(function() {
-            Highcharts.setOptions({
-                global: {
-                    useUTC: false
-                }
-            });
-
-            Highcharts.chart('containerspline', {
-                chart: {
-                    type: 'spline',
-                    animation: Highcharts.svg, // don't animate in old IE
-                    marginRight: 10,
-                    margin: [20, 20, 20, 35],
-                    events: {
-                        load: function() {
-
-                            // set up the updating of the chart each second
-                            var series = this.series[0];
-                            setInterval(function() {
-                                var x = (new Date()).getTime(), // current time
-                                    y = Math.random();
-                                series.addPoint([x, y], true, true);
-                            }, 1000);
-                        }
-                    }
-                },
-                title: {
-                    text: ''
-                },
-                xAxis: {
-                    type: 'datetime',
-                    tickPixelInterval: 150
-                },
-                yAxis: {
-                    title: {
-                        text: 'Value'
-                    },
-                    plotLines: [{
-                        value: 0,
-                        width: 1,
-                        color: '#808080'
-                    }]
-                },
-                tooltip: {
-                    formatter: function() {
-                        return '<b>' + this.series.name + '</b><br/>' +
-                            Highcharts.dateFormat('%Y-%m-%d %H:%M:%S', this.x) + '<br/>' +
-                            Highcharts.numberFormat(this.y, 2);
-                    }
-                },
-                legend: {
-                    enabled: false
-                },
-                exporting: {
-                    enabled: false
-                },
-                series: [{
-                    name: 'Random data',
-                    data: (function() {
-                        // generate an array of random data
-                        var data = [],
-                            time = (new Date()).getTime(),
-                            i;
-
-                        for (i = -19; i <= 0; i += 1) {
-                            data.push({
-                                x: time + i * 1000,
-                                y: Math.random()
-                            });
-                        }
-                        return data;
-                    }())
-                }]
-            });
-        });
-    });
-
-
-
-
-
-
-    $(function() {
-        $.getJSON('https://www.highcharts.com/samples/data/jsonp.php?filename=usdeur.json&callback=?', function(data) {
-
-            Highcharts.chart('containerexchange', {
-                chart: {
-                    zoomType: 'x',
-                    margin: [10, 0, 20, 35],
-                    height: 150,
-                },
-                title: {
-                    text: ''
-                },
-                subtitle: {
-                    text: document.ontouchstart === undefined ?
-                        '' : 'Pinch the chart to zoom in'
-                },
-                xAxis: {
-                    type: 'datetime'
-                },
-                yAxis: {
-                    title: {
-                        text: 'Exchange rate'
-                    }
-                },
-                legend: {
-                    enabled: false
-                },
-                plotOptions: {
-                    area: {
-                        fillColor: {
-                            linearGradient: {
-                                x1: 0,
-                                y1: 0,
-                                x2: 0,
-                                y2: 1
-                            },
-                            stops: [
-                                [0, Highcharts.getOptions().colors[0]],
-                                [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
-                            ]
-                        },
-                        marker: {
-                            radius: 2
-                        },
-                        lineWidth: 1,
-                        states: {
-                            hover: {
-                                lineWidth: 1
-                            }
-                        },
-                        threshold: null
-                    }
-                },
-                exporting: {
-                    buttons: [{
-                        symbol: '',
-                    }]
-                },
-
-                series: [{
-                    type: 'area',
-                    name: 'USD to EUR',
-                    data: data
-                }]
-            });
-        });
-    });
-    </script>
+    <link href="assets/vendors/Select2/css/cdncss.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+    <script src="assets/vendors/Select2/js/select2.min.js"></script>
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>
