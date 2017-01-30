@@ -165,12 +165,190 @@
 .tech-logos img {
     margin: 0 auto;
 }
-.our-team img{
+
+.our-team .text-box-style {
+    border-left: 4px solid #67b2e4;
+    padding-left: 1em;
+}
+
+.our-team img {
     width: 100%;
 }
-.team-box{
-    background-color: #f2f2f2;
+
+.team-box {
+    padding-left: 2em;
+    height: 100%;
 }
+
+.team-box h3 {
+    color: #515151;
+    font-weight: lighter;
+}
+
+.team-box h1 {
+    text-align: left;
+    font-weight: 200;
+    color: #34495e;
+    margin-top: 3em;
+}
+
+.team-box p {
+    text-align: left;
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 200;
+}
+
+.no-left-right-padding {
+    padding-left: 0em !important;
+    padding-right: 0em !important;
+}
+
+.single-team-row {
+    height: 20em;
+    overflow: hidden;
+}
+
+.description-box {
+    background-color: #67b2e4;
+    color: #fff;
+    height: 100%;
+}
+
+.description-box h2 {
+    font-weight: lighter;
+    font-size: 4em;
+}
+
+.description-box p {
+    font-weight: lighter;
+    font-size: 2em;
+}
+
+.arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #67b2e4;
+    position: absolute;
+    z-index: 99999 !important;
+    right: -1.3em;
+    top: 45%;
+}
+
+.arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid #67b2e4;
+    position: absolute;
+    z-index: 99999 !important;
+    left: -1.3em;
+    top: 45%;
+}
+
+button {
+    border-radius: 0 !important;
+    font-weight: lighter !important;
+    outline: none !important;
+}
+
+.btn-info,
+.btn-default,
+.dashboard-default,
+.dashboard-primary,
+.dashboard-success,
+.dashboard-info,
+.dashboard-warning,
+.dashboard-danger,
+.outline-default,
+.outline-primary,
+.outline-success,
+.outline-info,
+.outline-warning,
+.outline-danger {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.btn-info {
+    background-color: #67b2e4;
+    border-color: #67b2e4;
+}
+
+.btn-info.focus,
+.btn-info:focus {
+    background-color: #67b2e4;
+    border-color: #67b2e4;
+    color: #fff;
+}
+
+.btn-info:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+.btn-default {
+    color: #333 !important;
+}
+
+.btn-success.focus,
+.btn-success:focus {
+    background-color: #62d995;
+    border-color: #62d995;
+    color: #fff;
+}
+
+.btn-success:hover {
+    background-color: #27ae60 !important;
+    border-color: #27ae60 !important;
+}
+
+.table > tbody > tr > td,
+.table > tbody > tr > th {
+    border-bottom: 0 !important;
+}
+
+.users-table-format,
+.basic-th {
+    text-align: center;
+}
+
+.table > tbody > tr > td {
+    font-weight: 200;
+}
+
+.basic-th h4 {
+    font-weight: 200;
+}
+.owl-theme .owl-nav [class*=owl-]{
+    display: none;
+}
+.table > thead > tr .side-border {
+    border-bottom-color: #67b2e4 !important;
+    border-bottom-width: 3px !important;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+footer {
+    background-color: #67b2e4;
+    width: 100%;
+    padding: 0.7em 0em;
+    padding-bottom: 1.1
+    em;
+    text-align:center;
+    color: #fff;
+    font-weight: 200;
+    font-size: 12px;
+}
+
 @media screen and (max-width: 1711px) {
     .homepage-hero-module {
         height: 60em !important;
@@ -183,9 +361,17 @@
     }
 }
 
+@media screen and (max-width: 1480px) {}
+
 @media screen and (max-width: 1404px) {
     .homepage-hero-module {
         height: 50em !important;
+    }
+    .description-box p {
+        font-size: 2em;
+    }
+    .description-box h2 {
+        font-size: 3.2em;
     }
 }
 
@@ -195,9 +381,27 @@
     }
 }
 
+@media screen and (max-width: 1194px) {
+    .single-team-row {
+        height: 16em;
+    }
+}
+
 @media screen and (max-width: 1128px) {
     .homepage-hero-module {
         height: 40em !important;
+    }
+    .description-box p {
+        font-size: 1.3em;
+    }
+    .description-box h2 {
+        font-size: 2.1em;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .single-team-row {
+        height: 14em;
     }
 }
 
@@ -207,7 +411,6 @@
     }
     .tech-logos img {
         margin: 0 auto;
-        padding: 1em 0em;
     }
     .showcase .logo {
         margin: 0 auto;
@@ -215,5 +418,8 @@
     }
     .showcase h1 {
         margin-top: 1em !important;
+    }
+    .single-team-row {
+        height: auto !important;
     }
 }
