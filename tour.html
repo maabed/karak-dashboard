@@ -30,6 +30,8 @@
     <link href="assets/vendors/calender/calender_theme.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/tour.css">
+    <link rel="stylesheet" href="assets/vendors/bootstrap-tour/bootstrap-tour.min.css">
+
 </head>
 <body>
     <div id="wrapper">
@@ -569,7 +571,8 @@
                         </p>
                         <div class="clearfix"></div>
                     </div>
-                </div>            </div>
+                </div>
+        </div>
             <!-- /#page-content-wrapper -->
         </div>
         <!-- /#wrapper -->
@@ -836,6 +839,40 @@
     <link id="default-color-picker" rel="stylesheet" />
     
     <script src="assets/js/tour.js"></script>
+    
+    <script>
+
+$(document).ready(function(){
+var tour = new Tour({
+  backdrop: true,
+  steps: [
+  {
+    element: "#transaction-tour",
+    title: "Title of my step",
+    content: "Content of my step",
+    backdrop:true,
+  },
+  {
+    element: "#calender-tour",
+    title: "Title of my step",
+    content: "Content of my step",
+    backdrop:true,
+  },
+  {
+    element: "#tour-img",
+    title: "Title of my step",
+    content: "Content of my step"
+  },
+      
+]});
+
+// Initialize the tour
+tour.init();
+
+// Start the tour
+tour.start();      
+            });
+    </script>
 
 </body>
 </html>

@@ -183,3 +183,8 @@ fieldset{
 .custom-top{
     margin-top: 12px !important;
 }
+#submit-wizard{
+    position: absolute;
+    right: 25px;
+    z-index: 99999999999999;
+}

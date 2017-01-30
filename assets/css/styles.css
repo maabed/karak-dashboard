@@ -3595,6 +3595,23 @@ input[type="email"]#searchTB::-webkit-input-placeholder {
     color: #848484;
     font-weight: lighter;
 }
-
+.selected > .Submenue > li > .inner-selected{
+    color: #111 !important;
+    margin-left: 50px !important;
+}
+.selected > .Submenue > li > .inner-selected:before{
+    content: "\f105";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #000;
+    font-size: 15px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 1px;
+    left: 30px;
+}
 
  

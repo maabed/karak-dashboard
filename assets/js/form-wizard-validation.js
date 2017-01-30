@@ -300,8 +300,6 @@
            });
        }, 100);		
    });
-$('select').selectpicker();
-
 
 $(function() {
     $('input[name="date"]').daterangepicker({

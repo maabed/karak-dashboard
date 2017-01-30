@@ -47,8 +47,8 @@
                             Form Elements
                             </a>
                         </li>
-                        <li class="submenu-li">
-                            <a href="form_wizard.html">
+                        <li class="submenu-li inner-selected">
+                            <a href="form_wizard.html" class="inner-selected">
                            Form Wizard
                             </a>
                         </li>
@@ -1040,6 +1040,14 @@
     <script type="text/javascript" src="assets/vendors/datepickers/datepicker.en.js"></script>
     
     <script type="text/javascript">
+        
+    $(function() {
+    $('input[name="birthdate"]').daterangepicker({
+        singleDatePicker: true,
+        showDropdowns: false
+    });
+});    
+        
 $(document).ready(function() {
   $(".js-example-basic-single").select2();
 });
