@@ -22,6 +22,12 @@
     font-weight: lighter;
     padding-top: 6px;
 }
+.label{
+    border-radius: 0px;
+}
+.static-hover-cont{
+    height: 195px;
+}
 #alert-select{
     color: #34495E !important;
     border: 1px solid #F1F3F6;
@@ -80,4 +86,26 @@
 }
 .toast-info{
     background-color: #3498db;
+}
+.preview {
+    color: #888888;
+    position: relative;
+    top: 24px;
+    left: 89%;
+    border: 1px solid #E4E5E7;
+    background-color: #fff;
+    padding: 0.2em;
+    z-index: 99;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.page_title {
+    font-weight: lighter;
+    color: #6a6c6f;
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 50px;
 }

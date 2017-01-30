@@ -48,7 +48,7 @@ $(document).ready(function () {
             }
             toastr["success"]("Top Right!")
     });
-    $("#img-right").click(function (event) {
+    $("#bottom-right").click(function (event) {
         event.stopPropagation();
         toastr.remove();
             toastr.options = {
@@ -64,7 +64,7 @@ $(document).ready(function () {
         });
     
     
-    $("#img-left").click(function (event) {
+    $("#bottom-left").click(function (event) {
         event.stopPropagation();
         toastr.remove();
             toastr.options = {
@@ -112,7 +112,7 @@ $(document).ready(function () {
         });
     
     
-    $("#img-full").click(function (event) {
+    $("#bottom-full").click(function (event) {
         event.stopPropagation();
         toastr.remove();
             toastr.options = {
@@ -144,7 +144,7 @@ $(document).ready(function () {
         });
     
     
-    $("#img-center").click(function (event) {
+    $("#bottom-center").click(function (event) {
         event.stopPropagation();
         toastr.remove();
             toastr.options = {
@@ -264,79 +264,79 @@ $(document).ready(function () {
     //////////////////////////////////////////////////////////////
     
     
-    $('.top-left').mouseenter(function(){
-        $('#view-left').fadeIn(50);
-        $('#left').css('opacity','0.5');
-    });
-    $('.top-left').mouseleave(function(){
-        $('#view-left').fadeOut(50);
-        $('#left').css('opacity','1');
-    });
-    
-    $('.top-right').mouseenter(function(){
-        $('#view-right').fadeIn(50);
-        $('#right').css('opacity','0.5');
-    });
-    $('.top-right').mouseleave(function(){
-        $('#view-right').fadeOut(50);
-        $('#right').css('opacity','1');
-    });
-    
-    $('.top-center').mouseenter(function(){
-        $('#view-center').fadeIn(50);
-        $('#center').css('opacity','0.5');
-    });
-    $('.top-center').mouseleave(function(){
-        $('#view-center').fadeOut(50);
-        $('#center').css('opacity','1');
-    });
-    
-    $('.top-full').mouseenter(function(){
-        $('#view-full').fadeIn(50);
-        $('#full').css('opacity','0.5');
-    });
-    $('.top-full').mouseleave(function(){
-        $('#view-full').fadeOut(50);
-        $('#full').css('opacity','1');
-    });
-    
+//    $('.top-left').mouseenter(function(){
+//        $('#view-left').fadeIn(50);
+//        $('#left').css('opacity','0.5');
+//    });
+//    $('.top-left').mouseleave(function(){
+//        $('#view-left').fadeOut(50);
+//        $('#left').css('opacity','1');
+//    });
+//    
+//    $('.top-right').mouseenter(function(){
+//        $('#view-right').fadeIn(50);
+//        $('#right').css('opacity','0.5');
+//    });
+//    $('.top-right').mouseleave(function(){
+//        $('#view-right').fadeOut(50);
+//        $('#right').css('opacity','1');
+//    });
+//    
+//    $('.top-center').mouseenter(function(){
+//        $('#view-center').fadeIn(50);
+//        $('#center').css('opacity','0.5');
+//    });
+//    $('.top-center').mouseleave(function(){
+//        $('#view-center').fadeOut(50);
+//        $('#center').css('opacity','1');
+//    });
+//    
+//    $('.top-full').mouseenter(function(){
+//        $('#view-full').fadeIn(50);
+//        $('#full').css('opacity','0.5');
+//    });
+//    $('.top-full').mouseleave(function(){
+//        $('#view-full').fadeOut(50);
+//        $('#full').css('opacity','1');
+//    });
+//    
     
     /* second row */
-    
-    $('.bottom-left').mouseenter(function(){
-        $('#b-left').fadeIn(50);
-        $('#img-left').css('opacity','0.5');
-    });
-    $('.bottom-left').mouseleave(function(){
-        $('#b-left').fadeOut(50);
-        $('#img-left').css('opacity','1');
-    });
-    
-    $('.bottom-right').mouseenter(function(){
-        $('#b-right').fadeIn(50);
-        $('#img-right').css('opacity','0.5');
-    });
-    $('.bottom-right').mouseleave(function(){
-        $('#b-right').fadeOut(50);
-        $('#img-right').css('opacity','1');
-    });
-    
-    $('.bottom-center').mouseenter(function(){
-        $('#b-center').fadeIn(50);
-        $('#img-center').css('opacity','0.5');
-    });
-    $('.bottom-center').mouseleave(function(){
-        $('#b-center').fadeOut(50);
-        $('#img-center').css('opacity','1');
-    });
-    
-    $('.bottom-full').mouseenter(function(){
-        $('#b-full').fadeIn(50);
-        $('#img-full').css('opacity','0.5');
-    });
-    $('.bottom-full').mouseleave(function(){
-        $('#b-full').fadeOut(50);
-        $('#img-full').css('opacity','1');
-    });
+//    
+//    $('.bottom-left').mouseenter(function(){
+//        $('#b-left').fadeIn(50);
+//        $('#img-left').css('opacity','0.5');
+//    });
+//    $('.bottom-left').mouseleave(function(){
+//        $('#b-left').fadeOut(50);
+//        $('#img-left').css('opacity','1');
+//    });
+//    
+//    $('.bottom-right').mouseenter(function(){
+//        $('#b-right').fadeIn(50);
+//        $('#img-right').css('opacity','0.5');
+//    });
+//    $('.bottom-right').mouseleave(function(){
+//        $('#b-right').fadeOut(50);
+//        $('#img-right').css('opacity','1');
+//    });
+//    
+//    $('.bottom-center').mouseenter(function(){
+//        $('#b-center').fadeIn(50);
+//        $('#img-center').css('opacity','0.5');
+//    });
+//    $('.bottom-center').mouseleave(function(){
+//        $('#b-center').fadeOut(50);
+//        $('#img-center').css('opacity','1');
+//    });
+//    
+//    $('.bottom-full').mouseenter(function(){
+//        $('#b-full').fadeIn(50);
+//        $('#img-full').css('opacity','0.5');
+//    });
+//    $('.bottom-full').mouseleave(function(){
+//        $('#b-full').fadeOut(50);
+//        $('#img-full').css('opacity','1');
+//    });
 
 });

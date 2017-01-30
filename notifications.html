@@ -259,30 +259,17 @@
                                 <a class="page_title pull-right">UI Elements  /  Notifications</a>  
                                 <h4 class ="title"> Notifications </h4>
                                 <br>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla consequat massa egestas fermentum. Maecenas quis est ac ante hendrerit.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="col-contint">
-                                <h5 class ="title form-section"> Bootstrap alerts </h5>
-                                <br>
-                                <label class="small-label">Select type:</label>
-                                <select class="form-control select-width" id="alert-select">
-                                    <option value="success">Success</option>
-                                    <option value="info">Info</option>
-                                    <option value="warning">Warning</option>
-                                    <option value="danger">Danger</option>
-                                </select>
-                                <button type="button" id="alert-generate" class="btn btn-default dashboard-default">
-                                    Generate
-                                </button>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="col-contint">
                                 <h5 class ="title form-section"> Sweet alerts </h5>
+                                <br>
+                                <img class="img-border" src="assets/images/notifications/sweet-01.png">
+                                <br>
                                 <br>
                                 <label class="small-label">Select type:</label>
                                 <select class="form-control select-width" id="sweet-select">
@@ -295,108 +282,131 @@
                                     <option value="Auto">Auto close timer</option>
                                     <option value="Prompt">Prompt function</option>
                                 </select>
-                                <button type="button" id="sweet-generate" class="btn btn-default dashboard-default">
-                                    Generate
-                                </button>
+                                <span id="sweet-generate" class="glyphicon glyphicon-cog"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="col-contint">
+                                <h5 class ="title form-section"> Bootstrap alerts </h5>
+                                <br>
+                                <div class="alert alert-success">
+                                    <strong>Success!</strong> Indicates a successful or positive action.
+                                </div>
+                                <div class="alert alert-info">
+                                  <strong>Info!</strong> Indicates a neutral informative change or action.
+                                </div>
+                                
+                                <div class="alert alert-warning">
+                                  <strong>Warning!</strong> Indicates a warning that might need attention.
+                                </div>
+                                
+                                <div class="alert alert-danger">
+                                  <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-3">
                             <div class="col-contint top-left">
-                                <h5 class ="title form-section"> Top left </h5><br>                            
-                                <i class="fa fa-eye hide-modal" id="view-left" aria-hidden="true"></i>
-                                <img class="img-border" id="left" src="assets/images/iconsPdf-01.svg">
+                                <h5 class ="title form-section"> Top left </h5><br>
+                                <p>Just use the <code>#left</code> inside the button you want to use to have a top left alert</p>
+                                <i id="left" class="fa fa-eye preview"></i>  
+                                <img class="img-border" src="assets/images/iconsPdf-01.svg">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="col-contint top-right">
                                 <h5 class ="title form-section"> Top right </h5><br>
+                                <p>Just use the <code>#right</code> inside the button you want to use to have a top right alert</p>
+                                <i id="right" class="fa fa-eye preview"></i>  
                                 <i class="fa fa-eye hide-modal" id="view-right" aria-hidden="true"></i>
-                                <img class="img-border" id="right" src="assets/images/iconsPdf-02.svg">
+                                <img class="img-border" src="assets/images/iconsPdf-02.svg">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="col-contint top-center">
                                 <h5 class ="title form-section"> Top center </h5><br>
-                                <i class="fa fa-eye hide-modal" id="view-center" aria-hidden="true"></i>
-                                <img class="img-border" id="center" src="assets/images/top_center.svg">
+                                <p>Just use the <code>#center</code> inside the button you want to use to have a top center alert</p>
+                                <i id="center" class="fa fa-eye preview"></i>  
+                                <img class="img-border" src="assets/images/top_center.svg">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="col-contint top-full">
                                 <h5 class ="title form-section"> Top full </h5><br>
-                                <i class="fa fa-eye hide-modal" id="view-full" aria-hidden="true"></i>
-                                <img class="img-border" id="full" src="assets/images/top_full.svg">
+                                <p>Just use the <code>#full</code> inside the button you want to use to have a full top alert</p>
+                                <i id="full" class="fa fa-eye preview"></i>  
+                                <img class="img-border" src="assets/images/top_full.svg">
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-3">
                             <div class="col-contint bottom-left">
-                                <h5 class ="title form-section"> bottom left </h5><br>  
-                                <i class="fa fa-eye hide-modal" id="b-left" aria-hidden="true"></i>
-                                <img class="img-border" id="img-left" src="assets/images/iconsPdf-03.svg">
+                                <h5 class ="title form-section"> bottom left </h5><br>
+                                <p>Just use the <code>#bottom-left</code> inside the button you want to use to have a bottom left alert</p>
+                                <i id="bottom-left" class="fa fa-eye preview"></i>  
+                                <img class="img-border" src="assets/images/iconsPdf-03.svg">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="col-contint bottom-right">
                                 <h5 class ="title form-section"> bottom right </h5><br>
-                                <i class="fa fa-eye hide-modal" id="b-right" aria-hidden="true"></i>
-                                <img class="img-border" id="img-right" src="assets/images/iconsPdf-04.svg">
+                                <p>Just use the <code>#bottom-right</code> inside the button you want to use to have a bottom right alert</p>
+                                <i id="bottom-right" class="fa fa-eye preview"></i>  
+                                <img class="img-border" src="assets/images/iconsPdf-04.svg">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="col-contint bottom-center">
-                                <h5 class ="title form-section"> bottom center </h5><br>   
-                                <i class="fa fa-eye hide-modal" id="b-center" aria-hidden="true"></i>
-                                <img class="img-border" id="img-center" src="assets/images/bottom_center.svg">
+                                <h5 class ="title form-section"> bottom center </h5><br>  
+                                <p>Just use the <code>#bottom-center</code> inside the button you want to use to have a bottom center alert</p>
+                                <i id="bottom-center" class="fa fa-eye preview"></i>  
+                                <img class="img-border" src="assets/images/bottom_center.svg">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="col-contint bottom-full">
                                 <h5 class ="title form-section"> bottom full </h5><br>
-                                <i class="fa fa-eye hide-modal" id="b-full" aria-hidden="true"></i>
-                                <img class="img-border" id="img-full" src="assets/images/bottom_full.svg">
+                                <p>Just use the <code>#bottom-full</code> inside the button you want to use to have a bottom full alert</p>
+                                <i id="bottom-full" class="fa fa-eye preview"></i>  
+                                <img class="img-border" src="assets/images/bottom_full.svg">
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="row">
-                                <div class="col-contint">
-                                    <h5 class ="title form-section"> Labels </h5><br>
-                                    <div class="row">
-                                        <div class="col-sm-12 bottom-margin">
-                                            <span class="label dashboard-info no-margin-left">New</span>
-                                            <span class="label dashboard-success no-margin-left">New</span>
-                                            <span class="label dashboard-primary no-margin-left">New</span>
-                                            <span class="label dashboard-warning no-margin-left">New</span>
-                                            <span class="label dashboard-danger no-margin-left">New</span>
-                                        </div>
+                            <div class="col-contint">
+                                <h5 class ="title form-section"> Labels </h5><br>
+                                <div class="row">
+                                    <div class="col-sm-12 bottom-margin">
+                                        <span class="label info-mid no-margin-left">New</span>
+                                        <span class="label success-mid no-margin-left">New</span>
+                                        <span class="label primary-mid no-margin-left">New</span>
+                                        <span class="label warning-mid no-margin-left">New</span>
+                                        <span class="label danger-mid no-margin-left">New</span>
                                     </div>
                                 </div>
-                            </div>  
+                            </div>
                             <br>
-                            <div class="row">
-                                <div class="col-contint">
-                                    <h5 class ="title form-section"> Badges </h5><br>
-                                    <div class="row">
-                                        <div class="col-sm-12 bottom-margin">
-                                            <span class="label dashboard-info no-margin-left">9</span>
-                                            <span class="label dashboard-success no-margin-left">2</span>
-                                            <span class="label dashboard-primary no-margin-left">5</span>
-                                            <span class="label dashboard-warning no-margin-left">10</span>
-                                            <span class="label dashboard-danger no-margin-left">15</span>
-                                        </div>
+                            <div class="col-contint">
+                                <h5 class ="title form-section"> Badges </h5><br>
+                                <div class="row">
+                                    <div class="col-sm-12 bottom-margin">
+                                        <span class="label info-mid no-margin-left">9</span>
+                                        <span class="label success-mid no-margin-left">2</span>
+                                        <span class="label primary-mid no-margin-left">5</span>
+                                        <span class="label warning-mid no-margin-left">10</span>
+                                        <span class="label danger-mid no-margin-left">15</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="col-contint col-contint-taps">
+                            <div class="col-contint col-contint-taps static-hover-cont">
                                 <h5 class ="title form-section"> Tool tips </h5><br>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla consequat massa egestas fermentum. Maecenas quis est ac ante hendrerit lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla consectetur adipiscing elit. Etiam fringilla.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla consequat massa egestas fermentum. Maecenas quis est ac ante hendrerit lorem ipsum.</p>
                                 <br>
                                 <div class="col-sm-3 no-padding-left bottom-margin"><button type="button" data-toggle="tooltip" data-placement="right" title="Hooray!" class="btn btn-default">Hover Me!</button></div>
                                 <div class="col-sm-3 no-padding-left bottom-margin"><button type="button" data-toggle="tooltip" data-placement="left" title="Hooray!" class="btn btn-default">Hover Me!</button></div>
@@ -668,14 +678,7 @@
         
         
         
-        <script src="assets/js/nav_colors_change.js"></script>
-        <link href="assets/css/colorpicker-layout.css" rel="stylesheet" />
-        <link href="assets/css/colorpicker.css" rel="stylesheet" />
         <script src="assets/js/vendors/colorpicker/colorpicker.js"></script>
-        <script src="assets/js/vendors/colorpicker/eye.js"></script>
-        <script src="assets/js/vendors/colorpicker/layout.js"></script>
-        <script src="assets/js/vendors/colorpicker/utils.js"></script>
-        <script src="assets/js/vendors/colorpicker/utils.js"></script>
         <script src="assets/js/right-side-colors-change.js"></script>
         <script src="assets/js/page-ready-theam.js"></script>
         <link id="default-color-picker" rel="stylesheet" />
