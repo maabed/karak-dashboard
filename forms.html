@@ -12,7 +12,6 @@
         <!-- Bootstrap Core CSS -->
         <link href="assets/css/bootstrap.min.css" rel="stylesheet">
         <!-- Custom CSS -->
-        <link href="assets/css/styles.css" rel="stylesheet" />
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -31,6 +30,7 @@
         <link rel="stylesheet" href="assets/vendors/slider/ion.rangeSlider.css">
         <link rel="stylesheet" href="assets/vendors/slider/ion.rangeSlider.skinNice.css">
         <link rel="stylesheet" href="assets/css/text-editor.css">   
+        <link href="assets/css/styles.css" rel="stylesheet" />
 
     </head>
     <body>
@@ -298,7 +298,7 @@
                         <div class="col-md-6 left-group">
                             <div class="col-contint">
                                 <h5 class="title form-section">Default Style</h5>
-                                <p class="header-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget feugiat sapien. Vivamus nunc dui, mollis sit amet molestie in, gravida eu lectus. Pellentesque iaculis odio augue, eget lobortis elit congue. Integer eget feugiat sapien. Vivamus nunc dui.</p>
+                                <p class="header-text">In order to use blue dashboard customized inputs the input should be wrapped with an <code>.input-field</code> class and the <code>input</code>itself should have an <code>id</code> that is the same as its <code>label</code>.</p>
                                 <form id="form1">
                                     <div class="row group-content">
                                         <div class="form-group col-sm-12 no-padding">
@@ -381,6 +381,7 @@
                             <br>
                             <div class="col-contint col-contint-taps group-lower">
                                 <h5 class="title form-section">Login With Icons</h5>
+                                <p class="header-text">Using icons with input fields might be necessary sometimes. In order to use those Icons the <code>input</code> should be wrapped with <code>.input-field</code> class and preceded by the desired icon.</p>
                                 <form id="form3">
                                     <div class="row">
                                         <div class="form-section col-sm-6">
@@ -420,6 +421,9 @@
                             <div class="col-sm-4 first-third">
                                 <div class="col-contint">
                                     <h5 class="title form-section">Ranges</h5>
+                                    <p class="header-text">Ranges are used by defining an HTML input but gets initialized by the 
+                                        <a href="" class="doc-popover" data-trigger="focus" data-toggle="popover" data-content="test">Javascript</a>
+</p>
                                     <label class="label-type">Start without params</label>
                                     <input type="text" id="no-params" name="example_name" value="" />
                                     <br>
@@ -433,6 +437,9 @@
                             <div class="col-sm-4 second-third">
                                 <div class="col-contint">
                                     <h5 class="title form-section">Slide Toggle</h5>
+                                    <p class="header-text">To use the customized slide toggle you need add the
+                                        <code>.cmn-toggle</code> in addition to color class <code>.cmn-toggle-roundGreen</code>
+                                    </p>
                                         <label class="label-type">Checked</label>
                                         <div class="row">
                                             <div class="col-sm-12 switch toggleswitch">
@@ -493,6 +500,8 @@
                             <div class="col-sm-4 last-third">
                                 <div class="col-contint">
                                     <h5 class="title form-section">Dropdown select</h5>
+                                    <p class="header-text">Customized dropdown select can be used by adding <code>.js-example-basic-single</code> class to be initialized by <a href="" class="doc-popover" data-trigger="focus" data-toggle="popover" data-content="test">Javascript</a> for the default dropdown or another set of classes such as <code>.js-example-basic-multiple</code>
+                                    </p>
                                     <div class="row">
                                         <div class="third-section col-sm-12">
                                             <label class="label-type">Standard</label>
@@ -565,8 +574,7 @@
                                 <div class="row">
                                 <div class="col-sm-4">
                                     <h5 class="mediumtitle"> Color Options </h5>
-                                    <p class="pargraph-design">
-                                        Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et </p>
+                                <p class="header-text">In order to use our customized checkboxes you need to give the checkbox a <code>label</code> and wrap them with the <code>.checkbox</code> class.</p>
                                     <div class="checkbox">
                                         <input id="checkbox1" type="checkbox">
                                         <label class ="fontsize" for="checkbox1"> A simple checkbox </label>
@@ -600,7 +608,7 @@
                                 <div class="col-sm-4">
                                     <form>
                                         <h5 class="mediumtitle">Shape Options </h5>
-                                        <p class="pargraph-design">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                                        <p class="header-text">To give the checkbox a circular shape you need to give the wrapper of the checkboxes a <code>.checkbox-circle</code> class.</p>
                                         <div class="checkbox checkbox-circle">
                                             <input id="checkbox7" type="checkbox">
                                             <label  for="checkbox7">Default</label>
@@ -618,8 +626,7 @@
                                 <div class="col-sm-4">
                                     <form>           
                                         <h5 class="mediumtitle">Yes/No checkboxes </h5>
-                                        <p  class="pargraph-design">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et..</p> 
+                                        <p class="header-text">To use the yes-no checkbox you need to wrap the <code>input</code> with <code>.yes-no-check</code> class and give the checkbox field a unique id to be initialized in the <a href="" class="doc-popover" data-trigger="focus" data-toggle="popover" data-content="test">Javascript</a>.</p>
                                         <div class="row" >
                                             <div class="col-sm-1.1  yes-no-check" >
                                                 <input id="toggleCheckbox-1" title="Example title" data-group-cls="btn-group-xs" checked="">
@@ -656,8 +663,7 @@
                                        <div class="col-sm-5">
                                             <div class="third-section">
                                                 <h5 class="mediumtitle">Range Date Picker</h5>
-                                                <p class="pargraph-design picker-desc">
-                                        Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et                                                     </p>
+                                                <p class="header-text">You can use our customized Range Pickers by adding an <code>input</code> element and giving it a unique name to be initialized in the <a href="" class="doc-popover" data-trigger="focus" data-toggle="popover" data-content="test">Javascript</a>.</p>
                                                 <input type="text" name="daterange" class="form-control simple" value="01/01/2015 1:30 PM - 01/01/2015 2:00 PM" />
                                             </div>
                                             <div class="third-section">
@@ -671,8 +677,7 @@
                                         <div class="col-sm-4">
                                             <div class="third-section">
                                                 <h5 class="mediumtitle">Simple Date Picker</h5>
-                                                <p class="pargraph-design picker-desc">
-                                        Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et                                                     </p>
+                                                <p class="header-text">If you needed a simple date picker you can define an <code>input</code> element and give it a unique name be initialized in the <a href="" class="doc-popover" data-trigger="focus" data-toggle="popover" data-content="test">Javascript</a>.</p>
                                                 <input type="text" name="birthdate" class="form-control simple" value="10/24/1984" />
                                             </div>
                                             <div class="third-section">
@@ -688,6 +693,7 @@
                                         <div class="col-sm-3">
                                             <div class="third-section">
                                                 <h5 class="mediumtitle">Advanced Datepicker</h5>
+                                                <p class="header-text">As for the advanced date picker you define a <code>div</code> element and give it a <code>class</code> attribute to initialize it in the <a href="" class="doc-popover" data-trigger="focus" data-toggle="popover" data-content="test">Javascript</a>.</p>
                                                 <div class="datepicker-here simple" data-language='en'></div>
                                             </div>
                                         </div>
@@ -702,6 +708,7 @@
                         <div class="col-md-6 left-group">
                             <div class="col-contint">
                                 <h5 class ="title form-section">Tag Input</h5>
+                                <p class="header-text">To use the Tag Inputs you need to add the <code>data-role</code> attribute to determine which style you want to use.</p>
                                 <div class="row">
                                     <div class="form-section col-sm-12">
                                         <label class="form-labels">Markup</label>
@@ -735,9 +742,10 @@
                         <div class="col-md-6 right-group">
                             <div class="col-contint col-contint-taps">
                                 <h5 class ="title form-section">Drag N' Drop</h5>
+                                <p class="header-text">In order to use the drag and drop area you need to define a <code>form</code> and give it a unique id to initalize it in the <a href="" class="doc-popover" data-trigger="focus" data-toggle="popover" data-content="test">Javascript</a>in addition to the class <code>dropzone</code>.</p> 
                                 <div class="dropzone-row">
                                     <div class="form-section col-sm-12 dropzone-min">
-                                        <form action="/file-upload"class="dropzone" id="my-awesome-dropzone">
+                                        <form action="/file-upload" class="dropzone" id="my-awesome-dropzone">
                                         </form>
                                     </div>
                                 </div>
@@ -750,6 +758,7 @@
                         <div class="col-md-12 one-col">
                             <div class="col-contint">
                                 <h5 class ="title form-section">Text Editor</h5>
+                                <p class="header-text">All you need to do is adding a unique id to a <code>div</code> element and initalize it in the <a href="" class="doc-popover" data-trigger="focus" data-toggle="popover" data-content="test">Javascript</a>.</p>
                                 <div class ="text-editor-design">
                                     <div id="summernote">hello </div>
                                 </div>
@@ -1051,5 +1060,10 @@
         <script src="assets/js/vendors/jquery.validate.js"></script>
         <script src="assets/js/vendors/jquery.validate.js"></script>
         <script src="assets/js/validation.js"></script>
+    <script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+</script>
     </body>
 </html>

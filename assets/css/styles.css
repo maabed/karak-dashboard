@@ -3620,3 +3620,7 @@ input[type="email"]#searchTB::-webkit-input-placeholder {
 .checkbox input[type="checkbox"]:focus + label::before{
     outline: none !important;
 }
+.popover{
+    max-width: none !important;
+    width: 500px !important;
+}

@@ -180,6 +180,7 @@ $(document).ready(function(){
 $(document).ready(function() {
     $(".js-example-basic-single").select2();
     $(".js-example-basic-multiple").select2();
+    $('.doc-popover').on('click', function(e) {e.preventDefault(); return true;});
 });
 
 function formatState (state) {
