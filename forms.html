@@ -146,8 +146,31 @@
                 <li>
                     <a href="social.html">
                         <i class="fa fa-share-alt-square nav-icon" aria-hidden="true"></i> Social
-                        <span class="label label-warning nav-lbl">Special</span>
                     </a>
+                </li>
+                <li>
+                    <a class="MainMenue" href="#">
+                        <i class="fa fa-star nav-icon" aria-hidden="true"></i>App Views
+                        <span class="label label-warning nav-lbl">Special</span>
+                        <i class="fa fa-angle-left LeftArrow rotate" aria-hidden="true"></i>
+                    </a>
+                    <ul class="Submenue">
+                        <li class="submenu-li">
+                            <a href="account_manager.html">
+                           Account Management
+                            </a>
+                        </li>
+                        <li class="submenu-li">
+                            <a href="landing_page.html">
+                            Landing Page
+                            </a>
+                        </li>
+                        <li class="submenu-li">
+                            <a href="chat.html">
+                           Chat View
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a class="MainMenue" href="#">
@@ -280,21 +303,21 @@
                                     <div class="row group-content">
                                         <div class="form-group col-sm-12 no-padding">
                                             <div class="input-field parent">
-                                                <input name="full_name" type="text" class="validate">
-                                                <label for="email">Full Name*</label>
+                                                <input id="full_name" name="full_name" type="text" class="validate">
+                                                <label for="full_name">Full Name*</label>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row group-content">
                                         <div class="form-group col-sm-6 no-padding-left">
                                             <div class="input-field parent">
-                                                <input name="email" type="email" class="validate">
+                                                <input id="email" name="email" type="email" class="validate">
                                                 <label for="email">Email*</label>
                                             </div>
                                         </div>
                                         <div class="form-group col-sm-6 no-padding-right">
                                             <div class="input-field parent">
-                                                <input name="phone" type="text" class="validate">
+                                                <input id="phone" name="phone" type="text" class="validate">
                                                 <label for="phone">Phone*</label>
                                             </div>
                                         </div>
@@ -311,7 +334,7 @@
                                         </div>
                                         <div class="form-group col-sm-6 no-padding-right">
                                             <div class="input-field parent">
-                                                <input name="city" type="text" class="validate">
+                                                <input id="city" name="city" type="text" class="validate">
                                                 <label for="city">City*</label>
                                             </div>    
                                         </div>
@@ -338,13 +361,13 @@
                                 <form id="form2">
                                     <div class="form-section top">
                                         <div class="input-field parent">
-                                            <input name="user_name" type="text" class="validate">
-                                            <label for="username">Username</label>
+                                            <input id="user_name" name="user_name" type="text" class="validate">
+                                            <label for="user_name">Username</label>
                                         </div>    
                                     </div>
                                     <div class="form-section">
                                         <div class="input-field parent">
-                                            <input  name="password" type="password" class="validate">
+                                            <input id="password" name="password" type="password" class="validate">
                                             <label for="password">Password</label>
                                         </div> 
                                     </div>
@@ -373,7 +396,7 @@
                                               <i class="material-icons prefix"><i class="fa fa-lock" aria-hidden="true"></i>
 </i>
                                               <input id="pass_prefix" name="password" type="password" class="validate">
-                                              <label for="password">Password</label>
+                                              <label for="pass_prefix">Password</label>
                                             </div>
                                         </div>
                                     </div>

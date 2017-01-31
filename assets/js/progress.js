@@ -360,4 +360,8 @@ $(document).ready(function(){
         svgStyle: {width: '100%', height: '5px', display : 'block', marginRight : 'auto', marginLeft : 'auto'}
     });
     barlinethn.animate(1.0);
+    
+    
+    
+    $(".js-example-basic-single").select2();
 });

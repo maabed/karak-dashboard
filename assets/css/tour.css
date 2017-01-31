@@ -1,3 +1,10 @@
 .tour-backdrop{
     opacity: 0.3;
 }
+.popover-navigation{
+    display: inline !important;
+}
+.popover.tour.tour-tour{
+    padding-bottom: 15px;
+    border-radius: 0px;
+}

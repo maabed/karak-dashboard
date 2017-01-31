@@ -20,9 +20,16 @@ $(document).ready(function(){
     });
     $('#refresh-page').click(function() {
         $(".overlay-container").addClass("overlay");
+        $(".refresh-loader").css("display","block");
         setTimeout(function(){
-            $(".overlay-container").removeClass("overlay") 
+            $(".overlay-container").removeClass("overlay");
+            $(".refresh-loader").css("display","none");
         }, 2000);
     });
     $(".current-date").append(moment().format('ll'));
+$(function() {
+  $('.summernote-inbox').summernote({
+    height: 200,
+  });
+});
 });

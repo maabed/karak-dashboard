@@ -185,7 +185,9 @@
 .static-height-2{
     height: 10em;
 }
-
+.select2{
+    width: 142px !important;
+}
 
 
 

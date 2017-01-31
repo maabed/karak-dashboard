@@ -24,6 +24,8 @@
 
         <link href="assets/vendors/toastr/toastr.css" rel="stylesheet"/>
         <link rel="stylesheet" href="assets/vendors/sweet-alert/sweetalert.css">
+        <link rel="stylesheet" href="assets/vendors/select2/css/select2.min.css">
+        <link rel="stylesheet" href="assets/css/forms.css">
         <link rel="stylesheet" href="assets/css/notifications.css">
 
     </head>
@@ -140,8 +142,31 @@
                 <li>
                     <a href="social.html">
                         <i class="fa fa-share-alt-square nav-icon" aria-hidden="true"></i> Social
-                        <span class="label label-warning nav-lbl">Special</span>
                     </a>
+                </li>
+                <li>
+                    <a class="MainMenue" href="#">
+                        <i class="fa fa-star nav-icon" aria-hidden="true"></i>App Views
+                        <span class="label label-warning nav-lbl">Special</span>
+                        <i class="fa fa-angle-left LeftArrow rotate" aria-hidden="true"></i>
+                    </a>
+                    <ul class="Submenue">
+                        <li class="submenu-li">
+                            <a href="account_manager.html">
+                           Account Management
+                            </a>
+                        </li>
+                        <li class="submenu-li">
+                            <a href="landing_page.html">
+                            Landing Page
+                            </a>
+                        </li>
+                        <li class="submenu-li">
+                            <a href="chat.html">
+                           Chat View
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a class="MainMenue" href="#">
@@ -272,7 +297,7 @@
                                 <br>
                                 <br>
                                 <label class="small-label">Select type:</label>
-                                <select class="form-control select-width" id="sweet-select">
+                                <select class="form-control js-example-basic-single select-width" id="sweet-select">
                                     <option value="basic">Basic message</option>
                                     <option value="success">Success message</option>
                                     <option value="warning">Warning message</option>
@@ -675,9 +700,8 @@
         <script src="assets/js/notifications_boxs.js"></script>
         <script src="assets/vendors/toastr/toastr.js"></script>
         <script src="assets/vendors/sweet-alert/sweetalert.min.js"></script>
-        
-        
-        
+        <script src="assets/vendors/select2/js/select2.min.js"></script>
+
         <script src="assets/js/vendors/colorpicker/colorpicker.js"></script>
         <script src="assets/js/right-side-colors-change.js"></script>
         <script src="assets/js/page-ready-theam.js"></script>

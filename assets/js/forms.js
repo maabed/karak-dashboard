@@ -9,7 +9,6 @@ $(function() {
   $('#summernote-compose').summernote({
     height: 200,
   });
-
 });
                      
 $('#toggleCheckbox-1').checkboxpicker();

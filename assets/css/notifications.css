@@ -52,6 +52,9 @@
     margin-right: 15px;
     display: inline;
 }
+.select2{
+    width: 300px !important;
+}
 #alert-generate{
     cursor: pointer;
     color: #999;
@@ -107,5 +110,4 @@
     color: #6a6c6f;
     font-size: 12px;
     display: inline-block;
-    margin-top: 50px;
 }

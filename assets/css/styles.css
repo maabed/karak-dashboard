@@ -589,9 +589,7 @@ canvas {
     border-bottom: 1px solid #E4E5E7;
     padding: 0.7em 0em;
     margin-bottom: 1em;
-    position: fixed;
     z-index: 999;
-    top: 6.4em;
 }
 
 .user-image {
@@ -621,10 +619,6 @@ canvas {
 .sender-info p {
     color: #B7B7B7;
     text-align: left;
-}
-
-.email-content-top {
-    padding-top: 6em;
 }
 
 .email-content-top h4 {
@@ -3613,5 +3607,16 @@ input[type="email"]#searchTB::-webkit-input-placeholder {
     top: 1px;
     left: 30px;
 }
-
- 
+.refresh-loader{
+    display: none;
+    position: absolute;
+    left: 7em;
+    top: 17em;
+    z-index: 9999;
+}
+.Split-right-sidr{
+    overflow-x: hidden !important;
+}
+.checkbox input[type="checkbox"]:focus + label::before{
+    outline: none !important;
+}

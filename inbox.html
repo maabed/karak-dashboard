@@ -19,13 +19,14 @@
     <!-- Custom CSS -->
     <link href="assets/css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/inbox.css">
-    <link rel="stylesheet" href="assets/css/text-editor.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <link rel="stylesheet" href="assets/css/preloaders.css">
+
 </head>
 <body>
     <div id="wrapper">
@@ -140,8 +141,31 @@
                 <li>
                     <a href="social.html">
                         <i class="fa fa-share-alt-square nav-icon" aria-hidden="true"></i> Social
-                        <span class="label label-warning nav-lbl">Special</span>
                     </a>
+                </li>
+                <li>
+                    <a class="MainMenue" href="#">
+                        <i class="fa fa-star nav-icon" aria-hidden="true"></i>App Views
+                        <span class="label label-warning nav-lbl">Special</span>
+                        <i class="fa fa-angle-left LeftArrow rotate" aria-hidden="true"></i>
+                    </a>
+                    <ul class="Submenue">
+                        <li class="submenu-li">
+                            <a href="account_manager.html">
+                           Account Management
+                            </a>
+                        </li>
+                        <li class="submenu-li">
+                            <a href="landing_page.html">
+                            Landing Page
+                            </a>
+                        </li>
+                        <li class="submenu-li">
+                            <a href="chat.html">
+                           Chat View
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a class="MainMenue" href="#">
@@ -255,7 +279,7 @@
                 <div class="row">
                     <div class="col-md-2 InboxLeftSide">
                         <div class="CenteredDiv">
-                            <button type="button" id="compose" class="btn btn-default compose">COMPOSE</button>
+                            <button type="button" id="compose" class="btn btn-info compose">COMPOSE</button>
                         </div>
 
                         <nav class="InboxLeftNav">
@@ -308,6 +332,13 @@
                     <div class="col-md-10 split-view">
                         <div class="Split-left-sidr">
                             <div id="inbox-date"><div class="current-date">Today &nbsp&nbsp</div><a href="#"><i id="refresh-page" class="fa fa-refresh" aria-hidden="true"></i></a></div>
+                                <div class="showbox refresh-loader">
+                                    <div class="loader1">
+                                        <svg class="circular" viewBox="25 25 50 50">
+                                            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+                                        </svg>
+                                    </div>
+                                </div>
                             <div class="overlay-container">
                             <a class="ShowMessage" href="#">
                                 <table class="Emails">
@@ -403,6 +434,7 @@
                                         <div class="btn-group">
                                             <button type="button" class="btn btn-default outline-default reply dropdown-toggle" data-toggle="dropdown">
                                                 <span class="caret"></span>
+                                                
                                             </button>
                                             <ul class="dropdown-menu Delete" role="menu">
                                                 <li><a href="#">Delete</a></li>
@@ -430,12 +462,11 @@
 
                                     Signature
                                 </p>
-                                <textarea id="txtEditor1">
-                                </textarea>
+                                <div class="summernote-inbox"></div>
                                 <div class="clearfix"></div>
                             </div>
                             <div class="row">
-                                <div class="col-sm-6 col-sm-offset-7">
+                                <div class="col-sm-6 col-sm-offset-8">
                                     <button type="button " class="btn btn-success dashboard-success button-style icon-btn">
                                         <span class="glyphicon glyphicon-envelope"></span> Send
                                     </button>
@@ -491,8 +522,16 @@
 
                                     Signature
                                 </p>
-                                <textarea id="txtEditor2"></textarea>
+                                <div class="summernote-inbox"></div>
                                 <div class="clearfix"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-sm-offset-8">
+                                    <button type="button " class="btn btn-success dashboard-success button-style icon-btn">
+                                        <span class="glyphicon glyphicon-envelope"></span> Send
+                                    </button>
+                                    <br>
+                                </div>
                             </div>
                         </div>
                         
@@ -541,8 +580,16 @@
 
                                     Signature
                                 </p>
-                                <textarea id="txtEditor3"></textarea>
+                                <div class="summernote-inbox"></div>
                                 <div class="clearfix"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-sm-offset-8">
+                                    <button type="button " class="btn btn-success dashboard-success button-style icon-btn">
+                                        <span class="glyphicon glyphicon-envelope"></span> Send
+                                    </button>
+                                    <br>
+                                </div>
                             </div>
                         </div>
                         
@@ -598,8 +645,16 @@
 
                                     Signature
                                 </p>
-                                <textarea id="txtEditor4"></textarea>
+                                <div class="summernote-inbox"></div>
                                 <div class="clearfix"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-sm-offset-8">
+                                    <button type="button " class="btn btn-success dashboard-success button-style icon-btn">
+                                        <span class="glyphicon glyphicon-envelope"></span> Send
+                                    </button>
+                                    <br>
+                                </div>
                             </div>
                         </div>
                         
@@ -655,8 +710,16 @@
 
                                     Signature
                                 </p>
-                                <textarea id="txtEditor5"></textarea>
+                                <div class="summernote-inbox"></div>
                                 <div class="clearfix"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-sm-offset-8">
+                                    <button type="button " class="btn btn-success dashboard-success button-style icon-btn">
+                                        <span class="glyphicon glyphicon-envelope"></span> Send
+                                    </button>
+                                    <br>
+                                </div>
                             </div>
                         </div>
                         
@@ -712,8 +775,16 @@
 
                                     Signature
                                 </p>
-                                <textarea id="txtEditor6"></textarea>
+                                <div class="summernote-inbox"></div>
                                 <div class="clearfix"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-sm-offset-8">
+                                    <button type="button " class="btn btn-success dashboard-success button-style icon-btn">
+                                        <span class="glyphicon glyphicon-envelope"></span> Send
+                                    </button>
+                                    <br>
+                                </div>
                             </div>
                         </div>
                     
@@ -878,11 +949,6 @@
                     </table>
                 </div>
             </div>   
-        <div id="left-Side-Section">
-            <div id="left-Side-Section-Togle">
-                <i class="fa fa-envelope" id="compose-side" aria-hidden="true"></i>
-            </div>
-        </div>
         <div class="notifecations-box">
             <div class="arrow-up"></div>
             <h5>Notifications</h5>
@@ -963,7 +1029,6 @@
     </div>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="assets/js/vendors/Chart.bundle.js"></script>
-    <script src="assets/js/vendors/bootstrap.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/text_editor.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -973,10 +1038,14 @@
     <script src="assets/js/notifications_boxs.js"></script>
     <script src="assets/js/compose.js"></script>
 
+    <link href="assets/vendors/summernote/summernote.css" rel="stylesheet">
+    <script src="assets/vendors/summernote/summernote.js"></script>
+    
     <script src="assets/js/vendors/colorpicker/colorpicker.js"></script>
     <script src="assets/js/right-side-colors-change.js"></script>
     <script src="assets/js/page-ready-theam.js"></script>
     <link id="default-color-picker" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/text-editor.css">   
     <script src="assets/vendors/momentjs/moment.js"></script>
 </body>
 </html>

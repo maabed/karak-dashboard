@@ -138,8 +138,31 @@
                 <li>
                     <a href="social.html">
                         <i class="fa fa-share-alt-square nav-icon" aria-hidden="true"></i> Social
-                        <span class="label label-warning nav-lbl">Special</span>
                     </a>
+                </li>
+                <li>
+                    <a class="MainMenue" href="#">
+                        <i class="fa fa-star nav-icon" aria-hidden="true"></i>App Views
+                        <span class="label label-warning nav-lbl">Special</span>
+                        <i class="fa fa-angle-left LeftArrow rotate" aria-hidden="true"></i>
+                    </a>
+                    <ul class="Submenue">
+                        <li class="submenu-li">
+                            <a href="account_manager.html">
+                           Account Management
+                            </a>
+                        </li>
+                        <li class="submenu-li">
+                            <a href="landing_page.html">
+                            Landing Page
+                            </a>
+                        </li>
+                        <li class="submenu-li">
+                            <a href="chat.html">
+                           Chat View
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a class="MainMenue" href="#">
@@ -739,34 +762,161 @@
     </div>
     <!-- /#page-content-wrapper -->
     <!-- /#wrapper -->
-    <div id="Right-Side-Section">
-        <div id="Right-Side-Section-Togle">
+           <div id="Right-Side-Section-Togle">
             <i class="fa fa-pencil-square-o" id="Edit" aria-hidden="true"></i>
         </div>
-        <div class="table">
-            <table>
-                <tr>
-                    <td colspan="4">
-                        <div onclick="closeToggel()" id="Close">
-                            <i class="fa fa-times-circle-o" aria-hidden="true"></i>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
+        <div id="Right-Side-Section">
+            <div class="table">
+                <table class="right-side-table">
+                    <tr>
+                        <td>
+                            <div onclick="closeToggel()" id="Close">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h5 class="title">Color Options</h5>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Color makes it different
+                                <br> Customize and Preview your dashboard.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h5 class="title">Recommended</h5>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="col-sm-6 single-menue-color-box no-padding-righ">
+                                <div id="default-color-btn" class="single-menue-color pointer-hover">
+                                    <div class="col-sm-12 default-menue-color">
+                                        <p>
+                                            Header
+                                            <br /> #3b97d2
+                                        </p>
+                                        <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="col-sm-12 simple-border">
+                                        <p>
+                                            Sidebar Nav
+                                            <br /> #fffff
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 single-menue-color-box no-padding-righ">
+                                <div id="orang-color-btn" class="single-menue-color pointer-hover">
+                                    <div class="col-sm-12 orange-menue-color">
+                                        <p>
+                                            Header
+                                            <br /> #f5d34b
+                                        </p>
+                                        <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="col-sm-12 simple-border">
+                                        <p>
+                                            Sidebar Nav
+                                            <br /> #ffffff
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 single-menue-color-box no-padding-righ">
+                                <div id="dark2-color-btn" class="single-menue-color pointer-hover">
+                                    <div class="col-sm-12 dark-menue-color2">
+                                        <p>
+                                            Header
+                                            <br /> #262930
+                                        </p>
+                                        <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="col-sm-12 dark-nav-color2">
+                                        <p>
+                                            Sidebar Nav
+                                            <br /> #2a2e35
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 single-menue-color-box no-padding-righ">
+                                <div id="dark1-color-btn" class="single-menue-color pointer-hover">
+                                    <div class="col-sm-12 dark-menue-color">
+                                        <p>
+                                            Header
+                                            <br /> #2b3643
+                                        </p>
+                                        <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="col-sm-12 dark-nav-color">
+                                        <p>
+                                            Sidebar Nav
+                                            <br /> #364150
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 single-menue-color-box no-padding-righ">
+                                <div id="whit-color-btn" class="single-menue-color pointer-hover">
+                                    <div class="col-sm-12 simple-border wight-head">
+                                        <p>
+                                            Header
+                                            <br /> #ffffff
+                                        </p>
+                                        <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="col-sm-12 simple-border wight-head">
+                                        <p>
+                                            Sidebar Nav
+                                            <br /> #ffffff
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 single-menue-color-box no-padding-righ">
+                                <div id="green-color-btn" class="single-menue-color pointer-hover">
+                                    <div class="col-sm-12 green-menue-color">
+                                        <p>
+                                            Header
+                                            <br /> #62d995
+                                        </p>
+                                        <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="col-sm-12 simple-border">
+                                        <p>
+                                            Sidebar Nav
+                                            <br /> #ffffff
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h5 class="title">Select Your Favorite Color</h5>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="col-sm-12 no-padding">
+                                <input id="coloepicker" type="color" />
+                            </div>
+                            <div class="col-sm-12 no-padding">
+                                <button type="button" id="apply" class="btn btn-default btn-block apply-color">Apply</button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
-    </div>
+        
+   
     <div class="notifecations-box">
         <div class="arrow-up"></div>
         <h5>Notifications</h5>
@@ -852,14 +1002,7 @@
     <script src="assets/js/notifications_boxs.js"></script>
     <script src="assets/js/taps.js"></script>
     <script src="assets/js/toggle.js"></script>
-    <script src="assets/js/nav_colors_change.js"></script>
-    <link href="assets/css/colorpicker-layout.css" rel="stylesheet" />
-    <link href="assets/css/colorpicker.css" rel="stylesheet" />
     <script src="assets/js/vendors/colorpicker/colorpicker.js"></script>
-    <script src="assets/js/vendors/colorpicker/eye.js"></script>
-    <script src="assets/js/vendors/colorpicker/layout.js"></script>
-    <script src="assets/js/vendors/colorpicker/utils.js"></script>
-    <script src="assets/js/vendors/colorpicker/utils.js"></script>
     <script src="assets/js/right-side-colors-change.js"></script>
     <script src="assets/js/page-ready-theam.js"></script>
     <link id="default-color-picker" rel="stylesheet" />

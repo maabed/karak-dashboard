@@ -1028,3 +1028,9 @@ a:focus {
 .select2-dropdown{
     z-index: 99;
 }
+.input-field.parent.has-feedback.has-success > input:not(#searchTB):focus {
+    border-bottom: 1px solid #3c763d !important;
+}
+.has-error > input {
+    border-bottom: 1px solid #a94442 !important;
+}
