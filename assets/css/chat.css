@@ -10,10 +10,20 @@
     background-color: #3B97D2;
 }
 
-.sidebar-nav li a {}
+.sidebar-nav li a {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.sidebar-nav li a:hover {
+    color: #fff;
+}
 
 .nav-icon {
-	color: #909195;}
+    color: #909195;
+}
 
 .user-box p {
     color: #fff;
@@ -41,7 +51,8 @@
 }
 
 .left-side-header h4 {
-    margin: 0;text-indent: 20px;
+    margin: 0;
+    text-indent: 20px;
 }
 
 .left-side-header .fa-circle-o {
@@ -67,29 +78,116 @@
     margin: 0;
     padding: 0;
 }
-.chat-user-info{
-	margin-top: 1em;
-}
-.sidebar-nav li a{
-	color: #909195;
-}
-.sidebar-nav .selected a{
-	background-color: #363d45 !important;
-	color: #fff;
-}
-.sidebar-nav .selected a i {
-	color: #fff;
-}
-.sidebar-nav li:hover{
-	background-color: #363d45 !important;
+
+.chat-user-info {
+    margin-top: 1em;
 }
 
-.Submenue{
-	 background-color: #2a2e34;
+.sidebar-nav li a {
+    color: #909195;
 }
-.submenu-li a{
-		 background-color: #2a2e34 !important;
+
+.sidebar-nav .selected a {
+    background-color: #363d45 !important;
+    color: #fff;
 }
-.submenu-li a:hover{
-	color:#fff !important; 
+
+.sidebar-nav .selected a i {
+    color: #fff;
 }
+
+.sidebar-nav li:hover {
+    color: #fff !important;
+    background-color: #2a2e34;
+}
+
+.Submenue {
+    background-color: #2e3238;
+    width: 100% !important;
+    padding-left: 0 !important;
+    display: block;
+}
+
+.submenu-li a {
+    background-color: #2e3238 !important;
+}
+
+.submenu-li a:hover {
+    color: #fff !important;
+}
+
+.sidebar-nav li a .LeftArrow {
+    font-size: 1em;
+    margin: 1em 1.4em 0em 0em !important;
+}
+
+.threads {
+    color: #909195;
+    text-indent: 20px;
+    margin-top: 3em;
+}
+
+#chat-navbar .chat-nav-icon {
+    font-size: 0.5 !important;
+}
+
+.active-user {
+    color: #71c38f;
+}
+
+.margin-btn {
+    margin-bottom: 1em;
+}
+
+.icon-color {
+    color: #909195;
+}
+
+.chat-header-list {
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding: 0;
+    margin-left: 1em;
+}
+
+.chat-header-list li {
+    float: left;
+    border-right: 1px solid #fff;
+    padding: 0em 0.8em;
+    color: #fff;
+    height: 1.3em; overflow: hidden;
+}
+.chat-header-list li:last-child{
+	border-right: 0;
+}
+.chat-header-list li a {
+    color: #fff ;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.chat-head-container .col-sm-6{
+	margin-top: 0.45em;
+}
+.chat-head-container .col-sm-6 h4 {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.chat-header-list li a i {
+    float: left;
+    margin-right: 0.5em;
+    margin-top: 0.1em;
+}
+
+.chat-header-list li a p {
+	color: #fff;
+    float: right;
+    font-weight: lighter;
+    margin-top: 0.1em;
+}
+
+    

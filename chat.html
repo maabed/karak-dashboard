@@ -31,7 +31,7 @@
                         <h4>New Release</h4>
                     </div>
                     <div class="col-sm-2">
-                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        <i class="fa fa-bell-slash-o icon-color" aria-hidden="true"></i>
                     </div>
                 </div>
                 <div class="row chat-user-info">
@@ -48,48 +48,101 @@
                         <i class="fa fa-circle-o" aria-hidden="true"></i>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-sm-12 threads">
+                        <i class="fa fa-comments" aria-hidden="true"></i>
+                        <p>All Threads</p>
+                    </div>
+                </div>
             </div>
             <ul class="sidebar-nav">
-                <li class="selected">
-                    <a href="index.html"><i class="fa fa-tachometer nav-icon" aria-hidden="true"></i>test</a>
-                </li>
-                <li>
+                <li class="margin-btn">
                     <a class="MainMenue" href="#">
-                        <i class="fa fa-file-text nav-icon" aria-hidden="true"></i> sub menue
-                        <i class="fa fa-angle-left LeftArrow rotate" aria-hidden="true"></i>
+                        <i class="fa fa-bullhorn nav-icon" aria-hidden="true"></i>CHANNELS (7)
+                        <i class="fa fa-plus-square-o  LeftArrow" aria-hidden="true"></i>
                     </a>
                     <ul class="Submenue">
                         <li class="submenu-li">
                             <a href="forms.html">
-                            sub 1
+                                <i class="fa fa-hashtag nav-icon" aria-hidden="true"></i>dashboard
                             </a>
                         </li>
                         <li class="submenu-li">
                             <a href="form_wizard.html">
-                          sub 2
+                                <i class="fa fa-hashtag nav-icon" aria-hidden="true"></i>design
+                            </a>
+                        </li>
+                        <li class="submenu-li selected">
+                            <a href="form_wizard.html">
+                                <i class="fa fa-hashtag nav-icon" aria-hidden="true"></i>general
+                            </a>
+                        </li>
+                        <li class="submenu-li">
+                            <a href="form_wizard.html">
+                                <i class="fa fa-hashtag nav-icon" aria-hidden="true"></i>blogs
+                            </a>
+                        </li>
+                        <li class="submenu-li">
+                            <a href="form_wizard.html">
+                                <i class="fa fa-hashtag nav-icon" aria-hidden="true"></i>development
+                            </a>
                         </li>
                     </ul>
                 </li>
-                 <li>
+                <li>
                     <a class="MainMenue" href="#">
-                        <i class="fa fa-gift nav-icon" aria-hidden="true"></i> Extra
-                        <i class="fa fa-angle-left LeftArrow rotate" aria-hidden="true"></i>
+                        <i class="fa fa-commenting-o nav-icon" aria-hidden="true"></i>DIRECT MESSAGES
+                        <i class="fa fa-plus-square-o  LeftArrow" aria-hidden="true"></i>
                     </a>
+                    <ul class="Submenue">
+                        <li class="submenu-li">
+                            <a href="forms.html">
+                                <i class="fa fa-circle-o nav-icon active-user" aria-hidden="true"></i>Mohammad Meshaal
+                            </a>
+                        </li>
+                        <li class="submenu-li">
+                            <a href="form_wizard.html">
+                                <i class="fa fa-circle-o nav-icon active-user" aria-hidden="true"></i>Rayan Amarat
+                            </a>
+                        </li>
+                        <li class="submenu-li">
+                            <a href="form_wizard.html">
+                                <i class="fa fa-circle-o nav-icon" aria-hidden="true"></i>Mustafa Abed
+                            </a>
+                        </li>
+                        <li class="submenu-li">
+                            <a href="form_wizard.html">
+                                <i class="fa fa-circle-o nav-icon" aria-hidden="true"></i>Mahmoud Abed
+                            </a>
                         </li>
                     </ul>
+                </li>
+            </ul>
         </div>
         <!-- /#sidebar-wrapper -->
         <div id="head">
             <div class="container-fluid header-container">
-                <i href="#menu-toggle" id="menu-toggle" class="fa fa-bars" aria-hidden="true"></i>
-                <div class="form-group">
-                    <div class="icon-addon addon-md">
-                        <input type="email" placeholder="Type anywhere to search" class="form-control" id="searchTB">
-                        <i class="fa fa-search glyphicon glyphicon-search" aria-hidden="true"></i>
+                <div class="row chat-head-container">
+                    <div class="col-sm-6">
+                        <i href="#menu-toggle" id="menu-toggle" class="fa fa-bars" aria-hidden="true"></i>
+                        <h4>#general</h4>
+                        <ul class="chat-header-list">
+                            <li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i><p>2</p></a></li>
+                            <li><a href="#"><i class="fa fa-user-o" aria-hidden="true"></i><p>4</p></a></li>
+                            <li><a href="#"><i class="fa fa-thumb-tack" aria-hidden="true"></i><p>0</p></a></li>
+                            <li><a href="#"><p><i class="fa fa-plus" aria-hidden="true"></i>Add a topic</p></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6" style="border:1px solid #fff">
+                        <div class="form-group">
+                            <div class="icon-addon addon-md">
+                                <input type="email" placeholder="Type anywhere to search" class="form-control" id="searchTB">
+                                <i class="fa fa-search glyphicon glyphicon-search" aria-hidden="true"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="right-side-head">
-                    <div class="notifecations head-box">
+                <!--    <div class="notifecations head-box">
                         <button id="notifications" class="btn btn-default btn-lg btn-link">
                             <i class="fa fa-bell-o" aria-hidden="true"></i>
                         </button>
@@ -104,8 +157,7 @@
                     <div id="user-box" class="user-box head-box">
                         <p> Mr.Sami&nbsp;&nbsp; &nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i></p>
                         <img src="assets/images/Sami.jpg" />
-                    </div>
-                </div>
+                    </div> -->
             </div>
         </div>
         <!-- Page Content -->
@@ -194,7 +246,7 @@
     </div>
     <script src="assets/js/vendors/jquery-1.12.3.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/chat.js"></script>
     <script src="assets/js/notifications_boxs.js"></script>
 </body>
 
