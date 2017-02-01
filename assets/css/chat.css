@@ -1,0 +1,95 @@
+#sidebar-wrapper {
+    background-color: #2a2e34;
+}
+
+#head {
+    background-color: #3B97D2;
+}
+
+#searchTB {
+    background-color: #3B97D2;
+}
+
+.sidebar-nav li a {}
+
+.nav-icon {
+	color: #909195;}
+
+.user-box p {
+    color: #fff;
+}
+
+.head-box i {
+    color: #fff;
+}
+
+#company-name {
+    background-color: #2980B9;
+    color: #fff;
+    border-bottom: 0 !important
+}
+
+.left-side-header {
+    width: 100%;
+    color: #fff;
+    padding: 1em 0em;
+}
+
+.left-side-header i {
+    float: right;
+    margin: 0.35em 1em 0em 0em;
+}
+
+.left-side-header h4 {
+    margin: 0;text-indent: 20px;
+}
+
+.left-side-header .fa-circle-o {
+    color: #71c38f;
+}
+
+.sidebar-nav {
+    position: relative;
+}
+
+.left-side-header img {
+    border: 1px solid #fff;
+    border-radius: 180px;
+    width: 100%;
+    height: auto;
+    float: left
+}
+
+.left-side-header h5,
+.left-side-header p {
+    color: #909195;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+.chat-user-info{
+	margin-top: 1em;
+}
+.sidebar-nav li a{
+	color: #909195;
+}
+.sidebar-nav .selected a{
+	background-color: #363d45 !important;
+	color: #fff;
+}
+.sidebar-nav .selected a i {
+	color: #fff;
+}
+.sidebar-nav li:hover{
+	background-color: #363d45 !important;
+}
+
+.Submenue{
+	 background-color: #2a2e34;
+}
+.submenu-li a{
+		 background-color: #2a2e34 !important;
+}
+.submenu-li a:hover{
+	color:#fff !important; 
+}
