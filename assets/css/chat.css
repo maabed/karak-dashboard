@@ -64,7 +64,7 @@
 }
 
 .left-side-header img {
-    border: 1px solid #fff;
+    border: 2px solid #dcdcdc;
     border-radius: 180px;
     width: 100%;
     height: auto;
@@ -77,6 +77,7 @@
     text-align: left;
     margin: 0;
     padding: 0;
+    line-height:1.6em;
 }
 
 .chat-user-info {
