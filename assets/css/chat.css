@@ -17,9 +17,9 @@
     transition: all 0.5s ease;
 }
 
-.sidebar-nav li a:hover {
-    color: #fff;
-}
+    .sidebar-nav li a:hover {
+        color: #fff;
+    }
 
 .nav-icon {
     color: #909195;
@@ -36,7 +36,7 @@
 #company-name {
     background-color: #2980B9;
     color: #fff;
-    border-bottom: 0 !important
+    border-bottom: 0 !important;
 }
 
 .left-side-header {
@@ -45,19 +45,19 @@
     padding: 1em 0em;
 }
 
-.left-side-header i {
-    float: right;
-    margin: 0.35em 1em 0em 0em;
-}
+    .left-side-header i {
+        float: right;
+        margin: 0.35em 1em 0em 0em;
+    }
 
-.left-side-header h4 {
-    margin: 0;
-    text-indent: 20px;
-}
+    .left-side-header h4 {
+        margin: 0;
+        text-indent: 20px;
+    }
 
-.left-side-header .fa-circle-o {
-    color: #71c38f;
-}
+    .left-side-header .fa-circle-o {
+        color: #71c38f;
+    }
 
 .sidebar-nav {
     position: relative;
@@ -68,7 +68,7 @@
     border-radius: 180px;
     width: 100%;
     height: auto;
-    float: left
+    float: left;
 }
 
 .left-side-header h5,
@@ -89,12 +89,12 @@
 
 .sidebar-nav .selected a {
     background-color: #363d45 !important;
-    color: #fff;
+    color: #fff !important;
 }
 
-.sidebar-nav .selected a i {
-    color: #fff;
-}
+    .sidebar-nav .selected a i {
+        color: #fff;
+    }
 
 .sidebar-nav li:hover {
     color: #fff !important;
@@ -112,9 +112,9 @@
     background-color: #2e3238 !important;
 }
 
-.submenu-li a:hover {
-    color: #fff !important;
-}
+    .submenu-li a:hover {
+        color: #fff !important;
+    }
 
 .sidebar-nav li a .LeftArrow {
     font-size: 1em;
@@ -148,34 +148,55 @@
     float: left;
     margin: 0;
     padding: 0;
+}
+
+    .chat-header-list li {
+        float: left;
+        color: #fff;
+        height: 1.3em;
+        overflow: hidden;
+    }
+
+.left-side-chat-lest ul {
     margin-left: 1em;
 }
 
-.chat-header-list li {
-    float: left;
-    border-right: 1px solid #fff;
+.left-side-chat-lest li {
     padding: 0em 0.8em;
-    color: #fff;
-    height: 1.3em; overflow: hidden;
+    border-right: 1px solid #fff;
 }
-.chat-header-list li:last-child{
-	border-right: 0;
+
+.right-side-chat-lest li {
+    padding: 0em 0.5em;
 }
+
+.right-side-chat-lest {
+    width: auto !important;
+    float: right;
+    padding-right: 265px !important;
+}
+
+.left-side-chat-lest li:last-child {
+    border-right: 0;
+}
+
 .chat-header-list li a {
-    color: #fff ;
+    color: #fff;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
-.chat-head-container .col-sm-6{
-	margin-top: 0.45em;
+
+.chat-head-container .col-sm-6 {
+    margin-top: 0.45em;
 }
-.chat-head-container .col-sm-6 h4 {
-    float: left;
-    margin: 0;
-    padding: 0;
-}
+
+    .chat-head-container .col-sm-6 h4 {
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
 
 .chat-header-list li a i {
     float: left;
@@ -184,10 +205,61 @@
 }
 
 .chat-header-list li a p {
-	color: #fff;
+    color: #fff;
     float: right;
     font-weight: lighter;
     margin-top: 0.1em;
 }
 
-    
+.not-activ {
+    color: #a8d3ef;
+}
+
+#head .form-group {
+    width: auto;
+    float: left;
+    margin-left: 0em;
+    margin-top: -0.7em;
+}
+
+.form-group {
+    margin-bottom: 0;
+}
+
+.fa-ellipsis-v {
+    color: #fff;
+    float: right;
+    margin-top: 0.2em;
+}
+
+@media(max-width:1129px) {
+    .right-side-chat-lest {
+    padding-right: 0px !important;
+    width:auto;
+    float:left;
+}
+    #searchTB{
+        width:13em;
+    }
+}
+@media(max-width:700px) {
+    .right-side-chat-lest {
+    padding-right: 5px !important;
+    position:absolute;
+    top:1em;
+    right:0.5em;
+}
+    .chat-header-list{
+        width:100%;
+    }
+    #head {
+        overflow:initial;
+        height :auto;
+    }
+    .form-group  {
+        display:none;
+    }
+    .chat-header-list li a p{
+        display:none;
+    }
+}
