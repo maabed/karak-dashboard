@@ -1,75 +1,103 @@
-.panel{
-    border-radius: 0px;
+/*!
+Panels style
+Blue Dashboard: v1.0.0
+Author: New Release
+http://newrelease.io
+Copyright 2017 New Release
+*/
+.panel {
+  border-radius: 0px;
 }
-.list-inline.panel-actions{
-    display: inline;
-    float: right;
+
+.list-inline.panel-actions {
+  display: inline;
+  float: right;
 }
-.panel-primary{
-    border-color: #a8a8a8;
+
+.panel-primary {
+  border-color: #a8a8a8;
 }
-.panel-success{
-    border-color: #96e5b8;
+
+.panel-success {
+  border-color: #96e5b8;
 }
-.panel-info{
-    border-color: #99cbed;
+
+.panel-info {
+  border-color: #99cbed;
 }
-.panel-warning{
-    border-color: #f8e187;
+
+.panel-warning {
+  border-color: #f8e187;
 }
-.panel-danger{
-    border-color: #f3a59d;
+
+.panel-danger {
+  border-color: #f3a59d;
 }
-.panel-success > .panel-heading{
-    color: #fff;
+
+.panel-success > .panel-heading {
+  color: #fff;
 }
-.panel-info > .panel-heading{
-    color: #fff;
+
+.panel-info > .panel-heading {
+  color: #fff;
 }
-.panel-warning > .panel-heading{
-    color: #fff;
+
+.panel-warning > .panel-heading {
+  color: #fff;
 }
-.panel-danger > .panel-heading{
-    color: #fff;
+
+.panel-danger > .panel-heading {
+  color: #fff;
 }
-.panel-group .panel{
-    border-radius: 0px;
+
+.panel-group .panel {
+  border-radius: 0px;
 }
-.panel-heading{
-    border-radius: 0px;
+
+.panel-heading {
+  border-radius: 0px;
 }
-.dag_container > div{
-    cursor: move;
+
+.dag_container > div {
+  cursor: move;
 }
-.no-borders{
-    border: 0px;
-    box-shadow: none;
+
+.no-borders {
+  border: 0px;
+  box-shadow: none;
 }
-.no-borders > .panel-heading{
-    border:0px;
-    background-color: #fafafa;
+
+.no-borders > .panel-heading {
+  border: 0px;
+  background-color: #fafafa;
 }
-.no-borders > .panel-footer{
-    background:none;
+
+.no-borders > .panel-footer {
+  background: none;
 }
-.panel-body{
-    border-top: 0px !important;
+
+.panel-body {
+  border-top: 0px !important;
 }
-.panel-footer{
-    border-top: 1px solid #ddd !important;
-    background: none;
-    font-weight: lighter;
-    color: rgba(0,0,0,0.7);
+
+.panel-footer {
+  border-top: 1px solid #ddd !important;
+  background: none;
+  font-weight: lighter;
+  color: rgba(0, 0, 0, 0.7);
 }
-.panel-body{
-    font-weight: lighter;
-    color: rgba(0,0,0,0.7);    
+
+.panel-body {
+  font-weight: lighter;
+  color: rgba(0, 0, 0, 0.7);
 }
-.panel-body > p{
-    font-weight: lighter;
-    color: rgba(0,0,0,0.7);
+
+.panel-body > p {
+  font-weight: lighter;
+  color: rgba(0, 0, 0, 0.7);
 }
-.dag_container > div > p{
-    font-weight: lighter;
-    color: rgba(0,0,0,0.7);
+
+.dag_container > div > p {
+  font-weight: lighter;
+  color: rgba(0, 0, 0, 0.7);
 }

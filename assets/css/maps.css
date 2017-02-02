@@ -1,7 +1,15 @@
-#container{
-    margin-top: 10px;
+/*!
+Maps style
+Blue Dashboard: v1.0.0
+Author: New Release
+http://newrelease.io
+Copyright 2017 New Release
+*/
+#container {
+	margin-top: 10px;
 }
-.map-container{
-    padding-left: 0px !important;
-    padding-right: 0px !important;
+
+.map-container {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
 }

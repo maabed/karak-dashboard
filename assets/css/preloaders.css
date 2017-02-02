@@ -1,3 +1,10 @@
+/*!
+Preloader style
+Blue Dashboard: v1.0.0
+Author: New Release
+http://newrelease.io
+Copyright 2017 New Release
+*/
 .loader {
   height: 4px;
   margin-top: 45px;
@@ -6,7 +13,8 @@
   overflow: hidden;
   background-color: #ddd;
 }
-.loader:before{
+
+.loader:before {
   display: block;
   position: absolute;
   content: "";
@@ -18,17 +26,32 @@
 }
 
 @keyframes loading {
-    from {left: -200px; width: 30%;}
-    50% {width: 30%;}
-    70% {width: 70%;}
-    80% { left: 50%;}
-    95% {left: 120%;}
-    to {left: 100%;}
+  from {
+    left: -200px;
+    width: 30%;
+  }
+
+  50% {
+    width: 30%;
+  }
+
+  70% {
+    width: 70%;
+  }
+
+  80% {
+    left: 50%;
+  }
+
+  95% {
+    left: 120%;
+  }
+
+  to {
+    left: 100%;
+  }
+
 }
-
-
-/* Boxes loader */
-
 
 .vertical--center {
   margin: 0 auto;
@@ -39,12 +62,12 @@
 }
 
 .vertical-center__element {
-    margin-top: 45px;
+  margin-top: 45px;
   position: absolute;
   width: 100%;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .preloader {
@@ -55,11 +78,13 @@
   margin: 1px auto;
   background: #3498db;
 }
+
 .preloader--top {
   top: 0;
   -webkit-animation: preloaderCSSTop 2s infinite;
-          animation: preloaderCSSTop 2s infinite;
+  animation: preloaderCSSTop 2s infinite;
 }
+
 .preloader--top::after {
   position: absolute;
   content: '';
@@ -70,17 +95,19 @@
   background: #3498db;
   margin-left: 1px;
   -webkit-animation: preloaderCSSTopAfter 2s infinite;
-          animation: preloaderCSSTopAfter 2s infinite;
+  animation: preloaderCSSTopAfter 2s infinite;
   -webkit-animation-delay: .5s;
-          animation-delay: .5s;
+  animation-delay: .5s;
 }
+
 .preloader--bottom {
   top: 0;
   -webkit-animation: preloaderCSSBottom 2s infinite;
-          animation: preloaderCSSBottom 2s infinite;
+  animation: preloaderCSSBottom 2s infinite;
   -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  animation-delay: 1.5s;
 }
+
 .preloader--bottom::after {
   position: absolute;
   content: '';
@@ -91,77 +118,98 @@
   background: #3498db;
   margin-left: 1px;
   -webkit-animation: preloaderCSSTopAfter 2s infinite;
-          animation: preloaderCSSTopAfter 2s infinite;
+  animation: preloaderCSSTopAfter 2s infinite;
   -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  animation-delay: 1s;
 }
 
 @-webkit-keyframes preloaderCSSTop {
   0% {
     background-color: #3498db;
   }
+
   100% {
     background-color: white;
   }
+
 }
 
 @keyframes preloaderCSSTop {
   0% {
     background-color: #3498db;
   }
+
   100% {
     background-color: white;
   }
+
 }
+
 @-webkit-keyframes preloaderCSSBottom {
   0% {
     background-color: #3498db;
   }
+
   100% {
     background-color: white;
   }
+
 }
+
 @keyframes preloaderCSSBottom {
   0% {
     background-color: #3498db;
   }
+
   100% {
     background-color: white;
   }
+
 }
+
 @-webkit-keyframes preloaderCSSTopAfter {
   0% {
     background-color: #3498db;
   }
+
   100% {
     background-color: white;
   }
+
 }
+
 @keyframes preloaderCSSTopAfter {
   0% {
     background-color: #3498db;
   }
+
   100% {
     background-color: white;
   }
+
 }
+
 @-webkit-keyframes preloaderCSSBottomAfter {
   0% {
     background-color: #3498db;
   }
+
   100% {
     background-color: white;
   }
+
 }
+
 @keyframes preloaderCSSBottomAfter {
   0% {
     background-color: black;
   }
+
   100% {
     background-color: white;
   }
+
 }
-/* google preloader */
 
 showbox {
   position: absolute;
@@ -177,6 +225,7 @@ showbox {
   margin: 0 auto;
   width: 75px;
 }
+
 .loader1:before {
   content: '';
   display: block;
@@ -185,10 +234,10 @@ showbox {
 
 .circular {
   -webkit-animation: rotate 2s linear infinite;
-          animation: rotate 2s linear infinite;
+  animation: rotate 2s linear infinite;
   height: 100%;
   -webkit-transform-origin: center center;
-          transform-origin: center center;
+  transform-origin: center center;
   width: 100%;
   position: absolute;
   top: 0;
@@ -202,85 +251,103 @@ showbox {
   stroke-dasharray: 1, 200;
   stroke-dashoffset: 0;
   -webkit-animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
-    animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
-    stroke-linecap: round;
+  animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+  stroke-linecap: round;
 }
+
 @keyframes rotate {
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
+
 }
 
 @-webkit-keyframes rotate {
-    from{
-        -webkit-transform: rotate(360deg);
-    }
-    to{
-        -webkit-transform: rotate(360deg);
-    }
+  from {
+    -webkit-transform: rotate(360deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+
 }
-
-
-
 
 @-webkit-keyframes dash {
   0% {
     stroke-dasharray: 1, 200;
     stroke-dashoffset: 0;
   }
+
   50% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -35px;
   }
+
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -124px;
   }
+
 }
+
 @keyframes dash {
   0% {
     stroke-dasharray: 1, 200;
     stroke-dashoffset: 0;
   }
+
   50% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -35px;
   }
+
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -124px;
   }
+
 }
+
 @-webkit-keyframes color {
   100%,
   0% {
     stroke: #67b2e4;
   }
+
   40% {
     stroke: #62d995;
   }
+
   66% {
     stroke: #f5d34b;
   }
+
   80%,
   90% {
     stroke: #ed796d;
   }
+
 }
+
 @keyframes color {
   100%,
   0% {
     stroke: #67b2e4;
   }
+
   40% {
     stroke: #62d995;
   }
+
   66% {
     stroke: #f5d34b;
   }
+
   80%,
   90% {
     stroke: #ed796d;
   }
+
 }
