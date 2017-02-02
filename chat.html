@@ -18,13 +18,15 @@
     <link rel="stylesheet" href="assets/vendors/animatecss/animate.min.css" />
     <!--Chat Style Sheet-->
     <link href="assets/css/chat.css" rel="stylesheet" />
+    <link href="assets/css/ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/lists.css">
+    <link rel="stylesheet" href="assets/vendors/toggle/bootstrap-switch.css">
 </head>
 
 <body>
     <div id="wrapper">
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
-            <div class="sidebar-brand" id="company-name">Blue Dashboard</div>
             <div class="left-side-header">
                 <div class="row">
                     <div class="col-sm-10">
@@ -34,13 +36,13 @@
                         <i class="fa fa-bell-slash-o icon-color" aria-hidden="true"></i>
                     </div>
                 </div>
-                <div class="row chat-user-info">
+                <div id="user-box" class="row chat-user-info">
                     <div class="col-sm-10">
-                        <div class="col-sm-5">
+                        <div class="col-sm-5 chat-user-img">
                             <img alt="user image" src="assets/images/Sami.jpg">
                         </div>
                         <div class="col-sm-5 no-left-right-padding padding-top">
-                            <h5>Mr.Sami</h5>
+                            <h5>Mr.Sami<i class="fa fa-angle-down no-margin" aria-hidden="true"></i></h5>
                             <p>@sami1985</p>
                         </div>
                     </div>
@@ -50,8 +52,10 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-12 threads">
-                        <i class="fa fa-comments" aria-hidden="true"></i>
-                        <p>All Threads</p>
+                        <a href="#">
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <p>Favorite List</p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -59,7 +63,7 @@
                 <li class="margin-btn">
                     <a class="MainMenue" href="#">
                         <i class="fa fa-bullhorn nav-icon" aria-hidden="true"></i>CHANNELS (7)
-                        <i class="fa fa-plus-square-o  LeftArrow" aria-hidden="true"></i>
+                        <i d="preview1" data-toggle="modal" data-target="#myModal2" class="fa fa-plus-square-o  LeftArrow" aria-hidden="true"></i>
                     </a>
                     <ul class="Submenue">
                         <li class="submenu-li">
@@ -97,27 +101,32 @@
                     <ul class="Submenue">
                         <li class="submenu-li">
                             <a href="forms.html">
-                                <i class="fa fa-circle-o nav-icon active-user" aria-hidden="true"></i>Mohammad Meshaal
+                                <i class="fa fa-at nav-icon active-user" aria-hidden="true"></i>Mohammad Meshaal
                             </a>
                         </li>
                         <li class="submenu-li">
                             <a href="form_wizard.html">
-                                <i class="fa fa-circle-o nav-icon active-user" aria-hidden="true"></i>Rayan Amarat
+                                <i class="fa fa-at nav-icon active-user" aria-hidden="true"></i>Rayan Amarat
                             </a>
                         </li>
                         <li class="submenu-li">
                             <a href="form_wizard.html">
-                                <i class="fa fa-circle-o nav-icon" aria-hidden="true"></i>Mustafa Abed
+                                <i class="fa fa-at nav-icon" aria-hidden="true"></i>Mustafa Abed
                             </a>
                         </li>
                         <li class="submenu-li">
                             <a href="form_wizard.html">
-                                <i class="fa fa-circle-o nav-icon" aria-hidden="true"></i>Mahmoud Abed
+                                <i class="fa fa-at nav-icon" aria-hidden="true"></i>Mahmoud Abed
                             </a>
                         </li>
                     </ul>
                 </li>
             </ul>
+            <div class="row right-side-logo">
+                <div class="col-sm-12">
+                    <img src="assets/images/new-release-logo-01.png" alt="new release logo">
+                </div>
+            </div>
         </div>
         <!-- /#sidebar-wrapper -->
         <div id="head">
@@ -130,103 +139,188 @@
                             <li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i><p>2</p></a></li>
                             <li><a href="#"><i class="fa fa-user-o" aria-hidden="true"></i><p>4</p></a></li>
                             <li><a href="#"><i class="fa fa-thumb-tack" aria-hidden="true"></i><p>0</p></a></li>
-                            <li><a href="#"><p><i class="fa fa-plus" aria-hidden="true"></i>Add a topic</p></a></li>
+                            <li>
+                                <a href="#">
+                                    <p><i class="fa fa-plus" aria-hidden="true"></i>Add a topic</p>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                     <div class="col-sm-6 no-left-right-padding right-side-chat-lest">
                         <a href="#"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
-                       <div class="form-group pull-right">
+                        <div class="form-group pull-right">
                             <div class="icon-addon addon-md">
                                 <input type="email" placeholder="Search" class="form-control" id="searchTB">
                                 <i class="fa fa-search glyphicon glyphicon-search" aria-hidden="true"></i>
                             </div>
                         </div>
                         <ul class="chat-header-list pull-right">
-                            <li><a href="#"><i class="fa fa-phone not-activ" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
                             <li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i></a></li>
                             <li><a href="#"><i class="fa fa-info" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
                 </div>
-                <!--    <div class="notifecations head-box">
-                        <button id="notifications" class="btn btn-default btn-lg btn-link">
-                            <i class="fa fa-bell-o" aria-hidden="true"></i>
-                        </button>
-                        <span id="not-badg" class="badge badge-notify">2</span>
-                    </div>
-                    <div class="email head-box">
-                        <button id="messages" class="btn btn-default btn-lg btn-link">
-                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                        </button>
-                        <span id="message-badg" class="badge badge-notify">4</span>
-                    </div>
-                    <div id="user-box" class="user-box head-box">
-                        <p> Mr.Sami&nbsp;&nbsp; &nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i></p>
-                        <img src="assets/images/Sami.jpg" />
-                    </div> -->
             </div>
         </div>
         <!-- Page Content -->
-        <div id="page-content-wrapper">
+        <div class="chat-cotainer">
+            <div class="container-fluid">
+                <h2>#general</h2>
+                <br>
+                <h4><a class="chat-user-link" href="#">Mohammad Meshaal</a>created this channel on on October 31st, 2015. This is the very beginning of the <a class="chat-chanel-link" href="#">#general</a><br>channel. Purpose: This channel is for team-wide communication and announcements. All team members are in this channel.</h4>
+                <div class="row chat-actions">
+                    <div class="col-sm-4 ">
+                        <a href="# "><i class="fa fa-wrench " aria-hidden="true "></i>Set a Purpose</a>
+                    </div>
+                    <div class="col-sm-4 ">
+                        <a href="# "><i class="fa fa-plus " aria-hidden="true "></i>Add an App Or Custom Integration</a>
+                    </div>
+                    <div class="col-sm-4 ">
+                        <a href="# "><i class="fa fa-user " aria-hidden="true "></i>Invite Others To This Channel</a>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-sm-12 chat-time ">
+                        <h5>October 31, 2015</h5>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-sm-7 no-left-right-padding ">
+                        <div class="col-sm-12 single-chat-message ">
+                            <table class="post-table ">
+                                <tr>
+                                    <td rowspan="4 " class="post-image-row ">
+                                        <img alt="user name " src="assets/images/member-3.png " />
+                                    </td>
+                                    <td class="post-textbox-row " colspan="5 ">
+                                        <p class="post-user-name ">Mohammad Meshaal</p>
+                                        <p class="post-time ">9:44 AM</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="post-textbox-row " colspan="5 ">
+                                        <p class="post-description ">Joined <a class="chat-chanel-link " href="# ">#general</a>,and invite <a class="chat-user-link " href="# ">@mahmoud</a>, <a class="chat-user-link " href="# ">@sarahahmad</a></p>
+                                    </td>
+                                    <td class="post-textbox-row " colspan="4 ">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="post-textbox-row " colspan="5 ">
+                                    </td>
+                                    <td class="post-textbox-row " colspan="4 ">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-sm-12 chat-time ">
+                        <h5>October 31, 2015</h5>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-sm-7 no-left-right-padding ">
+                        <div class="col-sm-12 single-chat-message ">
+                            <table class="post-table ">
+                                <tr>
+                                    <td rowspan="4 " class="post-image-row ">
+                                        <img alt="user name " src="assets/images/member-4.png " />
+                                    </td>
+                                    <td class="post-textbox-row " colspan="5 ">
+                                        <p class="post-user-name ">Sarah Ahmad</p>
+                                        <p class="post-time ">10:07 AM</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="border-left-style post-textbox-row " colspan="5 ">
+                                        <a href="https://www.youtube.com/watch?v=Jlbs8ly6OKA&list=PL76809ED684A081F3 ">https://www.youtube.com/watch?v=Jlbs8ly6OKA&list=PL76809ED684A081F3</a>
+                                        <ul class="post-desc ">
+                                            <li>
+                                                <i class="fa fa-youtube-play " aria-hidden="true "></i> Youtube
+                                            </li>
+                                            <li>
+                                                Carl Herold
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td class="post-textbox-row " colspan="4 ">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="post-textbox-row border-left-style " colspan="5 ">
+                                        <br>
+                                        <iframe class="chat-video " height="315 " src="https://www.youtube.com/embed/Jlbs8ly6OKA?list=PL76809ED684A081F3 " frameborder="0 " allowfullscreen></iframe>
+                                    </td>
+                                    <td class="post-textbox-row " colspan="4 ">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 chat-time ">
+                        <h5>October 31, 2015</h5>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-sm-7 no-left-right-padding ">
+                        <div class="col-sm-12 single-chat-message ">
+                            <table class="post-table ">
+                                <tr>
+                                    <td rowspan="4 " class="post-image-row ">
+                                        <img alt="user name " src="assets/images/personal-img.jpg" />
+                                    </td>
+                                    <td class="post-textbox-row " colspan="5 ">
+                                        <p class="post-user-name ">Lina Shadi</p>
+                                        <p class="post-time ">11:20 AM</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="post-textbox-row " colspan="5 ">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </p>
+                                    </td>
+                                    <td class="post-textbox-row " colspan="4 ">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="post-textbox-row " colspan="5 ">
+                                        <br>
+                                        <img src="assets/images/lock-screen.jpg">
+                                    </td>
+                                    <td class="post-textbox-row " colspan="4 ">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row chat-input">
+            <div class="col-sm-12 no-left-right-padding chat-border">
+                <button type="button" class="btn btn-default add-file-btn"><span class="fa fa-plus"></span></button>
+                <input type="text" placeholder="Message #general" class="chat-message-input">
+                <button type="button" class="btn btn-default add-omg-btn">
+                    <span class="fa fa-smile-o"></span></button>
+            </div>
+        </div>
+        <div id="page-content-wrapper ">
             <!-- /#page-content-wrapper -->
         </div>
         <!-- /#wrapper -->
-        <div class="notifecations-box">
-            <div class="arrow-up"></div>
-            <h5>Notifications</h5>
-            <div class="single-not-content">
-                <a href="#">
-                    <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b>&nbsp; wants your confirmation on his Leave Request on 12 May 2015</p>
-                </a>
-            </div>
-            <div class="single-not-content">
-                <a href="#">
-                    <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b>&nbsp; wants your confirmation on his Leave Request on 12 May 2015</p>
-                </a>
-            </div>
-            <div class="veiw-all-not">
-                <a href="#">View All</a>
-            </div>
-        </div>
-        <div class="messages-box">
-            <div class="arrow-up"></div>
-            <h5>Messages <a class="send-message-link " href="#">Send New Message</a></h5>
-            <div class="single-not-content">
-                <a href="#">
-                    <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b>
-                        <br /> Message subject will display here</p>
-                </a>
-            </div>
-            <div class="single-not-content">
-                <a href="#">
-                    <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b>
-                        <br /> Message subject will display here</p>
-                </a>
-            </div>
-            <div class="single-not-content">
-                <a href="#">
-                    <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b>
-                        <br /> Message subject will display here</p>
-                </a>
-            </div>
-            <div class="single-not-content">
-                <a href="#">
-                    <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b>
-                        <br /> Message subject will display here</p>
-                </a>
-            </div>
-            <div class="veiw-all-not">
-                <a href="#">View All</a>
-            </div>
-        </div>
         <div class="user-info-box">
-            <div class="arrow-up user-arrow"></div>
+            <select id="eventclassName" class="select-display selectpicker form-control empty js-example-templating ">
+                <option value="success">Online</option>
+                <option value="important">Offline</option>
+            </select>
             <a href="#">
                 <div class="user-info-content">
                     <i class="fa fa-user" aria-hidden="true"></i> Proﬁle
@@ -238,11 +332,6 @@
                 </div>
             </a>
             <a href="#">
-                <div class="user-info-content">
-                    <i class="fa fa-info-circle" aria-hidden="true"></i> Help
-                </div>
-            </a>
-            <a href="#">
                 <div class="user-info-content logout">
                     Log Out
                     <i class="fa fa-sign-out" aria-hidden="true"></i>
@@ -250,10 +339,64 @@
             </a>
         </div>
     </div>
-    <script src="assets/js/vendors/jquery-1.12.3.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/chat.js"></script>
-    <script src="assets/js/notifications_boxs.js"></script>
+    <!-- Modal -->
+    <div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel2">Create Channel</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="col-md-12 no-padding">
+                        <div class="list-group">
+                            <label class="prv-lbl" for="private">Private</label>
+                             
+                            <input class="toggle-align" type="checkbox" name="my-checkbox" checked data-size="mini">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 no-left-right-padding">
+                    <form id="createAppointmentForm" class="form-horizontal">
+                        <div class="control-group">
+                            <div class="controls">
+                                <div class="input-field parent">
+                                    <input id="cname" name="Location" type="text" class="validate">
+                                    <label for="Location"><i class="fa fa-info" aria-hidden="true"></i>&nbsp;Channel Name</label>
+                                </div>
+                                <div class="input-field parent">
+                                    <input id="invite" name="Location" type="text" class="validate">
+                                    <label for="Location"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;Invite</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <button type="button" class="btn btn-info center-block right-button">Creat</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <button type="button" class="btn btn-primary center-block right-button">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- modal-content -->
+        </div>
+        <!-- modal-dialog -->
+    </div>
+    <!-- modal -->
+    <script src="assets/js/vendors/jquery-1.12.3.js "></script>
+    <script src="assets/js/bootstrap.min.js "></script>
+    <script src="assets/js/chat.js "></script>
+    <script src="assets/js/notifications_boxs.js "></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script src="assets/vendors/toggle/bootstrap-switch.js"></script>
+    <script src="assets/js/lists.js"></script>
 </body>
 
 </html>
