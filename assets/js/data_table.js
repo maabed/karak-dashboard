@@ -1,5 +1,3 @@
-/// <reference path="data_table.js" />
-/// <reference path="data_table.js" />
 $(document).ready(function () {
     $('#table_id').DataTable();
 });
@@ -41,8 +39,6 @@ $(document).ready(function () {
         ]
     });
 });
-
-
 
 $(document).ready(function () {
     // Setup - add a text input to each footer cell

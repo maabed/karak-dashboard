@@ -9,8 +9,6 @@ $(document).ready(function() {
   $("#To_tag").focusout(function() {
     $("#To_tag").parent().css("border-bottom", "1px solid #E4E5E7");
   });
-
-
   $(".cc").find(".bootstrap-tagsinput").find("input").attr("id", "cc_tag");
   $("#cc_tag").focusin(function() {
     $("#cc_tag").parent().css("border-bottom", "1px solid #3B97D2");
