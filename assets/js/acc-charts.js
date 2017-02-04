@@ -1,4 +1,7 @@
-$(function() {
+$(function($) {
+
+  'use strict';
+
   $(document).ready(function() {
     Highcharts.setOptions({
       global: {
@@ -71,81 +74,81 @@ $(function() {
         }())
       }]
     });
-  });
-});
 
-$(function() {
-  $.getJSON('https://www.highcharts.com/samples/data/jsonp.php?filename=usdeur.json&callback=?', function(data) {
+    $(function() {
+      $.getJSON('https://www.highcharts.com/samples/data/jsonp.php?filename=usdeur.json&callback=?', function(data) {
 
-    Highcharts.chart('containerexchange', {
-      chart: {
-        zoomType: 'x',
-        margin: [10, 0, 20, 35],
-        height: 150,
-      },
-      title: {
-        text: ''
-      },
-      subtitle: {
-        text: document.ontouchstart === undefined ?
-          '' : 'Pinch the chart to zoom in'
-      },
-      xAxis: {
-        type: 'datetime'
-      },
-      yAxis: {
-        title: {
-          text: 'Exchange rate'
-        }
-      },
-      legend: {
-        enabled: false
-      },
-      plotOptions: {
-        area: {
-          fillColor: {
-            linearGradient: {
-              x1: 0,
-              y1: 0,
-              x2: 0,
-              y2: 1
-            },
-            stops: [
-              [0, Highcharts.getOptions().colors[0]],
-              [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
-            ]
+        Highcharts.chart('containerexchange', {
+          chart: {
+            zoomType: 'x',
+            margin: [10, 0, 20, 35],
+            height: 150,
           },
-          marker: {
-            radius: 2
+          title: {
+            text: ''
           },
-          lineWidth: 1,
-          states: {
-            hover: {
-              lineWidth: 1
+          subtitle: {
+            text: document.ontouchstart === undefined ?
+              '' : 'Pinch the chart to zoom in'
+          },
+          xAxis: {
+            type: 'datetime'
+          },
+          yAxis: {
+            title: {
+              text: 'Exchange rate'
             }
           },
-          threshold: null
-        }
-      },
-      exporting: {
-        buttons: [{
-          symbol: '',
-        }]
-      },
+          legend: {
+            enabled: false
+          },
+          plotOptions: {
+            area: {
+              fillColor: {
+                linearGradient: {
+                  x1: 0,
+                  y1: 0,
+                  x2: 0,
+                  y2: 1
+                },
+                stops: [
+                  [0, Highcharts.getOptions().colors[0]],
+                  [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+                ]
+              },
+              marker: {
+                radius: 2
+              },
+              lineWidth: 1,
+              states: {
+                hover: {
+                  lineWidth: 1
+                }
+              },
+              threshold: null
+            }
+          },
+          exporting: {
+            buttons: [{
+              symbol: '',
+            }]
+          },
 
-      series: [{
-        type: 'area',
-        name: 'USD to EUR',
-        data: data
-      }]
+          series: [{
+            type: 'area',
+            name: 'USD to EUR',
+            data: data
+          }]
+        });
+      });
     });
+
+    $('#change-acc').on('change', function() {
+      $('#accno').text($('#change-acc').val());
+    });
+
+    function printbtn() {
+      window.print();
+    }
   });
 });
-
-$('#change-acc').on('change', function() {
-  $('#accno').text($('#change-acc').val());
-})
-
-function printbtn() {
-  window.print();
-}
