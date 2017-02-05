@@ -3802,9 +3802,17 @@ left: 30px;
 .refresh-loader {
 display: none;
 position: absolute;
-left: 7em;
-top: 17em;
+left: 10em;
+top: 18em;
 z-index: 9999;
+}
+
+.msg-loader {
+display: none;
+position: absolute;
+left: 49em;
+top: 20em;
+z-index: 999999;
 }
 
 .Split-right-sidr {

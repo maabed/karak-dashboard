@@ -5,6 +5,7 @@ Author: New Release
 http://newrelease.io
 Copyright 2017 New Release
 */
+
 .right-slide {
   border-radius: 0px;
 }
@@ -49,29 +50,24 @@ Copyright 2017 New Release
 .select-width {
   width: 50%;
   display: inline;
+  margin-bottom: 15px;
 }
 
 .generate-display {
   float: right;
+  margin-bottom: 15px;
 }
 
-#toastr-form>.radio {
+#toastr-form > .radio {
   margin-bottom: 19px;
 }
 
-.select-width {
-  margin-bottom: 15px;
-}
-
-.generate-display {
-  margin-bottom: 15px;
-}
 
 .col-padding {
   padding-left: 0px;
 }
 
-.dashboard-container>img {
+.dashboard-container > img {
   width: 60%;
   padding-top: 25px;
 }

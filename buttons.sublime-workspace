@@ -1,0 +1,871 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"s",
+				"select2.min.js"
+			],
+			[
+				"box-s",
+				"box-shadow"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"border-r",
+				"border-right"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"hr",
+				"href\tAttr"
+			],
+			[
+				"fi",
+				"fixed"
+			],
+			[
+				"lef",
+				"left"
+			],
+			[
+				"non",
+				"none"
+			],
+			[
+				"im",
+				"images/"
+			],
+			[
+				"ch",
+				"chat.css"
+			],
+			[
+				"f",
+				"f2-01.png\tw:579 h:340"
+			],
+			[
+				"ta",
+				"target\tAttr"
+			],
+			[
+				"in",
+				"index.html"
+			],
+			[
+				"te",
+				"team3-01.png\tw:340 h:341"
+			],
+			[
+				"tea",
+				"team1-01.png\tw:123 h:123"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"v",
+				"vendors/"
+			],
+			[
+				"al",
+				"alt\tAttr"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"ma",
+				"max\tAttr"
+			],
+			[
+				"rgb",
+				"rgba()"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"cen",
+				"center"
+			],
+			[
+				"fu",
+				"fullcalendar.min.js"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"borde",
+				"border"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"se",
+				"Select2/"
+			],
+			[
+				"ass",
+				"assets/"
+			],
+			[
+				"it",
+				"italic"
+			],
+			[
+				"font-s",
+				"font-style"
+			],
+			[
+				"use",
+				"user3.jpg\tw:450 h:450"
+			],
+			[
+				"user",
+				"user2.jpg\tw:1553 h:1553"
+			],
+			[
+				"no",
+				"normal"
+			],
+			[
+				"va",
+				"value\tAttr"
+			],
+			[
+				"backgrou",
+				"background-color"
+			],
+			[
+				"backgroun",
+				"background-image"
+			],
+			[
+				"getele",
+				"getElementsByClassName( classNames: DOMString ): HTMLCollection\tElement"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"ca",
+				"calender/"
+			],
+			[
+				"li",
+				"lighter"
+			],
+			[
+				"consol",
+				"console.log()"
+			],
+			[
+				"cons",
+				"console.log()"
+			],
+			[
+				"clic",
+				"clickx"
+			],
+			[
+				"get",
+				"getitems"
+			],
+			[
+				"loca",
+				"localStorage"
+			],
+			[
+				"ce",
+				"center"
+			],
+			[
+				"sam",
+				"Sami.jpg\tw:169 h:169"
+			],
+			[
+				"margi",
+				"margin-right"
+			],
+			[
+				"background-c",
+				"background-color"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"border-col",
+				"border-color"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"nameonca",
+				"nameoncard-result"
+			],
+			[
+				"name",
+				"nameoncard"
+			],
+			[
+				"dis",
+				"disabled"
+			],
+			[
+				"has",
+				"hasClass\t.hasClass()"
+			],
+			[
+				"jq",
+				"jquery.validate.js"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"ab",
+				"absolute"
+			],
+			[
+				"a",
+				"absolute"
+			],
+			[
+				"text-a",
+				"text-align"
+			],
+			[
+				"m",
+				"menus.js"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"er",
+				"error 500.html"
+			],
+			[
+				"lo",
+				"login.html"
+			],
+			[
+				"la",
+				"layouts/"
+			],
+			[
+				"tabl",
+				"tables.html"
+			],
+			[
+				"da",
+				"data_tables.html"
+			],
+			[
+				"menu",
+				"menus.html"
+			],
+			[
+				"tab",
+				"tabs.html"
+			],
+			[
+				"butt",
+				"buttons.html"
+			],
+			[
+				"for",
+				"form_wizard.html"
+			],
+			[
+				"r",
+				"right-side-colors-change.js"
+			],
+			[
+				"sele",
+				"selected-theme"
+			],
+			[
+				"blo",
+				"blocks"
+			],
+			[
+				"hi",
+				"hidden"
+			],
+			[
+				"val",
+				"value"
+			],
+			[
+				"gete",
+				"getElementsByClassName( classNames: DOMString ): HTMLCollection\tElement"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"doc",
+				"document"
+			],
+			[
+				"getelemnt",
+				"getElementById( elementId: DOMString ): Element\tDocument"
+			],
+			[
+				"c",
+				"css\t.css() - multiple"
+			],
+			[
+				"def",
+				"default"
+			],
+			[
+				"defau",
+				"default.css"
+			],
+			[
+				"or",
+				"orang.css"
+			],
+			[
+				"rig",
+				"right"
+			],
+			[
+				"PA",
+				"padding-right"
+			],
+			[
+				"ovw",
+				"overflow-x"
+			],
+			[
+				"ov",
+				"overflow"
+			],
+			[
+				"ri",
+				"right"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"WID",
+				"width"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 357.0,
+		"last_filter": "for",
+		"selected_items":
+		[
+			[
+				"for",
+				"Format: Javascript"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"lin",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"enable",
+				"SublimeLinter: Disable Linter"
+			],
+			[
+				"ht",
+				"HTMLPrettify"
+			],
+			[
+				"sass",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"emmet",
+				"Toggle Comment"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/menus.html",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/js/hover.js",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/js/acc-charts.js",
+		"/Users/appleuser/Library/Application Support/Sublime Text 3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/.jshintrc",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/.gitignore",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/js/compose.js",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/js/calender.js",
+		"/Users/appleuser/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/Users/appleuser/.bash_profile",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/css/styles.css",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/vendors/calender/fullcalendar.css",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/vendors/calender/fullcalendar.min.css",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/calendar.html",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/vendors/calender/calender.js",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/chat.html",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/modals.html",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/css/modal.css",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/forms.html",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/index.html",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/js/notifications.js",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/social.html",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/css/chat.css",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/cards.html",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/js/main.js",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/js/chat.js",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/js/right-side-colors-change.js",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/css/colors-options/default.css",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/css/landing_page.css",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/js/landing_page.js",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/landing_page.html",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/js/landing_map.js",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/google_map.html",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/buttons.html",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/tables.html",
+		"/Users/appleuser/Downloads/OwlCarousel2-2.2.0/docs/demos/animate.html",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/account_manager.html",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/video",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/css/tabs.css",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/css/acc_manager.css",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/css/tables.css",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/data_tables.html",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/invoice.html",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/js/data_table.js",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/css/data_table.css",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/js/transaction-validation.js",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/js/form-wizard-validation.js",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/form_wizard.html",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/js/vendors/prettify.js",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/js/bootstrap_wizard_in_page.js",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/images/st-1.gif",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/css/social.css",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/hover.html",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/images/Sami.jpg",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/images/1-01.png",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/css/index.css",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/css/google-map.css",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/js/map.js",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/map.html",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/tabs.html",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/js/taps.js",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/icons.html",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/colors.html",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/js/toggle.js",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/vendors/calender/fullcalendar.js",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/vendors/Select2/css/cdncss.css",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/vendors/Select2/js/cdnjs.js",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/vendors/Select2/css/select2.min.css",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/css/colorpicker.css",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/panels.html",
+		"/Users/appleuser/Desktop/fullcalendar-3.1.0/demos/theme.html",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/vendors/calender-new/fullcalendar.js",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/calender2.html",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/vendors/calender-new/calender.js",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/vendors/calender-new/fullcalendar.css",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/css/forms.css",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/vendors/calender/calender_theme.css",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/vendors/calender-new/lib/moment.min.js",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/colors2.html",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/vendors/calender-new/fullcalendar.min.css",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/vendors/calender-new/lib/cupertino/jquery-ui.min.css",
+		"/Users/appleuser/Desktop/fullcalendar-3.1.0/demos/default.html",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/vendors/calender/jquery-ui.custom.min.js",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/css/lock_screen.css",
+		"/Users/appleuser/Desktop/login/login.html",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/css/inbox.css",
+		"/Users/appleuser/Desktop/login/lock-screen.jpg",
+		"/Users/appleuser/Desktop/login/login.css",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/compose.html",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/css/text-editor.css",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/charts.html",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/inbox.html",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/lists.html",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/loading.html",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/notifications.html",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/search.html",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/tour.html",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/lock_screen.html",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/error 400.html",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/js/message_veiw.js",
+		"/Users/appleuser/Downloads/Turjuman (2)/ContactUs.html",
+		"/Users/appleuser/Desktop/jquery-validation-1.15.0/demo/errorcontainer-demo.html",
+		"/Users/appleuser/Desktop/jquery-validation-1.15.0/demo/bootstrap/index.html",
+		"/Users/appleuser/Desktop/jquery-validation-1.15.0/demo/index.html",
+		"/Users/appleuser/Desktop/jquery-validation-1.15.0/dist/jquery.validate.js",
+		"/Users/appleuser/Desktop/jquery-validation-master/demo/bootstrap/index.html",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/js/vendors/bootstrap_wizard.js",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/css/menus.css",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/js/bootstrap.min.js",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/js/menus.js",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/login.html",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/js/login.js",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/js/page-ready-theam.js",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/layouts/calendar.html",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/css/gif-style.css",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/js/nav_colors_change.js",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/css/colors-options/white.css",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/css/colors-options/dark1.css",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/css/colors-options/dark2.css",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/css/colors-options/green.css",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/css/colors-options/orang.css",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/css/invoice.css",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/css/colors-options/colorpicker-default.css",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/css/colors-options/colorpicker.css",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/js/notifications_boxs.js",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/assets/css/dragula.css",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/layouts/inbox.html",
+		"/Users/appleuser/Desktop/Projects/Blue-dashboard/layouts/social.html"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 116.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\"",
+			"email-title",
+			"\"",
+			"style",
+			"\"",
+			"[\n",
+			"\"",
+			"data",
+			"js/vendor",
+			"\"",
+			"globa",
+			"jquery",
+			"$",
+			"\"",
+			"myModalLabel2",
+			"actio",
+			"color",
+			"priv",
+			".input-field",
+			"channel name",
+			"width: 10",
+			"width: 100",
+			"width:100",
+			"width:",
+			"not",
+			"mess",
+			"width: 100",
+			"width:100",
+			"input",
+			"):",
+			"input:not([type]),",
+			"input:not([type]), input[type=text]:not(#flat_email",
+			"input:not([type]), input[type=text]:not(#flat_email):not(.normal-text):not(.input-mini), input[type=password], input[type=email]:not(#s",
+			"input:not([type]), input[type=text]:not(#flat_email):not(.normal-text):not(.input-mini), input[type=password], input[type=email]:not(#searchTB):not(#flat_email), input[type=url], input[type=time], input[type=date], input[type=datetime], inp",
+			"input:not([type]), input[type=text]:not(#flat_email):not(.normal-text):not(.input-mini), input[type=password], input[type=email]:not(#searchTB):not(#flat_email), input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type",
+			"input:not([type]), input[type=text]:not(#flat_email):not(.normal-text):not(.input-mini), input[type=password], input[type=email]:not(#searchTB):not(#flat_email), input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], ",
+			"input:not([type]), input[type=text]:not(#flat_email):not(.normal-text):not(.input-mini), input[type=password], input[type=email]:not(#searchTB):not(#flat_email), input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea",
+			"not",
+			"input:not(#searchTB):not(#flat_email):not(.normal-",
+			"input:not(#searchTB):not(#flat_email):not(.normal-text):not(.input-mini), textarea, keygen, select, button",
+			"css",
+			"control-group",
+			"list-group-item",
+			"togg",
+			".css",
+			"col-md-4",
+			"col-sm-4",
+			"Toggle list",
+			"Toggle list\n",
+			"Right Sidebar",
+			"Right Sidebar\n",
+			"modals",
+			"ui",
+			"plu",
+			"preview1",
+			"right",
+			"right s",
+			"add-event",
+			"#add-event",
+			"selec",
+			"modal",
+			"note",
+			"chan",
+			".user-info-content",
+			"focus",
+			"outli",
+			"focus",
+			"select2",
+			"switch",
+			"pro",
+			"profile",
+			"profilr",
+			"profil",
+			"Checked",
+			"chec",
+			"yes",
+			"select2",
+			".js",
+			"selec",
+			"selec2",
+			"selec",
+			"Select2",
+			"cla",
+			"help",
+			"@me",
+			"@med",
+			"chat-user-info",
+			"#user-box",
+			"arr",
+			"new",
+			"user",
+			"user\\",
+			"no-ma",
+			"chat-user-info",
+			"left-side-header",
+			"new re",
+			"chat-message-input",
+			"left",
+			"add-file-btn",
+			"post-image-row ",
+			"add-file-btn",
+			"text",
+			"btn btn-default ",
+			".chat-input",
+			"lorem",
+			"table",
+			"\" \"",
+			"chat-actions\" \">",
+			"chat-input",
+			"col-sm-",
+			"chat-input",
+			"emo",
+			"z-inde",
+			"ظ-هريث",
+			"@m",
+			"vid",
+			"col-sm-6",
+			"last",
+			"last-ch\\",
+			"last-ch",
+			"chat-user-link",
+			"<a class=\"chat-user-link\" href=\"#\">",
+			"colo",
+			"z-inde",
+			"-we",
+			"conta",
+			"chat-cotainer",
+			"calen"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Basic"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "buttons.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"assets/css/chat.css"
+			],
+			[
+				"d",
+				"data_tables.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 274.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

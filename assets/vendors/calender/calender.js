@@ -13,19 +13,19 @@ $(document).ready(function() {
         eventLimit: true,
         selectable: true,
         selectHelper: true,
-        select: function(start, end, jsEvent, view) {
-            $('#patientName').val('');
-            $('#patientName').removeClass("active");
-            $("#patientName").blur();
+        select: function(start, end) {
+            $('#name').val('');
+            $('#name').removeClass('active');
+            $('#name').blur();
             $('#eventclassName').val('default');
-            $('#eventclassName').removeClass("active");
-            $("#eventclassName").blur();
+            $('#eventclassName').removeClass('active');
+            $('#eventclassName').blur();
             $('#notes').val('');
-            $('#notes').removeClass("active");
-            $("#notes").blur();
+            $('#notes').removeClass('active');
+            $('#notes').blur();
             $('#location').val('');
-            $('#location').removeClass("active");
-            $("#location").blur();
+            $('#location').removeClass('active');
+            $('#location').blur();
 
             var allDay = !start.hasTime() && !end.hasTime();
             var eventstart = moment(start).format('DD MMM hh:mm A');
@@ -104,9 +104,9 @@ $(document).ready(function() {
 
     $('#submitButton').on('click', function(e) {
         e.preventDefault();
-        $("#add-event").modal('hide');
+        $('#add-event').modal('hide');
         var targetEv = {
-            title: $('#patientName').val(),
+            title: $('#name').val(),
             start: $('#apptStartpost').text(),
             end: $('#apptEndpost').text(),
             className2: $('#eventclassName').val(),

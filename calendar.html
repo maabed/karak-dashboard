@@ -9,11 +9,11 @@
         <title>Blue Dashboard</title>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <!-- Font Awesome library -->
-        <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="assets/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
         <!-- Bootstrap core CSS -->
-        <link type="text/css" href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link type="text/css" href="assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <!-- Custom CSS -->
         <link href="assets/css/styles.css" rel="stylesheet" />
         <!-- Full calendar CSS files -->
@@ -290,12 +290,12 @@
                                 <div class="control-group">
                                     <div class="controls">
                                         <div class="input-field parent">
-                                            <input name="patientName" id="patientName" type="text" class="validate">
+                                            <input name="name" id="name" type="text" class="validate">
                                             <label for="name"><i class="fa fa-calendar-o" aria-hidden="true"></i>&nbsp;Event Name</label>
                                         </div>
                                         <div class="input-field parent">
-                                            <input id="location" name="Location" type="text" class="validate">
-                                            <label for="Location"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;Location</label>
+                                            <input id="location" name="location" type="text" class="validate">
+                                            <label for="location"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;Location</label>
                                         </div>
                                         <div class="input-field parent">
                                             <input name="Notes" id="notes" type="text" class="validate">
@@ -561,13 +561,14 @@
             </div>
         </div>
     </div>
+
+    <script src="assets/vendors/jquery/jquery-3.1.1.js"></script>
     <!-- Materialze JS library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
     <!-- Page layout JS -->
-    <script src="assets/js/vendors/jquery-1.12.3.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/notifications_boxs.js"></script>
-    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
     <!-- Full calendar JS files -->
     <script src="assets/vendors/calender/lib/moment.min.js"></script>
     <script src="assets/vendors/calender/fullcalendar.min.js"></script>

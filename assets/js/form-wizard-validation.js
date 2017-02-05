@@ -29,7 +29,6 @@
            $("#next-btn-wizard").show();
        }
 
-
    });
 
    $.validator.setDefaults({

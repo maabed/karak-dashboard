@@ -142,7 +142,19 @@ input:not(#searchTB):not(.has-error > input):not(.has-success > input):focus {
 }
 
 .nav-pills > li.active > a {
-  background-color: #67b2e4;
+  background-color: #F1F3F6;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover{
+    background-color: #F1F3F6;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+  color: #3498db;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+  border: none;
 }
 
 .progress-bar {
@@ -252,4 +264,35 @@ fieldset {
 
 .custome-margin-wiz {
   margin-top: 12px !important;
+}
+
+.nav-tabs-linetriangle > li.active > a:after, .nav-tabs-linetriangle > li.active > a:before {
+    border: medium solid transparent;
+    content: "";
+    height: 0;
+    left: 50%;
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    z-index: 1;
+    top: 100%;
+}
+
+.nav-tabs-linetriangle > li.active > a:before {
+    border-top-color: rgba(0, 0, 0, 0.2);
+    border-width: 11px;
+    margin-left: -11px;
+}
+
+.nav-tabs-linetriangle > li.active > a:after {
+    border-top-color: #F1F3F6;
+    border-width: 10px;
+    margin-left: -10px;
+}
+.col-sm-2.col-sm-offset-9.text-right.col-sm-height.col-middle.padding-10 {
+      margin-left: 80%;
+}
+
+.cs-select.cs-skin-slide {
+  width: 40%;
 }

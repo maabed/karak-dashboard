@@ -1,3 +1,13 @@
+var opacity = localStorage.getItem("opacity");
+document.getElementById("company-name").style.opacity = opacity;
+color = localStorage.getItem("head");
+$("#head , #searchTB, .sidebar-brand").css("background-color", color);
+document.getElementById("coloepicker").value = color;
+$(".body-header").css("border-left", "5px solid" + color);
+$(".sidebar-nav .selected a").css("border-left", "4px solid" + color); 
+$(".sidebar-nav .selected a .nav-icon ").css("color", color);
+$(".selected-theme").hide();
+
 $('#colorpickerHolder').ColorPicker({
     flat: true
 });
@@ -24,15 +34,6 @@ $("#apply").click(function() {
     $(".sidebar-nav .selected a .nav-icon ").css("color", color);
     $(".selected-theme").hide();
 });
-var opacity = localStorage.getItem("opacity");
-document.getElementById("company-name").style.opacity = opacity;
-color = localStorage.getItem("head");
-$("#head , #searchTB, .sidebar-brand").css("background-color", color);
-document.getElementById("coloepicker").value = color;
-$(".body-header").css("border-left", "5px solid" + color);
-$(".sidebar-nav .selected a").css("border-left", "4px solid" + color); 
-$(".sidebar-nav .selected a .nav-icon ").css("color", color);
-$(".selected-theme").hide();
 
 $("#default-color-btn").click(function() {
     localStorage.clear();
@@ -166,6 +167,7 @@ $("#dark2-color-btn").click(function() {
     $('#dark2-color-btn > .col-sm-12 > .selected-theme').show();
     localStorage.removeItem("opacity");
     localStorage.setItem('cssfile', 'assets/css/colors-options/dark2.css');
+    var csslink = localStorage.getItem("cssfile");
     $("#head").css("background-color", "#262930");
     $(".body-header").css("border-left", "5px solid #262930");
     $(".sidebar-nav .selected a").css("border-left", "4px solid #262930");
