@@ -17,9 +17,9 @@
         <!-- Custom CSS -->
         <link href="assets/css/styles.css" rel="stylesheet" />
         <!-- Full calendar CSS files -->
-        <link href="assets/vendors/calender/calender_theme.css" rel="stylesheet" />
-        <link href='assets/vendors/calender/fullcalendar.css' rel='stylesheet' />
-        <link href="assets/vendors/calender/fullcalendar.print.css" rel='stylesheet' media='print' />
+        <link href="assets/vendors/calendar/calendar_theme.css" rel="stylesheet" />
+        <link href='assets/vendors/calendar/fullcalendar.css' rel='stylesheet' />
+        <link href="assets/vendors/calendar/fullcalendar.print.css" rel='stylesheet' media='print' />
         <!-- Select2 dropdown JS -->
         <link href="assets/vendors/Select2/css/cdncss.css" rel="stylesheet" />
     </head>
@@ -301,7 +301,7 @@
                                             <input name="Notes" id="notes" type="text" class="validate">
                                             <label for="Notes"><i class="fa fa-sticky-note" aria-hidden="true"></i>&nbsp;Notes</label>
                                         </div>
-                                        <select id="eventclassName" style="width:100%" class="select-display selectpicker form-control empty js-example-templating ">
+                                        <select id="eventclassName" style="width:100%" class="select-display selectpicker form-control empty js-templating ">
                                             <option value="default">Default Color</option>
                                             <option value="worning">Warning</option>
                                             <option value="info">Info</option>
@@ -570,9 +570,9 @@
     <script src="assets/js/notifications_boxs.js"></script>
     <script type="text/javascript" src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
     <!-- Full calendar JS files -->
-    <script src="assets/vendors/calender/lib/moment.min.js"></script>
-    <script src="assets/vendors/calender/fullcalendar.min.js"></script>
-    <script src="assets/vendors/calender/calender.js"></script>
+    <script src="assets/vendors/calendar/lib/moment.min.js"></script>
+    <script src="assets/vendors/calendar/fullcalendar.min.js"></script>
+    <script src="assets/js/calendar.js"></script>
     <!-- Dynamic colors JS -->
     <script src="assets/js/nav_colors_change.js"></script>
     <script src="assets/js/vendors/colorpicker/colorpicker.js"></script>
@@ -582,17 +582,5 @@
     <!-- Select2 dropdown JS -->
     <script src="assets/vendors/Select2/js/select2.min.js"></script>
 
-    <script>
-    function formatState (state) {
-    if (!state.id) { return state.text; }
-    var $state = $(
-    '<span><img src="assets/images/' + state.element.value.toLowerCase() + '.png"  /> ' + state.text + '</span>'
-    );
-    return $state;
-    };
-    $(".js-example-templating").select2({
-    templateResult: formatState
-    });
-    </script>
 </body>
 </html>

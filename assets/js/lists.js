@@ -1,9 +1,9 @@
 $(function($) {
 
-  'use strict';
+	'use strict';
 
-  $(document).ready(function() {
-    $("[name='my-checkbox']").bootstrapSwitch();
-  });
+	$(document).ready(function() {
+		$("[name='my-checkbox']").bootstrapSwitch();
+	});
 
 });

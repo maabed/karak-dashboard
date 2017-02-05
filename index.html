@@ -17,11 +17,11 @@
         <!-- Font Awesome library -->
         <link type="text/css"  href="assets/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
         <!-- Calender -->
-        <link type="text/css"  href="assets/vendors/calender/fullcalendar.css" rel="stylesheet" />
-        <link type="text/css"  href="assets/vendors/calender/calender_theme.css" rel="stylesheet" />
-        <link type="text/css"  href="assets/vendors/calender/calender_theme.css" rel="stylesheet" />
-        <link type="text/css"  href='assets/vendors/calender/fullcalendar.css' rel='stylesheet' />
-        <link type="text/css"  href="assets/vendors/calender/fullcalendar.print.css" rel='stylesheet' media='print' />
+        <link type="text/css"  href="assets/vendors/calendar/fullcalendar.css" rel="stylesheet" />
+        <link type="text/css"  href="assets/vendors/calendar/calendar_theme.css" rel="stylesheet" />
+        <link type="text/css"  href="assets/vendors/calendar/calendar_theme.css" rel="stylesheet" />
+        <link type="text/css"  href='assets/vendors/calendar/fullcalendar.css' rel='stylesheet' />
+        <link type="text/css"  href="assets/vendors/calendar/fullcalendar.print.css" rel='stylesheet' media='print' />
         <!-- Index page CSS -->
         <link type="text/css"  rel="stylesheet" href="assets/css/index.css">
         <!-- Loading animation CSS -->
@@ -429,7 +429,7 @@
                             <div class="col-contint scroll-y col-contint-taps">
                                 <h5 class="title">Calendar</h5>
                                 <br>
-                                <div id='calendar' class="calender-layout"></div>
+                                <div id='calendar' class="calendar-layout"></div>
                             </div>
                         </div>
                         <div class="modal right fade" id="add-event" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
@@ -462,7 +462,7 @@
                                                         <input name="Notes" id="notes" type="text" class="validate">
                                                         <label for="Notes"><i class="fa fa-sticky-note" aria-hidden="true"></i>&nbsp;Notes</label>
                                                     </div>
-                                                    <select id="eventclassName" style="width:100%" class="select-display selectpicker form-control empty js-example-templating ">
+                                                    <select id="eventclassName" style="width:100%" class="select-display selectpicker form-control empty js-templating ">
                                                         <option value="default">Default Color</option>
                                                         <option value="worning">Warning</option>
                                                         <option value="info">Info</option>
@@ -777,21 +777,6 @@
                                 </div>
                             </td>
                         </tr>
-                        <tr>
-                            <td>
-                                <h5 class="title">Select Your Favorite Color</h5>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="col-sm-12 no-padding">
-                                    <input id="coloepicker" type="color" />
-                                </div>
-                                <div class="col-sm-12 no-padding">
-                                    <button type="button" id="apply" class="btn btn-default btn-block apply-color">Apply</button>
-                                </div>
-                            </td>
-                        </tr>
                     </table>
                 </div>
             </div>
@@ -801,13 +786,13 @@
                 <div class="single-not-content">
                     <a href="#">
                         <img src="assets/images/Sami.jpg" />
-                        <p><b>Mohammad Meshaal</b>&nbsp; wants your confirmation on his Leave Request on 12 May 2015</p>
+                        <p><b>Mohammad Meshaal</b> wants your confirmation on his Leave Request on 12 May 2015</p>
                     </a>
                 </div>
                 <div class="single-not-content">
                     <a href="#">
                         <img src="assets/images/Sami.jpg" />
-                        <p><b>Mohammad Meshaal</b>&nbsp; wants your confirmation on his Leave Request on 12 May 2015</p>
+                        <p><b>Mohammad Meshaal</b> wants your confirmation on his Leave Request on 12 May 2015</p>
                     </a>
                 </div>
                 <div class="veiw-all-not">
@@ -886,20 +871,20 @@
         <script type="text/javascript" src="assets/js/notifications_boxs.js"></script>
         <script type="text/javascript" src="assets/js/taps.js"></script>
         <!-- Calendar JS -->
-        <script type="text/javascript" src="assets/vendors/calender/lib/moment.min.js"></script>
-        <script type="text/javascript" src="assets/vendors/calender/fullcalendar.min.js"></script>
-        <script type="text/javascript" src="assets/vendors/calender/calender.js"></script>
-        <script type="text/javascript" src="assets/js/calender.js"></script>
-        <!-- Map -->
+        <script type="text/javascript" src="assets/vendors/calendar/lib/moment.min.js"></script>
+        <script type="text/javascript" src="assets/vendors/calendar/fullcalendar.min.js"></script>
+        <script type="text/javascript" src="assets/js/calendar.js"></script>
+        <!-- HighCharts -->
         <script type="text/javascript" src="https://code.highcharts.com/highcharts.js"></script>
+        <!-- Map -->
         <script type="text/javascript" src="assets/js/map.js"></script>
-        <script type="text/javascript" src="http://code.highcharts.com/maps/modules/map.js"></script>
-        <script type="text/javascript" src="https://code.highcharts.com/maps/modules/data.js"></script>
-        <script type="text/javascript" src="https://code.highcharts.com/maps/modules/exporting.js"></script>
-        <script type="text/javascript" src="https://code.highcharts.com/mapdata/custom/world.js"></script>
+        <script type="text/javascript" src="assets/vendors/highmaps/code/modules/map.js"></script>
+        <script type="text/javascript" src="assets/vendors/highmaps/code/modules/data.js"></script>
+        <script type="text/javascript" src="assets/vendors/highmaps/code/modules/exporting.js"></script>
+        <script type="text/javascript" src="assets/vendors/highmaps/code/custom/world.js"></script>
         <!--Calender-->
         <script type="text/javascript" src="assets/js/nav_colors_change.js"></script>
-        <script type="text/javascript" src="assets/js/vendors/colorpicker/colorpicker.js"></script>
+        <!-- <script type="text/javascript" src="assets/js/vendors/colorpicker/colorpicker.js"></script> -->
         <script type="text/javascript" src="assets/js/right-side-colors-change.js"></script>
         <script type="text/javascript" src="assets/js/page-ready-theam.js"></script>
         <link id="default-color-picker" rel="stylesheet" />

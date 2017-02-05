@@ -209,7 +209,7 @@
    );
    return $state;
  };
- $(".js-example-templating").select2({
+ $(".js-templating").select2({
    templateResult: formatState
  });
 
