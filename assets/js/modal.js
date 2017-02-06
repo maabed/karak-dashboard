@@ -1,4 +1,4 @@
-(function($) {
+$(function($) {
 	'use strict';
 	$(document).ready(function() {
 		$('#exampleModal').on('show.bs.modal', function(event) {

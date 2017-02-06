@@ -1,4 +1,4 @@
-﻿(function($) {
+﻿$(function($) {
 
     'use strict';
     $(document).ready(function() {
@@ -37,4 +37,4 @@
             $(this).closest('.panel').toggleClass('panel-fullscreen');
         });
     });
-})(window.jQuery);
+});

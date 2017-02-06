@@ -1,5 +1,4 @@
-(function($) {
-  'use strict';
+
   $(document).ready(function() {
     scaleVideoContainer();
     initBannerVideoSize('.video-container .poster img');
@@ -70,4 +69,3 @@
     });
 
   }
-})(window.jQuery);

@@ -1,46 +1,38 @@
-$(document).ready(function(){
+$(function($) {
+  'use strict';
+  $(document).ready(function() {
     $(".popover-navigation").find(".btn-group").children().remove();
-});
-        $(document).ready(function(){
-            // Instance the tour
-            var tour = new Tour({
-                backdrop:true,
-                steps: [
-                    {
-                        element: "#live-tour",
-                        title: "Title of my step",
-                        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id erat hendrerit."
-                    },
-                    {
-                        element: "#income-tour",
-                        title: "Title of my step",
-                        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id erat hendrerit.",
-                        placement: "left",
-                    },
-                    {
-                        element: "#world-tour",
-                        title: "Title of my step",
-                        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id erat hendrerit.",
-                        placement:"left"
-                    },
-                    {
-                        element: "#calendar-tour",
-                        title: "Title of my step",
-                        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id erat hendrerit."
-                    },
-                    {
-                        element: "#activities-tour",
-                        title: "Title of my step",
-                        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id erat hendrerit."
-                    },
-                    {
-                        element: "#todo-tour",
-                        title: "Title of my step",
-                        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id erat hendrerit.",
-                        placement:"left"
-                    },
-                ],
-                template: "<div class='popover tour'> \
+    var tour = new Tour({
+      backdrop: true,
+      steps: [{
+        element: "#live-tour",
+        title: "Title of my step",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id erat hendrerit."
+      }, {
+        element: "#income-tour",
+        title: "Title of my step",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id erat hendrerit.",
+        placement: "left",
+      }, {
+        element: "#world-tour",
+        title: "Title of my step",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id erat hendrerit.",
+        placement: "left"
+      }, {
+        element: "#calendar-tour",
+        title: "Title of my step",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id erat hendrerit."
+      }, {
+        element: "#activities-tour",
+        title: "Title of my step",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id erat hendrerit."
+      }, {
+        element: "#todo-tour",
+        title: "Title of my step",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id erat hendrerit.",
+        placement: "left"
+      }, ],
+      template: "<div class='popover tour'> \
                 <div class='arrow'></div> \
                 <h3 class='popover-title'></h3> \
                 <div class='popover-content'></div> \
@@ -50,9 +42,10 @@ $(document).ready(function(){
                 </div> \
                 <button class='btn btn-danger' data-role='end'>End tour</button> \
                 </div>",
-            });
-            // Initialize the tour
-            tour.init();
-            // Start the tour
-            tour.start();
-        });
+    });
+    // Initialize the tour
+    tour.init();
+    // Start the tour
+    tour.start();
+  });
+});

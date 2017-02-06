@@ -1,4 +1,4 @@
-﻿(function($) {
+﻿$(function($) {
     'use strict';
     $(document).ready(function() {
         $('.statistics-item').hide();
@@ -39,4 +39,4 @@
             $this2.toggle();
         });
     });
-})(window.jQuery);
+});

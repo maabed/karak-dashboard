@@ -1,4 +1,4 @@
-(function($) {
+$(function($) {
 
     'use strict';
     /* basic circle */
@@ -407,4 +407,4 @@
 
         $('.select2-init-single').select2();
     });
-})(window.jQuery);
+});

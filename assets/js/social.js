@@ -1,4 +1,4 @@
-(function($) {
+$(function($) {
     'use strict';
     $(document).ready(function() {
         var flag = 1;
@@ -14,4 +14,4 @@
             }
         });
     });
-})(window.jQuery);
+});
