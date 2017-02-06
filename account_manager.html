@@ -337,7 +337,7 @@
                                     <span><i class="fa fa-table" aria-hidden="true"></i><label>27 Nov, wednesday</label></span>
                                 </div>
                                 <label class="change-acc-select">Change Account:</label>
-                                <select class="select-style js-example-basic-single" name="change-acc" id="change-acc">
+                                <select class="select-style select2-init-single" name="change-acc" id="change-acc">
                                     <option value="99 2344 3456 343">99 2344 3456 343</option>
                                     <option value="98 3443 6456 241">98 3443 6456 241</option>
                                 </select>
@@ -365,7 +365,7 @@
                                         <div class="row top-margin">
                                             <div class="col-sm-6">
                                                 <div class="form-group transaction-drop">
-                                                    <select class="select-style js-example-basic-single" name="changeacc" id="changeacc" required>
+                                                    <select class="select-style select2-init-single" name="changeacc" id="changeacc" required>
                                                         <option value="">Customer Account No.</option>
                                                         <option value="99 2344 3456 343">99 2344 3456 343</option>
                                                         <option value="98 3443 6456 241">98 3443 6456 241</option>
@@ -426,7 +426,7 @@
                             <div class="col-contint">
                                 <h5 class="title">Reports</h5>
                                 <br>
-                                <select class="select-style select-custom js-example-basic-single" name="reports" id="reports" required>
+                                <select class="select-style select-custom select2-init-single" name="reports" id="reports" required>
                                     <option value="Transactions Report">Transactions Report</option>
                                     <option value="99 2344 3456 343">Deposits Report</option>
                                     <option value="98 3443 6456 241">withdraw Report</option>
@@ -526,7 +526,7 @@
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <br>
-                                        <button type="button" onclick="printbtn()" class="btn btn-default outline-icon-btn pull-right">
+                                        <button type="button" class="btn btn-default outline-icon-btn pull-right print">
                                         <span class="glyphicon glyphicon-print "></span>Save & Print
                                         </button>
                                     </div>
@@ -796,7 +796,6 @@
     <script type="text/javascript" src="assets/vendors/highcharts/highcharts.js"></script>
     <script type="text/javascript" src="assets/vendors/highcharts/modules/data.js"></script>
     <script type="text/javascript" src="assets/vendors/highcharts/modules/exporting.js"></script>
-    <script type="text/javascript" src="assets/js/acc-charts.js" charset="utf-8" async defer></script>
     <!-- Dynamic colors JS -->
     <script type="text/javascript" src="assets/js/nav_colors_change.js"></script>
     <script type="text/javascript" src="assets/js/vendors/colorpicker/colorpicker.js"></script>
@@ -808,20 +807,16 @@
     <script type="text/javascript" src="assets/vendors/air-datepicker/js/datepicker.en.js"></script>
     <!-- Valedation -->
     <script type="text/javascript" src="assets/vendors/jquery-validation/jquery.validate.min.js"></script>
-    <script type="text/javascript" src="assets/js/transaction-validation.js"></script>
     <!-- Data Tabel -->
-    <script type="text/javascript" src="assets/js/jquery.dataTables.js"></script>
-    <script type="text/javascript" src="assets/vendors/datatables/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="assets/vendors/datatables/media/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="assets/vendors/datatables/extensions/Buttons/js/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" src="assets/vendors/datatables/extensions/Buttons/js/buttons.html5.min.js"></script>
     <!-- Blue Dashboard main JS file  -->
     <script type="text/javascript" src="assets/js/main.js"></script>
     <!-- Select2 dropdown JS -->
     <script type="text/javascript" src="assets/vendors/select2/js/select2.min.js"></script>
 
-    <script type="text/javascript">
-    $(document).ready(function() {
-        $(".js-example-basic-single").select2();
-    });
-    </script>
+    <script type="text/javascript" src="assets/js/account-manager.js"></script>
+
 </body>
 </html>

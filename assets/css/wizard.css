@@ -252,12 +252,6 @@ fieldset {
   max-height: 200px !important;
 }
 
-#submit-wizard {
-  position: absolute;
-  right: 25px;
-  z-index: 9999;
-}
-
 .select2.select2-container.select2-container--default.glyphicon-remove:before {
   content: none;
 }
@@ -275,7 +269,7 @@ fieldset {
     position: absolute;
     width: 0;
     z-index: 1;
-    top: 100%;
+    top: 106%;
 }
 
 .nav-tabs-linetriangle > li.active > a:before {
@@ -295,4 +289,48 @@ fieldset {
 
 .cs-select.cs-skin-slide {
   width: 40%;
+}
+
+.pager li > a, .pager li > span {
+  color: #fff;
+}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+  outline: none !important;
+  outline-offset:none !important;
+}
+.form-group.form-group-default.required.form-group-default-selectFx {
+  margin-top:12px;
+}
+.input-group-addon{
+  padding-bottom: 0px;
+  padding-top: 12px;
+  padding-left: 0px;
+  padding-right: 0px !important;
+}
+
+.cvc_parent {
+  margin-top: 0em !important; 
+}
+
+.tab-content {
+  padding: 1em !important;
+}
+.select2-selection__rendered {
+  padding-left: 0px !important;
+  text-align: left !important;
+}
+.nav-tabs>li {
+  margin-bottom: 2px;
+}
+.nav-tabs>li>a:hover {
+  background-color: #F1F3F6 !important;
+}
+.nav-tabs > li:not(.active){
+  margin-bottom: 0px;
+}
+.nav-tabs>li>a{
+  border: none;
+}
+.no-margin-top {
+  margin-top: 0px !important;
 }

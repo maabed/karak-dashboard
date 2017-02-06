@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  formatState = function (state) {
+  formatState = function(state) {
     if (!state.id) {
       return state.text;
     }
@@ -10,7 +10,7 @@ $(document).ready(function() {
     return $state;
   };
 
-  $(".js-templating").select2({
+  $(".select2-init-images").select2({
     templateResult: formatState
   });
 
@@ -19,7 +19,7 @@ $(document).ready(function() {
   var m = date.getMonth();
   var y = date.getFullYear();
 
-  cleanupModal = function() {
+  var cleanupModal = function() {
     $('#name').val('').removeClass('active').blur();
     $('#eventclassName').val('default').removeClass('active').blur();
     $('#notes').val('').removeClass('active').blur();
@@ -41,7 +41,7 @@ $(document).ready(function() {
     selectable: true,
     selectHelper: true,
     select: function(start, end) {
-      cleanupModal()
+      cleanupModal();
 
       var allDay = !start.hasTime() && !end.hasTime();
       var eventstart = moment(start).format('DD MMM hh:mm A');
@@ -101,17 +101,17 @@ $(document).ready(function() {
       className: 'info'
     }, {
       title: 'Birthday Party',
-      start:new Date(y, m, d, 10, 30),
+      start: new Date(y, m, d, 10, 30),
       className: 'success'
     }, {
       title: 'Click for Google',
       url: 'http://google.com/',
-      start:new Date(y, m, d, 10, 30),
+      start: new Date(y, m, d, 10, 30),
       className: 'important'
     }, {
       title: 'Event Name',
-      start:new Date(y, m, d, 10, 30),
-      end:new Date(y, m, d, 10, 30),
+      start: new Date(y, m, d, 10, 30),
+      end: new Date(y, m, d, 10, 30),
       className: 'worning'
     }, ]
   });

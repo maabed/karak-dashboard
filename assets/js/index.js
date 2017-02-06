@@ -159,7 +159,7 @@ $(function() {
     return $state;
   }
 
-  $('.js-templating').select2({
+  $('.select2-init-images').select2({
     templateResult: formatState
   });
 

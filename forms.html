@@ -323,7 +323,7 @@
                                     </div>
                                     <div class="row group-content">
                                         <div class="form-group col-sm-6 no-padding-left form-select">
-                                            <select class="select-display js-example-basic-single col-12">
+                                            <select class="select-display select2-init-single col-12">
                                                 <option class="Selected">Country</option>
                                                 <option>Jordan</option>
                                                 <option>Usa</option>
@@ -495,12 +495,12 @@
                             <div class="col-sm-4 last-third">
                                 <div class="col-contint">
                                     <h5 class="title form-section">Dropdown select</h5>
-                                    <p class="header-text">Customized dropdown select can be used by adding <code>.js-example-basic-single</code> class to be initialized by <a href="" class="doc-popover" data-trigger="focus" data-toggle="popover" data-content="test">Javascript</a> for the default dropdown or another set of classes such as <code>.js-example-basic-multiple</code>
+                                    <p class="header-text">Customized dropdown select can be used by adding <code>.select2-init-single</code> class to be initialized by <a href="" class="doc-popover" data-trigger="focus" data-toggle="popover" data-content="test">Javascript</a> for the default dropdown or another set of classes such as <code>.select2-init-multiple</code>
                                 </p>
                                 <div class="row">
                                     <div class="third-section col-sm-12">
                                         <label class="label-type">Standard</label>
-                                        <select class="select-display js-example-basic-single selectpicker empty col-12">
+                                        <select class="select-display select2-init-single selectpicker empty col-12">
                                             <option value="Select1">Oklahoma</option>
                                             <option value="Select2">New york</option>
                                             <option value="Select3">California</option>
@@ -512,7 +512,7 @@
                                 <div class="row">
                                     <div class="third-section col-sm-12">
                                         <label class="label-type">Select boxes with optgroups</label>
-                                        <select class="select-display js-example-basic-single selectpicker empty col-12">
+                                        <select class="select-display select2-init-single selectpicker empty col-12">
                                             <optgroup class="optgroup" label="First group">
                                                 <option value="Select">Football</option>
                                                 <option value="Select2">Basketball</option>
@@ -529,7 +529,7 @@
                                 <div class="row">
                                     <div class="third-section col-sm-12">
                                         <label class="label-type">Multiple select boxes</label>
-                                        <select class="js-example-basic-multiple" multiple="multiple">
+                                        <select class="select2-init-multiple" multiple="multiple">
                                             <option value="AL">Alabama</option>
                                             ...
                                             <option value="WY">Wyoming</option>
@@ -539,7 +539,7 @@
                                 <div class="row">
                                     <div class="third-section col-sm-12">
                                         <label class="label-type">Live search</label>
-                                        <select class="js-data-example-ajax">
+                                        <select class="select2-init-ajax">
                                             <option value="3620194" selected="selected">Select a value.</option>
                                         </select>
                                     </div>
@@ -547,7 +547,7 @@
                                 <div class="row">
                                     <div class="third-section col-sm-12">
                                         <label class="label-type">Key words</label>
-                                        <select class="select-display js-templating selectpicker empty col-12">
+                                        <select class="select-display select2-init-images selectpicker empty col-12">
                                             <option value="jordan">Jordan</option>
                                             <option value="usa">USA</option>
                                             <option value="iraq">Iraq</option>
@@ -714,13 +714,13 @@
                             <div class="row">
                                 <div class="form-section col-md-12">
                                     <label class="form-labels">Objects as tags</label>
-                                    <input class="objects-as-tags" type="text" data-role="tagsinput"/>
+                                    <input class="objects-as-tags" type="text"/>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-section col-md-12">
                                     <label class="form-labels">Categorizing tags</label>
-                                    <input class="colored-tags" type="text" data-role="tagsinput"/>
+                                    <input class="colored-tags" type="text"/>
                                 </div>
                             </div>
                         </div>
@@ -1018,7 +1018,7 @@
     
     <!-- dropzone scripts -->
     <script type="text/javascript" src="assets/vendors/drop-zone/dropzone.js"></script>
-    <script type="text/javascript" src='assets/vendors/lib/moment.min.js'></script>
+    <script type="text/javascript" src='assets/vendors/momentjs/moment.js'></script>
     
     <!-- forms scripts -->
     <link href="assets/vendors/summernote/summernote.css" rel="stylesheet">
@@ -1045,7 +1045,7 @@
     <script type="text/javascript" src="assets/js/validation.js"></script>
     <script>
     $(document).ready(function(){
-    $('[data-toggle="popover"]').popover();
+        $('[data-toggle="popover"]').popover();
     });
     </script>
 </body>

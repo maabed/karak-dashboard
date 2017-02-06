@@ -3,14 +3,15 @@ $(document).ready(function() {
     e.preventDefault();
     $('#wrapper').toggleClass('toggled');
   });
+
   $('.SubMenue').hide();
   $('.MainMenue').click(function(e) {
     e.preventDefault();
     var $this = $(this).parent().find('.Submenue');
     $('.Submenue').not($this).hide(300);
-    // here is what I want to do
     $this.toggle(300);
   });
+
   //Right side Section
   $('#Right-Side-Section-Togle').click(function() {
     var toggleWidth = $('#Right-Side-Section').width() == 300 ? '200px' : '300px';
@@ -18,17 +19,19 @@ $(document).ready(function() {
       width: toggleWidth
     });
   });
+
   $('#Right-Side-Section-Togle').click(function(e) {
     e.preventDefault();
-    // hide all span
     var $this = $(this).parent().find('#Right-Side-Section');
     $('#Right-Side-Section').not($this).width('300px;');
     $('#Right-Side-Section-Togle').hide(0);
   });
+
   // Left side section
   $('#left-Side-Section-Togle').click(function() {
     $('.InboxLeftSide').toggleClass('show-left');
   });
+
   /* search  */
   $('#searchTB').keydown(function(e) {
     if (e.which === 13) {
@@ -37,7 +40,9 @@ $(document).ready(function() {
       }
     }
   });
+
   $('.sidebar-nav').find('li.selected').find('.Submenue').css('display', 'block');
+
   $('.Submenue').css({
     'padding': '0px',
     'position': 'relative',
