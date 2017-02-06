@@ -9,7 +9,7 @@
         <title>Blue Dashboard</title>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <!-- Fonts -->
-        <link type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+        <link type="text/css" href="assets/vendors/google-fonts/google-fonts.css" rel="stylesheet">
         <!-- Bootstrap Core CSS -->
         <link type="text/css" href="assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <!-- Checkboxes CSS -->
@@ -438,55 +438,55 @@
                                     <label class="label-type">Checked</label>
                                     <div class="row">
                                         <div class="col-sm-12 switch toggleswitch">
-                                            <input  id="ch-toggle-1" class="ch-toggle ch-toggle-green" type="checkbox">
-                                            <label for="ch-toggle-1"></label>
+                                            <input  id="toggle-checked" class="ch-toggle ch-toggle-green" type="checkbox">
+colored                                            <label for="toggle-checked"></label>
                                         </div>
                                     </div>
                                     <label class="label-type">Multiple switches </label>
                                     <div class="row">
                                         <div class="col-sm-4 switch toggleswitch" >
-                                            <input  id="ch-toggle-2" class="ch-toggle ch-toggle-green" type="checkbox" checked="">
-                                            <label for="ch-toggle-2"></label>
+                                            <input  id="toggle-multi-checked" class="ch-toggle ch-toggle-green" type="checkbox" checked="">
+                                            <label for="toggle-multi-checked"></label>
                                         </div>
                                         
                                         <div class="col-sm-4 switch toggleswitch " >
-                                            <input  id="ch-toggle-3" class="ch-toggle ch-toggle-green" type="checkbox">
-                                            <label for="ch-toggle-3"></label>
+                                            <input  id="toggle-multi-not-checked" class="ch-toggle ch-toggle-green" type="checkbox">
+                                            <label for="toggle-multi-not-checked"></label>
                                         </div>
                                         
                                         <div class="col-sm-4 switch toggleswitch" >
-                                            <input  id="ch-toggle-4" class="ch-toggle ch-toggle-green" type="checkbox" checked="">
-                                            <label for="ch-toggle-4"></label>
+                                            <input  id="toggle-multi-last" class="ch-toggle ch-toggle-green" type="checkbox" checked="">
+                                            <label for="toggle-multi-last"></label>
                                         </div>
                                     </div>
                                     <label class="label-type">Colored</label>
                                     <div class="row">
                                         <div class="col-sm-3 switch toggleswitch" >
-                                            <input  id="ch-toggle-5" class="ch-toggle ch-toggle-blue" type="checkbox"checked="">
-                                            <label for="ch-toggle-5"></label>
+                                            <input  id="toggle-colored-blue" class="ch-toggle ch-toggle-blue" type="checkbox"checked="">
+                                            <label for="toggle-colored-blue"></label>
                                         </div>
                                         
                                         <div class="col-sm-3 switch toggleswitch" >
-                                            <input  id="ch-toggle-6" class="ch-toggle ch-toggle-red" type="checkbox"checked="">
-                                            <label for="ch-toggle-6"></label>
+                                            <input  id="toggle-colored-red" class="ch-toggle ch-toggle-red" type="checkbox"checked="">
+                                            <label for="toggle-colored-red"></label>
                                         </div>
                                         
                                         <div class="col-sm-3 switch toggleswitch" >
-                                            <input  id="ch-toggle-7" class="ch-toggle ch-toggle-navy" type="checkbox"checked="">
-                                            <label for="ch-toggle-7"></label>
+                                            <input  id="toggle-colored-navy" class="ch-toggle ch-toggle-navy" type="checkbox"checked="">
+                                            <label for="toggle-colored-navy"></label>
                                         </div>
                                         
                                         <div class="col-sm-3 switch toggleswitch" >
-                                            <input  id="ch-toggle-8" class="ch-toggle ch-toggle-white" type="checkbox"checked="">
-                                            <label for="ch-toggle-8"></label>
+                                            <input  id="toggle-colored-white" class="ch-toggle ch-toggle-white" type="checkbox"checked="">
+                                            <label for="toggle-colored-white"></label>
                                         </div>
                                     </div>
                                     <label class="label-type">Or the secondary color, which will change the switch shadow and default border:</label>
                                     <div class="switch toggleswitch" >
                                         <div class="row">
                                             <div class="col-sm-12">
-                                                <input  id="ch-toggle-9" class="ch-toggle ch-toggle-Yellow" type="checkbox" checked>
-                                                <label for="ch-toggle-9"></label>
+                                                <input  id="toggle-colored-yellow" class="ch-toggle ch-toggle-Yellow" type="checkbox" checked>
+                                                <label for="toggle-colored-yellow"></label>
                                             </div>
                                         </div>
                                     </div>
@@ -501,11 +501,11 @@
                                     <div class="third-section col-sm-12">
                                         <label class="label-type">Standard</label>
                                         <select class="select-display select2-init-single selectpicker empty col-12">
-                                            <option value="Select1">Oklahoma</option>
-                                            <option value="Select2">New york</option>
-                                            <option value="Select3">California</option>
-                                            <option value="Select4">Texas</option>
-                                            <option value="Select4">Florida</option>
+                                            <option value="Oklahoma">Oklahoma</option>
+                                            <option value="Newyork">New york</option>
+                                            <option value="California">California</option>
+                                            <option value="Texas">Texas</option>
+                                            <option value="Florida">Florida</option>
                                         </select>
                                     </div>
                                 </div>
@@ -514,14 +514,14 @@
                                         <label class="label-type">Select boxes with optgroups</label>
                                         <select class="select-display select2-init-single selectpicker empty col-12">
                                             <optgroup class="optgroup" label="First group">
-                                                <option value="Select">Football</option>
-                                                <option value="Select2">Basketball</option>
-                                                <option value="Select2">Baseball</option>
+                                                <option value="Football">Football</option>
+                                                <option value="Basketball">Basketball</option>
+                                                <option value="Baseball">Baseball</option>
                                             </optgroup>
                                             <optgroup class="optgroup" label="Second Group">
-                                                <option value="Select">Swimming</option>
-                                                <option value="Select2">Formula 1</option>
-                                                <option value="Select2">Running</option>
+                                                <option value="Swimming">Swimming</option>
+                                                <option value="Formula">Formula 1</option>
+                                                <option value="Running">Running</option>
                                             </optgroup>
                                         </select>
                                     </div>
@@ -575,23 +575,23 @@
                                         <label class ="fontsize" for="checkbox1"> A simple checkbox </label>
                                     </div>
                                     <div class="checkbox checkbox-primary">
-                                        <input id="checkbox2" type="checkbox" checked="">
+                                        <input id="checkbox-primary-color" type="checkbox" checked="">
                                         <label  class ="fontsize"for="checkbox2"> I agree </label>
                                     </div>
                                     <div class="checkbox checkbox-success">
-                                        <input id="checkbox3" type="checkbox">
+                                        <input id="checkboxsuccess-color" type="checkbox">
                                         <label  class ="fontsize"for="checkbox3"> Mark </label>
                                     </div>
                                     <div class="checkbox checkbox-info">
-                                        <input id="checkbox4" type="checkbox">
+                                        <input id="checkbox-info-color" type="checkbox">
                                         <label class ="fontsize" for="checkbox4"> Action</label>
                                     </div>
                                     <div class="checkbox checkbox-warning">
-                                        <input id="checkbox5" type="checkbox" checked="">
+                                        <input id="checkbox-warning-color" type="checkbox" checked="">
                                         <label  class ="fontsize"for="checkbox5"> Keep Me Signed in</label>
                                     </div>
                                     <div class="checkbox checkbox-danger">
-                                        <input id="checkbox6" type="checkbox" checked="">
+                                        <input id="checkbox-danger-color" type="checkbox" checked="">
                                         <label class ="fontsize" for="checkbox6"> Mark as read</label>
                                     </div>
                                 </div>
@@ -600,16 +600,16 @@
                                         <h5 class="mediumtitle">Shape Options </h5>
                                         <p class="header-text">To give the checkbox a circular shape you need to give the wrapper of the checkboxes a <code>.checkbox-circle</code> class.</p>
                                         <div class="checkbox checkbox-circle">
-                                            <input id="checkbox7" type="checkbox">
-                                            <label  for="checkbox7">Default</label>
+                                            <input id="checkbox-circle-default" type="checkbox">
+                                            <label  for="checkbox-circle-default">Default</label>
                                         </div>
                                         <div class="checkbox checkbox-circle checkbox-primary">
-                                            <input id="checkbox8" type="checkbox" checked="">
-                                            <label class ="fontsize " for="checkbox8">Primary </label>
+                                            <input id="checkbox-circle-primary" type="checkbox" checked="">
+                                            <label class ="fontsize " for="checkbox-circle-primary">Primary </label>
                                         </div>
-                                        <div class="checkbox checkbox checkbox-circle checkbox-success">
-                                            <input class ="checkradius" id="checkbox9" type="checkbox">
-                                            <label  class ="fontsize"for="checkbox9">Success </label>
+                                        <div class="checkbox checkbox-circle checkbox-success">
+                                            <input class ="checkradius" id="checkbox-circle-success" type="checkbox">
+                                            <label  class ="fontsize" for="checkbox-circle-success">Success </label>
                                         </div>
                                     </form>
                                 </div>
@@ -619,21 +619,21 @@
                                         <p class="header-text">To use the yes-no checkbox you need to wrap the <code>input</code> with <code>.yes-no-check</code> class and give the checkbox field a unique id to be initialized in the <a href="" class="doc-popover" data-trigger="focus" data-toggle="popover" data-content="test">Javascript</a>.</p>
                                         <div class="row" >
                                             <div class="col-sm-1.1  yes-no-check" >
-                                                <input id="toggleCheckbox-1" title="Example title" data-group-cls="btn-group-xs" checked="">
+                                                <input id="toggleCheckbox-yes-green" title="Example title" data-group-cls="btn-group-xs" checked="">
                                             </div>
                                             <div class="col-sm-1.1 yes-no-check">
-                                                <input id="toggleCheckbox-2" title="Example title"  data-reverse data-group-cls="btn-group-xs" data-on-active-cls="btn-primary" checked="">
+                                                <input id="toggleCheckbox-yes-primary" title="Example title"  data-reverse data-group-cls="btn-group-xs" data-on-active-cls="btn-primary" checked="">
                                             </div>
                                             <div class="col-sm-1.1 yes-no-check">
-                                                <input id="toggleCheckbox-3"  data-group-cls="btn-group-xs" checked data-on-active-cls="btn-warning" >
+                                                <input id="toggleCheckbox-yes-yellow"  data-group-cls="btn-group-xs" checked data-on-active-cls="btn-warning" >
                                             </div>
                                         </div>
                                         <div class="row" >
                                             <div class ="col-sm-1.1 yes-no-check">
-                                                <input id="toggleCheckbox-4" data-off-icon-cls="glyphicon-thumbs-down" data-on-icon-cls="glyphicon-thumbs-up" data-group-cls="btn-group-ms" checked="" >
+                                                <input id="toggleCheckbox-yes-big" data-off-icon-cls="glyphicon-thumbs-down" data-on-icon-cls="glyphicon-thumbs-up" data-group-cls="btn-group-ms" checked="" >
                                             </div>
                                             <div class ="col-sm-1.1 yes-no-check">
-                                                <input id="toggleCheckbox-5" data-off-label="false" data-on-label="false" data-off-icon-cls="glyphicon-thumbs-down" data-on-icon-cls="glyphicon-thumbs-up" data-group-cls="btn-group-xs">
+                                                <input id="toggleCheckbox-like" data-off-label="false" data-on-label="false" data-off-icon-cls="glyphicon-thumbs-down" data-on-icon-cls="glyphicon-thumbs-up" data-group-cls="btn-group-xs">
                                             </div>
                                         </div>
                                     </form>

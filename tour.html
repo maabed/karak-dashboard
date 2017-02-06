@@ -9,7 +9,7 @@
         <title>Blue Dashboard</title>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <!-- Fonts -->
-        <link type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+        <link type="text/css" href="assets/vendors/google-fonts/google-fonts.css" rel="stylesheet">
         <!-- Bootstrap Core CSS -->
         <link type="text/css" href="assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <!-- Custom CSS -->
@@ -509,22 +509,22 @@
                             </div>
                         </div>
                         <div class="col-md-6 animated fadeInUp">
-                            <div class="col-contint static-height" id="todo-tour">
+                            <div class="col-contint static-height">
                                 <h5 class="title">To Do List<a class="add-task"><i class="fa fa-plus-circle" aria-hidden="true"></i></a></h5>
                                 <br>
                                 <div class="to-do-list">
                                     <div class="single-to-do-box">
                                         <div class="checkbox checkbox-success checkbox-inline">
-                                            <input type="checkbox" id="inlineCheckbox2" value="option1" checked="">
-                                            <label class="done-task" for="inlineCheckbox2">Lorem ipsum dolor sit.. </label>
+                                            <input type="checkbox" id="to-do-first-checkbox" value="option" checked="">
+                                            <label class="done-task" for="to-do-first-checkbox">Lorem ipsum dolor sit.. </label>
                                         </div>
                                         <i class="fa fa-trash" aria-hidden="true"></i>
                                         <h6>Today</h6>
                                     </div>
                                     <div class="single-to-do-box">
                                         <div class="checkbox checkbox-success checkbox-inline">
-                                            <input id="checkbox3" type="checkbox">
-                                            <label for="checkbox3">
+                                            <input id="to-do-second-checkbox" type="checkbox">
+                                            <label for="to-do-second-checkbox">
                                                 Consectetur adipiscing elit..
                                             </label>
                                         </div>
@@ -533,8 +533,8 @@
                                     </div>
                                     <div class="single-to-do-box">
                                         <div class="checkbox checkbox-success checkbox-inline">
-                                            <input id="checkbox3" type="checkbox">
-                                            <label for="checkbox3">
+                                            <input id="to-do-third-checkbox" type="checkbox">
+                                            <label for="to-do-third-checkbox">
                                                 Consectetur adipiscing elit..
                                             </label>
                                         </div>
@@ -543,8 +543,8 @@
                                     </div>
                                     <div class="single-to-do-box">
                                         <div class="checkbox checkbox-success checkbox-inline">
-                                            <input id="checkbox3" type="checkbox">
-                                            <label for="checkbox3">
+                                            <input id="to-do-forth-checkbox" type="checkbox">
+                                            <label for="to-do-forth-checkbox">
                                                 Sit amet, consectetur adipiscing..
                                             </label>
                                         </div>
@@ -553,8 +553,8 @@
                                     </div>
                                     <div class="single-to-do-box">
                                         <div class="checkbox checkbox-success checkbox-inline">
-                                            <input id="checkbox3" type="checkbox">
-                                            <label for="checkbox3">
+                                            <input id="to-do-fifth-checkbox" type="checkbox">
+                                            <label for="to-do-fifth-checkbox">
                                                 Adipiscing elit consectetur ..
                                             </label>
                                         </div>
@@ -563,8 +563,8 @@
                                     </div>
                                     <div class="single-to-do-box">
                                         <div class="checkbox checkbox-success checkbox-inline">
-                                            <input id="checkbox3" type="checkbox">
-                                            <label for="checkbox3">
+                                            <input id="to-do-sixth-checkbox" type="checkbox">
+                                            <label for="to-do-sixth-checkbox">
                                                 Lorem ipsum dolor sit..
                                             </label>
                                         </div>
@@ -573,8 +573,8 @@
                                     </div>
                                     <div class="single-to-do-box">
                                         <div class="checkbox checkbox-success checkbox-inline">
-                                            <input id="checkbox3" type="checkbox">
-                                            <label for="checkbox3">
+                                            <input id="to-do-seventh-checkbox" type="checkbox">
+                                            <label for="to-do-seventh-checkbox">
                                                 Sit amet, consectetur..
                                             </label>
                                         </div>
@@ -583,8 +583,8 @@
                                     </div>
                                     <div class="single-to-do-box">
                                         <div class="checkbox checkbox-success checkbox-inline">
-                                            <input id="checkbox3" type="checkbox">
-                                            <label for="checkbox3">
+                                            <input id="to-do-eighth-checkbox" type="checkbox">
+                                            <label for="to-do-eighth-checkbox">
                                                 Consectetur adipiscing..
                                             </label>
                                         </div>
@@ -593,8 +593,8 @@
                                     </div>
                                     <div class="single-to-do-box">
                                         <div class="checkbox checkbox-success checkbox-inline">
-                                            <input id="checkbox3" type="checkbox">
-                                            <label for="checkbox3">
+                                            <input id="to-do-ninth-checkbox" type="checkbox">
+                                            <label for="to-do-ninth-checkbox">
                                                 Lorem ipsum dolor sit..
                                             </label>
                                         </div>
@@ -856,39 +856,39 @@
             </div>
         </div>
         <!-- Page layout JS -->
-        <script src="assets/vendors/jquery/jquery-3.1.1.js"></script>
-        <script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="assets/vendors/jquery/jquery-3.1.1.js"></script>
+        <!-- materialize framework -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript" src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
         <script src="assets/vendors/bootstrap-tour/bootstrap-tour.min.js"></script>
-        <script src="assets/js/main.js"></script>
-        <script src="assets/js/Chart.bundle.js"></script>
-        <script src="assets/js/notifications_boxs.js"></script>
-        <script src="assets/js/taps.js"></script>
-        <!-- Materialze JS library -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+        <script type="text/javascript" src="assets/js/main.js"></script>
+        <script type="text/javascript" src="assets/vendors/chart.js/chart.bundle.min.js"></script>
+        <script type="text/javascript" src="assets/js/notifications_boxs.js"></script>
+        <script type="text/javascript" src="assets/js/taps.js"></script>
         <!-- Calendar JS -->
-        <script src="assets/vendors/calendar/lib/moment.min.js"></script>
-        <script src="assets/vendors/calendar/fullcalendar.min.js"></script>
-        <script src="assets/js/calendar.js"></script>
-
-        <!-- High Maps JS  -->
+        <script type="text/javascript" src="assets/vendors/calendar/lib/moment.min.js"></script>
+        <script type="text/javascript" src="assets/vendors/calendar/fullcalendar.min.js"></script>
+        <script type="text/javascript" src="assets/js/calendar.js"></script>
+        <!-- HighCharts -->
+        <script type="text/javascript" src="https://code.highcharts.com/highcharts.js"></script>
+        <!-- Map -->
         <script type="text/javascript" src="assets/js/map.js"></script>
-        <script type="text/javascript" src="assets/vendors/highmaps/code/highmaps.js"></script>
+        <script type="text/javascript" src="assets/vendors/highmaps/code/modules/map.js"></script>
         <script type="text/javascript" src="assets/vendors/highmaps/code/modules/data.js"></script>
         <script type="text/javascript" src="assets/vendors/highmaps/code/modules/exporting.js"></script>
         <script type="text/javascript" src="assets/vendors/highmaps/code/custom/world.js"></script>
-
         <!--Calender-->
-        <script src="assets/js/doughnut.js"></script>
-        <!-- Dynamic colors JS -->
         <script type="text/javascript" src="assets/js/nav_colors_change.js"></script>
-        <script type="text/javascript" src="assets/js/vendors/colorpicker/colorpicker.js"></script>
+        <!-- <script type="text/javascript" src="assets/js/vendors/colorpicker/colorpicker.js"></script> -->
         <script type="text/javascript" src="assets/js/right-side-colors-change.js"></script>
         <script type="text/javascript" src="assets/js/page-ready-theam.js"></script>
         <link id="default-color-picker" rel="stylesheet" />
-        <!-- select2 library -->
-        <script src="assets/vendors/select2/js/select2.min.js"></script>
+        <!-- Select2 dropdown JS -->
+        <script type="text/javascript" src="assets/vendors/select2/js/select2.min.js"></script>
         <!-- Index page JS -->
-        <script src="assets/js/index.js"></script>
+        <script type="text/javascript" src="assets/js/index.js"></script>
+
         <!-- Tour page JS -->
         <script src="assets/js/tour.js"></script>
     </body>

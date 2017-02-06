@@ -82,29 +82,29 @@
     });
 
     /* yes-no checkboxes */
-    $('#toggleCheckbox-1').checkboxpicker();
-    $('#toggleCheckbox-1').change(function() {
-      $('#toggleCheckbox-1').prop('disabled', false);
+    $('#toggleCheckbox-yes-green').checkboxpicker();
+    $('#toggleCheckbox-yes-green').change(function() {
+      $('#toggleCheckbox-yes-green').prop('disabled', false);
     });
 
-    $('#toggleCheckbox-2').checkboxpicker();
-    $('#toggleCheckbox-2').change(function() {
-      $('#toggleCheckbox-2').prop('disabled', false);
+    $('#toggleCheckbox-yes-primary').checkboxpicker();
+    $('#toggleCheckbox-yes-primary').change(function() {
+      $('#toggleCheckbox-yes-primary').prop('disabled', false);
     });
 
-    $('#toggleCheckbox-3').checkboxpicker();
-    $('#toggleCheckbox-3').change(function() {
-      $('#toggleCheckbox-3').prop('disabled', false);
+    $('#toggleCheckbox-yes-yellow').checkboxpicker();
+    $('#toggleCheckbox-yes-yellow').change(function() {
+      $('#toggleCheckbox-yes-yellow').prop('disabled', false);
     });
 
-    $('#toggleCheckbox-4').checkboxpicker();
-    $('#toggleCheckbox-4').change(function() {
-      $('#toggleCheckbox-4').prop('disabled', false);
+    $('#toggleCheckbox-yes-big').checkboxpicker();
+    $('#toggleCheckbox-yes-big').change(function() {
+      $('#toggleCheckbox-yes-big').prop('disabled', false);
     });
 
-    $('#toggleCheckbox-5').checkboxpicker();
-    $('#toggleCheckbox-5').change(function() {
-      $('#toggleCheckbox-5').prop('disabled', false);
+    $('#toggleCheckbox-like').checkboxpicker();
+    $('#toggleCheckbox-like').change(function() {
+      $('#toggleCheckbox-like').prop('disabled', false);
     });
 
 /* Tags input */
