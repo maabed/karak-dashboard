@@ -68,4 +68,3 @@ ecosystem.json
 pm2.json
 build.sh
 .tags
-.jshintrc
