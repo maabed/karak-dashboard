@@ -424,9 +424,10 @@ Copyright 2017 New Release
   bottom: 0;
   position: fixed;
   z-index: 999999;
-  width: 100%;
+  width: 85%;
   background-color: #fff;
   margin: 0 auto;
+  padding: 1em;
 }
 
 .chat-border {
@@ -446,7 +447,6 @@ Copyright 2017 New Release
   color: #686868 !important;
   padding: 1.1em;
   float: right;
-  margin-right: 249px;
 }
 
 .add-omg-btn:hover {
@@ -791,6 +791,35 @@ input[type=email]:not(#searchTB):not(.chat-message-input):not(#flat_email)+label
   display: none;
 }
 
+.chat-back {
+  background-color: #2a2e34 !important;
+  border: none;
+  margin-left: 40px;
+}
+
+.open-sub {
+  display: inline;
+}
+
+.back-border {
+  border-bottom: 1px solid #CCC;
+  height: 10%;
+} 
+
+.convo-name {
+  text-align: center;
+}
+
+.checkbox {
+  padding-left: 31px !important;
+}
+
+.back-button-cont {
+  padding-top: 10%;
+}
+.blog-img {
+  width: 80px;
+}
 .input-field label.active {
   font-size: 1.1em;
   color: #67b2e4;

@@ -226,6 +226,9 @@ body {
   text-decoration: none;
   font-weight: lighter;
   font-size: 14px;
+  border-bottom:1px solid '#E4E5E7';
+  border-right:1px solid '#E4E5E7';
+  color:'#34495E';
 }
 
 .sidebar-nav li a .LeftArrow {
@@ -251,11 +254,14 @@ body {
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  background-color: #3B97D2;
 }
 
 .sidebar-nav .selected a {
   background-color: #F1F3F6 !important;
   border-right: none !important;
+  border-left:4px solid #3B97D2 !important;
+
 }
 
 .selected .Submenue .submenu-li a {
@@ -418,6 +424,7 @@ body {
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  background-color: #3B97D2;
 }
 
 #head::-webkit-input-placeholder {
@@ -472,6 +479,7 @@ body {
 .user-box p {
   margin-top: 0.5em;
   float: right;
+  color:#fff;
 }
 
 .badge-notify {
@@ -2846,6 +2854,7 @@ margin-top: 0.5em;
 #company-name {
 color: #fff;
 border-bottom: 1px solid #F1F3F6;
+background-color:#2980B9;
 }
 
 .pointer-hover {
@@ -3550,7 +3559,8 @@ height: 32em;
 
 #sidebar-wrapper {
   width: 250px;
-  margin-top: 3.5em;
+  margin-top: 3.5em; 
+  background-color:#fff;
 }
 
 #wrapper.toggled #sidebar-wrapper {
@@ -3579,6 +3589,7 @@ height: 32em;
 
 .body-header {
   margin-top: 50px;
+  border-left: 5px solid #3B97D2;
 }
 
 .invoice-info {

@@ -1,3 +1,10 @@
+/*!
+Main JS
+Blue Dashboard: v1.0.0
+Author: New Release
+http://newrelease.io
+Copyright 2017 New Release
+*/
 $(document).ready(function() {
   $('#menu-toggle').click(function(e) {
     e.preventDefault();
@@ -55,4 +62,8 @@ function closeToggel() {
   var a = document.getElementById('Right-Side-Section');
   a.style.width = '0px';
   $('#Right-Side-Section-Togle').show(0);
+}
+
+function printbtn() {
+  window.print();
 }
