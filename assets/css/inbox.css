@@ -1,153 +1,192 @@
-.email-title{
-    color: #34495e;
-}
-.reply{
-    border: none;
-}
-.bootstrap-tagsinput{
-    border: none;
-    border-bottom: 1px solid #E4E5E7;
-    box-shadow: none;
-    border-radius: 0;
-    padding:0.5em 0em 0.5em 0em;
+/*!
+Inbox style
+Blue Dashboard: v1.0.0
+Author: New Release
+http://newrelease.io
+Copyright 2017 New Release
+*/
+.email-title {
+  color: #34495e;
 }
 
-.note-editor.note-frame.panel.panel-default{
-    width: 100%;
-    position: relative;
-
+.reply {
+  border: none;
 }
+
+.bootstrap-tagsinput {
+  border: none;
+  border-bottom: 1px solid #E4E5E7;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0.5em 0em 0.5em 0em;
+}
+
+.note-editor.note-frame.panel.panel-default {
+  width: 100%;
+  position: relative;
+}
+
 #left-Side-Section-Togle {
-    float: right;
-    border-bottom-right-radius: 5px;
-    border-top-right-radius: 5px;
-    padding: 1em 0.7em;
-    color: #9E9E9E;
-    text-align: center;
-    background: #fff;
-    margin-top: 3.6em;
-    position: absolute;
-    top: 0px;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    cursor: pointer;
-    box-shadow: 0px 3px 10px #888888;
-    z-index: 9999;
-    display: none;
+  float: right;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 1em 0.7em;
+  color: #9E9E9E;
+  text-align: center;
+  background: #fff;
+  margin-top: 3.6em;
+  position: absolute;
+  top: 0px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  box-shadow: 0px 3px 10px #888888;
+  z-index: 9999;
+  display: none;
 }
-.inbox-container{
-    margin-top:2.7em; 
+
+.inbox-container {
+  margin-top: 2.7em;
 }
-.Inbox-time{
-    text-align: right;
-    padding-right: 6px;
+
+.Inbox-time {
+  text-align: right;
+  padding-right: 6px;
 }
-.Compose-table tr td{
-    padding: 1.6em 0em 0em 0em;
+
+.Compose-table tr td {
+  padding: 1.6em 0em 0em 0em;
 }
-.compose{
-    margin-top:0.5em; 
+
+.compose {
+  margin-top: 0.5em;
 }
-.bootstrap-tagsinput .label{
-    margin-left:0em !important; 
+
+.bootstrap-tagsinput .label {
+  margin-left: 0em !important;
 }
-.Email-lable{
-    font-weight: lighter;
+
+.Email-lable {
+  font-weight: lighter;
 }
-.label-info{
-    background-color: #67b2e4 !important;
+
+.label-info {
+  background-color: #67b2e4 !important;
 }
-.Compose-style:focus{
-    border-bottom:1px solid #67b2e4 !important;
+
+.Compose-style:focus {
+  border-bottom: 1px solid #67b2e4 !important;
 }
-.email-content{
-    display: none;
+
+.email-content {
+  display: none;
 }
-.message1{
-    display: none;
+
+.message1 {
+  display: none;
 }
-.message2{
-    display: none;
+
+.message2 {
+  display: none;
 }
-.message3{
-    display: none;
+
+.message3 {
+  display: none;
 }
-.message4{
-    display: none;
+
+.message4 {
+  display: none;
 }
-.message5{
-    display: none;
+
+.message5 {
+  display: none;
 }
-.message6{
-    display: none;
+
+.message6 {
+  display: none;
 }
-.current-date{
-    display: inline;
+
+.current-date {
+  display: inline;
 }
-.col-width{
-    width: 50% !important;
-    padding-right:2em !important; 
+
+.col-width {
+  width: 50% !important;
+  padding-right: 2em !important;
 }
-.table-col-padding td{
-    padding-right:2em !important; 
+
+.table-col-padding td {
+  padding-right: 2em !important;
 }
-.compose-btn-space{
-    margin-left:1em;
-    margin-right: 1em; 
+
+.compose-btn-space {
+  margin-left: 1em;
+  margin-right: 1em;
 }
-@media screen and (max-width: 767px) {
-    .InboxLeftSide {
-        left: 0px;
-    }
-    .Split-left-sidr {
-        width: 100%;
-    }
-    .split-view{
-        left: 250px;
-    }
+
+@media screen and (max-width:767px) {
+  .InboxLeftSide {
+    left: 0px;
+  }
+
+  .Split-left-sidr {
+    width: 100%;
+  }
+
+  .split-view {
+    left: 250px;
+  }
+
 }
-@media screen and (max-width: 660px) {
-    .InboxLeftSide{
-        width: 0px;
-    }
-    .split-view{
-        left: 0px;
-    }
-    #left-Side-Section-Togle{
-        display: block;
-    }
+
+@media screen and (max-width:660px) {
+  .InboxLeftSide {
+    width: 0px;
+  }
+
+  .split-view {
+    left: 0px;
+  }
+
+  #left-Side-Section-Togle {
+    display: block;
+  }
+
 }
-@media screen and (min-width: 767px) and (max-width: 991px) {
-    .Split-left-sidr {
-        width: 100%;
-    }
+
+@media screen and (min-width:767px) and (max-width:991px) {
+  .Split-left-sidr {
+    width: 100%;
+  }
+
 }
-.show-left{
-    width: 50%;
-    z-index: 999;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+
+.show-left {
+  width: 50%;
+  z-index: 999;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 #left-Side-Section {
-    width: 0em;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    border-left: 1px solid #E4E5E7;
-    box-shadow: 0px 3px 10px #888888;
-    position: fixed;
-    z-index: 9999;
+  width: 0em;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border-left: 1px solid #E4E5E7;
+  box-shadow: 0px 3px 10px #888888;
+  position: fixed;
+  z-index: 9999;
 }
+
 .overlay {
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    opacity:0.3;
-    background:#fff;
+  top: 0;
+  left: 0;
+  height: 100%;
+  opacity: 0.3;
+  background: #fff;
 }

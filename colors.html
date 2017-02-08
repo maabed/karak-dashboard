@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,20 +9,14 @@
     <meta name="author" content="">
     <title>Blue Dashboard</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <!-- Fonts -->
+    <link type="text/css" href="assets/vendors/google-fonts/google-fonts.css" rel="stylesheet">
     <!-- Bootstrap Core CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="assets/css/styles.css" rel="stylesheet" />
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
-    <script src="assets/js/vendors/jquery-1.12.3.js"></script>
-    <script src="assets/js/notifications_boxs.js"></script>
+    <link type="text/css" href="assets/css/styles.css" rel="stylesheet" />
+    <!-- Font Awesome library -->
+    <link type="text/css" href="assets/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -73,8 +67,8 @@
                            Icons
                             </a>
                         </li>
-                        <li class="submenu-li">
-                            <a href="colors.html">
+                        <li class="submenu-li inner-selected">
+                            <a href="colors.html" class="inner-selected">
                            Colors
                             </a>
                         </li>
@@ -138,8 +132,31 @@
                 <li>
                     <a href="social.html">
                         <i class="fa fa-share-alt-square nav-icon" aria-hidden="true"></i> Social
-                        <span class="label label-warning nav-lbl">Special</span>
                     </a>
+                </li>
+                <li>
+                    <a class="MainMenue" href="#">
+                        <i class="fa fa-star nav-icon" aria-hidden="true"></i>App Views
+                        <span class="label label-warning nav-lbl">Special</span>
+                        <i class="fa fa-angle-left LeftArrow rotate" aria-hidden="true"></i>
+                    </a>
+                    <ul class="Submenue">
+                        <li class="submenu-li">
+                            <a href="account_manager.html">
+                           Account Management
+                            </a>
+                        </li>
+                        <li class="submenu-li">
+                            <a href="landing_page.html">
+                            Landing Page
+                            </a>
+                        </li>
+                        <li class="submenu-li">
+                            <a href="chat.html">
+                           Chat View
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a class="MainMenue" href="#">
@@ -246,6 +263,85 @@
                     </div>
                 </div>
             </div>
+                    <div class="notifecations-box">
+                        <div class="arrow-up"></div>
+                        <h5>Notifications</h5>
+                        <div class="single-not-content">
+                            <a href="#">
+                                <img src="assets/images/Sami.jpg" />
+                                <p><b>Mohammad Meshaal</b>&nbsp; wants your confirmation on his Leave Request on 12 Mar 2017</p>
+                            </a>
+                        </div>
+                        <div class="single-not-content">
+                            <a href="#">
+                                <img src="assets/images/Team-Member-1-270x250.jpg" />
+                                <p><b>Nasir ahmad</b>&nbsp; sent a payment on 11 Mar 2017</p>
+                            </a>
+                        </div>
+                        <div class="veiw-all-not">
+                            <a href="#">View All</a>
+                        </div>
+                    </div>
+                    <div class="messages-box">
+                        <div class="arrow-up"></div>
+                        <h5>Messages <a class="send-message-link " href="#">Send New Message</a></h5>
+                        <div class="single-not-content">
+                            <a href="#">
+                                <img src="assets/images/team-member-5.jpg" />
+                                <p><b>Layla smith</b>
+                                <br /> Job offer</p>
+                            </a>
+                        </div>
+                        <div class="single-not-content">
+                            <a href="#">
+                                <img src="assets/images/Sami.jpg" />
+                                <p><b>Mohammad Meshaal</b>
+                                <br />Please send me the work templates</p>
+                            </a>
+                        </div>
+                        <div class="single-not-content">
+                            <a href="#">
+                                <img src="assets/images/team-member.jpg" />
+                                <p><b>Dana khalid</b>
+                                <br />Do you wanna hang out today?</p>
+                            </a>
+                        </div>
+                        <div class="single-not-content">
+                            <a href="#">
+                                <img src="assets/images/Team-Member-1-270x250.jpg" />
+                                <p><b>Nasir ahmad</b>
+                                <br />Are we going to the match today?</p>
+                            </a>
+                        </div>
+                        <div class="veiw-all-not">
+                            <a href="#">View All</a>
+                        </div>
+                    </div>
+        <div class="user-info-box">
+            <div class="arrow-up user-arrow"></div>
+            <a href="#">
+                <div class="user-info-content">
+                    <i class="fa fa-user" aria-hidden="true"></i> Proﬁle
+                </div>
+            </a>
+            <a href="#">
+                <div class="user-info-content">
+                    <i class="fa fa-cog" aria-hidden="true"></i> Settings
+                </div>
+            </a>
+            <a href="#">
+                <div class="user-info-content">
+                    <i class="fa fa-info-circle" aria-hidden="true"></i> Help
+                </div>
+            </a>
+            <a href="#">
+                <div class="user-info-content logout">
+                    Log Out
+                    <i class="fa fa-sign-out" aria-hidden="true"></i>
+                </div>
+            </a>
+        </div>
+
         </div>
         <!-- Page Content -->
         <div id="page-content-wrapper">
@@ -253,9 +349,9 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="col-contint body-header">
+                            <a href="#" class="page_title">UI Elements / Colors </a>
                             <h4 class="title">UI Collor Collection</h4>
                             <br />
-                            <a href="#" class="page_title">UI Elements / Colors </a>
                             <p>
                                 Just apply the color class(e.g:<code>.dashboard-info</code>) to Blue Dashboard Colors, buttons, statistic blocks and other containers.
                             </p>
@@ -772,8 +868,21 @@
                         </div>
                     </div>
                 </div>
-                <h6 class="made-by">Made By  <b>New Versions</b></h6>
-            </div>
+                    <div class="container-fixed-lg footer">
+                    <div class="copyright sm-text-center">
+                        <p class="small no-margin pull-left sm-pull-reset">
+                            <span class="hint-text">Copyright © 2017 </span>
+                            <span class="font-montserrat"><b>New Release</b></span>.
+                            <span class="hint-text">All rights reserved. </span>
+                            <span class="sm-block"><a href="#" class="m-l-10 m-r-10">Terms of use</a> | <a href="#" class="m-l-10">Privacy Policy</a></span>
+                        </p>
+                        <p class="small no-margin pull-right sm-pull-reset">
+                            <h6 class="made-by">Made By  <b>New Release</b></h6>
+                        </p>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+        </div>
         </div>
         <!-- /#page-content-wrapper -->
         <!-- /#wrapper -->
@@ -912,115 +1021,21 @@
                             </div>
                         </td>
                     </tr>
-                    <tr>
-                        <td>
-                            <h5 class="title">Select Your Favorite Color</h5>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="col-sm-12 no-padding">
-                                <input id="coloepicker" type="color" />
-                            </div>
-                            <div class="col-sm-12 no-padding">
-                                <button type="button" id="apply" class="btn btn-default btn-block apply-color">Apply</button>
-                            </div>
-                        </td>
-                    </tr>
                 </table>
             </div>
         </div>
-        <div class="notifecations-box">
-            <div class="arrow-up"></div>
-            <h5>Notifications</h5>
-            <div class="single-not-content">
-                <a href="#">
-                    <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b>&nbsp; wants your confirmation on his Leave Request on 12 May 2015</p>
-                </a>
-            </div>
-            <div class="single-not-content">
-                <a href="#">
-                    <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b>&nbsp; wants your confirmation on his Leave Request on 12 May 2015</p>
-                </a>
-            </div>
-            <div class="veiw-all-not">
-                <a href="#">View All</a>
-            </div>
-        </div>
-        <div class="messages-box">
-            <div class="arrow-up"></div>
-            <h5>Messages <a class="send-message-link " href="#">Send New Message</a></h5>
-            <div class="single-not-content">
-                <a href="#">
-                    <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b>
-                        <br /> Message subject will display here</p>
-                </a>
-            </div>
-            <div class="single-not-content">
-                <a href="#">
-                    <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b>
-                        <br /> Message subject will display here</p>
-                </a>
-            </div>
-            <div class="single-not-content">
-                <a href="#">
-                    <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b>
-                        <br /> Message subject will display here</p>
-                </a>
-            </div>
-            <div class="single-not-content">
-                <a href="#">
-                    <img src="assets/images/Sami.jpg" />
-                    <p><b>Mohammad Meshaal</b>
-                        <br /> Message subject will display here</p>
-                </a>
-            </div>
-            <div class="veiw-all-not">
-                <a href="#">View All</a>
-            </div>
-        </div>
-        <div class="user-info-box">
-            <div class="arrow-up user-arrow"></div>
-            <a href="#">
-                <div class="user-info-content">
-                    <i class="fa fa-user" aria-hidden="true"></i> Proﬁle
-                </div>
-            </a>
-            <a href="#">
-                <div class="user-info-content">
-                    <i class="fa fa-cog" aria-hidden="true"></i> Settings
-                </div>
-            </a>
-            <a href="#">
-                <div class="user-info-content">
-                    <i class="fa fa-info-circle" aria-hidden="true"></i> Help
-                </div>
-            </a>
-            <a href="#">
-                <div class="user-info-content logout">
-                    Log Out
-                    <i class="fa fa-sign-out" aria-hidden="true"></i>
-                </div>
-            </a>
-        </div>
     </div>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/nav_colors_change.js"></script>
-    <link href="assets/css/colorpicker-layout.css" rel="stylesheet" />
-    <link href="assets/css/colorpicker.css" rel="stylesheet" />
-    <script src="assets/js/vendors/colorpicker/colorpicker.js"></script>
-    <script src="assets/js/vendors/colorpicker/eye.js"></script>
-    <script src="assets/js/vendors/colorpicker/layout.js"></script>
-    <script src="assets/js/vendors/colorpicker/utils.js"></script>
-    <script src="assets/js/vendors/colorpicker/utils.js"></script>
-    <script src="assets/js/right-side-colors-change.js"></script>
-    <script src="assets/js/page-ready-theam.js"></script>
+    <!-- Page layout JS -->
+    <script type="text/javascript" src="assets/vendors/jquery/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="assets/js/notifications_boxs.js"></script>
+    <script type="text/javascript" src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+
+    <!-- Dynamic colors JS -->
+    <script type="text/javascript" src="assets/js/nav_colors_change.js"></script>
+    
+    <script type="text/javascript" src="assets/js/right-side-colors-picker.js"></script>
+    <script type="text/javascript" src="assets/js/page-ready-theam.js"></script>
     <link id="default-color-picker" rel="stylesheet" />
 </body>
 

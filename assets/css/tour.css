@@ -1,3 +1,19 @@
-.tour-backdrop{
-    opacity: 0.3;
+/*!
+Tour style
+Blue Dashboard: v1.0.0
+Author: New Release
+http://newrelease.io
+Copyright 2017 New Release
+*/
+.tour-backdrop {
+	opacity: 0.3;
+}
+
+.popover-navigation {
+	display: inline !important;
+}
+
+.popover.tour.tour-tour {
+	padding-bottom: 15px;
+	border-radius: 0px;
 }

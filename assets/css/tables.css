@@ -1,117 +1,140 @@
-
-.active-user-acount , .not-active-user-acount {
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+/*!
+Tables style
+Blue Dashboard: v1.0.0
+Author: New Release
+http://newrelease.io
+Copyright 2017 New Release
+*/
+.active-user-acount,
+.not-active-user-acount {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-.done-task{
-    color :#62d995 !important;
-}
-.inprogress-task{
-    color :#f5d34b !important;
-}
-.hold-task{
-    color :#ed796d !important;
+.done-task {
+  color: #62d995 !important;
 }
 
-.dashed-row-style tr td { 
-    border-left :15px solid #fff !important;
+.inprogress-task {
+  color: #f5d34b !important;
 }
 
-
-
-.table > tbody > tr > td, .table > tbody > tr > th,  .table > thead > tr > td, .table > thead > tr > th{
-    border-bottom: 1px solid #ddd !important;
-    border-top: 0 !important;
+.hold-task {
+  color: #ed796d !important;
 }
 
-.table > tfoot > tr > td, .table > tfoot > tr > th{
-     border-top: 0 !important;
+.dashed-row-style tr td {
+  border-left: 15px solid #fff !important;
 }
 
+.table > tbody > tr > td,
+.table > tbody > tr > th,
+.table > thead > tr > td,
+.table > thead > tr > th {
+  border-bottom: 1px solid #ddd !important;
+  border-top: 0 !important;
+}
+
+.table > tfoot > tr > td,
+.table > tfoot > tr > th {
+  border-top: 0 !important;
+}
 
 .users-table-format tr td img {
-    width :6em;
-    height: auto;
-    float: left;
-    margin-right: 0.6em;
-}
-.colored-table-head{
-    font-weight: normal;
+  width: 6em;
+  height: auto;
+  float: left;
+  margin-right: 0.6em;
 }
 
-.active-user-acount td img{
-    border-left :4px solid #67b2e4 !important;
+.colored-table-head {
+  font-weight: normal;
 }
 
-
-.not-active-user-acount td img{
-    border-left :4px solid #C6CCCC !important;
-    filter: grayscale(100%);
+.active-user-acount td img {
+  border-left: 4px solid #67b2e4 !important;
 }
 
-
-.active-user-row{color: #67b2e4 !important;}
-
-.not-active-user-row{color: #C6CCCC !important;}
-
-.table-head.dashboard-success:hover{
-    background-color: #2ecc71;
-}
-.table-head.dashboard-warning:hover{
-    background-color: #f1c40f;
-}
-.table-head.dashboard-info:hover{
-    background-color: #3B97D2;
-}
-.table-head.dashboard-primary:hover{
-    background-color: #34495e;
-}
-.table-image{
-    width: 60px;
-    border-radius: 50%;
+.not-active-user-acount td img {
+  border-left: 4px solid #C6CCCC !important;
+  filter: grayscale(100%);
 }
 
+.active-user-row {
+  color: #67b2e4 !important;
+}
 
-.content-padding{
-    padding: 20px !important;
-    padding-left: 10px !important;
-    font-weight: 100;
-    font-size: 13px;
-    color: #707A7A;
-    vertical-align: top !important;
+.not-active-user-row {
+  color: #C6CCCC !important;
 }
-.dashboard-th{
-    color: #fff;
+
+.table-head.dashboard-success:hover {
+  background-color: #2ecc71;
 }
-.basic-th{
-    color: rgba(0, 0, 0, 0.7);
-    border-bottom-width: 1px !important;
-font-weight: normal;
+
+.table-head.dashboard-warning:hover {
+  background-color: #f1c40f;
 }
-.table.table-hover{
-    margin-top: 8px;
+
+.table-head.dashboard-info:hover {
+  background-color: #3B97D2;
 }
-.body-header{
-    margin-top: 50px;
- }
-.page_title{
-     font-weight: lighter;
-     color: #6a6c6f;
-     font-size: 12px;
-     display: inline-block;
-     margin-top: 50px;
- }
- .page_title:hover{
-     text-decoration: none;
-     cursor: pointer;
- }
-@media screen and (max-width: 768px){
- .page_title {
-     float: none !important;
-     margin-bottom: 10px;
-     margin-top: 0;
- }
- }
+
+.table-head.dashboard-primary:hover {
+  background-color: #34495e;
+}
+
+.table-image {
+  width: 60px;
+  border-radius: 50%;
+}
+
+.content-padding {
+  padding: 20px !important;
+  padding-left: 10px !important;
+  font-weight: 100;
+  font-size: 13px;
+  color: #707A7A;
+  vertical-align: top !important;
+}
+
+.dashboard-th {
+  color: #fff;
+}
+
+.basic-th {
+  color: rgba(0, 0, 0, 0.7);
+  border-bottom-width: 1px !important;
+  font-weight: normal;
+}
+
+.table.table-hover {
+  margin-top: 8px;
+}
+
+.body-header {
+  margin-top: 50px;
+}
+
+.page_title {
+  font-weight: lighter;
+  color: #6a6c6f;
+  font-size: 12px;
+  display: inline-block;
+}
+
+.page_title:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+  .page_title {
+    float: none !important;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+
+}

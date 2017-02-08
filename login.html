@@ -1,40 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Blue Dashboard</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <!-- Bootstrap Core CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
-    <!-- Custom CSS -->
-    <link href="assets/css/styles.css" rel="stylesheet" />
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <script src="assets/js/vendors/jquery-1.12.3.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link href="assets/css/login.css" rel="stylesheet" />
-</head>
-<body>
-    <div class="backgroundimg">
-    </div>
-    <div class="container">
-        <div class="card margin-top"></div>
-        <div class="card">
-            <form>
-                <div class="login">
-                    <h2 class="title">Login</h2>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Blue Dashboard</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <!-- Fonts -->
+        <link type="text/css" href="assets/vendors/google-fonts/google-fonts.css" rel="stylesheet">
+        <!-- Bootstrap Core CSS -->
+        <link type="text/css" href="assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Font Awesome library -->
+        <link type="text/css" href="assets/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" />   
+        <!-- Custom CSS -->
+        <link type="text/css" href="assets/css/styles.css" rel="stylesheet" />
+        <link type="text/css" href="assets/css/login.css" rel="stylesheet" />
+        <!-- Login page CSS library -->
+        <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+    </head>
+    <body>
+        <div class="backgroundimg">
+        </div>
+        <div class="container">
+            <div class="card margin-top"></div>
+            <div class="card">
+                <form>
+                    <div class="login">
+                        <h2 class="title">Login</h2>
+                        <div class="input-container">
+                            <input type="text" id="#{label}" required="required" />
+                            <label for="#{label}">Username</label>
+                            <div class="bar"></div>
+                        </div>
+                        <div class="input-container">
+                            <input type="password" id="#{label}" required="required" />
+                            <label for="#{label}">Password</label>
+                            <div class="bar"></div>
+                        </div>
+                        <div class="button-container">
+                            <button><span>SIGN IN</span></button>
+                        </div>
+                        <div class="footer"><a href="#" id="forgot">Forgot your password?</a></div>
+                    </div>
+                    <div class="forgot">
+                        <h2 class="title">Forgot password</h2>
+                        <div class="input-container">
+                            <input type="text" required="required" />
+                            <label>Email</label>
+                            <div class="bar"></div>
+                        </div>
+                        <div class="button-container">
+                            <button><span>Send email</span></button>
+                        </div>
+                        <div class="footer"><a href="#" id="login">Login</a></div>
+                    </div>
+                </form>
+            </div>
+            <div class="card alt">
+                <div class="toggle"></div>
+                <h1 class="title">
+                Register
+                <div class="close"></div>
+                </h1>
+                <form>
                     <div class="input-container">
                         <input type="text" id="#{label}" required="required" />
                         <label for="#{label}">Username</label>
@@ -45,55 +76,19 @@
                         <label for="#{label}">Password</label>
                         <div class="bar"></div>
                     </div>
-                    <div class="button-container">
-                        <button><span>SIGN IN</span></button>
-                    </div>
-                    <div class="footer"><a href="#" id="forgot">Forgot your password?</a></div>
-                </div>
-                <div class="forgot">
-                    <h2 class="title">Forgot password</h2>
                     <div class="input-container">
-                        <input type="text" required="required" />
-                        <label>Email</label>
+                        <input type="password" id="#{label}" required="required" />
+                        <label for="#{label}">Repeat Password</label>
                         <div class="bar"></div>
                     </div>
                     <div class="button-container">
-                        <button><span>Send email</span></button>
+                        <button><span>REGISTRATION</span></button>
                     </div>
-                    <div class="footer"><a href="#" id="login">Login</a></div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
-        <div class="card alt">
-            <div class="toggle"></div>
-            <h1 class="title">
-                Register
-                <div class="close"></div>
-            </h1>
-            <form>
-                <div class="input-container">
-                    <input type="text" id="#{label}" required="required" />
-                    <label for="#{label}">Username</label>
-                    <div class="bar"></div>
-                </div>
-                <div class="input-container">
-                    <input type="password" id="#{label}" required="required" />
-                    <label for="#{label}">Password</label>
-                    <div class="bar"></div>
-                </div>
-                <div class="input-container">
-                    <input type="password" id="#{label}" required="required" />
-                    <label for="#{label}">Repeat Password</label>
-                    <div class="bar"></div>
-                </div>
-                <div class="button-container">
-                    <button><span>REGISTRATION</span></button>
-                </div>
-            </form>
-        </div>
-    </div>
-    <h6 class="made-by ">Made By  <b>New Versions</b></h6>
-
-    <script src="assets/js/login-page.js"></script>
-</body>
+        <!-- Page layout JS -->
+        <script type="text/javascript" src="assets/vendors/jquery/jquery-3.1.1.js"></script>
+        <script type="text/javascript" src="assets/js/login-page.js"></script>
+    </body>
 </html>
