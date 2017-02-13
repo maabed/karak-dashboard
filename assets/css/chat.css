@@ -382,6 +382,7 @@ Copyright 2017 New Release
 .post-image-row img {
   border-radius: 0 !important;
   border: 1px solid #67b2e4;
+  margin-right: 15px;
 }
 
 .chat-video {
@@ -422,9 +423,9 @@ Copyright 2017 New Release
 
 .chat-input {
   bottom: 0;
-  position: fixed;
+  position: relative;
   z-index: 999999;
-  width: 85%;
+  width: 100%;
   background-color: #fff;
   margin: 0 auto;
   padding: 1em;
@@ -464,8 +465,24 @@ Copyright 2017 New Release
   width: 60%;
 }
 
+.msg-details {
+  display: table
+}
+
+.sender-avatar {
+  float: left;
+}
+
 .post-image-row {
-  padding-right: 1em;
+  display: inline;
+}
+
+.msg-content {
+  display: inline;
+}
+
+.msg-text {
+  display: table;
 }
 
 .no-margin {
@@ -799,6 +816,14 @@ input[type=email]:not(#searchTB):not(.chat-message-input):not(#flat_email)+label
 
 .open-sub {
   display: inline;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0px;
 }
 
 .back-border {
