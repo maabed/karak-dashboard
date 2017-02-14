@@ -30,8 +30,7 @@ Copyright 2017 New Release
 	border-right: 1px solid #e6e6e6 !important;
 }
 
-.note-popover .popover-content>.btn-group,
-.panel-heading.note-toolbar>.btn-group {
+.panel-heading .note-toolbar > .btn-group {
 	margin: 0em !important;
 }
 
