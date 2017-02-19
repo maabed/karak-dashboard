@@ -72,12 +72,10 @@ Copyright 2017 New Release
 }
 
 .sidebar-nav {
-  position: relative;}
-.scroll{
-   height: 100%;
-    width: 100%;
-    overflow: auto;
+  position: relative;
+
 }
+
 .left-side-header img {
   border: 1px solid #dcdcdc;
   border-radius: 0px;
@@ -391,7 +389,6 @@ Copyright 2017 New Release
 }
 
 .chat-video {
-  width: 100%;
   border: 1px solid #eee;
 }
 
