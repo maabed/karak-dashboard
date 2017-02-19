@@ -7,6 +7,7 @@ Copyright 2017 New Release
 */
 #sidebar-wrapper {
   background-color: #2a2e34;
+  overflow:hidden;
 }
 
 #head {
@@ -71,9 +72,12 @@ Copyright 2017 New Release
 }
 
 .sidebar-nav {
-  position: relative;
+  position: relative;}
+.scroll{
+   height: 100%;
+    width: 100%;
+    overflow: auto;
 }
-
 .left-side-header img {
   border: 1px solid #dcdcdc;
   border-radius: 0px;
@@ -240,7 +244,7 @@ Copyright 2017 New Release
 
 .chat-head-container .col-sm-6 h4 {
   float: left;
-  margin: 0;
+  margin: 0 !important;
   color:#fff;
   padding: 0;
 }
@@ -255,7 +259,6 @@ Copyright 2017 New Release
   color: #fff;
   float: right;
   font-weight: lighter;
-  margin-top: 0.1em;
 }
 
 .not-activ {
@@ -331,7 +334,7 @@ Copyright 2017 New Release
 }
 
 .chat-cotainer h4 {
-  line-height: 1.6;
+  line-height: 1.1;
   margin: 0 !important;
   font-size: 1.2em;
 }
@@ -810,9 +813,8 @@ input[type=email]:not(#searchTB):not(.chat-message-input):not(#flat_email)+label
 }
 
 .chat-back {
-  background-color: #2a2e34 !important;
+  background-color: #22252b !important;
   border: none;
-  margin-left: 40px;
 }
 
 .open-sub {
@@ -895,7 +897,15 @@ footer{
 .border-left-style a {
   color: #67b2e4;
 }
+.hvr-icon-back{
+  margin:0!important;
+  width:6em;
+  padding-left:0 !important;
+  margin-left:-1em !important;
+  color:#909195 !important;
+  font-size:1em;
 
+}
 @media(max-width:767px) {  
   .chat-input {
   width: 100%;
