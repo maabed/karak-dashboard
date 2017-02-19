@@ -1,3 +1,9 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+  background-color: #F1F3F6;
+}
+
 #wrapper {
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -46,6 +52,9 @@
   margin: 0;
   padding: 0;
   list-style: none;
+}
+#sidebar-wrapper .sidebar-nav .selected a .nav-icon {
+  color: #3B97D2;
 }
 #sidebar-wrapper .sidebar-nav li {
   text-indent: 20px;
@@ -133,6 +142,11 @@
     width: 250px;
   }
 }
+body {
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+  background-color: #F1F3F6;
+}
 
 #wrapper {
   -moz-transition: all 0.5s ease;
@@ -182,6 +196,9 @@
   margin: 0;
   padding: 0;
   list-style: none;
+}
+#sidebar-wrapper .sidebar-nav .selected a .nav-icon {
+  color: #3B97D2;
 }
 #sidebar-wrapper .sidebar-nav li {
   text-indent: 20px;
