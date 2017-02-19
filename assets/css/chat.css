@@ -241,6 +241,7 @@ Copyright 2017 New Release
 .chat-head-container .col-sm-6 h4 {
   float: left;
   margin: 0;
+  color:#fff;
   padding: 0;
 }
 
@@ -303,12 +304,13 @@ Copyright 2017 New Release
   background-color: #fff;
   width: 100%;
   height: 100%;
-  padding-top: 6em;
+  position:relative;
 }
 
 .chat-cotainer h2 {
   color: #515151;
   font-weight: bold;
+  padding-top:2em;
 }
 
 .chat-cotainer h4 {
@@ -420,15 +422,14 @@ Copyright 2017 New Release
   border-left: 3px solid #d8d8d8 !important;
   padding-left: 1em;
 }
-
 .chat-input {
-  bottom: 0;
-  position: relative;
+  position: absolute;
+  bottom: 0em;
   z-index: 999999;
   width: 100%;
   background-color: #fff;
-  margin: 0 auto;
   padding: 1em;
+   margin-bottom: auto;
 }
 
 .chat-border {
@@ -864,7 +865,19 @@ input:not(#searchTB):not(.chat-message-input):not(.chat-message-input):focus {
 #invite {
   width: 100%;
 }
-
+.message-box{
+  position:relative;
+  height:100vh;
+  overflow:scroll;
+}
+footer{
+  position: absolute;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-height: 70px;
+}
 @media(max-width:1129px) {
   .right-side-chat-lest {
     padding-right: 0px !important;
@@ -876,13 +889,64 @@ input:not(#searchTB):not(.chat-message-input):not(.chat-message-input):focus {
     width: 13em;
   }
 
+
 }
 
 .border-left-style a {
   color: #67b2e4;
 }
 
+@media(max-width:767px) {  
+  .chat-input {
+  width: 100%;
+}
+.right-side-chat-lest li{
+  padding:0 !important;
+}
+.chat-header-list li{
+  padding:0;
+  margin:0;}
+
+.right-side-chat-lest .chat-header-list li{
+text-align:right;
+  float:right;
+  padding-left:2em !important;
+}
+.chat-header-list li a i{
+  margin-right: 0 !important;
+}
+
+.left-side-chat-lest .chat-header-list li{
+  text-align:left;
+  float:left;
+  padding:0em 1em !important;}
+
+#menu-toggle{
+  margin:0.5em 1em 0em 1em !important;
+}
+
+.left-side-chat-lest li {
+  border-right: 0px !important;
+}
+
+}
+
 @media(max-width:700px) {
+  .left-side-chat-lest, .right-side-chat-lest{
+    width:45% !important;
+    padding:0 !important;
+    margin:0 !important;
+    float:left;
+  }
+
+  .left-side-chat-lest ul {
+  margin-left: 0em;
+}
+
+  .left-side-chat-lest li {
+    padding: 0em;
+  }
+
   .right-side-chat-lest {
     padding-right: 5px !important;
     position: absolute;
@@ -906,5 +970,6 @@ input:not(#searchTB):not(.chat-message-input):not(.chat-message-input):focus {
   .chat-header-list li a p {
     display: none;
   }
+
 
 }
