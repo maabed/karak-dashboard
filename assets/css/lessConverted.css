@@ -142,6 +142,105 @@ body {
     width: 250px;
   }
 }
+#head {
+  width: 100%;
+  padding-top: 0.5em;
+  height: 3.55em;
+  color: #fff;
+  position: fixed;
+  z-index: 999;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color: #3B97D2;
+  overflow: hidden;
+}
+#head #menu-toggle {
+  display: none;
+}
+#head .form-group {
+  width: 20%;
+  float: left;
+  margin-left: 0.5em;
+}
+#head .form-group .icon-addon {
+  position: relative;
+  color: #555;
+  display: block;
+}
+#head .form-group .icon-addon:after {
+  content: " ";
+  display: table;
+}
+#head .form-group .icon-addon:before {
+  content: " ";
+  display: table;
+}
+#head .form-group .icon-addon #searchTB {
+  border: none;
+  box-shadow: none;
+  color: #fff;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color: #3B97D2;
+}
+#head .right-side-head {
+  float: right;
+  margin-right: 19.4em;
+}
+#head .right-side-head .notifecations .head-box .btn-default:hover {
+  background-color: none !important;
+  border: none !important;
+}
+#head .right-side-head .notifecations #notifications {
+  background: none !important;
+  border: none !important;
+}
+#head .right-side-head .notifecations .badge-notify {
+  background: #F1F3F6;
+  position: absolute;
+  top: 0em;
+  right: 0.6em;
+  border-radius: 2px;
+  font-weight: normal;
+  padding: 0.3em 0.5em;
+  font-size: 10px;
+  color: #a5a5a5;
+}
+#head .right-side-head .user-box {
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: lighter;
+  transition: all 0.5s ease;
+}
+#head .right-side-head .user-box:hover {
+  color: #E4E5E7;
+}
+#head .right-side-head .user-box img {
+  border-radius: 180px;
+  border: 1px solid #ffffff;
+  float: left;
+  height: 35px;
+  margin-right: 0.5em;
+  width: 35px;
+}
+#head .right-side-head .user-box p {
+  color: #ffffff;
+  float: right;
+  margin-top: 0.5em;
+}
+#head .right-side-head .head-box {
+  float: left;
+  margin-left: 1.5em;
+  position: relative;
+}
 body {
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
@@ -285,4 +384,103 @@ body {
     margin-top: 3.5em;
     width: 250px;
   }
+}
+#head {
+  width: 100%;
+  padding-top: 0.5em;
+  height: 3.55em;
+  color: #fff;
+  position: fixed;
+  z-index: 999;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color: #3B97D2;
+  overflow: hidden;
+}
+#head #menu-toggle {
+  display: none;
+}
+#head .form-group {
+  width: 20%;
+  float: left;
+  margin-left: 0.5em;
+}
+#head .form-group .icon-addon {
+  position: relative;
+  color: #555;
+  display: block;
+}
+#head .form-group .icon-addon:after {
+  content: " ";
+  display: table;
+}
+#head .form-group .icon-addon:before {
+  content: " ";
+  display: table;
+}
+#head .form-group .icon-addon #searchTB {
+  border: none;
+  box-shadow: none;
+  color: #fff;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color: #3B97D2;
+}
+#head .right-side-head {
+  float: right;
+  margin-right: 19.4em;
+}
+#head .right-side-head .notifecations .head-box .btn-default:hover {
+  background-color: none !important;
+  border: none !important;
+}
+#head .right-side-head .notifecations #notifications {
+  background: none !important;
+  border: none !important;
+}
+#head .right-side-head .notifecations .badge-notify {
+  background: #F1F3F6;
+  position: absolute;
+  top: 0em;
+  right: 0.6em;
+  border-radius: 2px;
+  font-weight: normal;
+  padding: 0.3em 0.5em;
+  font-size: 10px;
+  color: #a5a5a5;
+}
+#head .right-side-head .user-box {
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: lighter;
+  transition: all 0.5s ease;
+}
+#head .right-side-head .user-box:hover {
+  color: #E4E5E7;
+}
+#head .right-side-head .user-box img {
+  border-radius: 180px;
+  border: 1px solid #ffffff;
+  float: left;
+  height: 35px;
+  margin-right: 0.5em;
+  width: 35px;
+}
+#head .right-side-head .user-box p {
+  color: #ffffff;
+  float: right;
+  margin-top: 0.5em;
+}
+#head .right-side-head .head-box {
+  float: left;
+  margin-left: 1.5em;
+  position: relative;
 }
