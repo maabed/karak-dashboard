@@ -18,9 +18,11 @@
 }
 /*colors*/
 /*borders*/
+/*border radius*/
 /*font-size*/
-/*padding & margin*/
+/*values*/
 /*z-index*/
+/*outline*/
 #wrapper {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -346,7 +348,6 @@ body {
   left: 300px;
   top: 88px;
 }
-/* Trans [move me to animation] */
 /* Dashboasrd Buttons */
 button,
 input {
