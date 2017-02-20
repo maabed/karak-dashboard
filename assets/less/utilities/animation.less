@@ -80,20 +80,6 @@
   animation: preloaderCSSTop 2s infinite;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .keyframes(@name; @arguments){
 	@keyframes @name{ @arguments(); }
 }
@@ -239,3 +225,10 @@ left: 300px;
 top: 88px;
 }
 
+  
+  .css-effect(@transition) {
+      -webkit-transition: @transition;
+      -moz-transition: @transition;
+      -o-transition: @transition;
+      transition: @transition;
+  }
