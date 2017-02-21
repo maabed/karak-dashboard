@@ -103,6 +103,18 @@
   text-decoration: inherit;
   top: 1px;
 }
+#sidebar-wrapper .sidebar-nav li .Submenue .submenu-li a {
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  border-bottom: none !important;
+  color: #9E9E9E !important;
+  display: block;
+  font-size: 14px !important;
+  font-weight: lighter;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
 #sidebar-wrapper .sidebar-nav li a {
   display: block;
   text-decoration: none;
@@ -156,7 +168,6 @@
     width: 250px;
   }
 }
-/*head*/
 body {
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
