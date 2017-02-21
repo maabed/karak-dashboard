@@ -418,6 +418,12 @@ input {
   float: right;
   color: #fff;
 }
+/* Page Wrapper */
+#page-content-wrapper {
+  width: 100%;
+  position: absolute;
+  padding: 15px;
+}
 /* Media Querys */
 @media (min-width: 768px) {
   #wrapper {
@@ -427,6 +433,11 @@ input {
     background-color: #fff;
     margin-top: 3.5em;
     width: 250px;
+  }
+  #page-content-wrapper {
+    padding: 20px;
+    padding-top: 11px;
+    position: relative;
   }
 }
 body {
@@ -783,6 +794,19 @@ body {
   margin-top: -0.8em;
   float: right;
   margin-right: 1.7em;
+}
+/* Body header */
+#page-content-wrapper {
+  width: 100%;
+  position: absolute;
+  padding: 15px;
+}
+#page-content-wrapper .body-header {
+  margin-top: 3.8em;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 /* Dashboasrd Buttons */
 button,

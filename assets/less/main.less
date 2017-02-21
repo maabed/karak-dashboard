@@ -173,7 +173,6 @@
 }
 
 /* Head */
-
 #head {
   width: 100%;
   padding-top: 0.5em;
@@ -299,7 +298,12 @@
   }
 
 }
-
+/* Page Wrapper */
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
 /* Media Querys */
 @media (min-width:768px) {
   #wrapper {
@@ -310,6 +314,12 @@
     background-color: @white;
     margin-top: 3.5em;
     width: 250px;
+  }
+
+  #page-content-wrapper {
+    padding: 20px;
+    padding-top: 11px;
+    position: relative;
   }
 
 }
