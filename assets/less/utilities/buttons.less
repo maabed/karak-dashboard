@@ -1,5 +1,4 @@
 /* Dashboasrd Buttons */
-
 button,
 input {
     outline: @no-outline;
@@ -18,160 +17,190 @@ input {
 
 .btn-default {
     color: @default-btn-color !important;
+
     &:hover {
         background-color: @default-hover !important;
         border-color: @default-hover !important;
     }
+
     &::focus {
         background-color: @info-mid;
         border-color: @info-mid;
         color: @white;
     }
+
 }
 
 .btn-primary {
     background-color: @dashboard-primary !important;
     border-color: @dashboard-primary !important;
+
     &:hover {
         color: @white;
         background-color: @dashboard-primary;
         border-color: @dashboard-primary;
     }
+
     &:focus {
         color: @white;
         background-color: @dashboard-primary;
         border-color: @dashboard-primary;
     }
+
 }
 
 .btn-success {
     color: @white;
     background-color: @success-mid;
     border-color: @success-mid;
+
     &:hover {
         background-color: @success-hover !important;
         border-color: @success-hover !important;
     }
+
     &:focus {
         background-color: @success-mid;
         border-color: @success-mid;
         color: @white;
     }
+
 }
 
 .btn-info {
     background-color: @info-mid;
     border-color: @info-mid;
+
     &:hover {
         background-color: @info-hover;
         border-color: @info-hover;
     }
+
     &:focus {
         background-color: @info-mid;
         border-color: @info-mid;
         color: @white;
     }
+
 }
 
 .btn-warning {
     background-color: @warning-mid;
     border-color: @warning-mid;
+
     &:hover {
         background-color: @warning-hover;
         border-color: @warning-hover;
     }
+
     &:focus {
         background-color: @warning-mid;
         border-color: @warning-mid;
         color: @white;
     }
+
 }
 
 .btn-danger {
     background-color: @danger-mid;
     border-color: @danger-mid;
+
     &:hover {
         background-color: @danger-hover;
         border-color: @danger-hover;
     }
+
     &:focus {
         background-color: @danger-mid;
         border-color: @danger-mid;
         color: @white;
     }
+
 }
 
+.btn-lg {
+    padding: 0.3em 0.6em;
+}
 
 /* Icon Buttons */
-
 .icon-btn {
     padding: 0.4em 0.6em !important;
     color: @white;
     text-align: left !important;
     font-size: @large-value !important;
+
     span {
         float: right;
         padding-left: 2em;
         padding-top: 0.1em;
     }
+
 }
 
-
 /* Outline Buttons */
-
 .outline-primary {
     border-color: @outline-primary-color;
     background-color: @white;
     color: @outline-primary-color;
+
     &:hover {
         border-color: @outline-primary-color;
         background-color: @outline-primary-color;
         color: @white;
     }
+
 }
 
 .outline-success {
     border-color: @success-mid;
     background-color: @white;
     color: @success-mid;
+
     &:hover {
         border-color: @dashboard-success;
         background-color: @dashboard-success;
         color: @white !important;
     }
+
 }
 
 .outline-info {
     border-color: @info-mid;
     background-color: @white;
     color: @info-mid;
+
     &:hover {
         border-color: @dashboard-info;
         background-color: @dashboard-info;
         color: @white !important;
     }
+
 }
 
 .outline-warning {
     border-color: @warning-mid;
     background-color: @white;
     color: @warning-mid;
+
     &:hover {
         border-color: @dashboard-warning;
         background-color: @dashboard-warning;
         color: @white;
     }
+
 }
 
 .outline-danger {
     border-color: @danger-mid;
     background-color: @white;
     color: @danger-mid;
+
     &:hover {
         border-color: @dashboard-danger;
         background-color: @dashboard-danger;
         color: @white;
     }
+
 }
 
 .outline-icon-btn {
@@ -181,7 +210,6 @@ input {
 }
 
 /* Circle Buttons */
-
 .btn-circle {
     border-radius: @cirkel !important;
     height: @large-value + 1.2em;
