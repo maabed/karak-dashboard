@@ -5,6 +5,8 @@ Author: New Release
 http://newrelease.io
 Copyright 2017 New Release
 */
+
+//used
 .checkbox {
   padding-left: 20px;
 }
@@ -44,7 +46,7 @@ Copyright 2017 New Release
   font-size: 11px;
   color: #555555;
 }
-
+//used
 .checkbox input[type="checkbox"] {
   opacity: 0;
 }
