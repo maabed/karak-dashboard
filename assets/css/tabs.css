@@ -5,10 +5,12 @@ Author: New Release
 http://newrelease.io
 Copyright 2017 New Release
 */
+
+/*used*/
 #bordered-tab > .active > a {
   border-top: 5px solid #67b2e4;
 }
-
+/*used*/
 #bordered-tab > li > a {
   color: #707A7A;
 }
@@ -62,11 +64,11 @@ div.bhoechie-tab-menu2 div.list-group > a.active:after {
   border-right: 13px solid transparent;
   border-top: 10px solid #67b2e4;
 }
-
+/*used*/
 .list-group-item {
   border: 0 !important;
 }
-
+/*used*/
 .nav-style li {
   width: 25%;
   text-align: center;
@@ -75,12 +77,12 @@ div.bhoechie-tab-menu2 div.list-group > a.active:after {
 .nav-pills > li + li {
   margin: 0 !important;
 }
-
+/*used*/
 .list-group-item.active.text-center {
   background-color: #67b2e4 !important;
   border-color: #67b2e4;
 }
-
+/*used*/
 div.bhoechie-tab-menu div.list-group > a.active .glyphicon {
   background: none !important;
 }
@@ -93,7 +95,7 @@ div.bhoechie-tab-menu div.list-group > a .glyphicon,
 div.bhoechie-tab-menu div.list-group > a .fa {
   color: #67b2e4;
 }
-
+/*used*/
 div.bhoechie-tab-menu3 div.list-group > a .glyphicon,
 div.bhoechie-tab-menu3 div.list-group > a .fa {
   color: #67b2e4;
@@ -109,7 +111,7 @@ div.bhoechie-tab-menu3 div.list-group > a .fa {
   border-left: 0 !important;
   border-right: 0 !important;
 }
-
+/*used*/
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:focus,
 .nav-tabs > li.active > a:hover {
@@ -117,7 +119,7 @@ div.bhoechie-tab-menu3 div.list-group > a .fa {
   border-left: 0 !important;
   border-top: 5px solid #67b2e4;
 }
-
+/*used*/
 .bhoechie-tab h1 {
   color: #67b2e4 !important;
 }
@@ -125,19 +127,22 @@ div.bhoechie-tab-menu3 div.list-group > a .fa {
 .bhoechie-tab3 h1 {
   color: #67b2e4 !important;
 }
-
+/*used*/
 .toggle-icon1 {
+  float: right;
+}
+.toggle-icons {
   float: right;
 }
 
 #bordered-tab > li:not(.active) > a {
   border-top: 5px solid #fff;
 }
-
+/*used*/
 .nav-tabs {
   border: 0px !important;
 }
-
+/*used*/
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:focus,
 .nav-tabs > li.active > a:hover {
@@ -145,6 +150,7 @@ div.bhoechie-tab-menu3 div.list-group > a .fa {
   border-top-left-radius: 0 !important;
 }
 
+/*used*/
 .statistics .statistics-taps li a {
   padding: 0em 1em 1em 1em !important;
 }

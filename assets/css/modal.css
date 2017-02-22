@@ -68,11 +68,11 @@ Copyright 2017 New Release
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-
+/*used*/
 .modal-close {
   float: left
 }
-
+/*used*/
 .modal-content {
   border-radius: 0px;
 }
@@ -152,7 +152,7 @@ input:not(#searchTB):not(#flat_email),optgroup,select,textarea {
   font: inherit;
   margin: 0;
 }
-
+/*used*/
 input:not([type]),
 input[type="email"i]:not(#searchTB):not(#flat_email),input[type="number"i],input[type="password"i],input[type="tel"i],input[type="url"i],input[type="text"i] {
   padding: 1px 0px;
@@ -230,7 +230,7 @@ input[type=email]:not(#searchTB):not(#flat_email)+label:after,input[type=url]+la
 .input-field > label {
   font-weight: 400;
 }
-
+/*used*/
 #flat_email {
   border-radius: 0px;
   height: 50px;
@@ -242,7 +242,7 @@ input[type=email]:not(#searchTB):not(#flat_email)+label:after,input[type=url]+la
   width: 92%;
   display: inline;
 }
-
+/*used*/
 .modal-body > .jumbotron {
   padding-left: 5px !important;
   padding-top: 5px !important;
@@ -250,11 +250,11 @@ input[type=email]:not(#searchTB):not(#flat_email)+label:after,input[type=url]+la
   padding-right: 5px !important;
   border-radius: 0px;
 }
-
+/*used*/
 .middle-dialog {
   top: 15%;
 }
-
+/*used*/
 .jumbotron > .glyphicon-search {
   font-size: 26px;
   margin-top: 10px;
@@ -275,15 +275,15 @@ input[type=email]:not(#searchTB):not(#flat_email)+label:after,input[type=url]+la
   -webkit-transform: translateY(-140%);
   transform: translateY(-140%);
 }
-
+/*used*/
 .custome-margin {
   margin-top: 40%;
 }
-
+/*used*/
 .right-modal-content {
   text-align: center;
 }
-
+/*used*/
 .right-button {
   width: 50%;
   margin-bottom: 10px;
