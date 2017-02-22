@@ -1105,7 +1105,7 @@ hr {
   padding: 0.5em 1em;
   height: auto;
 }
-
+/*used*/
 .col-contint-taps {
   min-height: 10em;
   overflow: hidden;
@@ -1128,12 +1128,12 @@ hr {
 .salse-img .col-contint img {
   float: right;
 }
-
+/*used*/
 .statistics .statistics-taps {
   width: 100%;
   margin: 0 auto;
 }
-
+/*used*/
 .statistics .statistics-taps ul {
   list-style: none;
   height: auto;
@@ -1142,12 +1142,12 @@ hr {
   padding-left: 0;
   margin: 0 auto;
 }
-
+/*used*/
 .statistics .statistics-taps li {
   float: left;
   margin: 0em 1em;
 }
-
+/*used*/
 .statistics .statistics-taps li a {
   font-size: 1.2em;
   color: #34495E;
@@ -1171,11 +1171,13 @@ hr {
   transition: all 0.5s ease;
 }
 
+/*used*/
 .statistics .statistics-taps li.active a,
 .statistics .statistics-taps li:hover > a {
   color: #3B97D2;
   border-bottom: 4px solid #3B97D2;
 }
+/*used*/
 
 .statistics .statistics-taps li.active > a::after {
   height: 1em;
@@ -1193,23 +1195,23 @@ hr {
 .no-padding {
   padding: 0 !important;
 }
-
+/*used*/
 .statistics-item {
   width: 100%;
   background-color: #fff;
   padding: 1.5em 0em;
   border-radius: 3px;
 }
-
+/*used*/
 .statistics-item .row .col-sm-2 {
   text-align: center;
   width: 20% !important;
 }
-
+/*used*/
 .statistics-item .row .col-sm-2 img {
   margin: 0 auto;
 }
-
+/*used*/
 .statistics-item .row .col-sm-2 h4 {
   line-height: 1.5em;
 }
@@ -1682,7 +1684,7 @@ hr {
 .code-padding {
   margin: 0.5em;
 }
-
+/*used*/
 .tabs-head-title {
   margin-top: 0;
   font-weight: lighter;
@@ -1729,7 +1731,7 @@ div.bhoechie-tab-menu div.list-group > a:last-child {
   border-bottom-right-radius: 0;
   -moz-border-bottom-right-radius: 0;
 }
-
+/*used*/
 div.bhoechie-tab-menu div.list-group > a.active,
 div.bhoechie-tab-menu div.list-group > a.active .glyphicon,
 div.bhoechie-tab-menu div.list-group > a.active .fa {
@@ -1749,7 +1751,7 @@ div.bhoechie-tab-menu div.list-group > a.active:after {
   border-top: 13px solid transparent;
   border-left: 10px solid #3B97D2;
 }
-
+/*used*/
 div.bhoechie-tab-menu3 {
   padding: 0px !important;
   float: right;
@@ -1778,6 +1780,7 @@ div.bhoechie-tab-menu3 div.list-group > a:last-child {
   -moz-border-bottom-right-radius: 0;
 }
 
+/*used*/
 div.bhoechie-tab-menu3 div.list-group > a.active,
 div.bhoechie-tab-menu3 div.list-group > a.active .glyphicon,
 div.bhoechie-tab-menu3 div.list-group > a.active .fa {
@@ -1797,35 +1800,35 @@ div.bhoechie-tab-menu3 div.list-group > a.active:after {
   border-top: 13px solid transparent;
   border-left: 10px solid #3B97D2;
 }
-
+/*used*/
 div.bhoechie-tab-menu2 {
   padding: 0px !important;
   margin-bottom: 1em;
 }
-
+/*used*/
 div.bhoechie-tab-menu2 div.list-group {
   margin-bottom: 0;
 }
-
+/*used*/
 div.bhoechie-tab-menu2 div.list-group > a {
   margin-bottom: 0;
 }
-
+/*used*/
 div.bhoechie-tab-menu2 div.list-group > a .glyphicon,
 div.bhoechie-tab-menu2 div.list-group > a .fa {
   color: #3B97D2;
 }
-
+/*used*/
 div.bhoechie-tab-menu2 div.list-group > a:first-child {
   border-top-right-radius: 0;
   -moz-border-top-right-radius: 0;
 }
-
+/*used*/
 div.bhoechie-tab-menu2 div.list-group > a:last-child {
   border-bottom-right-radius: 0;
   -moz-border-bottom-right-radius: 0;
 }
-
+/*used*/
 div.bhoechie-tab-menu2 div.list-group > a.active,
 div.bhoechie-tab-menu2 div.list-group > a.active .glyphicon,
 div.bhoechie-tab-menu2 div.list-group > a.active .fa {
@@ -1833,7 +1836,7 @@ div.bhoechie-tab-menu2 div.list-group > a.active .fa {
   background-image: #3B97D2;
   color: #ffffff;
 }
-
+/*used*/
 div.bhoechie-tab-menu2 div.list-group > a.active:after {
   content: '';
   position: absolute;
@@ -1846,7 +1849,7 @@ div.bhoechie-tab-menu2 div.list-group > a.active:after {
   border-right: 13px solid transparent;
   border-top: 10px solid #3B97D2;
 }
-
+/*used*/
 div.bhoechie-tab-menu3 div.list-group > a.active:after {
   content: '';
   position: absolute;
@@ -1858,31 +1861,31 @@ div.bhoechie-tab-menu3 div.list-group > a.active:after {
   border-bottom: 13px solid transparent;
   border-right: 10px solid #3B97D2;
 }
-
+/*used*/
 .list-group-item:first-child {
   border-top-left-radius: 0px !important;
   border-top-right-radius: 0px !important;
 }
-
+/*used*/
 .list-group-item:last-child {
   border-bottom-left-radius: 0px !important;
   border-bottom-right-radius: 0px !important;
 }
-
+/*used*/
 div.bhoechie-tab-content {
   background-color: #ffffff;
 }
-
+/*used*/
 div.bhoechie-tab div.bhoechie-tab-content:not(.active) {
   display: none;
 }
-
+/*used*/
 .bhoechie-tab h1 {
   color: #3B97D2;
   font-size: 5em;
   text-align: center !important;
 }
-
+/*used*/
 div.bhoechie-tab3 div.bhoechie-tab-content:not(.active) {
   display: none;
 }
@@ -1892,29 +1895,29 @@ div.bhoechie-tab3 div.bhoechie-tab-content:not(.active) {
   font-size: 5em;
   text-align: center !important;
 }
-
+/*used*/
 div.bhoechie-tab2 div.bhoechie-tab-content:not(.active) {
   display: none;
 }
-
+/*used*/
 .bhoechie-tab2 h1 {
   color: #3B97D2;
   font-size: 5em;
   text-align: center !important;
 }
-
+/*used*/
 .icon-tap-width {
   width: 20%;
   float: left;
 }
-
+/*used*/
 .single-tap {
   width: 100%;
   margin: 0 auto;
   margin-bottom: 1em;
   cursor: pointer;
 }
-
+/*used*/
 .single-tap .single-tap-title {
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
@@ -1934,17 +1937,18 @@ div.bhoechie-tab2 div.bhoechie-tab-content:not(.active) {
 .single-tap-details {
   display: none;
 }
-
+/*used*/
 .single-tap .single-tap-title:hover {
   background: #FAFAFA;
 }
 
+/*used*/
 .single-tap-title p {
   text-align: left;
   font-size: 0.8em;
   color: #8c8c8c;
 }
-
+/*used*/
 .toggle-icons {
   float: right;
 }
@@ -2968,7 +2972,7 @@ background-color: #3B97D2;
 color: #fff;
 text-align: left !important;
 }
-
+/*used*/
 .nav-style {
 background: none;
 border-radius: 0 !important;
@@ -3429,7 +3433,7 @@ padding: 1em 0em !important;
   float: none;
   margin: 0em auto;
 }
-
+/*used*/
 .statistics .statistics-taps li a {
   text-align: center;
 }
@@ -3469,6 +3473,7 @@ padding: 0.5em;
 background-color: #3B97D2 !important;
 }
 
+/*used*/
 .tab-content {
 background-color: #fff;
 padding: 1em 0.5em;
@@ -3721,7 +3726,7 @@ height: 32em;
   float: none;
   margin: 0em auto;
 }
-
+/*used*/
 .statistics .statistics-taps li a {
   text-align: center;
 }
