@@ -995,3 +995,101 @@ button,
 input {
   outline: none !important;
 }
+.panal-font-style,
+.panel .panel-body p,
+.panel .panel-footer,
+.dag_container div p {
+  font-weight: lighter;
+  color: rgba(0, 0, 0, 0.7);
+}
+.panel {
+  border-radius: 0px;
+}
+.panel .panel-heading {
+  border-radius: 0px;
+}
+.panel .panel-heading a span {
+  color: #C4C4C4;
+  cursor: pointer;
+  margin-right: 0.5em;
+  margin-top: 0.2em;
+}
+.panel .panel-heading a span:hover {
+  color: #C4C4C4;
+}
+.panel .panel-heading .panel-actions {
+  display: inline;
+  float: right;
+}
+.panel .panel-heading .panel-actions p {
+  color: #C4C4C4;
+}
+.panel .panel-heading .panel-actions p:hover {
+  color: #7B7B7B;
+}
+.panel .panel-body {
+  border-top: 0px !important;
+}
+.panel .panel-footer {
+  border-top: 1px solid #ddd !important;
+  background: none;
+}
+.no-borders {
+  border: 0px;
+  box-shadow: none;
+}
+.no-borders .panel-heading {
+  border: 0px;
+  background-color: #fafafa;
+}
+.no-borders .panel-heading a span .panel-group .panel {
+  border-radius: 0px;
+}
+.no-borders .panel-footer {
+  background: none;
+}
+.panel-group .panel {
+  border-radius: 0px;
+}
+.panel-group .panel-primary {
+  border-color: #a8a8a8;
+}
+.panel-group .panel-success {
+  border-color: #96e5b8;
+}
+.panel-group .panel-info {
+  border-color: #99cbed;
+}
+.panel-group .panel-warning {
+  border-color: #f8e187;
+}
+.panel-group .panel-danger {
+  border-color: #f3a59d;
+}
+.panel-group .panel-success .panel-heading,
+.panel-group .panel-info .panel-heading,
+.panel-group .panel-warning .panel-heading,
+.panel-group .panel-danger .panel-heading {
+  color: #fff;
+}
+/*move to variables*/
+/*move to main*/
+.float-right {
+  float: right;
+}
+.warning-light {
+  background-color: #f8e187 !important;
+}
+.info-light {
+  background-color: #99cbed !important;
+}
+.primary-light {
+  background-color: #8A8F9B !important;
+}
+.success-light {
+  background-color: #96e5b8 !important;
+}
+.danger-light {
+  background-color: #f3a59d !important;
+}
+/*note : please convert colors classes to less in main.less file*/
