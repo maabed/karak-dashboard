@@ -77,7 +77,7 @@ input[type=email]:not(#searchTB):not(#flat_email) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.07);
   line-height: normal;
 }
-input:not(#searchTB):not(.select2-search__field):focus {
+input:not(#flat_email):not(#searchTB):not(.select2-search__field):focus {
   border-bottom: 1px solid #67b2e4 !important;
 }
 .input-field {
@@ -551,9 +551,6 @@ input {
 #wrapper .toggled {
   padding-left: 250px;
 }
-p {
-  color: #707A7A;
-}
 #sidebar-wrapper {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -821,10 +818,36 @@ p {
     position: relative;
   }
 }
+.float-right {
+  float: right;
+}
+.warning-light {
+  background-color: #f8e187 !important;
+}
+.info-light {
+  background-color: #99cbed !important;
+}
+.primary-light {
+  background-color: #8A8F9B !important;
+}
+.success-light {
+  background-color: #96e5b8 !important;
+}
+.danger-light {
+  background-color: #f3a59d !important;
+}
 body {
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
   background-color: #F1F3F6;
+}
+button,
+input {
+  outline: none !important;
+}
+p {
+  font-size: 0.9em;
+  color: #707A7A;
 }
 /* Animation */
 /* Preloaders */
@@ -1149,33 +1172,42 @@ body {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-.modal .modal-content {
+.modal .modal-dialog .modal-content {
   border-radius: 0px;
 }
-.modal .modal-content input {
+.modal .modal-dialog .modal-content .modal-body input {
   padding: 1px 0px;
 }
-.modal .modal-dialog .custome-margin {
-  margin-top: 40%;
+.modal .modal-dialog .modal-content .modal-body #email-label {
+  font-size: 10px;
+  color: #67b2e4;
+  -webkit-transform: translateY(-140%);
+  transform: translateY(-140%);
 }
-.modal .modal-dialog .modal-body .right-modal-content {
+.modal .modal-dialog .modal-content .modal-body #password-label {
+  font-size: 10px;
+  color: #67b2e4;
+  -webkit-transform: translateY(-140%);
+  transform: translateY(-140%);
+}
+.modal .modal-dialog .modal-content .modal-body .right-modal-content {
   text-align: center;
 }
-.modal .modal-dialog .modal-body .right-button {
+.modal .modal-dialog .modal-content .modal-body .right-button {
   width: 50%;
   margin-bottom: 10px;
 }
-.modal .modal-dialog .modal-body .jumbotron {
+.modal .modal-dialog .modal-content .modal-body .jumbotron {
   padding: 5px !important;
   border-radius: 0px;
 }
-.modal .modal-dialog .modal-body .jumbotron .glyphicon-search {
+.modal .modal-dialog .modal-content .modal-body .jumbotron .glyphicon-search {
   font-size: 26px;
   margin-top: 10px;
   cursor: pointer;
   color: #9b9b9b;
 }
-.modal .modal-dialog .modal-body .jumbotron #flat_email {
+.modal .modal-dialog .modal-content .modal-body .jumbotron #flat_email {
   border-radius: 0px;
   height: 50px;
   font-size: 16px;
@@ -1186,18 +1218,14 @@ body {
   width: 92%;
   display: inline;
 }
-.modal .middle-dialog {
-  top: 15%;
+.modal .modal-dialog .modal-content .custome-margin {
+  margin-top: 40%;
 }
-.modal .modal-footer .modal-close {
+.modal .modal-dialog .modal-content .modal-footer .modal-close {
   float: left;
 }
-p {
-  font-size: 0.9em;
-}
-button,
-input {
-  outline: none !important;
+.modal .middle-dialog {
+  margin-top: 15%;
 }
 .panal-font-style,
 .panel .panel-body,
@@ -1249,9 +1277,6 @@ input {
 .no-borders .panel-heading a span .panel-group .panel {
   border-radius: 0px;
 }
-.no-borders .panel-footer {
-  background: none;
-}
 .panel-group .panel {
   border-radius: 0px;
 }
@@ -1276,26 +1301,7 @@ input {
 .panel-group .panel-danger .panel-heading {
   color: #fff;
 }
-/*move to variables*/
 /*move to main*/
-.float-right {
-  float: right;
-}
-.warning-light {
-  background-color: #f8e187 !important;
-}
-.info-light {
-  background-color: #99cbed !important;
-}
-.primary-light {
-  background-color: #8A8F9B !important;
-}
-.success-light {
-  background-color: #96e5b8 !important;
-}
-.danger-light {
-  background-color: #f3a59d !important;
-}
 /*note : please convert colors classes to less in main.less file*/
 .statistics .statistics-taps {
   width: 100%;

@@ -91,10 +91,13 @@ input[type=email]:not(#searchTB):not(#flat_email) {
 }
 
 input {
-  &:not(#searchTB) {
-    &:not(.select2-search__field) {
-      &:focus {
-        border-bottom: 1px solid @info-mid !important;
+  &:not(#flat_email) {
+    &:not(#searchTB) {
+      &:not(.select2-search__field) {
+        &:focus {
+          border-bottom: 1px solid @info-mid !important;
+        }
+
       }
 
     }

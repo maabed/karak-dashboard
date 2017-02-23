@@ -3,41 +3,47 @@
 /* Preloaders */
 
 .loader {
-  height: 4px;
-  margin-top: 45px;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  background-color: #ddd;
+	height: 4px;
+	margin-top: 45px;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	background-color: #ddd;
 }
 
 .loader {
 	&:before {
-		.keyframes(loading;{
+		.keyframes(loading;
+
+		{
 			from {
 				left: -200px;
 				width: 30%;
 			}
-            50% {
-            	width: 30%;
-            }
-          
-            70% {
-            	width: 70%;
-            }
-          
-            80% {
-            	left: 50%;
-            }
-          
-            95% {
-            	left: 120%;
-            }
-          
-            to {
-            	left: 100%;
-            }
-            });
+
+			50% {
+				width: 30%;
+			}
+
+			70% {
+				width: 70%;
+			}
+
+			80% {
+				left: 50%;
+			}
+
+			95% {
+				left: 120%;
+			}
+
+			to {
+				left: 100%;
+			}
+
+		}
+
+		);
 		.animation(loading 2s linear infinite);
 		background-color: #67b2e4;
 		content: "";
@@ -47,9 +53,11 @@
 		position: absolute;
 		width: 200px;
 	}
+
 }
 
-@width0: 100%;
+@width0:100%;
+
 .vertical--center {
 	background: white;
 	display: block;
@@ -57,6 +65,7 @@
 	margin: 0 auto;
 	width: @width0;
 }
+
 .vertical-center__element {
 	-webkit-transform: translateY(-50%);
 	margin-top: 45px;
@@ -65,6 +74,7 @@
 	transform: translateY(-50%);
 	width: @width0;
 }
+
 .preloader {
 	background: #3498db;
 	display: block;
@@ -75,23 +85,27 @@
 }
 
 .preloader--top {
-  top: 0;
-  -webkit-animation: preloaderCSSTop 2s infinite;
-  animation: preloaderCSSTop 2s infinite;
+	top: 0;
+	-webkit-animation: preloaderCSSTop 2s infinite;
+	animation: preloaderCSSTop 2s infinite;
 }
 
-.keyframes(@name; @arguments){
-	@keyframes @name{ @arguments(); }
+.keyframes(@name;
+
+@arguments) {
+	@keyframes @name {
+		@arguments();
+	}
+
 }
 
-.animation(@arguments){
+.animation(@arguments) {
 	animation: @arguments;
 }
 
 /* Placeholder Loader */
-
-@color0: #eeeeee; 
-@color1: #dddddd; 
+@color0:#eeeeee;
+@color1:#dddddd;
 
 .animated-background {
 	-webkit-animation-duration: 1s;
@@ -116,70 +130,70 @@
 }
 
 .background-masker {
-background: #fff;
-position: absolute;
--webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
-box-sizing: border-box;
+	background: #fff;
+	position: absolute;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .outlined .background-masker {
-border: 1px solid #ddd;
+	border: 1px solid #ddd;
 }
 
 .outlined:hover .background-masker {
-border: none;
+	border: none;
 }
 
 .outlined:hover .background-masker:hover {
-border: 1px solid #ccc;
-z-index: 1;
+	border: 1px solid #ccc;
+	z-index: 1;
 }
 
 .background-masker.header-top,
 .background-masker.header-bottom,
 .background-masker.subheader-bottom {
-top: 0;
-left: 40px;
-right: 0;
-height: 10px;
+	top: 0;
+	left: 40px;
+	right: 0;
+	height: 10px;
 }
 
 .background-masker.header-left,
 .background-masker.subheader-left,
 .background-masker.header-right,
 .background-masker.subheader-right {
-top: 10px;
-left: 40px;
-height: 8px;
-width: 10px;
+	top: 10px;
+	left: 40px;
+	height: 8px;
+	width: 10px;
 }
 
 .background-masker.header-bottom {
-top: 18px;
-height: 6px;
+	top: 18px;
+	height: 6px;
 }
 
 .background-masker.subheader-left,
 .background-masker.subheader-right {
-top: 24px;
-height: 6px;
+	top: 24px;
+	height: 6px;
 }
 
 .background-masker.header-right,
 .background-masker.subheader-right {
-width: auto;
-left: 300px;
-right: 0;
+	width: auto;
+	left: 300px;
+	right: 0;
 }
 
 .background-masker.subheader-right {
-left: 230px;
+	left: 230px;
 }
 
 .background-masker.subheader-bottom {
-top: 30px;
-height: 10px;
+	top: 30px;
+	height: 10px;
 }
 
 .background-masker.content-top,
@@ -188,48 +202,51 @@ height: 10px;
 .background-masker.content-second-end,
 .background-masker.content-third-end,
 .background-masker.content-first-end {
-top: 40px;
-left: 0;
-right: 0;
-height: 6px;
+	top: 40px;
+	left: 0;
+	right: 0;
+	height: 6px;
 }
 
 .background-masker.content-top {
-height: 20px;
+	height: 20px;
 }
 
 .background-masker.content-first-end,
 .background-masker.content-second-end,
 .background-masker.content-third-end {
-width: auto;
-left: 380px;
-right: 0;
-top: 60px;
-height: 8px;
+	width: auto;
+	left: 380px;
+	right: 0;
+	top: 60px;
+	height: 8px;
 }
 
 .background-masker.content-second-line {
-top: 68px;
+	top: 68px;
 }
 
 .background-masker.content-second-end {
-left: 420px;
-top: 74px;
+	left: 420px;
+	top: 74px;
 }
 
 .background-masker.content-third-line {
-top: 82px;
+	top: 82px;
 }
 
 .background-masker.content-third-end {
-left: 300px;
-top: 88px;
+	left: 300px;
+	top: 88px;
 }
 
-  
-  .css-effect(@transition) {
-      -webkit-transition: @transition;
-      -moz-transition: @transition;
-      -o-transition: @transition;
-      transition: @transition;
-  }
+.css-effect(@transition) {
+	-webkit-transition: @transition;
+	-moz-transition: @transition;
+	-o-transition: @transition;
+	transition: @transition;
+}
+
+.padding(@paddingvalue) {
+	padding: @paddingvalue !important;
+}

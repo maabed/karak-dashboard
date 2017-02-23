@@ -252,7 +252,7 @@ input[type=email]:not(#searchTB):not(#flat_email)+label:after,input[type=url]+la
 }
 /*used*/
 .middle-dialog {
-  top: 15%;
+  margin-top: 15%;
 }
 /*used*/
 .jumbotron > .glyphicon-search {
@@ -261,14 +261,14 @@ input[type=email]:not(#searchTB):not(#flat_email)+label:after,input[type=url]+la
   cursor: pointer;
   color: #9b9b9b;
 }
-
+/*used*/
 #email-label {
   font-size: 10px;
   color: #67b2e4;
   -webkit-transform: translateY(-140%);
   transform: translateY(-140%);
 }
-
+/*used*/
 #password-label {
   font-size: 10px;
   color: #67b2e4;
