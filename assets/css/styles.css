@@ -1314,7 +1314,7 @@ hr {
 .single-to-do-box i:hover {
   color: #df1515;
 }
-
+/*used*/
 .done-task {
   text-decoration: line-through;
 }
@@ -2220,7 +2220,7 @@ p {
 .table-width {
   width: 100%;
 }
-
+/*used*/
 .table-head {
   color: #3B97D2;
 }
@@ -2954,6 +2954,7 @@ background-color: #fff !important;
 border: none !important;
 }
 
+/*used*/
 .no-left-right-padding {
 padding-left: 0em !important;
 padding-right: 0em !important;
