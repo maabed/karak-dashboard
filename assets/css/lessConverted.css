@@ -1586,78 +1586,79 @@ div.bhoechie-tab-menu2 div.list-group .icon-tap-width {
 .list-group .info-mid {
   color: #fff;
 }
-.table.table-hover {
-  margin-top: 8px;
-}
-.table-head {
+.table .table-head {
   color: #3B97D2;
 }
-.table > tbody > tr > td,
-.table > tbody > tr > th,
-.table > thead > tr > td,
-.table > thead > tr > th {
+.table .table-head .basic-th {
+  color: rgba(0, 0, 0, 0.7);
+  border-bottom-width: 1px !important;
+  font-weight: normal;
+}
+.table .table-head .dashboard-th {
+  color: #fff;
+}
+.table .table-head .colored-table-head {
+  font-weight: normal;
+}
+.table tbody tr td,
+.table thead tr td,
+.table tbody tr th,
+.table thead tr th {
   border-bottom: 1px solid #ddd !important;
   border-top: 0 !important;
 }
-.active-user-acount,
-.not-active-user-acount {
+.table tbody .content-padding,
+.table thead .content-padding {
+  padding: 20px !important;
+  font-weight: 100;
+  font-size: 13px;
+  color: #707A7A;
+  vertical-align: top !important;
+  padding-left: 10px !important;
+}
+.table .users-table-format .active-user-acount td img {
+  border-left: 4px solid #67b2e4 !important;
+}
+.table .users-table-format .not-active-user-acount td img {
+  border-left: 4px solid #C6CCCC !important;
+  filter: grayscale(100%);
+}
+.table .active-user-acount,
+.table .not-active-user-acount {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-.content-padding {
-  padding: 20px !important;
-  padding-left: 10px !important;
-  font-weight: 100;
-  font-size: 13px;
-  color: #707A7A;
-  vertical-align: top !important;
+.table .active-user-acount .active-user-row,
+.table .not-active-user-acount .active-user-row {
+  color: #67b2e4 !important;
 }
-.users-table-format tr td img {
+.table .active-user-acount .not-active-user-row,
+.table .not-active-user-acount .not-active-user-row {
+  color: #C6CCCC !important;
+}
+.table tr td img {
   width: 6em;
   height: auto;
   float: left;
   margin-right: 0.6em;
 }
-.active-user-acount td img {
-  border-left: 4px solid #67b2e4 !important;
-}
-.not-active-user-acount td img {
-  border-left: 4px solid #C6CCCC !important;
-  filter: grayscale(100%);
-}
-.active-user-row {
-  color: #67b2e4 !important;
-}
-.not-active-user-row {
-  color: #C6CCCC !important;
-}
-.dashed-row-style tr td {
+table.dashed-row-style tr td {
   border-left: 15px solid #fff !important;
 }
-.basic-th {
-  color: rgba(0, 0, 0, 0.7);
-  border-bottom-width: 1px !important;
-  font-weight: normal;
-}
-.done-task {
+table.dashed-row-style tr .done-task {
   text-decoration: line-through;
-}
-.done-task {
   color: #62d995 !important;
 }
-.inprogress-task {
+table.dashed-row-style tr .inprogress-task {
   color: #f5d34b !important;
 }
-.hold-task {
+table.dashed-row-style tr .hold-task {
   color: #ed796d !important;
 }
-.dashboard-th {
-  color: #fff;
-}
-.colored-table-head {
-  font-weight: normal;
+.table.table-hover {
+  margin-top: 8px;
 }
 /*move to main*/
 .no-left-right-padding {
@@ -1667,3 +1668,4 @@ div.bhoechie-tab-menu2 div.list-group .icon-tap-width {
 .info-mid {
   background-color: #67b2e4 !important;
 }
+/*move to variables*/
