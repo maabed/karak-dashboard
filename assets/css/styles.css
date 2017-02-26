@@ -2309,30 +2309,30 @@ left: 0;
 bottom: 0;
 overflow: auto;
 }
-
+/*used*/
 .dataTables_length label {
 color: #888888;
 font-weight: lighter;
 }
-
+/*used*/
 .dataTables_length label select {
 color: #34495E !important;
 border: 1px solid #F1F3F6;
 background-color: #fff !important;
 }
-
+/*used*/
 .dataTables_length label select {
 color: #34495E !important;
 border: 1px solid #F1F3F6;
 border-radius: 3px;
 outline: none;
 }
-
+/*used*/
 .dataTables_filter label {
 color: #888888;
 font-weight: lighter;
 }
-
+/*used*/
 .dataTables_filter label input {
 color: #34495E !important;
 border: 0px !important;
@@ -2349,43 +2349,43 @@ border-image: initial !important;
 border-bottom: 1px solid rgba(0, 0, 0, 0.0666667) !important;
 border-radius: 0px !important;
 }
-
+/*used*/
 .dataTables_filter label input:focus {
 border-bottom: 1px solid #67b2e4 !important;
 }
-
+/*used*/
 .dataTables_filter label {
 color: #888888;
 font-weight: lighter;
 }
-
+/*used*/
 .dataTables_filter label input {
 color: #34495E !important;
 border: 1px solid #F1F3F6;
 border-radius: 3px;
 }
-
+/*used*/
 #ajax_table_wrapper .dt-buttons {
 width: 50%;
 float: left;
 margin-bottom: 1em;
 }
-
+/*used*/
 tfoot input {
 width: 100%;
 padding: 3px;
 box-sizing: border-box;
 }
-
+/*used*/
 td.details-control {
 background: url('../images/details_open.png') no-repeat center center;
 cursor: pointer;
 }
-
+/*used*/
 tr.shown td.details-control {
 background: url('../images/details_close.png') no-repeat center center;
 }
-
+/*used*/
 .all-icons tfoot,
 .all-icons thead {
 display: none;
