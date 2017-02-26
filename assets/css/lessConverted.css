@@ -307,7 +307,6 @@ input:not(#flat_email):not(#searchTB):not(.select2-search__field):focus {
 }
 .yes-no-check .btn {
   padding: 6px, 12px, 6px, 12px;
-  padding: 6px 12px, 6px, 12px;
 }
 .yes-no-check .btn .active.btn-success {
   background-color: #62d995;
@@ -1302,96 +1301,115 @@ p {
 }
 /*move to main*/
 /*note : please convert colors classes to less in main.less file*/
-.statistics .col-md-12 .statistics-taps {
-  margin: 0px auto;
+.tabs-container .tabs-header .statistics-taps {
   width: 100%;
+  margin: 0 auto;
 }
-.statistics .col-md-12 .statistics-taps ul {
+.tabs-container .tabs-header .statistics-taps ul {
   list-style: none;
   height: auto;
   display: table;
   text-align: center;
-  padding-left: 0px;
-  margin: 0px auto;
+  padding-left: 0;
+  margin: 0 auto;
 }
-.statistics .col-md-12 .statistics-taps ul li.active a {
-  color: #3B97D2;
-  border-bottom: 4px solid #3B97D2;
-}
-.statistics .col-md-12 .statistics-taps ul li {
+.tabs-container .tabs-header .statistics-taps ul li {
   float: left;
   margin: 0em 1em;
 }
-.statistics .col-md-12 .statistics-taps ul li a {
-  padding: 0em, 1em, 1em, 1em;
-  padding: 0em 1em, 1em, 1em;
-  font-size: 1.2em;
-  color: #34495E;
-  text-shadow: none;
-  padding: 1.4em, 1em, 1em, 1em;
-  padding: 1.4em 1em, 1em, 1em;
-  display: inline-block;
-  position: relative;
-  text-decoration: none;
-  font-weight: bold;
-  -webkit-transition: all 0.5s ease;
+.tabs-container .tabs-header .statistics-taps ul li:hover > a {
+  border-bottom: 4px solid  #3B97D2;
+  color: #3B97D2;
+}
+.tabs-container .tabs-header .statistics-taps ul li a {
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  color: #34495E;
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 0em 1em 1em 1em !important;
+  padding: 1.4em 1em 1em 1em;
+  position: relative;
+  text-decoration: none;
+  text-shadow: none;
   transition: all 0.5s ease;
 }
-.statistics .col-md-12 .statistics-taps ul li:hover a,
-.statistics .col-md-12 .statistics-taps ul li:focus a {
+.tabs-container .tabs-header .statistics-taps ul li.active {
+  float: left;
+  margin: 0em 1em;
+}
+.tabs-container .tabs-header .statistics-taps ul li.active a {
   color: #3B97D2;
   border-bottom: 4px solid #3B97D2;
 }
-.statistics .col-md-12 .col-contint .statistics-item {
-  width: 100%;
-  background-color: #fff;
-  padding: 1.5em 0em;
-  border-radius: 3px;
-}
-.statistics .col-md-12 .col-contint .statistics-item .row .col-sm-12 .tabs-head-title {
-  margin-top: 0px;
-  font-weight: lighter;
-  color: rgba(0, 0, 0, 0.7);
-}
-#bordered-tab {
+.tabs-container .tabs-header .nav-tabs {
   border: 0px !important;
-  background: none;
-  border-radius: 0 !important;
 }
-#bordered-tab .nav-style li {
-  width: 25%;
-  text-align: center;
-}
-#bordered-tab .nav-style li a {
-  color: #707A7A;
-}
-#bordered-tab .nav-style li .active a {
-  border-right: 0 !important;
-  border-left: 0 !important;
-  border-top: 5px solid #67b2e4;
-  border-top-right-radius: 0 !important;
+.tabs-container .tabs-header .nav-tabs > li.active > a {
   border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
 }
-#bordered-tab .active a {
-  border-top: 5px solid #67b2e4;
+.tabs-container .tabs-header .nav-tabs > li.active > a:focus {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
 }
-.tab-content {
-  background-color: #fff;
-  padding: 1em 0.5em;
-  overflow: hidden;
+.tabs-container .tabs-header .nav-tabs > li.active > a:hover {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
 }
-.tab-content .tabs-head-title {
-  margin-top: 0px;
-  font-weight: lighter;
-  color: rgba(0, 0, 0, 0.7);
+.tabs-container .tabs-header .nav-tabs.list-group {
+  margin-bottom: 0px;
 }
-div.bhoechie-tab-menu3 {
-  float: right;
-  padding: 0px !important;
+.tabs-container .tabs-header .nav-tabs.list-group .list-group-item.active.text-center {
+  background-color: #67b2e4 !important;
+  border-color: #67b2e4;
 }
-div.bhoechie-tab-menu3 div.list-group a.active:after {
+.tabs-container .tabs-header .nav-tabs.left-tab-arrow li {
+  padding: 0px;
+  width: 100%;
+  text-align: center;
+  border: none;
+}
+.tabs-container .tabs-header .nav-tabs.left-tab-arrow li a {
+  border: none;
+  background: none;
+  color: #67b2e4;
+}
+.tabs-container .tabs-header .nav-tabs.left-tab-arrow li.active > a {
+  background-color: #67b2e4;
+  color: #fff;
+  border: none;
+}
+.tabs-container .tabs-header .nav-tabs.left-tab-arrow li.active:after {
+  content: '';
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  margin-top: -13px;
+  border-left: 0;
+  border-bottom: 13px solid transparent;
+  border-top: 13px solid transparent;
+  border-left: 10px solid #67b2e4;
+}
+.tabs-container .tabs-header .nav-tabs.right-tab-arrow li {
+  padding: 0px;
+  width: 100%;
+  text-align: center;
+  border: none;
+}
+.tabs-container .tabs-header .nav-tabs.right-tab-arrow li a {
+  border: none;
+  background: none;
+  color: #67b2e4;
+}
+.tabs-container .tabs-header .nav-tabs.right-tab-arrow li.active > a {
+  background-color: #67b2e4;
+  color: #fff;
+  border: none;
+}
+.tabs-container .tabs-header .nav-tabs.right-tab-arrow li.active:after {
   content: '';
   position: absolute;
   left: -0.6em;
@@ -1400,134 +1418,93 @@ div.bhoechie-tab-menu3 div.list-group a.active:after {
   border-left: 0;
   border-top: 13px solid transparent;
   border-bottom: 13px solid transparent;
-  border-right: 10px solid #3B97D2;
+  border-right: 10px solid #67b2e4;
 }
-div.bhoechie-tab-menu div.list-group,
-div.bhoechie-tab-menu3 div.list-group,
-div.bhoechie-tab-menu2 div.list-group {
-  margin-bottom: 0;
+.tabs-container .tabs-header .nav-pills > li a {
+  border-radius: 0px;
+  color: #707A7A;
 }
-div.bhoechie-tab-menu div.list-group a,
-div.bhoechie-tab-menu3 div.list-group a,
-div.bhoechie-tab-menu2 div.list-group a {
-  margin-bottom: 0;
+.tabs-container .tabs-header .nav-pills > li.active > a {
+  color: #fff;
+  background: #67b2e4;
 }
-div.bhoechie-tab-menu div.list-group .list-group-item,
-div.bhoechie-tab-menu3 div.list-group .list-group-item,
-div.bhoechie-tab-menu2 div.list-group .list-group-item {
-  border: 0 !important;
+.tabs-container .tabs-header .nav-pills > li + li {
+  margin: 0px !important;
 }
-div.bhoechie-tab-menu div.list-group .list-group-item:first-child,
-div.bhoechie-tab-menu3 div.list-group .list-group-item:first-child,
-div.bhoechie-tab-menu2 div.list-group .list-group-item:first-child,
-div.bhoechie-tab-menu div.list-group .list-group-item:last-child,
-div.bhoechie-tab-menu3 div.list-group .list-group-item:last-child,
-div.bhoechie-tab-menu2 div.list-group .list-group-item:last-child {
-  border-top-left-radius: 0px !important;
-  border-top-right-radius: 0px !important;
+.tabs-container .tabs-header .bordered-tab > .active > a {
+  border-top: 5px solid #67b2e4;
 }
-div.bhoechie-tab-menu div.list-group .list-group-item.active.text-center,
-div.bhoechie-tab-menu3 div.list-group .list-group-item.active.text-center,
-div.bhoechie-tab-menu2 div.list-group .list-group-item.active.text-center {
+.tabs-container .tabs-header .bordered-tab li > a {
+  color: #707A7A;
+}
+.tabs-container .tabs-header .bordered-tab li:not(.active) > a {
+  border-top: 5px solid #ffffff;
+}
+.tabs-container .tabs-header.left-tabs-header {
+  width: 20%;
+  float: left;
+}
+.tabs-container .tabs-header.right-tabs-header {
+  width: 20%;
+  float: right;
+}
+.tabs-container .tabs-header .top-tab-arrow .active a {
   background-color: #67b2e4 !important;
-  border-color: #67b2e4;
-}
-div.bhoechie-tab-menu div.list-group a.active,
-div.bhoechie-tab-menu3 div.list-group a.active,
-div.bhoechie-tab-menu2 div.list-group a.active {
-  background-color: #67b2e4;
   color: #fff;
+  border-top: 0px;
 }
-div.bhoechie-tab-menu div.list-group a.active .glyphicon,
-div.bhoechie-tab-menu3 div.list-group a.active .glyphicon,
-div.bhoechie-tab-menu2 div.list-group a.active .glyphicon,
-div.bhoechie-tab-menu div.list-group a.active .fa,
-div.bhoechie-tab-menu3 div.list-group a.active .fa,
-div.bhoechie-tab-menu2 div.list-group a.active .fa {
-  background: none !important;
-  background-color: #3B97D2;
-  background-image: #3B97D2;
-  color: #fff;
+.tabs-container .tabs-header .top-tab-arrow .active a:after {
+  content: '';
+  position: absolute;
+  left: 100%;
+  top: 100%;
+  left: 37%;
+  margin-top: 0px;
+  border-left: 0;
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-top: 10px solid #67b2e4;
 }
-.bhoechie-tab .bhoechie-tab-content,
-.bhoechie-tab2 .bhoechie-tab-content,
-.bhoechie-tab3 .bhoechie-tab-content {
+.tabs-container .tab-content {
   background-color: #fff;
+  padding: 1em 0.5em;
+  overflow: hidden;
 }
-.bhoechie-tab .bhoechie-tab-content:not(.active),
-.bhoechie-tab2 .bhoechie-tab-content:not(.active),
-.bhoechie-tab3 .bhoechie-tab-content:not(.active) {
-  display: none;
+.tabs-container .tab-content .statistics-item {
+  width: 100%;
+  background-color: #fff;
+  padding: 1.5em 0em;
+  border-radius: 3px;
 }
-.bhoechie-tab .bhoechie-tab-content h1,
-.bhoechie-tab2 .bhoechie-tab-content h1,
-.bhoechie-tab3 .bhoechie-tab-content h1 {
-  color: #3B97D2;
-  font-size: 5em;
-  text-align: center !important;
-}
-.bhoechie-tab .bhoechie-tab-content h3,
-.bhoechie-tab2 .bhoechie-tab-content h3,
-.bhoechie-tab3 .bhoechie-tab-content h3 {
+.tabs-container .tab-content .tabs-head-title {
   margin-top: 0;
   font-weight: lighter;
   color: rgba(0, 0, 0, 0.7);
 }
-.single-tap {
-  width: 100%;
-  margin: 0 auto;
-  margin-bottom: 1em;
-  cursor: pointer;
-}
-.single-tap .single-tap-title {
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  padding: 1em;
-  font-size: 1.2em;
-  font-weight: lighter;
-  color: #3B97D2;
-  width: 100%;
-  background: #fff;
-  text-align: left;
-  border: 1px solid #E4E5E7;
-  border-radius: 3px;
-}
-.single-tap .single-tap-title:hover {
-  background: #FAFAFA;
-}
-.single-tap .single-tap-title .toggle-icon1 {
+.tabs-container .tab-content.tabs-content-left {
+  width: 75%;
+  display: inline;
   float: right;
 }
-.single-tap .single-tap-title p {
-  text-align: left;
-  font-size: 0.8em;
-  color: #8c8c8c;
+.tabs-container .tab-content.tabs-content-left.bhoechie-tab h1 {
+  color: #67b2e4 !important;
+  font-size: 5em;
+  text-align: center !important;
 }
-div.bhoechie-tab-menu2 {
-  padding: 0px !important;
-  margin-bottom: 1em;
+.tabs-container .tab-content.tabs-content-left.bhoechie-tab .bhoechie-tab-content:not(.active) {
+  display: none;
 }
-div.bhoechie-tab-menu2 div.list-group {
-  margin-bottom: 0;
-}
-div.bhoechie-tab-menu2 div.list-group a {
-  margin-bottom: 0;
-}
-div.bhoechie-tab-menu2 div.list-group .icon-tap-width {
-  width: 20%;
+.tabs-container .tab-content.tabs-content-right {
+  width: 75%;
+  display: inline;
   float: left;
 }
-@media (max-width: 1028px) {
-  .statistics .statistics-taps li a {
-    text-align: center;
-  }
+.tabs-container .nav-col-contint {
+  padding-top: 0px;
 }
-/*move to main*/
-.col-contint-taps {
-  min-height: 10em;
-  overflow: hidden;
+.tabs-container .simple-border {
+  border: none;
+  border-bottom: 1px solid #ddd;
 }
 .list-group {
   padding-left: 0;

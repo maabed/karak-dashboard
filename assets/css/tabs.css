@@ -8,12 +8,12 @@ Copyright 2017 New Release
 
 /*used*/
 
-#bordered-tab > .active > a {
+.bordered-tab > .active > a {
   border-top: 5px solid #67b2e4;
 }
 
 /*used*/
-#bordered-tab > li > a {
+.bordered-tab > li > a {
   color: #707A7A;
 }
 
@@ -69,67 +69,67 @@ div.bhoechie-tab-menu2 div.list-group > a.active:after {
 }
 
 /*used*/
-.nav-style li {
-  width: 25%;
-  text-align: center;
-}
+// .nav-style li {
+//   width: 25%;
+//   text-align: center;
+// }
 
 /*used*/
-.left-nav-style li {
+.left-tab-arrow li {
   width: 100%;
   text-align: center;
 }
 
 /*used*/
-.left-nav-style li.active a {
+.left-tab-arrow li.active a {
   background-color: #67b2e4;
   color: #fff;
 }
 
 /*used*/
-.left-nav-style li.active a:hover {
+.left-tab-arrow li.active a:hover {
   background-color: #67b2e4;
   color: #fff;
 }
 
 /*used*/
-.left-nav-style li.active a:active {
+.left-tab-arrow li.active a:active {
   background-color: #67b2e4;
   color: #fff;
 }
 
 /*used*/
-.left-nav-style li.active a:focus {
+.left-tab-arrow li.active a:focus {
   background-color: #67b2e4;
   color: #fff;
 }
 
 /*used*/
-.right-nav-style li.active a:hover {
+.right-tab-arrow li.active a:hover {
   background-color: #67b2e4;
   color: #fff;
 }
 
 /*used*/
-.right-nav-style li.active a {
+.right-tab-arrow li.active a {
   background-color: #67b2e4;
   color: #fff;
 }
 
 /*used*/
-.right-nav-style li.active a:active {
+.right-tab-arrow li.active a:active {
   background-color: #67b2e4;
   color: #fff;
 }
 
 /*used*/
-.right-nav-style li.active a:focus {
+.right-tab-arrow li.active a:focus {
   background-color: #67b2e4;
   color: #fff;
 }
 
 /*used*/
-.right-nav-style li {
+.right-tab-arrow li {
   width: 100%;
   text-align: center;
 }
@@ -202,7 +202,7 @@ div.bhoechie-tab-menu3 div.list-group > a .fa {
   float: right;
 }
 
-#bordered-tab > li:not(.active) > a {
+.bordered-tab > li:not(.active) > a {
   border-top: 5px solid #fff;
 }
 
@@ -225,14 +225,14 @@ div.bhoechie-tab-menu3 div.list-group > a .fa {
 }
 
 /* used */
-#arrow-tab .active a {
+.top-tab-arrow .active a {
   background-color: #67b2e4 !important;
   color: #fff;
   border-top: 0px;
 }
 
 /* used */
-#arrow-tab .active a:after {
+.top-tab-arrow .active a:after {
   content: '';
   position: absolute;
   left: 100%;
@@ -246,7 +246,7 @@ div.bhoechie-tab-menu3 div.list-group > a .fa {
 }
 
 /* used */
-div.bhoechie-tab-menu ul.left-nav-style > li.active:after {
+div.bhoechie-tab-menu ul.left-tab-arrow > li.active:after {
   content: '';
   position: absolute;
   left: 100%;
@@ -259,7 +259,7 @@ div.bhoechie-tab-menu ul.left-nav-style > li.active:after {
 }
 
 /* used */
-div.bhoechie-tab-menu ul.right-nav-style > li.active:after {
+div.bhoechie-tab-menu ul.right-tab-arrow > li.active:after {
   content: '';
   position: absolute;
   left: -0.6em;
@@ -279,7 +279,7 @@ div.bhoechie-tab-menu ul.right-nav-style > li.active:after {
 }
 
 /* used */
-.tabs-header-left {
+.left-tabs-header {
   width: 20%;
   float: left;
 }
@@ -292,7 +292,7 @@ div.bhoechie-tab-menu ul.right-nav-style > li.active:after {
 }
 
 /* used */
-.tabs-header-right {
+.right-tabs-header {
   width: 20%;
   float: right;
 }
@@ -312,12 +312,12 @@ div.bhoechie-tab-menu ul.right-nav-style > li.active:after {
 }
 
 /* used */
-.left-nav-style li {
+.left-tab-arrow li {
   padding: 0px;
 }
 
 /* used */
-.right-nav-style li {
+.right-tab-arrow li {
   padding: 0px;
 }
 
