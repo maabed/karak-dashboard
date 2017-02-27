@@ -10,7 +10,7 @@ body {
   overflow-x: hidden;
   background-color: #F1F3F6;
 }
-
+/*used*/
 .col-lg-12,
 .col-lg-8,
 .col-lg-4,
@@ -1986,7 +1986,7 @@ div.bhoechie-tab2 div.bhoechie-tab-content:not(.active) {
 .toggle-icons {
   float: right;
 }
-
+/*used*/
 .navbar {
   padding: 0.5em 0em !important;
   margin: 0.5em 0em !important;
@@ -2832,7 +2832,7 @@ cursor: pointer;
 #coloepicker:hover {
 opacity: 0.7;
 }
-
+/*used*/
 button,
 input {
 outline: none !important;
@@ -3017,16 +3017,17 @@ border: none !important;
 padding-left: 0em !important;
 padding-right: 0em !important;
 }
-
+/*used*/
 .slider-hight {
 height: 25.9em;
 overflow: hidden;
 }
 
+/*used*/
 .left-side-nav {
 background-color: #3B97D2;
 }
-
+/*used*/
 .left-side-nav a {
 color: #fff;
 text-align: left !important;
@@ -3037,18 +3038,18 @@ text-align: left !important;
 background: none;
 border-radius: 0 !important;
 }
-
+/*use*/
 .nav-style .navbar-nav > li > a {
 border-bottom: 3px solid #fff;
 }
-
+/*used*/
 .nav-style .navbar-nav > .active > a,
 .nav-style .navbar-nav > .active > a:focus,
 .nav-style .navbar-nav > .active > a:hover {
 border-bottom: 3px solid #3B97D2;
 background-color: #fff;
 }
-
+/*used*/
 .slider-title {
 color: #fff !important;
 position: absolute;
@@ -3058,15 +3059,15 @@ position: absolute;
 z-index: 999;
 width: 60%;
 }
-
+/*used*/
 .slider-title p {
 color: #fff !important;
 }
-
+/*used*/
 .single-slider {
 position: relative;
 }
-
+/*used*/
 .dark-layer {
 background: #000;
 width: 100%;
@@ -3075,53 +3076,54 @@ opacity: 0.7;
 position: absolute;
 z-index: 9;
 }
-
+/*used*/
 .right-side-ul li a {
 color: #777;
 }
-
+/*used*/
 .right-side-ul li a span {
 color: #3B97D2 !important;
 }
-
+/*used*/
+.nav-style .nav-collapse {
+background: #fff !important;
+}
+/*used*/
 .simple-menue {
 border: 0px !important;
 border-radius: 0px !important;
 background-color: #364150;
 }
-
+/*used*/
 .simple-menue a {
 color: #fff !important;
 }
-
+/*used*/
 .simple-menue .navbar-nav > .active > a,
 .simple-menue .navbar-nav > .active > a:focus,
 .simple-menue .navbar-nav > .active > a:hover {
 background-color: #2b3643 !important;
 }
-
+/*used*/
 .simple-menue .dropdown-menu {
 background-color: #2b3643;
 }
 
-.nav-style .nav-collapse {
-background: #fff !important;
-}
-
+/*used*/
 .simple-menue .navbar-collapse,
 .simple-menue .navbar-form {
 background: #364150 !important;
 }
-
+/*used*/
 .simple-menue .dropdown-menu > li > a:focus,
 .dropdown-menu > li > a:hover {
 color: #333 !important;
 }
-
+/*used*/
 .navbar.simple-menue .nav-collapse {
 background: #364150 !important;
 }
-
+/*used*/
 .mega-dropdown-menu .dropdown-header {
 color: #3B97D2 !important;
 }
@@ -3315,7 +3317,7 @@ border-color: #2c3e50 !important;
 -o-transition: all 0.5s ease;
 transition: all 0.5s ease;
 }
-
+/*used*/
 .button-style {
 margin-bottom: 0.5em;
 margin-right: 0.5em;
@@ -3593,6 +3595,7 @@ color: #34495E;
 border-bottom: 8px solid #ecf0f1;
 }
 
+/*used*/
 .col-contint .navbar {
 padding-top: 0em !important;
 padding-bottom: 0em !important;
@@ -3603,11 +3606,11 @@ height: 35em;
 overflow: hidden;
 padding-bottom: 5em;
 }
-
+/*used*/
 .left-side-menue-height .navbar {
 width: 100%;
 }
-
+/*used*/
 .menu-padding {
 padding-right: 0.5em;
 }

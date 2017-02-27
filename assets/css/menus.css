@@ -14,11 +14,11 @@ html {
   padding: 0px;
   margin: 0px;
 }
-
+/*used*/
 nav.sidebar.navbar {
   border-radius: 0px;
 }
-
+/*used|*/
 nav.sidebar,
 .main {
   -webkit-transition: margin 200ms ease-out;
@@ -47,26 +47,26 @@ nav.sidebar,
   .navbar > .container-fluid .navbar-brand {
     margin-left: 0px;
   }
-
+/*used*/
   nav.sidebar .navbar-brand,
   nav.sidebar .navbar-header {
     text-align: center;
     width: 100%;
     margin-left: 0px;
   }
-
+/*used*/
   nav.sidebar a {
     padding-right: 13px;
   }
-
+/*used*/
   nav.sidebar .navbar-nav > li:first-child {
     border-top: 1px #e5e5e5 solid;
   }
-
+/*used*/
   nav.sidebar .navbar-nav > li {
     border-bottom: 1px #e5e5e5 solid;
   }
-
+/*used*/
   nav.sidebar .navbar-nav .open .dropdown-menu {
     position: static;
     float: none;
@@ -77,7 +77,7 @@ nav.sidebar,
     -webkit-box-shadow: none;
     box-shadow: none;
   }
-
+/*used*/
   nav.sidebar .navbar-collapse,
   nav.sidebar .container-fluid {
     padding: 0 0px 0 0px;
@@ -86,7 +86,7 @@ nav.sidebar,
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
     color: #777;
   }
-
+/*used*/
   nav.sidebar {
     width: 200px;
     height: 100%;
@@ -94,7 +94,7 @@ nav.sidebar,
     float: left;
     margin-bottom: 0px;
   }
-
+/*USED*/
   nav.sidebar li {
     width: 100%;
   }
@@ -108,42 +108,42 @@ nav.sidebar,
   }
 
 }
-
+/*used*/
 @media (min-width:1330px) {
   .main {
     width: calc(100% - 200px); /*keeps 100% minus nav size*/
     margin-left: 200px;
   }
-
+/*usec*/
   nav.sidebar {
     margin-left: 0px;
     float: left;
   }
-
+/*used*/
   nav.sidebar .forAnimate {
     opacity: 1;
   }
 
 }
-
+/*used*/
 nav.sidebar .navbar-nav .open .dropdown-menu > li > a:hover,
 nav.sidebar .navbar-nav .open .dropdown-menu > li > a:focus {
   color: #CCC;
   background-color: transparent;
 }
-
+/*used*/
 nav:hover .forAnimate {
   opacity: 1;
 }
-
+/*used*/
 section {
   padding-left: 15px;
 }
-
+/*used*/
 .thumb-dropdown .dropdown-menu > li {
   position: relative;
 }
-
+/*used*/
 .thumb-dropdown .dropdown-menu > li > a .thumbnail {
   position: absolute;
   left: 100%;
@@ -153,15 +153,15 @@ section {
   height: auto;
   margin-left: 5px;
 }
-
+/*used*/
 .thumb-dropdown .dropdown-menu > li > a:hover .thumbnail {
   display: block;
 }
-
+/*used*/
 .navbar-brand {
   z-index: 2;
 }
-
+/*used*/
 .navbar-nav.navbar-right .btn {
   position: relative;
   z-index: 2;
@@ -169,16 +169,16 @@ section {
   margin: 10px auto;
   transition: transform 0.3s;
 }
-
+/*used*/
 .navbar2 .navbar-collapse {
   position: relative;
   overflow: hidden !important;
 }
-
+/*used*/
 .navbar2 {
   margin-bottom: 2.54em !important;
 }
-
+/*used*/
 .navbar .nav-collapse {
   position: absolute;
   z-index: 1;
@@ -190,81 +190,83 @@ section {
   padding-right: 120px;
   width: 100%;
 }
-
+/*used*/
 .navbar.navbar-default .nav-collapse {
   background-color: #f8f8f8;
 }
-
+/*used*/
 .navbar.navbar-inverse .nav-collapse {
   background-color: #222;
 }
-
+/*used*/
 .navbar .nav-collapse .navbar-form {
   border-width: 0;
   box-shadow: none;
 }
-
+/*used*/
 .nav-collapse > li {
   float: left;
 }
-
+/*used*/
 .btn.btn-circle {
   border-radius: 50px;
 }
-
+/*used*/
 .btn.btn-outline {
   background-color: transparent;
 }
-
+/*used*/
 .navbar-nav.navbar-right .btn:not(.collapsed) {
   background-color: #3B97D2;
   border-color: #3B97D2;
   color: rgb(255, 255, 255);
 }
 
+/*used*/
 .navbar.navbar-default .nav-collapse.in,
 .navbar.navbar-inverse .nav-collapse.in {
   transform: translate(0px, 0px);
 }
-
+/*used*/
 .navbar-form.navbar-right {
   float: left !important
 }
 
 @media screen and (max-width:767px) {
+  /*used*/
   .navbar .navbar-collapse .navbar-right > li:last-child {
     padding-left: 15px;
     padding-right: 15px;
   }
-
+  /*used*/
   .navbar .nav-collapse {
     margin: 7.5px auto;
     padding: 0;
   }
-
+  /*used*/
   .navbar .nav-collapse .navbar-form {
     margin: 0;
   }
-
+  /*used*/
   .nav-collapse > li {
     float: none;
   }
-
+  /*used*/
   .navbar.navbar-default .nav-collapse,
   .navbar.navbar-inverse .nav-collapse {
     transform: translate(-100%, 0px);
   }
-
+  /*used*/
   .navbar.navbar-default .nav-collapse.in,
   .navbar.navbar-inverse .nav-collapse.in {
     transform: translate(0px, 0px);
   }
-
+  /*used*/
   .navbar.navbar-default .nav-collapse.slide-down,
   .navbar.navbar-inverse .nav-collapse.slide-down {
     transform: translate(0px, -100%);
   }
-
+  /*used*/
   .navbar.navbar-default .nav-collapse.in.slide-down,
   .navbar.navbar-inverse .nav-collapse.in.slide-down {
     transform: translate(0px, 0px);
@@ -278,19 +280,20 @@ Code snippet by @maridlcrmn (Follow me on Twitter)
 Images by Nike.com (http://www.nike.com/us/en_us/)
 Logo by Sneaker-mission.com (http://www.sneaker-mission.com/)
 */
+/*used*/
 .navbar-brand {
   height: 50px;
   background: url('http://www.sneaker-mission.com/uploads/3/1/2/7/31279819/5617441.png') no-repeat center center;
   background-size: 50px;
 }
-
+/*used*/
 .nav-tabs {
   display: inline-block;
   border-bottom: none;
   padding-top: 15px;
   font-weight: bold;
 }
-
+/*used*/
 .nav-tabs > li > a,
 .nav-tabs > li > a:hover,
 .nav-tabs > li > a:focus,
@@ -300,67 +303,67 @@ Logo by Sneaker-mission.com (http://www.sneaker-mission.com/)
   border: none;
   border-radius: 0;
 }
-
+/*used*/
 .nav-list {
   border-bottom: 1px solid #eee;
 }
-
+/*used*/
 .nav-list > li {
   padding: 20px 15px 15px;
 }
-
+/*used*/
 .nav-list > li > a:hover {
   text-decoration: none;
 }
-
+/*used*/
 .nav-list > li > a > span {
   display: block;
   font-weight: bold;
   text-transform: uppercase;
 }
-
+/*used*/
 .mega-dropdown {
   position: static !important;
 }
-
+/*used*/
 .mega-dropdown-menu {
   padding: 20px 15px 15px;
   text-align: center;
   width: 100%;
 }
-
+/*used*/
 .mega-dropdown {
   position: static !important;
 }
-
+/*used*/
 .mega-dropdown-menu {
   padding: 20px 0px;
   width: 100%;
   box-shadow: none;
   -webkit-box-shadow: none;
 }
-
+/*used*/
 .mega-dropdown-menu > li > ul {
   padding: 0;
   margin: 0;
 }
-
+/*used*/
 .mega-dropdown-menu > li > ul > li {
   list-style: none;
 }
-
+/*used*/
 .mega-dropdown-menu > li > ul > li > a {
   display: block;
   color: #222;
   padding: 3px 5px;
   text-align: left;
 }
-
+/*used*/
 .mega-dropdown-menu > li ul > li > a:hover,
 .mega-dropdown-menu > li ul > li > a:focus {
   text-decoration: none;
 }
-
+/*used*/
 .mega-dropdown-menu .dropdown-header {
   font-size: 18px;
   color: #ff3546;
@@ -368,18 +371,18 @@ Logo by Sneaker-mission.com (http://www.sneaker-mission.com/)
   line-height: 30px;
   text-align: left;
 }
-
+/*used*/
 .carousel-control {
   width: 30px;
   height: 30px;
   top: -35px;
 }
-
+/*used*/
 .left.carousel-control {
   right: 30px;
   left: inherit;
 }
-
+/*used*/
 .carousel-control .glyphicon-chevron-left,
 .carousel-control .glyphicon-chevron-right {
   font-size: 12px;
@@ -388,11 +391,11 @@ Logo by Sneaker-mission.com (http://www.sneaker-mission.com/)
   color: #333;
 }
 
-/* Rayan's review */
+/*used*/
 .forAnimate > li > a {
   color: #9b9b9b;
 }
-
+/*usedd*/
 #nav-collapse3 > form > .glyphicon-search {
   color: #fff;
 }
@@ -400,12 +403,12 @@ Logo by Sneaker-mission.com (http://www.sneaker-mission.com/)
 .drop-li {
   padding-left: 0px !important;
 }
-
+/*used*/
 .input-field {
   position: relative;
   bottom: 3px;
 }
-
+/*USED*/
 input:not([type]),
 input[type=text]:not(#flat_email):not(.normal-text):not(.input-mini),
 input[type=password],
@@ -424,15 +427,15 @@ input[type=email]:not(#searchTB):not(#flat_email),input[type=url],input[type=tim
   box-sizing: content-box;
   transition: all 0.3s;
 }
-
+/*used*/
 #flat_email {
   padding-left: 10px;
 }
-
+/*used*/
 input:not(#searchTB):not(#flat_email):not(.normal-text):not(.input-mini) {
   line-height: normal;
 }
-
+/*used*/
 button,
 input:not(#searchTB):not(#flat_email):not(.normal-text):not(.input-mini),optgroup,select,textarea {
   color: inherit;
@@ -440,6 +443,7 @@ input:not(#searchTB):not(#flat_email):not(.normal-text):not(.input-mini),optgrou
   margin: 0;
 }
 
+/*used*/
 input:not(#searchTB):not(#flat_email):not(.normal-text):not(.input-mini),textarea,keygen,select,button {
   text-rendering: auto;
   color: initial;
@@ -523,7 +527,7 @@ input:not(#searchTB):focus {
 .btn.dropdown-toggle.btn-default:focus {
   outline: none !important;
 }
-
+/*used*/
 .toggle-form {
   width: 35%;
 }
@@ -531,7 +535,7 @@ input:not(#searchTB):focus {
 .navbar-form.navbar-left {
   padding: 0px;
 }
-
+/*used*/
 .nav.navbar-nav.navbar-right.menu-padding {
   float: left !important;
 }
@@ -539,23 +543,23 @@ input:not(#searchTB):focus {
 a.btn-info:hover {
   background-color: #2980b9 !important;
 }
-
+/*used*/
 #navbar-collapse-1 {
   padding-left: 0px;
 }
-
+/*used*/
 #nav-collapse3 > form > div > input {
   color: #fff !important;
 }
-
+/*used*/
 #navbar-collapse-2 {
   padding-left: 0px;
 }
-
+/*used*/
 #navbar-collapse-3 {
   padding-left: 0px;
 }
-
+/*used*/
 #navbar-collapse-4 {
   padding-left: 0px;
 }
@@ -567,7 +571,7 @@ a.btn-info:hover {
 #dropdown-thumbnail-preview {
   padding-left: 0px;
 }
-
+/*used*/
 .email-toggle {
   margin-right: 25px;
 }
