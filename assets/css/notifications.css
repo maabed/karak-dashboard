@@ -138,3 +138,6 @@ Copyright 2017 New Release
   font-size: 12px;
   display: inline-block;
 }
+.sweet-alert .sa-input-error {
+  top: 15px;
+}

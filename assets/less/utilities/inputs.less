@@ -5,16 +5,21 @@
     padding-left: 0px !important;
     width: 100% !important;
     border-bottom: @select2-input-border !important;
+
     .select2-selection {
         border-radius: 0px !important;
         border: none !important;
+
         &:focus {
             outline: none;
         }
+
         .select2-selection__rendered {
             color: @submenue-color !important;
         }
+
     }
+
 }
 
 .select2-container.select2-container--open {
@@ -22,35 +27,45 @@
     .select2-dropdown--above {
         border-radius: 0;
         border: @select2-input-border;
+
         .select2-results__option--highlighted[aria-selected] {
             background-color: #f5f5f5 !important;
             color: @select2-color !important;
             font-size: 13px !important;
             text-decoration: none !important;
         }
+
         .select2-results__option[role=group] {
             padding: 0px !important;
         }
+
         .select2-results__option {
             color: @select2-color !important;
             font-size: 13px !important;
             padding: 14px 16px !important;
         }
+
         .select2-results>.select2-results__options {
             max-height: none !important;
             overflow-y: visible !important;
         }
+
         .select2-results__option {
             color: @select2-color !important;
             font-size: 13px !important;
         }
+
         .select2-search__field {
             border: @select2-input-border !important;
+
             &:focus {
                 border: 1px solid @info-mid !important;
             }
+
         }
+
     }
+
 }
 
 // Input fields customized
@@ -59,7 +74,6 @@ input[type=text]:not(#flat_email):not(.normal-text):not(.input-mini),
 input[type=password],
 input[type=email]:not(#searchTB):not(#flat_email) {
     background-color: transparent;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
     border-radius: 0;
     border: none;
     box-shadow: none;
@@ -72,6 +86,7 @@ input[type=email]:not(#searchTB):not(#flat_email) {
     .margin(0em, 0em, 0em, 0em);
     .padding(0em);
     .css-effect(all 0.3s);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
 }
 
 input {
@@ -81,43 +96,56 @@ input {
                 &:focus {
                     border-bottom: 1px solid @info-mid !important;
                 }
+
             }
+
         }
+
     }
+
 }
 
 .input-field {
     margin-top: 1rem;
     position: relative;
+
     .has-feedback.has-success>input {
         &:not(#searchTB) {
             &:focus {
                 border-bottom: 1px solid #3c763d !important;
             }
+
         }
+
     }
+
     .prefix ~ input,
     .prefix ~ label {
         margin-left: 3rem;
         width: 92%;
         width: calc(100% - 3rem);
     }
+
     .prefix {
         position: absolute;
         width: 3rem;
         .css-effect(all 0.2s);
     }
+
     .material-icons.prefix.active {
         color: @info-mid;
     }
+
     #user_prefix {
         margin-left: 2em !important;
         width: 85% !important;
     }
+
     #pass_prefix {
         margin-left: 2em !important;
         width: 85% !important;
     }
+
     .material-icons {
         font-family: 'Material Icons';
         font-weight: normal;
@@ -133,6 +161,7 @@ input {
         -webkit-font-feature-settings: 'liga';
         -webkit-font-smoothing: antialiased;
     }
+
     label {
         color: @submenue-color;
         cursor: text;
@@ -143,12 +172,14 @@ input {
         top: 0.8rem;
         .css-effect(.2s ease-out);
     }
+
     label.active {
         -webkit-transform: translateY(-140%);
         color: @info-mid;
         font-size: 10px;
         transform: translateY(-140%);
     }
+
 }
 
 .has-error>input {
@@ -160,9 +191,11 @@ input {
     margin-top: 10px;
     margin-bottom: 8px;
     display: inline-block;
+
     .ch-toggle {
         position: absolute;
         visibility: hidden;
+
         & + label {
             display: block;
             position: relative;
@@ -174,6 +207,7 @@ input {
             height: 30px;
             background-color: #dddddd;
             border-radius: 60px;
+
             &:before {
                 right: 1px;
                 background-color: #f1f1f1;
@@ -186,6 +220,7 @@ input {
                 top: 1px;
                 .css-effect(background 0.1s);
             }
+
             &:after {
                 width: 30px;
                 background-color: @white;
@@ -199,64 +234,90 @@ input {
                 top: 1px;
                 .css-effect(margin 0.1s);
             }
+
         }
+
         &:checked {
             +label {
                 &:after {
                     margin-left: 20px;
                 }
+
             }
+
         }
+
         &-green {
             &:checked+label {
                 &:before {
                     background-color: @dashboard-success;
                 }
+
             }
+
         }
+
         &-blue {
             &:checked+label {
                 &:before {
                     background-color: @dashboard-info;
                 }
+
             }
+
         }
+
         &-red {
             &:checked+label {
                 &:before {
                     background-color: @dashboard-danger;
                 }
+
             }
+
         }
+
         &-navy {
             &:checked+label {
                 &:before {
                     background-color: @dashboard-danger;
                 }
+
             }
+
         }
+
         &-white {
             &:checked+label {
                 &:before {
                     background-color: @white;
                 }
+
             }
+
         }
+
     }
+
 }
 
 //Checkboxes
 .checkbox {
     padding-left: 25px;
+
     input[type="checkbox"] {
         opacity: 0;
+
         &:checked +label {
             &:after {
                 font-family: 'FontAwesome';
                 content: "\f00c";
             }
+
         }
+
     }
+
     label {
         display: inline-block;
         position: relative;
@@ -264,6 +325,7 @@ input {
         font-size: 12px;
         font-weight: normal;
         margin-top: 0px;
+
         &:before {
             content: "";
             display: inline-block;
@@ -276,6 +338,7 @@ input {
             border-radius: 3px;
             background-color: @white;
         }
+
         &:after {
             display: inline-block;
             position: absolute;
@@ -289,7 +352,9 @@ input {
             font-size: 11px;
             color: #555555;
         }
+
     }
+
     &-primary {
         input[type="checkbox"] {
             &:checked+label {
@@ -297,12 +362,17 @@ input {
                     background-color: @info-mid;
                     border-color: @info-mid;
                 }
+
                 &:after {
                     color: @white
                 }
+
             }
+
         }
+
     }
+
     &-success {
         input[type="checkbox"] {
             &:checked+label {
@@ -310,12 +380,17 @@ input {
                     background-color: @success-mid;
                     border-color: @success-mid;
                 }
+
                 &:after {
                     color: @white
                 }
+
             }
+
         }
+
     }
+
     &-info {
         input[type="checkbox"] {
             &:checked+label {
@@ -323,12 +398,17 @@ input {
                     background-color: @info-light;
                     border-color: @info-light;
                 }
+
                 &:after {
                     color: @white
                 }
+
             }
+
         }
+
     }
+
     &-warning {
         input[type="checkbox"] {
             &:checked+label {
@@ -336,12 +416,17 @@ input {
                     background-color: @warning-mid;
                     border-color: @warning-mid;
                 }
+
                 &:after {
                     color: @white
                 }
+
             }
+
         }
+
     }
+
     &-danger {
         input[type="checkbox"] {
             &:checked+label {
@@ -349,12 +434,17 @@ input {
                     background-color: @danger-mid;
                     border-color: @danger-mid;
                 }
+
                 &:after {
                     color: @white
                 }
+
             }
+
         }
+
     }
+
 }
 
 //Circle checkboxes
@@ -363,7 +453,9 @@ input {
         &:before {
             border-radius: 50%;
         }
+
     }
+
 }
 
 //Yes-No checkboxes
@@ -371,13 +463,17 @@ input {
     display: inline-block;
     text-align: justify;
     .margin(2em, 10px, 0em, 15px);
+
     .btn {
         .padding-diffrent-values(6px, 12px, 6px, 12px);
+
         .active.btn-success {
             background-color: @success-mid;
             border-color: @success-mid;
         }
+
     }
+
 }
 
 //Date range
@@ -392,10 +488,13 @@ input {
 .daterangepicker {
     td.active {
         background-color: @info-mid !important;
+
         &:hover {
             background-color: @info-mid !important;
         }
+
     }
+
 }
 
 .datepicker--cell.-selected- {
