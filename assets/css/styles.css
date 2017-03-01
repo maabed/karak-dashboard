@@ -2182,7 +2182,7 @@ p {
   background-color: #2c3e50;
   border-color: #2c3e50;
 }
-
+/*used*/
 .margin-bottom {
   margin-bottom: 0.5em;
 }
@@ -2198,11 +2198,11 @@ p {
 .dashboard-vertical button {
   width: 100%;
 }
-
+/*used*/
 .dashboard-pager {
   float: left;
 }
-
+/*used*/
 .pager li > a,
 .pager li > span {
   -webkit-transition: all 0.5s ease;
@@ -2216,7 +2216,7 @@ p {
 .dashboard-pagination {
   width: 100%;
 }
-
+/*used*/
 .pagination > .active > a,
 .pagination > .active > a:focus,
 .pagination > .active > a:hover,
@@ -2226,18 +2226,18 @@ p {
   background-color: #69b1e2 !important;
   border-color: #69b1e2 !important;
 }
-
+/*used*/
 .pagination > li > a,
 .pagination > li > span {
   color: #828282;
 }
-
+/*used*/
 .pagination>li:first-child>a,
 .pagination>li:first-child>span {
   border-bottom-left-radius: 0px !important;
   border-top-left-radius: 0px !important;
 }
-
+/*used*/
 .pagination > li:last-child > a,
 .pagination > li:last-child > span {
   border-bottom-right-radius: 0px !important;
@@ -3349,11 +3349,11 @@ margin-top: 3.8em;
 background-color: none !important;
 border: none !important;
 }
-
+/*used*/
 .code-table-btns {
 margin-bottom: 1em !important;
 }
-
+/*used*/
 .code-table-btns tr td {
 border: none !important;
 font-size: 0.9em;
@@ -3543,53 +3543,53 @@ background-color: #fff;
 padding: 1em 0.5em;
 overflow: hidden;
 }
-
+/*used*/
 .flat-colors {
 width: 100%;
 margin: 0 auto;
 margin-top: 1em;
 border: 1px solid #F1F3F6;
 }
-
+/*used*/
 .flat-colors .col-sm-2 {
 color: #fff;
 font-weight: lighter;
 padding-top: 6em;
 }
-
+/*used*/
 .flat-colors .col-sm-2:last-child p {
 color: #000;
 }
-
+/*used*/
 .flat-colors .col-sm-2 p {
 color: #F1F3F6;
 }
-
+/*used*/
 .flat-colors .col-sm-2:first-child {
 background-color: #34495e;
 border-bottom: 8px solid #2c3e50;
 }
-
+/*used*/
 .flat-colors .col-sm-2:nth-child(2) {
 background-color: #67b2e4;
 border-bottom: 8px solid #2980b9;
 }
-
+/*used*/
 .flat-colors .col-sm-2:nth-child(3) {
 background-color: #62d995;
 border-bottom: 8px solid #27ae60;
 }
-
+/*used*/
 .flat-colors .col-sm-2:nth-child(4) {
 background-color: #f5d34b;
 border-bottom: 8px solid #f39c12;
 }
-
+/*used*/
 .flat-colors .col-sm-2:nth-child(5) {
 background-color: #ed796d;
 border-bottom: 8px solid #c0392b;
 }
-
+/*used*/
 .flat-colors .col-sm-2:last-child {
 background-color: #fff;
 color: #34495E;
