@@ -2088,6 +2088,12 @@ p {
   text-align: left !important;
   padding-right: 13px;
 }
+.menu-container .navbar.sidebar .collapse ul,
+.menu-container .navbar.sidebar .navbar-collapse ul,
+.menu-container .navbar.sidebar .collapse .right-side-ul,
+.menu-container .navbar.sidebar .navbar-collapse .right-side-ul {
+  margin: 0em -1em !important;
+}
 .menu-container .navbar.sidebar .collapse ul li,
 .menu-container .navbar.sidebar .navbar-collapse ul li,
 .menu-container .navbar.sidebar .collapse .right-side-ul li,
@@ -2393,6 +2399,21 @@ p {
   opacity: 0.7;
   position: absolute;
   z-index: 9;
+}
+.nav.navbar-nav.navbar-right.menu-padding {
+  float: left !important;
+}
+.menu-container .navbar .nav-collapse .navbar-form {
+  border-width: 0;
+  float: left !important;
+  box-shadow: none;
+}
+.navbar-nav.navbar-right .btn {
+  position: relative;
+  z-index: 2;
+  padding: 4px 20px;
+  margin: 10px auto;
+  transition: transform 0.3s;
 }
 @media (min-width: 768px) {
   nav.sidebar .navbar-collapse .container-fluid,

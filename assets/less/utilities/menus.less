@@ -79,6 +79,7 @@
                     .navbar-collapse {
                         ul,
                         .right-side-ul {
+                            margin: 0em -1em !important;
                             li {
                                 border-bottom: 1px #e5e5e5 solid;
                                 width: 100%;
@@ -139,14 +140,14 @@
                             }
                             li.active {
                                 a {
-                                    border-bottom: 3px solid #3B97D2;
+                                    border-bottom: 3px solid @head-background;
                                     background-color: @white;
                                     &:active {
-                                        border-bottom: 3px solid #3B97D2;
+                                        border-bottom: 3px solid @head-background;
                                         background-color: @white;
                                     }
                                     &:focus {
-                                        border-bottom: 3px solid #3B97D2;
+                                        border-bottom: 3px solid @head-background;
                                         background-color: @white;
                                     }
                                 }
@@ -179,7 +180,6 @@
                     .container-fluid {
                         .navbar-collapse {
                             .navbar-nav {
-                                
                                 .dropdown-menu2,
                                 .mega-dropdown {
                                     position: static !important;
@@ -370,6 +370,24 @@
                     }
                 }
             }
+        }
+        
+        .nav.navbar-nav.navbar-right.menu-padding {
+            float: left !important;
+        }
+        
+        .menu-container .navbar .nav-collapse .navbar-form {
+            border-width: 0;
+            float: left !important;
+            box-shadow: none;
+        }
+        
+        .navbar-nav.navbar-right .btn {
+            position: relative;
+            z-index: 2;
+            padding: 4px 20px;
+            margin: 10px auto;
+            transition: transform 0.3s;
         }
         
         @media (min-width:768px) {
