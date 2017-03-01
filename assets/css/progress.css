@@ -235,17 +235,6 @@ height: 10em;
 width: 142px !important;
 }
 
-@-webkit-keyframes placeHolderShimmer {
-0% {
-	background-position: -468px 0
-}
-
-100% {
-	background-position: 468px 0
-}
-
-}
-
 @keyframes placeHolderShimmer {
 0% {
 	background-position: -468px 0
@@ -257,13 +246,6 @@ width: 142px !important;
 
 }
 
-.timeline-wrapper {
-background-color: #e9eaed;
-color: #141823;
-padding: 20px;
-border: 1px solid #ccc;
-}
-
 .timeline-item {
 background: #fff;
 border: 1px solid;
@@ -273,16 +255,9 @@ margin: 0 auto;
 }
 
 .animated-background {
--webkit-animation-duration: 1s;
 animation-duration: 1s;
--webkit-animation-fill-mode: forwards;
-animation-fill-mode: forwards;
--webkit-animation-iteration-count: infinite;
 animation-iteration-count: infinite;
--webkit-animation-name: placeHolderShimmer;
 animation-name: placeHolderShimmer;
--webkit-animation-timing-function: linear;
-animation-timing-function: linear;
 background: #f6f7f8;
 background: #eeeeee;
 background: -webkit-gradient(linear, left top, right top, color-stop(8%, #eeeeee), color-stop(18%, #dddddd), color-stop(33%, #eeeeee));
