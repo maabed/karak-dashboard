@@ -1223,11 +1223,11 @@ hr {
 .statistics-item .row .col-sm-2 h4 {
   line-height: 1.5em;
 }
-
+/*used*/
 .bold {
   font-weight: bold;
 }
-
+/*used*/
 .lighter {
   font-weight: lighter;
 }
@@ -1248,19 +1248,19 @@ hr {
   position: relative;
   z-index: -1;
 }
-
+/*used*/
 .activities-year {
   float: right;
   color: #3B97D2;
   font-weight: bold;
 }
-
+/*used*/
 .add-task {
   float: right;
   color: #3B97D2;
   font-size: 1.1em;
 }
-
+/*used*/
 .activities-log,
 .to-do-list {
   width: 100%;
@@ -1268,27 +1268,27 @@ hr {
   overflow-y: scroll;
   overflow-x: hidden;
 }
-
+/*used*/
 .single-log-box {
   border-bottom: 1px solid #F1F3F6;
   padding-top: 0.4em;
   padding-bottom: 0.4em;
 }
-
+/*used*/
 .single-log-box h5 {
   color: #3B97D2;
   text-decoration: underline;
   width: 99%;
   font-weight: lighter;
 }
-
+/*used*/
 .single-log-box p {
   color: #707A7A;
   text-align: justify;
   width: 99%;
   font-size: 0.9em;
 }
-
+/*used*/
 .single-to-do-box {
   border-bottom: 1px solid #F1F3F6;
   color: #707A7A;
@@ -1296,18 +1296,18 @@ hr {
   font-size: 0.9em;
   padding: 1em 0em;
 }
-
+/*used*/
 .to-do-checkbox {
   width: 60%;
   float: left;
 }
-
+/*used*/
 .single-to-do-box h6 {
   float: right;
   color: #3B97D2;
   margin: 0.3em 0.5em;
 }
-
+/*used*/
 .single-to-do-box i {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -1318,7 +1318,7 @@ hr {
   font-size: 1.2em;
   margin: 0.2em 0.5em;
 }
-
+/*used*/
 .single-to-do-box i:hover {
   color: #df1515;
 }
@@ -1333,7 +1333,7 @@ hr {
   color: #828282;
   margin: 0 !important;
 }
-
+/*used*/
 .static-height {
   height: 24em;
 }
@@ -2852,18 +2852,18 @@ border: 1px solid #3B97D2 !important;
 #notifications {
 border: none !important;
 }
-
+/*used*/
 ::-webkit-scrollbar {
 width: 0.6em;
 z-index: 99999999;
 padding: 3px;
 }
-
+/*used*/
 ::-webkit-scrollbar-track {
 -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0);
 border-radius: 0px;
 }
-
+/*used*/
 ::-webkit-scrollbar-thumb {
 border-radius: 0px;
 -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
@@ -3416,18 +3416,19 @@ padding: 1em 0em !important;
 }
 
 @media(max-width:1400px) {
+  /*used*/
 .all-income h2 {
   font-size: 1.5em !important;
 }
-
+  /*used*/
 .all-income h3 {
   font-size: 1.3em !important;
 }
-
+  /*used*/
 .all-income-invers h2 {
   font-size: 1.5em !important;
 }
-
+  /*used*/
 .all-income-invers h3 {
   font-size: 1.3em !important;
 }
@@ -3827,36 +3828,36 @@ height: 32em;
 }
 
 }
-
+/*used*/
 .all-income {
 text-align: center;
 color: #626262;
 }
-
+/*used*/
 .all-income h2 {
 font-weight: lighter;
 }
-
+/*used*/
 .all-income h3 {
 font-weight: lighter;
 color: #67b2e4;
 }
-
+/*used*/
 .all-income-invers {
 text-align: center;
 color: #fff;
 background-color: #67b2e4 !important;
 }
-
+/*used*/
 .all-income-invers h2 {
 font-weight: lighter;
 }
-
+/*used*/
 .all-income-invers h3 {
 font-weight: lighter;
 color: #fff;
 }
-
+/*used*/
 .flat-style {
 float: right;
 color: #848484;

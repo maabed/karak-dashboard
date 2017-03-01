@@ -1,6 +1,3 @@
-.highcharts-credits {
-  display: none;
-}
 .select2 {
   border-radius: 0px !important;
   border: none !important;
@@ -825,7 +822,7 @@ input {
   margin: 0;
   margin-top: 0.7em;
 }
-#wrapper #page-content-wrapper .container-fluid .col-contint.col-contint-taps {
+#wrapper #page-content-wrapper .container-fluid .col-contint-taps {
   min-height: 10em;
   overflow: hidden;
 }
@@ -2885,4 +2882,162 @@ td .fa {
 }
 .icons-single-box .col-contint div {
   color: #34495e;
+}
+#wrapper #page-content-wrapper .container-fluid .row .col-contint.static-height {
+  height: 24em !important;
+}
+#wrapper #page-content-wrapper .container-fluid .row .col-contint.static-height .activities-log,
+#wrapper #page-content-wrapper .container-fluid .row .col-contint.static-height .to-do-list {
+  width: 100%;
+  height: 85%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+#wrapper #page-content-wrapper .container-fluid .row .col-contint.static-height .activities-log .single-log-box,
+#wrapper #page-content-wrapper .container-fluid .row .col-contint.static-height .to-do-list .single-log-box {
+  border-bottom: 1px solid #F1F3F6;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+}
+#wrapper #page-content-wrapper .container-fluid .row .col-contint.static-height .activities-log .single-log-box .flat-style,
+#wrapper #page-content-wrapper .container-fluid .row .col-contint.static-height .to-do-list .single-log-box .flat-style {
+  float: right;
+  color: #848484;
+  font-weight: lighter;
+}
+#wrapper #page-content-wrapper .container-fluid .row .col-contint.static-height .activities-log .single-log-box h5,
+#wrapper #page-content-wrapper .container-fluid .row .col-contint.static-height .to-do-list .single-log-box h5 {
+  color: #3B97D2;
+  text-decoration: underline;
+  width: 99%;
+  font-weight: lighter;
+}
+#wrapper #page-content-wrapper .container-fluid .row .col-contint.static-height .activities-log .single-log-box p,
+#wrapper #page-content-wrapper .container-fluid .row .col-contint.static-height .to-do-list .single-log-box p {
+  color: #707A7A;
+  text-align: justify;
+  width: 99%;
+  font-size: 0.9em;
+}
+#wrapper #page-content-wrapper .container-fluid .row .col-contint.static-height .activities-log .single-to-do-box,
+#wrapper #page-content-wrapper .container-fluid .row .col-contint.static-height .to-do-list .single-to-do-box {
+  border-bottom: 1px solid #F1F3F6;
+  color: #707A7A;
+  text-align: left;
+  font-size: 0.9em;
+  padding: 1em 0em;
+}
+#wrapper #page-content-wrapper .container-fluid .row .col-contint.static-height .activities-log .single-to-do-box .to-do-checkbox,
+#wrapper #page-content-wrapper .container-fluid .row .col-contint.static-height .to-do-list .single-to-do-box .to-do-checkbox {
+  width: 60%;
+  float: left;
+}
+#wrapper #page-content-wrapper .container-fluid .row .col-contint.static-height .activities-log .single-to-do-box h6,
+#wrapper #page-content-wrapper .container-fluid .row .col-contint.static-height .to-do-list .single-to-do-box h6 {
+  float: right;
+  color: #3B97D2;
+  margin: 0.3em 0.5em;
+}
+#wrapper #page-content-wrapper .container-fluid .row .col-contint.static-height .activities-log .single-to-do-box i,
+#wrapper #page-content-wrapper .container-fluid .row .col-contint.static-height .to-do-list .single-to-do-box i {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  float: right;
+  color: #DEDEDE;
+  font-size: 1.2em;
+  margin: 0.2em 0.5em;
+}
+#wrapper #page-content-wrapper .container-fluid .row .col-contint.static-height .activities-log .single-to-do-box i:hover,
+#wrapper #page-content-wrapper .container-fluid .row .col-contint.static-height .to-do-list .single-to-do-box i:hover {
+  color: #df1515 !important;
+}
+#wrapper #page-content-wrapper .container-fluid .row .col-contint .highcharts-container .highcharts-credits {
+  display: none;
+}
+#wrapper #page-content-wrapper .container-fluid .row .col-contint .title .flat-style {
+  float: right;
+  color: #848484;
+  font-weight: lighter;
+}
+#wrapper #page-content-wrapper .container-fluid .row .col-contint .title .activities-year {
+  float: right;
+  color: #3B97D2;
+  font-weight: bold;
+}
+#wrapper #page-content-wrapper .container-fluid .row .col-contint .title .add-task {
+  float: right;
+  color: #3B97D2;
+  font-size: 1.1em;
+}
+#wrapper #page-content-wrapper .container-fluid .row .col-sm-6 .all-income {
+  text-align: center;
+  color: #626262;
+}
+#wrapper #page-content-wrapper .container-fluid .row .col-sm-6 .all-income h2 {
+  font-weight: lighter;
+}
+#wrapper #page-content-wrapper .container-fluid .row .col-sm-6 .all-income h3 {
+  font-weight: lighter;
+  color: #67b2e4;
+}
+#wrapper #page-content-wrapper .container-fluid .row .col-sm-6 .all-income-invers {
+  text-align: center;
+  color: #fff;
+  background-color: #67b2e4 !important;
+}
+#wrapper #page-content-wrapper .container-fluid .row .col-sm-6 .all-income-invers h2 {
+  font-weight: lighter;
+}
+#wrapper #page-content-wrapper .container-fluid .row .col-sm-6 .all-income-invers h3 {
+  font-weight: lighter;
+  color: #fff;
+}
+#wrapper #page-content-wrapper .container-fluid .row.statistics .col-md-12 .tabs-container .tab-content .statistics-item .row .col-sm-2 {
+  text-align: center;
+  width: 20% !important;
+}
+#wrapper #page-content-wrapper .container-fluid .row.statistics .col-md-12 .tabs-container .tab-content .statistics-item .row .col-sm-2 img {
+  margin: 0 auto;
+}
+#wrapper #page-content-wrapper .container-fluid .row.statistics .col-md-12 .tabs-container .tab-content .statistics-item .row .col-sm-2 h4 {
+  line-height: 1.5em;
+}
+@media (max-width: 1400px) {
+  .all-income h2 {
+    font-size: 1.5em !important;
+  }
+  .all-income h3 {
+    font-size: 1.3em !important;
+  }
+  .all-income-invers h2 {
+    font-size: 1.5em !important;
+  }
+  .all-income-invers h3 {
+    font-size: 1.3em !important;
+  }
+}
+/*move to main*/
+.done-task {
+  text-decoration: line-through;
+}
+::-webkit-scrollbar {
+  width: 0.6em;
+  z-index: 99999999;
+  padding: 3px;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0);
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.bold {
+  font-weight: bold;
+}
+.lighter {
+  font-weight: lighter;
 }
