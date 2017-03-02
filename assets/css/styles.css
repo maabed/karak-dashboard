@@ -290,7 +290,7 @@ body {
   float: left;
   margin-left: 0.5em;
 }
-
+/*used*/
 .center-block {
   float: none;
   margin-left: auto;
@@ -2791,7 +2791,7 @@ font-size: 0.9em;
 background-color: #fff;
 font-size: 0.9em;
 }
-
+/*used*/
 .preview {
 color: #888888;
 position: absolute;
@@ -2807,7 +2807,7 @@ z-index: 999;
 transition: all 0.5s ease;
 cursor: pointer;
 }
-
+/*used*/
 .preview:hover {
 color: #34495E;
 background-color: #E4E5E7;
@@ -3682,7 +3682,7 @@ height: 32em;
 .colors-library .col-sm-12 .col-sm-3 {
   text-align: left;
 }
-
+/*used*/
 .preview {
   right: 0 !important;
 }

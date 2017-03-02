@@ -2,81 +2,100 @@
     .modal-dialog {
         .modal-content {
             border-radius: @no-radius;
-
             .modal-body {
                 input {
                     padding: 1px 0px;
                 }
-
                 #email-label {
                     font-size: 10px;
                     color: #67b2e4;
                     -webkit-transform: translateY(-140%);
                     transform: translateY(-140%);
                 }
-
                 #password-label {
                     font-size: 10px;
                     color: #67b2e4;
                     -webkit-transform: translateY(-140%);
                     transform: translateY(-140%);
                 }
-
                 .right-modal-content {
                     text-align: center;
                 }
-
                 .right-button {
                     width: 50%;
                     margin-bottom: 10px;
                 }
-
                 .jumbotron {
-                    .padding(5px);
-                    border-radius: @no-radius;
-
+                    padding-left: 5px !important;
+                    padding-top: 5px !important;
+                    padding-bottom: 5px !important;
+                    padding-right: 5px !important;
+                    border-radius: 0px;
                     .glyphicon-search {
                         font-size: 26px;
                         margin-top: 10px;
                         cursor: pointer;
-                        color: @default-dark;
+                        color: #9b9b9b;
                     }
-
-                    #flat_email {
-                        border-radius: @no-radius;
-                        height: 50px;
-                        font-size: 16px;
-                        border: none;
-                        box-shadow: none;
-                        background-color: @gray-eee;
-                        padding-left: 10px;
-                        width: 92%;
-                        display: inline;
-                    }
-
                 }
-
             }
-
             .custome-margin {
                 margin-top: 40%;
             }
-
             .modal-footer {
                 .modal-close {
                     float: left
                 }
-
             }
-
         }
-
     }
-
     .middle-dialog {
         margin-top: 15%;
     }
-
+    .jumbotron {
+        .padding(5px);
+        border-radius: @no-radius;
+        .glyphicon-search {
+            font-size: 26px;
+            margin-top: 10px;
+            cursor: pointer;
+            color: @default-dark;
+        }
+        #flat_email {
+            border-radius: @no-radius;
+            height: 50px;
+            font-size: 16px;
+            border: none;
+            box-shadow: none;
+            background-color: @gray-eee;
+            padding-left: 10px;
+            width: 92%;
+            display: inline;
+        }
+    }
+    &.right {
+        .modal-dialog {
+            position: fixed;
+            margin: auto;
+            width: 320px;
+            height: 150%;
+        }
+        .modal-content {
+            height: 100%;
+        }
+        &.fade {
+            .modal-dialog {
+                right: -320px;
+                -webkit-transition: opacity 0.3s linear, right 0.2s ease-out;
+                -moz-transition: opacity 0.3s linear, right 0.2s ease-out;
+                -o-transition: opacity 0.3s linear, right 0.2s ease-out;
+                transition: opacity 0.3s linear, right 0.2s ease-out;
+            }
+            &.in {
+                .modal-dialog {
+                    right: 0;
+                }
+            }
+        }
+    }
 }
-
-
