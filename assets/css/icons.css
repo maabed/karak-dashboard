@@ -5,37 +5,39 @@ Author: New Release
 http://newrelease.io
 Copyright 2017 New Release
 */
+
+/*used*/
 .icons-single-box i,
 .glyphicon,
 td > .fa {
   font-size: 1.5em;
 }
-
+/*used*/
 .icons-single-box .col-contint .col-sm-4,
 .icons-single-box .col-contint .col-md-3 {
   border: none !important;
   border-bottom: 1px solid #E4E5E7 !important;
 }
-
+/*used*/
 .icons_img {
   width: 80%;
   margin-bottom: 8px;
   margin-top: 8px;
 }
-
+/*used*/
 .icons-description {
   text-align: center;
 }
-
+/*used*/
 .all-icons .dataTables_length {
   display: none;
 }
-
+/*used*/
 .all-icons .dataTables_filter label {
   width: 45% !important;
   display: block;
 }
-
+/*used*/
 .all-icons .dataTables_filter label input {
   width: 50% !important;
   border-right: 0px !important;
@@ -49,7 +51,7 @@ td > .fa {
   position: relative;
   margin-top: 1rem;
 }
-
+/*used*/
 input:not([type]),
 input[type=text]:not(#flat_email):not(.normal-text):not(.input-mini),
 input[type=password],
@@ -176,7 +178,7 @@ input:not(#searchTB):not(.select2-search__field):focus {
 .btn.dropdown-toggle.btn-default:focus {
   outline: none !important;
 }
-
+/*used*/
 .icons-single-box .col-contint .col-sm-4,
 .icons-single-box .col-contint .col-md-3 {
   height: 7em;

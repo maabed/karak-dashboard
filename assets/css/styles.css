@@ -2390,7 +2390,7 @@ background: url('../images/details_close.png') no-repeat center center;
 .all-icons thead {
 display: none;
 }
-
+/*used*/
 .icons-single-box .col-contint .col-sm-4,
 .icons-single-box .col-contint .col-md-3 {
 height: 6em;
@@ -2402,23 +2402,23 @@ border-radius: 0 !important;
 .icons-single-box  i {
 font-size: 1.2em;
 }
-
+/*used*/
 .icons-single-box .col-contint div {
 color: #707A7A;
 text-align: center;
 font-weight: lighter;
 }
-
+/*used*/
 .icons-single-box .col-contint div i,
 .icons-single-box .col-contint div span {
 width: 100%;
 }
-
+/*used*/
 .icons-single-box .col-contint {
 height: 28.5em;
 overflow: hidden;
 }
-
+/*used*/
 .all-icons tr,
 .all-icons td {
 background: none !important;
@@ -2429,19 +2429,19 @@ font-weight: lighter;
 padding: 1.2em 0em !important;
 font-size: 1.05em !important;
 }
-
+/*used*/
 .all-icons tr,
 .all-icons td i {
 width: 100%;
 }
-
+/*used*/
 .all-icons table {
 border: 0 !important;
 }
 
 .all-icons #column_searching_paginate {
 }
-
+/*used*/
 .all-icons .dataTables_filter {
 width: 80% !important;
 margin: 0.5em 0em;
