@@ -32,7 +32,6 @@
     .panel-body {
         border-top: 0px !important;
         &:extend(.panal-font-style);
-       
     }
     .panel-footer {
         border-top: 1px solid #ddd !important;
@@ -96,8 +95,15 @@
     }
 }
 
-/*move to main*/
-
-
-
-/*note : please convert colors classes to less in main.less file*/
+.panel-fullscreen {
+    display: block;
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    overflow: auto;
+}

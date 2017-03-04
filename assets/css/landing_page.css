@@ -5,6 +5,8 @@ Author: New Release
 http://newrelease.io
 Copyright 2017 New Release
 */
+
+/*used*/
 .homepage-hero-module {
   border-right: none;
   border-left: none;
@@ -12,17 +14,17 @@ Copyright 2017 New Release
   height: 80em !important;
   overflow: hidden;
 }
-
+/*used*/
 .no-video .video-container video,
 .touch .video-container video {
   display: none;
 }
-
+/*used*/
 .no-video .video-container .poster,
 .touch .video-container .poster {
   display: block !important;
 }
-
+/*used*/
 .video-container {
   position: relative;
   bottom: 0%;
@@ -32,30 +34,30 @@ Copyright 2017 New Release
   overflow: hidden;
   background: #fff;
 }
-
+/*used*/
 .video-container .poster img {
   width: 100%;
   bottom: 0;
   position: absolute;
 }
-
+/*used*/
 .video-container .filter {
   z-index: 100;
   position: absolute;
   background: rgba(0, 0, 0, 0.4);
   width: 100%;
 }
-
+/*used*/
 .video-container video {
   position: absolute;
   z-index: 0;
   top: 0;
 }
-
+/*used*/
 .video-container video.fillWidth {
   width: 100%;
 }
-
+/*used*/
 .showcase {
   width: 100%;
   text-align: center;
@@ -65,27 +67,27 @@ Copyright 2017 New Release
   z-index: 999999;
   position: top;
 }
-
+/*used*/
 .showcase .logo {
   float: left;
   width: 8em;
 }
-
+/*used*/
 .container {
   padding-top: 2em !important;
 }
-
+/*used*/
 .showcase h1 {
   color: #fff;
   text-align: center;
   font-size: 3em !important;
   margin-top: 4em;
 }
-
+/*used*/
 .showcase h1 span {
   color: #3498db;
 }
-
+/*used*/
 .showcase p {
   color: #fff;
   text-align: center;
@@ -96,12 +98,13 @@ Copyright 2017 New Release
   margin: 0 auto;
   font-weight: 200;
 }
-
+/*used*/
 .showcase-btns {
   margin: 2em auto;
   border-radius: 0 !important;
   font-weight: lighter;
 }
+
 
 .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
   -webkit-transition: all 0.5s ease;

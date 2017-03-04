@@ -1,46 +1,4 @@
         .menu-container {
-            .navbar2 {
-                margin-bottom: 2.54em !important;
-                .collapse {
-                    .navbar-collapse,
-                    #navbar-collapse-1 {
-                        padding-left: 0px;
-                        position: relative;
-                        overflow: hidden !important;
-                        .navbar-right {
-                            float: left !important;
-                            padding-right: 0.5em;
-                            .btn:notnot(.collapsed) {
-                                background-color: @head-background;
-                                border-color: @head-background;
-                                color: rgb(255, 255, 255);
-                            }
-                        }
-                        .email-toggle {
-                            margin-right: 25px;
-                        }
-                        .toggle-form {
-                            width: 35%;
-                            .input-field {
-                                position: relative;
-                                bottom: 3px;
-                            }
-                        }
-                    }
-                    #nav-collapse3 {
-                        form {
-                            div {
-                                input {
-                                    color: @white !important;
-                                }
-                            }
-                            .glyphicon-search {
-                                color: @white;
-                            }
-                        }
-                    }
-                }
-            }
             .navbar {
                 width: 100%;
                 border-radius: 0px;
@@ -79,6 +37,7 @@
                     .navbar-collapse {
                         ul,
                         .right-side-ul {
+                            margin: 0em -1em !important;
                             li {
                                 border-bottom: 1px #e5e5e5 solid;
                                 width: 100%;
@@ -139,14 +98,14 @@
                             }
                             li.active {
                                 a {
-                                    border-bottom: 3px solid #3B97D2;
+                                    border-bottom: 3px solid @head-background;
                                     background-color: @white;
                                     &:active {
-                                        border-bottom: 3px solid #3B97D2;
+                                        border-bottom: 3px solid @head-background;
                                         background-color: @white;
                                     }
                                     &:focus {
-                                        border-bottom: 3px solid #3B97D2;
+                                        border-bottom: 3px solid @head-background;
                                         background-color: @white;
                                     }
                                 }
@@ -179,7 +138,6 @@
                     .container-fluid {
                         .navbar-collapse {
                             .navbar-nav {
-                                
                                 .dropdown-menu2,
                                 .mega-dropdown {
                                     position: static !important;
@@ -339,6 +297,48 @@
                     }
                 }
             }
+                .navbar2 {
+                margin-bottom: 2.54em !important;
+                .collapse {
+                    .navbar-collapse,
+                    #navbar-collapse-1 {
+                        padding-left: 0px;
+                        position: relative;
+                        overflow: hidden !important;
+                        .navbar-right {
+                            float: left !important;
+                            padding-right: 0.5em;
+                            .btn:not(.collapsed) {
+                                background-color: @head-background;
+                                border-color: @head-background;
+                                color: rgb(255, 255, 255);
+                            }
+                        }
+                        .email-toggle {
+                            margin-right: 25px;
+                        }
+                        .toggle-form {
+                            width: 35%;
+                            .input-field {
+                                position: relative;
+                                bottom: 3px;
+                            }
+                        }
+                    }
+                    #nav-collapse3 {
+                        form {
+                            div {
+                                input {
+                                    color: @white !important;
+                                }
+                            }
+                            .glyphicon-search {
+                                color: @white;
+                            }
+                        }
+                    }
+                }
+            }
             .carousel {
                 .carousel-inner {
                     .item {
@@ -370,6 +370,24 @@
                     }
                 }
             }
+        }
+        
+        .nav.navbar-nav.navbar-right.menu-padding {
+            float: left !important;
+        }
+        
+        .menu-container .navbar .nav-collapse .navbar-form {
+            border-width: 0;
+            float: left !important;
+            box-shadow: none;
+        }
+        
+        .navbar-nav.navbar-right .btn {
+            position: relative;
+            z-index: 2;
+            padding: 4px 20px;
+            margin: 10px auto;
+            transition: transform 0.3s;
         }
         
         @media (min-width:768px) {

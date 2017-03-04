@@ -21,13 +21,13 @@
         <link type="text/css"  href="assets/vendors/calendar/calendar_theme.css" rel="stylesheet" />
         <link type="text/css"  href="assets/vendors/calendar/calendar_theme.css" rel="stylesheet" />
         <link type="text/css"  href='assets/vendors/calendar/fullcalendar.css' rel='stylesheet' />
-        <link type="text/css"  href="assets/vendors/calendar/fullcalendar.print.css" rel='stylesheet' media='print' />
-        <!-- Index page CSS -->
-        <link type="text/css"  rel="stylesheet" href="assets/css/index.css">
+        <link type="text/css"  href="assets/vendors/calendar/fullcalendar.print.css" rel='stylesheet' media='print'
         <!-- Loading animation CSS -->
         <link type="text/css"  rel="stylesheet" href="assets/vendors/animatecss/animate.min.css" />
         <!-- Select2 CSS -->
         <link type="text/css"  href="assets/vendors/select2/css/select2.css" rel="stylesheet" />
+        <!-- Calender in index page CSS -->
+        <link type="text/css"  rel="stylesheet" href="assets/css/index.css">
     </head>
     <body>
         <div id="wrapper">
@@ -404,17 +404,23 @@
                         </div>
                     </div>
                     <div class="row statistics">
-                        <div class="col-md-12 animated fadeInUp">
-                            <div class="statistics-taps">
-                                <ul>
-                                    <li class="active"><a href="#con3">Yesterday</a></li>
-                                    <li><a href="#con2">Last Month</a></li>
-                                    <li><a href="#con1">Last Year</a></li>
-                                </ul>
+                    <div class="col-md-12">
+                        <div class="tabs-container">
+                            <div class="tabs-header">
+                                <div class="statistics-taps">
+                                    <ul>
+                                        <li class="active"><a href="#con3"><i class="fa fa-user"aria-hidden="true"></i>&nbsp;
+Yesterday</a></li>
+                                        <li><a href="#con2"><i class="fa fa-credit-card"aria-hidden="true"></i>&nbsp;
+Last Month</a></li>
+                                        <li><a href="#con1"><i class="fa fa-check"aria-hidden="true"></i>&nbsp;
+Last Year</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="col-contint">
+                            <div class="tab-content">
                                 <div class="statistics-item" id="con3">
-                                    <div class="row">
+                                            <div class="row">
                                         <div class="col-sm-2 centerlize-reponsive">
                                             <img class="img-responsive" src="assets/images/st-1.png" />
                                             <h4 class="bold">220,000 USD</h4>
@@ -443,7 +449,7 @@
                                     </div>
                                 </div>
                                 <div class="statistics-item" id="con2">
-                                    <div class="row">
+                                         <div class="row">
                                         <div class="col-sm-2">
                                             <img class="img-responsive" src="assets/images/st-1.png" />
                                             <h4 class="bold">1220,000 USD</h4>
@@ -472,7 +478,7 @@
                                     </div>
                                 </div>
                                 <div class="statistics-item" id="con1">
-                                    <div class="row">
+                                  <div class="row">
                                         <div class="col-sm-2">
                                             <img class="img-responsive" src="assets/images/st-1.png" />
                                             <h4 class="bold">290,000 USD</h4>
@@ -503,6 +509,7 @@
                             </div>
                         </div>
                     </div>
+                </div>
                     <div class="row">
                         <div class="col-md-6 animated fadeInUp">
                             <div class="col-contint scroll-y col-contint-taps">

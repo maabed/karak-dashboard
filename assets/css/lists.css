@@ -36,12 +36,12 @@ Copyright 2017 New Release
   padding-left: 10px;
   margin-left: 15px;
 }
-
+/*used*/
 .glyphicon {
   margin-right: 10px;
   color: #C6C4DB;
 }
-
+/*used*/
 .blog-img {
   width: 108px;
   padding-left: 0px;
@@ -85,7 +85,7 @@ Copyright 2017 New Release
 .box-size {
   width: 90%;
 }
-
+/*used*/
 .list-group-item.info-mid > .glyphicon {
   color: #fff;
 }
