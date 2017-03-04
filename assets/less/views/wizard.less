@@ -1,0 +1,152 @@
+#rootwizard {
+	.nav-tabs {
+		border-bottom: 1px solid #ddd;
+
+		&>li {
+			margin-bottom: 2px;
+
+			a {
+				border: none;
+			}
+
+		}
+
+		&>li.active>a,
+		&>li.active>a:focus,
+		&>li.active>a:hover {
+			border: none;
+		}
+
+		&>li>a:hover {
+			border-radius: 0px;
+			background-color: #F1F3F6 !important;
+			border: none;
+		}
+
+		&.nav-tabs-linetriangle {
+			&> li.active > a:after,
+			&> li.active > a:before {
+				border: medium solid transparent;
+				content: "";
+				height: 0;
+				left: 50%;
+				pointer-events: none;
+				position: absolute;
+				width: 0;
+				z-index: 1;
+				top: 106%;
+			}
+
+			&>li.active > a:before {
+				border-top-color: rgba(0, 0, 0, 0.2);
+				border-width: 11px;
+				margin-left: -11px;
+			}
+
+			&>li.active > a:after {
+				border-top-color: #F1F3F6;
+				border-width: 10px;
+				margin-left: -10px;
+			}
+
+		}
+
+	}
+
+	.nav-pills>li.active>a,
+	.nav-pills>li.active>a:focus,
+	.nav-pills>li.active>a:hover {
+		color: #3498db;
+		background-color: #F1F3F6;
+	}
+
+	.tab-content {
+		background-color: #fff;
+		padding: 1em !important;
+		overflow: hidden;
+
+		.btn-default.active,
+		.btn-default:active,
+		.open > .dropdown-toggle.btn-default {
+			color: #333 !important;
+			background-color: #fff !important;
+			border-color: #ecf0f1 !important;
+		}
+
+		.btn.active.focus,
+		.btn.active:focus,
+		.btn.focus,
+		.btn:active.focus,
+		.btn:active:focus,
+		.btn:focus {
+			outline: none;
+			outline-offset: none;
+		}
+
+		.next-wizard {
+			float: right;
+
+			.glyphicon {
+				color: @white;
+			}
+
+		}
+
+		.prev-config {
+			float: left !important;
+			padding-left: 0px !important;
+			padding-right: 2em !important;
+			color: @white;
+		}
+
+		#submit-wizard {
+			.glyphicon {
+				color: @white;
+			}
+
+		}
+
+		.form-group-default-selectFx {
+			margin-top: 12px;
+		}
+
+		.input-group-addon {
+			padding-bottom: 0px;
+			padding-top: 12px;
+			padding-left: 0px;
+			padding-right: 0px !important;
+		}
+
+		.cvc_parent {
+			margin-top: 0px;
+		}
+
+		.table>tbody>tr>td,
+		.table>tbody>tr>th,
+		.table>tfoot>tr>td,
+		.table>tfoot>tr>th,
+		.table>thead>tr>td {
+			padding: 8px;
+			line-height: 1.42857143;
+			vertical-align: top;
+			border-top: 1px solid #ddd !important;
+			font-weight: 500;
+		}
+
+		.table>thead>tr>th {
+			vertical-align: bottom;
+			border-bottom: 2px solid #ddd !important;
+			font-weight: bold;
+
+			.title {
+				color: #34495E;
+				font-weight: bold;
+				margin: 0;
+				margin-top: 0.7em;
+			}
+
+		}
+
+	}
+
+}
