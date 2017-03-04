@@ -200,6 +200,7 @@
                     box-shadow: none;
                     color: @white;
                     .css-effect(all 0.5s ease);
+                    .placeholder(#fff);
                     background-color: @head-background;
                 }
 
@@ -310,9 +311,28 @@
                 padding: 0.5em 1em;
                 height: auto;
 
-                .body-header {
+                &.body-header {
                     margin-top: 3.8em;
                     .css-effect(all 0.5s ease);
+
+                    .title {
+                        color: #34495E;
+                        font-weight: lighter;
+                    }
+
+                    .page_title {
+                        font-weight: lighter;
+                        color: #6a6c6f;
+                        font-size: 12px;
+                        display: inline-block;
+                        float: right;
+                    }
+
+                }
+
+                &.col-contint-taps {
+                    min-height: 10em;
+                    overflow: hidden;
                 }
 
                 .title {
@@ -322,9 +342,14 @@
                     margin-top: 0.7em;
                 }
 
-                &.col-contint-taps {
-                    min-height: 10em;
-                    overflow: hidden;
+                .form-section {
+                    min-height: 0px;
+                    margin-bottom: 0px;
+                    padding-bottom: 15px;
+                }
+
+                .header-text {
+                    text-align: justify;
                 }
 
             }
@@ -535,6 +560,18 @@
 .no-left-right-padding {
     padding-left: 0em !important;
     padding-right: 0em !important;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.no-padding-left {
+    padding-left: 0px;
+}
+
+.no-padding-right {
+    padding-right: 0px;
 }
 
 .col-lg-12,

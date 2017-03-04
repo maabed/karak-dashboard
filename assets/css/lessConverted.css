@@ -306,7 +306,7 @@ input:not(#flat_email):not(#searchTB):not(.select2-search__field):focus {
   margin: 2em, 10px, 0em, 15px;
 }
 .yes-no-check .btn {
-  padding: 6px, 12px, 6px, 12px;
+  padding: 6px 12px 6px 12px;
 }
 .yes-no-check .btn .active.btn-success {
   background-color: #62d995;
@@ -349,12 +349,6 @@ input:not(#flat_email):not(#searchTB):not(.select2-search__field):focus {
 }
 .danger {
   background-color: #d9534f;
-}
-.no-padding-left {
-  padding-left: 0px;
-}
-.no-padding-right {
-  padding-right: 0px;
 }
 /*colors*/
 /*borders*/
@@ -720,6 +714,15 @@ input {
   transition: all 0.5s ease;
   background-color: #3B97D2;
 }
+#wrapper #head .form-group .icon-addon #searchTB::-webkit-input-placeholder {
+  color: #fff;
+}
+#wrapper #head .form-group .icon-addon #searchTB::-moz-placeholder {
+  color: #fff;
+}
+#wrapper #head .form-group .icon-addon #searchTB:-ms-input-placeholder {
+  color: #fff;
+}
 #wrapper #head .form-group .icon-addon .form-control {
   float: left;
   font-weight: normal;
@@ -809,12 +812,27 @@ input {
   padding: 0.5em 1em;
   height: auto;
 }
-#wrapper #page-content-wrapper .container-fluid .col-contint .body-header {
+#wrapper #page-content-wrapper .container-fluid .col-contint.body-header {
   margin-top: 3.8em;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+#wrapper #page-content-wrapper .container-fluid .col-contint.body-header .title {
+  color: #34495E;
+  font-weight: lighter;
+}
+#wrapper #page-content-wrapper .container-fluid .col-contint.body-header .page_title {
+  font-weight: lighter;
+  color: #6a6c6f;
+  font-size: 12px;
+  display: inline-block;
+  float: right;
+}
+#wrapper #page-content-wrapper .container-fluid .col-contint.col-contint-taps {
+  min-height: 10em;
+  overflow: hidden;
 }
 #wrapper #page-content-wrapper .container-fluid .col-contint .title {
   color: #34495E;
@@ -822,9 +840,13 @@ input {
   margin: 0;
   margin-top: 0.7em;
 }
-#wrapper #page-content-wrapper .container-fluid .col-contint.col-contint-taps {
-  min-height: 10em;
-  overflow: hidden;
+#wrapper #page-content-wrapper .container-fluid .col-contint .form-section {
+  min-height: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 15px;
+}
+#wrapper #page-content-wrapper .container-fluid .col-contint .header-text {
+  text-align: justify;
 }
 #wrapper #Right-Side-Section-Togle {
   border-bottom-left-radius: 5px;
@@ -983,6 +1005,15 @@ input {
 .no-left-right-padding {
   padding-left: 0em !important;
   padding-right: 0em !important;
+}
+.no-padding {
+  padding: 0 !important;
+}
+.no-padding-left {
+  padding-left: 0px;
+}
+.no-padding-right {
+  padding-right: 0px;
 }
 .col-lg-12,
 .col-lg-8,
@@ -2522,7 +2553,8 @@ input:not(#searchTB):not(#flat_email):not(.normal-text):not(.input-mini) {
   }
 }
 .loader1 .circular .path {
-  stroke-dasharray: 1, 200;
+  stroke-dasharray: 1,
+            200;
   stroke-dashoffset: 0;
   animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
 }
@@ -2851,4 +2883,72 @@ td .fa {
 }
 .icons-single-box .col-contint div {
   color: #34495e;
+}
+.group-content {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.group-content .form-select {
+  margin-top: 12px;
+}
+.first-third {
+  padding-left: 0px;
+}
+.first-third .col-contint {
+  min-height: 427px;
+}
+.second-third {
+  padding-left: 0px;
+}
+.second-third .col-contint {
+  min-height: 427px;
+}
+.last-third {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.label-type {
+  font-size: 12px;
+  display: block;
+  font-weight: 500;
+}
+.third-section {
+  padding-bottom: 16px;
+}
+.mediumtitle {
+  color: #3B97D2;
+  margin-top: 0px;
+}
+.yes-no-check {
+  margin-left: 15px;
+  margin-right: 10px;
+  display: inline-block;
+  margin-top: 2em;
+  text-align: justify;
+}
+.datepicker {
+  width: 100%;
+}
+.form-labels {
+  display: block;
+  line-height: 30px;
+  font-size: 13px;
+  font-family: Arial;
+  color: #707A7A;
+  font-weight: 500;
+}
+.dropzone-min {
+  padding-top: 10px;
+  min-height: 410px !important;
+}
+.dropzone-min .dropzone {
+  min-height: 390px;
+}
+.dropzone-min .dropzone .dz-default.dz-message {
+  position: relative;
+  top: 55px;
+}
+.dropzone-min .dropzone .dz-default.dz-message .drop-zone-icon {
+  font-size: 70px;
+  color: #9b9b9b;
 }
