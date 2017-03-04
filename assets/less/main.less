@@ -311,9 +311,27 @@
                 padding: 0.5em 1em;
                 height: auto;
 
-                .body-header {
+                &.body-header {
                     margin-top: 3.8em;
                     .css-effect(all 0.5s ease);
+
+                    .title {
+                        font-weight: 100;
+                    }
+
+                    .page_title {
+                        font-weight: lighter;
+                        color: #6a6c6f;
+                        font-size: 12px;
+                        display: inline-block;
+
+                        &:hover {
+                            text-decoration: none;
+                            cursor: pointer;
+                        }
+
+                    }
+
                 }
 
                 .title {
