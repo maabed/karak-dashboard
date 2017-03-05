@@ -1,52 +1,67 @@
 .list-group {
     padding-left: 0;
     margin-bottom: 20px;
+
     .list-group-item {
         .nav-lbl {
             float: right;
         }
+
         &:first-child {
             border-top-left-radius: 0px !important;
             border-top-right-radius: 0px !important;
         }
+
         .blog-img {
             width: 108px;
             padding-left: 0px;
             margin-left: 0px !important;
         }
+
         .side-line {
             border-left: 4px solid @info-mid;
             margin-left: 15px;
+
             .side-date {
                 line-height: 0px;
             }
+
         }
+
         .list-par {
             font-size: 15px;
             color: #777;
             font-weight: 600;
         }
+
         .list-date {
             font-size: 13px;
             margin-top: 15px;
             margin-bottom: 0px;
         }
+
         .bootstrap-switch {
             border-radius: @no-radius;
+
             .bootstrap-switch-primary {
                 background-color: @info-mid !important;
             }
+
         }
+
         .bootstrap-switch.bootstrap-switch-wrapper {
             float: right;
         }
+
         .event {
             padding-top: 13px;
         }
+
         .title-border {
             border-bottom: 2px solid @info-mid;
             padding-bottom: 5px;
         }
+
         .icon-list-border {
             border: 2px solid @info-mid;
             padding: 7px;
@@ -55,18 +70,28 @@
             top: 15px;
             margin-bottom: 15px;
         }
+
         .box-size {
             width: 90%;
         }
+
     }
+
     .info-mid {
         color: @white;
+
         .glyphicon {
             color: @white;
         }
+
     }
-    .glyphicon {
-        margin-right: 10px;
-        color: #C6C4DB;
+
+    &.glyph-color {
+        .glyphicon {
+            margin-right: 10px;
+            color: #C6C4DB;
+        }
+
     }
+
 }
