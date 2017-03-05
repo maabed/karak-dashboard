@@ -1,87 +1,91 @@
-.table {
-    tr {
-        td,
-        th {
-            border-bottom: @tables-border;
-            border-top: 0 !important;
-            &.content-padding {
-                .padding(20px);
-                font-weight: 100;
-                font-size: 13px;
-                color: @paragraph-color !important;
-                vertical-align: top !important;
-                padding-left: 10px !important;
-                img {
-                    width: 6em;
-                    height: auto;
-                    float: left;
-                    margin-right: 0.6em;
+#active-user,
+#dashed-table,
+#colored-table {
+    &.table {
+        tr {
+            td,
+            th {
+                border-bottom: @tables-border;
+                border-top: 0 !important;
+                &.content-padding {
+                    .padding(20px);
+                    font-weight: 100;
+                    font-size: 13px;
+                    color: @paragraph-color !important;
+                    vertical-align: top !important;
+                    padding-left: 10px !important;
+                    img {
+                        width: 6em;
+                        height: auto;
+                        float: left;
+                        margin-right: 0.6em;
+                    }
                 }
             }
         }
-    }
-    .table-head {
-        .basic-th {
-            color: rgba(0, 0, 0, 0.7);
-            border-bottom-width: 1px !important;
-            font-weight: normal;
-        }
-        .dashboard-th {
-            color: @white;
-        }
-        .colored-table-head {
-            font-weight: normal;
-        }
-    }
-    .users-table-format {
-        .active-user-acount {
-            .css-effect(all 0.5s ease);
-            td {
-                img {
-                    border-left: 4px solid @info-mid !important;
-                }
+        .table-head {
+            .basic-th {
+                color: rgba(0, 0, 0, 0.7);
+                border-bottom-width: 1px !important;
+                font-weight: normal;
             }
-            .active-user-row {
-                color: @info-mid !important;
+            .dashboard-th {
+                color: @white;
+            }
+            .colored-table-head {
+                font-weight: normal;
             }
         }
-        .not-active-user-acount {
-            .css-effect(all 0.5s ease);
-            td {
-                img {
-                    border-left: 4px solid #C6CCCC !important;
-                    filter: grayscale(100%);
-                }
-            }
-        }
-    }
-    &.dashed-row-style {
-        thead {
-            tr {
+        .users-table-format {
+            .active-user-acount {
+                .css-effect(all 0.5s ease);
                 td {
-                    border-left: 0px !important;
+                    img {
+                        border-left: 4px solid @info-mid !important;
+                    }
+                }
+                .active-user-row {
+                    color: @info-mid !important;
                 }
             }
-        }
-        tbody {
-            tr {
+            .not-active-user-acount {
+                .css-effect(all 0.5s ease);
                 td {
-                    border-left: 15px solid @white !important;
-                }
-                .done-task {
-                    text-decoration: line-through;
-                    color: @success-mid !important;
-                }
-                .inprogress-task {
-                    color: @warning-mid !important;
-                }
-                .hold-task {
-                    color: @danger-mid !important;
+                    img {
+                        border-left: 4px solid #C6CCCC !important;
+                        filter: grayscale(100%);
+                    }
                 }
             }
         }
-    }
-    &.table-hover {
-        margin-top: 8px;
+        &.dashed-row-style {
+            thead {
+                tr {
+                    td {
+                        border-left: 0px !important;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        border-left: 15px solid @white !important;
+                    }
+                    .done-task {
+                        text-decoration: line-through;
+                        color: @success-mid !important;
+                    }
+                    .inprogress-task {
+                        color: @warning-mid !important;
+                    }
+                    .hold-task {
+                        color: @danger-mid !important;
+                    }
+                }
+            }
+        }
+        &.table-hover {
+            margin-top: 8px;
+        }
     }
 }
