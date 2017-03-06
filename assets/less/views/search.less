@@ -1,38 +1,34 @@
 .icon-addon {
-	position: relative;
-	color: #555;
-	display: block;
-
-	.fa,
-	.glyphicon {
-		position: absolute;
-		color: #C6C4DB;
-		z-index: 2;
-		left: 10px;
-		font-size: 14px;
-		width: 20px;
-		margin-left: -2.5px;
-		text-align: center;
-		padding: 10px 0;
-		top: 1px;
-		.css-effect(all 0.3s ease-in-out);
-	}
-
-	.serach-input {
-		padding-left: 30px;
-		padding-bottom: 0px;
-		float: left;
-		font-weight: normal;
-	}
-
-	&:after,
-	&:before {
-		display: table;
-		content: " ";
-	}
-
-	&:after {
-		clear: both;
-	}
-
+    position: relative;
+    color: #555;
+    display: block;
+    overflow:hidden;
+    .fa,
+    .glyphicon {
+        position: absolute;
+        color: @nav-icon-color;
+        z-index: 2;
+        left: 10px;
+        font-size: 14px;
+        width: 20px;
+        margin-left: -2.5px;
+        text-align: center;
+        padding: 10px 0;
+        top: 1px;
+        .css-effect(all 0.3s ease-in-out);
+    }
+    .serach-input {
+        padding-bottom: 0px;
+        float: left;
+        font-weight: normal;
+        padding-left: 2em !important;
+    }
+    &:after,
+    &:before {
+        display: table;
+        content: " ";
+    }
+    &:after {
+        clear: both;
+    }
 }
