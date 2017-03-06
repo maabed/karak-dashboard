@@ -5,32 +5,36 @@ Author: New Release
 http://newrelease.io
 Copyright 2017 New Release
 */
-#sidebar-wrapper {
-  background-color: #2a2e34;
-}
+/*used*/
+ #sidebar-wrapper {
+   background-color: #2a2e34;
+   overflow:hidden;
+ }
+/*used*/
+ #head {
+   background-color: #3B97D2;
+ }
+/*used*/
+ #searchTB {
+   background-color: #3B97D2;
+ }
+/*used*/
+ .sidebar-nav li a {
+   -webkit-transition: all 0.5s ease;
+   -moz-transition: all 0.5s ease;
+   -o-transition: all 0.5s ease;
+   transition: all 0.5s ease;
+ }
+/*used*/
+ .sidebar-nav li a:hover {
+   color: #fff;
+ }
+/*used*/
+ .nav-icon {
+   color: #909195;
+ }
 
-#head {
-  background-color: #3B97D2;
-}
 
-#searchTB {
-  background-color: #3B97D2;
-}
-
-.sidebar-nav li a {
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.sidebar-nav li a:hover {
-  color: #fff;
-}
-
-.nav-icon {
-  color: #909195;
-}
 
 .user-box p {
   color: #fff;
@@ -45,99 +49,100 @@ Copyright 2017 New Release
   color: #fff;
   border-bottom: 0 !important;
 }
-
-.left-side-header {
-  width: 100%;
-  color: #fff;
-  padding: 1em 0em;
+/*used*/
+ .left-side-header {
+   width: 100%;
+   color: #fff;
+   padding: 1em 0em;
+ }
+/*used*/
+ .chat-user-info:hover {
+   background-color: #22252b;
+ }
+/*used*/
+ .left-side-header i {
+   float: right;
+   margin: 0.35em 1em 0em 0em;
+ }
+/*used*/
+ .left-side-header h4 {
+   margin: 0;
+   text-indent: 20px;
 }
+/*used*/
+ .left-side-header .fa-circle-o {
+   color: #71c38f;
+ }
+/*used*/
+ .sidebar-nav {
+   position: relative;
 
-.chat-user-info:hover {
-  background-color: #22252b;
-}
-
-.left-side-header i {
-  float: right;
-  margin: 0.35em 1em 0em 0em;
-}
-
-.left-side-header h4 {
-  margin: 0;
-  text-indent: 20px;
-}
-
-.left-side-header .fa-circle-o {
-  color: #71c38f;
-}
-
-.sidebar-nav {
-  position: relative;
-}
-
-.left-side-header img {
-  border: 1px solid #dcdcdc;
-  border-radius: 0px;
-  width: 100%;
-  height: auto;
+ }
+/*used*/
+ .left-side-header img {
+   border: 1px solid #dcdcdc;
+   border-radius: 0px;
+   width: 100%;
+   height: auto;
   float: left;
-}
-
-.left-side-header h5,
-.left-side-header p {
-  color: #909195;
-  text-align: left;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6em;
-}
-
-.chat-user-info {
-  margin-top: 1em;
-  padding: 1em 0em;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  cursor: pointer;
-}
-
-.sidebar-nav li a {
-  color: #909195;
-}
-
-.sidebar-nav .selected a {
-  background-color: #363d45 !important;
-  color: #fff !important;
-}
-
-.sidebar-nav .selected a i {
-  color: #fff;
-}
-
-.sidebar-nav li:hover {
-  color: #fff !important;
-  background-color: #2a2e34;
-}
-
-.Submenue {
-  background-color: #2e3238;
-  width: 100% !important;
-  padding-left: 0 !important;
-  display: block;
-}
-
-.submenu-li a {
-  background-color: #2e3238 !important;
-}
-
-.submenu-li a:hover {
-  color: #fff !important;
-}
-
-.sidebar-nav li a .LeftArrow {
-  font-size: 1em;
-  margin: 1em 1.15em 0em 0em !important;
-}
+ }
+/*used*/
+ .left-side-header h5,
+ .left-side-header p {
+   color: #909195;
+   text-align: left;
+   margin: 0;
+   padding: 0;
+   line-height: 1.6em;
+ }
+/*used*/
+ .chat-user-info {
+   margin-top: 1em;
+   padding: 1em 0em;
+   -webkit-transition: all 0.5s ease;
+   -moz-transition: all 0.5s ease;
+   -o-transition: all 0.5s ease;
+   transition: all 0.5s ease;
+   cursor: pointer;
+ }
+/*used*/
+ .sidebar-nav li a {
+   color: #909195;
+ }
+/*used*/
+ .sidebar-nav .selected a {
+   background-color: #363d45 !important;
+   color: #fff !important;
+ }
+/*used*/
+ .sidebar-nav .selected a i {
+   color: #fff;
+ }
+/*used*/
+ .sidebar-nav li:hover {
+   color: #fff !important;
+   background-color: #2a2e34;
+ }
+/*used*/
+ .Submenue {
+   background-color: #2e3238;
+   width: 100% !important;
+   padding-left: 0 !important;
+   display: block;
+ }
+/*used*/
+ .submenu-li a {
+   background-color: #2e3238 !important;
+ }
+/*used*/
+ .submenu-li a:hover {
+   color: #fff !important;
+ }
+/*used*/
+ .sidebar-nav li a .LeftArrow {
+   font-size: 1em;
+   margin: 1em 1.15em 0em 0em !important;
+ }
 
 .threads a {
   color: #909195;
@@ -176,121 +181,122 @@ Copyright 2017 New Release
 #chat-navbar .chat-nav-icon {
   font-size: 0.5 !important;
 }
+/*used*/
+ .active-user {
+   color: #71c38f;
+ }
+/*used*/
+ .margin-btn {
+   margin-bottom: 1em;
+ }
+/*used*/
+ .icon-color {
+   color: #909195;
+ }
+/*used*/
+ .chat-header-list {
+   list-style: none;
+   float: left;
+   margin: 0;
+   padding: 0;
+ }
+/*used*/
+ .chat-header-list li {
+   float: left;
+   color: #fff;
+   height: 1.3em;
+   overflow: hidden;
+ }
+/*used*/
+ .left-side-chat-lest ul {
+   margin-left: 1em;
+ }
+/*used*/
+ .left-side-chat-lest li {
+   padding: 0em 0.8em;
+   border-right: 1px solid #fff;
+ }
+/*used*/
+ .right-side-chat-lest li {
+   padding: 0em 0.5em;
+ }
+/*used*/
+ .right-side-chat-lest {
+   width: auto !important;
+   float: right;
+   padding-right: 265px !important;
+ }
+/*used*/
+ .left-side-chat-lest li:last-child {
+   border-right: 0;
+ }
+/*used*/
+ .chat-header-list li a {
+   color: #fff;
+   -webkit-transition: all 0.5s ease;
+   -moz-transition: all 0.5s ease;
+   -o-transition: all 0.5s ease;
+   transition: all 0.5s ease;
+ }
+/*used*/
+ .chat-head-container .col-sm-6 {
+   margin-top: 0.45em;
+ }
+/*used*/
+ .chat-head-container .col-sm-6 h4 {
+   float: left;
+   margin: 0 !important;
+   color:#fff;
+   padding: 0;
+ }
+/*used*/
+ .chat-header-list li a i {
+   float: left;
+   margin-right: 0.5em;
+   margin-top: 0.1em;
+ }
+/*used*/
+ .chat-header-list li a p {
+   color: #fff;
+   float: right;
+   font-weight: lighter;
+ }
 
-.active-user {
-  color: #71c38f;
-}
-
-.margin-btn {
-  margin-bottom: 1em;
-}
-
-.icon-color {
-  color: #909195;
-}
-
-.chat-header-list {
-  list-style: none;
-  float: left;
-  margin: 0;
-  padding: 0;
-}
-
-.chat-header-list li {
-  float: left;
-  color: #fff;
-  height: 1.3em;
-  overflow: hidden;
-}
-
-.left-side-chat-lest ul {
-  margin-left: 1em;
-}
-
-.left-side-chat-lest li {
-  padding: 0em 0.8em;
-  border-right: 1px solid #fff;
-}
-
-.right-side-chat-lest li {
-  padding: 0em 0.5em;
-}
-
-.right-side-chat-lest {
-  width: auto !important;
-  float: right;
-  padding-right: 265px !important;
-}
-
-.left-side-chat-lest li:last-child {
-  border-right: 0;
-}
-
-.chat-header-list li a {
-  color: #fff;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.chat-head-container .col-sm-6 {
-  margin-top: 0.45em;
-}
-
-.chat-head-container .col-sm-6 h4 {
-  float: left;
-  margin: 0;
-  padding: 0;
-}
-
-.chat-header-list li a i {
-  float: left;
-  margin-right: 0.5em;
-  margin-top: 0.1em;
-}
-
-.chat-header-list li a p {
-  color: #fff;
-  float: right;
-  font-weight: lighter;
-  margin-top: 0.1em;
-}
-
-.not-activ {
-  color: #a8d3ef;
-}
-
+ /*used*/
+ .not-activ {
+   color: #a8d3ef;
+ }
+/*used*/
 #head .form-group {
   width: auto;
   float: left;
   margin-left: 0em;
   margin-top: -0.7em;
 }
-
+/*used*/
 .form-group {
   margin-bottom: 0;
 }
-
+/*used*/
 .fa-ellipsis-v {
   color: #fff;
   float: right;
   margin-top: 0.2em;
 }
-
+/*used*/
 .left-side-header .row .col-sm-10 .chat-user-img {
   margin-left: 0.5em;
 }
-
+/*used*/
 #sidebar-wrapper {
   margin-top: 0px !important;
 }
-
+/*used*/
 .right-side-logo img {
   width: 12em;
   margin: 0 auto;
 }
-
+/*used*/
 .right-side-logo {
   background-color: #22252b;
   padding: 12px 20px;
@@ -298,67 +304,68 @@ Copyright 2017 New Release
   position: fixed;
   bottom: 0em;
 }
-
+/*used*/
 .chat-cotainer {
   background-color: #fff;
   width: 100%;
   height: 100%;
-  padding-top: 6em;
+  position:relative;
 }
-
+/*used*/
 .chat-cotainer h2 {
   color: #515151;
   font-weight: bold;
+  padding-top:2em;
 }
-
+/*used*/
 .chat-cotainer h4 {
   color: #878787;
   font-weight: lighter;
 }
-
+/*used*/
 .chat-user-link {
   color: #71c38f;
   text-decoration: underline;
   margin-right: 0.3em;
 }
-
+/*used*/
 .chat-chanel-link {
   color: #67b2e4;
   text-decoration: underline;
   margin-right: 0.3em;
 }
-
+/*used*/
 .chat-cotainer h4 {
-  line-height: 1.6;
+  line-height: 1.1;
   margin: 0 !important;
   font-size: 1.2em;
 }
-
+/*used*/
 .chat-actions .col-sm-4 a {
   color: #67b2e4;
   text-decoration: none;
   text-align: left
 }
-
+/*used*/
 .chat-actions .col-sm-4 a i {
   margin-right: 0.5em;
 }
-
+/*used*/
 .chat-actions .col-sm-4 a {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-
+/*used*/
 .chat-actions .col-sm-4 a:hover {
   text-decoration: underline;
 }
-
+/*used*/
 .chat-actions {
   margin: 2em 0em;
 }
-
+/*used*/
 .chat-time h5 {
   text-align: center;
   background-color: #fff;
@@ -370,7 +377,7 @@ Copyright 2017 New Release
   color: #2a2e34;
   font-weight: lighter;
 }
-
+/*used*/
 .chat-time hr {
   margin-top: -1.4em;
 }
@@ -378,17 +385,17 @@ Copyright 2017 New Release
 .single-chat-message {
   margin: 1em 0em;
 }
-
+/*used*/
 .post-image-row img {
   border-radius: 0 !important;
   border: 1px solid #67b2e4;
+  margin-right: 15px;
 }
-
+/*used*/
 .chat-video {
-  width: 100%;
   border: 1px solid #eee;
 }
-
+/*used*/
 .post-desc li {
   list-style: none;
   float: left;
@@ -397,50 +404,49 @@ Copyright 2017 New Release
   border-right: 1px solid #b5b5b5;
   padding: 0em 0.5em;
 }
-
+/*used*/
 .post-desc {
   margin: 0 !important;
   padding: 0 !important;
 }
-
+/*used*/
 .post-desc li:last-child {
   border-right: 0px solid #b5b5b5;
 }
-
+/*used*/
 .post-desc li:first-child {
   padding: 0em 0.5em 0em 0em;
 }
-
+/*used*/
 .fa-youtube-play {
   color: #ed796d;
 }
-
+/*used*/
 .border-left-style {
   border-left: 3px solid #d8d8d8 !important;
   padding-left: 1em;
-}
-
+}/*used*/
 .chat-input {
-  bottom: 0;
-  position: fixed;
+  position: absolute;
+  bottom: 0em;
   z-index: 999999;
-  width: 85%;
+  width: 100%;
   background-color: #fff;
-  margin: 0 auto;
   padding: 1em;
+   margin-bottom: auto;
 }
-
+/*used*/
 .chat-border {
   border: 1px solid #d3d3d3;
 }
-
+/*used*/
 .add-file-btn {
   border: 0 !important;
   border-right: 1px solid #d3d3d3 !important;
   color: #686868 !important;
   padding: 1.1em;
 }
-
+/*used*/
 .add-omg-btn {
   border: 0 !important;
   border-left: 1px solid #d3d3d3 !important;
@@ -448,14 +454,14 @@ Copyright 2017 New Release
   padding: 1.1em;
   float: right;
 }
-
+/*used*/
 .add-omg-btn:hover {
   border-left: 1px solid #d3d3d3 !important;
 }
-
+/*used*/
 .add-file-btn:hover {
   border-right: 1px solid #d3d3d3 !important;
-}
+}/*used*/
 
 .chat-message-input {
   font-weight: lighter;
@@ -463,18 +469,34 @@ Copyright 2017 New Release
   padding: 1em 0em;
   width: 60%;
 }
-
-.post-image-row {
-  padding-right: 1em;
+/*used*/
+.msg-details {
+  display: table
 }
-
+/*used*/
+.sender-avatar {
+  float: left;
+}
+/*used*/
+.post-image-row {
+  display: inline;
+}
+/*used*/
+.msg-content {
+  display: inline;
+}
+/*used*/
+.msg-text {
+  display: table;
+}
+/*used*/
 .no-margin {
   margin: 0 !important;
   float: none !important;
   font-size: 1em;
   padding-left: 1.2em;
 }
-
+/*used*/
 .user-info-box {
   left: 1.5em;
   top: 9.1em;
@@ -484,7 +506,7 @@ Copyright 2017 New Release
   position: absolute static;
   z-index: 999999;
 }
-
+/*used*/
 #eventclassName {
   width: 100%;
   border: 0 !important;
@@ -493,11 +515,11 @@ Copyright 2017 New Release
   outline: none !important;
   box-shadow: none !important;
 }
-
+/*used*/
 #eventclassName:focus {
   outline: none !important;
 }
-
+/*used*/
 .user-info-content {
   padding: 0.6em 0.6em !important;
 }
@@ -570,11 +592,11 @@ Copyright 2017 New Release
 .modal-close {
   float: left
 }
-
+/*used*/
 .modal-content {
   border-radius: 0px;
 }
-
+/*used*/
 .modal-preview {
   color: #888888;
   position: relative;
@@ -590,7 +612,7 @@ Copyright 2017 New Release
   transition: all 0.5s ease;
   cursor: pointer;
 }
-
+/*used*/
 #myModal2 > .modal-dialog > .modal-content {
   border-top: 0px;
 }
@@ -659,15 +681,15 @@ Copyright 2017 New Release
   -webkit-transform: translateY(-140%);
   transform: translateY(-140%);
 }
-
+/*used*/
 .custome-margin {
   margin-top: 40%;
 }
-
+/*used*/
 .right-modal-content {
   text-align: center;
 }
-
+/*used*/
 .right-button {
   width: 50%;
   margin-bottom: 10px;
@@ -791,14 +813,17 @@ input[type=email]:not(#searchTB):not(.chat-message-input):not(#flat_email)+label
   display: none;
 }
 
-.chat-back {
-  background-color: #2a2e34 !important;
-  border: none;
-  margin-left: 40px;
-}
 
 .open-sub {
   display: inline;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0px;
 }
 
 .back-border {
@@ -839,25 +864,97 @@ input:not(#searchTB):not(.chat-message-input):not(.chat-message-input):focus {
 #invite {
   width: 100%;
 }
-
+/*used*/
+.message-box{
+  position:relative;
+  height:100vh;
+  overflow:scroll;
+}
+/*used*/
+footer{
+  position: absolute;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-height: 70px;
+}
+/*All Media Queries used*/
 @media(max-width:1129px) {
   .right-side-chat-lest {
-    padding-right: 0px !important;
-    width: auto;
-    float: left;
+    padding-right: 0px !important;     width: auto;   float: left;
   }
 
-  #searchTB {
+#searchTB {
     width: 13em;
-  }
+ }
+
 
 }
 
 .border-left-style a {
   color: #67b2e4;
 }
+.hvr-icon-back{
+  margin:0!important;
+  width:6em;
+  padding-left:0 !important;
+  margin-left:-1em !important;
+  color:#909195 !important;
+  font-size:1em;
+
+}
+@media(max-width:767px) {  
+  .chat-input {
+  width: 100%;
+}
+.right-side-chat-lest li{
+  padding:0 !important;
+}
+.chat-header-list li{
+  padding:0;
+  margin:0;}
+
+.right-side-chat-lest .chat-header-list li{
+text-align:right;
+  float:right;
+  padding-left:2em !important;
+}
+.chat-header-list li a i{
+  margin-right: 0 !important;
+}
+
+.left-side-chat-lest .chat-header-list li{
+  text-align:left;
+  float:left;
+  padding:0em 1em !important;}
+
+#menu-toggle{
+  margin:0.5em 1em 0em 1em !important;
+}
+
+.left-side-chat-lest li {
+  border-right: 0px !important;
+}
+
+}
 
 @media(max-width:700px) {
+  .left-side-chat-lest, .right-side-chat-lest{
+    width:45% !important;
+    padding:0 !important;
+    margin:0 !important;
+    float:left;
+  }
+
+  .left-side-chat-lest ul {
+  margin-left: 0em;
+}
+
+  .left-side-chat-lest li {
+    padding: 0em;
+  }
+
   .right-side-chat-lest {
     padding-right: 5px !important;
     position: absolute;
@@ -881,5 +978,4 @@ input:not(#searchTB):not(.chat-message-input):not(.chat-message-input):focus {
   .chat-header-list li a p {
     display: none;
   }
-
 }
