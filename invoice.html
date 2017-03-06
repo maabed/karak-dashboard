@@ -12,12 +12,11 @@
         <link type="text/css"  href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
         <!-- Bootstrap Core CSS -->
         <link type="text/css"  href="assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Custom CSS -->
-        <link type="text/css"  href="assets/css/styles.css" rel="stylesheet" />
+        
         <!-- Font Awesome library -->
         <link type="text/css"  href="assets/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
-        <!-- Invoice page CSS -->
-        <link type="text/css"  href="assets/less/imports.less" rel="stylesheet">
+      <!-- Blue Dashboard core CSS -->
+        <link type="text/css" href="assets/css/lessConverted.css" rel="stylesheet" />
     </head>
     <body>
         <div id="wrapper">
@@ -343,7 +342,7 @@
                 </div>
             </div>
             <!-- Page Content -->
-            <div id="page-content-wrapper">
+            <div id="page-content-wrapper" class="invoice-main-class">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12">
@@ -421,7 +420,7 @@
                                     </table>
                                 </div>
                                 <div class="col-sm-4">
-                                    <table class="table-head-info fr">
+                                    <table class="table-head-info pull-right">
                                         <tr>
                                             <td>
                                                 <h3> Billed To :</h3>
@@ -492,13 +491,13 @@
                                                 <td>1</td>
                                                 <td>$2951.00</td>
                                             </tr>
-                                            <tr>
+                                            <tr class="no-background">
                                                 <td class="sub-total" colspan="2">
                                                 </td>
                                                 <td class="sub-total top-sub">
                                                     <b>Subtotal</b>
                                                 </td>
-                                                <td class="top-sub">
+                                                <td class="sub-total top-sub">
                                                     <b>$9860.00</b>
                                                 </td>
                                             </tr>
@@ -508,7 +507,7 @@
                                                 <td class="sub-total">
                                                     <b>Deduction From Salary :</b>
                                                 </td>
-                                                <td>
+                                                <td class="sub-total">
                                                     <b>$2190.00</b>
                                                 </td>
                                             </tr>
@@ -518,7 +517,7 @@
                                                 <td class="sub-total">
                                                     <b>Total :</b>
                                                 </td>
-                                                <td>
+                                                <td class="sub-total">
                                                     <b>$9860.00</b>
                                                 </td>
                                             </tr>
