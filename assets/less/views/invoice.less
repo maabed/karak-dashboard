@@ -1,77 +1,102 @@
-.dashboard-info {
-	margin-bottom: 0px;
+#wrapper {
+    #page-content-wrapper.invoice-main-class {
+        .container-fluid {
+            .row {
+                .col-contint {
+                    .col-sm-8 {
+                        .table-head-info {
+                            tbody {
+                                tr {
+                                    td {
+                                        padding: 0.3em;
+                                        h3 {
+                                            color: @title-color;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &.invoice-title {
+                            color: @title-color;
+                            border-bottom: 4px solid @head-background;
+                            padding-bottom: 1.4em;
+                        }
+                    }
+                    .col-sm-4 {
+                        table {
+                            width: 80%;
+                            float: right;
+                            margin-top: 0.6em;
+                            tbody {
+                                tr {
+                                    td {
+                                        padding: 0.4em 0em;
+                                        &.gray-color {
+                                            color: #878787;
+                                        }
+                                        h3 {
+                                            color: @title-color;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .col-sm-12 {
+                        h3.table-title {
+                            color: @title-color;
+                        }
+                        table.table-bordered {
+                            margin-bottom: 0 !important;
+                            padding-bottom: 0 !important;
+                            .table-head {
+                                tr {
+                                    th {
+                                        color: @head-background;
+                                        font-weight: bold !important;
+                                    }
+                                }
+                            }
+                            tbody {
+                                tr {
+                                    &.no-background {
+                                        .sub-total {
+                                            border-color: @white !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
-.inline-header {
-	display: inline;
-	vertical-align: -webkit-baseline-middle;
+
+
+/* move to main */
+
+.outline-icon-btn span {
+    float: right;
+    padding-left: 2em;
+    padding-top: 0.1em;
 }
-.contint-padding {
-	border-bottom: 1px solid #e4e5e7;
-	padding-bottom: 15px;
-	padding-top: 15px;
-}
-.sub-text {
-	color: #777777;
-	font-size: 13px;
-}
-.cont-header-container {
-	border: 1px solid #e4e5e7;
-}
-.body-padding {
-	padding-left: 20px;
-	padding-right: 20px;
-}
-.sub-info {
-	margin-top: 15px;
-}
-.sub-info-details {
-	margin-bottom: 5px;
-	margin-top: 5px;
-}
-.details-right {
-	text-align: right;
-}
-.details-center {
-	text-align: center;
-}
-.helper-color {
-	color: #cccccc;
-}
-.invoice-info {
-	tr {
-		td {
-			padding: 0px;
-		}
-	}
-}
-.table-head-info {
-	tr {
-		td {
-			padding: 0px;
-		}
-	}
-}
-.table-bordered>tbody>tr>td, .table-bordered>tbody>tr, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr, .table-bordered>thead>tr>td, .table-bordered>thead>tr  {
-	border: none;
-}
-.table-bordered {
-	border: none;
-}
-th {
-	border-bottom: 1px solid #E4E5E7 !important;
-	border: none !important;
-	color: #333333;
-	font-size: 15px;
-}
-.table-title {
-	margin-top: 35px;
-}
-.sub-total>button {
-	margin-left: 58%;
-}
-.top-sub {
-	border-top: 1px solid #E4E5E7 !important;
-}
-.custom-margin-left {
-	margin-left: 79%;
+
+@media print {
+    #sidebar-wrapper {
+        display: none;
+    }
+    #head {
+        display: none;
+    }
+    #PageTitle {
+        display: none;
+    }
+    #Right-Side-Section-Togle {
+        display: none;
+    }
+    .btn {
+        display: none;
+    }
 }

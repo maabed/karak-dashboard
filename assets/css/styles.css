@@ -3013,17 +3013,17 @@ color: #fff !important;
 input[type="email"]#searchTB::-webkit-input-placeholder {
 color: #fff !important;
 }
-
+/*used*/
 .invoice-title {
 color: #34495E;
 border-bottom: 4px solid #3B97D2;
 padding-bottom: 1.4em;
 }
-
+/*used*/
 .gray-color {
 color: #878787;
 }
-
+/*used*/
 .invoice-info {
 width: 80%;
 float: right;
@@ -3034,7 +3034,7 @@ margin-top: 0.6em;
 float: right;
 width: 80%;
 }
-
+/*used*/
 .invoice-info tr td {
 padding: 0.4em 0em;
 }
@@ -3042,11 +3042,11 @@ padding: 0.4em 0em;
 .table-head-info tr td {
 padding: 0.3em;
 }
-
+/*used*/
 .table-head-info h3 {
 color: #34495E;
 }
-
+/*used*/
 .table-title {
 color: #34495E;
 }
@@ -3357,7 +3357,7 @@ padding: 0.4em 0.6em !important;
 text-align: left !important;
 font-size: 1em !important;
 }
-
+/*used*/
 .outline-icon-btn span {
 float: right;
 padding-left: 2em;
@@ -3889,24 +3889,25 @@ height: 32em;
 }
 
 }
-
+/*used*/
 @media print {
+  /*used*/
 #sidebar-wrapper {
   display: none;
 }
-
+/*used*/
 #head {
   display: none;
 }
-
+/*used*/
 #PageTitle {
   display: none;
 }
-
+/*used*/
 #Right-Side-Section-Togle {
   display: none;
 }
-
+/*used*/
 .btn {
   display: none;
 }
