@@ -1,9 +1,33 @@
 .all-income {
     text-align: center;
     color: #626262;
-    h3 {
+    h3,
+    h2 {
         font-weight: lighter;
+    }
+    h3 {
         color: @info-mid;
+    }
+}
+
+.acc-managment-chart,
+.acc-managment-transactions {
+    .no-left-right-padding {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        .col-contint {
+            #translateform {
+                .top-margin {
+                    margin-top: 0.5em !important;
+                    .col-sm-6 {
+                        .transaction-drop {
+                            margin-bottom: 0px !important;
+                            margin-top: 9px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -90,5 +114,14 @@
             padding-left: 2em;
             padding-top: 0.1em;
         }
+    }
+}
+
+
+/*move to main*/
+
+@media print {
+    .hide-on-print {
+        display: none;
     }
 }
