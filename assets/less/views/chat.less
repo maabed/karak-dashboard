@@ -2,10 +2,25 @@
     #sidebar-wrapper.chat-view-navbar {
         background-color: #2a2e34;
         margin-top: 0px !important;
-
-            .left-side-header {
-                width: 100%;
-                color: @white;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        .left-side-header {
+            width: 100%;
+            color: @white;
+            padding: 1em 0em;
+            h4 {
+                margin: 0;
+                text-indent: 20px;
+            }
+            i {
+                float: right;
+                margin: 0.35em 1em 0em 0em;
+            }
+            .icon-color {
+                color: @chat-nav-color;
+            }
+            .chat-user-info {
+                margin-top: 1em;
                 padding: 1em 0em;
                 .css-effect(all 0.5s ease);
                 cursor: pointer;
@@ -110,31 +125,26 @@
                         background-color: #2a2e34;
                     }
                 }
-
-            .right-side-logo {
-                background-color: #22252b;
-                padding: 12px 20px;
-                width: 18.9em;
-                position: fixed;
-                bottom: 0em;
-
-                .col-sm-12 {
-                    a.chat-back {
-                        background-color: #22252b !important;
-                        border: none;
-                        margin: 0 !important;
-                        width: 6em;
-                        padding-left: 0 !important;
-                        margin-left: -1em !important;
-                        color: @chat-nav-color !important;
-                        font-size: 1em;
-                    }
-
-                    img {
-                        width: 12em;
-                        margin: 0 auto;
-                    }
-
+            }
+        }
+        .left-side-footer {
+            background-color: #22252b;
+            padding: 12px 20px;
+            width: 18.9em;
+            position: fixed;
+            bottom: 0em;
+            a {
+                background-color: #22252b !important;
+                border: none;
+                margin: 0 !important;
+                width: 6em;
+                padding-left: 0 !important;
+                margin-left: -1em !important;
+                color: @chat-nav-color !important;
+                font-size: 1em;
+                p {
+                    margin-left: 1.5em !important;
+                    font-size: 1em !important;
                 }
             }
             img {
@@ -317,9 +327,18 @@
             position: relative;
             height: 100vh;
             overflow: scroll;
-            padding-top: 70px;
-            padding-bottom: 70px;
-
+            padding-top: 4em;
+            padding-bottom: 4em;
+            .chat-channel-link {
+                color: @info-mid;
+                text-decoration: underline;
+                margin-right: 0.3em;
+            }
+            .chat-user-link {
+                color: #71c38f;
+                text-decoration: underline;
+                margin-right: 0.3em;
+            }
             h2 {
                 color: #515151;
                 font-weight: bold;
@@ -365,7 +384,6 @@
             ul {
                 li {
                     list-style: none;
-
                     .post-image-row {
                         display: inline;
                         img.sender-avatar {
