@@ -4464,7 +4464,7 @@ body.landing-page-container .owl-theme .owl-nav [class*=owl-] {
 #wrapper #sidebar-wrapper.chat-view-navbar .scroll .right-side-logo .col-sm-12 a.chat-back {
   background-color: #22252b !important;
   border: none;
-  margin: 0!important;
+  margin: 0 !important;
   width: 6em;
   padding-left: 0 !important;
   margin-left: -1em !important;
@@ -5673,7 +5673,11 @@ body.landing-page-container .owl-theme .owl-nav [class*=owl-] {
 }
 .social-left-section .margin-top,
 .social-right-section .margin-top {
+<<<<<<< HEAD
+  margin-top: 3.8em;
+=======
   margin-top: 4.9em;
+>>>>>>> a28ceaeeb2db3262efb9d9c30a0f2609790d1deb
 }
 .social-left-section .margin-top .single-trending-content,
 .social-right-section .margin-top .single-trending-content {
