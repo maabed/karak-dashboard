@@ -408,7 +408,7 @@ input.ch-toggle-green:checked + label:after {
   padding: 15px;
 }
 /*used*/
-.form-section {
+.section-label {
   min-height: 0px;
   margin-bottom: 0px;
   padding-bottom: 15px;
@@ -629,7 +629,7 @@ select.empty {
   width: 300px !important;
 }
 
-.label-type {
+.input-label {
   font-size: 12px;
   display: block;
 }
@@ -741,7 +741,7 @@ label {
   color: rgba(204, 204, 204, 0.6) !important;
 }
 
-.col-contint.DragNdrop>.title.form-section.largetitle {
+.col-contint.DragNdrop>.title.section-label.largetitle {
   padding-bottom: 16px !important;
 }
 

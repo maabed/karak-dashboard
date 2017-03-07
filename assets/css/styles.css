@@ -1107,7 +1107,7 @@ hr {
 }
 
 /*used*/
-.col-contint-taps {
+.content-overflow {
   min-height: 10em;
   overflow: hidden;
 }
