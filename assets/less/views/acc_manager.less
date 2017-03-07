@@ -1,127 +1,147 @@
-.all-income {
+.acc_manager-page {
+  .all-income {
     text-align: center;
     color: #626262;
+
     h3,
     h2 {
-        font-weight: lighter;
+      font-weight: lighter;
     }
+
     h3 {
-        color: @info-mid;
+      color: @info-mid;
     }
-}
 
-.acc-managment-chart,
-.acc-managment-transactions {
-    .no-left-right-padding {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-        .col-contint {
-            #translateform {
-                .top-margin {
-                    margin-top: 0.5em !important;
-                    .col-sm-6 {
-                        .transaction-drop {
-                            margin-bottom: 0px !important;
-                            margin-top: 9px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+  }
 
-.acc-personal-info {
+  .acc-personal-info {
     color: rgba(0, 0, 0, 0.51) !important;
     font-weight: lighter;
+
     .title {
-        text-align: center;
+      text-align: center;
     }
+
     img {
-        border: 2px solid @info-mid;
-        border-radius: 180px;
-        margin: 0 auto;
-        width: 8em;
-        height: auto;
+      border: 2px solid @info-mid;
+      border-radius: 180px;
+      margin: 0 auto;
+      width: 8em;
+      height: auto;
     }
+
     h4 {
-        font-weight: lighter;
-        color: @info-mid;
-        text-align: center;
+      font-weight: lighter;
+      color: @info-mid;
+      text-align: center;
     }
+
     .user-acc-info {
-        span {
-            text-align: left !important;
-            line-height: 2.2em;
-            color: rgba(0, 0, 0, 0.51) !important;
-            font-size: 1em;
-            i {
-                color: @info-mid;
-                margin-right: 0.5em;
-            }
+      span {
+        text-align: left !important;
+        line-height: 2.2em;
+        color: rgba(0, 0, 0, 0.51) !important;
+        font-size: 1em;
+
+        i {
+          color: @info-mid;
+          margin-right: 0.5em;
         }
-        label {
-            font-weight: lighter;
-        }
-    }
-    .change-acc-select {
-        color: @info-mid;
+
+      }
+
+      label {
         font-weight: lighter;
-        margin-top: 1em;
+      }
+
     }
+
+    .change-acc-select {
+      color: @info-mid;
+      font-weight: lighter;
+      margin-top: 1em;
+    }
+
     .select2.select2-container.select2-container--default {
-        width: 100% !important;
+      width: 100% !important;
     }
-}
 
-.datepicker-here {
-    .datepicker-inline {
-        .datepicker {
-            border: none;
-            width: 100%;
-            .datepicker--nav-action {
-                path {
-                    stroke: rgba(0, 0, 0, 0.07) !important;
-                }
-            }
-            .datepicker--nav-title {
-                color: @info-mid;
-                font-weight: lighter !important;
-            }
+  }
+
+  .acc-managment-chart,
+  .acc-managment-transactions {
+    .no-left-right-padding {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+
+      #translateform {
+        .top-margin {
+          margin-top: 0.5em !important;
+
+          .transaction-drop {
+            margin-bottom: 0px !important;
+            margin-top: 9px;
+          }
+
         }
-    }
-}
 
-.acc-report {
+      }
+
+    }
+
+  }
+
+  .datepicker-here {
+    .datepicker {
+      border: none;
+      width: 100%;
+
+      .datepicker--nav-action {
+        path {
+          stroke: rgba(0, 0, 0, 0.07) !important;
+        }
+
+      }
+
+      .datepicker--nav-title {
+        color: @info-mid;
+        font-weight: lighter !important;
+      }
+
+    }
+
+  }
+
+  .acc-report {
     #column_searching {
-        .static-width {
-            width: 30%;
-        }
-        .green-trans {
-            color: @success-mid !important;
-        }
-        .red-trans {
-            color: @danger-mid !important;
-        }
+      .static-width {
+        width: 30%;
+      }
+
+      .green-trans {
+        color: @success-mid !important;
+      }
+
+      .red-trans {
+        color: @danger-mid !important;
+      }
+
     }
+
     .transaction-drop {
-        margin-bottom: 0px !important;
-        margin-top: 12px;
+      margin-bottom: 0px !important;
+      margin-top: 12px;
     }
+
     .outline-icon-btn {
-        span {
-            float: right;
-            padding-left: 2em;
-            padding-top: 0.1em;
-        }
+      span {
+        float: right;
+        padding-left: 2em;
+        padding-top: 0.1em;
+      }
+
     }
-}
 
+  }
 
-/*move to main*/
-
-@media print {
-    .hide-on-print {
-        display: none;
-    }
 }

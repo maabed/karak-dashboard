@@ -361,7 +361,7 @@
         </div>
         <!-- Page Content -->
         <div id="page-content-wrapper">
-            <div class="container-fluid">
+            <div class="container-fluid form-page">
                 <!-- First Row Forms -->
                 <div class="row">
                     <div class="col-md-12">
@@ -376,7 +376,7 @@
                 <div class="row">
                     <div class="col-md-6 left-group">
                         <div class="col-contint">
-                            <h5 class="title form-section">Default Style</h5>
+                            <h5 class="title">Default Style</h5>
                             <p class="header-text">In order to use blue dashboard customized inputs the input should be wrapped with an <code>.input-field</code> class and the <code>input</code>itself should have an <code>id</code> that is the same as its <code>label</code>.</p>
                             <form id="form1">
                                 <div class="row group-content">
@@ -432,22 +432,20 @@
                         </div>
                     </div>
                     <div class="col-md-6 right-group">
-                        <div class="col-contint col-contint-taps group-upper">
-                            <h5 class="title form-section">Login Style</h5>
+                        <div class="col-contint content-overflow">
+                            <h5 class="title">Login Style</h5>
                             <form id="form2">
-                                <div class="form-section top">
+                                <div class="form-group">
                                     <div class="input-field parent">
                                         <input id="user_name" name="user_name" type="text" class="validate">
                                         <label for="user_name">Username</label>
                                     </div>
-                                </div>
-                                <div class="form-section">
                                     <div class="input-field parent">
                                         <input id="password" name="password" type="password" class="validate">
                                         <label for="password">Password</label>
                                     </div>
                                 </div>
-                                <div class="form-section pull-right">
+                                <div class="pull-right">
                                     <button type="submit" class="btn btn-info icon-btn">
                                         <span class="glyphicon glyphicon-log-in"></span> login
                                     </button>
@@ -455,12 +453,12 @@
                             </form>
                         </div>
                         <br>
-                        <div class="col-contint col-contint-taps group-lower">
-                            <h5 class="title form-section">Login With Icons</h5>
+                        <div class="col-contint content-overflow">
+                            <h5 class="title">Login With Icons</h5>
                             <p class="header-text">Using icons with input fields might be necessary sometimes. In order to use those Icons the <code>input</code> should be wrapped with <code>.input-field</code> class and preceded by the desired icon.</p>
                             <form id="form3">
-                                <div class="row">
-                                    <div class="form-section col-sm-6">
+                                <div class="row form-group">
+                                    <div class="col-sm-6">
                                         <div class="input-field parent">
                                             <i class="material-icons prefix"><i class="fa fa-user" aria-hidden="true"></i>
                                             </i>
@@ -468,7 +466,7 @@
                                             <label for="user_prefix">Username</label>
                                         </div>
                                     </div>
-                                    <div class="form-section col-sm-6">
+                                    <div class="col-sm-6">
                                         <div class="input-field parent">
                                             <i class="material-icons prefix"><i class="fa fa-lock" aria-hidden="true"></i>
                                             </i>
@@ -477,7 +475,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-section pull-right">
+                                <div class="pull-right">
                                     <button type="submit" class="btn btn-info icon-btn">
                                         <span class="glyphicon glyphicon-log-in"></span> login
                                     </button>
@@ -489,36 +487,36 @@
                 <!-- /First Row Forms End -->
                 <!-- Second Row Of forms -->
                 <div class="row">
-                    <div class="col-md-3 first-third">
+                    <div class="col-md-3">
                         <div class="col-contint">
-                            <h5 class="title form-section">Ranges</h5>
+                            <h5 class="title">Ranges</h5>
                             <p class="header-text">Ranges are used by defining an HTML input but gets initialized by the
                                 <a href="" class="doc-popover" data-trigger="focus" data-toggle="popover" data-content="test">Javascript</a>
                             </p>
-                            <label class="label-type">Start without params</label>
+                            <label class="input-label">Start without params</label>
                             <input type="text" id="no-params" name="example_name" value="" />
                             <br>
-                            <label class="label-type">Set type to double and specify range, also showing grid and adding prefix "$"</label>
+                            <label class="input-label">Set type to double and specify range, also showing grid and adding prefix "$"</label>
                             <input type="text" id="double" name="example_name" value="" />
                             <br>
-                            <label class="label-type">Using any strings as your values</label>
+                            <label class="input-label">Using any strings as your values</label>
                             <input type="text" id="strings" name="example_name" value="" />
                         </div>
                     </div>
-                    <div class="col-md-6 second-third">
+                    <div class="col-md-6">
                         <div class="col-contint">
-                            <h5 class="title form-section">Slide Toggle</h5>
+                            <h5 class="title">Slide Toggle</h5>
                             <p class="header-text">To use the customized slide toggle you need add the
                                 <code>.ch-toggle</code> in addition to color class <code>.ch-toggle-green</code>
                             </p>
-                            <label class="label-type">Checked</label>
+                            <label class="input-label">Checked</label>
                             <div class="row">
                                 <div class="col-sm-12 switch toggleswitch">
-                                    <input id="toggle-checked" class="ch-toggle ch-toggle-green" type="checkbox"> colored
+                                    <input id="toggle-checked" class="ch-toggle ch-toggle-green" type="checkbox">
                                     <label for="toggle-checked"></label>
                                 </div>
                             </div>
-                            <label class="label-type">Multiple switches </label>
+                            <label class="input-label">Multiple switches </label>
                             <div class="row">
                                 <div class="col-sm-4 switch toggleswitch">
                                     <input id="toggle-multi-checked" class="ch-toggle ch-toggle-green" type="checkbox" checked="">
@@ -533,7 +531,7 @@
                                     <label for="toggle-multi-last"></label>
                                 </div>
                             </div>
-                            <label class="label-type">Colored</label>
+                            <label class="input-label">Colored</label>
                             <div class="row">
                                 <div class="col-sm-3 switch toggleswitch">
                                     <input id="toggle-colored-blue" class="ch-toggle ch-toggle-blue" type="checkbox" checked="">
@@ -554,14 +552,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 last-third">
+                    <div class="col-md-3">
                         <div class="col-contint">
-                            <h5 class="title form-section">Dropdown select</h5>
+                            <h5 class="title">Dropdown select</h5>
                             <p class="header-text">Customized dropdown select can be used by adding <code>.select2-init-single</code> class to be initialized by <a href="" class="doc-popover" data-trigger="focus" data-toggle="popover" data-content="test">Javascript</a> for the default dropdown or another set of classes such as <code>.select2-init-multiple</code>
                             </p>
                             <div class="row">
-                                <div class="third-section col-sm-12">
-                                    <label class="label-type">Standard</label>
+                                <div class="col-sm-12">
+                                    <label class="input-label">Standard</label>
                                     <select class="select-display select2-init-single selectpicker empty col-12">
                                         <option value="Oklahoma">Oklahoma</option>
                                         <option value="Newyork">New york</option>
@@ -572,8 +570,8 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="third-section col-sm-12">
-                                    <label class="label-type">Select boxes with optgroups</label>
+                                <div class="col-sm-12">
+                                    <label class="input-label">Select boxes with optgroups</label>
                                     <select class="select-display select2-init-single selectpicker empty col-12">
                                         <optgroup class="optgroup" label="First group">
                                             <option value="Football">Football</option>
@@ -589,8 +587,8 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="third-section col-sm-12">
-                                    <label class="label-type">Multiple select boxes</label>
+                                <div class="col-sm-12">
+                                    <label class="input-label">Multiple select boxes</label>
                                     <select class="select2-init-multiple" multiple="multiple">
                                         <option value="AL">Alabama</option>
                                         ...
@@ -599,16 +597,16 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="third-section col-sm-12">
-                                    <label class="label-type">Live search</label>
+                                <div class="col-sm-12">
+                                    <label class="input-label">Live search</label>
                                     <select class="select2-init-ajax">
                                         <option value="3620194" selected="selected">Select a value.</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="third-section col-sm-12">
-                                    <label class="label-type">Key words</label>
+                                <div class="col-sm-12">
+                                    <label class="input-label">Key words</label>
                                     <select class="select-display select2-init-images selectpicker empty col-12">
                                         <option value="jordan">Jordan</option>
                                         <option value="usa">USA</option>
@@ -625,8 +623,8 @@
                 <!-- Start of checkboxes group -->
                 <div class="row">
                     <div class="col-md-12 one-col">
-                        <div class="col-contint col-contint-taps">
-                            <h5 class="title form-section"> Checkbox Controls </h5>
+                        <div class="col-contint content-overflow">
+                            <h5 class="title"> Checkbox Controls </h5>
                             <div class="row">
                                 <div class="col-sm-4">
                                     <h5 class="mediumtitle"> Color Options </h5>
@@ -707,44 +705,34 @@
                 <div class="row ">
                     <div class="col-md-12 date-control">
                         <div class="col-contint">
-                            <h5 class="title form-section">Date Controls</h5>
+                            <h5 class="title">Date Controls</h5>
                             <div class="row">
                                 <div class="col-sm-5">
-                                    <div class="third-section">
-                                        <h5 class="mediumtitle">Range Date Picker</h5>
-                                        <p class="header-text">You can use our customized Range Pickers by adding an <code>input</code> element and giving it a unique name to be initialized in the <a href="" class="doc-popover" data-trigger="focus" data-toggle="popover" data-content="test">Javascript</a>.</p>
-                                        <input type="text" name="daterange" class="form-control simple" value="01/01/2015 1:30 PM - 01/01/2015 2:00 PM" />
-                                    </div>
-                                    <div class="third-section">
-                                        <h6>Predefined Ranges</h6>
-                                        <div id="reportrange" class="simple">
-                                            <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
-                                            <span></span> <b class="caret"></b>
-                                        </div>
+                                    <h5 class="mediumtitle">Range Date Picker</h5>
+                                    <p class="header-text">You can use our customized Range Pickers by adding an <code>input</code> element and giving it a unique name to be initialized in the <a href="" class="doc-popover" data-trigger="focus" data-toggle="popover" data-content="test">Javascript</a>.</p>
+                                    <input type="text" name="daterange" class="form-control simple" value="01/01/2015 1:30 PM - 01/01/2015 2:00 PM" />
+                                    <h6>Predefined Ranges</h6>
+                                    <div id="reportrange" class="simple">
+                                        <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
+                                        <span></span> <b class="caret"></b>
                                     </div>
                                 </div>
                                 <div class="col-sm-4">
-                                    <div class="third-section">
-                                        <h5 class="mediumtitle">Simple Date Picker</h5>
-                                        <p class="header-text">If you needed a simple date picker you can define an <code>input</code> element and give it a unique name be initialized in the <a href="" class="doc-popover" data-trigger="focus" data-toggle="popover" data-content="test">Javascript</a>.</p>
-                                        <input type="text" name="birthdate" class="form-control simple" value="10/24/1984" />
-                                    </div>
-                                    <div class="third-section">
-                                        <label class="label-type">Simple Time Picker</label>
-                                        <div class="input-group clockpicker simple" data-placement="right" data-align="top" data-autoclose="true">
-                                            <input type="text" class="form-control" value="13:14">
-                                            <span class="input-group-addon">
+                                    <h5 class="mediumtitle">Simple Date Picker</h5>
+                                    <p class="header-text">If you needed a simple date picker you can define an <code>input</code> element and give it a unique name be initialized in the <a href="" class="doc-popover" data-trigger="focus" data-toggle="popover" data-content="test">Javascript</a>.</p>
+                                    <input type="text" name="birthdate" class="form-control simple" value="10/24/1984" />
+                                    <label class="input-label">Simple Time Picker</label>
+                                    <div class="input-group clockpicker simple" data-placement="right" data-align="top" data-autoclose="true">
+                                        <input type="text" class="form-control" value="13:14">
+                                        <span class="input-group-addon">
                                                 <span class="glyphicon glyphicon-time"></span>
-                                            </span>
-                                        </div>
+                                        </span>
                                     </div>
                                 </div>
                                 <div class="col-sm-3">
-                                    <div class="third-section">
-                                        <h5 class="mediumtitle">Advanced Datepicker</h5>
-                                        <p class="header-text">As for the advanced date picker you define a <code>div</code> element and give it a <code>class</code> attribute to initialize it in the <a href="" class="doc-popover" data-trigger="focus" data-toggle="popover" data-content="test">Javascript</a>.</p>
-                                        <div class="datepicker-here simple" data-language='en'></div>
-                                    </div>
+                                    <h5 class="mediumtitle">Advanced Datepicker</h5>
+                                    <p class="header-text">As for the advanced date picker you define a <code>div</code> element and give it a <code>class</code> attribute to initialize it in the <a href="" class="doc-popover" data-trigger="focus" data-toggle="popover" data-content="test">Javascript</a>.</p>
+                                    <div class="datepicker-here simple" data-language='en'></div>
                                 </div>
                             </div>
                         </div>
@@ -755,17 +743,17 @@
                 <div class="row">
                     <div class="col-md-6 left-group">
                         <div class="col-contint">
-                            <h5 class="title form-section">Tag Input</h5>
+                            <h5 class="title">Tag Input</h5>
                             <p class="header-text">To use the Tag Inputs you need to add the <code>data-role</code> attribute to determine which style you want to use.</p>
                             <div class="row">
-                                <div class="form-section col-sm-12">
-                                    <label class="form-labels">Markup</label>
+                                <div class="col-md-12">
+                                    <label class="input-label">Markup</label>
                                     <input type="text" value="Amsterdam,Washington" data-role="tagsinput" />
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="form-section col-md-12">
-                                    <label class="form-labels">True multi value</label>
+                                <div class="col-md-12">
+                                    <label class="input-label">True multi value</label>
                                     <select multiple data-role="tagsinput">
                                         <option value="Amsterdam">Amsterdam</option>
                                         <option value="Washington">Washington</option>
@@ -773,25 +761,25 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="form-section col-md-12">
-                                    <label class="form-labels">Objects as tags</label>
+                                <div class="col-md-12">
+                                    <label class="input-label">Objects as tags</label>
                                     <input class="objects-as-tags" type="text" />
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="form-section col-md-12">
-                                    <label class="form-labels">Categorizing tags</label>
+                                <div class="col-md-12">
+                                    <label class="input-label">Categorizing tags</label>
                                     <input class="colored-tags" type="text" />
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 right-group">
-                        <div class="col-contint col-contint-taps">
-                            <h5 class="title form-section">Drag N' Drop</h5>
+                        <div class="col-contint content-overflow">
+                            <h5 class="title">Drag N' Drop</h5>
                             <p class="header-text">In order to use the drag and drop area you need to define a <code>form</code> and give it a unique id to initalize it in the <a href="" class="doc-popover" data-trigger="focus" data-toggle="popover" data-content="test">Javascript</a>in addition to the class <code>dropzone</code>.</p>
                             <div class="dropzone-row">
-                                <div class="form-section col-sm-12 dropzone-min">
+                                <div class="col-sm-12 dropzone-min">
                                     <form action="/file-upload" class="dropzone" id="my-awesome-dropzone">
                                     </form>
                                 </div>
@@ -804,7 +792,7 @@
                 <div class="row">
                     <div class="col-md-12 one-col">
                         <div class="col-contint">
-                            <h5 class="title form-section">Text Editor</h5>
+                            <h5 class="title">Text Editor</h5>
                             <p class="header-text">All you need to do is adding a unique id to a <code>div</code> element and initalize it in the <a href="" class="doc-popover" data-trigger="focus" data-toggle="popover" data-content="test">Javascript</a>.</p>
                             <div class="text-editor-design">
                                 <div id="summernote">hello </div>
@@ -834,7 +822,7 @@
         <div id="Right-Side-Section-Togle">
             <i class="fa fa-pencil-square-o" id="Edit" aria-hidden="true"></i>
         </div>
-        <!-- <div id="Right-Side-Section">
+        <div id="Right-Side-Section">
             <div class="table">
                 <table class="right-side-table">
                     <tr>
@@ -852,7 +840,7 @@
                     <tr>
                         <td>
                             <p>Color makes it different
-                            <br> Customize and Preview your dashboard.</p>
+                                <br> Customize and Preview your dashboard.</p>
                         </td>
                     </tr>
                     <tr>
@@ -968,7 +956,7 @@
                     </tr>
                 </table>
             </div>
-        </div> -->
+        </div>
     </div>
     <!-- Page layout JS -->
     <script type="text/javascript" src="assets/vendors/jquery/jquery-3.1.1.js"></script>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -21,9 +21,10 @@
     <link type="text/css" href="assets/css/lessConverted.css" rel="stylesheet" />
     <link type="text/css" href="assets/css/chat-message-input.css" rel="stylesheet" />
 </head>
+<<<<<<< HEAD
 
-      <link type="text/css" href="assets/css/chat-message-input.css" rel="stylesheet" />
-</head>
+=======
+>>>>>>> 75be88b1a9dbe5fd505077c79a60deeac5ef19ee
 <body>
     <div id="wrapper">
         <!-- Sidebar -->
