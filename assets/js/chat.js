@@ -24,7 +24,7 @@ $(function($) {
     $this.toggle(300);
   });
   $('#left-Side-Section-Togle').click(function() {
-    $('.InboxLeftSide').toggleClass('show-left');
+    $('.inbox-nav').toggleClass('show-left');
   });
 
   $('input:checkbox').on('click', function() {

@@ -21,6 +21,8 @@ $(function($) {
     });
 
     $('.show-message').click(function() {
+      $('.split-right-side').addClass('responsive-message');
+      $('.split-left-side').addClass('hide-contacts');
       $('.msg-overlay').addClass('overlay');
       $('.msg-loader').css('display', 'block');
       setTimeout(function() {
@@ -28,7 +30,10 @@ $(function($) {
         $('.msg-loader').css('display', 'none');
       }, 500);
     });
-
+    $('.contacts').click(function(){
+      $('.split-right-side').removeClass('responsive-message');
+      $('.split-left-side').removeClass('hide-contacts');
+    });
     $('#summernote-inbox').summernote({
       height: 200,
     });

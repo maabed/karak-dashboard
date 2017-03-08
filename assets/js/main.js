@@ -36,7 +36,7 @@ $(document).ready(function() {
 
   // Left side section
   $('#left-Side-Section-Togle').click(function() {
-    $('.InboxLeftSide').toggleClass('show-left');
+    $('.inbox-nav').toggleClass('show-left');
   });
 
   /* search  */
