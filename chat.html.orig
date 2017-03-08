@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -21,7 +21,10 @@
     <link type="text/css" href="assets/css/lessConverted.css" rel="stylesheet" />
     <link type="text/css" href="assets/css/chat-message-input.css" rel="stylesheet" />
 </head>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 75be88b1a9dbe5fd505077c79a60deeac5ef19ee
 <body>
     <div id="wrapper">
         <!-- Sidebar -->
@@ -432,8 +435,8 @@
     <script src="assets/vendors/toggle/js/bootstrap-switch.js"></script>
     <!-- Lists page JS -->
     <script src="assets/js/lists.js"></script>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <!-- Loader JS -->
+
+    <!-- chat JS -->
     <script src="assets/js/chat.js"></script>
 </body>
 

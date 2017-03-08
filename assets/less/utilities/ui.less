@@ -18,6 +18,7 @@
         display: none;
         top: 3.6em;
         position: fixed;
+        right: 10.7em;
          .arrow-up {
           margin-right:1.8em;
         }
@@ -40,9 +41,9 @@
                     font-weight: lighter;
                 }
             }
-        .single-not-content {
+        .single-content-row {
             width: 100%;
-            padding: 1em;
+            padding: 1em 1em 1.5em 1em;
             border-bottom: @nav-link-border;
             .css-effect(all 0.5s ease);
             &:hover,
@@ -64,43 +65,35 @@
                 width: 100%;
                 font-weight: lighter;
                 font-size: @paragraph;
-                .arrow-up {}
+                b {
+                    margin-right:0.5em;
+                }
             }
            
         }
-    }
-    
-    .messages-box {
-        right: 11.16em;
         .send-message-link {
             float: right;
             margin-right: @large-value;
             font-size: @paragraph;
         }
     }
-    
-    .notifecations-box {
-        right: 15.5em;
-    }
+  .notifecations-box{
+    right: 14.6em;
+  }
     /* User settings dropdown */
     
     .user-info-box {
         width: 9em;
         position: fixed;
         top: 3.6em;
-        right: 2em;
+        right: 1.8em;
         background: @white;
         z-index: 999;
         box-shadow: 0px 3px 10px #888888;
         border-radius: @no-radius;
         display: none;
-        .user-arrow {
-            border-left: 8px solid transparent;
-            border-right: 8px solid transparent;
-            border-bottom: 10px solid @white;
-            margin-top: -0.7em;
-            float: right;
-            margin-right: 0.3em;
+        .arrow-up {
+          margin-right:0.3em;
         }
         a {
             color: @view-all-notes-color;
@@ -113,6 +106,9 @@
             .css-effect(all 0.3s ease);
             .fa {
                 margin-right: @small-value;
+            }
+            &:hover{
+                    background-color: #F1F3F6;
             }
         }
     }
