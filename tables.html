@@ -235,122 +235,123 @@
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
-        <div id="head">
-            <div class="container-fluid header-container">
-                <i href="#menu-toggle" id="menu-toggle" class="fa fa-bars" aria-hidden="true"></i>
-                <div class="form-group">
-                    <div class="icon-addon addon-md">
-                        <input type="email" placeholder="Type anywhere to search" class="form-control" id="searchTB">
-                        <i class="fa fa-search glyphicon glyphicon-search" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div class="right-side-head">
-                    <div class="notifecations head-box">
-                        <button id="notifications" class="btn btn-default btn-lg btn-link">
-                            <i class="fa fa-bell-o" aria-hidden="true"></i>
-                        </button>
-                        <span id="not-badg" class="badge badge-notify">2</span>
-                    </div>
-                    <div class="email head-box">
-                        <button id="messages" class="btn btn-default btn-lg btn-link">
-                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                        </button>
-                        <span id="message-badg" class="badge badge-notify">4</span>
-                    </div>
-                    <div id="user-box" class="user-box head-box">
-                        <p> Mr.Sami&nbsp;&nbsp; &nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i></p>
-                        <img src="assets/images/Sami.jpg" />
-                    </div>
-                </div>
-            </div>
-            <div class="notifecations-box">
-                <div class="arrow-up"></div>
-                <h5>Notifications</h5>
-                <div class="single-not-content">
-                    <a href="#">
-                        <img src="assets/images/Sami.jpg" />
-                        <p><b>Mohammad Meshaal</b>&nbsp; wants your confirmation on his Leave Request on 12 Mar 2017</p>
-                    </a>
-                </div>
-                <div class="single-not-content">
-                    <a href="#">
-                        <img src="assets/images/Team-Member-1-270x250.jpg" />
-                        <p><b>Nasir ahmad</b>&nbsp; sent a payment on 11 Mar 2017</p>
-                    </a>
-                </div>
-                <div class="veiw-all-not">
-                    <a href="#">View All</a>
-                </div>
-            </div>
-            <div class="messages-box">
-                <div class="arrow-up"></div>
-                <h5>Messages <a class="send-message-link " href="#">Send New Message</a></h5>
-                <div class="single-not-content">
-                    <a href="#">
-                        <img src="assets/images/team-member-5.jpg" />
-                        <p><b>Layla smith</b>
-                            <br /> Job offer</p>
-                    </a>
-                </div>
-                <div class="single-not-content">
-                    <a href="#">
-                        <img src="assets/images/Sami.jpg" />
-                        <p><b>Mohammad Meshaal</b>
-                            <br />Please send me the work templates</p>
-                    </a>
-                </div>
-                <div class="single-not-content">
-                    <a href="#">
-                        <img src="assets/images/team-member.jpg" />
-                        <p><b>Dana khalid</b>
-                            <br />Do you wanna hang out today?</p>
-                    </a>
-                </div>
-                <div class="single-not-content">
-                    <a href="#">
-                        <img src="assets/images/Team-Member-1-270x250.jpg" />
-                        <p><b>Nasir ahmad</b>
-                            <br />Are we going to the match today?</p>
-                    </a>
-                </div>
-                <div class="veiw-all-not">
-                    <a href="#">View All</a>
-                </div>
-            </div>
-            <div class="user-info-box">
-                <div class="arrow-up user-arrow"></div>
-                <a href="#">
-                    <div class="user-info-content">
-                        <i class="fa fa-user" aria-hidden="true"></i> Proﬁle
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="user-info-content">
-                        <i class="fa fa-cog" aria-hidden="true"></i> Settings
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="user-info-content">
-                        <i class="fa fa-info-circle" aria-hidden="true"></i> Help
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="user-info-content logout">
-                        Log Out
-                        <i class="fa fa-sign-out" aria-hidden="true"></i>
-                    </div>
-                </a>
-            </div>
-        </div>
         <!-- Page Content -->
         <div id="page-content-wrapper">
+            <!-- header -->
+            <div id="head">
+                <div class="container-fluid header-container">
+                    <i href="#menu-toggle" id="menu-toggle" class="fa fa-bars" aria-hidden="true"></i>
+                    <div class="form-group">
+                        <div class="icon-addon addon-md">
+                            <input type="text" placeholder="Type anywhere to search" class="form-control" id="searchTB">
+                            <i class="fa fa-search glyphicon glyphicon-search" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="right-side-head">
+                        <div class="right-side-items notifecations">
+                            <button id="notifications" class="btn btn-default btn-lg btn-link">
+                                <i class="fa fa-bell-o" aria-hidden="true"></i>
+                            </button>
+                            <span id="not-badg" class="badge badge-notify">2</span>
+                        </div>
+                        <div class="right-side-items email">
+                            <button id="messages" class="btn btn-default btn-lg btn-link">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            </button>
+                            <span id="message-badg" class="badge badge-notify">4</span>
+                        </div>
+                        <div id="user-box" class="user-box right-side-items">
+                            <p> Mr.Sami<i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                            <img src="assets/images/Sami.jpg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="notifecations-box">
+                    <div class="arrow-up"></div>
+                    <h5>Notifications</h5>
+                    <div class="single-content-row">
+                        <a href="#">
+                            <img alt="user name" src="assets/images/Sami.jpg" />
+                            <p><b>Mohammad Meshaal</b>wants your confirmation on his Leave Request on 12 Mar 2017</p>
+                        </a>
+                    </div>
+                    <div class="single-content-row">
+                        <a href="#">
+                            <img alt="user name" src="assets/images/Team-Member-1-270x250.jpg" />
+                            <p><b>Nasir ahmad</b>sent a payment on 11 Mar 2017</p>
+                        </a>
+                    </div>
+                    <div class="veiw-all-not">
+                        <a href="#">View All</a>
+                    </div>
+                </div>
+                <div class="messages-box">
+                    <div class="arrow-up"></div>
+                    <h5>Messages <a class="send-message-link " href="#">Send New Message</a></h5>
+                    <div class="single-content-row">
+                        <a href="#">
+                            <img alt="user name" alt="user name" src="assets/images/team-member-5.jpg" />
+                            <p><b>Layla smith</b>
+                                <br /> Job offer</p>
+                        </a>
+                    </div>
+                    <div class="single-content-row">
+                        <a href="#">
+                            <img alt="user name" src="assets/images/Sami.jpg" />
+                            <p><b>Mohammad Meshaal</b>
+                                <br />Please send me the work templates</p>
+                        </a>
+                    </div>
+                    <div class="single-content-row">
+                        <a href="#">
+                            <img alt="user name" src="assets/images/team-member.jpg" />
+                            <p><b>Dana khalid</b>
+                                <br />Do you wanna hang out today?</p>
+                        </a>
+                    </div>
+                    <div class="single-content-row">
+                        <a href="#">
+                            <img alt="user name" src="assets/images/Team-Member-1-270x250.jpg" />
+                            <p><b>Nasir ahmad</b>
+                                <br />Are we going to the match today?</p>
+                        </a>
+                    </div>
+                    <div class="veiw-all-not">
+                        <a href="#">View All</a>
+                    </div>
+                </div>
+                <div class="user-info-box">
+                    <div class="arrow-up"></div>
+                    <a href="#">
+                        <div class="user-info-content">
+                            <i class="fa fa-user" aria-hidden="true"></i> Proﬁle
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="user-info-content">
+                            <i class="fa fa-cog" aria-hidden="true"></i> Settings
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="user-info-content">
+                            <i class="fa fa-info-circle" aria-hidden="true"></i> Help
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="user-info-content logout">
+                            Log Out
+                            <i class="fa fa-sign-out" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!--/header-->
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="col-contint body-header">
                             <a href="tables.html" class="page_title pull-right">Tables / Basic Tables</a>
-                            <h4 class="title"> Tables </h4>
-                            <br>
+                            <h4 class="title"> Tables</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
@@ -359,11 +360,10 @@
                     <div class="col-md-12">
                         <div class="col-contint">
                             <h5 class="title">Users Table</h5>
-                            <br>
                             <p>
                                 Just apply the Activation classes(e.g:<code>.active-user-row</code>/<code>.not-active-user-row</code>) to make user row appropriate colors.
                             </p>
-                            <table id="active-user" class="table table-hover">
+                            <table id="users-table" class="table table-hover">
                                 <thead class="table-head">
                                     <tr>
                                         <th class="basic-th col-sm-3">User info.</th>
@@ -374,67 +374,67 @@
                                         <th class="basic-th col-sm-1">Activation</th>
                                     </tr>
                                 </thead>
-                                <tbody class="users-table-format">
+                                <tbody class="users-table-body">
                                     <tr class="active-user-acount">
-                                        <td class="content-padding">
+                                        <td>
                                             <img src="assets/images/Sami.jpg" />
-                                            <p><b>Mohammad Meshaal</b>
+                                            <p><b>Sami Ali</b>
                                                 <br> Project Manager</p>
                                         </td>
-                                        <td class="content-padding">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-                                        <td class="content-padding static-width">Jordan</td>
-                                        <td class="content-padding email-field">email@domin.com</td>
-                                        <td class="content-padding">April 13,2014 10:13</td>
-                                        <td class="content-padding active-user-row"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>&nbsp;Active</td>
+                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                        <td class="static-width">Jordan</td>
+                                        <td class="email-field">email@domin.com</td>
+                                        <td>April 13,2014 10:13</td>
+                                        <td class="active-user-row"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>&nbsp;Yes</td>
                                     </tr>
                                     <tr class="active-user-acount">
-                                        <td class="content-padding">
+                                        <td>
                                             <img src="assets/images/member-4.png" />
                                             <p><b>Rania Jaber</b>
                                                 <br> UI Designer</p>
                                         </td>
                                         <td class="content-padding">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </td>
-                                        <td class="content-padding static-width">Lebanon</td>
-                                        <td class="content-padding email-field">email@domin.com</td>
-                                        <td class="content-padding">April 13,2014 10:13</td>
-                                        <td class="content-padding active-user-row"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>&nbsp;Active</td>
+                                        <td class="static-width">Lebanon</td>
+                                        <td class="email-field">email@domin.com</td>
+                                        <td>April 13,2014 10:13</td>
+                                        <td class="active-user-row"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>&nbsp;Yes</td>
                                     </tr>
                                     <tr class="active-user-acount">
-                                        <td class="content-padding">
+                                        <td>
                                             <img src="assets/images/user1.jpg" />
                                             <p><b>Albert Bailee</b>
                                                 <br>Web Developer</p>
                                         </td>
-                                        <td class="content-padding">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </td>
-                                        <td class="content-padding static-width">United States</td>
-                                        <td class="content-padding email-field">email@domin.com</td>
-                                        <td class="content-padding">April 13,2014 10:13</td>
-                                        <td class="content-padding active-user-row"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>&nbsp;Active</td>
+                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </td>
+                                        <td class="static-width">United States</td>
+                                        <td class="email-field">email@domin.com</td>
+                                        <td>April 13,2014 10:13</td>
+                                        <td class="active-user-row"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>&nbsp;Yes</td>
                                     </tr>
                                     <tr class="not-active-user-acount">
-                                        <td class="content-padding">
+                                        <td>
                                             <img src="assets/images/user2.jpg" />
                                             <p><b>Ahmad Yousef</b>
                                                 <br>Account Manager</p>
                                         </td>
-                                        <td class="content-padding">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </td>
-                                        <td class="content-padding static-width">Qatar</td>
-                                        <td class="content-padding email-field">email@domin.com</td>
-                                        <td class="content-padding">April 13,2014 10:13</td>
-                                        <td class="content-padding not-active-user-row"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i> &nbsp;Not Active
+                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </td>
+                                        <td class="static-width">Qatar</td>
+                                        <td class="email-field">email@domin.com</td>
+                                        <td>April 13,2014 10:13</td>
+                                        <td class="not-active-user-row"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i> &nbsp;No
                                         </td>
                                     </tr>
                                     <tr class="not-active-user-acount">
-                                        <td class="content-padding">
+                                        <td>
                                             <img src="assets/images/user3.jpg" />
-                                            <p><b>Adallah Mohammad</b>
+                                            <p><b>Ali Mosa</b>
                                                 <br>UX Researcher</p>
                                         </td>
-                                        <td class="content-padding">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </td>
-                                        <td class="content-padding static-width">Jordan</td>
-                                        <td class="content-padding email-field">email@domin.com</td>
-                                        <td class="content-padding">April 13,2014 10:13</td>
-                                        <td class="content-padding not-active-user-row"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i> &nbsp;Not Active</td>
+                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </td>
+                                        <td class="static-width">Jordan</td>
+                                        <td class="email-field">email@domin.com</td>
+                                        <td>April 13,2014 10:13</td>
+                                        <td class="not-active-user-row"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i> &nbsp;No</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -445,7 +445,6 @@
                     <div class="col-md-8">
                         <div class="col-contint">
                             <h5 class="title">Dashed Table Design</h5>
-                            <br>
                             <p>
                                 Just apply the Dashed class(<code>.dashed-row-style</code>) to make the table Dashed style.
                             </p>
@@ -458,50 +457,50 @@
                                         <th class="basic-th col-sm-2">Status</th>
                                     </tr>
                                 </thead>
-                                <tbody class="users-table-format ">
+                                <tbody class="users-table-format">
                                     <tr class="active-user-acount no-left-right-padding">
-                                        <td class="content-padding">
+                                        <td>
                                             <b>Requirements Gathering</b>
                                         </td>
-                                        <td class="content-padding static-width">Jan, 18 Wednesday</td>
-                                        <td class="content-padding email-field">February, 20 Thursday</td>
-                                        <td class="content-padding email-field done-task"><i class="fa fa-check" aria-hidden="true"></i> &nbsp;Done
+                                        <td class="static-width">Jan, 18 Wednesday</td>
+                                        <td class="email-field">February, 20 Thursday</td>
+                                        <td class="email-field done-task"><i class="fa fa-check" aria-hidden="true"></i> &nbsp;Done
                                         </td>
                                     </tr>
                                     <tr class="active-user-acount">
-                                        <td class="content-padding">
+                                        <td>
                                             <b>UX/UI Design</b>
                                         </td>
-                                        <td class="content-padding static-width">Jan, 18 Wednesday</td>
-                                        <td class="content-padding email-field">February, 20 Thursday</td>
-                                        <td class="content-padding email-field done-task"><i class="fa fa-check" aria-hidden="true"></i> &nbsp;Done
+                                        <td class="static-width">Jan, 18 Wednesday</td>
+                                        <td class="email-field">February, 20 Thursday</td>
+                                        <td class="email-field done-task"><i class="fa fa-check" aria-hidden="true"></i> &nbsp;Done
                                         </td>
                                     </tr>
                                     <tr class="active-user-acount">
-                                        <td class="content-padding">
+                                        <td>
                                             <b>Fron-end & Back-end Development</b>
                                         </td>
-                                        <td class="content-padding static-width">Jan, 18 Wednesday</td>
-                                        <td class="content-padding email-field">February, 20 Thursday</td>
-                                        <td class="content-padding email-field inprogress-task"><i class="fa fa-spinner" aria-hidden="true"></i>&nbsp;Inprogress
+                                        <td class="static-width">Jan, 18 Wednesday</td>
+                                        <td class="email-field">February, 20 Thursday</td>
+                                        <td class="email-field inprogress-task"><i class="fa fa-spinner" aria-hidden="true"></i>&nbsp;Inprogress
                                         </td>
                                     </tr>
                                     <tr class="active-user-acount">
-                                        <td class="content-padding">
+                                        <td>
                                             <b>Testing</b>
                                         </td>
-                                        <td class="content-padding static-width">Jan, 18 Wednesday</td>
-                                        <td class="content-padding email-field">February, 20 Thursday</td>
-                                        <td class="content-padding email-field hold-task"><i class="fa fa-ban" aria-hidden="true"></i>&nbsp;Hold
+                                        <td class="static-width">Jan, 18 Wednesday</td>
+                                        <td class="email-field">February, 20 Thursday</td>
+                                        <td class="email-field hold-task"><i class="fa fa-ban" aria-hidden="true"></i>&nbsp;Hold
                                         </td>
                                     </tr>
                                     <tr class="active-user-acount">
-                                        <td class="content-padding">
+                                        <td>
                                             <b>Maintenance</b>
                                         </td>
-                                        <td class="content-padding static-width">Jan, 18 Wednesday</td>
-                                        <td class="content-padding email-field">February, 20 Thursday</td>
-                                        <td class="content-padding hold-task"><i class="fa fa-ban" aria-hidden="true"></i>&nbsp;Hold
+                                        <td class="static-width">Jan, 18 Wednesday</td>
+                                        <td class="email-field">February, 20 Thursday</td>
+                                        <td class="hold-task"><i class="fa fa-ban" aria-hidden="true"></i>&nbsp;Hold
                                         </td>
                                     </tr>
                                 </tbody>
@@ -511,38 +510,40 @@
                     <div class="col-md-4">
                         <div class="col-contint content-overflow">
                             <h5 class="title">Colored Table</h5>
-                            <br>
                             <p>You can change the table's heads color using add any color class (eg:<code>.info-mid</code>).</p>
                             <div class="row">
                                 <div class="col-md-12">
                                     <table id="colored-table" class="table table-responsive">
-                                        <thead class="table-head info-mid colo">
+                                        <thead class="table-head info-mid colord-table-head">
                                             <tr>
-                                                <th class="dashboard-th colored-table-head">Player Name</th>
-                                                <th class="dashboard-th colored-table-head">Team</th>
-                                                <th class="dashboard-th colored-table-head">Country</th>
+                                                <th class="dashboard-th colored-table-head">
+                                                    <h5>Player Name</h5></th>
+                                                <th class="dashboard-th colored-table-head">
+                                                    <h5>Team</h5></th>
+                                                <th class="dashboard-th colored-table-head">
+                                                    <h5>Country</h5></th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td class="content-padding">Messi</td>
-                                                <td class="content-padding">Barcelona</td>
-                                                <td class="content-padding">Argentina</td>
+                                                <td>Messi</td>
+                                                <td>Barcelona</td>
+                                                <td>Argentina</td>
                                             </tr>
                                             <tr>
-                                                <td class="content-padding">Ronaldinho</td>
-                                                <td class="content-padding">Querétaro</td>
-                                                <td class="content-padding">Brazil</td>
+                                                <td>Ronaldinho</td>
+                                                <td>Querétaro</td>
+                                                <td>Brazil</td>
                                             </tr>
                                             <tr>
-                                                <td class="content-padding">Cristiano Ronaldo</td>
-                                                <td class="content-padding">Real Madrid</td>
-                                                <td class="content-padding">Portugal</td>
+                                                <td>Cristiano Ronaldo</td>
+                                                <td>Real Madrid</td>
+                                                <td>Portugal</td>
                                             </tr>
                                             <tr>
-                                                <td class="content-padding">Gonzalo Higuain</td>
-                                                <td class="content-padding">Juventus</td>
-                                                <td class="content-padding">Argentina</td>
+                                                <td>Gonzalo Higuain</td>
+                                                <td>Juventus</td>
+                                                <td>Argentina</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -572,7 +573,7 @@
         <div id="Right-Side-Section-Togle">
             <i class="fa fa-pencil-square-o" id="Edit" aria-hidden="true"></i>
         </div>
-        <!-- <div id="Right-Side-Section">
+        <div id="Right-Side-Section">
             <div class="table">
                 <table class="right-side-table">
                     <tr>
@@ -706,7 +707,7 @@
                     </tr>
                 </table>
             </div>
-        </div> -->
+        </div>
     </div>
     <!-- Page layout JS -->
     <script type="text/javascript" src="assets/vendors/jquery/jquery-3.1.1.js"></script>
