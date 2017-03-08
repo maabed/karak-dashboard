@@ -164,6 +164,11 @@ a {
         padding: 0.4em 0.6em !important;
         text-align: left !important;
         font-size: @large-value !important;
+        span {
+        float: right;
+        padding-left: 2em;
+        padding-top: 0.1em;
+    }
     }
     &.btn-circle {
         border-radius: @cirkel !important;
@@ -189,6 +194,10 @@ a {
 .pagination {
     margin: 0 !important;
     li {
+        a,
+        span {
+            color: #828282;
+        }
         &:first-child>a,
         span {
             border-bottom-left-radius: 0px !important;
@@ -199,10 +208,7 @@ a {
             border-bottom-right-radius: 0px !important;
             border-top-right-radius: 0px !important;
         }
-        a,
-        span {
-            color: #828282;
-        }
+        
     }
     .active {
         a,
