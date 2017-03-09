@@ -455,9 +455,6 @@
   background-color: #62d995;
   font-size: 0.9em;
 }
-#wrapper .copyright .no-margin {
-  margin: 0 !important;
-}
 #wrapper .copyright .made-by {
   float: right;
   color: #828282;
@@ -503,6 +500,9 @@
 }
 .no-padding-right {
   padding-right: 0px;
+}
+.no-margin {
+  margin: 0 !important;
 }
 @media print {
   .hide-on-print {
@@ -5816,18 +5816,18 @@ body.landing-page-container .owl-theme .owl-nav [class*=owl-] {
   margin-right: 0.5em;
   font-size: inherit;
 }
-.social-left-section .margin-top,
-.social-right-section .margin-top {
+.social-left-section .trinding-margin,
+.social-right-section .trinding-margin {
   margin-top: 4.9em;
 }
-.social-left-section .margin-top .single-trending-content,
-.social-right-section .margin-top .single-trending-content {
+.social-left-section .trinding-margin .single-trending-content,
+.social-right-section .trinding-margin .single-trending-content {
   width: 100%;
   border-bottom: 1px solid #eee;
   padding: 1em 0em 2em 0em !important;
 }
-.social-left-section .margin-top .single-trending-content img,
-.social-right-section .margin-top .single-trending-content img {
+.social-left-section .trinding-margin .single-trending-content img,
+.social-right-section .trinding-margin .single-trending-content img {
   width: 4em;
   height: 4em;
   float: left;
