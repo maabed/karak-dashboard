@@ -13,8 +13,8 @@ td > .fa {
   font-size: 1.5em;
 }
 /*used*/
-.icons-single-box .col-contint .col-sm-4,
-.icons-single-box .col-contint .col-md-3 {
+.icons-single-box .col-content .col-sm-4,
+.icons-single-box .col-content .col-md-3 {
   border: none !important;
   border-bottom: 1px solid #E4E5E7 !important;
 }
@@ -179,15 +179,15 @@ input:not(#searchTB):not(.select2-search__field):focus {
   outline: none !important;
 }
 /*used*/
-.icons-single-box .col-contint .col-sm-4,
-.icons-single-box .col-contint .col-md-3 {
+.icons-single-box .col-content .col-sm-4,
+.icons-single-box .col-content .col-md-3 {
   height: 7em;
 }
 
-.icons-single-box .col-contint {
+.icons-single-box .col-content {
   height: auto;
 }
 
-.icons-single-box .col-contint div {
+.icons-single-box .col-content div {
   color: #34495e;
 }

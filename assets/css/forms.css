@@ -51,15 +51,15 @@ Copyright 2017 New Release
   padding-right: 15px;
 }
 
-.first-third>.col-contint {
+.first-third>.col-content {
   min-height: 427px;
 }
 
-.second-third>.col-contint {
+.second-third>.col-content {
   min-height: 427px;
 }
 
-.last-third>.col-contint {
+.last-third>.col-content {
   min-height: 427px;
 }
 
@@ -481,11 +481,11 @@ input.ch-toggle-green:checked + label:after {
   padding-bottom: 0px !important;
 }
 
-.second-third > .col-contint {
+.second-third > .col-content {
   overflow: visible;
 }
 
-.left-group > .col-contint {
+.left-group > .col-content {
   overflow: visible;
 }
 
@@ -741,7 +741,7 @@ label {
   color: rgba(204, 204, 204, 0.6) !important;
 }
 
-.col-contint.DragNdrop>.title.section-label.largetitle {
+.col-content.DragNdrop>.title.section-label.largetitle {
   padding-bottom: 16px !important;
 }
 
@@ -780,7 +780,7 @@ label {
   margin-bottom: 0px;
 }
 
-.date-control>.col-contint {
+.date-control>.col-content {
   overflow: visible;
 }
 

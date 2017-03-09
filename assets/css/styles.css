@@ -1099,7 +1099,7 @@ hr {
   margin-right: 0.3em;
 }
 
-.col-contint {
+.col-content {
   width: 100%;
   background-color: #fff;
   padding: 0.5em 1em;
@@ -1119,14 +1119,14 @@ hr {
   padding: 0.5em;
 }
 
-.salse-img .col-contint {
+.salse-img .col-content {
   width: 90%;
   float: right;
   padding: 0;
   background-color: #F1F3F6;
 }
 
-.salse-img .col-contint img {
+.salse-img .col-content img {
   float: right;
 }
 
@@ -2429,8 +2429,8 @@ display: none;
 }
 
 /*used*/
-.icons-single-box .col-contint .col-sm-4,
-.icons-single-box .col-contint .col-md-3 {
+.icons-single-box .col-content .col-sm-4,
+.icons-single-box .col-content .col-md-3 {
 height: 6em;
 overflow: hidden;
 border: 1px solid #E4E5E7;
@@ -2442,20 +2442,20 @@ font-size: 1.2em;
 }
 
 /*used*/
-.icons-single-box .col-contint div {
+.icons-single-box .col-content div {
 color: #707A7A;
 text-align: center;
 font-weight: lighter;
 }
 
 /*used*/
-.icons-single-box .col-contint div i,
-.icons-single-box .col-contint div span {
+.icons-single-box .col-content div i,
+.icons-single-box .col-content div span {
 width: 100%;
 }
 
 /*used*/
-.icons-single-box .col-contint {
+.icons-single-box .col-content {
 height: 28.5em;
 overflow: hidden;
 }
@@ -3684,7 +3684,7 @@ border-bottom: 8px solid #ecf0f1;
 }
 
 /*used*/
-.col-contint .navbar {
+.col-content .navbar {
 padding-top: 0em !important;
 padding-bottom: 0em !important;
 }
