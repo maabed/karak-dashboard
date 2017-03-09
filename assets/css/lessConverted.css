@@ -508,6 +508,12 @@
   .hide-on-print {
     display: none;
   }
+  .invoice-print-style {
+    position: absolute;
+    top: 15em;
+    right: 5em;
+    width: 40%;
+  }
 }
 .col-lg-12,
 .col-lg-8,
@@ -1276,6 +1282,14 @@ a.outline-icon-btn {
   text-align: left !important;
   font-size: 1em !important;
 }
+button.outline-icon-btn span,
+.btn-group.outline-icon-btn span,
+input.outline-icon-btn span,
+a.outline-icon-btn span {
+  float: right;
+  padding-left: 2em;
+  padding-top: 0.1em;
+}
 button.btn-circle,
 .btn-group.btn-circle,
 input.btn-circle,
@@ -1298,6 +1312,10 @@ a.btn-circle {
 .pagination {
   margin: 0 !important;
 }
+.pagination li a,
+.pagination li span {
+  color: #828282;
+}
 .pagination li:first-child > a,
 .pagination li span {
   border-bottom-left-radius: 0px !important;
@@ -1307,10 +1325,6 @@ a.btn-circle {
 .pagination li span {
   border-bottom-right-radius: 0px !important;
   border-top-right-radius: 0px !important;
-}
-.pagination li a,
-.pagination li span {
-  color: #828282;
 }
 .pagination .active a,
 .pagination .active span {
@@ -4049,6 +4063,9 @@ body.landing-page-container .owl-theme .owl-nav [class*=owl-] {
   background-color: #fff !important;
   border-color: #ecf0f1 !important;
 }
+#rootwizard .tab-content .btn {
+  border-radius: 0px;
+}
 #rootwizard .tab-content .btn.active.focus,
 #rootwizard .tab-content .btn.active:focus,
 #rootwizard .tab-content .btn.focus,
@@ -5209,78 +5226,67 @@ body.landing-page-container .owl-theme .owl-nav [class*=owl-] {
 .icon-addon:after {
   clear: both;
 }
-#wrapper #page-content-wrapper.invoice-main-class .container-fluid .row .col-contint .col-sm-8 .table-head-info tbody tr td {
+#wrapper #page-content-wrapper.invoice-main-class .col-sm-8 .table-head-info tbody td {
   padding: 0.3em;
 }
-#wrapper #page-content-wrapper.invoice-main-class .container-fluid .row .col-contint .col-sm-8 .table-head-info tbody tr td h3 {
+#wrapper #page-content-wrapper.invoice-main-class .col-sm-8 .table-head-info tbody td h3 {
   color: #34495E;
 }
-#wrapper #page-content-wrapper.invoice-main-class .container-fluid .row .col-contint .col-sm-8.invoice-title {
+@media (max-width: 1335px) {
+  #wrapper #page-content-wrapper.invoice-main-class .col-sm-8 .table-head-info tbody td {
+    font-size: 0.9em;
+  }
+}
+#wrapper #page-content-wrapper.invoice-main-class .col-sm-8.invoice-title h1 {
   color: #34495E;
   border-bottom: 4px solid #3B97D2;
-  padding-bottom: 1.4em;
+  padding-bottom: 1em;
 }
-#wrapper #page-content-wrapper.invoice-main-class .container-fluid .row .col-contint .col-sm-4 table {
+#wrapper #page-content-wrapper.invoice-main-class .col-sm-8.invoice-title h1 i {
+  margin-right: 0.5em;
+}
+#wrapper #page-content-wrapper.invoice-main-class .col-sm-4 table {
   width: 80%;
   float: right;
   margin-top: 0.6em;
 }
-#wrapper #page-content-wrapper.invoice-main-class .container-fluid .row .col-contint .col-sm-4 table tbody tr td {
+#wrapper #page-content-wrapper.invoice-main-class .col-sm-4 table tbody td {
   padding: 0.4em 0em;
 }
-#wrapper #page-content-wrapper.invoice-main-class .container-fluid .row .col-contint .col-sm-4 table tbody tr td.gray-color {
+#wrapper #page-content-wrapper.invoice-main-class .col-sm-4 table tbody td.gray-color {
   color: #878787;
 }
-#wrapper #page-content-wrapper.invoice-main-class .container-fluid .row .col-contint .col-sm-4 table tbody tr td h3 {
+#wrapper #page-content-wrapper.invoice-main-class .col-sm-4 table tbody td h3 {
   color: #34495E;
 }
-#wrapper #page-content-wrapper.invoice-main-class .container-fluid .row .col-contint .col-sm-12 h3.table-title {
+@media (max-width: 1335px) {
+  #wrapper #page-content-wrapper.invoice-main-class .col-sm-4 table tbody td {
+    font-size: 0.9em;
+  }
+}
+#wrapper #page-content-wrapper.invoice-main-class .col-sm-12 h3.table-title {
   color: #34495E;
 }
-#wrapper #page-content-wrapper.invoice-main-class .container-fluid .row .col-contint .col-sm-12 table.table-bordered {
+#wrapper #page-content-wrapper.invoice-main-class .col-sm-12 table.table-bordered {
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
   border: none;
 }
-#wrapper #page-content-wrapper.invoice-main-class .container-fluid .row .col-contint .col-sm-12 table.table-bordered .table-head tr th {
+#wrapper #page-content-wrapper.invoice-main-class .col-sm-12 table.table-bordered .table-head th {
   color: #000000;
   font-weight: bold !important;
   border-left: none;
   border-right: none;
   border-bottom: 2px solid #ddd;
 }
-#wrapper #page-content-wrapper.invoice-main-class .container-fluid .row .col-contint .col-sm-12 table.table-bordered tbody tr.no-background .sub-total {
+#wrapper #page-content-wrapper.invoice-main-class .col-sm-12 table.table-bordered tbody tr.no-background .sub-total {
   border-color: #fff !important;
 }
-#wrapper #page-content-wrapper.invoice-main-class .container-fluid .row .col-contint .col-sm-12 table.table-bordered tbody tr.no-background .top-sub {
+#wrapper #page-content-wrapper.invoice-main-class .col-sm-12 table.table-bordered tbody tr.no-background .top-sub {
   border-top: 1px solid #E4E5E7 !important;
 }
-#wrapper #page-content-wrapper.invoice-main-class .container-fluid .row .col-contint .col-sm-12 table.table-bordered tbody tr td {
+#wrapper #page-content-wrapper.invoice-main-class .col-sm-12 table.table-bordered tbody tr td {
   border: none;
-}
-/* move to btn */
-.outline-icon-btn span {
-  float: right;
-  padding-left: 2em;
-  padding-top: 0.1em;
-}
-/* move to main */
-@media print {
-  #sidebar-wrapper {
-    display: none;
-  }
-  #head {
-    display: none;
-  }
-  #PageTitle {
-    display: none;
-  }
-  #Right-Side-Section-Togle {
-    display: none;
-  }
-  .btn {
-    display: none;
-  }
 }
 .login-body {
   background: #e9e9e9;
