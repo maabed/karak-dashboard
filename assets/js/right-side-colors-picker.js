@@ -90,7 +90,7 @@ $(function($) {
     $('#dark1-color-btn').click(function() {
       $('#head').css('background-color', '#2b3643');
       $('.body-header').css('border-left', '5px solid #2b3643');
-      $('.sidebar-nav .selected a').css('border-left', '4px solid #2b3643');
+      $('.sidebar-nav .selected a').css('border-left', '4px solid #F1F3F6');
       $('#searchTB').css('background-color', '#2b3643');
       $('#company-name').css('background-color', '#303b49');
       $('#sidebar-wrapper').css('background-color', '#364150');
@@ -111,7 +111,7 @@ $(function($) {
       $('#dark2-color-btn > .col-sm-12 > .selected-theme').show();
       $('#head').css('background-color', '#262930');
       $('.body-header').css('border-left', '5px solid #262930');
-      $('.sidebar-nav .selected a').css('border-left', '4px solid #262930');
+      $('.sidebar-nav .selected a').css('border-left', '4px solid #F1F3F6');
       $('#searchTB').css('background-color', '#262930');
       $('#company-name').css('background-color', '#282b32');
       $('#sidebar-wrapper').css('background-color', '#2a2e35');
