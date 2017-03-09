@@ -6072,3 +6072,6 @@ body.landing-page-container .owl-theme .owl-nav [class*=owl-] {
 .lock-page .container .card .forgot {
   display: none;
 }
+.chart-height {
+  height: 300px;
+}
