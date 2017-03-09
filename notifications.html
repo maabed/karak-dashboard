@@ -246,116 +246,118 @@
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
-        <div id="head">
-            <div class="container-fluid header-container">
-                <i href="#menu-toggle" id="menu-toggle" class="fa fa-bars" aria-hidden="true"></i>
-                <div class="form-group">
-                    <div class="icon-addon addon-md">
-                        <input type="email" placeholder="Type anywhere to search" class="form-control" id="searchTB">
-                        <i class="fa fa-search glyphicon glyphicon-search" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div class="right-side-head">
-                    <div class="notifecations head-box">
-                        <button id="notifications" class="btn btn-default btn-lg btn-link">
-                            <i class="fa fa-bell-o" aria-hidden="true"></i>
-                        </button>
-                        <span id="not-badg" class="badge badge-notify">2</span>
-                    </div>
-                    <div class="email head-box">
-                        <button id="messages" class="btn btn-default btn-lg btn-link">
-                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                        </button>
-                        <span id="message-badg" class="badge badge-notify">4</span>
-                    </div>
-                    <div id="user-box" class="user-box head-box">
-                        <p> Mr.Sami&nbsp;&nbsp; &nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i></p>
-                        <img src="assets/images/Sami.jpg" />
-                    </div>
-                </div>
-            </div>
-            <div class="notifecations-box">
-                <div class="arrow-up"></div>
-                <h5>Notifications</h5>
-                <div class="single-not-content">
-                    <a href="#">
-                        <img src="assets/images/Sami.jpg" />
-                        <p><b>Mohammad Meshaal</b>&nbsp; wants your confirmation on his Leave Request on 12 Mar 2017</p>
-                    </a>
-                </div>
-                <div class="single-not-content">
-                    <a href="#">
-                        <img src="assets/images/Team-Member-1-270x250.jpg" />
-                        <p><b>Nasir ahmad</b>&nbsp; sent a payment on 11 Mar 2017</p>
-                    </a>
-                </div>
-                <div class="veiw-all-not">
-                    <a href="#">View All</a>
-                </div>
-            </div>
-            <div class="messages-box">
-                <div class="arrow-up"></div>
-                <h5>Messages <a class="send-message-link " href="#">Send New Message</a></h5>
-                <div class="single-not-content">
-                    <a href="#">
-                        <img src="assets/images/team-member-5.jpg" />
-                        <p><b>Layla smith</b>
-                            <br /> Job offer</p>
-                    </a>
-                </div>
-                <div class="single-not-content">
-                    <a href="#">
-                        <img src="assets/images/Sami.jpg" />
-                        <p><b>Mohammad Meshaal</b>
-                            <br />Please send me the work templates</p>
-                    </a>
-                </div>
-                <div class="single-not-content">
-                    <a href="#">
-                        <img src="assets/images/team-member.jpg" />
-                        <p><b>Dana khalid</b>
-                            <br />Do you wanna hang out today?</p>
-                    </a>
-                </div>
-                <div class="single-not-content">
-                    <a href="#">
-                        <img src="assets/images/Team-Member-1-270x250.jpg" />
-                        <p><b>Nasir ahmad</b>
-                            <br />Are we going to the match today?</p>
-                    </a>
-                </div>
-                <div class="veiw-all-not">
-                    <a href="#">View All</a>
-                </div>
-            </div>
-            <div class="user-info-box">
-                <div class="arrow-up user-arrow"></div>
-                <a href="#">
-                    <div class="user-info-content">
-                        <i class="fa fa-user" aria-hidden="true"></i> Proﬁle
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="user-info-content">
-                        <i class="fa fa-cog" aria-hidden="true"></i> Settings
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="user-info-content">
-                        <i class="fa fa-info-circle" aria-hidden="true"></i> Help
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="user-info-content logout">
-                        Log Out
-                        <i class="fa fa-sign-out" aria-hidden="true"></i>
-                    </div>
-                </a>
-            </div>
-        </div>
         <!-- Page Content -->
         <div id="page-content-wrapper">
-            <div class="container-fluid">
+            <!-- header -->
+            <div id="head">
+                <div class="container-fluid header-container">
+                    <i href="#menu-toggle" id="menu-toggle" class="fa fa-bars" aria-hidden="true"></i>
+                    <div class="form-group">
+                        <div class="icon-addon addon-md">
+                            <input type="text" placeholder="Type anywhere to search" class="form-control" id="searchTB">
+                            <i class="fa fa-search glyphicon glyphicon-search" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="right-side-head">
+                        <div class="right-side-items notifecations">
+                            <button id="notifications" class="btn btn-default btn-lg btn-link">
+                                <i class="fa fa-bell-o" aria-hidden="true"></i>
+                            </button>
+                            <span id="not-badg" class="badge badge-notify">2</span>
+                        </div>
+                        <div class="right-side-items email">
+                            <button id="messages" class="btn btn-default btn-lg btn-link">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            </button>
+                            <span id="message-badg" class="badge badge-notify">4</span>
+                        </div>
+                        <div id="user-box" class="user-box right-side-items">
+                            <p> Mr.Sami<i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                            <img src="assets/images/Sami.jpg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="notifecations-box">
+                    <div class="arrow-up"></div>
+                    <h5>Notifications</h5>
+                    <div class="single-content-row">
+                        <a href="#">
+                            <img alt="user name" src="assets/images/Sami.jpg" />
+                            <p><b>Mohammad Meshaal</b>wants your confirmation on his Leave Request on 12 Mar 2017</p>
+                        </a>
+                    </div>
+                    <div class="single-content-row">
+                        <a href="#">
+                            <img alt="user name" src="assets/images/Team-Member-1-270x250.jpg" />
+                            <p><b>Nasir ahmad</b>sent a payment on 11 Mar 2017</p>
+                        </a>
+                    </div>
+                    <div class="veiw-all-not">
+                        <a href="#">View All</a>
+                    </div>
+                </div>
+                <div class="messages-box">
+                    <div class="arrow-up"></div>
+                    <h5>Messages <a class="send-message-link " href="#">Send New Message</a></h5>
+                    <div class="single-content-row">
+                        <a href="#">
+                            <img alt="user name" alt="user name" src="assets/images/team-member-5.jpg" />
+                            <p><b>Layla smith</b>
+                                <br /> Job offer</p>
+                        </a>
+                    </div>
+                    <div class="single-content-row">
+                        <a href="#">
+                            <img alt="user name" src="assets/images/Sami.jpg" />
+                            <p><b>Mohammad Meshaal</b>
+                                <br />Please send me the work templates</p>
+                        </a>
+                    </div>
+                    <div class="single-content-row">
+                        <a href="#">
+                            <img alt="user name" src="assets/images/team-member.jpg" />
+                            <p><b>Dana khalid</b>
+                                <br />Do you wanna hang out today?</p>
+                        </a>
+                    </div>
+                    <div class="single-content-row">
+                        <a href="#">
+                            <img alt="user name" src="assets/images/Team-Member-1-270x250.jpg" />
+                            <p><b>Nasir ahmad</b>
+                                <br />Are we going to the match today?</p>
+                        </a>
+                    </div>
+                    <div class="veiw-all-not">
+                        <a href="#">View All</a>
+                    </div>
+                </div>
+                <div class="user-info-box">
+                    <div class="arrow-up"></div>
+                    <a href="#">
+                        <div class="user-info-content">
+                            <i class="fa fa-user" aria-hidden="true"></i> Proﬁle
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="user-info-content">
+                            <i class="fa fa-cog" aria-hidden="true"></i> Settings
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="user-info-content">
+                            <i class="fa fa-info-circle" aria-hidden="true"></i> Help
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="user-info-content logout">
+                            Log Out
+                            <i class="fa fa-sign-out" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!--/header-->
+            <div class="container-fluid notifications-page">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="col-contint body-header">
@@ -371,7 +373,6 @@
                         <div class="col-contint notifications-style">
                             <h5 class="title"> Sweet alerts </h5>
                             <p class="header-text">To use the sweet alerts all you have to do is initializing the desired style using <a href="" class="doc-popover" data-trigger="focus" data-toggle="popover" data-content="test">Javascript</a>.</p>
-                            <br>
                             <img class="img-border" src="assets/images/notifications/sweet-01.png">
                             <br>
                             <br>
@@ -392,7 +393,6 @@
                     <div class="col-md-6">
                         <div class="col-contint">
                             <h5 class="title"> Bootstrap alerts </h5>
-                            <br>
                             <div class="alert alert-success">
                                 <strong>Success!</strong> Indicates a successful or positive action.
                             </div>
@@ -412,8 +412,7 @@
                     <div class="col-md-3">
                         <div class="col-contint top-left">
                             <h5 class="title"> Top left </h5>
-                            <br>
-                            <p>Just use the <code>#left</code> inside the button you want to use to have a top left alert</p>
+                            <p>Just use <code>#left</code> inside the button you want to use to have a top left alert</p>
                             <i id="left" class="fa fa-eye preview"></i>
                             <img class="img-border" src="assets/images/iconsPdf-01.svg">
                         </div>
@@ -421,8 +420,7 @@
                     <div class="col-md-3">
                         <div class="col-contint top-right">
                             <h5 class="title"> Top right </h5>
-                            <br>
-                            <p>Just use the <code>#right</code> inside the button you want to use to have a top right alert</p>
+                            <p>Just use <code>#right</code> inside the button you want to use to have a top right alert</p>
                             <i id="right" class="fa fa-eye preview"></i>
                             <img class="img-border" src="assets/images/iconsPdf-02.svg">
                         </div>
@@ -430,8 +428,7 @@
                     <div class="col-md-3">
                         <div class="col-contint top-center">
                             <h5 class="title"> Top center </h5>
-                            <br>
-                            <p>Just use the <code>#center</code> inside the button you want to use to have a top center alert</p>
+                            <p>Just use <code>#center</code> inside the button you want to use to have a top center alert</p>
                             <i id="center" class="fa fa-eye preview"></i>
                             <img class="img-border" src="assets/images/top_center.svg">
                         </div>
@@ -439,8 +436,7 @@
                     <div class="col-md-3">
                         <div class="col-contint top-full">
                             <h5 class="title"> Top full </h5>
-                            <br>
-                            <p>Just use the <code>#full</code> inside the button you want to use to have a full top alert</p>
+                            <p>Just use <code>#full</code> inside the button you want to use to have a full top alert</p>
                             <i id="full" class="fa fa-eye preview"></i>
                             <img class="img-border" src="assets/images/top_full.svg">
                         </div>
@@ -450,8 +446,7 @@
                     <div class="col-md-3">
                         <div class="col-contint bottom-left">
                             <h5 class="title"> bottom left </h5>
-                            <br>
-                            <p>Just use the <code>#bottom-left</code> inside the button you want to use to have a bottom left alert</p>
+                            <p>Just use <code>#bottom-left</code> inside the button you want to use to have a bottom left alert</p>
                             <i id="bottom-left" class="fa fa-eye preview"></i>
                             <img class="img-border" src="assets/images/iconsPdf-03.svg">
                         </div>
@@ -459,8 +454,7 @@
                     <div class="col-md-3">
                         <div class="col-contint bottom-right">
                             <h5 class="title"> bottom right </h5>
-                            <br>
-                            <p>Just use the <code>#bottom-right</code> inside the button you want to use to have a bottom right alert</p>
+                            <p>Just use <code>#bottom-right</code> inside the button you want to use to have a bottom right alert</p>
                             <i id="bottom-right" class="fa fa-eye preview"></i>
                             <img class="img-border" src="assets/images/iconsPdf-04.svg">
                         </div>
@@ -468,8 +462,7 @@
                     <div class="col-md-3">
                         <div class="col-contint bottom-center">
                             <h5 class="title"> bottom center </h5>
-                            <br>
-                            <p>Just use the <code>#bottom-center</code> inside the button you want to use to have a bottom center alert</p>
+                            <p>Just use <code>#bottom-center</code> inside the button you want to use to have a bottom center alert</p>
                             <i id="bottom-center" class="fa fa-eye preview"></i>
                             <img class="img-border" src="assets/images/bottom_center.svg">
                         </div>
@@ -477,8 +470,7 @@
                     <div class="col-md-3">
                         <div class="col-contint bottom-full">
                             <h5 class="title"> bottom full </h5>
-                            <br>
-                            <p>Just use the <code>#bottom-full</code> inside the button you want to use to have a bottom full alert</p>
+                            <p>Just use <code>#bottom-full</code> inside the button you want to use to have a bottom full alert</p>
                             <i id="bottom-full" class="fa fa-eye preview"></i>
                             <img class="img-border" src="assets/images/bottom_full.svg">
                         </div>
@@ -515,7 +507,6 @@
                     <div class="col-md-6">
                         <div class="col-contint content-overflow static-hover-cont">
                             <h5 class="title"> Tool tips </h5>
-                            <br>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla consequat massa egestas fermentum. Maecenas quis est ac ante hendrerit lorem ipsum.</p>
                             <br>
                             <div class="col-sm-3 no-padding-left bottom-margin">
