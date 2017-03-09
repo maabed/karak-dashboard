@@ -51,7 +51,7 @@ body {
   overflow-y: scroll;
 }
 
-#Right-Side-Section-Togle {
+#Right-Side-Section-Toggle {
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
   padding: 1em 0.7em;
@@ -150,7 +150,7 @@ body {
   color: #fff;
 }
 
-#Right-Side-Section-Togle:hover {
+#Right-Side-Section-Toggle:hover {
   background-color: #CDCDCD;
   color: #fff;
 }
@@ -3904,7 +3904,7 @@ height: 32em;
   display: none;
 }
 /*used*/
-#Right-Side-Section-Togle {
+#Right-Side-Section-Toggle {
   display: none;
 }
 /*used*/

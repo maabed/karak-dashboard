@@ -20,18 +20,18 @@ $(document).ready(function() {
   });
 
   //Right side Section
-  $('#Right-Side-Section-Togle').click(function() {
+  $('#Right-Side-Section-Toggle').click(function() {
     var toggleWidth = $('#Right-Side-Section').width() == 300 ? '200px' : '300px';
     $('#Right-Side-Section').animate({
       width: toggleWidth
     });
   });
 
-  $('#Right-Side-Section-Togle').click(function(e) {
+  $('#Right-Side-Section-Toggle').click(function(e) {
     e.preventDefault();
     var $this = $(this).parent().find('#Right-Side-Section');
     $('#Right-Side-Section').not($this).width('300px;');
-    $('#Right-Side-Section-Togle').hide(0);
+    $('#Right-Side-Section-Toggle').hide(0);
   });
 
   // Left side section
@@ -61,7 +61,7 @@ $(document).ready(function() {
 function closeToggel() {
   var a = document.getElementById('Right-Side-Section');
   a.style.width = '0px';
-  $('#Right-Side-Section-Togle').show(0);
+  $('#Right-Side-Section-Toggle').show(0);
 }
 
 function printbtn() {

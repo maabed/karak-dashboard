@@ -690,7 +690,7 @@ temporary rendered events).
 }
 /* overpower some of bootstrap's and jqui's styles on <a> tags */
 
-#Right-Side-Section-Togle {
+#Right-Side-Section-Toggle {
     z-index: 99 !important;
     background-color: #fff !important;
 }
@@ -698,7 +698,7 @@ temporary rendered events).
 #apptStartpost, #apptEndpost{
     display: none;
 }
-#Right-Side-Section-Togle:hover {
+#Right-Side-Section-Toggle:hover {
     background-color: #CDCDCD !important;
 }
 
