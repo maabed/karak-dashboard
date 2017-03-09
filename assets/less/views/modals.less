@@ -1,66 +1,27 @@
-.modals-page {
-  #wrapper {
-    #page-content-wrapper {
-      .container-fluid {
-        .row {
-          div {
-            .col-content {
-              .preview {
-                color: #888888;
-                position: relative;
-                top: 24px;
-                border: @nav-link-border;
-                background-color: @white;
-                padding: 0.2em;
-                z-index: 99;
-                .css-effect(all 0.5s ease);
-                cursor: pointer;
-                float: right;
-
-                &:hover {
-                  color: @title-color;
-                  background-color: #E4E5E7;
-                }
-
-              }
-
-              #standard {
-                .css-effect(all 0.5s ease);
-              }
-
-              .img-border {
-                border: 2px dashed #ccc;
-                padding: 10px;
-                width: 100%;
-
-                &.center-block {
-                  float: none;
-                  margin-left: auto;
-                  margin-right: auto;
-                }
-
-              }
-
-              #myModal2 {
-                .modal-dialog {
-                  .modal-content {
-                    border-top: 0px;
-                  }
-
-                }
-
-              }
-
-            }
-
-          }
-
+.modals-page-container {
+    .preview {
+        .css-effect(all 0.5s ease);
+        color: #888888;
+        position: relative;
+        top: 24px;
+        border: @nav-link-border;
+        background-color: @white;
+        padding: 0.2em;
+        z-index: 99;
+        cursor: pointer;
+        float: right;
+        &:hover {
+            color: @title-color;
+            background-color: #E4E5E7;
         }
-
-      }
-
     }
-
-  }
-
+    .img-border {
+        .padding(10px);
+        border: 2px dashed #ccc;
+        width: 100%;
+        &.center-block {
+            float: none;
+            margin: 0 auto;
+        }
+    }
 }
