@@ -2,7 +2,7 @@
   .nav-tabs {
     border-bottom: 1px solid #ddd;
 
-    &>li {
+    & > li {
       margin-bottom: 2px;
 
       a {
@@ -11,39 +11,45 @@
 
     }
 
-    &>li.active>a,
-    &>li.active>a:focus,
-    &>li.active>a:hover {
-      border: none;
+    & > li.active {
+      & > a,
+      & > a:focus,
+      & > a:hover {
+        border: none;
+      }
+
     }
 
-    &>li>a:hover {
+    & > li > a:hover {
       border-radius: 0px;
       background-color: @background-color !important;
       border: none;
     }
 
     &.nav-tabs-linetriangle {
-      &> li.active > a:after,
-      &> li.active > a:before {
-        border: medium solid transparent;
-        content: "";
-        height: 0;
-        left: 50%;
-        pointer-events: none;
-        position: absolute;
-        width: 0;
-        z-index: 1;
-        top: 106%;
+      & > li.active {
+        & > a:after,
+        & > a:before {
+          border: medium solid transparent;
+          content: "";
+          height: 0;
+          left: 50%;
+          pointer-events: none;
+          position: absolute;
+          width: 0;
+          z-index: 1;
+          top: 106%;
+        }
+
       }
 
-      &>li.active > a:before {
+      & > li.active > a:before {
         border-top-color: rgba(0, 0, 0, 0.2);
         border-width: 11px;
         margin-left: -11px;
       }
 
-      &>li.active > a:after {
+      & > li.active > a:after {
         border-top-color: @background-color;
         border-width: 10px;
         margin-left: -10px;
@@ -53,11 +59,17 @@
 
   }
 
-  .nav-pills>li.active>a,
-  .nav-pills>li.active>a:focus,
-  .nav-pills>li.active>a:hover {
-    color: @dashboard-info;
-    background-color: @background-color;
+  .nav-pills {
+    & > li.active {
+      & > a,
+      & > a:focus,
+      & > a:hover {
+        color: @dashboard-info;
+        background-color: @background-color;
+      }
+
+    }
+
   }
 
   .tab-content {
@@ -77,9 +89,6 @@
       border-radius: 0px;
     }
 
-    .btn.active.focus,
-    .btn.active:focus,
-    .btn.focus,
     .btn:active.focus,
     .btn:active:focus,
     .btn:focus {
@@ -135,19 +144,7 @@
       margin-top: 0px;
     }
 
-    .table>tbody>tr>td,
-    .table>tbody>tr>th,
-    .table>tfoot>tr>td,
-    .table>tfoot>tr>th,
-    .table>thead>tr>td {
-      padding: 8px;
-      line-height: 1.42857143;
-      vertical-align: top;
-      border-top: 1px solid #ddd !important;
-      font-weight: 500;
-    }
-
-    .table>thead>tr>th {
+    .table > thead > tr > th {
       vertical-align: bottom;
       border-bottom: 2px solid #ddd !important;
       font-weight: bold;

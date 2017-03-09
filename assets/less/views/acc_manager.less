@@ -70,19 +70,13 @@
 
   .acc-managment-chart,
   .acc-managment-transactions {
-    .no-left-right-padding {
-      padding-left: 0 !important;
-      padding-right: 0 !important;
+    #translateform {
+      .top-margin {
+        margin-top: 0.5em !important;
 
-      #translateform {
-        .top-margin {
-          margin-top: 0.5em !important;
-
-          .transaction-drop {
-            margin-bottom: 0px !important;
-            margin-top: 9px;
-          }
-
+        .transaction-drop {
+          margin-bottom: 0px !important;
+          margin-top: 9px;
         }
 
       }
@@ -91,55 +85,49 @@
 
   }
 
-  .datepicker-here {
-    .datepicker {
-      border: none;
-      width: 100%;
+  .datepicker {
+    border: none;
+    width: 100%;
 
-      .datepicker--nav-action {
-        path {
-          stroke: rgba(0, 0, 0, 0.07) !important;
-        }
-
+    .datepicker--nav-action {
+      path {
+        stroke: rgba(0, 0, 0, 0.07) !important;
       }
 
-      .datepicker--nav-title {
-        color: @info-mid;
-        font-weight: lighter !important;
-      }
+    }
 
+    .datepicker--nav-title {
+      color: @info-mid;
+      font-weight: lighter !important;
     }
 
   }
 
-  .acc-report {
-    #column_searching {
-      .static-width {
-        width: 30%;
-      }
-
-      .green-trans {
-        color: @success-mid !important;
-      }
-
-      .red-trans {
-        color: @danger-mid !important;
-      }
-
+  #column_searching {
+    .static-width {
+      width: 30%;
     }
 
-    .transaction-drop {
-      margin-bottom: 0px !important;
-      margin-top: 12px;
+    .green-trans {
+      color: @success-mid !important;
     }
 
-    .outline-icon-btn {
-      span {
-        float: right;
-        padding-left: 2em;
-        padding-top: 0.1em;
-      }
+    .red-trans {
+      color: @danger-mid !important;
+    }
 
+  }
+
+  .transaction-drop {
+    margin-bottom: 0px !important;
+    margin-top: 12px;
+  }
+
+  .outline-icon-btn {
+    span {
+      float: right;
+      padding-left: 2em;
+      padding-top: 0.1em;
     }
 
   }
