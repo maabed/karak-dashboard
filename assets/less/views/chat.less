@@ -160,6 +160,7 @@
         position: relative;
         .chat-header {
             background-color: @head-background;
+            padding: 0.5em 0em;
             @media(max-width: 700px) {
                 overflow: initial;
                 height: auto;
@@ -242,7 +243,7 @@
                 margin-top: 0.45em;
                 width: auto !important;
                 float: right;
-                padding-right: 265px !important;
+                padding-right: 20px !important;
                 @media(max-width: 1129px) {
                     padding-right: 0px !important;
                     width: auto;
@@ -269,11 +270,16 @@
                         display: none;
                     }
                     .icon-addon {
-                        #searchTB {
+                        .main-dashboard-search {
                             background-color: @head-background;
                             width: 10em;
+                            color: #fff;
+                            padding-left:2em;
                             @media(max-width: 1155px) {
                                 width: 13em;
+                            }
+                            .glyphicon{
+                                color:#fff;
                             }
                         }
                     }

@@ -185,7 +185,7 @@
 }
 
   /* Head */
-  #head {
+  .main-dashboard-header {
     width: 100%;
     padding-top: @small-value;
     height: 3.55em;
@@ -195,12 +195,12 @@
     .css-effect(all 0.5s ease);
     background-color: @head-background;
 
-    #menu-toggle {
+    .menu-toggle {
       display: none;
     }
 
     @media (max-width:768px) {
-      #menu-toggle {
+      .menu-toggle {
         display: block;
         float: left;
         margin-top: 0.8em;
@@ -221,7 +221,7 @@
         color: #555;
         display: block;
 
-        #searchTB {
+        .main-dashboard-search{
           border: none;
           box-shadow: none;
           color: @white;
@@ -291,7 +291,7 @@
 
         .css-effect(all 0.5s ease);
 
-        #messages {
+        .messages {
           &:hover {
             background-color: @head-background !important;
             border-color: @head-background !important;
@@ -299,7 +299,7 @@
 
         }
 
-        #notifications {
+        .notifications {
           border: none !important;
           background: none !important;
         }

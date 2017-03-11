@@ -235,115 +235,118 @@
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
-        <div id="head">
-            <div class="container-fluid header-container">
-                <i href="#menu-toggle" id="menu-toggle" class="fa fa-bars" aria-hidden="true"></i>
-                <div class="form-group">
-                    <div class="icon-addon addon-md">
-                        <input type="email" placeholder="Type anywhere to search" class="form-control" id="searchTB">
-                        <i class="fa fa-search glyphicon glyphicon-search" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div class="right-side-head">
-                    <div class="notifecations head-box">
-                        <button id="notifications" class="btn btn-default btn-lg btn-link">
-                            <i class="fa fa-bell-o" aria-hidden="true"></i>
-                        </button>
-                        <span id="not-badg" class="badge badge-notify">2</span>
-                    </div>
-                    <div class="email head-box">
-                        <button id="messages" class="btn btn-default btn-lg btn-link">
-                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                        </button>
-                        <span id="message-badg" class="badge badge-notify">4</span>
-                    </div>
-                    <div id="user-box" class="user-box head-box">
-                        <p> Mr.Sami&nbsp;&nbsp; &nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i></p>
-                        <img src="assets/images/Sami.jpg" />
-                    </div>
-                </div>
-            </div>
-            <div class="notifecations-box">
-                <div class="arrow-up"></div>
-                <h5>Notifications</h5>
-                <div class="single-not-content">
-                    <a href="#">
-                        <img src="assets/images/Sami.jpg" />
-                        <p><b>Mohammad Meshaal</b>&nbsp; wants your confirmation on his Leave Request on 12 Mar 2017</p>
-                    </a>
-                </div>
-                <div class="single-not-content">
-                    <a href="#">
-                        <img src="assets/images/Team-Member-1-270x250.jpg" />
-                        <p><b>Nasir ahmad</b>&nbsp; sent a payment on 11 Mar 2017</p>
-                    </a>
-                </div>
-                <div class="veiw-all-not">
-                    <a href="#">View All</a>
-                </div>
-            </div>
-            <div class="messages-box">
-                <div class="arrow-up"></div>
-                <h5>Messages <a class="send-message-link " href="#">Send New Message</a></h5>
-                <div class="single-not-content">
-                    <a href="#">
-                        <img src="assets/images/team-member-5.jpg" />
-                        <p><b>Layla smith</b>
-                            <br /> Job offer</p>
-                    </a>
-                </div>
-                <div class="single-not-content">
-                    <a href="#">
-                        <img src="assets/images/Sami.jpg" />
-                        <p><b>Mohammad Meshaal</b>
-                            <br />Please send me the work templates</p>
-                    </a>
-                </div>
-                <div class="single-not-content">
-                    <a href="#">
-                        <img src="assets/images/team-member.jpg" />
-                        <p><b>Dana khalid</b>
-                            <br />Do you wanna hang out today?</p>
-                    </a>
-                </div>
-                <div class="single-not-content">
-                    <a href="#">
-                        <img src="assets/images/Team-Member-1-270x250.jpg" />
-                        <p><b>Nasir ahmad</b>
-                            <br />Are we going to the match today?</p>
-                    </a>
-                </div>
-                <div class="veiw-all-not">
-                    <a href="#">View All</a>
-                </div>
-            </div>
-            <div class="user-info-box">
-                <div class="arrow-up user-arrow"></div>
-                <a href="#">
-                    <div class="user-info-content">
-                        <i class="fa fa-user" aria-hidden="true"></i> Proﬁle
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="user-info-content">
-                        <i class="fa fa-cog" aria-hidden="true"></i> Settings
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="user-info-content">
-                        <i class="fa fa-info-circle" aria-hidden="true"></i> Help
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="user-info-content logout">
-                        Log Out
-                        <i class="fa fa-sign-out" aria-hidden="true"></i>
-                    </div>
-                </a>
-            </div>
-        </div>
+        
         <!-- Page Content -->
         <div id="page-content-wrapper">
+         <!-- header -->
+            <div class="main-dashboard-header" id="head">
+                <div class="container-fluid header-container">
+                    <i href="#menu-toggle" id="menu-toggle" class="fa fa-bars menu-toggle" aria-hidden="true"></i>
+                    <div class="form-group">
+                        <div class="icon-addon addon-md">
+                            <input type="text" placeholder="Type anywhere to search" class="form-control main-dashboard-search" id="searchTB">
+                            <i class="fa fa-search glyphicon glyphicon-search" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                      <div class="right-side-head">
+                        <div class="right-side-items notifecations">
+                            <button id="notifications" class="notifications btn btn-default btn-lg btn-link">
+                                <i class="fa fa-bell-o" aria-hidden="true"></i>
+                            </button>
+                            <span id="not-badg" class="badge badge-notify">2</span>
+                        </div>
+                        <div class="right-side-items email">
+                            <button id="messages" class="messages btn btn-default btn-lg btn-link">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            </button>
+                            <span id="message-badg" class="badge badge-notify">4</span>
+                        </div>
+                        <div id="user-box" class="user-box right-side-items">
+                            <p> Mr.Sami<i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                            <img src="assets/images/Sami.jpg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="notifecations-box">
+                    <div class="arrow-up"></div>
+                    <h5>Notifications</h5>
+                    <div class="single-content-row">
+                        <a href="#">
+                            <img alt="user name" src="assets/images/Sami.jpg" />
+                            <p><b>Mohammad Meshaal</b>wants your confirmation on his Leave Request on 12 Mar 2017</p>
+                        </a>
+                    </div>
+                    <div class="single-content-row">
+                        <a href="#">
+                            <img alt="user name" src="assets/images/Team-Member-1-270x250.jpg" />
+                            <p><b>Nasir ahmad</b>sent a payment on 11 Mar 2017</p>
+                        </a>
+                    </div>
+                    <div class="veiw-all-not">
+                        <a href="#">View All</a>
+                    </div>
+                </div>
+                <div class="messages-box">
+                    <div class="arrow-up"></div>
+                    <h5>Messages <a class="send-message-link " href="#">Send New Message</a></h5>
+                    <div class="single-content-row">
+                        <a href="#">
+                            <img alt="user name" alt="user name" src="assets/images/team-member-5.jpg" />
+                            <p><b>Layla smith</b>
+                                <br /> Job offer</p>
+                        </a>
+                    </div>
+                    <div class="single-content-row">
+                        <a href="#">
+                            <img alt="user name" src="assets/images/Sami.jpg" />
+                            <p><b>Mohammad Meshaal</b>
+                                <br />Please send me the work templates</p>
+                        </a>
+                    </div>
+                    <div class="single-content-row">
+                        <a href="#">
+                            <img alt="user name" src="assets/images/team-member.jpg" />
+                            <p><b>Dana khalid</b>
+                                <br />Do you wanna hang out today?</p>
+                        </a>
+                    </div>
+                    <div class="single-content-row">
+                        <a href="#">
+                            <img alt="user name" src="assets/images/Team-Member-1-270x250.jpg" />
+                            <p><b>Nasir ahmad</b>
+                                <br />Are we going to the match today?</p>
+                        </a>
+                    </div>
+                    <div class="veiw-all-not">
+                        <a href="#">View All</a>
+                    </div>
+                </div>
+                <div class="user-info-box">
+                    <div class="arrow-up"></div>
+                    <a href="#">
+                        <div class="user-info-content">
+                            <i class="fa fa-user" aria-hidden="true"></i> Proﬁle
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="user-info-content">
+                            <i class="fa fa-cog" aria-hidden="true"></i> Settings
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="user-info-content">
+                            <i class="fa fa-info-circle" aria-hidden="true"></i> Help
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="user-info-content logout">
+                            Log Out
+                            <i class="fa fa-sign-out" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!--/header-->
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
