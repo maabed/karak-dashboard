@@ -175,6 +175,14 @@
     }
 
   }
+  .height-32 {
+    height: 32em;
+    overflow: hidden;
+    padding-bottom: 5em;
+    @media(max-width:700px){
+      height:auto;
+    }
+}
 
   /* Head */
   #head {
@@ -204,6 +212,9 @@
       width: 20%;
       float: left;
       margin-left: @small-value;
+      @media(max-width:700px){
+                    width:80%;
+                }
 
       .icon-addon {
         position: relative;
@@ -219,6 +230,7 @@
           .css-effect(all 0.5s ease);
           .placeholder(#fff);
           background-color: @head-background;
+            
         }
 
         .form-control {

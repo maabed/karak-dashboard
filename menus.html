@@ -234,251 +234,242 @@
                 </li>
             </ul>
         </div>
-        <div id="head">
-            <div class="container-fluid header-container">
-                <i href="#menu-toggle" id="menu-toggle" class="fa fa-bars" aria-hidden="true"></i>
-                <div class="form-group">
-                    <div class="icon-addon addon-md">
-                        <input type="email" placeholder="Type anywhere to search" class="form-control" id="searchTB">
-                        <i class="fa fa-search glyphicon glyphicon-search" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div class="right-side-head">
-                    <div class="notifecations head-box">
-                        <button id="notifications" class="btn btn-default btn-lg btn-link">
-                            <i class="fa fa-bell-o" aria-hidden="true"></i>
-                        </button>
-                        <span id="not-badg" class="badge badge-notify">2</span>
-                    </div>
-                    <div class="email head-box">
-                        <button id="messages" class="btn btn-default btn-lg btn-link">
-                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                        </button>
-                        <span id="message-badg" class="badge badge-notify">4</span>
-                    </div>
-                    <div id="user-box" class="user-box head-box">
-                        <p> Mr.Sami&nbsp;&nbsp; &nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i></p>
-                        <img src="assets/images/Sami.jpg" />
-                    </div>
-                </div>
-            </div>
-            <div class="notifecations-box">
-                <div class="arrow-up"></div>
-                <h5>Notifications</h5>
-                <div class="single-not-content">
-                    <a href="#">
-                        <img src="assets/images/Sami.jpg" />
-                        <p><b>Mohammad Meshaal</b>&nbsp; wants your confirmation on his Leave Request on 12 Mar 2017</p>
-                    </a>
-                </div>
-                <div class="single-not-content">
-                    <a href="#">
-                        <img src="assets/images/Team-Member-1-270x250.jpg" />
-                        <p><b>Nasir ahmad</b>&nbsp; sent a payment on 11 Mar 2017</p>
-                    </a>
-                </div>
-                <div class="veiw-all-not">
-                    <a href="#">View All</a>
-                </div>
-            </div>
-            <div class="messages-box">
-                <div class="arrow-up"></div>
-                <h5>Messages <a class="send-message-link " href="#">Send New Message</a></h5>
-                <div class="single-not-content">
-                    <a href="#">
-                        <img src="assets/images/team-member-5.jpg" />
-                        <p><b>Layla smith</b>
-                            <br /> Job offer</p>
-                    </a>
-                </div>
-                <div class="single-not-content">
-                    <a href="#">
-                        <img src="assets/images/Sami.jpg" />
-                        <p><b>Mohammad Meshaal</b>
-                            <br />Please send me the work templates</p>
-                    </a>
-                </div>
-                <div class="single-not-content">
-                    <a href="#">
-                        <img src="assets/images/team-member.jpg" />
-                        <p><b>Dana khalid</b>
-                            <br />Do you wanna hang out today?</p>
-                    </a>
-                </div>
-                <div class="single-not-content">
-                    <a href="#">
-                        <img src="assets/images/Team-Member-1-270x250.jpg" />
-                        <p><b>Nasir ahmad</b>
-                            <br />Are we going to the match today?</p>
-                    </a>
-                </div>
-                <div class="veiw-all-not">
-                    <a href="#">View All</a>
-                </div>
-            </div>
-            <div class="user-info-box">
-                <div class="arrow-up user-arrow"></div>
-                <a href="#">
-                    <div class="user-info-content">
-                        <i class="fa fa-user" aria-hidden="true"></i> Proﬁle
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="user-info-content">
-                        <i class="fa fa-cog" aria-hidden="true"></i> Settings
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="user-info-content">
-                        <i class="fa fa-info-circle" aria-hidden="true"></i> Help
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="user-info-content logout">
-                        Log Out
-                        <i class="fa fa-sign-out" aria-hidden="true"></i>
-                    </div>
-                </a>
-            </div>
-        </div>
         <!-- Page Content -->
         <div id="page-content-wrapper">
+            <!-- header -->
+            <div id="head">
+                <div class="container-fluid header-container">
+                    <i href="#menu-toggle" id="menu-toggle" class="fa fa-bars" aria-hidden="true"></i>
+                    <div class="form-group">
+                        <div class="icon-addon addon-md">
+                            <input type="text" placeholder="Type anywhere to search" class="form-control" id="searchTB">
+                            <i class="fa fa-search glyphicon glyphicon-search" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="right-side-head">
+                        <div class="right-side-items notifecations">
+                            <button id="notifications" class="btn btn-default btn-lg btn-link">
+                                <i class="fa fa-bell-o" aria-hidden="true"></i>
+                            </button>
+                            <span id="not-badg" class="badge badge-notify">2</span>
+                        </div>
+                        <div class="right-side-items email">
+                            <button id="messages" class="btn btn-default btn-lg btn-link">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            </button>
+                            <span id="message-badg" class="badge badge-notify">4</span>
+                        </div>
+                        <div id="user-box" class="user-box right-side-items">
+                            <p> Mr.Sami<i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                            <img src="assets/images/Sami.jpg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="notifecations-box">
+                    <div class="arrow-up"></div>
+                    <h5>Notifications</h5>
+                    <div class="single-content-row">
+                        <a href="#">
+                            <img alt="user name" src="assets/images/Sami.jpg" />
+                            <p><b>Mohammad Meshaal</b>wants your confirmation on his Leave Request on 12 Mar 2017</p>
+                        </a>
+                    </div>
+                    <div class="single-content-row">
+                        <a href="#">
+                            <img alt="user name" src="assets/images/Team-Member-1-270x250.jpg" />
+                            <p><b>Nasir ahmad</b>sent a payment on 11 Mar 2017</p>
+                        </a>
+                    </div>
+                    <div class="veiw-all-not">
+                        <a href="#">View All</a>
+                    </div>
+                </div>
+                <div class="messages-box">
+                    <div class="arrow-up"></div>
+                    <h5>Messages <a class="send-message-link " href="#">Send New Message</a></h5>
+                    <div class="single-content-row">
+                        <a href="#">
+                            <img alt="user name" alt="user name" src="assets/images/team-member-5.jpg" />
+                            <p><b>Layla smith</b>
+                                <br /> Job offer</p>
+                        </a>
+                    </div>
+                    <div class="single-content-row">
+                        <a href="#">
+                            <img alt="user name" src="assets/images/Sami.jpg" />
+                            <p><b>Mohammad Meshaal</b>
+                                <br />Please send me the work templates</p>
+                        </a>
+                    </div>
+                    <div class="single-content-row">
+                        <a href="#">
+                            <img alt="user name" src="assets/images/team-member.jpg" />
+                            <p><b>Dana khalid</b>
+                                <br />Do you wanna hang out today?</p>
+                        </a>
+                    </div>
+                    <div class="single-content-row">
+                        <a href="#">
+                            <img alt="user name" src="assets/images/Team-Member-1-270x250.jpg" />
+                            <p><b>Nasir ahmad</b>
+                                <br />Are we going to the match today?</p>
+                        </a>
+                    </div>
+                    <div class="veiw-all-not">
+                        <a href="#">View All</a>
+                    </div>
+                </div>
+                <div class="user-info-box">
+                    <div class="arrow-up"></div>
+                    <a href="#">
+                        <div class="user-info-content">
+                            <i class="fa fa-user" aria-hidden="true"></i> Proﬁle
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="user-info-content">
+                            <i class="fa fa-cog" aria-hidden="true"></i> Settings
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="user-info-content">
+                            <i class="fa fa-info-circle" aria-hidden="true"></i> Help
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="user-info-content logout">
+                            Log Out
+                            <i class="fa fa-sign-out" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!--/header-->
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="col-content body-header">
                             <a href="menus.html" class="page_title pull-right">UI Elements / Menus</a>
                             <h4 class="title"> Menus </h4>
-                            <br>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-12 no-left-right-padding">
-                        <div class="col-sm-3">
-                            <div class="col-content">
-                                <div class="left-side-menue-height">
-                                    <h5 class="title">Left Side Menu</h5>
-                                    <br />
-                                    <div class="menu-container">
-                                        <nav class="navbar sidebar left-side-menue" role="navigation">
-                                            <div class="navbar-header left-side-nav">
-                                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1">
-                                                    <span class="sr-only">Toggle navigation</span>
-                                                    <span class="icon-bar"></span>
-                                                    <span class="icon-bar"></span>
-                                                    <span class="icon-bar"></span>
-                                                </button>
-                                                <a class="navbar-brand" href="#">Blue Dashboard</a>
-                                            </div>
-                                            <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
-                                                <ul class="nav navbar-nav right-side-ul">
-                                                    <li class="active"><a>Home<span class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
-                                                    <li><a>Profile<span  class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a></li>
-                                                    <li><a>Messages<span  class="pull-right hidden-xs showopacity glyphicon glyphicon-envelope"></span></a></li>
-                                                    <li class="dropdown">
-                                                        <a class="dropdown-toggle" data-toggle="dropdown">Settings <span class="caret"></span><span class="pull-right hidden-xs showopacity glyphicon glyphicon-cog"></span></a>
-                                                        <ul class="dropdown-menu forAnimate" role="menu">
-                                                            <li><a>Action</a></li>
-                                                            <li><a>Another action</a></li>
-                                                            <li><a>Something else here</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a>Home<span class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
-                                                    <li><a>Profile<span class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a></li>
-                                                    <li><a>Messages<span class="pull-right hidden-xs showopacity glyphicon glyphicon-envelope"></span></a></li>
-                                                </ul>
-                                            </div>
-                                        </nav>
+                    <div class="col-lg-3">
+                        <div class="col-content">
+                            <h5 class="title">Left Side Menu</h5>
+                            <div class="menu-container height-32">
+                                <nav class="navbar sidebar" role="navigation">
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                        <a class="navbar-brand" href="#">Blue Dashboard</a>
                                     </div>
-                                </div>
+                                    <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
+                                        <ul class="nav navbar-nav">
+                                            <li class="active"><a>Home<span class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+                                            <li><a>Profile<span  class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a></li>
+                                            <li><a>Messages<span  class="pull-right hidden-xs showopacity glyphicon glyphicon-envelope"></span></a></li>
+                                            <li class="dropdown">
+                                                <a class="dropdown-toggle" data-toggle="dropdown">Settings <span class="caret"></span><span class="pull-right hidden-xs showopacity glyphicon glyphicon-cog"></span></a>
+                                                <ul class="dropdown-menu forAnimate" role="menu">
+                                                    <li><a>Action</a></li>
+                                                    <li><a>Another action</a></li>
+                                                    <li><a>Something else here</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a>Home<span class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+                                            <li><a>Profile<span class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a></li>
+                                            <li><a>Messages<span class="pull-right hidden-xs showopacity glyphicon glyphicon-envelope"></span></a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
                             </div>
                         </div>
-                        <div class="col-sm-9">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="col-content">
-                                        <h5 class="title">Menu With Carousel</h5>
-                                        <br />
-                                        <div class="menu-container">
-                                            <nav class="navbar navbar-default nav-style" role="navigation">
-                                                <div class="navbar-header">
-                                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                                                        <span class="sr-only">Toggle navigation</span>
-                                                        <span class="icon-bar"></span>
-                                                        <span class="icon-bar"></span>
-                                                        <span class="icon-bar"></span>
-                                                    </button>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="col-content">
+                            <h5 class="title">Menu With Carousel</h5>
+                            <div class="menu-container">
+                                <nav class="navbar navbar-default nav-style" role="navigation">
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
+                                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                                        <ol class="nav navbar-nav nav-indicators">
+                                            <li data-target="#myCarousel" data-slide-to="0" class="myCarousel-target active">
+                                                <a href="#">Image Title Gose Here</a>
+                                            </li>
+                                            <li data-target="#myCarousel" data-slide-to="1" class="myCarousel-target">
+                                                <a href="#">Slider Title</a>
+                                            </li>
+                                            <li data-target="#myCarousel" data-slide-to="2" class="myCarousel-target">
+                                                <a href="#">Image Title</a>
+                                            </li>
+                                            <li data-target="#myCarousel" data-slide-to="3" class="myCarousel-target">
+                                                <a href="#">Any Text</a>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </nav>
+                                <div id="myCarousel" class="carousel slide">
+                                    <div class="carousel-inner">
+                                        <div data-slide-no="0" class="item carousel-item active slider-hight">
+                                            <div class="wrapper single-slider">
+                                                <div class="slider-title">
+                                                    <h2>The Blue Dashboard</h2>
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                                                    </p>
                                                 </div>
-                                                <div class="collapse navbar-collapse navbar-ex1-collapse">
-                                                    <ol class="nav navbar-nav nav-indicators">
-                                                        <li data-target="#myCarousel" data-slide-to="0" class="myCarousel-target active">
-                                                            <a href="#">Image Title Gose Here</a>
-                                                        </li>
-                                                        <li data-target="#myCarousel" data-slide-to="1" class="myCarousel-target">
-                                                            <a href="#">Slider Title</a>
-                                                        </li>
-                                                        <li data-target="#myCarousel" data-slide-to="2" class="myCarousel-target">
-                                                            <a href="#">Image Title</a>
-                                                        </li>
-                                                        <li data-target="#myCarousel" data-slide-to="3" class="myCarousel-target">
-                                                            <a href="#">Any Text</a>
-                                                        </li>
-                                                    </ol>
+                                                <div class="dark-layer"></div>
+                                                <img alt="Slide Title" src="assets/images/slider-img-2.png " class="img-responsive ">
+                                            </div>
+                                        </div>
+                                        <div data-slide-no="1 " class="item carousel-item slider-hight ">
+                                            <div class="wrapper single-slider ">
+                                                <div class="slider-title ">
+                                                    <h2>The Blue Dashboard</h2>
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                                                    </p>
                                                 </div>
-                                            </nav>
-                                            <div id="myCarousel" class="carousel slide">
-                                                <div class="carousel-inner">
-                                                    <div data-slide-no="0" class="item carousel-item active slider-hight">
-                                                        <div class="wrapper single-slider">
-                                                            <div class="slider-title">
-                                                                <h2>The Blue Dashboard</h2>
-                                                                <p>
-                                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
-                                                                </p>
-                                                            </div>
-                                                            <div class="dark-layer"></div>
-                                                            <img src="assets/images/2-01.png " class="img-responsive ">
-                                                        </div>
-                                                    </div>
-                                                    <div data-slide-no="1 " class="item carousel-item slider-hight ">
-                                                        <div class="wrapper single-slider ">
-                                                            <div class="slider-title ">
-                                                                <h2>The Blue Dashboard</h2>
-                                                                <p>
-                                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
-                                                                </p>
-                                                            </div>
-                                                            <div class="dark-layer"></div>
-                                                            <img src="assets/images/1-01.png" class="img-responsive">
-                                                        </div>
-                                                    </div>
-                                                    <div data-slide-no="2" class="item carousel-item slider-hight">
-                                                        <div class="wrapper single-slider">
-                                                            <div class="slider-title ">
-                                                                <h2>The Blue Dashboard</h2>
-                                                                <p>
-                                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
-                                                                </p>
-                                                            </div>
-                                                            <div class="dark-layer "></div>
-                                                            <img src="assets/images/3-01-01.png " class="img-responsive ">
-                                                        </div>
-                                                    </div>
-                                                    <div data-slide-no="3 " class="item carousel-item slider-hight ">
-                                                        <div class="wrapper single-slider ">
-                                                            <div class="slider-title ">
-                                                                <h2>The Blue Dashboard</h2>
-                                                                <p>
-                                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
-                                                                </p>
-                                                            </div>
-                                                            <div class="dark-layer"></div>
-                                                            <img src="assets/images/3-01-01.svg" class="img-responsive">
-                                                        </div>
-                                                    </div>
+                                                <div class="dark-layer"></div>
+                                                <img alt="Slide Title" src="assets/images/slider-img-1.png" class="img-responsive">
+                                            </div>
+                                        </div>
+                                        <div data-slide-no="2" class="item carousel-item slider-hight">
+                                            <div class="wrapper single-slider">
+                                                <div class="slider-title ">
+                                                    <h2>The Blue Dashboard</h2>
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                                                    </p>
                                                 </div>
+                                                <div class="dark-layer "></div>
+                                                <img alt="Slide Title" src="assets/images/slider-img-2.png " class="img-responsive ">
+                                            </div>
+                                        </div>
+                                        <div data-slide-no="3 " class="item carousel-item slider-hight ">
+                                            <div class="wrapper single-slider ">
+                                                <div class="slider-title ">
+                                                    <h2>The Blue Dashboard</h2>
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                                                    </p>
+                                                </div>
+                                                <div class="dark-layer"></div>
+                                                <img alt="Slide Title" src="assets/images/slider-img-1.png" class="img-responsive">
                                             </div>
                                         </div>
                                     </div>
@@ -488,75 +479,75 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-12 no-left-right-padding">
-                        <div class="col-sm-6">
-                            <div class="col-content">
-                                <h5 class="title">Simple Menu</h5>
-                                <br />
-                                <div class="menu-container">
-                                    <nav class="navbar navbar-inverse simple-menue">
-                                        <div class="container-fluid">
-                                            <ul class="nav navbar-nav">
-                                                <li class="active"><a>Home</a></li>
-                                                <li class="dropdown">
-                                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services<span class="caret"></span></a>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a>Services 1-1</a></li>
-                                                        <li><a>Services 1-2</a></li>
-                                                        <li><a>Services 1-3</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                            <ul class="nav navbar-nav navbar-right">
-                                                <li><a><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                                                <li><a><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                                            </ul>
-                                        </div>
-                                    </nav>
-                                </div>
+                    <div class="col-lg-12">
+                        <div class="col-content">
+                            <h5 class="title">Simple Menu</h5>
+                            <div class="menu-container">
+                                <nav class="navbar navbar-inverse">
+                                    <div class="container-fluid">
+                                        <ul class="nav navbar-nav">
+                                            <li class="active"><a>Home</a></li>
+                                            <li class="dropdown">
+                                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services<span class="caret"></span></a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a>Services 1-1</a></li>
+                                                    <li><a>Services 1-2</a></li>
+                                                    <li><a>Services 1-3</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li><a><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                                            <li><a><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
                             </div>
-                            <br>
-                            <div class="col-content">
-                                <h5 class="title">Dropdown Menu With Search Box</h5>
-                                <br />
-                                <div class="menu-container">
-                                    <nav class="navbar navbar-default nav-style" role="navigation">
-                                        <div class="collapse navbar-collapse" id="dropdown-thumbnail-preview">
-                                            <ul class="nav navbar-nav">
-                                                <li class="active"><a>Home</a></li>
-                                                <li><a>Services</a></li>
-                                                <li class="dropdown thumb-dropdown">
-                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gallery <span class="caret"></span></a>
-                                                    <ul class="dropdown-menu" role="menu">
-                                                        <li role="presentation" class="dropdown-header">Simple thumbnail</li>
-                                                        <li>
-                                                            <a href="#">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="col-content">
+                            <h5 class="title">Dropdown Menu With Search Box</h5>
+                            <div class="menu-container">
+                                <nav class="navbar navbar-default nav-style" role="navigation">
+                                    <div class="collapse navbar-collapse" id="dropdown-thumbnail-preview">
+                                        <ul class="nav navbar-nav">
+                                            <li class="active"><a>Home</a></li>
+                                            <li><a>Services</a></li>
+                                            <li class="dropdown thumb-dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gallery <span class="caret"></span></a>
+                                                <ul class="dropdown-menu" role="menu">
+                                                    <li role="presentation" class="dropdown-header">Simple thumbnail</li>
+                                                    <li>
+                                                        <a href="#">
                                                                 Preview carousel indicators
                                                                 <div class="thumbnail">
                                                                     <img class="img-responsive" src="assets/images/post.jpg">
                                                                 </div>
                                                             </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
                                                                 Simple subscribe form
                                                                 <div class="thumbnail">
                                                                     <img class="img-responsive" src="assets/images/post.jpg">
                                                                 </div>
                                                             </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
                                                                 Flat user profile
                                                                 <div class="thumbnail">
                                                                     <img class="img-responsive" src="assets/images/post.jpg">
                                                                 </div>
                                                             </a>
-                                                        </li>
-                                                        <li class="divider"></li>
-                                                        <li role="presentation" class="dropdown-header">Thumbnail with caption</li>
-                                                        <li>
-                                                            <a href="#">
+                                                    </li>
+                                                    <li class="divider"></li>
+                                                    <li role="presentation" class="dropdown-header">Thumbnail with caption</li>
+                                                    <li>
+                                                        <a href="#">
                                                                 Discount labels
                                                                 <div class="thumbnail">
                                                                     <img class="img-responsive" src="assets/images/post.jpg">
@@ -565,253 +556,241 @@
                                                                     </div>
                                                                 </div>
                                                             </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                            <ul>
-                                                <li class="nav navbar-nav navbar-right">
-                                                    <div class="navbar-form" role="search">
-                                                        <div class="form-group">
-                                                            <input type="text" class="form-control" placeholder="Search">
-                                                        </div>
-                                                        <span class="glyphicon glyphicon-search "></span>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </nav>
-                                </div>
-                            </div>
-                            <br />
-                            <div class="col-content">
-                                <h5 class="title">Mega Menu With Tabs Navigation</h5>
-                                <br />
-                                <div class="menu-container">
-                                    <nav class="navbar navbar-default nav-style" role="navigation">
-                                        <div class="container-fluid">
-                                            <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
-                                                <ul class="nav navbar-nav">
-                                                    <li><a>Home</a></li>
-                                                    <li><a>About</a></li>
-                                                    <li class="dropdown2 mega-dropdown active">
-                                                        <a class="dropdown-toggle" data-toggle="dropdown">Categories<span class="caret"></span></a>
-                                                        <div class="dropdown-menu mega-dropdown-menu">
-                                                            <div class="container-fluid">
-                                                                <!-- Tab panes -->
-                                                                <div class="tab-content">
-                                                                    <div class="tab-pane active" id="men">
-                                                                        <ul class="nav-list list-inline">
-                                                                            <li>
-                                                                                <a><img src="assets/images/st-1.png"><span>Stock</span></a>
-                                                                            </li>
-                                                                            <li>
-                                                                                <a><img src="assets/images/st-2.png"><span>Exchange</span></a>
-                                                                            </li>
-                                                                            <li>
-                                                                                <a><img src="assets/images/st-3.png"><span>Dollar</span></a>
-                                                                            </li>
-                                                                            <li>
-                                                                                <a><img src="assets/images/st-4.png"><span>Chart</span></a>
-                                                                            </li>
-                                                                            <li>
-                                                                                <a><img src="assets/images/st-5.png"><span>Wallet</span></a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="tab-pane" id="women">
-                                                                        <ul class="nav-list list-inline">
-                                                                            <li>
-                                                                                <a><img src="assets/images/st-1.png"><span>Stock</span></a>
-                                                                            </li>
-                                                                            <li>
-                                                                                <a><img src="assets/images/st-2.png"><span>Exchange</span></a>
-                                                                            </li>
-                                                                            <li>
-                                                                                <a><img src="assets/images/st-3.png"><span>Dollar</span></a>
-                                                                            </li>
-                                                                            <li>
-                                                                                <a><img src="assets/images/st-4.png"><span>Chart</span></a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="tab-pane" id="kids">
-                                                                        <ul class="nav-list list-inline">
-                                                                            <li>
-                                                                                <a><img src="assets/images/st-1.png"><span>Stock</span></a>
-                                                                            </li>
-                                                                            <li>
-                                                                                <a><img src="assets/images/st-2.png"><span>Exchange</span></a>
-                                                                            </li>
-                                                                            <li>
-                                                                                <a><img src="assets/images/st-3.png"><span>Dollar</span></a>
-                                                                            </li>
-                                                                            <li>
-                                                                                <a><img src="assets/images/st-4.png"><span>Chart</span></a>
-                                                                            </li>
-                                                                            <li>
-                                                                                <a href="#"><img src="assets/images/st-5.png"><span>Wallet</span></a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="tab-pane" id="sports">
-                                                                        <ul class="nav-list list-inline">
-                                                                            <li>
-                                                                                <a><img src="assets/images/st-1.png"><span>Stock</span></a>
-                                                                            </li>
-                                                                            <li>
-                                                                                <a><img src="assets/images/st-2.png"><span>Exchange</span></a>
-                                                                            </li>
-                                                                            <li>
-                                                                                <a><img src="assets/images/st-3.png"><span>Dollar</span></a>
-                                                                            </li>
-                                                                            <li>
-                                                                                <a><img src="assets/images/st-4.png"><span>Chart</span></a>
-                                                                            </li>
-                                                                            <li>
-                                                                                <a><img src="assets/images/st-5.png"><span>Wallet</span></a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <!-- Nav tabs -->
-                                                            <ul class="nav nav-tabs" role="tablist">
-                                                                <li class="active"><a href="#men" role="tab" data-toggle="tab">Men</a></li>
-                                                                <li><a href="#women" role="tab" data-toggle="tab">Women</a></li>
-                                                                <li><a href="#kids" role="tab" data-toggle="tab">Kids</a></li>
-                                                                <li><a href="#sports" role="tab" data-toggle="tab">Sports</a></li>
-                                                            </ul>
-                                                        </div>
                                                     </li>
                                                 </ul>
-                                            </div>
-                                            <!-- /.navbar-collapse -->
-                                        </div>
-                                        <!-- /.container-fluid -->
-                                    </nav>
-                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li class="nav navbar-nav navbar-right">
+                                                <div class="navbar-form" role="search">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" placeholder="Search">
+                                                    </div>
+                                                    <span class="glyphicon glyphicon-search "></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
                             </div>
                         </div>
-                        <div class="col-sm-6">
-                            <div class="col-content">
-                                <h5 class="title">Toggle Menus With Slide Down Animation</h5>
-                                <br />
-                                <!--co-->
-                                <div class="menu-container">
-                                    <nav class="navbar navbar-default navbar2  nav-style">
-                                        <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                                            <ul class="nav navbar-nav navbar-right menu-padding">
-                                                <li><a>Home</a></li>
-                                                <li><a>About</a></li>
-                                                <li><a>Services</a></li>
-                                                <li><a>Contact</a></li>
-                                            </ul>
-                                            <ul class="nav navbar-nav navbar-right">
-                                                <li>
-                                                    <button class="btn btn-info button-style collapsed" data-toggle="collapse" href="#nav-collapse1" aria-expanded="false" aria-controls="nav-collapse1">Categories</button>
-                                                </li>
-                                            </ul>
-                                            <ul class="collapse nav navbar-nav nav-collapse" id="nav-collapse1">
-                                                <li><a>Web design</a></li>
-                                                <li><a>Development</a></li>
-                                                <li><a>Graphic design</a></li>
-                                                <li><a>Print</a></li>
-                                            </ul>
-                                        </div>
-                                        <!-- /.navbar-collapse -->
-                                    </nav>
-                                </div>
-                                <!-- /.navbar -->
-                                <!-- Second navbar for sign in -->
-                                <div class="menu-container">
-                                    <nav class="navbar navbar-default navbar2  nav-style">
-                                        <div class="collapse navbar-collapse" id="navbar-collapse-2">
-                                            <ul class="nav navbar-nav navbar-right menu-padding">
-                                                <li><a>Home</a></li>
-                                                <li><a>About</a></li>
-                                                <li><a>Services</a></li>
-                                                <li><a>Contact</a></li>
-                                            </ul>
-                                            <ul class="nav navbar-nav navbar-right">
-                                                <li>
-                                                    <button class="btn btn-info button-style collapsed" data-toggle="collapse" href="#nav-collapse2" aria-expanded="false" aria-controls="nav-collapse2">Sign in
-                                                    </button>
-                                                </li>
-                                            </ul>
-                                            <div class="collapse nav navbar-nav nav-collapse slide-down" id="nav-collapse2">
-                                                <form class="navbar-form navbar-right form-inline" id="signin" role="form">
-                                                    <div class="form-group toggle-form email-toggle">
-                                                        <div class="input-field parent">
-                                                            <input name="email" placeholder="Email" type="text" id="Email" class="validate">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="col-content">
+                            <h5 class="title">Mega Menu With Tabs Navigation</h5>
+                            <div class="menu-container">
+                                <nav class="navbar navbar-default nav-style" role="navigation">
+                                    <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+                                        <ul class="nav navbar-nav">
+                                            <li><a>Home</a></li>
+                                            <li><a>About</a></li>
+                                            <li class="dropdown2 mega-dropdown active">
+                                                <a class="dropdown-toggle" data-toggle="dropdown">Categories<span class="caret"></span></a>
+                                                <div class="dropdown-menu mega-dropdown-menu">
+                                                    <div class="container-fluid">
+                                                        <!-- Tab panes -->
+                                                        <div class="tab-content">
+                                                            <div class="tab-pane active" id="men">
+                                                                <ul class="nav-list list-inline">
+                                                                    <li>
+                                                                        <a><img alt="Image Title" src="assets/images/st-1.png"><span>Stock</span></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a><img alt="Image Title" src="assets/images/st-2.png"><span>Exchange</span></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a><img alt="Image Title" src="assets/images/st-4.png"><span>Chart</span></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a><img alt="Image Title" src="assets/images/st-5.png"><span>Wallet</span></a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="tab-pane" id="women">
+                                                                <ul class="nav-list list-inline">
+                                                                    <li>
+                                                                        <a><img alt="Image Title" src="assets/images/st-1.png"><span>Stock</span></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a><img alt="Image Title" src="assets/images/st-2.png"><span>Exchange</span></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a><img alt="Image Title" src="assets/images/st-3.png"><span>Dollar</span></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a><img alt="Image Title" src="assets/images/st-4.png"><span>Chart</span></a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="tab-pane" id="kids">
+                                                                <ul class="nav-list list-inline">
+                                                                    <li>
+                                                                        <a><img alt="Image Title" src="assets/images/st-1.png"><span>Stock</span></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a><img alt="Image Title" src="assets/images/st-2.png"><span>Exchange</span></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a><img alt="Image Title" src="assets/images/st-3.png"><span>Dollar</span></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a><img alt="Image Title" src="assets/images/st-4.png"><span>Chart</span></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#"><img src="assets/images/st-5.png"><span>Wallet</span></a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="tab-pane" id="sports">
+                                                                <ul class="nav-list list-inline">
+                                                                    <li>
+                                                                        <a><img alt="Image Title" src="assets/images/st-1.png"><span>Stock</span></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a><img alt="Image Title" src="assets/images/st-2.png"><span>Exchange</span></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a><img alt="Image Title" src="assets/images/st-3.png"><span>Dollar</span></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a><img alt="Image Title" src="assets/images/st-4.png"><span>Chart</span></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a><img alt="Image Title" src="assets/images/st-5.png"><span>Wallet</span></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a><img alt="Image Title" src="assets/images/st-1.png"><span>Stock</span></a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="form-group toggle-form">
-                                                        <div class="input-field parent">
-                                                            <input name="password" placeholder="password" type="password" id="Password" class="validate">
-                                                        </div>
+                                                    <!-- Nav tabs -->
+                                                    <ul class="nav nav-tabs" role="tablist">
+                                                        <li class="active"><a href="#men" role="tab" data-toggle="tab">Men</a></li>
+                                                        <li><a href="#women" role="tab" data-toggle="tab">Women</a></li>
+                                                        <li><a href="#kids" role="tab" data-toggle="tab">Kids</a></li>
+                                                        <li><a href="#sports" role="tab" data-toggle="tab">Sports</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="col-content">
+                            <h5 class="title">Toggle Menus With Slide Down Animation</h5>
+                            <div class="menu-container">
+                                <nav class="navbar navbar-default nav-style">
+                                    <div class="collapse navbar-collapse">
+                                        <ul class="nav navbar-nav navbar-right pull-left">
+                                            <li><a>Home</a></li>
+                                            <li><a>About</a></li>
+                                            <li><a>Services</a></li>
+                                            <li><a>Contact</a></li>
+                                        </ul>
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li>
+                                                <button class="btn btn-info button-style collapsed" data-toggle="collapse" href="#collapse-categories" aria-expanded="false" aria-controls="collapse-categories">Categories</button>
+                                            </li>
+                                        </ul>
+                                        <ul class="collapse nav navbar-nav nav-collapse" id="collapse-categories">
+                                            <li><a>Web design</a></li>
+                                            <li><a>Development</a></li>
+                                            <li><a>Graphic design</a></li>
+                                            <li><a>Print</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="menu-container">
+                                <nav class="navbar navbar-default nav-style">
+                                    <div class="collapse navbar-collapse">
+                                        <ul class="nav navbar-nav navbar-right pull-left">
+                                            <li><a>Home</a></li>
+                                            <li><a>About</a></li>
+                                            <li><a>Services</a></li>
+                                            <li><a>Contact</a></li>
+                                        </ul>
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li>
+                                                <button class="btn btn-info button-style collapsed" data-toggle="collapse" href="#collapse-signin" aria-expanded="false" aria-controls="collapse-signin">Sign in
+                                                </button>
+                                            </li>
+                                        </ul>
+                                        <div class="collapse nav navbar-nav nav-collapse slide-down" id="collapse-signin">
+                                            <form class="navbar-form navbar-right form-inline" id="signin" role="form">
+                                                <div class="form-group toggle-form">
+                                                    <div class="input-field">
+                                                        <input name="email" placeholder="Email" type="text" id="Email" class="validate">
                                                     </div>
-                                                    <button type="submit" class="btn btn-success button-style"><i class="fa fa-sign-in" aria-hidden="true"></i></button>
-                                                </form>
-                                            </div>
-                                        </div>
-                                        <!-- /.navbar-collapse -->
-                                    </nav>
-                                </div>
-                                <!-- /.navbar -->
-                                <!-- Second navbar for search -->
-                                <div class="menu-container">
-                                    <nav class="navbar navbar-inverse simple-menue navbar2">
-                                        <div class="collapse navbar-collapse" id="navbar-collapse-4">
-                                            <ul class="nav navbar-nav navbar-right menu-padding">
-                                                <li><a>Home</a></li>
-                                                <li><a>About</a></li>
-                                                <li><a>Services</a></li>
-                                                <li><a>Contact</a></li>
-                                            </ul>
-                                            <ul class="nav navbar-nav navbar-right">
-                                                <li>
-                                                    <button class="btn btn-info button-style collapsed" data-toggle="collapse" href="#nav-collapse4" aria-expanded="false" aria-controls="nav-collapse4">Profile </button>
-                                                </li>
-                                            </ul>
-                                            <ul class="collapse nav navbar-nav nav-collapse slide-down" role="search" id="nav-collapse4">
-                                                <li><a>Support</a></li>
-                                                <li><a>Settings</a></li>
-                                                <li class="drop-li">
-                                                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img class="img-circle" src="assets/images/Sami.jpg" alt="maridlcrmn" width="20" /> Maridlcrmn <span class="caret"></span></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </nav>
-                                </div>
-                                <div class="menu-container">
-                                    <nav class="navbar navbar-inverse simple-menue navbar2">
-                                        <div class="collapse navbar-collapse" id="navbar-collapse-3">
-                                            <ul class="nav navbar-nav navbar-right menu-padding">
-                                                <li><a>Home</a></li>
-                                                <li><a>About</a></li>
-                                                <li><a>Services</a></li>
-                                                <li><a>Contact</a></li>
-                                            </ul>
-                                            <ul class="nav navbar-nav navbar-right">
-                                                <li>
-                                                    <button class="btn btn-info button-style collapsed" data-toggle="collapse" href="#nav-collapse3" aria-expanded="false" aria-controls="nav-collapse3">Search</button>
-                                                </li>
-                                            </ul>
-                                            <div class="collapse nav navbar-nav nav-collapse slide-down" id="nav-collapse3">
-                                                <form class="navbar-form navbar-right" role="search">
-                                                    <div class="form-group">
-                                                        <input type="text" class="form-control" placeholder="Search" />
+                                                </div>
+                                                <div class="form-group toggle-form">
+                                                    <div class="input-field">
+                                                        <input name="password" placeholder="Password" type="password" id="Password" class="validate">
                                                     </div>
-                                                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                                                </form>
-                                            </div>
+                                                </div>
+                                                <button type="submit" class="btn btn-success button-style"><i class="fa fa-sign-in" aria-hidden="true"></i></button>
+                                            </form>
                                         </div>
-                                        <!-- /.navbar-collapse -->
-                                    </nav>
-                                </div>
-                                <!-- /.navbar -->
-                                <!-- Second navbar for profile settings -->
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="menu-container">
+                                <nav class="navbar navbar-inverse">
+                                    <div class="collapse navbar-collapse">
+                                        <ul class="nav navbar-nav navbar-right pull-left">
+                                            <li><a>Home</a></li>
+                                            <li><a>About</a></li>
+                                            <li><a>Services</a></li>
+                                            <li><a>Contact</a></li>
+                                        </ul>
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li>
+                                                <button class="btn btn-info button-style collapsed" data-toggle="collapse" href="#collapse-profile" aria-expanded="false" aria-controls="collapse-profile">Profile </button>
+                                            </li>
+                                        </ul>
+                                        <ul class="collapse nav navbar-nav nav-collapse slide-down" role="search" id="collapse-profile">
+                                            <li><a>Support</a></li>
+                                            <li><a>Settings</a></li>
+                                            <li class="drop-li">
+                                                <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img class="img-circle" src="assets/images/Sami.jpg" alt="maridlcrmn" width="20" /> User Name <span class="caret"></span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="menu-container">
+                                <nav class="navbar navbar-inverse">
+                                    <div class="collapse navbar-collapse">
+                                        <ul class="nav navbar-nav navbar-right pull-left">
+                                            <li><a>Home</a></li>
+                                            <li><a>About</a></li>
+                                            <li><a>Services</a></li>
+                                            <li><a>Contact</a></li>
+                                        </ul>
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li>
+                                                <button class="btn btn-info button-style collapsed" data-toggle="collapse" href="#collapse-search" aria-expanded="false" aria-controls="collapse-search">Search</button>
+                                            </li>
+                                        </ul>
+                                        <div class="collapse nav navbar-nav nav-collapse slide-down" id="collapse-search">
+                                            <form class="navbar-form navbar-right" role="search">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="Search" />
+                                                </div>
+                                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </nav>
                             </div>
                         </div>
                     </div>
@@ -832,10 +811,145 @@
                 </div>
             </div>
         </div>
+        <div id="Right-Side-Section-Toggle">
+                <i class="fa fa-pencil-square-o" id="Edit" aria-hidden="true"></i>
+            </div>
+            <div id="Right-Side-Section">
+                <div class="table">
+                    <table class="right-side-table">
+                        <tr>
+                            <td>
+                                <div onclick="closeToggel()" id="Close">
+                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5 class="title">Color Options</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Color makes it different
+                                    <br> Customize and Preview your dashboard.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5 class="title">Recommended</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="col-sm-6 single-menue-color-box no-padding-righ">
+                                    <div id="default-color-btn" class="single-menue-color pointer-hover">
+                                        <div class="col-sm-12 default-menue-color">
+                                            <p>
+                                                Header
+                                                <br /> #3b97d2
+                                            </p>
+                                            <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col-sm-12 simple-border">
+                                            <p>
+                                                Sidebar Nav
+                                                <br /> #fffff
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 single-menue-color-box no-padding-righ">
+                                    <div id="orang-color-btn" class="single-menue-color pointer-hover">
+                                        <div class="col-sm-12 orange-menue-color">
+                                            <p>
+                                                Header
+                                                <br /> #f5d34b
+                                            </p>
+                                            <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col-sm-12 simple-border">
+                                            <p>
+                                                Sidebar Nav
+                                                <br /> #ffffff
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 single-menue-color-box no-padding-righ">
+                                    <div id="dark2-color-btn" class="single-menue-color pointer-hover">
+                                        <div class="col-sm-12 dark-menue-color2">
+                                            <p>
+                                                Header
+                                                <br /> #262930
+                                            </p>
+                                            <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col-sm-12 dark-nav-color2">
+                                            <p>
+                                                Sidebar Nav
+                                                <br /> #2a2e35
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 single-menue-color-box no-padding-righ">
+                                    <div id="dark1-color-btn" class="single-menue-color pointer-hover">
+                                        <div class="col-sm-12 dark-menue-color">
+                                            <p>
+                                                Header
+                                                <br /> #2b3643
+                                            </p>
+                                            <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col-sm-12 dark-nav-color">
+                                            <p>
+                                                Sidebar Nav
+                                                <br /> #364150
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 single-menue-color-box no-padding-righ">
+                                    <div id="whit-color-btn" class="single-menue-color pointer-hover">
+                                        <div class="col-sm-12 simple-border wight-head">
+                                            <p>
+                                                Header
+                                                <br /> #ffffff
+                                            </p>
+                                            <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col-sm-12 simple-border wight-head">
+                                            <p>
+                                                Sidebar Nav
+                                                <br /> #ffffff
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 single-menue-color-box no-padding-righ">
+                                    <div id="green-color-btn" class="single-menue-color pointer-hover">
+                                        <div class="col-sm-12 green-menue-color">
+                                            <p>
+                                                Header
+                                                <br /> #62d995
+                                            </p>
+                                            <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col-sm-12 simple-border">
+                                            <p>
+                                                Sidebar Nav
+                                                <br /> #ffffff
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
     </div>
-    <!-- /#page-content-wrapper -->
-    <!-- /#wrapper -->
-    <!-- /#wrapper -->
     <!-- Page layout JS -->
     <script type="text/javascript" src="assets/vendors/jquery/jquery-3.1.1.js"></script>
     <!-- Materialze JS library -->
