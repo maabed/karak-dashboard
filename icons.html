@@ -1588,71 +1588,65 @@
             </div>
             <!-- /#page-content-wrapper -->
             <!-- /#wrapper -->
-            <div id="Right-Side-Section-Toggle">
-                <i class="fa fa-pencil-square-o" id="Edit" aria-hidden="true"></i>
-            </div>
-            <div id="Right-Side-Section">
-                <div class="table">
-                    <table class="right-side-table">
-                        <tr>
-                            <td>
-                                <div onclick="closeToggel()" id="Close">
-                                    <i class="fa fa-times" aria-hidden="true"></i>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h5 class="title">Color Options</h5>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p>Color makes it different
-                                    <br> Customize and Preview your dashboard.</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
+        <div class="Right-Side-Section-Toggle" data-toggle="modal" data-toggle="modal" data-target="#colors-modal">
+            <i class="fa fa-pencil-square-o"></i>
+        </div>
+        <div class="modal right fade" id="colors-modal" tabindex="-1" role="dialog" aria-labelledby="right-side-modal-label">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="right-side-modal-label">Color Options</h4>
+                    </div>
+                    <div class="modal-body custome-margin">
+                        <p class="right-modal-content"></p>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>Color makes it different Customize and Preview your dashboard.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
                                 <h5 class="title">Recommended</h5>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="col-sm-6 single-menue-color-box no-padding-righ">
-                                    <div id="default-color-btn" class="single-menue-color pointer-hover">
-                                        <div class="col-sm-12 default-menue-color">
-                                            <p>
-                                                Header
-                                                <br /> #3b97d2
-                                            </p>
-                                            <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="col-sm-12 simple-border">
-                                            <p>
-                                                Sidebar Nav
-                                                <br /> #fffff
-                                            </p>
-                                        </div>
+                            </div>
+                        </div>
+                        <div class="row p-15">
+                            <div class="col-md-6 single-menue-color-box no-padding-righ">
+                                <div id="default-color-btn" class="single-menue-color pointer-hover">
+                                    <div class="col-sm-12 default-menue-color">
+                                        <p>
+                                            Header
+                                            <br /> #3b97d2
+                                        </p>
+                                        <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="col-sm-12 simple-border">
+                                        <p>
+                                            Sidebar Nav
+                                            <br /> #fffff
+                                        </p>
                                     </div>
                                 </div>
-                                <div class="col-md-6 single-menue-color-box no-padding-righ">
-                                    <div id="orang-color-btn" class="single-menue-color pointer-hover">
-                                        <div class="col-sm-12 orange-menue-color">
-                                            <p>
-                                                Header
-                                                <br /> #f5d34b
-                                            </p>
-                                            <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="col-sm-12 simple-border">
-                                            <p>
-                                                Sidebar Nav
-                                                <br /> #ffffff
-                                            </p>
-                                        </div>
+                            </div>
+                            <div class="col-md-6 single-menue-color-box no-padding-righ">
+                                <div id="orang-color-btn" class="single-menue-color pointer-hover">
+                                    <div class="col-sm-12 orange-menue-color">
+                                        <p>
+                                            Header
+                                            <br /> #f5d34b
+                                        </p>
+                                        <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="col-sm-12 simple-border">
+                                        <p>
+                                            Sidebar Nav
+                                            <br /> #ffffff
+                                        </p>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="row p-15">
                                 <div class="col-md-6 single-menue-color-box no-padding-righ">
                                     <div id="dark2-color-btn" class="single-menue-color pointer-hover">
                                         <div class="col-sm-12 dark-menue-color2">
@@ -1687,6 +1681,8 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="row p-15">
                                 <div class="col-md-6 single-menue-color-box no-padding-righ">
                                     <div id="whit-color-btn" class="single-menue-color pointer-hover">
                                         <div class="col-sm-12 simple-border wight-head">
@@ -1721,11 +1717,14 @@
                                         </div>
                                     </div>
                                 </div>
-                            </td>
-                        </tr>
-                    </table>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!-- modal-content -->
             </div>
+            <!-- modal-dialog -->
+        </div>
         </div>
     </div>
     <!-- Page layout JS -->
