@@ -40,9 +40,9 @@ $(document).ready(function() {
   });
 
   /* search  */
-  $('#searchTB').keydown(function(e) {
+  $('.searchTB').keydown(function(e) {
     if (e.which === 13) {
-      if ($('#searchTB').val() != ' ') {
+      if ($('.searchTB').val() != ' ') {
         window.location = 'search.html';
       }
     }
