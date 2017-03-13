@@ -6,49 +6,38 @@ http://newrelease.io
 Copyright 2017 New Release
 */
 $(document).ready(function() {
-  $('#menu-toggle').click(function(e) {
-    e.preventDefault();
-    $('.wrapper').toggleClass('toggled');
-  });
+ $('#menu-toggle').click(function(e) {
+   e.preventDefault();
+   $('.wrapper').toggleClass('toggled');
+ });
 
-  $('.submenue').hide();
-  $('.nav-hyperlink').click(function(e) {
-    e.preventDefault();
-    var $this = $(this).parent().find('.submenue');
-    $('.submenue').not($this).hide(300);
-    $this.toggle(300);
-  });
+ $('.submenue').hide();
+ $('.nav-hyperlink').click(function(e) {
+   e.preventDefault();
+   var $this = $(this).parent().find('.submenue');
+   $('.submenue').not($this).hide(300);
+   $this.toggle(300);
+ });
 
-  // Left side section
-  $('#left-Side-Section-Togle').click(function() {
-    $('.inbox-nav').toggleClass('show-left');
-  });
+ /* search  */
+ $('.search-text-box').keydown(function(e) {
+   if (e.which === 13) {
+     if ($('.search-text-box').val() != ' ') {
+       window.location = 'search.html';
+     }
+   }
+ });
 
-  /* search  */
-  $('.search-text-box').keydown(function(e) {
-    if (e.which === 13) {
-      if ($('.search-text-box').val() != ' ') {
-        window.location = 'search.html';
-      }
-    }
-  });
+ $('.sidebar-nav').find('li.selected').find('.submenue').css('display', 'block');
 
-  $('.sidebar-nav').find('li.selected').find('.submenue').css('display', 'block');
-
-  $('.submenue').css({
-    'padding': '0px',
-    'position': 'relative',
-    'padding-left': '0px'
-  });
-  $('.submenue > li > a').not( ".chat-view-navbar .submenue > li > a").css('margin-left', '40px');
+ $('.submenue').css({
+   'padding': '0px',
+   'position': 'relative',
+   'padding-left': '0px'
+ });
+ $('.submenue > li > a').not( ".chat-view-navbar .submenue > li > a").css('margin-left', '40px');
 });
 
-// function closeToggel() {
-//   var a = document.getElementById('Right-Side-Section');
-//   a.style.width = '0px';
-//   $('#right-side-section-toggle').show(0);
-// }
-
 function printbtn() {
-  window.print();
+ window.print();
 }
