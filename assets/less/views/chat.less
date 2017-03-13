@@ -36,9 +36,9 @@
                         height: auto;
                         float: left;
                     }
-                    @media(max-width: 800px){
-                        width:40%;
-                        float:left;
+                    @media(max-width: 800px) {
+                        width: 40%;
+                        float: left;
                     }
                 }
                 h5,
@@ -58,13 +58,13 @@
                 i {
                     color: #71c38f;
                     &.fa-angle-down {
-                        color: #fff !important;
+                        color: @white !important;
                     }
                 }
-                .col-sm-10{
-                      @media(max-width: 800px){
-                        float:left;
-                        width:80%;
+                .col-sm-10 {
+                    @media(max-width: 800px) {
+                        float: left;
+                        width: 80%;
                     }
                 }
             }
@@ -170,10 +170,10 @@
         position: relative;
         .chat-header {
             background-color: @head-background;
-            padding: 0.5em 0em;
-            position:absolute;
-            width:100%;
-            z-index:999;
+            padding: 0.5em 0em 1em 0em;
+            position: absolute;
+            width: 100%;
+            z-index: 999;
             @media(max-width: 700px) {
                 overflow: initial;
                 height: auto;
@@ -188,9 +188,9 @@
                 .menu-toggle {
                     display: none;
                     @media(max-width: 767px) {
-                        display:block;
+                        display: block;
                         margin: 0.3em 1em 0em 1em !important;
-                        color:#fff;
+                        color: @white;
                     }
                 }
                 @media(max-width:700px) {
@@ -262,8 +262,8 @@
                 @media(max-width: 1129px) {
                     padding-right: 0px !important;
                     width: auto;
-                    margin-right:0.5em;
-                    display:none;
+                    margin-right: 0.5em;
+                    display: none;
                 }
                 @media(max-width:700px) {
                     width: 45% !important;
@@ -277,26 +277,44 @@
                 .form-group {
                     width: auto;
                     float: left;
-                    margin-left: 0em;
-                    margin-top: -0.7em;
-                    margin-bottom: 0;
+                    margin-left: 1em;
+                    margin-bottom: 0px;
                     width: 60% !important;
+                    overflow: hidden;
                     @media(max-width: 800px) {
                         display: none;
                     }
                     .icon-addon {
-                        .main-dashboard-search {
-                            background-color: @head-background;
-                            width: 10em;
-                            color: #fff;
-                            padding-left:2em;
+                        .chat-search {
+                            color: @white;
+                            padding-left: 1.5em;
+                            border-bottom: 0px !important;
+                            padding-top: 0px;
+                            height: 1.2em !important;
                             @media(max-width: 1155px) {
                                 width: 13em;
                             }
-                            .glyphicon{
-                                color:#fff;
-                            }
                         }
+                    }
+                    .glyphicon-search {
+                        color: @white;
+                        float: left;
+                        position: absolute;
+                        cursor: pointer;
+                    }
+                    ::-webkit-input-placeholder {
+                        color: @white;
+                    }
+                    :-moz-placeholder {
+                        color: @white;
+                        opacity: 1;
+                    }
+                    ::-moz-placeholder {
+                        color: @white;
+                        opacity: 1;
+                    }
+                    :-ms-input-placeholder {
+                        color: @white;
                     }
                 }
                 ul {
@@ -403,6 +421,7 @@
                 }
             }
             ul {
+                padding-left: 0px;
                 li {
                     list-style: none;
                     .post-image-row {
@@ -523,8 +542,8 @@
                         height: 100%;
                         &:hover {
                             border-left: 1px solid #d3d3d3 !important;
-                            background-color: #fff !important;
-                            color: #000 !important;
+                            background-color: @white !important;
+                            color: @black !important;
                         }
                     }
                     .chat-message-input {
@@ -549,7 +568,7 @@
                 .notification-bar {
                     height: 1em;
                     width: 100%;
-                    background-color: #fff;
+                    background-color: @white;
                 }
             }
         }
