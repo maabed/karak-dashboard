@@ -17,10 +17,10 @@ $(function($) {
         e.preventDefault();
         $('#wrapper').toggleClass('toggled');
     });
-    $('.SubMenue').hide();
+    $('.submenue').hide();
     $('.open-sub').click(function(e) {
         e.preventDefault();
-        var $this = $(this).parent().parent().find('.Submenue');
+        var $this = $(this).parent().parent().find('.submenue');
         $this.toggle(300);
     });
 
