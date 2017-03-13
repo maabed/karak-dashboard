@@ -1,71 +1,93 @@
 .list-group {
-    padding-left: 0;
-    margin-bottom: 20px;
-    .list-group-item {
-        .nav-lbl {
-            float: right;
-        }
-        &.event-list-item {
-            border-left: 4px solid @info-mid;
-            margin-bottom: 1em;
-            h3 {
-                line-height: 0px;
-            }
-            p {
-                padding-top: 13px;
-            }
-        }
-        &:first-child {
-            border-top-left-radius: 0px !important;
-            border-top-right-radius: 0px !important;
-        }
-        .blog-img {
-            width: 108px;
-            padding-left: 0px;
-            margin-left: 0px !important;
-            border-left: 4px solid @info-mid;
-        }
-        .list-date {
-            font-size: 13px;
-            margin-top: 15px;
-            margin-bottom: 0px;
-        }
-        .bootstrap-switch {
-            border-radius: @no-radius;
-            .bootstrap-switch-primary {
-                background-color: @info-mid !important;
-                border-radius: 0px !important;
-            }
-        }
-        .bootstrap-switch.bootstrap-switch-wrapper {
-            float: right;
-        }
-        .title-border {
-            border-bottom: 2px solid @info-mid;
-            padding-bottom: 5px;
-        }
-        .icon-list-border {
-            border: 2px solid @info-mid;
-            padding: 7px;
-            border-radius: 50%;
-            position: relative;
-            top: 15px;
-            margin-bottom: 15px;
-        }
-        .box-size {
-            width: 90%;
-        }
+  padding-left: 0;
+  margin-bottom: 20px;
+
+  .list-group-item {
+    .nav-lbl {
+      float: right;
     }
-    .info-mid {
-        color: @white;
-        .glyphicon {
-            color: @white !important;
-        }
+
+    &.event-list-item {
+      border-left: 4px solid @info-mid;
+      margin-bottom: 1em;
+
+      h3 {
+        line-height: 0px;
+      }
+
+      p {
+        padding-top: 13px;
+      }
+
     }
-    &.glyph-color {
-        .glyphicon {
-            margin-right: 10px;
-            color: #C6C4DB;
-        }
+
+    &:first-child {
+      border-top-left-radius: 0px !important;
+      border-top-right-radius: 0px !important;
     }
+
+    .blog-img {
+      width: 108px;
+      padding-left: 0px;
+      margin-left: 0px !important;
+      border-left: 4px solid @info-mid;
+    }
+
+    .list-date {
+      font-size: 13px;
+      margin-top: 15px;
+      margin-bottom: 0px;
+    }
+
+    .bootstrap-switch {
+      border-radius: @no-radius;
+
+      .bootstrap-switch-primary {
+        background-color: @info-mid !important;
+        border-radius: 0px !important;
+      }
+
+    }
+
+    .bootstrap-switch.bootstrap-switch-wrapper {
+      float: right;
+    }
+
+    .title-border {
+      border-bottom: 2px solid @info-mid;
+      padding-bottom: 5px;
+    }
+
+    .icon-list-border {
+      border: 2px solid @info-mid;
+      padding: 7px;
+      border-radius: 50%;
+      position: relative;
+      top: 15px;
+      margin-bottom: 15px;
+    }
+
+    .box-size {
+      width: 90%;
+    }
+
+  }
+
+  .info-mid {
+    color: @white;
+
+    .glyphicon {
+      color: @white !important;
+    }
+
+  }
+
+  &.glyph-color {
+    .glyphicon {
+      margin-right: 10px;
+      color: #C6C4DB;
+    }
+
+  }
+
 }

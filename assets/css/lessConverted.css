@@ -366,6 +366,15 @@
   top: 18em;
   right: 0;
 }
+.wrapper #colors-modal .modal-header {
+  background-color: #fff;
+}
+.wrapper #colors-modal .modal-header h5 {
+  color: #34495E;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 0.7em;
+}
 .wrapper #colors-modal .single-menue-color-box {
   padding: 0 !important;
   padding-right: 1.5em !important;

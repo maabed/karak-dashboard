@@ -8,7 +8,7 @@ Copyright 2017 New Release
 $(document).ready(function() {
   $('#menu-toggle').click(function(e) {
     e.preventDefault();
-    $('#wrapper').toggleClass('toggled');
+    $('.wrapper').toggleClass('toggled');
   });
 
   $('.SubMenue').hide();

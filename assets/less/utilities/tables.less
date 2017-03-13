@@ -1,75 +1,98 @@
 #users-table,
 #dashed-table,
 #colored-table {
-    .table-head {
-        .basic-th {
-            color: rgba(0, 0, 0, 0.7);
-            border-bottom-width: 1px !important;
-            font-weight: normal;
-        }
-        &.colord-table-head {
-            font-weight: normal;
-            .dashboard-th {
-                h5 {
-                    color: @white;
-                    padding: 0 !important;
-                    margin: 0 !important;
-                }
-            }
-        }
+  .table-head {
+    .basic-th {
+      color: rgba(0, 0, 0, 0.7);
+      border-bottom-width: 1px !important;
+      font-weight: normal;
     }
-    .users-table-body {
-        tr {
-            .css-effect(all 0.5s ease);
-            td {
-                img {
-                    width: 6em;
-                    height: auto;
-                    float: left;
-                    margin-right: 0.6em;
-                }
-            }
-            .active-user-row {
-                color: @info-mid !important;
-            }
+
+    &.colord-table-head {
+      font-weight: normal;
+
+      .dashboard-th {
+        h5 {
+          color: @white;
+          padding: 0 !important;
+          margin: 0 !important;
         }
-        .active-user-acount {
-            img {
-                border-left: 4px solid @info-mid !important;
-            }
-        }
-        .not-active-user-acount {
-            img {
-                border-left: 4px solid #C6CCCC !important;
-                filter: grayscale(100%);
-            }
-        }
+
+      }
+
     }
-    td,
-    th {
-        .padding(20px);
-        border-bottom: @tables-border;
-        border-top: 0 !important;
-        font-weight: 100;
-        font-size: 13px;
-        color: @paragraph-color !important;
-        vertical-align: top !important;
-        padding-left: 10px !important;
-    }
-    &.dashed-row-style {
-        td {
-            border-left: 0px !important;
-            border-left: 15px solid @white !important;
-            &.done-task {
-                text-decoration: line-through;
-                color: @success-mid !important;
-            }
-            &.inprogress-task {
-                color: @warning-mid !important;
-            }
-            &.hold-task {
-                color: @danger-mid !important;
-            }
+
+  }
+
+  .users-table-body {
+    tr {
+      .css-effect(all 0.5s ease);
+
+      td {
+        img {
+          width: 6em;
+          height: auto;
+          float: left;
+          margin-right: 0.6em;
         }
+
+      }
+
+      .active-user-row {
+        color: @info-mid !important;
+      }
+
     }
+
+    .active-user-acount {
+      img {
+        border-left: 4px solid @info-mid !important;
+      }
+
+    }
+
+    .not-active-user-acount {
+      img {
+        border-left: 4px solid #C6CCCC !important;
+        filter: grayscale(100%);
+      }
+
+    }
+
+  }
+
+  td,
+  th {
+    .padding(20px);
+    border-bottom: @tables-border;
+    border-top: 0 !important;
+    font-weight: 100;
+    font-size: 13px;
+    color: @paragraph-color !important;
+    vertical-align: top !important;
+    padding-left: 10px !important;
+  }
+
+  &.dashed-row-style {
+    td {
+      border-left: 0px !important;
+      border-left: 15px solid @white !important;
+
+      &.done-task {
+        text-decoration: line-through;
+        color: @success-mid !important;
+      }
+
+      &.inprogress-task {
+        color: @warning-mid !important;
+      }
+
+      &.hold-task {
+        color: @danger-mid !important;
+      }
+
+    }
+
+  }
+
 }
