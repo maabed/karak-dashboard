@@ -40,7 +40,7 @@ $(document).ready(function() {
     'position': 'relative',
     'padding-left': '0px'
   });
-  $('.Submenue > li > a').css('margin-left', '40px');
+  $('.Submenue > li > a').not( ".chat-view-navbar .Submenue > li > a").css('margin-left', '40px');
 });
 
 // function closeToggel() {

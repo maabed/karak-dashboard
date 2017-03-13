@@ -1,163 +1,123 @@
 .wrapper {
-  .page-content-wrapper.index-page-container {
-    .all-income {
-      text-align: center;
-      color: #626262;
-
-      h2 {
-        font-weight: lighter;
-
-        @media(max-width:1400px) {
-          font-size: 1.5em !important;
+    .page-content-wrapper.index-page-container {
+        .all-income {
+            text-align: center;
+            color: #626262;
+            h2 {
+                font-weight: lighter;
+                @media(max-width: 1400px) {
+                    font-size: 1.5em !important;
+                }
+            }
+            h3 {
+                font-weight: lighter;
+                color: @info-mid;
+                @media(max-width: 1400px) {
+                    font-size: 1.3em !important;
+                }
+            }
+            &.invers {
+                color: @white;
+                background-color: @info-mid !important;
+                h3 {
+                    color: @white;
+                }
+            }
         }
-
-      }
-
-      h3 {
-        font-weight: lighter;
-        color: @info-mid;
-
-        @media(max-width:1400px) {
-          font-size: 1.3em !important;
+        .statistics-item {
+            .col-sm-2 {
+                text-align: center;
+                width: 20% !important;
+                img {
+                    margin: 0 auto;
+                }
+                h4 {
+                    line-height: 1.5em;
+                }
+            }
         }
-
-      }
-
-      &.invers {
-        color: @white;
-        background-color: @info-mid !important;
-
-        h3 {
-          color: @white;
+        .col-content {
+            .title {
+                .flat-style {
+                    float: right;
+                    color: #848484;
+                    font-weight: lighter;
+                }
+                .activities-year {
+                    float: right;
+                    color: @head-background;
+                    font-weight: bold;
+                }
+                .add-task {
+                    float: right;
+                    color: @head-background;
+                    font-size: 1.1em;
+                    cursor: pointer !important;
+                }
+            }
+            .highcharts-container {
+                .highcharts-credits {
+                    display: none;
+                }
+            }
+            &.static-height {
+                height: 24em !important;
+                .activities-log,
+                .to-do-list {
+                    width: 100%;
+                    height: 85%;
+                    overflow-y: scroll;
+                    overflow-x: hidden;
+                    .single-log-box {
+                        border-bottom: 1px solid @background-color;
+                        padding-top: 0.4em;
+                        padding-bottom: 0.4em;
+                        .flat-style {
+                            float: right;
+                            color: #848484;
+                            font-weight: lighter;
+                        }
+                        h5 {
+                            color: @head-background;
+                            text-decoration: underline;
+                            width: 99%;
+                            font-weight: lighter;
+                        }
+                        p {
+                            color: @paragraph-color;
+                            text-align: justify;
+                            width: 99%;
+                            font-size: 0.9em;
+                        }
+                    }
+                    .single-to-do-box {
+                        border-bottom: 1px solid @background-color;
+                        color: @paragraph-color;
+                        text-align: left;
+                        font-size: 0.9em;
+                        padding: 1em 0em;
+                        .to-do-checkbox {
+                            width: 60%;
+                            float: left;
+                        }
+                        h6 {
+                            float: right;
+                            color: @head-background;
+                            margin: 0.3em 0.5em;
+                        }
+                        i {
+                            .css-effect(all 0.5s ease);
+                            float: right;
+                            color: #DEDEDE;
+                            font-size: 1.2em;
+                            margin: 0.2em 0.5em;
+                            &:hover {
+                                color: #df1515 !important;
+                            }
+                        }
+                    }
+                }
+            }
         }
-
-      }
-
     }
-
-    .statistics-item {
-      .col-sm-2 {
-        text-align: center;
-        width: 20% !important;
-
-        img {
-          margin: 0 auto;
-        }
-
-        h4 {
-          line-height: 1.5em;
-        }
-
-      }
-
-    }
-
-    .col-content {
-      .title {
-        .flat-style {
-          float: right;
-          color: #848484;
-          font-weight: lighter;
-        }
-
-        .activities-year {
-          float: right;
-          color: @head-background;
-          font-weight: bold;
-        }
-
-        .add-task {
-          float: right;
-          color: @head-background;
-          font-size: 1.1em;
-          cursor: pointer !important;
-        }
-
-      }
-
-      .highcharts-container {
-        .highcharts-credits {
-          display: none;
-        }
-
-      }
-
-      &.static-height {
-        height: 24em !important;
-
-        .activities-log,
-        .to-do-list {
-          width: 100%;
-          height: 85%;
-          overflow-y: scroll;
-          overflow-x: hidden;
-
-          .single-log-box {
-            border-bottom: 1px solid @background-color;
-            padding-top: 0.4em;
-            padding-bottom: 0.4em;
-
-            .flat-style {
-              float: right;
-              color: #848484;
-              font-weight: lighter;
-            }
-
-            h5 {
-              color: @head-background;
-              text-decoration: underline;
-              width: 99%;
-              font-weight: lighter;
-            }
-
-            p {
-              color: @paragraph-color;
-              text-align: justify;
-              width: 99%;
-              font-size: 0.9em;
-            }
-
-          }
-
-          .single-to-do-box {
-            border-bottom: 1px solid @background-color;
-            color: @paragraph-color;
-            text-align: left;
-            font-size: 0.9em;
-            padding: 1em 0em;
-
-            .to-do-checkbox {
-              width: 60%;
-              float: left;
-            }
-
-            h6 {
-              float: right;
-              color: @head-background;
-              margin: 0.3em 0.5em;
-            }
-
-            i {
-              .css-effect(all 0.5s ease);
-              float: right;
-              color: #DEDEDE;
-              font-size: 1.2em;
-              margin: 0.2em 0.5em;
-
-              &:hover {
-                color: #df1515 !important;
-              }
-
-            }
-
-          }
-
-        }
-
-      }
-
-    }
-
-  }
-
 }
