@@ -1,85 +1,109 @@
 .modal {
-    .modal-content {
-        border-radius: @no-radius;
-        input {
-            padding: 1px 0px;
-        }
-        label {
-            &.small-size {
-                font-size: 10px;
-                color: @info-mid;
-                -webkit-transform: translateY(-140%);
-                transform: translateY(-140%);
-            }
-        }
-        .right-modal-content {
-            text-align: center;
-        }
-        .right-button {
-            width: 50%;
-            margin-bottom: 10px;
-        }
-        .jumbotron {
-            .padding(5px);
-            border-radius: 0px;
-            .glyphicon-search {
-                font-size: 26px;
-                margin-top: 10px;
-                cursor: pointer;
-                color: #9b9b9b;
-            }
-        }
-        .modal-footer {
-            .modal-close {
-                float: left
-            }
-        }
+  .modal-content {
+    border-radius: @no-radius;
+
+    input {
+      padding: 1px 0px;
     }
-    .middle-dialog {
-        margin-top: 15%;
+
+    label {
+      &.small-size {
+        font-size: 10px;
+        color: @info-mid;
+        -webkit-transform: translateY(-140%);
+        transform: translateY(-140%);
+      }
+
     }
+
+    .right-modal-content {
+      text-align: center;
+    }
+
+    .right-button {
+      width: 50%;
+      margin-bottom: 10px;
+    }
+
     .jumbotron {
-        .padding(5px);
-        border-radius: @no-radius;
-        .glyphicon-search {
-            font-size: 26px;
-            margin-top: 10px;
-            cursor: pointer;
-            color: @default-dark;
-        }
-        #flat_email {
-            border-radius: @no-radius;
-            height: 50px;
-            font-size: 16px;
-            border: none;
-            box-shadow: none;
-            background-color: @gray-eee;
-            padding-left: 10px;
-            width: 92%;
-            display: inline;
-        }
+      .padding(5px);
+      border-radius: 0px;
+
+      .glyphicon-search {
+        font-size: 26px;
+        margin-top: 10px;
+        cursor: pointer;
+        color: #9b9b9b;
+      }
+
     }
-    &.right {
+
+    .modal-footer {
+      .modal-close {
+        float: left
+      }
+
+    }
+
+  }
+
+  .middle-dialog {
+    margin-top: 15%;
+  }
+
+  .jumbotron {
+    .padding(5px);
+    border-radius: @no-radius;
+
+    .glyphicon-search {
+      font-size: 26px;
+      margin-top: 10px;
+      cursor: pointer;
+      color: @default-dark;
+    }
+
+    #flat_email {
+      border-radius: @no-radius;
+      height: 50px;
+      font-size: 16px;
+      border: none;
+      box-shadow: none;
+      background-color: @gray-eee;
+      padding-left: 10px;
+      width: 92%;
+      display: inline;
+    }
+
+  }
+
+  &.right {
+    .modal-dialog {
+      position: fixed;
+      margin: auto;
+      width: 320px;
+      height: 150%;
+    }
+
+    .modal-content {
+      height: 100%;
+      border-top: 0px;
+    }
+
+    &.fade {
+      .modal-dialog {
+        right: -320px;
+        .css-effect(opacity 0.3s linear);
+      }
+
+      &.in {
         .modal-dialog {
-            position: fixed;
-            margin: auto;
-            width: 320px;
-            height: 150%;
+          right: 0;
         }
-        .modal-content {
-            height: 100%;
-            border-top: 0px;
-        }
-        &.fade {
-            .modal-dialog {
-                right: -320px;
-                .css-effect(opacity 0.3s linear);
-            }
-            &.in {
-                .modal-dialog {
-                    right: 0;
-                }
-            }
-        }
+
+      }
+
     }
+
+  }
+
 }

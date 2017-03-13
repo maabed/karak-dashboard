@@ -36,6 +36,10 @@
                         height: auto;
                         float: left;
                     }
+                    @media(max-width: 800px){
+                        width:40%;
+                        float:left;
+                    }
                 }
                 h5,
                 p {
@@ -55,6 +59,12 @@
                     color: #71c38f;
                     &.fa-angle-down {
                         color: #fff !important;
+                    }
+                }
+                .col-sm-10{
+                      @media(max-width: 800px){
+                        float:left;
+                        width:80%;
                     }
                 }
             }
@@ -179,7 +189,8 @@
                     display: none;
                     @media(max-width: 767px) {
                         display:block;
-                        margin: 0.6em 1em 0em 1em !important;
+                        margin: 0.3em 1em 0em 1em !important;
+                        color:#fff;
                     }
                 }
                 @media(max-width:700px) {
@@ -193,8 +204,8 @@
                     margin: 0 !important;
                     color: @white;
                     padding: 0;
-                    @media(max-width: 767px) {
-                        margin-top: 0.2em !important;
+                    @media(max-width: 800px) {
+                        margin: 0.2em 0em 0em 0.6em !important;
                     }
                 }
                 ul {
@@ -251,13 +262,13 @@
                 @media(max-width: 1129px) {
                     padding-right: 0px !important;
                     width: auto;
-                    float: left;
+                    margin-right:0.5em;
+                    display:none;
                 }
                 @media(max-width:700px) {
                     width: 45% !important;
                     padding: 0 !important;
                     margin: 0 !important;
-                    float: left;
                     padding-right: 5px !important;
                     position: absolute;
                     top: 0.5em;

@@ -8,7 +8,7 @@ Copyright 2017 New Release
 $(document).ready(function() {
   $('#menu-toggle').click(function(e) {
     e.preventDefault();
-    $('#wrapper').toggleClass('toggled');
+    $('.wrapper').toggleClass('toggled');
   });
 
   $('.SubMenue').hide();
@@ -18,21 +18,6 @@ $(document).ready(function() {
     $('.Submenue').not($this).hide(300);
     $this.toggle(300);
   });
-
-  //Right side Section
-  // $('#Right-Side-Section-Toggle').click(function() {
-  //   var toggleWidth = $('#Right-Side-Section').width() == 300 ? '200px' : '300px';
-  //   $('#Right-Side-Section').animate({
-  //     width: toggleWidth
-  //   });
-  // });
-
-  // $('#Right-Side-Section-Toggle').click(function(e) {
-  //   e.preventDefault();
-  //   var $this = $(this).parent().find('#Right-Side-Section');
-  //   $('#Right-Side-Section').not($this).width('300px;');
-  //   $('#Right-Side-Section-Toggle').hide(0);
-  // });
 
   // Left side section
   $('#left-Side-Section-Togle').click(function() {
