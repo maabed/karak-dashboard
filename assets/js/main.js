@@ -25,9 +25,9 @@ $(document).ready(function() {
   });
 
   /* search  */
-  $('.searchTB').keydown(function(e) {
+  $('.search-text-box').keydown(function(e) {
     if (e.which === 13) {
-      if ($('.searchTB').val() != ' ') {
+      if ($('.search-text-box').val() != ' ') {
         window.location = 'search.html';
       }
     }

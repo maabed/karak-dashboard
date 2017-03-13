@@ -1990,7 +1990,7 @@ a.fc-event {
 input:not([type]),
 input[type=text]:not(#flat_email):not(.normal-text):not(.input-mini),
 input[type=password],
-input[type=email]:not(.searchTB):not(#flat_email),
+input[type=email]:not(.search-text-box):not(#flat_email),
 input[type=url],
 input[type=time],
 input[type=date],
@@ -2019,12 +2019,12 @@ textarea.materialize-textarea {
     padding-left: 10px;
 }
 
-input:not(.searchTB):not(#flat_email):not(.normal-text):not(.input-mini) {
+input:not(.search-text-box):not(#flat_email):not(.normal-text):not(.input-mini) {
     line-height: normal;
 }
 
 button,
-input:not(.searchTB):not(#flat_email):not(.normal-text):not(.input-mini),
+input:not(.search-text-box):not(#flat_email):not(.normal-text):not(.input-mini),
 optgroup,
 select,
 textarea {
@@ -2034,7 +2034,7 @@ textarea {
 }
 
 input:not([type]):not(.normal-text),
-input[type="email" i]:not(.searchTB):not(#flat_email),
+input[type="email" i]:not(.search-text-box):not(#flat_email),
 input[type="number" i],
 input[type="password" i],
 input[type="tel" i],
@@ -2043,7 +2043,7 @@ input[type="text" i] {
     padding: 1px 0px;
 }
 
-input:not(.searchTB):not(#flat_email):not(.normal-text):not(.input-mini),
+input:not(.search-text-box):not(#flat_email):not(.normal-text):not(.input-mini),
 textarea,
 keygen,
 select,
@@ -2064,7 +2064,7 @@ button {
 input:not([type]).validate+label,
 input[type=text].validate+label,
 input[type=password].validate+label,
-input[type=email]:not(.searchTB):not(#flat_email).validate+label,
+input[type=email]:not(.search-text-box):not(#flat_email).validate+label,
 input[type=url].validate+label,
 input[type=time].validate+label,
 input[type=date].validate+label,
@@ -2096,7 +2096,7 @@ textarea.materialize-textarea.validate+label {
 input:not([type])+label:after,
 input[type=text]+label:after,
 input[type=password]+label:after,
-input[type=email]:not(.searchTB):not(#flat_email)+label:after,
+input[type=email]:not(.search-text-box):not(#flat_email)+label:after,
 input[type=url]+label:after,
 input[type=time]+label:after,
 input[type=date]+label:after,
@@ -2116,7 +2116,7 @@ textarea.materialize-textarea+label:after {
 input:not([type])+label:after,
 input[type=text]+label:after,
 input[type=password]+label:after,
-input[type=email]:not(.searchTB):not(#flat_email)+label:after,
+input[type=email]:not(.search-text-box):not(#flat_email)+label:after,
 input[type=url]+label:after,
 input[type=time]+label:after,
 input[type=date]+label:after,
@@ -2144,7 +2144,7 @@ textarea.materialize-textarea+label:after {
     transform: translateY(-140%);
 }
 
-input:not(.searchTB):focus {
+input:not(.search-text-box):focus {
     border-bottom: 1px solid #67b2e4 !important;
 }
 

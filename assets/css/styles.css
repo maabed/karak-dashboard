@@ -417,7 +417,7 @@ body {
   margin-top: -2.9em;
 }
 
-.searchTB {
+.search-text-box {
   border: none;
   box-shadow: none;
   color: #fff;
@@ -3010,7 +3010,7 @@ input[type="email"].form-control::-webkit-input-placeholder {
 color: #fff !important;
 }
 
-input[type="email"].searchTB::-webkit-input-placeholder {
+input[type="email"].search-text-box::-webkit-input-placeholder {
 color: #fff !important;
 }
 /*used*/

@@ -72,7 +72,7 @@
 input:not([type]),
 input[type=text]:not(#flat_email):not(.normal-text):not(.input-mini),
 input[type=password],
-input[type=email]:not(.searchTB):not(#flat_email) {
+input[type=email]:not(.search-text-box):not(#flat_email) {
   background-color: transparent;
   border-radius: 0;
   border: none;
@@ -89,7 +89,7 @@ input[type=email]:not(.searchTB):not(#flat_email) {
 
 input {
   &:not(#flat_email) {
-    &:not(.searchTB) {
+    &:not(.search-text-box) {
       &:not(.select2-search__field) {
         &:focus {
           border-bottom: 1px solid @info-mid;
@@ -108,7 +108,7 @@ input {
   position: relative;
 
   .has-feedback.has-success>input {
-    &:not(.searchTB) {
+    &:not(.search-text-box) {
       &:focus {
         border-bottom: 1px solid #3c763d !important;
       }
