@@ -533,6 +533,60 @@
 .float-right {
   float: right;
 }
+/* Colors */
+.all-base-colors .col-sm-4 {
+  margin-bottom: 1em;
+}
+.all-base-colors .col-sm-4 .single-color-box {
+  border: 1px solid #F1F3F6;
+  width: 100%;
+  padding: 0.2em 0em 0.2em 0.5em;
+  color: #A8A8A8;
+  font-weight: lighter;
+  font-size: 0.9em;
+}
+.all-base-colors .col-sm-4 .single-color-box.no-button-border {
+  border-bottom: 0 !important;
+}
+.all-base-colors .col-sm-4 .single-color-box.no-top-border {
+  border-top: 0 !important;
+}
+.all-base-colors .col-sm-4 .single-color-box.primary-border {
+  border-left: 40px solid #34495E !important;
+}
+.all-base-colors .col-sm-4 .single-color-box.primary-border-hover {
+  border-left: 40px solid #2c3e50 !important;
+}
+.all-base-colors .col-sm-4 .single-color-box.info-border {
+  border-left: 40px solid #3498db !important;
+}
+.all-base-colors .col-sm-4 .single-color-box.info-border-hover {
+  border-left: 40px solid #2980b9 !important;
+}
+.all-base-colors .col-sm-4 .single-color-box.success-border {
+  border-left: 40px solid #2ecc71 !important;
+}
+.all-base-colors .col-sm-4 .single-color-box.success-border-hover {
+  border-left: 40px solid #27ae60 !important;
+}
+.all-base-colors .col-sm-4 .single-color-box.warning-border {
+  border-left: 40px solid #f1c40f !important;
+}
+.all-base-colors .col-sm-4 .single-color-box.warning-border-hover {
+  border-left: 40px solid #f39c12 !important;
+}
+.all-base-colors .col-sm-4 .single-color-box.danger-border {
+  border-left: 40px solid #e74c3c !important;
+}
+.all-base-colors .col-sm-4 .single-color-box.danger-border-hover {
+  border-left: 40px solid #c0392b !important;
+}
+.all-base-colors .col-sm-4 .single-color-box.default-border {
+  border-left: 40px solid #F9F9F9 !important;
+}
+.all-base-colors .col-sm-4 .single-color-box.default-border-hover {
+  border-left: 40px solid #ecf0f1 !important;
+}
 .dashboard-info {
   background-color: #3498db;
 }
@@ -3635,59 +3689,6 @@ td .fa {
 }
 .colors-page .code-table td {
   border: none !important;
-}
-.colors-page .all-base-colors .col-sm-4 {
-  margin-bottom: 1em;
-}
-.colors-page .all-base-colors .col-sm-4 .single-color-box {
-  border: 1px solid #F1F3F6;
-  width: 100%;
-  padding: 0.2em 0em 0.2em 0.5em;
-  color: #A8A8A8;
-  font-weight: lighter;
-  font-size: 0.9em;
-}
-.colors-page .all-base-colors .col-sm-4 .single-color-box.no-button-border {
-  border-bottom: 0 !important;
-}
-.colors-page .all-base-colors .col-sm-4 .single-color-box.no-top-border {
-  border-top: 0 !important;
-}
-.colors-page .all-base-colors .col-sm-4 .single-color-box.primary-border {
-  border-left: 40px solid #34495E !important;
-}
-.colors-page .all-base-colors .col-sm-4 .single-color-box.primary-border-hover {
-  border-left: 40px solid #2c3e50 !important;
-}
-.colors-page .all-base-colors .col-sm-4 .single-color-box.info-border {
-  border-left: 40px solid #3498db !important;
-}
-.colors-page .all-base-colors .col-sm-4 .single-color-box.info-border-hover {
-  border-left: 40px solid #2980b9 !important;
-}
-.colors-page .all-base-colors .col-sm-4 .single-color-box.success-border {
-  border-left: 40px solid #2ecc71 !important;
-}
-.colors-page .all-base-colors .col-sm-4 .single-color-box.success-border-hover {
-  border-left: 40px solid #27ae60 !important;
-}
-.colors-page .all-base-colors .col-sm-4 .single-color-box.warning-border {
-  border-left: 40px solid #f1c40f !important;
-}
-.colors-page .all-base-colors .col-sm-4 .single-color-box.warning-border-hover {
-  border-left: 40px solid #f39c12 !important;
-}
-.colors-page .all-base-colors .col-sm-4 .single-color-box.danger-border {
-  border-left: 40px solid #e74c3c !important;
-}
-.colors-page .all-base-colors .col-sm-4 .single-color-box.danger-border-hover {
-  border-left: 40px solid #c0392b !important;
-}
-.colors-page .all-base-colors .col-sm-4 .single-color-box.default-border {
-  border-left: 40px solid #F9F9F9 !important;
-}
-.colors-page .all-base-colors .col-sm-4 .single-color-box.default-border-hover {
-  border-left: 40px solid #ecf0f1 !important;
 }
 .colors-page .colors-library .padding-top {
   padding-top: 0.4em;
