@@ -41,12 +41,12 @@ $(function($) {
                     $('.selected-theme').hide();
                     $('#green-color-btn > .col-sm-12 > .selected-theme').show();
                     break;
-                case "assets/css/colors-options/dark1.css":
+                case "assets/css/colors-options/dark.css":
                     //alert("dark1 theam");
                     $('.selected-theme').hide();
                     $('#dark1-color-btn > .col-sm-12 > .selected-theme').show();
                     break;
-                case "assets/css/colors-options/dark2.css":
+                case "assets/css/colors-options/grey.css":
                     //alert("dark2 theam");
                     $('.selected-theme').hide();
                     $('#dark2-color-btn > .col-sm-12 > .selected-theme').show();
