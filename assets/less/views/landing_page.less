@@ -1,7 +1,7 @@
 .landing-page-container {
   .homepage-hero-module {
-    border-right: none;
-    border-left: none;
+    border-right: 0px;
+    border-left: 0px;
     position: relative;
     height: 80em !important;
     overflow: hidden;
@@ -41,7 +41,7 @@
         height: 100% !important;
         position: absolute;
         z-index: 999;
-        top: 0;
+        top: 0px;
 
         .logo {
           float: left;
@@ -49,7 +49,7 @@
           margin-top: 2em;
 
           @media (max-width:700px) {
-            margin: 0 auto;
+            margin: 0px auto;
             float: none;
           }
 
@@ -75,13 +75,13 @@
           font-size: 1.2em;
           line-height: 1.5em;
           width: 75%;
-          margin: 0 auto;
+          margin: 0px auto;
           font-weight: 200;
         }
 
         .showcase-btns {
           margin: 2em auto;
-          border-radius: 0 !important;
+          border-radius: 0px !important;
           font-weight: lighter;
         }
 
@@ -97,7 +97,7 @@
       video {
         position: absolute;
         z-index: 0;
-        top: 0;
+        top: 0px;
 
         .fillWidth {
           width: 100%;
@@ -108,7 +108,7 @@
       .poster {
         img {
           width: 100%;
-          bottom: 0;
+          bottom: 0px;
           position: absolute;
         }
 
@@ -128,12 +128,12 @@
       margin-bottom: 1em;
     }
 
-    &#featurs {
+    &.featurs {
       .item {
         .featur-img {
           width: 40em !important;
           height: auto;
-          margin: 0 auto;
+          margin: 0px auto;
 
           @media screen and (max-width:700px) {
             width: 70% !important;
@@ -153,7 +153,7 @@
           color: rgba(0, 0, 0, 0.4);
           line-height: 1.5em;
           width: 75%;
-          margin: 0 auto;
+          margin: 0px auto;
         }
 
       }
@@ -169,10 +169,10 @@
         text-align: center;
 
         img {
-          margin: 0 auto;
+          margin: 0px auto;
 
           @media screen and (max-width:700px) {
-            margin: 0 auto;
+            margin: 0px auto;
           }
 
         }
@@ -263,8 +263,8 @@
           }
 
           div {
-            width: 0;
-            height: 0;
+            width: 0px;
+            height: 0px;
             border-top: 20px solid transparent;
             border-bottom: 20px solid transparent;
             position: absolute;
@@ -295,9 +295,9 @@
 
         th,
         td {
-          border-top: 0 !important;
-          border-right: 20px solid #fff;
-          border-left: 20px solid #fff;
+          border-top: 0px !important;
+          border-right: 20px solid @white;
+          border-left: 20px solid @white;
           font-weight: 200;
 
           &.highlighted-item {
@@ -321,9 +321,9 @@
     }
 
     &.location-section {
-      margin-bottom: 0 !important;
+      margin-bottom: 0px !important;
 
-      #map {
+      .map {
         height: 400px;
         width: 100%;
       }
