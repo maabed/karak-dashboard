@@ -1,14 +1,14 @@
 //Select2 customized
 .select2 {
   border-radius: 0px !important;
-  border: none !important;
+  border: 0px !important;
   padding-left: 0px !important;
   width: 100% !important;
   border-bottom: @select2-input-border !important;
 
   .select2-selection {
     border-radius: 0px !important;
-    border: none !important;
+    border: 0px !important;
 
     &:focus {
       outline: none;
@@ -25,7 +25,7 @@
 .select2-container.select2-container--open {
   .select2-dropdown--below,
   .select2-dropdown--above {
-    border-radius: 0;
+    border-radius: 0px;
     border: @select2-input-border;
 
     .select2-results__option--highlighted[aria-selected] {
@@ -35,7 +35,7 @@
       text-decoration: none !important;
     }
 
-    .select2-results__option[role=group] {
+    .select2-results__option[role='group'] {
       padding: 0px !important;
     }
 
@@ -70,12 +70,12 @@
 
 // Input fields customized
 input:not([type]),
-input[type=text]:not(#flat_email):not(.normal-text):not(.input-mini),
-input[type=password],
-input[type=email]:not(.search-text-box):not(#flat_email):not(.chat-search) {
+input[type='text']:not(.flat_email):not(.normal-text):not(.input-mini),
+input[type='password'],
+input[type='email']:not(.search-text-box):not(.flat_email):not(.chat-search) {
   background-color: transparent;
-  border-radius: 0;
-  border: none;
+  border-radius: 0px;
+  border: 0px;
   box-shadow: none;
   box-sizing: content-box;
   font-size: 13px;
@@ -88,7 +88,7 @@ input[type=email]:not(.search-text-box):not(#flat_email):not(.chat-search) {
 }
 
 input {
-  &:not(#flat_email) {
+  &:not(.flat_email) {
     &:not(.search-text-box) {
       &:not(.select2-search__field) {
         &:focus {
@@ -108,7 +108,8 @@ input {
   position: relative;
 
   .has-feedback.has-success>input {
-    &:not(.search-text-box), &:not(.chat-search) {
+    &:not(.search-text-box),
+    &:not(.chat-search) {
       &:focus {
         border-bottom: 1px solid #3c763d !important;
       }
@@ -120,7 +121,6 @@ input {
   .prefix ~ input,
   .prefix ~ label {
     margin-left: 3rem;
-    width: 92%;
     width: calc(100% - 3rem);
   }
 
@@ -164,7 +164,7 @@ input {
     color: @submenue-color;
     cursor: text;
     font-size: 13px;
-    left: 0;
+    left: 0px;
     position: absolute;
     font-weight: 400;
     top: 0.8rem;
@@ -211,7 +211,7 @@ input {
         background-color: #f1f1f1;
         border-radius: 60px;
         bottom: 1px;
-        content: "";
+        content: '';
         display: inline;
         left: 1px;
         position: absolute;
@@ -223,9 +223,9 @@ input {
         width: 30px;
         background-color: @white;
         border-radius: 100%;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
         bottom: 1px;
-        content: "";
+        content: '';
         display: inline;
         left: 1px;
         position: absolute;
@@ -303,13 +303,13 @@ input {
 .checkbox {
   padding-left: 25px;
 
-  input[type="checkbox"] {
+  input[type='checkbox'] {
     opacity: 0;
 
     &:checked +label {
       &:after {
         font-family: 'FontAwesome';
-        content: "\f00c";
+        content: '\f00c';
       }
 
     }
@@ -325,12 +325,12 @@ input {
     margin-top: 0px;
 
     &:before {
-      content: "";
+      content: '';
       display: inline-block;
       position: absolute;
       width: 17px;
       height: 17px;
-      left: 0;
+      left: 0px;
       margin-left: -25px;
       border: 1px solid #cccccc;
       border-radius: 3px;
@@ -343,8 +343,8 @@ input {
       width: 16px;
       height: 16px;
       margin-left: -25px;
-      left: 0;
-      top: 0;
+      left: 0px;
+      top: 0px;
       padding-left: 3px;
       padding-top: 1px;
       font-size: 11px;
@@ -354,7 +354,7 @@ input {
   }
 
   &-primary {
-    input[type="checkbox"] {
+    input[type='checkbox'] {
       &:checked+label {
         &:before {
           background-color: @info-mid;
@@ -362,7 +362,7 @@ input {
         }
 
         &:after {
-          color: @white
+          color: @white;
         }
 
       }
@@ -372,7 +372,7 @@ input {
   }
 
   &-success {
-    input[type="checkbox"] {
+    input[type='checkbox'] {
       &:checked+label {
         &:before {
           background-color: @success-mid;
@@ -380,7 +380,7 @@ input {
         }
 
         &:after {
-          color: @white
+          color: @white;
         }
 
       }
@@ -390,7 +390,7 @@ input {
   }
 
   &-info {
-    input[type="checkbox"] {
+    input[type='checkbox'] {
       &:checked+label {
         &:before {
           background-color: @info-light;
@@ -398,7 +398,7 @@ input {
         }
 
         &:after {
-          color: @white
+          color: @white;
         }
 
       }
@@ -408,7 +408,7 @@ input {
   }
 
   &-warning {
-    input[type="checkbox"] {
+    input[type='checkbox'] {
       &:checked+label {
         &:before {
           background-color: @warning-mid;
@@ -416,7 +416,7 @@ input {
         }
 
         &:after {
-          color: @white
+          color: @white;
         }
 
       }
@@ -426,7 +426,7 @@ input {
   }
 
   &-danger {
-    input[type="checkbox"] {
+    input[type='checkbox'] {
       &:checked+label {
         &:before {
           background-color: @danger-mid;
@@ -434,7 +434,7 @@ input {
         }
 
         &:after {
-          color: @white
+          color: @white;
         }
 
       }
@@ -479,7 +479,7 @@ input {
   background: @white;
   cursor: pointer;
   padding: 5px 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   width: 100%;
 }
 
@@ -505,7 +505,7 @@ input {
 
 .input-group-addon {
   background: none;
-  border: none;
+  border: 0px;
 }
 
 .datepicker {

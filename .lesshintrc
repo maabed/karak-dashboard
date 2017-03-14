@@ -3,5 +3,6 @@
 
     "emptyRule": true, // If there are no options for a rule, you can simply enable it by setting it to true
     "propertyOrdering": false,
-	"importantRule": false
+	"importantRule": false,
+	"qualifyingElement":false
 }
