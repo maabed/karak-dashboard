@@ -5,12 +5,12 @@ Author: New Release
 http://newrelease.io
 Copyright 2017 New Release
 */
-.acc-personal-info {
+.account-personal-info {
   color: rgba(0, 0, 0, 0.51) !important;
   font-weight: lighter;
 }
 
-.acc-personal-info img {
+.account-personal-info img {
   border: 2px solid #67b2e4;
   border-radius: 180px;
   margin: 0 auto;
@@ -18,33 +18,33 @@ Copyright 2017 New Release
   height: auto;
 }
 
-.acc-personal-info h4 {
+.account-personal-info h4 {
   font-weight: lighter;
   color: #67b2e4;
   text-align: center;
 }
 
-.user-acc-info span {
+.user-account-info span {
   text-align: left !important;
   line-height: 2.2em;
   color: rgba(0, 0, 0, 0.51) !important;
   font-size: 1em;
 }
 
-.acc-personal-info .title {
+.account-personal-info .title {
   text-align: center;
 }
 
-.user-acc-info span i {
+.user-account-info span i {
   color: #67b2e4;
   margin-right: 0.5em;
 }
 
-.acc-personal-info label {
+.account-personal-info label {
   font-weight: lighter;
 }
 
-.acc-personal-info .change-acc-select {
+.account-personal-info .change-account-select {
   color: #67b2e4;
   font-weight: lighter;
   margin-top: 1em;
