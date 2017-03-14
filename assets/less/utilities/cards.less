@@ -41,7 +41,6 @@
         white-space: nowrap;
         word-wrap: normal;
         direction: ltr;
-        -webkit-font-feature-settings: 'liga';
         -webkit-font-smoothing: antialiased;
         text-rendering: optimizeLegibility;
         -webkit-font-feature-settings: 'liga';
@@ -56,7 +55,7 @@
   .card-action {
     position: relative;
     background-color: inherit;
-    border-top: 1px solid #ecf0f1;
+    border-top: 1px solid @default-hover;
     padding: 20px;
 
     a {
@@ -80,20 +79,20 @@
 
     img {
       display: block;
-      border-radius: 2px 2px 0 0;
+      border-radius: 2px 2px 0px 0px;
       position: relative;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
+      left: 0px;
+      right: 0px;
+      top: 0px;
+      bottom: 0px;
       width: 100%;
     }
 
     .card-title {
       color: @white;
       position: absolute;
-      bottom: 0;
-      left: 0;
+      bottom: 0px;
+      left: 0px;
       padding: 20px;
       font-size: 24px;
       font-weight: 300;
@@ -102,8 +101,6 @@
   }
 
   &.horizontal {
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
 
     .card-image {
@@ -111,8 +108,6 @@
     }
 
     .card-stacked {
-      display: -webkit-flex;
-      display: -ms-flexbox;
       display: flex;
       -webkit-flex-direction: column;
       -ms-flex-direction: column;
@@ -138,7 +133,7 @@
     background-color: @white;
     width: 100%;
     overflow-y: auto;
-    left: 0;
+    left: 0px;
     top: 100%;
     height: 102%;
     z-index: 3;
