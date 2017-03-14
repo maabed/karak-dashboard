@@ -120,7 +120,7 @@
   margin-right: 1em;
   margin-top: 1em;
 }
-.wrapper .sidebar-wrapper .sidebar-nav li a .nav-lbl {
+.wrapper .sidebar-wrapper .sidebar-nav li a .list-badge {
   position: absolute;
   text-indent: 0px;
   right: 3em;
@@ -164,10 +164,6 @@
   color: #ffffff;
   position: fixed;
   z-index: 999;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
   background-color: #3b97d2;
 }
 .wrapper .main-dashboard-header .menu-toggle {
@@ -202,10 +198,6 @@
   font-size: 1em !important;
   padding-top: 0.2em !important;
   border-bottom-color: #ffffff;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
   background-color: #3b97d2;
 }
 .wrapper .main-dashboard-header .form-group .icon-addon .main-dashboard-search::-webkit-input-placeholder {
@@ -319,10 +311,6 @@
 }
 .wrapper .page-content-wrapper .container-fluid .col-content.body-header {
   margin-top: 3.8em;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 .wrapper .page-content-wrapper .container-fluid .col-content.body-header .title {
   font-weight: 100;
@@ -791,9 +779,9 @@ p {
   border: 1px solid #67b2e4 !important;
 }
 input:not([type]),
-input[type='text']:not(.flat_email):not(.normal-text):not(.input-mini),
+input[type='text']:not(.flat_email):not(.normal-text):not(.input-mini):not(.main-dashboard-search),
 input[type='password'],
-input[type='email']:not(.search-text-box):not(.flat_email):not(.chat-search) {
+input[type='email']:not(.flat_email):not(.chat-search) {
   background-color: transparent;
   border-radius: 0px;
   border: 0px;
@@ -1937,7 +1925,7 @@ a.btn-circle {
   padding-left: 0px;
   margin-bottom: 20px;
 }
-.list-group .list-group-item .nav-lbl {
+.list-group .list-group-item .list-badge {
   float: right;
 }
 .list-group .list-group-item.event-list-item {
