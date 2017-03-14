@@ -1,12 +1,12 @@
-#rootwizard {
+.rootwizard {
   .nav-tabs {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #dddddd;
 
     & > li {
       margin-bottom: 2px;
 
       a {
-        border: none;
+        border: 0px;
       }
 
     }
@@ -15,7 +15,7 @@
       & > a,
       & > a:focus,
       & > a:hover {
-        border: none;
+        border: 0px;
       }
 
     }
@@ -23,7 +23,7 @@
     & > li > a:hover {
       border-radius: 0px;
       background-color: @background-color !important;
-      border: none;
+      border: 0px;
     }
 
     &.nav-tabs-linetriangle {
@@ -31,12 +31,12 @@
         & > a:after,
         & > a:before {
           border: medium solid transparent;
-          content: "";
-          height: 0;
+          content: '';
+          height: 0px;
           left: 50%;
           pointer-events: none;
           position: absolute;
-          width: 0;
+          width: 0px;
           z-index: 1;
           top: 106%;
         }
@@ -80,7 +80,7 @@
     .btn-default.active,
     .btn-default:active,
     .open > .dropdown-toggle.btn-default {
-      color: #333 !important;
+      color: #333333 !important;
       background-color: @white !important;
       border-color: @default-hover !important;
     }
@@ -112,7 +112,7 @@
       color: @white;
     }
 
-    #submit-wizard {
+    .submit-wizard {
       .glyphicon {
         color: @white;
       }
@@ -146,13 +146,13 @@
 
     .table > thead > tr > th {
       vertical-align: bottom;
-      border-bottom: 2px solid #ddd !important;
+      border-bottom: 2px solid #dddddd !important;
       font-weight: bold;
 
       .title {
         color: @title-color;
         font-weight: bold;
-        margin: 0;
+        margin: 0px;
         margin-top: 0.7em;
       }
 
