@@ -31,7 +31,7 @@
 
     .card {
       position: relative;
-      background: @white;
+      background: @white-color;
       border-radius: 0px;
       padding: 60px 0px 40px 0px;
       margin: 0px;
@@ -40,7 +40,7 @@
       .css-effect(.3s ease);
 
       &:first-child {
-        background: @panel-head-background;
+        background: @panel-head-background-color;
         border-radius: 0px 0px 0px 0px;
         height: 10px;
         margin: 0px 10px;
@@ -67,12 +67,12 @@
         .toggle {
           top: 0.5em;
           position: relative;
-          background: @info-mid;
+          background: @info-mid-color;
           width: 120px;
           height: 120px;
           border-radius: 100%;
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24);
-          color: @white;
+          color: @white-color;
           font-size: 58px;
           line-height: 140px;
           text-align: center;
@@ -96,8 +96,8 @@
 
         .title {
           position: relative;
-          border-color: @white;
-          color: @white;
+          border-color: @white-color;
+          color: @white-color;
           left: 100px;
           opacity: 0;
           visibility: hidden;
@@ -108,7 +108,7 @@
             top: 0px;
             right: 60px;
             display: inline;
-            color: @white;
+            color: @white-color;
             font-size: 58px;
             font-weight: 400;
 
@@ -126,7 +126,7 @@
           visibility: hidden;
 
           input {
-            color: @white !important;
+            color: @white-color !important;
             outline: none;
             z-index: 1;
             position: relative;
@@ -140,7 +140,7 @@
 
           input:focus ~ .bar:before,
           input:focus ~ .bar:after {
-            background: @white;
+            background: @white-color;
           }
 
           label {
@@ -160,11 +160,11 @@
 
           button {
             width: 100%;
-            background: @white;
-            border-color: @white;
+            background: @white-color;
+            border-color: @white-color;
 
             span {
-              color: @info-mid;
+              color: @info-mid-color;
             }
 
             &:hover {
@@ -186,10 +186,10 @@
     .title {
       position: relative;
       z-index: 1;
-      border-left: 5px solid @info-mid;
+      border-left: 5px solid @info-mid-color;
       margin: 0px 0px 35px;
       padding: 10px 0px 10px 50px;
-      color: @info-mid;
+      color: @info-mid-color;
       font-size: 27px;
       font-weight: 600;
       text-transform: uppercase;
@@ -251,7 +251,7 @@
         &:before {
           content: '';
           position: absolute;
-          background: @info-mid;
+          background: @info-mid-color;
           width: 0px;
           height: 2px;
           -webkit-transition: 0.2s ease;
@@ -281,7 +281,7 @@
         display: inline-block;
         background: 0px;
         width: 200px;
-        border: 2px solid @info-mid;
+        border: 2px solid @info-mid-color;
         padding: 20px 0px;
         font-size: 20px;
         font-weight: 600;
@@ -296,7 +296,7 @@
           top: 50%;
           left: 50%;
           display: block;
-          background: @info-mid;
+          background: @info-mid-color;
           width: 30px;
           height: 30px;
           border-radius: 100%;
@@ -306,12 +306,12 @@
         }
 
         &:hover {
-          border-color: @info-mid;
-          background-color: @info-mid;
-          color: @white;
+          border-color: @info-mid-color;
+          background-color: @info-mid-color;
+          color: @white-color;
 
           span {
-            color: @white;
+            color: @white-color;
           }
 
         }
@@ -319,7 +319,7 @@
         span {
           position: relative;
           z-index: 1;
-          color: @info-mid;
+          color: @info-mid-color;
           .css-effect(.3s ease);
         }
 
@@ -345,12 +345,12 @@
     &.active {
       .card {
         &:first-child {
-          background: @panel-head-background;
+          background: @panel-head-background-color;
           margin: 0px 15px;
         }
 
         &:nth-child(2) {
-          background: @panel-head-background;
+          background: @panel-head-background-color;
           margin: 0px 10px;
         }
 

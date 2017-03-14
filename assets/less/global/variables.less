@@ -1,74 +1,87 @@
-/*colors*/
+/* Dashboard colors */
+@primary-color: #34495e;
+@primary-darker-color: #2c3e50;
+@primary-mid-color: #677786;
+@primary-light-color : #8A8F9B;
+@primary-lighter-color: #ccd1d7;
 
-@primary-hover: #2c3e50;
-@dashboard-primary: @primary-hover;
-@dashboard-info: #3498db;
-@info-hover: #2980b9;
-@blue-color-dark: @info-hover;
-@dashboard-success: #2ecc71;
-@success-hover: #27ae60;
-@dashboard-warning: #f1c40f;
-@warning-hover: #f39c12;
-@dashboard-danger: #e74c3c;
-@danger-hover: #c0392b;
-@dashboard-default: #f9f9f9;
-@default-hover: #ecf0f1;
-@primary-lighter: #ccd1d7;
-@primary-light: #8a8f9b;
-@primary-mid: #677786;
-@info-lighter: #cce5f6;
-@info-light: #99cbed;
-@info-mid: #67b2e4;
-@success-lighter: #cbf2db;
-@success-light: #96e5b8;
-@success-mid: #62d995;
-@warning-lighter: #fbf0c3;
-@warning-light: #f8e187;
-@warning-mid: #f5d34b;
-@danger-lighter: #f9d2ce;
-@danger-light: #f3a59d;
-@danger-mid: #ed796d;
-@default-light: #e6e6e6;
-@default-mid: #cdcdcd;
-@default-dark: #9b9b9b;
-@title-color: #34495e;
+@info-color: #3498db;
+@info-darker-color: #2980b9;
+@info-mid-color: #67b2e4;
+@info-light-color: #99cbed;
+@info-lighter-color: #cce5f6;
+
+@success-color: #2ecc71;
+@success-darker-color: #27ae60;
+@success-mid-color: #62d995;
+@success-light-color: #96e5b8;
+@success-lighter-color: #cbf2db;
+
+@warning-color: #f1c40f;
+@warning-darker-color: #f39c12;
+@warning-mid-color: #f5d34b;
+@warning-light-color: #f8e187;
+@warning-lighter-color: #fbf0c3;
+
+@danger-color: #e74c3c;
+@danger-darker-color: #c0392b;
+@danger-mid-color: #ed796d;
+@danger-light-color: #f3a59d;
+@danger-lighter-color: #f9d2ce;
+
+@default-color: #9b9b9b;
+@default-darker-color: #ecf0f1;
+@default-mid-color: #cdcdcd;
+@default-light-color: #e6e6e6;
+@default-lighter-color: #ffffff;
+
+/* General colors */
+@white-color: #ffffff;
+@black-color: #000000;
 @paragraph-color: #707a7a;
-@header-text: @paragraph-color;
-@white: #ffffff;
-@black: #000000;
+@background-color: #f1f3f6;
+@header-background: #3b97d2;
+@light-grey-color: #eeeeee;
+@dark-grey: #909195;
+
+/* Navigation bar colors */
+@submenu-selected: #111111;
 @submenue-color: #9e9e9e;
 @submenue-background-color: #fbfbfb;
 @nav-icon-color: #c6c4db;
-@background-color: #f1f3f6;
-@selected-sub-nav-color: #111111;
-@default-btn-color: #333333;
-@outline-primary-color : @title-color;
-@head-background: #3b97d2;
-@badge-notify-color: #a5a5a5;
-@view-notes-backgrount: #f0f0f0;
-@view-all-notes-color: #8d8d8d;
-@gray-eee: #eeeeee;
-@panel-icon-color: #c4c4c4;
-@panel-icon-color-hover: #7b7b7b;
-@panel-head-background: #fafafa;
-@panel-border-color: #a8a8a8;
-@select2-color: #9a9a9a;
-@chat-nav-color: #909195;
+
+/* Chat colors colors */
 @modals-text-color: #9e9e9e;
+
+/* Buttons colors */
+@default-btn-color: #333333;
+
+/* Notifications colors */
+@badge-notify-color: #a5a5a5;
+@view-notes-background-color: #f0f0f0;
+@view-all-notes-color: #8d8d8d;
+
+/* Panels colors */
+@panel-icon-color: #c4c4c4;
+@panel-icon-hover-color: #7b7b7b;
+@panel-head-background-color: #fafafa;
+@panel-border-color: #a8a8a8;
+
+/* Select2 colors */
+@select2-color: #9a9a9a;
 
 /*borders*/
 @flat-border: 1px solid #f1f3f6;
 @nav-link-border: 1px solid #e4e5e7;
-@left-selected-border: 4px solid @info-mid;
-@white-border: 1px solid #ffffff;
+@left-selected-border: 4px solid @info-mid-color;
+@white-color-border: 1px solid #ffffff;
 @select2-input-border: 1px solid rgba(0, 0, 0, 0.07);
 @simple-border: 1px solid #dddddd;
-@tables-border: 1px solid #dddddd !important;
+@tables-border: 1px solid #dddddd;
 
 /*border radius*/
-@cirkel: 180px;
+@circle: 180px;
 @no-radius: 0px;
-
 
 /*font-size*/
 @paragraph: 0.9em;
@@ -80,9 +93,8 @@
 @no-border: 0px;
 
 /*z-index*/
-
 @front-off : 9999;
 @Back-off: -1;
 
 /*outline*/
-@no-outline: none !important;
+@no-outline: none;

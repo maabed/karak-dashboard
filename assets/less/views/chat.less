@@ -7,7 +7,7 @@
 
     .left-side-header {
       width: 100%;
-      color: @white;
+      color: @white-color;
       padding: 1em 0em;
 
       h4 {
@@ -21,7 +21,7 @@
       }
 
       .icon-color {
-        color: @chat-nav-color;
+        color: @dark-grey;
       }
 
       .chat-user-info {
@@ -54,7 +54,7 @@
 
         h5,
         p {
-          color: @chat-nav-color;
+          color: @dark-grey;
           text-align: left;
           margin: 0px;
           padding: 0px;
@@ -73,7 +73,7 @@
           color: #71c38f;
 
           &.fa-angle-down {
-            color: @white !important;
+            color: @white-color !important;
           }
 
         }
@@ -101,7 +101,7 @@
 
           a {
             .nav-icon {
-              color: @chat-nav-color;
+              color: @dark-grey;
               float: left;
               margin-top: 1em;
             }
@@ -128,12 +128,12 @@
                 background-color: #2e3238 !important;
 
                 &:hover {
-                  color: @white !important;
+                  color: @white-color !important;
                 }
 
                 .nav-icon {
                   float: left;
-                  color: @chat-nav-color;
+                  color: @dark-grey;
                 }
 
               }
@@ -141,12 +141,12 @@
               &.selected {
                 a {
                   border-right: 0px !important;
-                  border-left: 4px solid @head-background !important;
+                  border-left: 4px solid @header-background !important;
                   background-color: #363d45 !important;
-                  color: @white !important;
+                  color: @white-color !important;
 
                   i {
-                    color: @white;
+                    color: @white-color;
                   }
 
                 }
@@ -163,18 +163,18 @@
 
           a {
             .css-effect(all 0.5s ease);
-            color: @chat-nav-color;
+            color: @dark-grey;
             border-bottom: 0px !important;
             border-right: 1px;
 
             &::hover {
-              color: @white;
+              color: @white-color;
             }
 
           }
 
           &:hover {
-            color: @white !important;
+            color: @white-color !important;
             background-color: #2a2e34;
           }
 
@@ -198,7 +198,7 @@
         width: 6em;
         padding-left: 0px !important;
         margin-left: -1em !important;
-        color: @chat-nav-color !important;
+        color: @dark-grey !important;
         font-size: 1em;
 
         p {
@@ -218,13 +218,13 @@
   }
 
   .chat-cotainer {
-    background-color: @white;
+    background-color: @white-color;
     width: 100%;
     height: 100%;
     position: relative;
 
     .chat-header {
-      background-color: @head-background;
+      background-color: @header-background;
       padding: 0.5em 0em 1em 0em;
       position: absolute;
       width: 100%;
@@ -250,7 +250,7 @@
           @media(max-width:767px) {
             display: block;
             margin: 0.3em 1em 0em 1em !important;
-            color: @white;
+            color: @white-color;
           }
 
         }
@@ -265,7 +265,7 @@
         h4 {
           float: left;
           margin: 0px !important;
-          color: @white;
+          color: @white-color;
           padding: 0px;
 
           @media(max-width:800px) {
@@ -284,11 +284,11 @@
 
           li {
             float: left;
-            color: @white;
+            color: @white-color;
             height: 1.3em;
             overflow: hidden;
             padding: 0em 0.8em;
-            border-right: 1px solid @white;
+            border-right: 1px solid @white-color;
 
             @media(max-width:767px) {
               text-align: left;
@@ -309,7 +309,7 @@
             }
 
             a {
-              color: @white;
+              color: @white-color;
               .css-effect(all 0.5s ease);
 
               i {
@@ -319,7 +319,7 @@
               }
 
               p {
-                color: @white;
+                color: @white-color;
                 float: right;
                 font-weight: lighter;
                 margin-top: 0.1em;
@@ -369,7 +369,7 @@
 
           .icon-addon {
             .chat-search {
-              color: @white;
+              color: @white-color;
               padding-left: 1.5em;
               border-bottom: 0px !important;
               padding-top: 0px;
@@ -384,28 +384,28 @@
           }
 
           .glyphicon-search {
-            color: @white;
+            color: @white-color;
             float: left;
             position: absolute;
             cursor: pointer;
           }
 
           ::-webkit-input-placeholder {
-            color: @white;
+            color: @white-color;
           }
 
           :-moz-placeholder {
-            color: @white;
+            color: @white-color;
             opacity: 1;
           }
 
           ::-moz-placeholder {
-            color: @white;
+            color: @white-color;
             opacity: 1;
           }
 
           :-ms-input-placeholder {
-            color: @white;
+            color: @white-color;
           }
 
         }
@@ -417,7 +417,7 @@
 
           li {
             float: left;
-            color: @white;
+            color: @white-color;
             height: 1.3em;
             overflow: hidden;
             padding: 0em 0.5em;
@@ -431,7 +431,7 @@
             }
 
             a {
-              color: @white;
+              color: @white-color;
               .css-effect(all 0.5s ease);
 
               i {
@@ -460,7 +460,7 @@
 
         a {
           i {
-            color: @white;
+            color: @white-color;
             float: right;
             margin-top: 0.2em;
           }
@@ -479,7 +479,7 @@
       padding-bottom: 4em;
 
       .chat-channel-link {
-        color: @info-mid;
+        color: @info-mid-color;
         text-decoration: underline;
         margin-right: 0.3em;
       }
@@ -507,7 +507,7 @@
         margin: 2em 0em;
 
         a {
-          color: @info-mid;
+          color: @info-mid-color;
           text-decoration: none;
           text-align: left;
           .css-effect(all 0.5s ease);
@@ -527,7 +527,7 @@
       .chat-time {
         h5 {
           text-align: center;
-          background-color: @white;
+          background-color: @white-color;
           padding: 1em;
           width: 12em;
           position: relative;
@@ -554,7 +554,7 @@
 
             img.sender-avatar {
               border-radius: 0 !important;
-              border: 1px solid @info-mid;
+              border: 1px solid @info-mid-color;
               margin-right: 15px;
               float: left;
               width: 4em;
@@ -603,7 +603,7 @@
                 padding-left: 1em;
 
                 a {
-                  color: @info-mid;
+                  color: @info-mid-color;
                 }
 
                 ul.post-desc {
@@ -619,7 +619,7 @@
                     padding: 0em 0.5em;
 
                     i.fa-youtube-play {
-                      color: @danger-mid;
+                      color: @danger-mid-color;
                     }
 
                     &:first-child {
@@ -662,7 +662,7 @@
         bottom: 0em;
         z-index: 999999;
         width: 100%;
-        background-color: @white;
+        background-color: @white-color;
         margin-bottom: auto;
 
         @media(max-width:767px) {
@@ -704,8 +704,8 @@
 
             &:hover {
               border-left: 1px solid #d3d3d3 !important;
-              background-color: @white !important;
-              color: @black !important;
+              background-color: @white-color !important;
+              color: @black-color !important;
             }
 
           }
@@ -736,7 +736,7 @@
         .notification-bar {
           height: 1em;
           width: 100%;
-          background-color: @white;
+          background-color: @white-color;
         }
 
       }
@@ -791,7 +791,7 @@
       float: right !important;
 
       .bootstrap-switch-primary {
-        background-color: @info-mid !important;
+        background-color: @info-mid-color !important;
         border-top-left-radius: 0px !important;
         border-bottom-left-radius: 0px !important;
       }
@@ -833,7 +833,7 @@
 
           &.active {
             font-size: 1.1em;
-            color: @info-mid;
+            color: @info-mid-color;
             -webkit-transform: translateY(-140%);
             transform: translateY(-140%);
           }

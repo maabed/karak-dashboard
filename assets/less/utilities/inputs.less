@@ -59,7 +59,7 @@
       border: @select2-input-border !important;
 
       &:focus {
-        border: 1px solid @info-mid !important;
+        border: 1px solid @info-mid-color !important;
       }
 
     }
@@ -92,7 +92,7 @@ input {
     &:not(.search-text-box) {
       &:not(.select2-search__field) {
         &:focus {
-          border-bottom: 1px solid @info-mid;
+          border-bottom: 1px solid @info-mid-color;
         }
 
       }
@@ -131,7 +131,7 @@ input {
   }
 
   .material-icons.prefix.active {
-    color: @info-mid;
+    color: @info-mid-color;
   }
 
   #user_prefix {
@@ -173,7 +173,7 @@ input {
 
   label.active {
     -webkit-transform: translateY(-140%);
-    color: @info-mid;
+    color: @info-mid-color;
     font-size: 10px;
     transform: translateY(-140%);
   }
@@ -221,7 +221,7 @@ input {
 
       &:after {
         width: 30px;
-        background-color: @white;
+        background-color: @white-color;
         border-radius: 100%;
         box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
         bottom: 1px;
@@ -248,7 +248,7 @@ input {
     &-green {
       &:checked+label {
         &:before {
-          background-color: @dashboard-success;
+          background-color: @success-color;
         }
 
       }
@@ -258,7 +258,7 @@ input {
     &-blue {
       &:checked+label {
         &:before {
-          background-color: @dashboard-info;
+          background-color: @info-color;
         }
 
       }
@@ -268,7 +268,7 @@ input {
     &-red {
       &:checked+label {
         &:before {
-          background-color: @dashboard-danger;
+          background-color: @danger-color;
         }
 
       }
@@ -278,7 +278,7 @@ input {
     &-navy {
       &:checked+label {
         &:before {
-          background-color: @dashboard-danger;
+          background-color: @danger-color;
         }
 
       }
@@ -288,7 +288,7 @@ input {
     &-white {
       &:checked+label {
         &:before {
-          background-color: @white;
+          background-color: @white-color;
         }
 
       }
@@ -334,7 +334,7 @@ input {
       margin-left: -25px;
       border: 1px solid #cccccc;
       border-radius: 3px;
-      background-color: @white;
+      background-color: @white-color;
     }
 
     &:after {
@@ -357,12 +357,12 @@ input {
     input[type='checkbox'] {
       &:checked+label {
         &:before {
-          background-color: @info-mid;
-          border-color: @info-mid;
+          background-color: @info-mid-color;
+          border-color: @info-mid-color;
         }
 
         &:after {
-          color: @white;
+          color: @white-color;
         }
 
       }
@@ -375,12 +375,12 @@ input {
     input[type='checkbox'] {
       &:checked+label {
         &:before {
-          background-color: @success-mid;
-          border-color: @success-mid;
+          background-color: @success-mid-color;
+          border-color: @success-mid-color;
         }
 
         &:after {
-          color: @white;
+          color: @white-color;
         }
 
       }
@@ -393,12 +393,12 @@ input {
     input[type='checkbox'] {
       &:checked+label {
         &:before {
-          background-color: @info-light;
-          border-color: @info-light;
+          background-color: @info-light-color;
+          border-color: @info-light-color;
         }
 
         &:after {
-          color: @white;
+          color: @white-color;
         }
 
       }
@@ -411,12 +411,12 @@ input {
     input[type='checkbox'] {
       &:checked+label {
         &:before {
-          background-color: @warning-mid;
-          border-color: @warning-mid;
+          background-color: @warning-mid-color;
+          border-color: @warning-mid-color;
         }
 
         &:after {
-          color: @white;
+          color: @white-color;
         }
 
       }
@@ -429,12 +429,12 @@ input {
     input[type='checkbox'] {
       &:checked+label {
         &:before {
-          background-color: @danger-mid;
-          border-color: @danger-mid;
+          background-color: @danger-mid-color;
+          border-color: @danger-mid-color;
         }
 
         &:after {
-          color: @white;
+          color: @white-color;
         }
 
       }
@@ -466,8 +466,8 @@ input {
     padding: 6px 12px 6px 12px;
 
     .active.btn-success {
-      background-color: @success-mid;
-      border-color: @success-mid;
+      background-color: @success-mid-color;
+      border-color: @success-mid-color;
     }
 
   }
@@ -476,7 +476,7 @@ input {
 
 //Date range
 #reportrange {
-  background: @white;
+  background: @white-color;
   cursor: pointer;
   padding: 5px 10px;
   border: 1px solid #cccccc;
@@ -485,10 +485,10 @@ input {
 
 .daterangepicker {
   td.active {
-    background-color: @info-mid !important;
+    background-color: @info-mid-color !important;
 
     &:hover {
-      background-color: @info-mid !important;
+      background-color: @info-mid-color !important;
     }
 
   }
@@ -496,11 +496,11 @@ input {
 }
 
 .datepicker--cell.-selected- {
-  background-color: @info-mid !important;
+  background-color: @info-mid-color !important;
 }
 
 .datepicker--cell.-selected-.-current- {
-  background-color: @info-mid !important;
+  background-color: @info-mid-color !important;
 }
 
 .input-group-addon {

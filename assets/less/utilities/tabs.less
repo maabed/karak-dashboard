@@ -18,8 +18,8 @@
 
           &:hover {
             a {
-              border-bottom: 4px solid @head-background;
-              color: @head-background;
+              border-bottom: 4px solid @header-background;
+              color: @header-background;
             }
 
           }
@@ -27,7 +27,7 @@
           a {
             .padding-diffrent-values(1.4em, 1em, 1em, 1em);
             .css-effect(all 0.5s ease);
-            color: @title-color;
+            color: @primary-color;
             display: inline-block;
             font-size: 1.2em;
             font-weight: bold;
@@ -41,8 +41,8 @@
             margin: 0em 1em;
 
             a {
-              color: @head-background;
-              border-bottom: 4px solid @head-background;
+              color: @header-background;
+              border-bottom: 4px solid @header-background;
             }
 
           }
@@ -69,8 +69,8 @@
         .list-group-item {
           &.active {
             &.text-center {
-              background-color: @info-mid !important;
-              border-color: @info-mid;
+              background-color: @info-mid-color !important;
+              border-color: @info-mid-color;
             }
 
           }
@@ -92,15 +92,15 @@
             color: #555555;
 
             h4 {
-              color: @info-mid;
+              color: @info-mid-color;
             }
 
           }
 
           &.active {
             &>a {
-              background-color: @info-mid;
-              color: @white;
+              background-color: @info-mid-color;
+              color: @white-color;
               border: 0px;
             }
 
@@ -112,11 +112,11 @@
               margin-top: -13px;
               border-bottom: 13px solid transparent;
               border-top: 13px solid transparent;
-              border-left: 10px solid @info-mid;
+              border-left: 10px solid @info-mid-color;
             }
 
             h4 {
-              color: @white;
+              color: @white-color;
             }
 
           }
@@ -135,13 +135,13 @@
           a {
             border: 0px;
             background: none;
-            color: @info-mid;
+            color: @info-mid-color;
           }
 
           &.active {
             &>a {
-              background-color: @info-mid;
-              color: @white;
+              background-color: @info-mid-color;
+              color: @white-color;
               border: 0px;
             }
 
@@ -154,7 +154,7 @@
               border-left: 0px;
               border-top: 13px solid transparent;
               border-bottom: 13px solid transparent;
-              border-right: 10px solid @info-mid;
+              border-right: 10px solid @info-mid-color;
             }
 
           }
@@ -173,8 +173,8 @@
         }
 
         &.active > a {
-          color: @white;
-          background: @info-mid;
+          color: @white-color;
+          background: @info-mid-color;
         }
 
         &+li {
@@ -187,7 +187,7 @@
 
     .bordered-tab {
       &> .active > a {
-        border-top: 5px solid @info-mid;
+        border-top: 5px solid @info-mid-color;
       }
 
       li {
@@ -196,7 +196,7 @@
         }
 
         &:not(.active)>a {
-          border-top: 5px solid @white;
+          border-top: 5px solid @white-color;
         }
 
       }
@@ -216,8 +216,8 @@
     .top-tab-arrow {
       .active {
         a {
-          background-color: @info-mid !important;
-          color: @white;
+          background-color: @info-mid-color !important;
+          color: @white-color;
           border-top: 0px;
 
           &:after {
@@ -228,7 +228,7 @@
             margin-top: 0px;
             border-left: 13px solid transparent;
             border-right: 13px solid transparent;
-            border-top: 10px solid @info-mid;
+            border-top: 10px solid @info-mid-color;
           }
 
         }
@@ -240,13 +240,13 @@
   }
 
   .tab-content {
-    background-color: @white;
+    background-color: @white-color;
     padding: 1em 0.5em;
     overflow: hidden;
 
     .statistics-item {
       width: 100%;
-      background-color: @white;
+      background-color: @white-color;
       padding: 1.5em 0em;
       border-radius: 3px;
     }
@@ -264,7 +264,7 @@
 
       &.bhoechie-tab {
         h1 {
-          color: @info-mid !important;
+          color: @info-mid-color !important;
           font-size: 5em;
           text-align: center !important;
         }
@@ -284,7 +284,7 @@
 
       &.bhoechie-tab {
         h1 {
-          color: @info-mid !important;
+          color: @info-mid-color !important;
           font-size: 5em;
           text-align: center !important;
         }
@@ -323,7 +323,7 @@
     font-weight: lighter;
     color: #3b97d2;
     width: 100%;
-    background: @white;
+    background: @white-color;
     text-align: left;
     border: 1px solid #e4e5e7;
     border-radius: 3px;

@@ -40,20 +40,20 @@
       {
         100%,
         0% {
-          stroke: @info-mid;
+          stroke: @info-mid-color;
         }
 
         40% {
-          stroke: @success-mid;
+          stroke: @success-mid-color;
         }
 
         66% {
-          stroke: @warning-mid;
+          stroke: @warning-mid-color;
         }
 
         80%,
         90% {
-          stroke: @danger-mid;
+          stroke: @danger-mid-color;
         }
 
       }
@@ -136,7 +136,7 @@
     left: -200px;
     width: 200px;
     height: 4px;
-    background-color: @info-mid;
+    background-color: @info-mid-color;
     .animation(loading 2s linear infinite);
   }
 
@@ -163,7 +163,7 @@
 
       {
         0% {
-          background-color: @dashboard-info;
+          background-color: @info-color;
         }
 
         100% {
@@ -181,7 +181,7 @@
 
         {
           0% {
-            background-color: @dashboard-info;
+            background-color: @info-color;
           }
 
           100% {
@@ -197,7 +197,7 @@
         width: 1em;
         height: 1em;
         left: 1em;
-        background: @dashboard-info;
+        background: @info-color;
         margin-left: 1px;
         .animation(preloaderCSSTopAfter 2s infinite);
         -webkit-animation-delay: 0.5s;
@@ -211,7 +211,7 @@
 
       {
         0% {
-          background-color: @dashboard-info;
+          background-color: @info-color;
         }
 
         100% {
@@ -231,7 +231,7 @@
 
         {
           0% {
-            background-color: @dashboard-info;
+            background-color: @info-color;
           }
 
           100% {
@@ -247,7 +247,7 @@
         width: 1em;
         left: 1em;
         height: 1em;
-        background: @dashboard-info;
+        background: @info-color;
         margin-left: 1px;
         .animation(preloaderCSSTopAfter 2s infinite);
         -webkit-animation-delay: 1s;
@@ -262,7 +262,7 @@
       width: 1em;
       height: 1em;
       margin: 1px auto;
-      background: @dashboard-info;
+      background: @info-color;
     }
 
   }
@@ -271,7 +271,7 @@
 
 //Placeholder preloader
 .timeline-item {
-  background: @white;
+  background: @white-color;
   border: 1px solid;
   border-color: #e5e6e9 #dfe0e4 #d0d1d5;
   padding: 12px;
