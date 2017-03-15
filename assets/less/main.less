@@ -228,7 +228,7 @@
           color: @white-color;
           font-size: 1em !important;
           padding-top: 0.2em !important;
-          border-bottom-color:@white-color;
+          border-bottom-color: @white-color;
           .placeholder(@white-color);
           background-color: @header-background;
         }
@@ -419,7 +419,6 @@
   #colors-modal {
     .modal-header {
       background-color: @white-color;
-
     }
 
     .single-menue-color-box {
@@ -606,7 +605,7 @@
   background-color: @info-mid-color !important;
 }
 
-.info-ligher {
+.info-lighter {
   background-color: #cce5f6;
 }
 
@@ -689,16 +688,17 @@
 
 }
 
+/* Background colors */
 .dashboard-info {
-  background-color: #3498db;
+  background-color: @info-color;
 }
 
 .dashboard-primary {
-  background-color: #34495e;
+  background-color: @primary-color;
 }
 
-.success-ligher {
-  background-color: #cbf2db;
+.success-lighter {
+  background-color: @success-lighter-color;
 }
 
 .warning-light {
@@ -706,7 +706,7 @@
 }
 
 .dashboard-danger {
-  background-color: #e74c3c;
+  background-color: @danger-color;
 }
 
 .dashboard-default {
@@ -714,31 +714,47 @@
 }
 
 .default-light {
-  background-color: #e6e6e6;
+  background-color: @default-light-color;
 }
 
 .default-mid {
-  background-color: #cdcdcd;
+  background-color: @default-mid-color;
 }
 
 .default-dark {
-  background-color: #9b9b9b;
+  background-color: @default-color;
 }
 
-.warning-ligher {
-  background-color: #fbf0c3;
+.info-mid {
+  background-color: @info-mid-color !important;
+}
+
+.info-lighter {
+  background-color: #cce5f6;
+}
+
+.default-dark-font {
+  color: @default-color;
+}
+
+.warning-lighter {
+  background-color: @warning-lighter-color;
+}
+
+.warning-lighter-font {
+  color: @warning-lighter-color;
 }
 
 .dashboard-success {
-  background-color: #2ecc71;
+  background-color: @success-color;
 }
 
 .dashboard-warning {
-  background-color: #f1c40f;
+  background-color: @warning-color;
 }
 
-.danger-ligher {
-  background-color: #f9d2ce;
+.danger-lighter {
+  background-color: @danger-lighter-color;
 }
 
 .info-light {
@@ -777,6 +793,84 @@
   &:hover {
     background-color: transparent !important;
   }
+
+}
+
+/* Font colors */
+.dashboard-info-font {
+  color: @info-color;
+}
+
+.dashboard-primary-font {
+  color: @primary-color;
+}
+
+.success-lighter-font {
+  color: @success-lighter-color;
+}
+
+.warning-light-font {
+  color: @warning-light-color !important;
+}
+
+.dashboard-danger-font {
+  color: @danger-color;
+}
+
+.dashboard-default-font {
+  color: @white-color;
+}
+
+.default-light-font {
+  color: @default-light-color;
+}
+
+.default-mid-font {
+  color: @default-mid-color;
+}
+
+.dashboard-success-font {
+  color: @success-color;
+}
+
+.dashboard-warning-font {
+  color: @warning-color;
+}
+
+.danger-lighter-font {
+  color: @danger-lighter-color;
+}
+
+.info-light-font {
+  color: @info-light-color !important;
+}
+
+.primary-light-font {
+  color: @primary-light-color !important;
+}
+
+.success-light-font {
+  color: @success-light-color !important;
+}
+
+.danger-light-font {
+  color: @danger-light-color !important;
+}
+
+.success-mid-font {
+  color: @success-mid-color !important;
+}
+
+.primary-mid-font {
+  color: @primary-mid-color !important;
+}
+
+.warning-mid-font {
+  color: @warning-mid-color !important;
+}
+
+.danger-mid-font {
+  color: @danger-mid-color !important;
 }
 
 .text-primary {
