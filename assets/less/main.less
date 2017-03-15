@@ -312,8 +312,8 @@
 
         .messages {
           &:hover {
-            background-color: @header-background !important;
-            border-color: @header-background !important;
+            background-color: transparent !important;
+            border-color: transparent !important;
           }
 
         }
@@ -585,6 +585,10 @@
   border: 1px solid #f1f3f6;
 }
 
+.chat-icon-color {
+  color: @file-icon-color;
+}
+
 @media print {
   .hide-on-print {
     display: none;
@@ -621,7 +625,7 @@
 }
 
 .info-mid {
-  background-color: @info-mid-color !important;
+  background-color: @info-mid-color;
 }
 
 .info-lighter {

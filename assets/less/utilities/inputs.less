@@ -1,10 +1,10 @@
 //Select2 customized
 .select2 {
-  border-radius: 0px !important;
-  border: 0px !important;
-  padding-left: 0px !important;
+  border-radius: 0px;
+  border: 0px;
+  padding-left: 0px;
   width: 100% !important;
-  border-bottom: @select2-input-border !important;
+  border-bottom: @select2-input-border;
 
   .select2-selection {
     border-radius: 0px !important;
@@ -29,37 +29,37 @@
     border: @select2-input-border;
 
     .select2-results__option--highlighted[aria-selected] {
-      background-color: #f5f5f5 !important;
-      color: @select2-color !important;
-      font-size: 13px !important;
-      text-decoration: none !important;
+      background-color: #f5f5f5;
+      color: @select2-color;
+      font-size: 13px;
+      text-decoration: none;
     }
 
     .select2-results__option[role='group'] {
-      padding: 0px !important;
+      padding: 0px;
     }
 
     .select2-results__option {
-      color: @select2-color !important;
-      font-size: 13px !important;
-      padding: 14px 16px !important;
+      color: @select2-color;
+      font-size: 13px;
+      padding: 14px 16px;
     }
 
     .select2-results>.select2-results__options {
-      max-height: none !important;
-      overflow-y: visible !important;
+      max-height: none;
+      overflow-y: visible;
     }
 
     .select2-results__option {
-      color: @select2-color !important;
-      font-size: 13px !important;
+      color: @select2-color;
+      font-size: 13px;
     }
 
     .select2-search__field {
-      border: @select2-input-border !important;
+      border: @select2-input-border;
 
       &:focus {
-        border: 1px solid @info-mid-color !important;
+        border: 1px solid @info-mid-color;
       }
 
     }
@@ -111,7 +111,7 @@ input {
     &:not(.search-text-box),
     &:not(.chat-search) {
       &:focus {
-        border-bottom: 1px solid #3c763d !important;
+        border-bottom: 1px solid #3c763d;
       }
 
     }
@@ -134,14 +134,10 @@ input {
     color: @info-mid-color;
   }
 
-  #user_prefix {
-    margin-left: 2em !important;
-    width: 85% !important;
-  }
-
+  #user_prefix,
   #pass_prefix {
-    margin-left: 2em !important;
-    width: 85% !important;
+    margin-left: 2em;
+    width: 85%;
   }
 
   .material-icons {
@@ -181,7 +177,7 @@ input {
 }
 
 .has-error>input {
-  border-bottom: 1px solid #a94442 !important;
+  border-bottom: 1px solid #a94442;
 }
 
 //Slide toggles
@@ -464,8 +460,9 @@ input {
 
   .btn {
     padding: 6px 12px 6px 12px;
+    border-radius:0px;
 
-    .active.btn-success {
+    .btn-success {
       background-color: @success-mid-color;
       border-color: @success-mid-color;
     }
@@ -485,10 +482,10 @@ input {
 
 .daterangepicker {
   td.active {
-    background-color: @info-mid-color !important;
+    background-color: @info-mid-color;
 
     &:hover {
-      background-color: @info-mid-color !important;
+      background-color: @info-mid-color;
     }
 
   }
@@ -496,11 +493,17 @@ input {
 }
 
 .datepicker--cell.-selected- {
-  background-color: @info-mid-color !important;
+  background-color: @info-mid-color;
+
+  &:hover {
+    background-color: @info-mid-color;
+  }
+
 }
 
-.datepicker--cell.-selected-.-current- {
-  background-color: @info-mid-color !important;
+.datepicker--cell.-current- {
+  background-color: @info-mid-color;
+  color: @white-color;
 }
 
 .input-group-addon {

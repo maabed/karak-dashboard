@@ -3,12 +3,8 @@
     border-right: 0px;
     border-left: 0px;
     position: relative;
-    height: 80em !important;
+    height: 50em !important;
     overflow: hidden;
-
-    @media (max-width:1700px) {
-      height: 50em !important;
-    }
 
     @media (max-width:1200px) {
       height: 40em !important;
@@ -21,7 +17,7 @@
       }
 
       .poster {
-        display: block !important;
+        display: block;
       }
 
     }
@@ -38,7 +34,7 @@
         width: 100%;
         text-align: center;
         background: rgba(0, 0, 0, 0.7);
-        height: 100% !important;
+        height: 100%;
         position: absolute;
         z-index: 999;
         top: 0px;
@@ -49,7 +45,7 @@
           margin-top: 2em;
 
           @media (max-width:700px) {
-            margin: 0px auto;
+            margin: 1em auto 0em auto;
             float: none;
           }
 
@@ -57,11 +53,11 @@
 
         h1 {
           color: @white-color;
-          font-size: 3em !important;
+          font-size: 3em;
           margin-top: 4em;
 
           @media (max-width:700px) {
-            margin-top: 1em !important;
+            margin-top: 1em;
           }
 
           span {
@@ -81,8 +77,6 @@
 
         .showcase-btns {
           margin: 2em auto;
-          border-radius: 0px !important;
-          font-weight: lighter;
         }
 
       }
@@ -131,12 +125,12 @@
     &.featurs {
       .item {
         .featur-img {
-          width: 40em !important;
+          width: 40em;
           height: auto;
           margin: 0px auto;
 
           @media screen and (max-width:700px) {
-            width: 70% !important;
+            width: 70%;
           }
 
         }
@@ -159,7 +153,7 @@
       }
 
       .owl-nav {
-        display: none !important;
+        display: none;
       }
 
     }
@@ -198,7 +192,7 @@
         h3 {
           color: #515151;
           font-weight: lighter;
-          text-align: left !important;
+          text-align: left;
         }
 
         h1 {
@@ -229,7 +223,7 @@
         }
 
         @media screen and (max-width:700px) {
-          height: auto !important;
+          height: auto;
         }
 
         .description-box {
@@ -250,7 +244,7 @@
           p {
             font-weight: lighter;
             font-size: 1.7em;
-            color: @white-color !important;
+            color: @white-color;
 
             @media screen and (max-width:1404px) {
               font-size: 2em;
@@ -268,7 +262,7 @@
             border-top: 20px solid transparent;
             border-bottom: 20px solid transparent;
             position: absolute;
-            z-index: 99999 !important;
+            z-index: 99999;
             top: 45%;
 
             &.arrow-right {
@@ -295,14 +289,14 @@
 
         th,
         td {
-          border-top: 0px !important;
+          border-top: 0px;
           border-right: 20px solid @white-color;
           border-left: 20px solid @white-color;
           font-weight: 200;
 
           &.highlighted-item {
-            border-bottom-color: @info-mid-color !important;
-            border-bottom-width: 3px !important;
+            border-bottom-color: @info-mid-color;
+            border-bottom-width: 3px;
           }
 
           &.basic-th {
@@ -321,7 +315,7 @@
     }
 
     &.location-section {
-      margin-bottom: 0px !important;
+      margin-bottom: 0px;
 
       .map {
         height: 400px;

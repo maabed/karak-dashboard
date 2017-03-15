@@ -8,7 +8,7 @@
                 font-weight: lighter;
 
                 @media(max-width:1400px) {
-                    font-size: 1.5em !important;
+                    font-size: 1.5em;
                 }
 
             }
@@ -18,14 +18,14 @@
                 color: @info-mid-color;
 
                 @media(max-width:1400px) {
-                    font-size: 1.3em !important;
+                    font-size: 1.3em;
                 }
 
             }
 
             &.invers {
                 color: @white-color;
-                background-color: @info-mid-color !important;
+                background-color: @info-mid-color;
 
                 h3 {
                     color: @white-color;
@@ -35,10 +35,24 @@
 
         }
 
+        .statistics-taps {
+            li {
+                margin: 0px auto;
+                width: 100%;
+                text-align: center;
+            }
+
+        }
+
         .statistics-item {
             .col-sm-2 {
                 text-align: center;
-                width: 20% !important;
+                width: 20%;
+
+                @media (max-width:800px) {
+                    text-align: center;
+                    margin: 0px auto;
+                }
 
                 img {
                     margin: 0px auto;
@@ -70,7 +84,7 @@
                     float: right;
                     color: @header-background;
                     font-size: 1.1em;
-                    cursor: pointer !important;
+                    cursor: pointer;
                 }
 
             }
@@ -83,7 +97,7 @@
             }
 
             &.static-height {
-                height: 24em !important;
+                height: 24em;
 
                 .activities-log,
                 .to-do-list {
