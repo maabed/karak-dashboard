@@ -80,7 +80,7 @@ $(function($) {
                 'onclick': null,
                 'showDuration': '300',
                 'hideDuration': '1000',
-                'timeOut': '5000000000000000',
+                'timeOut': '5000',
                 'showMethod': 'fadeIn',
                 'hideMethod': 'fadeOut'
             };
