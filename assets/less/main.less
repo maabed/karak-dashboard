@@ -122,6 +122,25 @@
             float: right;
             margin-right: @large-value;
             margin-top: @large-value;
+
+            &:before {
+              float: right;
+              display: inline;
+              -webkit-transition: all 0.12s ease;
+              transition: all 0.12s ease;
+              font-size: 16px;
+              font-weight: 300;
+            }
+
+            &.active {
+              &:before {
+                -webkit-transform: rotate(-90deg);
+                -ms-transform: rotate(-90deg);
+                transform: rotate(-90deg);
+              }
+
+            }
+
           }
 
           .list-badge {
@@ -689,11 +708,11 @@
 }
 
 /* Background colors */
-.dashboard-info {
+.info {
   background-color: @info-color;
 }
 
-.dashboard-primary {
+.primary {
   background-color: @primary-color;
 }
 
@@ -705,11 +724,11 @@
   background-color: @warning-light-color !important;
 }
 
-.dashboard-danger {
+.danger {
   background-color: @danger-color;
 }
 
-.dashboard-default {
+.default {
   background-color: @white-color;
 }
 
@@ -745,11 +764,11 @@
   color: @warning-lighter-color;
 }
 
-.dashboard-success {
+.success {
   background-color: @success-color;
 }
 
-.dashboard-warning {
+.warning {
   background-color: @warning-color;
 }
 
@@ -797,11 +816,11 @@
 }
 
 /* Font colors */
-.dashboard-info-font {
+.info-font {
   color: @info-color;
 }
 
-.dashboard-primary-font {
+.primary-font {
   color: @primary-color;
 }
 
@@ -813,11 +832,11 @@
   color: @warning-light-color !important;
 }
 
-.dashboard-danger-font {
+.danger-font {
   color: @danger-color;
 }
 
-.dashboard-default-font {
+.default-font {
   color: @white-color;
 }
 
@@ -829,11 +848,11 @@
   color: @default-mid-color;
 }
 
-.dashboard-success-font {
+.success-font {
   color: @success-color;
 }
 
-.dashboard-warning-font {
+.warning-font {
   color: @warning-color;
 }
 
