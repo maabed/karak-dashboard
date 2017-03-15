@@ -16,14 +16,6 @@
           float: left;
           margin: 0em 1em;
 
-          &:hover {
-            a {
-              border-bottom: 4px solid @header-background;
-              color: @header-background;
-            }
-
-          }
-
           a {
             .padding-diffrent-values(1.4em, 1em, 1em, 1em);
             .css-effect(all 0.5s ease);
@@ -40,9 +32,82 @@
             float: left;
             margin: 0em 1em;
 
+          }
+
+        }
+
+        &.success-mid {
+          background-color: @background-color !important;
+
+          .active {
             a {
-              color: @header-background;
-              border-bottom: 4px solid @header-background;
+              border-bottom: 5px solid @success-mid-color;
+              color: @success-mid-color;
+            }
+
+          }
+
+        }
+
+        &.info-mid {
+          background-color: @background-color !important;
+
+          .active {
+            a {
+              border-bottom: 5px solid @info-mid-color;
+              color: @info-mid-color;
+            }
+
+          }
+
+        }
+
+        &.danger-mid {
+          background-color: @background-color !important;
+
+          .active {
+            a {
+              border-bottom: 5px solid @danger-mid-color;
+              color: @danger-mid-color;
+            }
+
+          }
+
+        }
+
+        &.warning-mid {
+          background-color: @background-color !important;
+
+          .active {
+            a {
+              border-bottom: 5px solid @warning-mid-color;
+              color: @warning-mid-color;
+            }
+
+          }
+
+        }
+
+        &.primary-mid {
+          background-color: @background-color !important;
+
+          .active {
+            a {
+              border-bottom: 5px solid @primary-mid-color;
+              color: @primary-mid-color;
+            }
+
+          }
+
+        }
+
+        &.default-mid {
+          background-color: @background-color !important;
+
+          .active {
+            a {
+              border-bottom: 5px solid @default-mid-color;
+              color: @default-mid-color;
             }
 
           }
@@ -66,11 +131,246 @@
       &.list-group {
         margin-bottom: 0px;
 
-        .list-group-item {
-          &.active {
-            &.text-center {
-              background-color: @info-mid-color !important;
+        &.right-arrow {
+          &.success-mid {
+            background-color: @white-color !important;
+
+            .active {
+              background-color: @success-mid-color;
+              border-color: @success-mid-color;
+
+              a {
+                background-color: @success-mid-color;
+                border-color: @success-mid-color;
+              }
+
+              &:after {
+                border-right: 10px solid @success-mid-color;
+              }
+
+            }
+
+          }
+
+          &.info-mid {
+            background-color: @white-color !important;
+
+            .active {
+              background-color: @info-mid-color;
               border-color: @info-mid-color;
+
+              a {
+                background-color: @info-mid-color;
+                border-color: @info-mid-color;
+              }
+
+              &:after {
+                border-right: 10px solid @info-mid-color;
+              }
+
+            }
+
+          }
+
+          &.danger-mid {
+            background-color: @white-color !important;
+
+            .active {
+              background-color: @danger-mid-color;
+              border-color: @danger-mid-color;
+
+              a {
+                background-color: @danger-mid-color;
+                border-color: @danger-mid-color;
+              }
+
+              &:after {
+                border-right: 10px solid @danger-mid-color;
+              }
+
+            }
+
+          }
+
+          &.warning-mid {
+            background-color: @white-color !important;
+
+            .active {
+              background-color: @warning-mid-color;
+              border-color: @warning-mid-color;
+
+              a {
+                background-color: @warning-mid-color;
+                border-color: @warning-mid-color;
+              }
+
+              &:after {
+                border-right: 10px solid @warning-mid-color;
+              }
+
+            }
+
+          }
+
+          &.primary-mid {
+            background-color: @white-color !important;
+
+            .active {
+              background-color: @primary-mid-color;
+              border-color: @primary-mid-color;
+
+              a {
+                background-color: @primary-mid-color;
+                border-color: @primary-mid-color;
+              }
+
+              &:after {
+                border-right: 10px solid @primary-mid-color;
+              }
+
+            }
+
+          }
+
+          &.default-mid {
+            background-color: @white-color !important;
+
+            .active {
+              background-color: @default-mid-color;
+              border-color: @default-mid-color;
+
+              a {
+                background-color: @default-mid-color;
+                border-color: @default-mid-color;
+              }
+
+              &:after {
+                border-right: 10px solid @default-mid-color;
+              }
+
+            }
+
+          }
+
+        }
+
+        &.left-arrow {
+          &.success-mid {
+            background-color: @white-color !important;
+
+            .active {
+              background-color: @success-mid-color;
+              border-color: @success-mid-color;
+
+              a {
+                background-color: @success-mid-color;
+                border-color: @success-mid-color;
+              }
+
+              &:after {
+                border-left: 10px solid @success-mid-color;
+              }
+
+            }
+
+          }
+
+          &.info-mid {
+            background-color: @white-color !important;
+
+            .active {
+              background-color: @info-mid-color;
+              border-color: @info-mid-color;
+
+              a {
+                background-color: @info-mid-color;
+                border-color: @info-mid-color;
+              }
+
+              &:after {
+                border-left: 10px solid @info-mid-color;
+              }
+
+            }
+
+          }
+
+          &.danger-mid {
+            background-color: @white-color !important;
+
+            .active {
+              background-color: @danger-mid-color;
+              border-color: @danger-mid-color;
+
+              a {
+                background-color: @danger-mid-color;
+                border-color: @danger-mid-color;
+              }
+
+              &:after {
+                border-left: 10px solid @danger-mid-color;
+              }
+
+            }
+
+          }
+
+          &.warning-mid {
+            background-color: @white-color !important;
+
+            .active {
+              background-color: @warning-mid-color;
+              border-color: @warning-mid-color;
+
+              a {
+                background-color: @warning-mid-color;
+                border-color: @warning-mid-color;
+              }
+
+              &:after {
+                border-left: 10px solid @warning-mid-color;
+              }
+
+            }
+
+          }
+
+          &.primary-mid {
+            background-color: @white-color !important;
+
+            .active {
+              background-color: @primary-mid-color;
+              border-color: @primary-mid-color;
+
+              a {
+                background-color: @primary-mid-color;
+                border-color: @primary-mid-color;
+              }
+
+              &:after {
+                border-left: 10px solid @primary-mid-color;
+              }
+
+            }
+
+          }
+
+          &.default-mid {
+            background-color: @white-color !important;
+
+            .active {
+              background-color: @default-mid-color;
+              border-color: @default-mid-color;
+
+              a {
+                background-color: @default-mid-color;
+                border-color: @default-mid-color;
+              }
+
+              &:after {
+                border-left: 10px solid @default-mid-color;
+              }
+
             }
 
           }
@@ -99,7 +399,7 @@
 
           &.active {
             &>a {
-              background-color: @info-mid-color;
+              // background-color: @info-mid-color;
               color: @white-color;
               border: 0px;
             }
@@ -112,7 +412,7 @@
               margin-top: -13px;
               border-bottom: 13px solid transparent;
               border-top: 13px solid transparent;
-              border-left: 10px solid @info-mid-color;
+              // border-left: 10px solid @info-mid-color;
             }
 
             h4 {
@@ -140,7 +440,7 @@
 
           &.active {
             &>a {
-              background-color: @info-mid-color;
+              // background-color: @info-mid-color;
               color: @white-color;
               border: 0px;
             }
@@ -154,7 +454,7 @@
               border-left: 0px;
               border-top: 13px solid transparent;
               border-bottom: 13px solid transparent;
-              border-right: 10px solid @info-mid-color;
+              // border-right: 10px solid @info-mid-color;
             }
 
           }
@@ -174,7 +474,7 @@
 
         &.active > a {
           color: @white-color;
-          background: @info-mid-color;
+          // background: @info-mid-color;
         }
 
         &+li {
@@ -183,20 +483,164 @@
 
       }
 
+      &.success-mid {
+        background-color: @white-color !important;
+
+        .active {
+          a {
+            background-color: @success-mid-color;
+            border-color: @success-mid-color;
+          }
+
+        }
+
+      }
+
+      &.info-mid {
+        background-color: @white-color !important;
+
+        .active {
+          a {
+            background-color: @info-mid-color;
+            border-color: @info-mid-color;
+          }
+
+        }
+
+      }
+
+      &.danger-mid {
+        background-color: @white-color !important;
+
+        .active {
+          a {
+            background-color: @danger-mid-color;
+            border-color: @danger-mid-color;
+          }
+
+        }
+
+      }
+
+      &.warning-mid {
+        background-color: @white-color !important;
+
+        .active {
+          a {
+            background-color: @warning-mid-color;
+            border-color: @warning-mid-color;
+          }
+
+        }
+
+      }
+
+      &.primary-mid {
+        background-color: @white-color !important;
+
+        .active {
+          a {
+            background-color: @primary-mid-color;
+            border-color: @primary-mid-color;
+          }
+
+        }
+
+      }
+
+      &.default-mid {
+        background-color: @white-color !important;
+
+        .active {
+          a {
+            background-color: @default-mid-color;
+            border-color: @default-mid-color;
+          }
+
+        }
+
+      }
+
     }
 
     .bordered-tab {
-      &> .active > a {
-        border-top: 5px solid @info-mid-color;
-      }
 
       li {
         &> a {
+          border-radius: 0px !important;
           color: @paragraph-color;
         }
 
-        &:not(.active)>a {
-          border-top: 5px solid @white-color;
+      }
+
+      &.success-mid {
+        background-color: @white-color!important;
+
+        .active {
+          a {
+            border-top: 5px solid @success-mid-color;
+          }
+
+        }
+
+      }
+
+      &.info-mid {
+        background-color: @white-color !important;
+
+        .active {
+          a {
+            border-top: 5px solid @info-mid-color;
+          }
+
+        }
+
+      }
+
+      &.danger-mid {
+        background-color: @white-color !important;
+
+        .active {
+          a {
+            border-top: 5px solid @danger-mid-color;
+          }
+
+        }
+
+      }
+
+      &.warning-mid {
+        background-color: @white-color !important;
+
+        .active {
+          a {
+            border-top: 5px solid @warning-mid-color;
+          }
+
+        }
+
+      }
+
+      &.primary-mid {
+        background-color: @white-color !important;
+
+        .active {
+          a {
+            border-top: 5px solid @primary-mid-color;
+          }
+
+        }
+
+      }
+
+      &.default-mid {
+        background-color: @white-color !important;
+
+        .active {
+          a {
+            border-top: 5px solid @default-mid-color;
+          }
+
         }
 
       }
@@ -216,7 +660,7 @@
     .top-tab-arrow {
       .active {
         a {
-          background-color: @info-mid-color !important;
+          // background-color: @info-mid-color !important;
           color: @white-color;
           border-top: 0px;
 
@@ -228,7 +672,115 @@
             margin-top: 0px;
             border-left: 13px solid transparent;
             border-right: 13px solid transparent;
-            border-top: 10px solid @info-mid-color;
+            // border-top: 10px solid @info-mid-color;
+          }
+
+        }
+
+      }
+
+      &.success-mid {
+        background-color: @white-color !important;
+
+        .active {
+          a {
+            background-color: @success-mid-color;
+            border-color: @success-mid-color;
+
+            &:after {
+              border-top: 10px solid @success-mid-color;
+            }
+
+          }
+
+        }
+
+      }
+
+      &.info-mid {
+        background-color: @white-color !important;
+
+        .active {
+          a {
+            background-color: @info-mid-color;
+            border-color: @info-mid-color;
+
+            &:after {
+              border-top: 10px solid @info-mid-color;
+            }
+
+          }
+
+        }
+
+      }
+
+      &.danger-mid {
+        background-color: @white-color !important;
+
+        .active {
+          a {
+            background-color: @danger-mid-color;
+            border-color: @danger-mid-color;
+
+            &:after {
+              border-top: 10px solid @danger-mid-color;
+            }
+
+          }
+
+        }
+
+      }
+
+      &.warning-mid {
+        background-color: @white-color !important;
+
+        .active {
+          a {
+            background-color: @warning-mid-color;
+            border-color: @warning-mid-color;
+
+            &:after {
+              border-top: 10px solid @warning-mid-color;
+            }
+
+          }
+
+        }
+
+      }
+
+      &.primary-mid {
+        background-color: @white-color !important;
+
+        .active {
+          a {
+            background-color: @primary-mid-color;
+            border-color: @primary-mid-color;
+
+            &:after {
+              border-top: 10px solid @primary-mid-color;
+            }
+
+          }
+
+        }
+
+      }
+
+      &.default-mid {
+        background-color: @white-color !important;
+
+        .active {
+          a {
+            background-color: @default-mid-color;
+            border-color: @default-mid-color;
+
+            &:after {
+              border-top: 10px solid @default-mid-color;
+            }
+
           }
 
         }
