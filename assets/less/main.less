@@ -13,7 +13,6 @@
   }
 
   .sidebar-wrapper {
-    .css-effect(all 0.5s ease);
     position: fixed;
     left: 250px;
     width: 0px;
@@ -40,7 +39,7 @@
 
     }
 
-    .sidebar-nav {
+    .sidebar {
       position: absolute;
       top: 0px;
       width: 250px;
@@ -53,7 +52,7 @@
           color: @info-mid-color;
         }
 
-        &>.submenue>li>.inner-selected {
+        &>.sidebar-submenue>li>.inner-selected {
           color: @submenu-selected !important;
           margin-left: 50px !important;
 
@@ -81,7 +80,7 @@
         line-height: 40px;
         position: relative;
 
-        .submenue {
+        .sidebar-submenue {
           display: none;
           font-size: @paragraph;
           background-color: @submenue-background-color;
@@ -125,18 +124,22 @@
 
             &:before {
               float: right;
-              display: inline;
+              font-size: 16px;
+              font-family: FontAwesome;
+              height: auto;
+              content: '\f104';
+              font-weight: 300;
+              text-shadow: none;
               -webkit-transition: all 0.12s ease;
               transition: all 0.12s ease;
-              font-size: 16px;
-              font-weight: 300;
             }
 
-            &.active {
+            &.open {
               &:before {
                 -webkit-transform: rotate(-90deg);
                 -ms-transform: rotate(-90deg);
                 transform: rotate(-90deg);
+                transform-origin: 100% 50%;
               }
 
             }
@@ -173,12 +176,12 @@
 
     }
 
-    .sidebar-nav li:hover {
+    .sidebar li:hover {
       background-color: @submenue-background-color;
     }
 
     .selected {
-      .submenue {
+      .sidebar-submenue {
         .submenu-li {
           a {
             background-color: @submenue-background-color !important;
@@ -376,6 +379,7 @@
 
         &.body-header {
           margin-top: 3.8em;
+          border-left: 5px solid #3b97d2;
 
           .title {
             font-weight: 100;
@@ -662,7 +666,7 @@
       }
 
       &.info-border {
-        border-left: 40px solid @info-mid-color !important;
+        border-left: 40px solid @info-color !important;
       }
 
       &.info-border-hover {
@@ -670,7 +674,7 @@
       }
 
       &.success-border {
-        border-left: 40px solid @success-mid-color !important;
+        border-left: 40px solid @success-color !important;
       }
 
       &.success-border-hover {
@@ -678,7 +682,7 @@
       }
 
       &.warning-border {
-        border-left: 40px solid @warning-mid-color !important;
+        border-left: 40px solid @warning-color !important;
       }
 
       &.warning-border-hover {
@@ -686,7 +690,7 @@
       }
 
       &.danger-border {
-        border-left: 40px solid @danger-mid-color !important;
+        border-left: 40px solid @danger-color !important;
       }
 
       &.danger-border-hover {

@@ -11,11 +11,11 @@ $(document).ready(function() {
    $('.wrapper').toggleClass('toggled');
  });
 
- $('.submenue').hide();
- $('.nav-hyperlink').click(function(e) {
-   e.preventDefault();
-   var $this = $(this).parent().find('.submenue');
-   $('.submenue').not($this).hide(300);
+ $('.sidebar-submenue').hide();
+ $('.has-submenu > a').click(function(e) {
+  e.preventDefault();
+   var $this = $(this).parent().find('.sidebar-submenue');
+   $('.sidebar-submenue').not($this).hide(300);
    $this.toggle(300);
  });
 
@@ -28,14 +28,28 @@ $(document).ready(function() {
    }
  });
 
- $('.sidebar-nav').find('li.selected').find('.submenue').css('display', 'block');
+ $('.sidebar').find('li.selected').find('.sidebar-submenue').css('display', 'block');
 
- $('.submenue').css({
-   'padding': '0px',
-   'position': 'relative',
-   'padding-left': '0px'
- });
- $('.submenue > li > a').not( ".chat-view-navbar .submenue > li > a").css('margin-left', '40px');
+
+ $('.sidebar-submenue > li > a').not( ".chat-view-navbar .sidebar-submenue > li > a").css('margin-left', '40px');
+
+ $('.has-submenu > a').click(function(){
+  var current = $(this);
+  var parent = $(this).parent().parent();
+  var li = $(this).parent();
+  if(li.hasClass("open active")){
+    current.children('.left-arrow').removeClass("open");
+    li.removeClass("open active");  
+  }
+  else{
+    parent.children('li.open').find('.left-arrow').removeClass('open');
+    parent.children('li.open').removeClass("open active");
+    current.children('.left-arrow').addClass("open");
+    li.addClass("open active");
+  }
+   
+});
+
 });
 
 function printbtn() {
