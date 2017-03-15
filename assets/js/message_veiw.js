@@ -44,7 +44,7 @@ $(function($) {
             date: 'yesterday at 11:00am',
             title: 'Email Title Gose Here Email Title Gose Here',
             body: 'I have recently ordered a new pair of soccer cleats (item #6542951) from your website on June 21. I received the order on June 26. Unfortunately, when I opened it, I saw that the cleats were used. The cleats had dirt all over it and there was a small tear in front of the part where the left toe would go. My order number is AF26168156.To resolve the problem, I would like you to credit my account for the amount charged for my cleats; I have already went out and bought a new pair of cleats at my local sporting goods store so sending another would result in me having two pairs of the same cleats.Than you for taking the time to read this letter. I have been a satisfied customer of your company for many years and this is the first time I have encountered a problem. If you need to contact me, you can reach me at (555) 555-5555.',
-            avatar: 'assets/images/team1.jpg',
+            avatar: 'assets/images/team-member-5.jpg',
         }, {
             sender: 'Shirley Garnet',
             date: 'Jan 15 at 02:22pm',
