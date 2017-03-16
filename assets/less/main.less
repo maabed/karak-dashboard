@@ -52,22 +52,10 @@
           color: @info-mid-color;
         }
 
-        &>.sidebar-submenue>li>.inner-selected {
-          color: @submenu-selected;
-          margin-left: 50px;
-
-          &:before {
-            color: @black-color;
-            content: '\f105';
-            font-family: FontAwesome;
-            font-size: 15px;
-            font-style: normal;
-            font-weight: normal;
-            left: 30px;
-            padding-right: @small-value;
-            position: absolute;
-            text-decoration: inherit;
-            top: 1px;
+        &>.sidebar-submenue>li {
+          .inner-selected {
+            color: #545353;
+            text-decoration: underline;
           }
 
         }
@@ -96,6 +84,11 @@
               font-weight: lighter;
               text-decoration: none;
               .css-effect(all 0.5s ease);
+
+              &:hover {
+                color: #545353;
+              }
+
             }
 
           }
@@ -258,7 +251,8 @@
         .form-control {
           float: left;
           font-weight: normal;
-          padding-left: 30px;
+          padding-left: 30px !important;
+          border-bottom:0px !important;
         }
 
         .glyphicon {
@@ -318,6 +312,7 @@
             background-color: transparent;
             border-color: transparent;
           }
+
         }
 
         .notifications {

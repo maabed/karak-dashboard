@@ -25,16 +25,16 @@
         <!-- Sidebar -->
         <div class="sidebar-wrapper">
             <div class="sidebar-brand" id="company-name">Blue Dashboard</div>
-            <ul class="sidebar-nav">
-                <li>
+            <ul class="sidebar">
+                <li class="sidebar-item">
                     <a href="index.html"><i class="fa fa-tachometer nav-icon" aria-hidden="true"></i>Dashboard</a>
                 </li>
-                <li>
-                    <a class="nav-hyperlink" href="#">
+                <li class="sidebar-item has-submenu">
+                    <a href="#">
                         <i class="fa fa-file-text nav-icon" aria-hidden="true"></i> Forms
-                        <i class="fa fa-angle-left left-arrow rotate" aria-hidden="true"></i>
+                        <i class="fa fa-angle-left left-arrow " aria-hidden="true"></i>
                     </a>
-                    <ul class="submenue">
+                    <ul class="sidebar-submenue">
                         <li class="submenu-li">
                             <a href="forms.html">
                                     Form Elements
@@ -47,22 +47,22 @@
                         </li>
                     </ul>
                 </li>
-                <li>
+                <li class="sidebar-item">
                     <a href="charts.html">
                         <i class="fa fa-pie-chart  nav-icon" aria-hidden="true"></i> Charts
                     </a>
                 </li>
-                <li>
+                <li class="sidebar-item">
                     <a href="inbox.html">
                         <i class="fa fa-envelope nav-icon" aria-hidden="true"></i> Email
                         <span class="label info-mid list-badge">2</span>
                     </a>
                 </li>
-                <li class="selected">
-                    <a class="nav-hyperlink" href="#">
-                        <i class="fa fa-eye   nav-icon" aria-hidden="true"></i> UI Elements<span class="label success-mid list-badge">New</span> <i class="fa fa-angle-left left-arrow rotate" aria-hidden="true"></i>
+                <li class="selected open active sidebar-item has-submenu">
+                    <a href="#">
+                        <i class="fa fa-eye   nav-icon" aria-hidden="true"></i> UI Elements<span class="label success-mid list-badge">New</span> <i class="fa fa-angle-left left-arrow " aria-hidden="true"></i>
                     </a>
-                    <ul class="submenue">
+                    <ul class="sidebar-submenue">
                         <li class="submenu-li">
                             <a href="icons.html">
                                     Icons
@@ -108,7 +108,7 @@
                                     Panels
                                 </a>
                         </li>
-                        <li class="submenu-li inner-selected">
+                        <li class="submenu-li">
                             <a href="lists.html" class="inner-selected">
                                     Lists
                                 </a>
@@ -125,29 +125,24 @@
                         </li>
                     </ul>
                 </li>
-                <li>
+                <li class="sidebar-item">
                     <a href="calendar.html">
                         <i class="fa fa-calendar-check-o nav-icon" aria-hidden="true"></i> Calendar
                     </a>
                 </li>
-                <li>
-                    <a href="social.html">
-                        <i class="fa fa-share-alt-square nav-icon" aria-hidden="true"></i> Social
-                    </a>
-                </li>
-                <li>
-                    <a class="nav-hyperlink" href="#">
+                <li class="sidebar-item has-submenu">
+                    <a href="#">
                         <i class="fa fa-star nav-icon" aria-hidden="true"></i>App Views
                         <span class="label warning-mid list-badge">Special</span>
-                        <i class="fa fa-angle-left left-arrow rotate" aria-hidden="true"></i>
+                        <i class="fa fa-angle-left left-arrow " aria-hidden="true"></i>
                     </a>
-                    <ul class="submenue">
+                    <ul class="sidebar-submenue">
                         <li class="submenu-li">
                             <a href="account_manager.html">
                                     Account Management
                                 </a>
                         </li>
-                        <li class="submenu-li">
+                        <li class=" submenu-li">
                             <a href="landing_page.html">
                                     Landing Page
                                 </a>
@@ -157,14 +152,19 @@
                                     Chat View
                                 </a>
                         </li>
+                         <li class="submenu-li">
+                            <a href="social.html">
+                                    Social
+                                </a>
+                        </li>
                     </ul>
                 </li>
-                <li>
-                    <a class="nav-hyperlink" href="#">
-                        <i class="fa fa-table nav-icon" aria-hidden="true"></i> Tables
-                        <i class="fa fa-angle-left left-arrow rotate" aria-hidden="true"></i>
+                <li class="sidebar-item has-submenu">
+                    <a href="#">
+                        <i class="fa fa-table nav-icon " aria-hidden="true"></i> Tables
+                        <i class="fa fa-angle-left left-arrow open " aria-hidden="true"></i>
                     </a>
-                    <ul class="submenue">
+                    <ul class="sidebar-submenue">
                         <li class="submenu-li">
                             <a href="tables.html">
                                     Basic Table
@@ -177,12 +177,12 @@
                         </li>
                     </ul>
                 </li>
-                <li>
-                    <a class="nav-hyperlink" href="#">
-                        <i class="fa fa-map nav-icon" aria-hidden="true"></i> Maps
-                        <i class="fa fa-angle-left left-arrow rotate" aria-hidden="true"></i>
+                <li class="sidebar-item has-submenu">
+                    <a href="#">
+                        <i class="fa fa-map nav-icon " aria-hidden="true"></i> Maps
+                        <i class="fa fa-angle-left left-arrow " aria-hidden="true"></i>
                     </a>
-                    <ul class="submenue">
+                    <ul class="sidebar-submenue">
                         <li class="submenu-li">
                             <a href="map.html">
                                     Vector Maps
@@ -195,12 +195,12 @@
                         </li>
                     </ul>
                 </li>
-                <li>
-                    <a class="nav-hyperlink" href="#">
-                        <i class="fa fa-gift nav-icon" aria-hidden="true"></i> Extra
-                        <i class="fa fa-angle-left left-arrow rotate" aria-hidden="true"></i>
+                <li class="sidebar-item has-submenu">
+                    <a href="#">
+                        <i class="fa fa-gift nav-icon " aria-hidden="true"></i> Extra
+                        <i class="fa fa-angle-left left-arrow " aria-hidden="true"></i>
                     </a>
-                    <ul class="submenue">
+                    <ul class="sidebar-submenue">
                         <li class="submenu-li">
                             <a href="invoice.html">
                                     Invoice

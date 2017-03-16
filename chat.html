@@ -80,13 +80,13 @@
                     <!-- /user info popover -->
             </div>
             <div class="left-side-body">
-                <ul class="sidebar-nav">
-                    <li>
+                <ul class="sidebar">
+                    <li class="sidebar-item has-submenu">
                         <a href="#">
                             <i class="fa fa-star nav-icon" aria-hidden="true"></i>
                             <div class="open-sub">Favorites</div>
                         </a>
-                        <ul class="submenue">
+                        <ul class="sidebar-submenue">
                             <li class="submenu-li">
                                 <a href="#">
                                     <i class="fa fa-at nav-icon" aria-hidden="true"></i>Mahmoud Abed
@@ -100,14 +100,14 @@
                         </ul>
                     </li>
                 </ul>
-                <ul class="sidebar-nav">
-                    <li>
+                <ul class="sidebar">
+                    <li class="sidebar-item has-submenu">
                         <a href="#">
                             <i class="fa fa-bullhorn nav-icon" aria-hidden="true"></i>
                             <div class="open-sub">CHANNELS (7)</div>
-                            <i id="preview1" data-toggle="modal" data-target="#myModal2" class="fa fa-plus-square-o  left-arrow" aria-hidden="true"></i>
+                            <i data-toggle="modal" data-target="#creat-channel" class="fa fa-plus-square-o" aria-hidden="true"></i>
                         </a>
-                        <ul class="submenue">
+                        <ul class="sidebar-submenue">
                             <li class="submenu-li">
                                 <a href="#">
                                     <i class="fa fa-hashtag nav-icon" aria-hidden="true"></i>dashboard
@@ -135,13 +135,13 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <li class="sidebar-item has-submenu">
                         <a class="nav-hyperlink" href="#">
                             <i class="fa fa-commenting nav-icon" aria-hidden="true"></i>
                             <div class="open-sub">DIRECT MESSAGES</div>
-                            <i id="preview2" data-toggle="modal" data-target="#myModal3" class="fa fa-plus-square-o  left-arrow" aria-hidden="true"></i>
+                            <i data-toggle="modal" data-target="#direct-message" class="fa fa-plus-square-o" aria-hidden="true"></i>
                         </a>
-                        <ul class="submenue">
+                        <ul class="sidebar-submenue">
                             <li class="submenu-li">
                                 <a href="#">
                                     <i class="fa fa-at nav-icon active-user" aria-hidden="true"></i>Mohammad Meshaal
@@ -168,7 +168,7 @@
             </div>
             <div class="row left-side-footer">
                 <div class="col-sm-12">
-                    <a href="inbox.html" class="btn btn-primary btn-lg hvr-icon-back">
+                    <a href="index.html" class="btn btn-primary btn-lg hvr-icon-back">
                         <p>Back</p>
                     </a>
                 </div>
@@ -319,12 +319,12 @@
             </footer>
         </div>
         <!-- Creat Channel Modal -->
-        <div class="modal right fade channel-modal" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+        <div class="modal right fade channel-modal" id="creat-channel" tabindex="-1" role="dialog" aria-labelledby="creat-channel-Label">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel2">Create Channel</h4>
+                        <h4 class="modal-title" id="creat-channel-Label">Create Channel</h4>
                     </div>
                     <div class="modal-body">
                         <div class="col-md-12 no-padding">
@@ -367,12 +367,12 @@
             <!-- modal-dialog -->
         </div>
         <!-- Direct Messages Modal -->
-        <div class="modal right fade direct-message-modal" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+        <div class="modal right fade direct-message-modal" id="direct-message" tabindex="-1" role="dialog" aria-labelledby="direct-message-label">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel2">Direct Messages</h4>
+                        <h4 class="modal-title" id="direct-message-label">Direct Messages</h4>
                     </div>
                     <div class="modal-body">
                         <div class="col-sm-12 no-left-right-padding">

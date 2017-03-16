@@ -17,9 +17,6 @@
     <link type="text/css" href="assets/css/lessConverted.css" rel="stylesheet" />
     <!-- Font Awesome library -->
     <link type="text/css" href="assets/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
-    <!-- Tabs page CSS -->
-    <!--                  <link type="text/css" rel="stylesheet" href="assets/css/tabs.css">
- -->
 </head>
 
 <body>
@@ -27,243 +24,245 @@
         <!-- Sidebar -->
         <div class="sidebar-wrapper">
             <div class="sidebar-brand" id="company-name">Blue Dashboard</div>
-            <ul class="sidebar-nav">
-                <li>
-                    <a href="index.html"><i class="fa fa-tachometer nav-icon"aria-hidden="true"></i>Dashboard</a>
+            <ul class="sidebar">
+                <li class="sidebar-item">
+                    <a href="index.html"><i class="fa fa-tachometer nav-icon" aria-hidden="true"></i>Dashboard</a>
                 </li>
-                <li>
-                    <a class="nav-hyperlink" href="#">
+                <li class="sidebar-item has-submenu">
+                    <a href="#">
                         <i class="fa fa-file-text nav-icon" aria-hidden="true"></i> Forms
-                        <i class="fa fa-angle-left left-arrow rotate" aria-hidden="true"></i>
+                        <i class="fa fa-angle-left left-arrow " aria-hidden="true"></i>
                     </a>
-                    <ul class="submenue">
+                    <ul class="sidebar-submenue">
                         <li class="submenu-li">
                             <a href="forms.html">
-Form Elements
-</a>
+                                    Form Elements
+                                </a>
                         </li>
                         <li class="submenu-li">
                             <a href="form_wizard.html">
-Form Wizard
-</a>
+                                    Form Wizard
+                                </a>
                         </li>
                     </ul>
                 </li>
-                <li>
+                <li class="sidebar-item">
                     <a href="charts.html">
                         <i class="fa fa-pie-chart  nav-icon" aria-hidden="true"></i> Charts
                     </a>
                 </li>
-                <li>
+                <li class="sidebar-item">
                     <a href="inbox.html">
                         <i class="fa fa-envelope nav-icon" aria-hidden="true"></i> Email
-                        <span class="label label-primary list-badge info-mid">2</span>
+                        <span class="label info-mid list-badge">2</span>
                     </a>
                 </li>
-
-                <li class="selected">
-                    <a class="nav-hyperlink" href="#">
-                        <i class="fa fa-eye   nav-icon" aria-hidden="true"></i> UI Elements<span class="label label-success list-badge success-mid">New</span> <i class="fa fa-angle-left left-arrow rotate" aria-hidden="true"></i>
+                <li class="selected open active sidebar-item has-submenu">
+                    <a href="#">
+                        <i class="fa fa-eye   nav-icon" aria-hidden="true"></i> UI Elements<span class="label success-mid list-badge">New</span> <i class="fa fa-angle-left left-arrow " aria-hidden="true"></i>
                     </a>
-                    <ul class="submenue">
+                    <ul class="sidebar-submenue">
                         <li class="submenu-li">
                             <a href="icons.html">
-Icons
-</a>
+                                    Icons
+                                </a>
                         </li>
                         <li class="submenu-li">
                             <a href="colors.html">
-Colors
-</a>
+                                    Colors
+                                </a>
                         </li>
                         <li class="submenu-li">
                             <a href="buttons.html">
-Buttons
-</a>
+                                    Buttons
+                                </a>
                         </li>
                         <li class="submenu-li">
                             <a href="notifications.html">
-Notifications
-</a>
+                                    Notifications
+                                </a>
                         </li>
                         <li class="submenu-li">
                             <a href="modals.html">
-Modals
-</a>
+                                    Modals
+                                </a>
                         </li>
-                        <li class="submenu-li inner-selected">
+                        <li class="submenu-li">
                             <a href="tabs.html" class="inner-selected">
-Tabs
-</a>
+                                    Tabs
+                                </a>
                         </li>
                         <li class="submenu-li">
                             <a href="cards.html">
-Cards
-</a>
+                                    Cards
+                                </a>
                         </li>
                         <li class="submenu-li">
                             <a href="loading.html">
-Loading & Progress
-</a>
+                                    Loading & Progress
+                                </a>
                         </li>
                         <li class="submenu-li">
                             <a href="panels.html">
-Panels
-</a>
+                                    Panels
+                                </a>
                         </li>
                         <li class="submenu-li">
                             <a href="lists.html">
-Lists
-</a>
+                                    Lists
+                                </a>
                         </li>
                         <li class="submenu-li">
                             <a href="menus.html">
-Menus
-</a>
+                                    Menus
+                                </a>
                         </li>
                         <li class="submenu-li">
                             <a href="hover.html">
-Hover
-</a>
+                                    Hover
+                                </a>
                         </li>
                     </ul>
                 </li>
-                <li>
+                <li class="sidebar-item">
                     <a href="calendar.html">
                         <i class="fa fa-calendar-check-o nav-icon" aria-hidden="true"></i> Calendar
                     </a>
                 </li>
-                <li>
-                    <a href="social.html">
-                        <i class="fa fa-share-alt-square nav-icon" aria-hidden="true"></i> Social
-                    </a>
-                </li>
-                <li>
-                    <a class="nav-hyperlink" href="#">
+                <li class="sidebar-item has-submenu">
+                    <a href="#">
                         <i class="fa fa-star nav-icon" aria-hidden="true"></i>App Views
-                        <span class="label label-warning list-badge warning-mid">Special</span>
-                        <i class="fa fa-angle-left left-arrow rotate" aria-hidden="true"></i>
+                        <span class="label warning-mid list-badge">Special</span>
+                        <i class="fa fa-angle-left left-arrow " aria-hidden="true"></i>
                     </a>
-                    <ul class="submenue">
+                    <ul class="sidebar-submenue">
                         <li class="submenu-li">
                             <a href="account_manager.html">
-Account Management
-</a>
+                                    Account Management
+                                </a>
                         </li>
-                        <li class="submenu-li">
+                        <li class=" submenu-li">
                             <a href="landing_page.html">
-Landing Page
-</a>
+                                    Landing Page
+                                </a>
                         </li>
                         <li class="submenu-li">
                             <a href="chat.html">
-Chat View
-</a>
+                                    Chat View
+                                </a>
+                        </li>
+                         <li class="submenu-li">
+                            <a href="social.html">
+                                    Social
+                                </a>
                         </li>
                     </ul>
                 </li>
-                <li>
-                    <a class="nav-hyperlink" href="#">
-                        <i class="fa fa-table nav-icon" aria-hidden="true"></i> Tables
-                        <i class="fa fa-angle-left left-arrow rotate" aria-hidden="true"></i>
+                <li class="sidebar-item has-submenu">
+                    <a href="#">
+                        <i class="fa fa-table nav-icon " aria-hidden="true"></i> Tables
+                        <i class="fa fa-angle-left left-arrow open " aria-hidden="true"></i>
                     </a>
-                    <ul class="submenue">
+                    <ul class="sidebar-submenue">
                         <li class="submenu-li">
                             <a href="tables.html">
-Basic Table
-</a>
+                                    Basic Table
+                                </a>
                         </li>
                         <li class="submenu-li">
                             <a href="data_tables.html">
-Data Table
-</a>
+                                    Data Table
+                                </a>
                         </li>
                     </ul>
                 </li>
-                <li>
-                    <a class="nav-hyperlink" href="#">
-                        <i class="fa fa-map nav-icon" aria-hidden="true"></i> Maps
-                        <i class="fa fa-angle-left left-arrow rotate" aria-hidden="true"></i>
+                <li class="sidebar-item has-submenu">
+                    <a href="#">
+                        <i class="fa fa-map nav-icon " aria-hidden="true"></i> Maps
+                        <i class="fa fa-angle-left left-arrow " aria-hidden="true"></i>
                     </a>
-                    <ul class="submenue">
+                    <ul class="sidebar-submenue">
                         <li class="submenu-li">
                             <a href="map.html">
-Vector Maps
-</a>
+                                    Vector Maps
+                                </a>
                         </li>
                         <li class="submenu-li">
                             <a href="google_map.html">
-Google Maps
-</a>
+                                    Google Maps
+                                </a>
                         </li>
                     </ul>
                 </li>
-                <li>
-                    <a class="nav-hyperlink" href="#">
-                        <i class="fa fa-gift nav-icon" aria-hidden="true"></i> Extra
-                        <i class="fa fa-angle-left left-arrow rotate" aria-hidden="true"></i>
+                <li class="sidebar-item has-submenu">
+                    <a href="#">
+                        <i class="fa fa-gift nav-icon " aria-hidden="true"></i> Extra
+                        <i class="fa fa-angle-left left-arrow " aria-hidden="true"></i>
                     </a>
-                    <ul class="submenue">
+                    <ul class="sidebar-submenue">
                         <li class="submenu-li">
                             <a href="invoice.html">
-Invoice
-</a>
+                                    Invoice
+                                </a>
                         </li>
                         <li class="submenu-li">
                             <a href="error400.html">
-404 Page
-</a>
+                                    404 Page
+                                </a>
                         </li>
                         <li class="submenu-li">
                             <a href="error500.html">
-500 Page
-</a>
+                                    500 Page
+                                </a>
                         </li>
                         <li class="submenu-li">
                             <a href="login.html">
-Login & Registration
-</a>
+                                    Login & Registration
+                                </a>
                         </li>
                         <li class="submenu-li">
                             <a href="lock_screen.html">
-Lock Screen
-</a>
+                                    Lock Screen
+                                </a>
                         </li>
                         <li class="submenu-li">
                             <a href="tour.html">
-Tour
-</a>
+                                    Tour
+                                </a>
                         </li>
                     </ul>
                 </li>
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
-            <div class="main-dashboard-header" id="head">
+        <!-- Page Content -->
+        <div class="page-content-wrapper">
+        <!-- header -->
+            <div class="main-dashboard-header " id="head">
                 <div class="container-fluid header-container">
-                    <i href="#menu-toggle" id="menu-toggle" class="fa fa-bars menu-toggle" aria-hidden="true"></i>
+                    <i href="#menu-toggle " id="menu-toggle " class="fa fa-bars menu-toggle " aria-hidden="true"></i>
                     <div class="form-group">
                         <div class="icon-addon addon-md">
-                            <input type="text" placeholder="Type anywhere to search" class="form-control main-dashboard-search search-text-box">
-                            <i class="fa fa-search glyphicon glyphicon-search" aria-hidden="true"></i>
+                            <input type="text " placeholder="Type anywhere to search " class="form-control main-dashboard-search search-text-box">
+                            <i class="fa fa-search glyphicon glyphicon-search " aria-hidden="true"></i>
                         </div>
                     </div>
-                 <div class="right-side-head">
+                      <div class="right-side-head">
                         <div class="right-side-items notifecations">
-                            <button id="notifications" class="notifications btn btn-default btn-lg btn-link">
-                                <i class="fa fa-bell-o" aria-hidden="true"></i>
+                            <button id="notifications " class="notifications btn btn-default btn-lg btn-link">
+                                <i class="fa fa-bell-o " aria-hidden="true"></i>
                             </button>
-                            <span id="not-badg" class="badge badge-notify">2</span>
+                            <span id="not-badg " class="badge badge-notify">2</span>
                         </div>
                         <div class="right-side-items email">
-                            <button id="messages" class="messages btn btn-default btn-lg btn-link">
-                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            <button id="messages " class="messages btn btn-default btn-lg btn-link">
+                                <i class="fa fa-envelope-o " aria-hidden="true"></i>
                             </button>
-                            <span id="message-badg" class="badge badge-notify">4</span>
+                            <span id="message-badg " class="badge badge-notify">4</span>
                         </div>
-                        <div id="user-box" class="user-box right-side-items">
-                            <p> Mr.Sami<i class="fa fa-angle-down" aria-hidden="true"></i></p>
-                            <img src="assets/images/Sami.jpg" />
+                        <div id="user-box " class="user-box right-side-items">
+                            <p> Mr.Sami<i class="fa fa-angle-down " aria-hidden="true"></i></p>
+                            <img src="assets/images/Sami.jpg " />
                         </div>
                     </div>
                 </div>
@@ -272,13 +271,13 @@ Tour
                     <h5>Notifications</h5>
                     <div class="single-content-row">
                         <a href="#">
-                            <img alt="user name" src="assets/images/Sami.jpg" />
+                            <img alt="user name " src="assets/images/Sami.jpg " />
                             <p><b>Mohammad Meshaal</b>wants your confirmation on his Leave Request on 12 Mar 2017</p>
                         </a>
                     </div>
                     <div class="single-content-row">
                         <a href="#">
-                            <img alt="user name" src="assets/images/Team-Member-1-270x250.jpg" />
+                            <img alt="user name " src="assets/images/Team-Member-1-270x250.jpg " />
                             <p><b>Nasir ahmad</b>sent a payment on 11 Mar 2017</p>
                         </a>
                     </div>
@@ -288,31 +287,31 @@ Tour
                 </div>
                 <div class="messages-box">
                     <div class="arrow-up"></div>
-                    <h5>Messages <a class="send-message-link" href="#">Send New Message</a></h5>
+                    <h5>Messages <a class="send-message-link " href="#">Send New Message</a></h5>
                     <div class="single-content-row">
                         <a href="#">
-                            <img alt="user name" alt="user name" src="assets/images/team-member-5.jpg" />
+                            <img alt="user name " alt="user name " src="assets/images/team-member-5.jpg " />
                             <p><b>Layla smith</b>
                                 <br /> Job offer</p>
                         </a>
                     </div>
                     <div class="single-content-row">
                         <a href="#">
-                            <img alt="user name" src="assets/images/Sami.jpg" />
+                            <img alt="user name " src="assets/images/Sami.jpg " />
                             <p><b>Mohammad Meshaal</b>
                                 <br />Please send me the work templates</p>
                         </a>
                     </div>
                     <div class="single-content-row">
                         <a href="#">
-                            <img alt="user name" src="assets/images/team-member.jpg" />
+                            <img alt="user name " src="assets/images/team-member.jpg " />
                             <p><b>Dana khalid</b>
                                 <br />Do you wanna hang out today?</p>
                         </a>
                     </div>
                     <div class="single-content-row">
                         <a href="#">
-                            <img alt="user name" src="assets/images/Team-Member-1-270x250.jpg" />
+                            <img alt="user name " src="assets/images/Team-Member-1-270x250.jpg " />
                             <p><b>Nasir ahmad</b>
                                 <br />Are we going to the match today?</p>
                         </a>
@@ -325,29 +324,28 @@ Tour
                     <div class="arrow-up"></div>
                     <a href="#">
                         <div class="user-info-content">
-                            <i class="fa fa-user" aria-hidden="true"></i> Proﬁle
+                            <i class="fa fa-user " aria-hidden="true"></i> Proﬁle
                         </div>
                     </a>
                     <a href="#">
                         <div class="user-info-content">
-                            <i class="fa fa-cog" aria-hidden="true"></i> Settings
+                            <i class="fa fa-cog " aria-hidden="true"></i> Settings
                         </div>
                     </a>
                     <a href="#">
                         <div class="user-info-content">
-                            <i class="fa fa-info-circle" aria-hidden="true"></i> Help
+                            <i class="fa fa-info-circle " aria-hidden="true"></i> Help
                         </div>
                     </a>
                     <a href="#">
                         <div class="user-info-content logout">
                             Log Out
-                            <i class="fa fa-sign-out" aria-hidden="true"></i>
+                            <i class="fa fa-sign-out " aria-hidden="true"></i>
                         </div>
                     </a>
                 </div>
             </div>
-        <!-- Page Content -->
-        <div class="page-content-wrapper">
+            <!--/header-->
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
@@ -425,12 +423,9 @@ Tour
                             <div class="tabs-header">
                                 <div class="statistics-taps">
                                     <ul class="bottom-border-active info-mid">
-                                        <li class="active"><a href="#con3"><i class="fa fa-user"aria-hidden="true"></i>&nbsp;
-Personal Information</a></li>
-                                        <li><a href="#con2"><i class="fa fa-credit-card"aria-hidden="true"></i>&nbsp;
-Payment Information</a></li>
-                                        <li><a href="#con1"><i class="fa fa-check"aria-hidden="true"></i>&nbsp;
-Summary</a></li>
+                                        <li class="active"><a href="#con3"><i class="fa fa-user"aria-hidden="true"></i>&nbsp;Personal Information</a></li>
+                                        <li><a href="#con2"><i class="fa fa-credit-card"aria-hidden="true"></i>&nbsp;Payment Information</a></li>
+                                        <li><a href="#con1"><i class="fa fa-check"aria-hidden="true"></i>&nbsp;Summary</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -439,9 +434,7 @@ Summary</a></li>
                                     <div class="row">
                                         <div class="col-sm-12">
                                             <div class="col-content">
-                                                <h1 class="tabs-head-title">
-Personal Information
-</h1>
+                                                <h1 class="tabs-head-title">Personal Information</h1>
                                                 <br />
                                                 <p>
                                                     Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
@@ -450,14 +443,16 @@ Personal Information
                                         </div>
                                     </div>
                                 </div>
-                                <div class="statistics-item" id="con2">
+                                 <div class="statistics-item" id="con2">
                                     <div class="row">
-                                        <div class="col-sm-12 wizard-form">
-                                            <h1 class="tabs-head-title">
-Payment Information
-</h1>
-                                            <br />
-                                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+                                        <div class="col-sm-12">
+                                            <div class="col-content">
+                                                <h1 class="tabs-head-title">Payment Information</h1>
+                                                <br />
+                                                <p>
+                                                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -465,23 +460,19 @@ Payment Information
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <div class="col-content">
-                                                <h1 class="tabs-head-title">
-Personal Information
-</h1>
+                                                <h1 class="tabs-head-title">Personal Information</h1>
                                                 <br />
                                                 <p>
-                                                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                                                 </p>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="col-content">
-                                                <h1 class="tabs-head-title">
-Payment Information
-</h1>
+                                                <h1 class="tabs-head-title">Payment Information</h1>
                                                 <br />
                                                 <p>
-                                                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                                                 </p>
                                             </div>
                                         </div>
@@ -497,47 +488,34 @@ Payment Information
                             <div class="tabs-container">
                                 <div class="tabs-header">
                                     <ul class="nav nav-tabs bordered-tab nav-style info-mid">
-                                        <li class="active"><a data-toggle="tab" href="#home">Home&nbsp;
-<span class="glyphicon glyphicon-home"></span></a>
+                                        <li class="active"><a data-toggle="tab" href="#home">Home&nbsp;<span class="glyphicon glyphicon-home"></span></a>
                                         </li>
-                                        <li><a data-toggle="tab" href="#menu1">About Us&nbsp;
-<span class="glyphicon glyphicon-info-sign">
-</span></a></a>
+                                        <li><a data-toggle="tab" href="#menu1">About Us&nbsp;<span class="glyphicon glyphicon-info-sign"></span></a></a>
                                         </li>
-                                        <li><a data-toggle="tab" href="#menu2">Our Services&nbsp;
-<span class="glyphicon glyphicon-star-empty
-">
-</span></a></a>
+                                        <li><a data-toggle="tab" href="#menu2">Our Services&nbsp;<span class="glyphicon glyphicon-star-empty"></span></a></a>
                                         </li>
-                                        <li><a data-toggle="tab" href="#menu3">Contact Us&nbsp;
-<span class="glyphicon glyphicon-send">
-</span></a></a>
+                                        <li><a data-toggle="tab" href="#menu3">Contact Us&nbsp;<span class="glyphicon glyphicon-send"></span></a></a>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="tab-content">
                                     <div id="home" class="tab-pane fade in active">
-                                        <h3 class="tabs-head-title"><span class="glyphicon glyphicon-home"></span>&nbsp;
-Default</h3>
+                                        <h3 class="tabs-head-title"><span class="glyphicon glyphicon-home"></span>&nbsp;Default</h3>
                                         <hr>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                     </div>
                                     <div id="menu1" class="tab-pane fade">
-                                        <h3 class="tabs-head-title"><span class="glyphicon glyphicon-info-sign
-"></span>&nbsp;
-About Us</h3>
+                                        <h3 class="tabs-head-title"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;About Us</h3>
                                         <hr>
                                         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                     </div>
                                     <div id="menu2" class="tab-pane fade">
-                                        <h3 class="tabs-head-title"><span class="glyphicon glyphicon glyphicon-star-empty"></span>&nbsp;
-Our Services</h3>
+                                        <h3 class="tabs-head-title"><span class="glyphicon glyphicon glyphicon-star-empty"></span>&nbsp;Our Services</h3>
                                         <hr>
                                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
                                     </div>
                                     <div id="menu3" class="tab-pane fade">
-                                        <h3 class="tabs-head-title"><span class="glyphicon glyphicon-send"></span>&nbsp;
-Contact Us</h3>
+                                        <h3 class="tabs-head-title"><span class="glyphicon glyphicon-send"></span>&nbsp;Contact Us</h3>
                                         <hr>
                                         <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
                                     </div>
@@ -550,42 +528,30 @@ Contact Us</h3>
                             <div class="tabs-container">
                                 <div class="tabs-header simple-border">
                                     <ul class="nav nav-pills nav-style info-mid">
-                                        <li class="active"><a data-toggle="pill" href="#home2"><span class="glyphicon glyphicon-home
-"></span>&nbsp;
-Default</a></li>
-                                        <li><a data-toggle="pill" href="#menu4"><span class="glyphicon glyphicon-shopping-cart
-"></span>&nbsp;
-Our Products</a></li>
-                                        <li><a data-toggle="pill" href="#menu5"><span class="glyphicon glyphicon-camera
-"></span>&nbsp;
-Media Center</a></li>
-                                        <li><a data-toggle="pill" href="#menu6"><span class="glyphicon glyphicon-plus
-"></span>&nbsp;
-Follow Us</a></li>
+                                        <li class="active"><a data-toggle="pill" href="#home2"><span class="glyphicon glyphicon-home"></span>&nbsp;Default</a></li>
+                                        <li><a data-toggle="pill" href="#menu4"><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;Our Products</a></li>
+                                        <li><a data-toggle="pill" href="#menu5"><span class="glyphicon glyphicon-camera"></span>&nbsp;Media Center</a></li>
+                                        <li><a data-toggle="pill" href="#menu6"><span class="glyphicon glyphicon-plus"></span>&nbsp;Follow Us</a></li>
                                     </ul>
                                 </div>
                                 <div class="tab-content">
                                     <div id="home2" class="tab-pane fade in active">
-                                        <h3 class="tabs-head-title"><span class="glyphicon glyphicon-home"></span>&nbsp;
-Default</h3>
+                                        <h3 class="tabs-head-title"><span class="glyphicon glyphicon-home"></span>&nbsp;Default</h3>
                                         <hr>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                     </div>
                                     <div id="menu4" class="tab-pane fade">
-                                        <h3 class="tabs-head-title"><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;
-Our Products</h3>
+                                        <h3 class="tabs-head-title"><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;Our Products</h3>
                                         <hr>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                     </div>
                                     <div id="menu5" class="tab-pane fade">
-                                        <h3 class="tabs-head-title"><span class="glyphicon glyphicon-camera"></span>&nbsp;
-Media Center</h3>
+                                        <h3 class="tabs-head-title"><span class="glyphicon glyphicon-camera"></span>&nbsp;Media Center</h3>
                                         <hr>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                     </div>
                                     <div id="menu6" class="tab-pane fade">
-                                        <h3 class="tabs-head-title"><span class="glyphicon glyphicon-plus"></span>&nbsp;
-Follow Us</h3>
+                                        <h3 class="tabs-head-title"><span class="glyphicon glyphicon-plus"></span>&nbsp;Follow Us</h3>
                                         <hr>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                     </div>
@@ -599,7 +565,7 @@ Follow Us</h3>
                         <div class="col-content content-overflow">
                             <div class="tabs-container">
                                 <div class="tabs-header left-tabs-header bhoechie-tab-menu">
-                                    <ul class="nav nav-tabs left-tab-arrow list-group info-mid left-arrow">
+                                    <ul class="nav nav-tabs left-tab-arrow list-group success-mid left-arrow">
                                         <li class="list-group-item active text-center">
                                             <a data-toggle="tab" href="#menu-left-1">
                                                 <h4 class="glyphicon glyphicon-plane"></h4>
@@ -827,33 +793,27 @@ Follow Us</h3>
                                 <div class="tabs-header">
                                     <ul class="nav nav-pills top-tab-arrow nav-style info-mid">
                                         <li class="active">
-                                            <a data-toggle="tab" href="#home1">First Tab&nbsp;
-</a>
+                                            <a data-toggle="tab" href="#home1">First Tab&nbsp;</a>
                                         </li>
                                         <li>
-                                            <a data-toggle="tab" href="#menu7">Second Tab&nbsp;
-</a>
+                                            <a data-toggle="tab" href="#menu7">Second Tab&nbsp;</a>
                                         </li>
                                         <li>
-                                            <a data-toggle="tab" href="#menu8">Third Tab&nbsp;
-</a>
+                                            <a data-toggle="tab" href="#menu8">Third Tab&nbsp;</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="tab-content">
                                     <div id="home1" class="tab-pane fade in active">
-                                        <h3 class="tabs-head-title">
-First Tab Content</h3>
+                                        <h3 class="tabs-head-title">First Tab Content</h3>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                     </div>
                                     <div id="menu7" class="tab-pane fade">
-                                        <h3 class="tabs-head-title">
-Second Tab Content</h3>
+                                        <h3 class="tabs-head-title">Second Tab Content</h3>
                                         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                     </div>
                                     <div id="menu8" class="tab-pane fade">
-                                        <h3 class="tabs-head-title">
-Third Tab Content</h3>
+                                        <h3 class="tabs-head-title">Third Tab Content</h3>
                                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
                                     </div>
                                 </div>

@@ -31,7 +31,7 @@ $(document).ready(function() {
  $('.sidebar').find('li.selected').find('.sidebar-submenue').css('display', 'block');
 
 
- $('.sidebar-submenue > li > a').not( ".chat-view-navbar .sidebar-submenue > li > a").css('margin-left', '40px');
+ $('.sidebar-submenue > li > a').not( ".chat-view-navbar .sidebar-submenue > li > a").css('margin-left', '0px');
 
  $('.has-submenu > a').click(function(){
   var current = $(this);

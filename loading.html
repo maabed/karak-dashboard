@@ -28,16 +28,16 @@
         <!-- Sidebar -->
         <div class="sidebar-wrapper">
             <div class="sidebar-brand" id="company-name">Blue Dashboard</div>
-            <ul class="sidebar-nav">
-                <li>
+            <ul class="sidebar">
+                <li class="sidebar-item">
                     <a href="index.html"><i class="fa fa-tachometer nav-icon" aria-hidden="true"></i>Dashboard</a>
                 </li>
-                <li>
-                    <a class="nav-hyperlink" href="#">
+                <li class="sidebar-item has-submenu">
+                    <a href="#">
                         <i class="fa fa-file-text nav-icon" aria-hidden="true"></i> Forms
-                        <i class="fa fa-angle-left left-arrow rotate" aria-hidden="true"></i>
+                        <i class="fa fa-angle-left left-arrow " aria-hidden="true"></i>
                     </a>
-                    <ul class="submenue">
+                    <ul class="sidebar-submenue">
                         <li class="submenu-li">
                             <a href="forms.html">
                                     Form Elements
@@ -50,22 +50,22 @@
                         </li>
                     </ul>
                 </li>
-                <li>
+                <li class="sidebar-item">
                     <a href="charts.html">
                         <i class="fa fa-pie-chart  nav-icon" aria-hidden="true"></i> Charts
                     </a>
                 </li>
-                <li>
+                <li class="sidebar-item">
                     <a href="inbox.html">
                         <i class="fa fa-envelope nav-icon" aria-hidden="true"></i> Email
                         <span class="label info-mid list-badge">2</span>
                     </a>
                 </li>
-                <li class="selected">
-                    <a class="nav-hyperlink" href="#">
-                        <i class="fa fa-eye   nav-icon" aria-hidden="true"></i> UI Elements<span class="label success-mid list-badge">New</span> <i class="fa fa-angle-left left-arrow rotate" aria-hidden="true"></i>
+                <li class="selected open active sidebar-item has-submenu">
+                    <a href="#">
+                        <i class="fa fa-eye   nav-icon" aria-hidden="true"></i> UI Elements<span class="label success-mid list-badge">New</span> <i class="fa fa-angle-left left-arrow " aria-hidden="true"></i>
                     </a>
-                    <ul class="submenue">
+                    <ul class="sidebar-submenue">
                         <li class="submenu-li">
                             <a href="icons.html">
                                     Icons
@@ -101,8 +101,8 @@
                                     Cards
                                 </a>
                         </li>
-                        <li class="submenu-li inner-selected">
-                            <a href="loading.htm" class="inner-selected">
+                        <li class="submenu-li">
+                            <a href="loading.html" class="inner-selected">
                                     Loading & Progress
                                 </a>
                         </li>
@@ -128,29 +128,24 @@
                         </li>
                     </ul>
                 </li>
-                <li>
+                <li class="sidebar-item">
                     <a href="calendar.html">
                         <i class="fa fa-calendar-check-o nav-icon" aria-hidden="true"></i> Calendar
                     </a>
                 </li>
-                <li>
-                    <a href="social.html">
-                        <i class="fa fa-share-alt-square nav-icon" aria-hidden="true"></i> Social
-                    </a>
-                </li>
-                <li>
-                    <a class="nav-hyperlink" href="#">
+                <li class="sidebar-item has-submenu">
+                    <a href="#">
                         <i class="fa fa-star nav-icon" aria-hidden="true"></i>App Views
                         <span class="label warning-mid list-badge">Special</span>
-                        <i class="fa fa-angle-left left-arrow rotate" aria-hidden="true"></i>
+                        <i class="fa fa-angle-left left-arrow " aria-hidden="true"></i>
                     </a>
-                    <ul class="submenue">
+                    <ul class="sidebar-submenue">
                         <li class="submenu-li">
                             <a href="account_manager.html">
                                     Account Management
                                 </a>
                         </li>
-                        <li class="submenu-li">
+                        <li class=" submenu-li">
                             <a href="landing_page.html">
                                     Landing Page
                                 </a>
@@ -160,14 +155,19 @@
                                     Chat View
                                 </a>
                         </li>
+                         <li class="submenu-li">
+                            <a href="social.html">
+                                    Social
+                                </a>
+                        </li>
                     </ul>
                 </li>
-                <li>
-                    <a class="nav-hyperlink" href="#">
-                        <i class="fa fa-table nav-icon" aria-hidden="true"></i> Tables
-                        <i class="fa fa-angle-left left-arrow rotate" aria-hidden="true"></i>
+                <li class="sidebar-item has-submenu">
+                    <a href="#">
+                        <i class="fa fa-table nav-icon " aria-hidden="true"></i> Tables
+                        <i class="fa fa-angle-left left-arrow open " aria-hidden="true"></i>
                     </a>
-                    <ul class="submenue">
+                    <ul class="sidebar-submenue">
                         <li class="submenu-li">
                             <a href="tables.html">
                                     Basic Table
@@ -180,12 +180,12 @@
                         </li>
                     </ul>
                 </li>
-                <li>
-                    <a class="nav-hyperlink" href="#">
-                        <i class="fa fa-map nav-icon" aria-hidden="true"></i> Maps
-                        <i class="fa fa-angle-left left-arrow rotate" aria-hidden="true"></i>
+                <li class="sidebar-item has-submenu">
+                    <a href="#">
+                        <i class="fa fa-map nav-icon " aria-hidden="true"></i> Maps
+                        <i class="fa fa-angle-left left-arrow " aria-hidden="true"></i>
                     </a>
-                    <ul class="submenue">
+                    <ul class="sidebar-submenue">
                         <li class="submenu-li">
                             <a href="map.html">
                                     Vector Maps
@@ -198,12 +198,12 @@
                         </li>
                     </ul>
                 </li>
-                <li>
-                    <a class="nav-hyperlink" href="#">
-                        <i class="fa fa-gift nav-icon" aria-hidden="true"></i> Extra
-                        <i class="fa fa-angle-left left-arrow rotate" aria-hidden="true"></i>
+                <li class="sidebar-item has-submenu">
+                    <a href="#">
+                        <i class="fa fa-gift nav-icon " aria-hidden="true"></i> Extra
+                        <i class="fa fa-angle-left left-arrow " aria-hidden="true"></i>
                     </a>
-                    <ul class="submenue">
+                    <ul class="sidebar-submenue">
                         <li class="submenu-li">
                             <a href="invoice.html">
                                     Invoice
@@ -242,31 +242,31 @@
         <!-- Page Content -->
         <div class="page-content-wrapper">
             <!-- header -->
-            <div class="main-dashboard-header" id="head">
+            <div class="main-dashboard-header " id="head">
                 <div class="container-fluid header-container">
-                    <i href="#menu-toggle" id="menu-toggle" class="fa fa-bars menu-toggle" aria-hidden="true"></i>
+                    <i href="#menu-toggle " id="menu-toggle " class="fa fa-bars menu-toggle " aria-hidden="true"></i>
                     <div class="form-group">
                         <div class="icon-addon addon-md">
-                            <input type="text" placeholder="Type anywhere to search" class="form-control main-dashboard-search search-text-box">
-                            <i class="fa fa-search glyphicon glyphicon-search" aria-hidden="true"></i>
+                            <input type="text " placeholder="Type anywhere to search " class="form-control main-dashboard-search search-text-box">
+                            <i class="fa fa-search glyphicon glyphicon-search " aria-hidden="true"></i>
                         </div>
                     </div>
               <div class="right-side-head">
                         <div class="right-side-items notifecations">
-                            <button id="notifications" class="notifications btn btn-default btn-lg btn-link">
-                                <i class="fa fa-bell-o" aria-hidden="true"></i>
+                            <button id="notifications " class="notifications btn btn-default btn-lg btn-link">
+                                <i class="fa fa-bell-o " aria-hidden="true"></i>
                             </button>
-                            <span id="not-badg" class="badge badge-notify">2</span>
+                            <span id="not-badg " class="badge badge-notify">2</span>
                         </div>
                         <div class="right-side-items email">
-                            <button id="messages" class="messages btn btn-default btn-lg btn-link">
-                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            <button id="messages " class="messages btn btn-default btn-lg btn-link">
+                                <i class="fa fa-envelope-o " aria-hidden="true"></i>
                             </button>
-                            <span id="message-badg" class="badge badge-notify">4</span>
+                            <span id="message-badg " class="badge badge-notify">4</span>
                         </div>
-                        <div id="user-box" class="user-box right-side-items">
-                            <p> Mr.Sami<i class="fa fa-angle-down" aria-hidden="true"></i></p>
-                            <img src="assets/images/Sami.jpg" />
+                        <div id="user-box " class="user-box right-side-items">
+                            <p> Mr.Sami<i class="fa fa-angle-down " aria-hidden="true"></i></p>
+                            <img src="assets/images/Sami.jpg " />
                         </div>
                     </div>
                 </div>
@@ -275,13 +275,13 @@
                     <h5>Notifications</h5>
                     <div class="single-content-row">
                         <a href="#">
-                            <img alt="user name" src="assets/images/Sami.jpg" />
+                            <img alt="user name " src="assets/images/Sami.jpg " />
                             <p><b>Mohammad Meshaal</b>wants your confirmation on his Leave Request on 12 Mar 2017</p>
                         </a>
                     </div>
                     <div class="single-content-row">
                         <a href="#">
-                            <img alt="user name" src="assets/images/Team-Member-1-270x250.jpg" />
+                            <img alt="user name " src="assets/images/Team-Member-1-270x250.jpg " />
                             <p><b>Nasir ahmad</b>sent a payment on 11 Mar 2017</p>
                         </a>
                     </div>
@@ -291,31 +291,31 @@
                 </div>
                 <div class="messages-box">
                     <div class="arrow-up"></div>
-                    <h5>Messages <a class="send-message-link" href="#">Send New Message</a></h5>
+                    <h5>Messages <a class="send-message-link " href="#">Send New Message</a></h5>
                     <div class="single-content-row">
                         <a href="#">
-                            <img alt="user name" alt="user name" src="assets/images/team-member-5.jpg" />
+                            <img alt="user name " alt="user name " src="assets/images/team-member-5.jpg " />
                             <p><b>Layla smith</b>
                                 <br /> Job offer</p>
                         </a>
                     </div>
                     <div class="single-content-row">
                         <a href="#">
-                            <img alt="user name" src="assets/images/Sami.jpg" />
+                            <img alt="user name " src="assets/images/Sami.jpg " />
                             <p><b>Mohammad Meshaal</b>
                                 <br />Please send me the work templates</p>
                         </a>
                     </div>
                     <div class="single-content-row">
                         <a href="#">
-                            <img alt="user name" src="assets/images/team-member.jpg" />
+                            <img alt="user name " src="assets/images/team-member.jpg " />
                             <p><b>Dana khalid</b>
                                 <br />Do you wanna hang out today?</p>
                         </a>
                     </div>
                     <div class="single-content-row">
                         <a href="#">
-                            <img alt="user name" src="assets/images/Team-Member-1-270x250.jpg" />
+                            <img alt="user name " src="assets/images/Team-Member-1-270x250.jpg " />
                             <p><b>Nasir ahmad</b>
                                 <br />Are we going to the match today?</p>
                         </a>
@@ -328,23 +328,23 @@
                     <div class="arrow-up"></div>
                     <a href="#">
                         <div class="user-info-content">
-                            <i class="fa fa-user" aria-hidden="true"></i> Proﬁle
+                            <i class="fa fa-user " aria-hidden="true"></i> Proﬁle
                         </div>
                     </a>
                     <a href="#">
                         <div class="user-info-content">
-                            <i class="fa fa-cog" aria-hidden="true"></i> Settings
+                            <i class="fa fa-cog " aria-hidden="true"></i> Settings
                         </div>
                     </a>
                     <a href="#">
                         <div class="user-info-content">
-                            <i class="fa fa-info-circle" aria-hidden="true"></i> Help
+                            <i class="fa fa-info-circle " aria-hidden="true"></i> Help
                         </div>
                     </a>
                     <a href="#">
                         <div class="user-info-content logout">
                             Log Out
-                            <i class="fa fa-sign-out" aria-hidden="true"></i>
+                            <i class="fa fa-sign-out " aria-hidden="true"></i>
                         </div>
                     </a>
                 </div>
@@ -354,7 +354,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="col-content body-header">
-                            <a href="loading.html" class="page_title pull-right">UI Elements / Loading & Progress</a>
+                            <a href="loading.html " class="page_title pull-right">UI Elements / Loading & Progress</a>
                             <h4 class="title"> Loading & Progress </h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
@@ -365,10 +365,10 @@
                         <div class="col-content content-overflow">
                             <h5 class="title">Circle Progress</h5>
                             <p>
-                                In order to use the Circle progress you should first define a div element with a unique id so you can initialize it using <a href="" class="doc-popover" data-trigger="focus" data-toggle="popover" data-content="test">Javascript</a>.</p>
+                                In order to use the Circle progress you should first define a div element with a unique id so you can initialize it using <a href=" " class="doc-popover " data-trigger="focus " data-toggle="popover " data-content="test">Javascript</a>.</p>
                             </p>
                             <label class="small-label">Select type:</label>
-                            <select class="form-control select2-init-single" id="progress-select" name="progress-select">
+                            <select class="form-control select2-init-single " id="progress-select " name="progress-select">
                                 <option value="basic">Basic circle</option>
                                 <option value="bounce">Bounce easing</option>
                                 <option value="multiple">Multiple properties</option>
@@ -376,9 +376,9 @@
                                 <option value="SemiText">Semicircle with text</option>
                             </select>
                             <label class="small-label">Select color:</label>
-                            <input type="color" id="Color" value="#67b2e4">
-                            <span id="circleGenerate" class="glyphicon glyphicon-cog circleGenerate"></span>
-                            <div id="progress-container" class="center-block progress-container">
+                            <input type="color " id="Color " value="#67b2e4">
+                            <span id="circleGenerate " class="glyphicon glyphicon-cog circleGenerate"></span>
+                            <div id="progress-container " class="center-block progress-container">
                             </div>
                         </div>
                     </div>
@@ -415,13 +415,13 @@
                                 <div class="col-content content-overflow">
                                     <h5 class="title">Indeterminate loader</h5>
                                     <p>
-                                        In order to use these loaders you will have to <a href="" class="doc-popover" data-trigger="focus" data-toggle="popover" data-content="test">use</a>.</p>
+                                        In order to use these loaders you will have to <a href=" " class="doc-popover " data-trigger="focus " data-toggle="popover " data-content="test">use</a>.</p>
                                     </p>
                                     <div class="col-sm-4">
                                         <div class="showbox">
                                             <div class="loader1">
-                                                <svg class="circular" viewBox="25 25 50 50">
-                                                    <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+                                                <svg class="circular " viewBox="25 25 50 50">
+                                                    <circle class="path " cx="50 " cy="50 " r="20 " fill="none " stroke-width="2 " stroke-miterlimit="10 " />
                                                 </svg>
                                             </div>
                                         </div>
@@ -430,7 +430,7 @@
                                         <div class="loader"></div>
                                     </div>
                                     <div class="col-sm-4">
-                                        <div id="loader" class="vertical--center">
+                                        <div id="loader " class="vertical--center">
                                             <div class="vertical-center__element">
                                                 <span class="preloader preloader--top"></span>
                                                 <span class="preloader preloader--bottom"></span>
@@ -446,7 +446,7 @@
                     <div class="col-md-6">
                         <div class="col-content content-overflow static-height">
                             <h5 class="title">Progress Bars</h5>
-                            <p class="paragraph">The progress bars are a very usefull tool in any website. to use our customized progress bars just add a dive element with a unique <code>id</code> to initialize it in <a href="" class="doc-popover" data-trigger="focus" data-toggle="popover" data-content="test">Javascript</a>.</p>
+                            <p class="paragraph">The progress bars are a very usefull tool in any website. to use our customized progress bars just add a dive element with a unique <code>id</code> to initialize it in <a href=" " class="doc-popover " data-trigger="focus " data-toggle="popover " data-content="test">Javascript</a>.</p>
                             <br>
                             <div class="row">
                                 <div class="col-sm-12">
@@ -458,7 +458,7 @@
                                     <div id="line"></div>
                                 </div>
                                 <div class="col-sm-1">
-                                    <span id="BasicLGenerate" class="glyphicon glyphicon-cog"></span>
+                                    <span id="BasicLGenerate " class="glyphicon glyphicon-cog"></span>
                                 </div>
                             </div>
                             <div class="row">
@@ -471,7 +471,7 @@
                                     <div id="colored"></div>
                                 </div>
                                 <div class="col-sm-1">
-                                    <span id="ColorGenerate" class="glyphicon glyphicon-cog"></span>
+                                    <span id="ColorGenerate " class="glyphicon glyphicon-cog"></span>
                                 </div>
                             </div>
                             <div class="row">
@@ -484,7 +484,7 @@
                                     <div id="percent"></div>
                                 </div>
                                 <div class="col-sm-1">
-                                    <span id="PercentGenerate" class="glyphicon glyphicon-cog"></span>
+                                    <span id="PercentGenerate " class="glyphicon glyphicon-cog"></span>
                                 </div>
                             </div>
                         </div>
@@ -494,15 +494,15 @@
                             <h5 class="title">Color Options</h5>
                             <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rutrum pellentesque magna eget scelerisque. Quisque.</p>
                             <br>
-                            <div id="BasicInfoLine" class="BasicInfoLine"></div>
+                            <div id="BasicInfoLine " class="BasicInfoLine"></div>
                             <br>
-                            <div id="BasicSuccessLine" class="BasicSuccessLine"></div>
+                            <div id="BasicSuccessLine " class="BasicSuccessLine"></div>
                             <br>
-                            <div id="BasicPrimaryLine" class="BasicPrimaryLine"></div>
+                            <div id="BasicPrimaryLine " class="BasicPrimaryLine"></div>
                             <br>
-                            <div id="BasicWarningLine" class="BasicWarningLine"></div>
+                            <div id="BasicWarningLine " class="BasicWarningLine"></div>
                             <br>
-                            <div id="BasicDangerLine" class="BasicDangerLine"></div>
+                            <div id="BasicDangerLine " class="BasicDangerLine"></div>
                             <br>
                         </div>
                     </div>
@@ -512,9 +512,9 @@
                             <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rutrum pellentesque magna eget scelerisque. Quisque.</p>
                             <br>
                             <code>.progress-thick</code>
-                            <div id="BasicthickLine" class="BasicthickLine progress-thick"></div>
+                            <div id="BasicthickLine " class="BasicthickLine progress-thick"></div>
                             <code>.progress-thin</code>
-                            <div id="BasicthinLine" class="BasicthinLine progress-thin"></div>
+                            <div id="BasicthinLine " class="BasicthinLine progress-thin"></div>
                         </div>
                     </div>
                 </div>
@@ -525,7 +525,7 @@
                             <span class="hint-text">Copyright © 2017 </span>
                             <span class="font-montserrat"><b>New Release</b></span>.
                             <span class="hint-text">All rights reserved. </span>
-                            <span class="sm-block"><a href="#" class="m-l-10 m-r-10">Terms of use</a> | <a href="#" class="m-l-10">Privacy Policy</a></span>
+                            <span class="sm-block"><a href="# " class="m-l-10 m-r-10">Terms of use</a> | <a href="# " class="m-l-10">Privacy Policy</a></span>
                         </p>
                         <p class="small no-margin pull-right sm-pull-reset">
                             <h6 class="made-by">Made By  <b>New Release</b></h6>
@@ -536,15 +536,15 @@
             </div>
         </div>
         <!-- /#wrapper -->
-        <div class="right-side-section-toggle" data-toggle="modal" data-toggle="modal" data-target="#colors-modal">
+        <div class="right-side-section-toggle " data-toggle="modal " data-toggle="modal " data-target="#colors-modal">
             <i class="fa fa-pencil-square-o"></i>
         </div>
-        <div class="modal right fade" id="colors-modal" tabindex="-1" role="dialog" aria-labelledby="right-side-modal-label">
-            <div class="modal-dialog" role="document">
+        <div class="modal right fade " id="colors-modal " tabindex="-1 " role="dialog " aria-labelledby="right-side-modal-label">
+            <div class="modal-dialog " role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h5 class="modal-title" id="right-side-modal-label">Color Options</h5>
+                        <button type="button " class="close " data-dismiss="modal " aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h5 class="modal-title " id="right-side-modal-label">Color Options</h5>
                     </div>
                     <div class="modal-body custome-margin">
                         <div class="row">
@@ -559,13 +559,13 @@
                         </div>
                         <div class="row p-15">
                             <div class="col-md-6 single-menue-color-box no-padding-righ">
-                                <div id="default-color-btn" class="single-menue-color pointer-hover">
+                                <div id="default-color-btn " class="single-menue-color pointer-hover">
                                     <div class="col-sm-12 default-menue-color">
                                         <p>
                                             Header
                                             <br /> #3b97d2
                                         </p>
-                                        <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
+                                        <i class="fa fa-check-circle-o selected-theme " aria-hidden="true"></i>
                                     </div>
                                     <div class="col-sm-12 simple-border">
                                         <p>
@@ -576,13 +576,13 @@
                                 </div>
                             </div>
                             <div class="col-md-6 single-menue-color-box no-padding-righ">
-                                <div id="orang-color-btn" class="single-menue-color pointer-hover">
+                                <div id="orang-color-btn " class="single-menue-color pointer-hover">
                                     <div class="col-sm-12 orange-menue-color">
                                         <p>
                                             Header
                                             <br /> #f5d34b
                                         </p>
-                                        <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
+                                        <i class="fa fa-check-circle-o selected-theme " aria-hidden="true"></i>
                                     </div>
                                     <div class="col-sm-12 simple-border">
                                         <p>
@@ -594,13 +594,13 @@
                             </div>
                             <div class="row p-15">
                                 <div class="col-md-6 single-menue-color-box no-padding-righ">
-                                    <div id="dark2-color-btn" class="single-menue-color pointer-hover">
+                                    <div id="dark2-color-btn " class="single-menue-color pointer-hover">
                                         <div class="col-sm-12 dark-menue-color2">
                                             <p>
                                                 Header
                                                 <br /> #262930
                                             </p>
-                                            <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
+                                            <i class="fa fa-check-circle-o selected-theme " aria-hidden="true"></i>
                                         </div>
                                         <div class="col-sm-12 dark-nav-color2">
                                             <p>
@@ -611,13 +611,13 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 single-menue-color-box no-padding-righ">
-                                    <div id="dark1-color-btn" class="single-menue-color pointer-hover">
+                                    <div id="dark1-color-btn " class="single-menue-color pointer-hover">
                                         <div class="col-sm-12 dark-menue-color">
                                             <p>
                                                 Header
                                                 <br /> #2b3643
                                             </p>
-                                            <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
+                                            <i class="fa fa-check-circle-o selected-theme " aria-hidden="true"></i>
                                         </div>
                                         <div class="col-sm-12 dark-nav-color">
                                             <p>
@@ -630,13 +630,13 @@
                             </div>
                             <div class="row p-15">
                                 <div class="col-md-6 single-menue-color-box no-padding-righ">
-                                    <div id="whit-color-btn" class="single-menue-color pointer-hover">
+                                    <div id="whit-color-btn " class="single-menue-color pointer-hover">
                                         <div class="col-sm-12 simple-border wight-head">
                                             <p>
                                                 Header
                                                 <br /> #ffffff
                                             </p>
-                                            <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
+                                            <i class="fa fa-check-circle-o selected-theme " aria-hidden="true"></i>
                                         </div>
                                         <div class="col-sm-12 simple-border wight-head">
                                             <p>
@@ -647,13 +647,13 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 single-menue-color-box no-padding-righ">
-                                    <div id="green-color-btn" class="single-menue-color pointer-hover">
+                                    <div id="green-color-btn " class="single-menue-color pointer-hover">
                                         <div class="col-sm-12 green-menue-color">
                                             <p>
                                                 Header
                                                 <br /> #62d995
                                             </p>
-                                            <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
+                                            <i class="fa fa-check-circle-o selected-theme " aria-hidden="true"></i>
                                         </div>
                                         <div class="col-sm-12 simple-border">
                                             <p>
@@ -673,21 +673,21 @@
         </div>
     </div>
     <!-- Page layout JS -->
-    <script type="text/javascript" src="assets/vendors/jquery/jquery-3.1.1.js"></script>
-    <script type="text/javascript" src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/js/main.js"></script>
-    <script type="text/javascript" src="assets/js/notifications_boxs.js"></script>
+    <script type="text/javascript " src="assets/vendors/jquery/jquery-3.1.1.js"></script>
+    <script type="text/javascript " src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript " src="assets/js/main.js"></script>
+    <script type="text/javascript " src="assets/js/notifications_boxs.js"></script>
     <!-- Loaders init JS-->
-    <script type="text/javascript" src="assets/js/progress.js"></script>
+    <script type="text/javascript " src="assets/js/progress.js"></script>
     <!-- progressbar JS-->
-    <script type="text/javascript" src="assets/vendors/progressbar/progressbar.min.js"></script>
+    <script type="text/javascript " src="assets/vendors/progressbar/progressbar.min.js"></script>
     <!-- Select2 library -->
-    <script type="text/javascript" src="assets/vendors/select2/js/select2.min.js"></script>
+    <script type="text/javascript " src="assets/vendors/select2/js/select2.min.js"></script>
     <!-- Dynamic colors JS -->
-    <script type="text/javascript" src="assets/js/nav_colors_change.js"></script>
-    <script type="text/javascript" src="assets/js/right-side-colors-picker.js"></script>
-    <script type="text/javascript" src="assets/js/page-ready-theam.js"></script>
-    <link id="default-color-picker" rel="stylesheet" />
+    <script type="text/javascript " src="assets/js/nav_colors_change.js"></script>
+    <script type="text/javascript " src="assets/js/right-side-colors-picker.js"></script>
+    <script type="text/javascript " src="assets/js/page-ready-theam.js"></script>
+    <link id="default-color-picker " rel="stylesheet " />
 </body>
 
 </html>

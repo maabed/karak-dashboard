@@ -16,7 +16,7 @@
     <link type="text/css" href="assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Hover library -->
     <link type="text/css" href="assets/css/hover-min.css" rel="stylesheet" />
-     <!-- Blue Dashboard core CSS -->
+    <!-- Blue Dashboard core CSS -->
     <link type="text/css" href="assets/css/lessConverted.css" rel="stylesheet" />
 </head>
 
@@ -25,16 +25,16 @@
         <!-- Sidebar -->
         <div class="sidebar-wrapper">
             <div class="sidebar-brand" id="company-name">Blue Dashboard</div>
-            <ul class="sidebar-nav">
-                <li>
+            <ul class="sidebar">
+                <li class="sidebar-item">
                     <a href="index.html"><i class="fa fa-tachometer nav-icon" aria-hidden="true"></i>Dashboard</a>
                 </li>
-                <li>
-                    <a class="nav-hyperlink" href="#">
+                <li class="sidebar-item has-submenu">
+                    <a href="#">
                         <i class="fa fa-file-text nav-icon" aria-hidden="true"></i> Forms
-                        <i class="fa fa-angle-left left-arrow rotate" aria-hidden="true"></i>
+                        <i class="fa fa-angle-left left-arrow " aria-hidden="true"></i>
                     </a>
-                    <ul class="submenue">
+                    <ul class="sidebar-submenue">
                         <li class="submenu-li">
                             <a href="forms.html">
                                     Form Elements
@@ -47,22 +47,22 @@
                         </li>
                     </ul>
                 </li>
-                <li>
+                <li class="sidebar-item">
                     <a href="charts.html">
                         <i class="fa fa-pie-chart  nav-icon" aria-hidden="true"></i> Charts
                     </a>
                 </li>
-                <li>
+                <li class="sidebar-item">
                     <a href="inbox.html">
                         <i class="fa fa-envelope nav-icon" aria-hidden="true"></i> Email
                         <span class="label info-mid list-badge">2</span>
                     </a>
                 </li>
-                <li class="selected">
-                    <a class="nav-hyperlink" href="#">
-                        <i class="fa fa-eye   nav-icon" aria-hidden="true"></i> UI Elements<span class="label success-mid list-badge">New</span> <i class="fa fa-angle-left left-arrow rotate" aria-hidden="true"></i>
+                <li class="selected open active sidebar-item has-submenu">
+                    <a href="#">
+                        <i class="fa fa-eye   nav-icon" aria-hidden="true"></i> UI Elements<span class="label success-mid list-badge">New</span> <i class="fa fa-angle-left left-arrow " aria-hidden="true"></i>
                     </a>
-                    <ul class="submenue">
+                    <ul class="sidebar-submenue">
                         <li class="submenu-li">
                             <a href="icons.html">
                                     Icons
@@ -73,7 +73,7 @@
                                     Colors
                                 </a>
                         </li>
-                        <li class="submenu-li inner-selected">
+                        <li class="submenu-li">
                             <a href="buttons.html" class="inner-selected">
                                     Buttons
                                 </a>
@@ -125,29 +125,24 @@
                         </li>
                     </ul>
                 </li>
-                <li>
+                <li class="sidebar-item">
                     <a href="calendar.html">
                         <i class="fa fa-calendar-check-o nav-icon" aria-hidden="true"></i> Calendar
                     </a>
                 </li>
-                <li>
-                    <a href="social.html">
-                        <i class="fa fa-share-alt-square nav-icon" aria-hidden="true"></i> Social
-                    </a>
-                </li>
-                <li>
-                    <a class="nav-hyperlink" href="#">
+                <li class="sidebar-item has-submenu">
+                    <a href="#">
                         <i class="fa fa-star nav-icon" aria-hidden="true"></i>App Views
                         <span class="label warning-mid list-badge">Special</span>
-                        <i class="fa fa-angle-left left-arrow rotate" aria-hidden="true"></i>
+                        <i class="fa fa-angle-left left-arrow " aria-hidden="true"></i>
                     </a>
-                    <ul class="submenue">
+                    <ul class="sidebar-submenue">
                         <li class="submenu-li">
                             <a href="account_manager.html">
                                     Account Management
                                 </a>
                         </li>
-                        <li class="submenu-li">
+                        <li class=" submenu-li">
                             <a href="landing_page.html">
                                     Landing Page
                                 </a>
@@ -157,14 +152,19 @@
                                     Chat View
                                 </a>
                         </li>
+                         <li class="submenu-li">
+                            <a href="social.html">
+                                    Social
+                                </a>
+                        </li>
                     </ul>
                 </li>
-                <li>
-                    <a class="nav-hyperlink" href="#">
-                        <i class="fa fa-table nav-icon" aria-hidden="true"></i> Tables
-                        <i class="fa fa-angle-left left-arrow rotate" aria-hidden="true"></i>
+                <li class="sidebar-item has-submenu">
+                    <a href="#">
+                        <i class="fa fa-table nav-icon " aria-hidden="true"></i> Tables
+                        <i class="fa fa-angle-left left-arrow open " aria-hidden="true"></i>
                     </a>
-                    <ul class="submenue">
+                    <ul class="sidebar-submenue">
                         <li class="submenu-li">
                             <a href="tables.html">
                                     Basic Table
@@ -177,12 +177,12 @@
                         </li>
                     </ul>
                 </li>
-                <li>
-                    <a class="nav-hyperlink" href="#">
-                        <i class="fa fa-map nav-icon" aria-hidden="true"></i> Maps
-                        <i class="fa fa-angle-left left-arrow rotate" aria-hidden="true"></i>
+                <li class="sidebar-item has-submenu">
+                    <a href="#">
+                        <i class="fa fa-map nav-icon " aria-hidden="true"></i> Maps
+                        <i class="fa fa-angle-left left-arrow " aria-hidden="true"></i>
                     </a>
-                    <ul class="submenue">
+                    <ul class="sidebar-submenue">
                         <li class="submenu-li">
                             <a href="map.html">
                                     Vector Maps
@@ -195,12 +195,12 @@
                         </li>
                     </ul>
                 </li>
-                <li>
-                    <a class="nav-hyperlink" href="#">
-                        <i class="fa fa-gift nav-icon" aria-hidden="true"></i> Extra
-                        <i class="fa fa-angle-left left-arrow rotate" aria-hidden="true"></i>
+                <li class="sidebar-item has-submenu">
+                    <a href="#">
+                        <i class="fa fa-gift nav-icon " aria-hidden="true"></i> Extra
+                        <i class="fa fa-angle-left left-arrow " aria-hidden="true"></i>
                     </a>
-                    <ul class="submenue">
+                    <ul class="sidebar-submenue">
                         <li class="submenu-li">
                             <a href="invoice.html">
                                     Invoice
@@ -239,31 +239,31 @@
         <!-- Page Content -->
         <div class="page-content-wrapper buttons-page-container">
            <!-- header -->
-            <div class="main-dashboard-header" id="head">
+            <div class="main-dashboard-header " id="head">
                 <div class="container-fluid header-container">
-                    <i href="#menu-toggle" id="menu-toggle" class="fa fa-bars menu-toggle" aria-hidden="true"></i>
+                    <i href="#menu-toggle " id="menu-toggle " class="fa fa-bars menu-toggle " aria-hidden="true"></i>
                     <div class="form-group">
                         <div class="icon-addon addon-md">
-                            <input type="text" placeholder="Type anywhere to search" class="form-control main-dashboard-search search-text-box">
-                            <i class="fa fa-search glyphicon glyphicon-search" aria-hidden="true"></i>
+                            <input type="text " placeholder="Type anywhere to search " class="form-control main-dashboard-search search-text-box">
+                            <i class="fa fa-search glyphicon glyphicon-search " aria-hidden="true"></i>
                         </div>
                     </div>
                    <div class="right-side-head">
                         <div class="right-side-items notifecations">
-                            <button id="notifications" class="notifications btn btn-default btn-lg btn-link">
-                                <i class="fa fa-bell-o" aria-hidden="true"></i>
+                            <button id="notifications " class="notifications btn btn-default btn-lg btn-link">
+                                <i class="fa fa-bell-o " aria-hidden="true"></i>
                             </button>
-                            <span id="not-badg" class="badge badge-notify">2</span>
+                            <span id="not-badg " class="badge badge-notify">2</span>
                         </div>
                         <div class="right-side-items email">
-                            <button id="messages" class="messages btn btn-default btn-lg btn-link">
-                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            <button id="messages " class="messages btn btn-default btn-lg btn-link">
+                                <i class="fa fa-envelope-o " aria-hidden="true"></i>
                             </button>
-                            <span id="message-badg" class="badge badge-notify">4</span>
+                            <span id="message-badg " class="badge badge-notify">4</span>
                         </div>
-                        <div id="user-box" class="user-box right-side-items">
-                            <p> Mr.Sami<i class="fa fa-angle-down" aria-hidden="true"></i></p>
-                            <img src="assets/images/Sami.jpg" />
+                        <div id="user-box " class="user-box right-side-items">
+                            <p> Mr.Sami<i class="fa fa-angle-down " aria-hidden="true"></i></p>
+                            <img src="assets/images/Sami.jpg " />
                         </div>
                     </div>
                 </div>
@@ -272,13 +272,13 @@
                     <h5>Notifications</h5>
                     <div class="single-content-row">
                         <a href="#">
-                            <img alt="user name" src="assets/images/Sami.jpg" />
+                            <img alt="user name " src="assets/images/Sami.jpg " />
                             <p><b>Mohammad Meshaal</b>wants your confirmation on his Leave Request on 12 Mar 2017</p>
                         </a>
                     </div>
                     <div class="single-content-row">
                         <a href="#">
-                            <img alt="user name" src="assets/images/Team-Member-1-270x250.jpg" />
+                            <img alt="user name " src="assets/images/Team-Member-1-270x250.jpg " />
                             <p><b>Nasir ahmad</b>sent a payment on 11 Mar 2017</p>
                         </a>
                     </div>
@@ -288,31 +288,31 @@
                 </div>
                 <div class="messages-box">
                     <div class="arrow-up"></div>
-                    <h5>Messages <a class="send-message-link" href="#">Send New Message</a></h5>
+                    <h5>Messages <a class="send-message-link " href="#">Send New Message</a></h5>
                     <div class="single-content-row">
                         <a href="#">
-                            <img alt="user name" alt="user name" src="assets/images/team-member-5.jpg" />
+                            <img alt="user name " alt="user name " src="assets/images/team-member-5.jpg " />
                             <p><b>Layla smith</b>
                                 <br /> Job offer</p>
                         </a>
                     </div>
                     <div class="single-content-row">
                         <a href="#">
-                            <img alt="user name" src="assets/images/Sami.jpg" />
+                            <img alt="user name " src="assets/images/Sami.jpg " />
                             <p><b>Mohammad Meshaal</b>
                                 <br />Please send me the work templates</p>
                         </a>
                     </div>
                     <div class="single-content-row">
                         <a href="#">
-                            <img alt="user name" src="assets/images/team-member.jpg" />
+                            <img alt="user name " src="assets/images/team-member.jpg " />
                             <p><b>Dana khalid</b>
                                 <br />Do you wanna hang out today?</p>
                         </a>
                     </div>
                     <div class="single-content-row">
                         <a href="#">
-                            <img alt="user name" src="assets/images/Team-Member-1-270x250.jpg" />
+                            <img alt="user name " src="assets/images/Team-Member-1-270x250.jpg " />
                             <p><b>Nasir ahmad</b>
                                 <br />Are we going to the match today?</p>
                         </a>
@@ -325,23 +325,23 @@
                     <div class="arrow-up"></div>
                     <a href="#">
                         <div class="user-info-content">
-                            <i class="fa fa-user" aria-hidden="true"></i> Proﬁle
+                            <i class="fa fa-user " aria-hidden="true"></i> Proﬁle
                         </div>
                     </a>
                     <a href="#">
                         <div class="user-info-content">
-                            <i class="fa fa-cog" aria-hidden="true"></i> Settings
+                            <i class="fa fa-cog " aria-hidden="true"></i> Settings
                         </div>
                     </a>
                     <a href="#">
                         <div class="user-info-content">
-                            <i class="fa fa-info-circle" aria-hidden="true"></i> Help
+                            <i class="fa fa-info-circle " aria-hidden="true"></i> Help
                         </div>
                     </a>
                     <a href="#">
                         <div class="user-info-content logout">
                             Log Out
-                            <i class="fa fa-sign-out" aria-hidden="true"></i>
+                            <i class="fa fa-sign-out " aria-hidden="true"></i>
                         </div>
                     </a>
                 </div>
@@ -352,7 +352,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="col-content body-header">
-                            <a href="#" class="page_title">UI Elements / Buttons</a>
+                            <a href="# " class="page_title">UI Elements / Buttons</a>
                             <h4 class="title">Buttons</h4>
                             <p>
                                 Just apply the button class(e.g:<code>.btn-primary</code>) to Blue Dashboard button.
@@ -412,13 +412,13 @@
                                 </tr>
                             </table>
                             <div class="clear-fix"></div>
-                            <button type="button" class="btn btn-default button-style">Default</button>
-                            <button type="button" class="btn btn-primary button-style">Primary</button>
-                            <button type="button" class="btn btn-success button-style">Success</button>
-                            <button type="button" class="btn btn-info button-style">Info</button>
-                            <button type="button" class="btn btn-warning button-style">Warning</button>
-                            <button type="button" class="btn btn-danger button-style">Danger</button>
-                            <button type="button" class="btn btn-default btn-block button-style">Block Button</button>
+                            <button type="button " class="btn btn-default button-style">Default</button>
+                            <button type="button " class="btn btn-primary button-style">Primary</button>
+                            <button type="button " class="btn btn-success button-style">Success</button>
+                            <button type="button " class="btn btn-info button-style">Info</button>
+                            <button type="button " class="btn btn-warning button-style">Warning</button>
+                            <button type="button " class="btn btn-danger button-style">Danger</button>
+                            <button type="button " class="btn btn-default btn-block button-style">Block Button</button>
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -427,20 +427,20 @@
                             <p>
                                 Just add <code>.icon-btn</code> class and icon tag to button.
                             </p>
-                            <button type="button" class="btn btn-info button-style icon-btn">
+                            <button type="button " class="btn btn-info button-style icon-btn">
                                 <span class="glyphicon glyphicon-search"></span> Search
                             </button>
-                            <button type="button" class="btn btn-danger button-style icon-btn">
+                            <button type="button " class="btn btn-danger button-style icon-btn">
                                 <span class="glyphicon glyphicon-trash"></span> Delete
                             </button>
-                            <button type="button" class="btn btn-success button-style icon-btn">
+                            <button type="button " class="btn btn-success button-style icon-btn">
                                 <span class="glyphicon glyphicon-envelope"></span> Send
                             </button>
                             <br />
-                            <button type="button" class="btn btn-warning button-style icon-btn">
+                            <button type="button " class="btn btn-warning button-style icon-btn">
                                 <span class="glyphicon glyphicon-thumbs-up"></span> Like
                             </button>
-                            <button type="button" class="btn btn-default button-style icon-btn">
+                            <button type="button " class="btn btn-default button-style icon-btn">
                                 <span class="glyphicon glyphicon-print"></span> Print
                             </button>
                             <br />
@@ -448,11 +448,11 @@
                             <p>
                                 Just remove <code>.icon-btn</code> class and the text inside button.
                             </p>
-                            <button type="button" class="btn btn-success icon-button-style"><span class="glyphicon glyphicon-print"></span></button>
-                            <button type="button" class="btn btn-info icon-button-style"><span class="glyphicon glyphicon-download-alt"></span></button>
-                            <button type="button" class="btn btn-primary icon-button-style"><span class="glyphicon glyphicon-plane"></span></button>
-                            <button type="button" class="btn btn-warning icon-button-style"><span class="glyphicon glyphicon-list"></span></button>
-                            <button type="button" class="btn btn-default icon-button-style"><span class="glyphicon glyphicon-bold"></span></button>
+                            <button type="button " class="btn btn-success icon-button-style"><span class="glyphicon glyphicon-print"></span></button>
+                            <button type="button " class="btn btn-info icon-button-style"><span class="glyphicon glyphicon-download-alt"></span></button>
+                            <button type="button " class="btn btn-primary icon-button-style"><span class="glyphicon glyphicon-plane"></span></button>
+                            <button type="button " class="btn btn-warning icon-button-style"><span class="glyphicon glyphicon-list"></span></button>
+                            <button type="button " class="btn btn-default icon-button-style"><span class="glyphicon glyphicon-bold"></span></button>
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -461,26 +461,26 @@
                             <p>
                                 Just add outline class ex:<code>.outline-primary</code> to button.
                             </p>
-                            <button type="button" class="btn btn-default button-style">Default</button>
-                            <button type="button" class="btn outline-primary button-style">Primary</button>
-                            <button type="button" class="btn outline-success button-style">Success</button>
-                            <button type="button" class="btn outline-info button-style">Info</button>
-                            <button type="button" class="btn outline-warning button-style">Warning</button>
-                            <button type="button" class="btn outline-danger button-style">Danger</button>
+                            <button type="button " class="btn btn-default button-style">Default</button>
+                            <button type="button " class="btn outline-primary button-style">Primary</button>
+                            <button type="button " class="btn outline-success button-style">Success</button>
+                            <button type="button " class="btn outline-info button-style">Info</button>
+                            <button type="button " class="btn outline-warning button-style">Warning</button>
+                            <button type="button " class="btn outline-danger button-style">Danger</button>
                             <br>
-                            <button type="button" class="btn outline-info button-style outline-icon-btn">
+                            <button type="button " class="btn outline-info button-style outline-icon-btn">
                                 <span class="glyphicon glyphicon-search"></span>Search
                             </button>
-                            <button type="button" class="btn outline-danger button-style outline-icon-btn">
+                            <button type="button " class="btn outline-danger button-style outline-icon-btn">
                                 <span class="glyphicon glyphicon-trash"></span>Delete
                             </button>
-                            <button type="button" class="btn outline-success button-style outline-icon-btn">
+                            <button type="button " class="btn outline-success button-style outline-icon-btn">
                                 <span class="glyphicon glyphicon-envelope"></span>Send
                             </button>
-                            <button type="button" class="btn outline-warning button-style outline-icon-btn">
+                            <button type="button " class="btn outline-warning button-style outline-icon-btn">
                                 <span class="glyphicon glyphicon-thumbs-up"></span>Like
                             </button>
-                            <button type="button" class="btn btn-default button-style outline-icon-btn">
+                            <button type="button " class="btn btn-default button-style outline-icon-btn">
                                 <span class="glyphicon glyphicon-print"></span>Print
                             </button>
                         </div>
@@ -492,7 +492,7 @@
                             <div class="col-content">
                                 <h5 class="title">Dropdown Buttons</h5>
                                 <div class="dropdown">
-                                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Button
+                                    <button class="btn btn-primary dropdown-toggle " type="button " data-toggle="dropdown">Dropdown Button
                                         <span class="caret"></span></button>
                                     <ul class="dropdown-menu">
                                         <li><a>First Option</a></li>
@@ -508,8 +508,8 @@
                                 <p>
                                     Just add <code>.dashboard-active</code>or<code>.disabled</code> to button.
                                 </p>
-                                <button type="button" class="btn btn-primary dashboard-active">Active Primary</button>
-                                <button type="button" class="btn btn-primary disabled">Disabled Primary</button>
+                                <button type="button " class="btn btn-primary dashboard-active">Active Primary</button>
+                                <button type="button " class="btn btn-primary disabled">Disabled Primary</button>
                             </div>
                         </div>
                     </div>
@@ -519,19 +519,19 @@
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-primary">First Button</button>
-                                        <button type="button" class="btn btn-primary">Second Button</button>
-                                        <button type="button" class="btn btn-primary">Third Button</button>
+                                        <button type="button " class="btn btn-primary">First Button</button>
+                                        <button type="button " class="btn btn-primary">Second Button</button>
+                                        <button type="button " class="btn btn-primary">Third Button</button>
                                     </div>
                                     <br />
                                     <br />
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-primary">First Button</button>
-                                        <button type="button" class="btn btn-primary">Second Button</button>
+                                        <button type="button " class="btn btn-primary">First Button</button>
+                                        <button type="button " class="btn btn-primary">Second Button</button>
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                            <button type="button " class="btn btn-primary dropdown-toggle " data-toggle="dropdown">
                                                 Third Button <span class="caret"></span></button>
-                                            <ul class="dropdown-menu" role="menu">
+                                            <ul class="dropdown-menu " role="menu">
                                                 <li><a href="#">First Option</a></li>
                                                 <li><a href="#">Second Option</a></li>
                                             </ul>
@@ -558,19 +558,19 @@
                             <p>
                                 Just add hover class<code>.hvr-grow</code> to button.
                             </p>
-                            <button type="button" class="btn btn-primary button-style hvr-grow">Primary</button>
-                            <button type="button" class="btn btn-success button-style hvr-float">Success</button>
-                            <button type="button" class="btn btn-info button-style hvr-wobble-skew">Info</button>
-                            <button type="button" class="btn btn-warning button-style hvr-buzz-out">Warning</button>
+                            <button type="button " class="btn btn-primary button-style hvr-grow">Primary</button>
+                            <button type="button " class="btn btn-success button-style hvr-float">Success</button>
+                            <button type="button " class="btn btn-info button-style hvr-wobble-skew">Info</button>
+                            <button type="button " class="btn btn-warning button-style hvr-buzz-out">Warning</button>
                             <br>
-                            <button type="button" class="btn outline-primary button-style hvr-overline-from-left">Primary</button>
-                            <button type="button" class="btn outline-info button-style hvr-skew">Info</button>
-                            <button type="button" class="btn outline-warning button-style hvr-wobble-to-top-right">Warning</button>
+                            <button type="button " class="btn outline-primary button-style hvr-overline-from-left">Primary</button>
+                            <button type="button " class="btn outline-info button-style hvr-skew">Info</button>
+                            <button type="button " class="btn outline-warning button-style hvr-wobble-to-top-right">Warning</button>
                             <br>
-                            <button href="#" class="btn btn-info button-style hvr-icon-back">&nbsp;&nbsp;&nbsp;&nbsp;Icon Back</button>
-                            <button href="#" class="btn btn-warning button-style hvr-icon-pop">Icon Pop&nbsp;&nbsp;&nbsp;&nbsp;</button>
-                            <button href="#" class="btn outline-success button-style hvr-icon-down">Icon Down&nbsp;&nbsp;&nbsp;&nbsp;</button>
-                            <button href="#" class="btn outline-danger button-style hvr-icon-buzz-out">Icon Buzz Out&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                            <button href="# " class="btn btn-info button-style hvr-icon-back">&nbsp;&nbsp;&nbsp;&nbsp;Icon Back</button>
+                            <button href="# " class="btn btn-warning button-style hvr-icon-pop">Icon Pop&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                            <button href="# " class="btn outline-success button-style hvr-icon-down">Icon Down&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                            <button href="# " class="btn outline-danger button-style hvr-icon-buzz-out">Icon Buzz Out&nbsp;&nbsp;&nbsp;&nbsp;</button>
                         </div>
                     </div>
                 </div>
@@ -588,10 +588,10 @@
                                             <td><code>.btn-lg</code></td>
                                         </tr>
                                     </table>
-                                    <button type="button" class="btn btn-primary btn-sm btn-xs">XSmall</button>
-                                    <button type="button" class="btn btn-primary btn-sm margin-bottom">Small</button>
-                                    <button type="button" class="btn btn-primary btn-md margin-bottom">Medium</button>
-                                    <button type="button" class="btn btn-primary btn-lg margin-bottom">Large</button>
+                                    <button type="button " class="btn btn-primary btn-sm btn-xs">XSmall</button>
+                                    <button type="button " class="btn btn-primary btn-sm margin-bottom">Small</button>
+                                    <button type="button " class="btn btn-primary btn-md margin-bottom">Medium</button>
+                                    <button type="button " class="btn btn-primary btn-lg margin-bottom">Large</button>
                                 </div>
                                 <div class="col-sm-4">
                                     <h5 class="title">Pager Buttons</h5>
@@ -615,15 +615,15 @@
                                     <p>
                                         Just add hover class<code>.btn-circle</code> to button.
                                     </p>
-                                    <button type="button" class="btn btn-success btn-circle btn-lg margin-bottom"><span class="glyphicon glyphicon-download-alt"></span></button>
-                                    <button type="button" class="btn btn-info btn-circle btn-lg margin-bottom"><span class="glyphicon glyphicon-plus"></span></button>
-                                    <button type="button" class="btn btn-warning  btn-circle btn-lg margin-bottom"><span class="glyphicon glyphicon-exclamation-sign"></span></button>
-                                    <button type="button" class="btn btn-danger  btn-circle btn-lg margin-bottom"><span class="glyphicon glyphicon-remove-circle"></span></button>
+                                    <button type="button " class="btn btn-success btn-circle btn-lg margin-bottom"><span class="glyphicon glyphicon-download-alt"></span></button>
+                                    <button type="button " class="btn btn-info btn-circle btn-lg margin-bottom"><span class="glyphicon glyphicon-plus"></span></button>
+                                    <button type="button " class="btn btn-warning btn-circle btn-lg margin-bottom"><span class="glyphicon glyphicon-exclamation-sign"></span></button>
+                                    <button type="button " class="btn btn-danger btn-circle btn-lg margin-bottom"><span class="glyphicon glyphicon-remove-circle"></span></button>
                                     <br />
-                                    <button type="button" class="btn btn-success btn-circle btn-md"><span class="glyphicon glyphicon-download-alt"></span></button>
-                                    <button type="button" class="btn btn-info btn-circle"><span class="glyphicon glyphicon-plus"></span></button>
-                                    <button type="button" class="btn btn-warning  btn-circle"><span class="glyphicon glyphicon-exclamation-sign"></span></button>
-                                    <button type="button" class="btn btn-danger btn-circle"><span class="glyphicon glyphicon-remove-circle"></span></button>
+                                    <button type="button " class="btn btn-success btn-circle btn-md"><span class="glyphicon glyphicon-download-alt"></span></button>
+                                    <button type="button " class="btn btn-info btn-circle"><span class="glyphicon glyphicon-plus"></span></button>
+                                    <button type="button " class="btn btn-warning btn-circle"><span class="glyphicon glyphicon-exclamation-sign"></span></button>
+                                    <button type="button " class="btn btn-danger btn-circle"><span class="glyphicon glyphicon-remove-circle"></span></button>
                                 </div>
                             </div>
                         </div>
@@ -635,7 +635,7 @@
                             <span class="hint-text">Copyright © 2017 </span>
                             <span class="font-montserrat"><b>New Release</b></span>.
                             <span class="hint-text">All rights reserved. </span>
-                            <span class="sm-block"><a href="#" class="m-l-10 m-r-10">Terms of use</a> | <a href="#" class="m-l-10">Privacy Policy</a></span>
+                            <span class="sm-block"><a href="# " class="m-l-10 m-r-10">Terms of use</a> | <a href="# " class="m-l-10">Privacy Policy</a></span>
                         </p>
                         <p class="small no-margin pull-right sm-pull-reset">
                             <h6 class="made-by">Made By  <b>New Release</b></h6>
@@ -645,15 +645,15 @@
                 </div>
             </div>
         </div>
-        <div class="right-side-section-toggle" data-toggle="modal" data-toggle="modal" data-target="#colors-modal">
+        <div class="right-side-section-toggle " data-toggle="modal " data-toggle="modal " data-target="#colors-modal">
             <i class="fa fa-pencil-square-o"></i>
         </div>
-        <div class="modal right fade" id="colors-modal" tabindex="-1" role="dialog" aria-labelledby="right-side-modal-label">
-            <div class="modal-dialog" role="document">
+        <div class="modal right fade " id="colors-modal " tabindex="-1 " role="dialog " aria-labelledby="right-side-modal-label">
+            <div class="modal-dialog " role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h5 class="modal-title" id="right-side-modal-label">Color Options</h5>
+                        <button type="button " class="close " data-dismiss="modal " aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h5 class="modal-title " id="right-side-modal-label">Color Options</h5>
                     </div>
                     <div class="modal-body custome-margin">
                         <div class="row">
@@ -668,13 +668,13 @@
                         </div>
                         <div class="row p-15">
                             <div class="col-md-6 single-menue-color-box no-padding-righ">
-                                <div id="default-color-btn" class="single-menue-color pointer-hover">
+                                <div id="default-color-btn " class="single-menue-color pointer-hover">
                                     <div class="col-sm-12 default-menue-color">
                                         <p>
                                             Header
                                             <br /> #3b97d2
                                         </p>
-                                        <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
+                                        <i class="fa fa-check-circle-o selected-theme " aria-hidden="true"></i>
                                     </div>
                                     <div class="col-sm-12 simple-border">
                                         <p>
@@ -685,13 +685,13 @@
                                 </div>
                             </div>
                             <div class="col-md-6 single-menue-color-box no-padding-righ">
-                                <div id="orang-color-btn" class="single-menue-color pointer-hover">
+                                <div id="orang-color-btn " class="single-menue-color pointer-hover">
                                     <div class="col-sm-12 orange-menue-color">
                                         <p>
                                             Header
                                             <br /> #f5d34b
                                         </p>
-                                        <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
+                                        <i class="fa fa-check-circle-o selected-theme " aria-hidden="true"></i>
                                     </div>
                                     <div class="col-sm-12 simple-border">
                                         <p>
@@ -703,13 +703,13 @@
                             </div>
                             <div class="row p-15">
                                 <div class="col-md-6 single-menue-color-box no-padding-righ">
-                                    <div id="dark2-color-btn" class="single-menue-color pointer-hover">
+                                    <div id="dark2-color-btn " class="single-menue-color pointer-hover">
                                         <div class="col-sm-12 dark-menue-color2">
                                             <p>
                                                 Header
                                                 <br /> #262930
                                             </p>
-                                            <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
+                                            <i class="fa fa-check-circle-o selected-theme " aria-hidden="true"></i>
                                         </div>
                                         <div class="col-sm-12 dark-nav-color2">
                                             <p>
@@ -720,13 +720,13 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 single-menue-color-box no-padding-righ">
-                                    <div id="dark1-color-btn" class="single-menue-color pointer-hover">
+                                    <div id="dark1-color-btn " class="single-menue-color pointer-hover">
                                         <div class="col-sm-12 dark-menue-color">
                                             <p>
                                                 Header
                                                 <br /> #2b3643
                                             </p>
-                                            <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
+                                            <i class="fa fa-check-circle-o selected-theme " aria-hidden="true"></i>
                                         </div>
                                         <div class="col-sm-12 dark-nav-color">
                                             <p>
@@ -739,13 +739,13 @@
                             </div>
                             <div class="row p-15">
                                 <div class="col-md-6 single-menue-color-box no-padding-righ">
-                                    <div id="whit-color-btn" class="single-menue-color pointer-hover">
+                                    <div id="whit-color-btn " class="single-menue-color pointer-hover">
                                         <div class="col-sm-12 simple-border wight-head">
                                             <p>
                                                 Header
                                                 <br /> #ffffff
                                             </p>
-                                            <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
+                                            <i class="fa fa-check-circle-o selected-theme " aria-hidden="true"></i>
                                         </div>
                                         <div class="col-sm-12 simple-border wight-head">
                                             <p>
@@ -756,13 +756,13 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 single-menue-color-box no-padding-righ">
-                                    <div id="green-color-btn" class="single-menue-color pointer-hover">
+                                    <div id="green-color-btn " class="single-menue-color pointer-hover">
                                         <div class="col-sm-12 green-menue-color">
                                             <p>
                                                 Header
                                                 <br /> #62d995
                                             </p>
-                                            <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
+                                            <i class="fa fa-check-circle-o selected-theme " aria-hidden="true"></i>
                                         </div>
                                         <div class="col-sm-12 simple-border">
                                             <p>
@@ -784,14 +784,14 @@
     <!-- Page layout JS -->
     <script src="assets/vendors/jquery/jquery-3.1.1.js"></script>
     <script src="assets/js/notifications_boxs.js"></script>
-    <script type="text/javascript" src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript " src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
     <!-- Blue Dashboard main JS file  -->
     <script src="assets/js/main.js"></script>
     <!-- Dynamic colors JS -->
-    <script type="text/javascript" src="assets/js/nav_colors_change.js"></script>
-    <script type="text/javascript" src="assets/js/right-side-colors-picker.js"></script>
-    <script type="text/javascript" src="assets/js/page-ready-theam.js"></script>
-    <link id="default-color-picker" rel="stylesheet" />
+    <script type="text/javascript " src="assets/js/nav_colors_change.js"></script>
+    <script type="text/javascript " src="assets/js/right-side-colors-picker.js"></script>
+    <script type="text/javascript " src="assets/js/page-ready-theam.js"></script>
+    <link id="default-color-picker " rel="stylesheet " />
 </body>
 
 </html>
