@@ -20,7 +20,7 @@ $(function($) {
       $('.sidebar li a').css('border-bottom', '1px solid #E4E5E7');
       $('.sidebar li a').css('border-right', '1px solid #E4E5E7');
       $('.sidebar li a').css('color', '#34495E');
-      $('.nav-icon').css('color', '#C6C4DB')
+      $('.nav-icon').css('color', '#C6C4DB');
       $('.user-box p').css('color', '#fff');
       $('.head-box i').css('color', '#fff');
       $('#company-name').css('color', '#fff');
@@ -28,6 +28,9 @@ $(function($) {
       $('.selected-theme').hide();
       $('#default-color-btn > .col-sm-12 > .selected-theme').show();
       $('.sidebar li').removeClass('dark-theme-hover');
+      $('.sidebar .selected ul li a').css('border', '0px');
+      $('.sidebar-submenue li a').css('border', '0px');
+
     });
 
     $('#orang-color-btn').click(function() {
@@ -48,6 +51,9 @@ $(function($) {
       $('.selected-theme').hide();
       $('#orang-color-btn > .col-sm-12 > .selected-theme').show();
       $('.sidebar li').removeClass('dark-theme-hover');
+      $('.sidebar .selected ul li a').css('border', '0px');
+      $('.sidebar-submenue li a').css('border', '0px');
+
     });
 
     $('#green-color-btn').click(function() {
@@ -68,6 +74,9 @@ $(function($) {
       $('.selected-theme').hide();
       $('#green-color-btn > .col-sm-12 > .selected-theme').show();
       $('.sidebar li').removeClass('dark-theme-hover');
+      $('.sidebar .selected ul li a').css('border', '0px');
+      $('.sidebar-submenue li a').css('border', '0px');
+
     });
 
     $('#whit-color-btn').click(function() {
@@ -89,6 +98,9 @@ $(function($) {
       $('.selected-theme').hide();
       $('#whit-color-btn > .col-sm-12 > .selected-theme').show();
       $('.sidebar li').removeClass('dark-theme-hover');
+      $('.sidebar .selected ul li a').css('border', '0px');
+      $('.sidebar-submenue li a').css('border', '0px');
+
     });
 
     $('#dark1-color-btn').click(function() {
@@ -109,6 +121,9 @@ $(function($) {
       $('.sidebar .selected a .nav-icon').css('color', '#2b3643');
       $('.selected-theme').hide();
       $('#dark1-color-btn > .col-sm-12 > .selected-theme').show();
+      $('.sidebar .selected ul li a').css('border', '0px');
+      $('.sidebar-submenue li a').css('border', '0px');
+
     });
 
     $('#dark2-color-btn').click(function() {
@@ -129,6 +144,8 @@ $(function($) {
       $('.head-box i').css('color', '#fff');
       $('#company-name').css('color', '#fff');
       $('.sidebar .selected a .nav-icon').css('color', '#262930');
+      $('.sidebar .selected ul li a').css('border', '0px');
+      $('.sidebar-submenue li a').css('border', '0px');
     });
   });
 });
