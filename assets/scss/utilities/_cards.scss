@@ -1,0 +1,150 @@
+.card,
+.card-panel {
+  margin: 0.5rem 0px 1rem 0px;
+  position: relative;
+  transition: box-shadow 0.25s;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12), 0px 3px 1px -2px rgba(0, 0, 0, 0.2);
+
+  .card-content {
+    padding: 20px;
+
+    &.white-text {
+      span,
+      p {
+        color: $white-color;
+      }
+
+    }
+
+    .card-title {
+      font-size: 24px;
+      font-weight: 300;
+
+      .right {
+        float: right;
+      }
+
+      i {
+        margin-left: 15px;
+        cursor: pointer;
+      }
+
+      .material-icons {
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 1;
+        letter-spacing: normal;
+        text-transform: none;
+        display: inline-block;
+        white-space: nowrap;
+        word-wrap: normal;
+        direction: ltr;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+        -webkit-font-feature-settings: 'liga';
+        -moz-font-feature-settings: 'liga';
+        font-feature-settings: 'liga';
+      }
+
+    }
+
+  }
+
+  .card-action {
+    position: relative;
+    background-color: inherit;
+    border-top: 1px solid $default-darker-color;
+    padding: 20px;
+
+    a {
+      margin-right: 20px;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      &.default-dahsboard-link {
+        color: $white-color;
+        text-decoration: underline;
+      }
+
+    }
+
+  }
+
+  .card-image {
+    position: relative;
+
+    img {
+      display: block;
+      border-radius: 2px 2px 0px 0px;
+      position: relative;
+      left: 0px;
+      right: 0px;
+      top: 0px;
+      bottom: 0px;
+      width: 100%;
+    }
+
+    .card-title {
+      color: $white-color;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      padding: 20px;
+      font-size: 24px;
+      font-weight: 300;
+    }
+
+  }
+
+  &.horizontal {
+    display: flex;
+
+    .card-image {
+      max-width: 50%;
+    }
+
+    .card-stacked {
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      position: relative;
+
+      .card-content {
+        -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+      }
+
+    }
+
+  }
+
+  .card-reveal {
+    padding: 20px;
+    position: absolute;
+    background-color: $white-color;
+    width: 100%;
+    overflow-y: auto;
+    left: 0px;
+    top: 100%;
+    height: 102%;
+    z-index: 3;
+    display: none;
+
+    i {
+      float: right;
+      margin-left: 15px;
+      cursor: pointer;
+    }
+
+  }
+
+}

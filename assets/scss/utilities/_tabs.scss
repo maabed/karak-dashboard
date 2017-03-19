@@ -1,0 +1,891 @@
+.tabs-container {
+  .tabs-header {
+    .statistics-taps {
+      width: 100%;
+      margin: 0px auto;
+
+      ul {
+        list-style: none;
+        height: auto;
+        display: table;
+        text-align: center;
+        padding-left: 0px;
+        margin: 0px auto;
+
+        li {
+          float: left;
+          margin: 0em 1em;
+
+          a {
+            @include padding-diffrent-values(1.4em, 1em, 1em, 1em);
+            @include css-effect(all 0.5s ease);
+            color: $primary-color;
+            display: inline-block;
+            font-size: 1.2em;
+            font-weight: bold;
+            position: relative;
+            text-decoration: none;
+            text-shadow: none;
+          }
+
+          &.active {
+            float: left;
+            margin: 0em 1em;
+          }
+
+        }
+
+        &.success-mid {
+          background-color: $background-color !important;
+
+          .active {
+            a {
+              border-bottom: 5px solid $success-mid-color;
+              color: $success-mid-color;
+            }
+
+          }
+
+        }
+
+        &.info-mid {
+          background-color: $background-color !important;
+
+          .active {
+            a {
+              border-bottom: 5px solid $info-mid-color;
+              color: $info-mid-color;
+            }
+
+          }
+
+        }
+
+        &.danger-mid {
+          background-color: $background-color !important;
+
+          .active {
+            a {
+              border-bottom: 5px solid $danger-mid-color;
+              color: $danger-mid-color;
+            }
+
+          }
+
+        }
+
+        &.warning-mid {
+          background-color: $background-color !important;
+
+          .active {
+            a {
+              border-bottom: 5px solid $warning-mid-color;
+              color: $warning-mid-color;
+            }
+
+          }
+
+        }
+
+        &.primary-mid {
+          background-color: $background-color !important;
+
+          .active {
+            a {
+              border-bottom: 5px solid $primary-mid-color;
+              color: $primary-mid-color;
+            }
+
+          }
+
+        }
+
+        &.default-mid {
+          background-color: $background-color !important;
+
+          .active {
+            a {
+              border-bottom: 5px solid $default-mid-color;
+              color: $default-mid-color;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+    .nav-tabs {
+      border: 0px;
+
+      &>li.active>a {
+        border-left: 0px;
+        border-right: 0px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+      }
+
+      &.list-group {
+        margin-bottom: 0px;
+
+        &.right-arrow {
+          &.success-mid {
+            background-color: $white-color;
+
+            .active {
+              background-color: $success-mid-color;
+              border-color: $success-mid-color;
+
+              a {
+                background-color: $success-mid-color;
+                border-color: $success-mid-color;
+              }
+
+              &:after {
+                border-right: 10px solid $success-mid-color;
+              }
+
+            }
+
+          }
+
+          &.info-mid {
+            background-color: $white-color;
+
+            .active {
+              background-color: $info-mid-color;
+              border-color: $info-mid-color;
+
+              a {
+                background-color: $info-mid-color;
+                border-color: $info-mid-color;
+              }
+
+              &:after {
+                border-right: 10px solid $info-mid-color;
+              }
+
+            }
+
+          }
+
+          &.danger-mid {
+            background-color: $white-color;
+
+            .active {
+              background-color: $danger-mid-color;
+              border-color: $danger-mid-color;
+
+              a {
+                background-color: $danger-mid-color;
+                border-color: $danger-mid-color;
+              }
+
+              &:after {
+                border-right: 10px solid $danger-mid-color;
+              }
+
+            }
+
+          }
+
+          &.warning-mid {
+            background-color: $white-color;
+
+            .active {
+              background-color: $warning-mid-color;
+              border-color: $warning-mid-color;
+
+              a {
+                background-color: $warning-mid-color;
+                border-color: $warning-mid-color;
+              }
+
+              &:after {
+                border-right: 10px solid $warning-mid-color;
+              }
+
+            }
+
+          }
+
+          &.primary-mid {
+            background-color: $white-color;
+
+            .active {
+              background-color: $primary-mid-color;
+              border-color: $primary-mid-color;
+
+              a {
+                background-color: $primary-mid-color;
+                border-color: $primary-mid-color;
+              }
+
+              &:after {
+                border-right: 10px solid $primary-mid-color;
+              }
+
+            }
+
+          }
+
+          &.default-mid {
+            background-color: $white-color;
+
+            .active {
+              background-color: $default-mid-color;
+              border-color: $default-mid-color;
+
+              a {
+                background-color: $default-mid-color;
+                border-color: $default-mid-color;
+              }
+
+              &:after {
+                border-right: 10px solid $default-mid-color;
+              }
+
+            }
+
+          }
+
+        }
+
+        &.left-arrow {
+          &.success-mid {
+            background-color: $white-color;
+
+            .active {
+              background-color: $success-mid-color;
+              border-color: $success-mid-color;
+
+              a {
+                background-color: $success-mid-color;
+                border-color: $success-mid-color;
+              }
+
+              &:after {
+                border-left: 10px solid $success-mid-color;
+              }
+
+            }
+
+          }
+
+          &.info-mid {
+            background-color: $white-color;
+
+            .active {
+              background-color: $info-mid-color;
+              border-color: $info-mid-color;
+
+              a {
+                background-color: $info-mid-color;
+                border-color: $info-mid-color;
+              }
+
+              &:after {
+                border-left: 10px solid $info-mid-color;
+              }
+
+            }
+
+          }
+
+          &.danger-mid {
+            background-color: $white-color;
+
+            .active {
+              background-color: $danger-mid-color;
+              border-color: $danger-mid-color;
+
+              a {
+                background-color: $danger-mid-color;
+                border-color: $danger-mid-color;
+              }
+
+              &:after {
+                border-left: 10px solid $danger-mid-color;
+              }
+
+            }
+
+          }
+
+          &.warning-mid {
+            background-color: $white-color;
+
+            .active {
+              background-color: $warning-mid-color;
+              border-color: $warning-mid-color;
+
+              a {
+                background-color: $warning-mid-color;
+                border-color: $warning-mid-color;
+              }
+
+              &:after {
+                border-left: 10px solid $warning-mid-color;
+              }
+
+            }
+
+          }
+
+          &.primary-mid {
+            background-color: $white-color;
+
+            .active {
+              background-color: $primary-mid-color;
+              border-color: $primary-mid-color;
+
+              a {
+                background-color: $primary-mid-color;
+                border-color: $primary-mid-color;
+              }
+
+              &:after {
+                border-left: 10px solid $primary-mid-color;
+              }
+
+            }
+
+          }
+
+          &.default-mid {
+            background-color: $white-color;
+
+            .active {
+              background-color: $default-mid-color;
+              border-color: $default-mid-color;
+
+              a {
+                background-color: $default-mid-color;
+                border-color: $default-mid-color;
+              }
+
+              &:after {
+                border-left: 10px solid $default-mid-color;
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
+      &.left-tab-arrow {
+        li {
+          padding: 0px;
+          width: 100%;
+          text-align: center;
+          border: 0px;
+
+          a {
+            border: 0px;
+            background: none;
+            color: #555555;
+
+            h4 {
+              color: $info-mid-color;
+            }
+
+          }
+
+          &.active {
+            &>a {
+              color: $white-color;
+              border: 0px;
+            }
+
+            &:after {
+              content: '';
+              position: absolute;
+              left: 100%;
+              top: 50%;
+              margin-top: -13px;
+              border-bottom: 13px solid transparent;
+              border-top: 13px solid transparent;
+              // border-left: 10px solid $info-mid-color;
+            }
+
+            h4 {
+              color: $white-color;
+            }
+
+          }
+
+        }
+
+      }
+
+      &.right-tab-arrow {
+        li {
+          padding: 0px;
+          width: 100%;
+          text-align: center;
+          border: 0px;
+
+          a {
+            border: 0px;
+            background: none;
+            color: $info-mid-color;
+          }
+
+          &.active {
+            &>a {
+              // background-color: $info-mid-color;
+              color: $white-color;
+              border: 0px;
+            }
+
+            &:after {
+              content: '';
+              position: absolute;
+              left: -0.6em;
+              top: 50%;
+              margin-top: -13px;
+              border-left: 0px;
+              border-top: 13px solid transparent;
+              border-bottom: 13px solid transparent;
+              // border-right: 10px solid $info-mid-color;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+    .nav-pills {
+      &>li {
+        a {
+          border-radius: 0px;
+          color: $paragraph-color;
+        }
+
+        &.active > a {
+          color: $white-color;
+        }
+
+        &+li {
+          margin: 0px;
+        }
+
+      }
+
+      &.success-mid {
+        background-color: $white-color !important;
+
+        .active {
+          a {
+            background-color: $success-mid-color;
+            border-color: $success-mid-color;
+          }
+
+        }
+
+      }
+
+      &.info-mid {
+        background-color: $white-color !important;
+
+        .active {
+          a {
+            background-color: $info-mid-color;
+            border-color: $info-mid-color;
+          }
+
+        }
+
+      }
+
+      &.danger-mid {
+        background-color: $white-color !important;
+
+        .active {
+          a {
+            background-color: $danger-mid-color;
+            border-color: $danger-mid-color;
+          }
+
+        }
+
+      }
+
+      &.warning-mid {
+        background-color: $white-color !important;
+
+        .active {
+          a {
+            background-color: $warning-mid-color;
+            border-color: $warning-mid-color;
+          }
+
+        }
+
+      }
+
+      &.primary-mid {
+        background-color: $white-color !important;
+
+        .active {
+          a {
+            background-color: $primary-mid-color;
+            border-color: $primary-mid-color;
+          }
+
+        }
+
+      }
+
+      &.default-mid {
+        background-color: $white-color !important;
+
+        .active {
+          a {
+            background-color: $default-mid-color;
+            border-color: $default-mid-color;
+          }
+
+        }
+
+      }
+
+    }
+
+    .bordered-tab {
+      li {
+        &> a {
+          border-radius: 0px;
+          color: $paragraph-color;
+        }
+
+      }
+
+      &.success-mid {
+        background-color: $white-color !important;
+
+        .active {
+          a {
+            border-top: 5px solid $success-mid-color;
+          }
+
+        }
+
+      }
+
+      &.info-mid {
+        background-color: $white-color !important;
+
+        .active {
+          a {
+            border-top: 5px solid $info-mid-color;
+          }
+
+        }
+
+      }
+
+      &.danger-mid {
+        background-color: $white-color !important;
+
+        .active {
+          a {
+            border-top: 5px solid $danger-mid-color;
+          }
+
+        }
+
+      }
+
+      &.warning-mid {
+        background-color: $white-color !important;
+
+        .active {
+          a {
+            border-top: 5px solid $warning-mid-color;
+          }
+
+        }
+
+      }
+
+      &.primary-mid {
+        background-color: $white-color !important;
+
+        .active {
+          a {
+            border-top: 5px solid $primary-mid-color;
+          }
+
+        }
+
+      }
+
+      &.default-mid {
+        background-color: $white-color !important;
+
+        .active {
+          a {
+            border-top: 5px solid $default-mid-color;
+          }
+
+        }
+
+      }
+
+    }
+
+    &.left-tabs-header {
+      width: 20%;
+      float: left;
+    }
+
+    &.right-tabs-header {
+      width: 20%;
+      float: right;
+    }
+
+    .top-tab-arrow {
+      .active {
+        a {
+          color: $white-color;
+          border-top: 0px;
+
+          &:after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 37%;
+            margin-top: 0px;
+            border-left: 13px solid transparent;
+            border-right: 13px solid transparent;
+          }
+
+        }
+
+      }
+
+      &.success-mid {
+        background-color: $white-color;
+
+        .active {
+          a {
+            background-color: $success-mid-color;
+            border-color: $success-mid-color;
+
+            &:after {
+              border-top: 10px solid $success-mid-color;
+            }
+
+          }
+
+        }
+
+      }
+
+      &.info-mid {
+        background-color: $white-color;
+
+        .active {
+          a {
+            background-color: $info-mid-color;
+            border-color: $info-mid-color;
+
+            &:after {
+              border-top: 10px solid $info-mid-color;
+            }
+
+          }
+
+        }
+
+      }
+
+      &.danger-mid {
+        background-color: $white-color;
+
+        .active {
+          a {
+            background-color: $danger-mid-color;
+            border-color: $danger-mid-color;
+
+            &:after {
+              border-top: 10px solid $danger-mid-color;
+            }
+
+          }
+
+        }
+
+      }
+
+      &.warning-mid {
+        background-color: $white-color;
+
+        .active {
+          a {
+            background-color: $warning-mid-color;
+            border-color: $warning-mid-color;
+
+            &:after {
+              border-top: 10px solid $warning-mid-color;
+            }
+
+          }
+
+        }
+
+      }
+
+      &.primary-mid {
+        background-color: $white-color;
+
+        .active {
+          a {
+            background-color: $primary-mid-color;
+            border-color: $primary-mid-color;
+
+            &:after {
+              border-top: 10px solid $primary-mid-color;
+            }
+
+          }
+
+        }
+
+      }
+
+      &.default-mid {
+        background-color: $white-color;
+
+        .active {
+          a {
+            background-color: $default-mid-color;
+            border-color: $default-mid-color;
+
+            &:after {
+              border-top: 10px solid $default-mid-color;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  .tab-content {
+    background-color: $white-color;
+    padding: 1em 0.5em;
+    overflow: hidden;
+
+    .statistics-item {
+      width: 100%;
+      background-color: $white-color;
+      padding: 1.5em 0em;
+      border-radius: 3px;
+    }
+
+    .tabs-head-title {
+      margin-top: 0px;
+      font-weight: lighter;
+      color: rgba(0, 0, 0, 0.7);
+    }
+
+    &.tabs-content-left {
+      width: 75%;
+      display: inline;
+      float: right;
+
+      &.bhoechie-tab {
+        h1 {
+          color: $info-mid-color;
+          font-size: 5em;
+          text-align: center;
+        }
+
+        .bhoechie-tab-content:not(.active) {
+          display: none;
+        }
+
+      }
+
+    }
+
+    &.tabs-content-right {
+      width: 75%;
+      display: inline;
+      float: left;
+
+      &.bhoechie-tab {
+        h1 {
+          color: $info-mid-color;
+          font-size: 5em;
+          text-align: center;
+        }
+
+        .bhoechie-tab-content:not(.active) {
+          display: none;
+        }
+
+      }
+
+    }
+
+  }
+
+  .nav-col-content {
+    padding-top: 0px;
+  }
+
+  .simple-border {
+    border: 0px;
+    border-bottom: $simple-border;
+  }
+
+}
+
+.single-tap {
+  width: 95%;
+  margin: 0px auto;
+  margin-bottom: 1em;
+  cursor: pointer;
+
+  .single-tap-title {
+    @include css-effect(all .3s ease-in-out);
+    padding: 1em;
+    font-size: 16px;
+    font-weight: lighter;
+    color: #3b97d2;
+    width: 100%;
+    background: $white-color;
+    text-align: left;
+    border: 1px solid #e4e5e7;
+    border-radius: 3px;
+
+    div {
+      display: inline;
+    }
+
+    .toggle-icon1 {
+      float: right;
+    }
+
+    .toggle-icons {
+      float: right;
+    }
+
+  }
+
+}

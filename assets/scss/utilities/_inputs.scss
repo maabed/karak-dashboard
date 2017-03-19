@@ -1,0 +1,521 @@
+//Select2 customized
+.select2 {
+  border-radius: 0px;
+  border: 0px;
+  padding-left: 0px;
+  width: 100% !important;
+  border-bottom: $select2-input-border;
+
+  .select2-selection {
+    border-radius: 0px !important;
+    border: 0px !important;
+
+    &:focus {
+      outline: none;
+    }
+
+    .select2-selection__rendered {
+      color: $submenue-color !important;
+    }
+
+  }
+
+}
+
+.select2-container.select2-container--open {
+  .select2-dropdown--below,
+  .select2-dropdown--above {
+    border-radius: 0px;
+    border: $select2-input-border;
+
+    .select2-results__option--highlighted[aria-selected] {
+      background-color: #f5f5f5;
+      color: $select2-color;
+      font-size: 13px;
+      text-decoration: none;
+    }
+
+    .select2-results__option[role='group'] {
+      padding: 0px;
+    }
+
+    .select2-results__option {
+      color: $select2-color;
+      font-size: 13px;
+      padding: 14px 16px;
+    }
+
+    .select2-results>.select2-results__options {
+      max-height: none;
+      overflow-y: visible;
+    }
+
+    .select2-results__option {
+      color: $select2-color;
+      font-size: 13px;
+    }
+
+    .select2-search__field {
+      border: $select2-input-border;
+
+      &:focus {
+        border: 1px solid $info-mid-color;
+      }
+
+    }
+
+  }
+
+}
+
+// Input fields customized
+input:not([type]),
+input[type='text']:not(.flat_email):not(.normal-text):not(.input-mini):not(.main-dashboard-search),
+input[type='password'],
+input[type='email']:not(.flat_email):not(.chat-search) {
+  background-color: transparent;
+  border-radius: 0px;
+  border: 0px;
+  box-shadow: none;
+  box-sizing: content-box;
+  font-size: 13px;
+  height: 3rem;
+  outline: none;
+  line-height: normal;
+  width: 100%;
+  @include css-effect(all 0.3s);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+input {
+  &:not(.flat_email) {
+    &:not(.search-text-box) {
+      &:not(.select2-search__field) {
+        &:focus {
+          border-bottom: 1px solid $info-mid-color;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+.input-field {
+  margin-top: 1rem;
+  position: relative;
+
+  .has-feedback.has-success>input {
+    &:not(.search-text-box),
+    &:not(.chat-search) {
+      &:focus {
+        border-bottom: 1px solid #3c763d;
+      }
+
+    }
+
+  }
+
+  .prefix ~ input,
+  .prefix ~ label {
+    margin-left: 3rem;
+    width: calc(100% - 3rem);
+  }
+
+  .prefix {
+    position: absolute;
+    width: 3rem;
+    @include css-effect(all 0.2s);
+  }
+
+  .material-icons.prefix.active {
+    color: $info-mid-color;
+  }
+
+  #user_prefix,
+  #pass_prefix {
+    margin-left: 2em;
+    width: 85%;
+  }
+
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2rem;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+  }
+
+  label {
+    color: $submenue-color;
+    cursor: text;
+    font-size: 13px;
+    left: 0px;
+    position: absolute;
+    font-weight: 400;
+    top: 0.8rem;
+    @include css-effect(.2s ease-out);
+  }
+
+  label.active {
+    -webkit-transform: translateY(-140%);
+    color: $info-mid-color;
+    font-size: 10px;
+    transform: translateY(-140%);
+  }
+
+}
+
+.has-error>input {
+  border-bottom: 1px solid #a94442;
+}
+
+//Slide toggles
+.toggleswitch {
+  margin-top: 10px;
+  margin-bottom: 8px;
+  display: inline-block;
+
+  .ch-toggle {
+    position: absolute;
+    visibility: hidden;
+
+    & + label {
+      display: block;
+      position: relative;
+      cursor: pointer;
+      outline: none;
+      user-select: none;
+      padding: 2px;
+      width: 50px;
+      height: 30px;
+      background-color: #dddddd;
+      border-radius: 60px;
+
+      &:before {
+        right: 1px;
+        background-color: #f1f1f1;
+        border-radius: 60px;
+        bottom: 1px;
+        content: '';
+        display: inline;
+        left: 1px;
+        position: absolute;
+        top: 1px;
+        @include css-effect(background 0.1s);
+      }
+
+      &:after {
+        width: 30px;
+        background-color: $white-color;
+        border-radius: 100%;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+        bottom: 1px;
+        content: '';
+        display: inline;
+        left: 1px;
+        position: absolute;
+        top: 1px;
+        @include css-effect(margin 0.1s);
+      }
+
+    }
+
+    &:checked {
+      +label {
+        &:after {
+          margin-left: 20px;
+        }
+
+      }
+
+    }
+
+    &-green {
+      &:checked+label {
+        &:before {
+          background-color: $success-color;
+        }
+
+      }
+
+    }
+
+    &-blue {
+      &:checked+label {
+        &:before {
+          background-color: $info-color;
+        }
+
+      }
+
+    }
+
+    &-red {
+      &:checked+label {
+        &:before {
+          background-color: $danger-color;
+        }
+
+      }
+
+    }
+
+    &-navy {
+      &:checked+label {
+        &:before {
+          background-color: $danger-color;
+        }
+
+      }
+
+    }
+
+    &-white {
+      &:checked+label {
+        &:before {
+          background-color: $white-color;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+//Checkboxes
+.checkbox {
+  padding-left: 25px;
+
+  input[type='checkbox'] {
+    opacity: 0;
+
+    &:checked +label {
+      &:after {
+        font-family: 'FontAwesome';
+        content: '\f00c';
+      }
+
+    }
+
+  }
+
+  label {
+    display: inline-block;
+    position: relative;
+    padding-left: 0px;
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: 0px;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      width: 17px;
+      height: 17px;
+      left: 0px;
+      margin-left: -25px;
+      border: 1px solid #cccccc;
+      border-radius: 3px;
+      background-color: $white-color;
+    }
+
+    &:after {
+      display: inline-block;
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      margin-left: -25px;
+      left: 0px;
+      top: 0px;
+      padding-left: 3px;
+      padding-top: 1px;
+      font-size: 11px;
+      color: #555555;
+    }
+
+  }
+
+  &-primary {
+    input[type='checkbox'] {
+      &:checked+label {
+        &:before {
+          background-color: $info-mid-color;
+          border-color: $info-mid-color;
+        }
+
+        &:after {
+          color: $white-color;
+        }
+
+      }
+
+    }
+
+  }
+
+  &-success {
+    input[type='checkbox'] {
+      &:checked+label {
+        &:before {
+          background-color: $success-mid-color;
+          border-color: $success-mid-color;
+        }
+
+        &:after {
+          color: $white-color;
+        }
+
+      }
+
+    }
+
+  }
+
+  &-info {
+    input[type='checkbox'] {
+      &:checked+label {
+        &:before {
+          background-color: $info-light-color;
+          border-color: $info-light-color;
+        }
+
+        &:after {
+          color: $white-color;
+        }
+
+      }
+
+    }
+
+  }
+
+  &-warning {
+    input[type='checkbox'] {
+      &:checked+label {
+        &:before {
+          background-color: $warning-mid-color;
+          border-color: $warning-mid-color;
+        }
+
+        &:after {
+          color: $white-color;
+        }
+
+      }
+
+    }
+
+  }
+
+  &-danger {
+    input[type='checkbox'] {
+      &:checked+label {
+        &:before {
+          background-color: $danger-mid-color;
+          border-color: $danger-mid-color;
+        }
+
+        &:after {
+          color: $white-color;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+//Circle checkboxes
+.checkbox-circle {
+  label {
+    &:before {
+      border-radius: 50%;
+    }
+
+  }
+
+}
+
+//Yes-No checkboxes
+.yes-no-check {
+  display: inline-block;
+  text-align: justify;
+  margin: 11px;
+
+  .btn {
+    padding: 6px 12px 6px 12px;
+    border-radius:0px;
+
+    .btn-success {
+      background-color: $success-mid-color;
+      border-color: $success-mid-color;
+    }
+
+  }
+
+}
+
+//Date range
+#reportrange {
+  background: $white-color;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid #cccccc;
+  width: 100%;
+}
+
+.daterangepicker {
+  td.active {
+    background-color: $info-mid-color;
+
+    &:hover {
+      background-color: $info-mid-color;
+    }
+
+  }
+
+}
+
+.datepicker--cell.-selected- {
+  background-color: $info-mid-color;
+
+  &:hover {
+    background-color: $info-mid-color;
+  }
+
+}
+
+.datepicker--cell.-current- {
+  background-color: $info-mid-color;
+  color: $white-color;
+}
+
+.input-group-addon {
+  background: none;
+  border: 0px;
+}
+
+.datepicker {
+  width: 100%;
+}
+
+//Tag inputs
+.bootstrap-tagsinput {
+  border-radius: 0px;
+}
