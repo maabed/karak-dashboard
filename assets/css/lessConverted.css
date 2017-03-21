@@ -902,8 +902,8 @@ input:not(.flat_email):not(.search-text-box):not(.select2-search__field):focus {
 .input-field .material-icons.prefix.active {
   color: #67b2e4;
 }
-.input-field #user_prefix,
-.input-field #pass_prefix {
+.input-field .user_prefix,
+.input-field .pass_prefix {
   margin-left: 2em;
   width: 85%;
 }
@@ -1108,7 +1108,7 @@ input:not(.flat_email):not(.search-text-box):not(.select2-search__field):focus {
   background-color: #62d995;
   border-color: #62d995;
 }
-#reportrange {
+.data-range {
   background: #ffffff;
   cursor: pointer;
   padding: 5px 10px;
@@ -2733,21 +2733,21 @@ a.btn-circle {
 .dataTables_wrapper .dataTables_filter label input:focus {
   border-bottom: 1px solid #67b2e4;
 }
-.dataTables_wrapper #ajax_table_wrapper .dt-buttons {
+.dataTables_wrapper .dataTables_wrapper .dt-buttons {
   width: 50%;
   float: left;
   margin-bottom: 1em;
 }
-.dataTables_wrapper #ajax_table_wrapper .dt-buttons a #Copy-table-icon {
+.dataTables_wrapper .dataTables_wrapper .dt-buttons a .fa-files-o {
   float: left;
   margin-top: 2px;
   margin-right: 7px;
 }
-.dataTables_wrapper #ajax_table_wrapper tr td .details-control {
+.dataTables_wrapper .dataTables_wrapper tr td .details-control {
   background: url('../images/details_open.png') no-repeat center center;
   cursor: pointer;
 }
-.dataTables_wrapper #ajax_table_wrapper tr.shown td.details-control {
+.dataTables_wrapper .dataTables_wrapper tr.shown td.details-control {
   background: url('../images/details_close.png') no-repeat center center;
 }
 .card,
