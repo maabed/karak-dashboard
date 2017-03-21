@@ -25,7 +25,7 @@ Copyright 2017 New Release
 	padding-right: 6px;
 	font-size: 12px;
 }
-
+/*used*/
 .small-label {
 	color: #888888;
 	font-weight: lighter;
@@ -35,7 +35,7 @@ Copyright 2017 New Release
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
-
+/*ussed*/
 .glyphicon-cog {
 	cursor: pointer;
 }
@@ -55,14 +55,14 @@ padding-left: 0px;
 height: 100px;
 width: 100px;
 }
-
+/*used*/
 #Color {
 -webkit-appearance: none;
 border: none;
 background: 0;
 margin-right: 15px;
 }
-
+/*used*/
 #Color::-webkit-color-swatch {
 border: none;
 }
@@ -89,12 +89,12 @@ margin-bottom: 10px;
 #semi {
 margin-bottom: 9px;
 }
-
+/*used*/
 .glyphicon {
 top: 9px;
 color: #999999;
 }
-
+/*used*/
 #circleGenerate {
 top: 1px;
 left: 15px;
@@ -197,23 +197,23 @@ padding-left: 0px !important;
 .no-padding-right {
 padding-right: 0px !important;
 }
-
+/*use*/
 .button-sync {
 padding-top: 15px;
 padding-bottom: 15px;
 }
-
+/*used*/
 .medium-title {
 color: #777;
 margin-top: 0px;
 margin-bottom: 0px;
 }
-
+/*used*/
 #BasicthickLine {
 margin-top: 15px;
 margin-bottom: 20px;
 }
-
+/*used*/
 #BasicthinLine {
 margin-top: 15px;
 margin-bottom: 20px;
@@ -230,20 +230,9 @@ text-align: justify;
 .static-height-2 {
 height: 10em;
 }
-
+/*used*/
 .select2 {
 width: 142px !important;
-}
-
-@-webkit-keyframes placeHolderShimmer {
-0% {
-	background-position: -468px 0
-}
-
-100% {
-	background-position: 468px 0
-}
-
 }
 
 @keyframes placeHolderShimmer {
@@ -257,13 +246,6 @@ width: 142px !important;
 
 }
 
-.timeline-wrapper {
-background-color: #e9eaed;
-color: #141823;
-padding: 20px;
-border: 1px solid #ccc;
-}
-
 .timeline-item {
 background: #fff;
 border: 1px solid;
@@ -273,16 +255,9 @@ margin: 0 auto;
 }
 
 .animated-background {
--webkit-animation-duration: 1s;
 animation-duration: 1s;
--webkit-animation-fill-mode: forwards;
-animation-fill-mode: forwards;
--webkit-animation-iteration-count: infinite;
 animation-iteration-count: infinite;
--webkit-animation-name: placeHolderShimmer;
 animation-name: placeHolderShimmer;
--webkit-animation-timing-function: linear;
-animation-timing-function: linear;
 background: #f6f7f8;
 background: #eeeeee;
 background: -webkit-gradient(linear, left top, right top, color-stop(8%, #eeeeee), color-stop(18%, #dddddd), color-stop(33%, #eeeeee));

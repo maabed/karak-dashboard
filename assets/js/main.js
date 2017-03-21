@@ -6,64 +6,52 @@ http://newrelease.io
 Copyright 2017 New Release
 */
 $(document).ready(function() {
-  $('#menu-toggle').click(function(e) {
-    e.preventDefault();
-    $('#wrapper').toggleClass('toggled');
-  });
+ $('#menu-toggle').click(function(e) {
+   e.preventDefault();
+   $('.wrapper').toggleClass('toggled');
+ });
 
-  $('.SubMenue').hide();
-  $('.MainMenue').click(function(e) {
-    e.preventDefault();
-    var $this = $(this).parent().find('.Submenue');
-    $('.Submenue').not($this).hide(300);
-    $this.toggle(300);
-  });
+ $('.sidebar-submenue').hide();
+ $('.has-submenu > a').click(function(e) {
+  e.preventDefault();
+   var $this = $(this).parent().find('.sidebar-submenue');
+   $('.sidebar-submenue').not($this).hide(300);
+   $this.toggle(300);
+ });
 
-  //Right side Section
-  $('#Right-Side-Section-Togle').click(function() {
-    var toggleWidth = $('#Right-Side-Section').width() == 300 ? '200px' : '300px';
-    $('#Right-Side-Section').animate({
-      width: toggleWidth
-    });
-  });
+ /* search  */
+ $('.search-text-box').keydown(function(e) {
+   if (e.which === 13) {
+     if ($('.search-text-box').val() != ' ') {
+       window.location = 'search.html';
+     }
+   }
+ });
 
-  $('#Right-Side-Section-Togle').click(function(e) {
-    e.preventDefault();
-    var $this = $(this).parent().find('#Right-Side-Section');
-    $('#Right-Side-Section').not($this).width('300px;');
-    $('#Right-Side-Section-Togle').hide(0);
-  });
+ $('.sidebar').find('li.selected').find('.sidebar-submenue').css('display', 'block');
 
-  // Left side section
-  $('#left-Side-Section-Togle').click(function() {
-    $('.InboxLeftSide').toggleClass('show-left');
-  });
 
-  /* search  */
-  $('#searchTB').keydown(function(e) {
-    if (e.which === 13) {
-      if ($('#searchTB').val() != ' ') {
-        window.location = 'search.html';
-      }
-    }
-  });
+ $('.sidebar-submenue > li > a').not( ".chat-view-navbar .sidebar-submenue > li > a").css('margin-left', '0px');
 
-  $('.sidebar-nav').find('li.selected').find('.Submenue').css('display', 'block');
-
-  $('.Submenue').css({
-    'padding': '0px',
-    'position': 'relative',
-    'padding-left': '0px'
-  });
-  $('.Submenue > li > a').css('margin-left', '40px');
+ $('.has-submenu > a').click(function(){
+  var current = $(this);
+  var parent = $(this).parent().parent();
+  var li = $(this).parent();
+  if(li.hasClass("open active")){
+    current.children('.left-arrow').removeClass("open");
+    li.removeClass("open active");  
+  }
+  else{
+    parent.children('li.open').find('.left-arrow').removeClass('open');
+    parent.children('li.open').removeClass("open active");
+    current.children('.left-arrow').addClass("open");
+    li.addClass("open active");
+  }
+   
 });
 
-function closeToggel() {
-  var a = document.getElementById('Right-Side-Section');
-  a.style.width = '0px';
-  $('#Right-Side-Section-Togle').show(0);
-}
+});
 
 function printbtn() {
-  window.print();
+ window.print();
 }

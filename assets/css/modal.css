@@ -5,6 +5,7 @@ Author: New Release
 http://newrelease.io
 Copyright 2017 New Release
 */
+/*used*/
 .img-border {
   border: 2px dashed #ccc;
   padding: 10px;
@@ -68,11 +69,11 @@ Copyright 2017 New Release
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-
+/*used*/
 .modal-close {
   float: left
 }
-
+/*used*/
 .modal-content {
   border-radius: 0px;
 }
@@ -126,7 +127,7 @@ Copyright 2017 New Release
 input:not([type]),
 input[type=text]:not(#flat_email),
 input[type=password],
-input[type=email]:not(#searchTB):not(#flat_email),input[type=url],input[type=time],input[type=date],input[type=datetime],input[type=datetime-local],input[type=tel],input[type=number],input[type=search],textarea.materialize-textarea {
+input[type=email]:not(.search-text-box):not(#flat_email),input[type=url],input[type=time],input[type=date],input[type=datetime],input[type=datetime-local],input[type=tel],input[type=number],input[type=search],textarea.materialize-textarea {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #9e9e9e;
@@ -142,23 +143,23 @@ input[type=email]:not(#searchTB):not(#flat_email),input[type=url],input[type=tim
   transition: all 0.3s;
 }
 
-input:not(#searchTB):not(#flat_email) {
+input:not(.search-text-box):not(#flat_email) {
   line-height: normal;
 }
 
 button,
-input:not(#searchTB):not(#flat_email),optgroup,select,textarea {
+input:not(.search-text-box):not(#flat_email),optgroup,select,textarea {
   color: inherit;
   font: inherit;
   margin: 0;
 }
-
+/*used*/
 input:not([type]),
-input[type="email"i]:not(#searchTB):not(#flat_email),input[type="number"i],input[type="password"i],input[type="tel"i],input[type="url"i],input[type="text"i] {
+input[type="email"i]:not(.search-text-box):not(#flat_email),input[type="number"i],input[type="password"i],input[type="tel"i],input[type="url"i],input[type="text"i] {
   padding: 1px 0px;
 }
 
-input:not(#searchTB):not(#flat_email),textarea,keygen,select,button {
+input:not(.search-text-box):not(#flat_email),textarea,keygen,select,button {
   text-rendering: auto;
   color: initial;
   letter-spacing: normal;
@@ -174,7 +175,7 @@ input:not(#searchTB):not(#flat_email),textarea,keygen,select,button {
 input:not([type]).validate+label,
 input[type=text].validate+label,
 input[type=password].validate+label,
-input[type=email]:not(#searchTB):not(#flat_email).validate+label,input[type=url].validate+label,input[type=time].validate+label,input[type=date].validate+label,input[type=datetime].validate+label,input[type=datetime-local].validate+label,input[type=tel].validate+label,input[type=number].validate+label,input[type=search].validate+label,textarea.materialize-textarea.validate+label {
+input[type=email]:not(.search-text-box):not(#flat_email).validate+label,input[type=url].validate+label,input[type=time].validate+label,input[type=date].validate+label,input[type=datetime].validate+label,input[type=datetime-local].validate+label,input[type=tel].validate+label,input[type=number].validate+label,input[type=search].validate+label,textarea.materialize-textarea.validate+label {
   width: 100%;
   pointer-events: none;
 }
@@ -201,7 +202,7 @@ label {
 input:not([type])+label:after,
 input[type=text]+label:after,
 input[type=password]+label:after,
-input[type=email]:not(#searchTB):not(#flat_email)+label:after,input[type=url]+label:after,input[type=time]+label:after,input[type=date]+label:after,input[type=datetime]+label:after,input[type=datetime-local]+label:after,input[type=tel]+label:after,input[type=number]+label:after,input[type=search]+label:after,textarea.materialize-textarea+label:after {
+input[type=email]:not(.search-text-box):not(#flat_email)+label:after,input[type=url]+label:after,input[type=time]+label:after,input[type=date]+label:after,input[type=datetime]+label:after,input[type=datetime-local]+label:after,input[type=tel]+label:after,input[type=number]+label:after,input[type=search]+label:after,textarea.materialize-textarea+label:after {
   display: block;
   content: "";
   position: absolute;
@@ -212,7 +213,7 @@ input[type=email]:not(#searchTB):not(#flat_email)+label:after,input[type=url]+la
 input:not([type])+label:after,
 input[type=text]+label:after,
 input[type=password]+label:after,
-input[type=email]:not(#searchTB):not(#flat_email)+label:after,input[type=url]+label:after,input[type=time]+label:after,input[type=date]+label:after,input[type=datetime]+label:after,input[type=datetime-local]+label:after,input[type=tel]+label:after,input[type=number]+label:after,input[type=search]+label:after,textarea.materialize-textarea+label:after {
+input[type=email]:not(.search-text-box):not(#flat_email)+label:after,input[type=url]+label:after,input[type=time]+label:after,input[type=date]+label:after,input[type=datetime]+label:after,input[type=datetime-local]+label:after,input[type=tel]+label:after,input[type=number]+label:after,input[type=search]+label:after,textarea.materialize-textarea+label:after {
   display: block;
   content: "";
   position: absolute;
@@ -230,7 +231,7 @@ input[type=email]:not(#searchTB):not(#flat_email)+label:after,input[type=url]+la
 .input-field > label {
   font-weight: 400;
 }
-
+/*used*/
 #flat_email {
   border-radius: 0px;
   height: 50px;
@@ -242,7 +243,7 @@ input[type=email]:not(#searchTB):not(#flat_email)+label:after,input[type=url]+la
   width: 92%;
   display: inline;
 }
-
+/*used*/
 .modal-body > .jumbotron {
   padding-left: 5px !important;
   padding-top: 5px !important;
@@ -250,40 +251,40 @@ input[type=email]:not(#searchTB):not(#flat_email)+label:after,input[type=url]+la
   padding-right: 5px !important;
   border-radius: 0px;
 }
-
+/*used*/
 .middle-dialog {
-  top: 15%;
+  margin-top: 15%;
 }
-
+/*used*/
 .jumbotron > .glyphicon-search {
   font-size: 26px;
   margin-top: 10px;
   cursor: pointer;
   color: #9b9b9b;
 }
-
+/*used*/
 #email-label {
   font-size: 10px;
   color: #67b2e4;
   -webkit-transform: translateY(-140%);
   transform: translateY(-140%);
 }
-
+/*used*/
 #password-label {
   font-size: 10px;
   color: #67b2e4;
   -webkit-transform: translateY(-140%);
   transform: translateY(-140%);
 }
-
+/*used*/
 .custome-margin {
   margin-top: 40%;
 }
-
+/*used*/
 .right-modal-content {
   text-align: center;
 }
-
+/*used*/
 .right-button {
   width: 50%;
   margin-bottom: 10px;

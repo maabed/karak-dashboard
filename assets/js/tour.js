@@ -7,19 +7,19 @@ Copyright 2017 New Release
 */
 $(function($) {
   'use strict';
-  $(document).ready(function() {
+  $('document').ready(function() {
     $(".popover-navigation").find(".btn-group").children().remove();
     var tour = new Tour({
-      backdrop: true,
+      name : 'index-tour',
       steps: [{
         element: "#live-tour",
         title: "Title of my step",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id erat hendrerit."
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id erat hendrerit.",
       }, {
         element: "#income-tour",
         title: "Title of my step",
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id erat hendrerit.",
-        placement: "left",
+        placement: "left"
       }, {
         element: "#world-tour",
         title: "Title of my step",
@@ -39,6 +39,8 @@ $(function($) {
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id erat hendrerit.",
         placement: "left"
       }, ],
+      backdrop: false,
+      storage: false,
       template: "<div class='popover tour'> \
                 <div class='arrow'></div> \
                 <h3 class='popover-title'></h3> \
@@ -54,5 +56,6 @@ $(function($) {
     tour.init();
     // Start the tour
     tour.start();
+
   });
 });

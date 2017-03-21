@@ -127,11 +127,11 @@ Copyright 2017 New Release
 }
 
 @media screen and (max-width:767px) {
-  .InboxLeftSide {
+  .inbox-nav {
     left: 0px;
   }
 
-  .Split-left-sidr {
+  .split-left-side {
     width: 100%;
   }
 
@@ -142,7 +142,7 @@ Copyright 2017 New Release
 }
 
 @media screen and (max-width:660px) {
-  .InboxLeftSide {
+  .inbox-nav {
     width: 0px;
   }
 
@@ -157,7 +157,7 @@ Copyright 2017 New Release
 }
 
 @media screen and (min-width:767px) and (max-width:991px) {
-  .Split-left-sidr {
+  .split-left-side {
     width: 100%;
   }
 

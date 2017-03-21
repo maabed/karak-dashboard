@@ -32,12 +32,12 @@ Copyright 2017 New Release
 .modal.right.fade.in .modal-dialog {
   right: 0;
 }
-
-.col-contint > img {
+/*used*/
+.col-content > img {
   width: 100%;
 }
 
-.form-section {
+.section-label {
   min-height: 0px;
   margin-bottom: 0px;
   padding: 0px;

@@ -36,7 +36,7 @@ Copyright 2017 New Release
 .label {
   border-radius: 0px;
 }
-
+/*used*/
 .static-hover-cont {
   height: 195px;
 }
@@ -66,7 +66,7 @@ Copyright 2017 New Release
   margin-right: 15px;
   display: inline;
 }
-
+/*used*/
 .select2 {
   width: 300px !important;
 }
@@ -94,7 +94,7 @@ Copyright 2017 New Release
 .no-margin-left {
   margin-left: 0px;
 }
-
+/*used*/
 #sweet-generate {
   cursor: pointer;
   color: #999;
@@ -137,4 +137,7 @@ Copyright 2017 New Release
   color: #6a6c6f;
   font-size: 12px;
   display: inline-block;
+}
+.sweet-alert .sa-input-error {
+  top: 15px;
 }

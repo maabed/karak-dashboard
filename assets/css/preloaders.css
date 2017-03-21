@@ -6,51 +6,60 @@ http://newrelease.io
 Copyright 2017 New Release
 */
 .loader {
-  height: 4px;
-  margin-top: 45px;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  background-color: #ddd;
+    height: 4px;
+    margin-top: 45px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: #ddd;
+  
 }
 
 .loader:before {
-  display: block;
-  position: absolute;
-  content: "";
-  left: -200px;
-  width: 200px;
-  height: 4px;
-  background-color: #67b2e4;
-  animation: loading 2s linear infinite;
+    display: block;
+    position: absolute;
+    content: "";
+    left: -200px;
+    width: 200px;
+    height: 4px;
+    background-color: #67b2e4;
+    animation: loading 2s linear infinite;
+  
 }
 
 @keyframes loading {
-  from {
-    left: -200px;
-    width: 30%;
+    from {
+        left: -200px;
+        width: 30%;
+    
   }
 
-  50% {
-    width: 30%;
+    50% {
+        width: 30%;
+    
   }
 
-  70% {
-    width: 70%;
+    70% {
+        width: 70%;
+    
   }
 
-  80% {
-    left: 50%;
+    80% {
+        left: 50%;
+    
   }
 
-  95% {
-    left: 120%;
+    95% {
+        left: 120%;
+    
   }
 
-  to {
-    left: 100%;
+    to {
+        left: 100%;
+    
   }
 
+  
 }
 
 .vertical--center {
@@ -134,51 +143,7 @@ Copyright 2017 New Release
 
 }
 
-@keyframes preloaderCSSTop {
-  0% {
-    background-color: #3498db;
-  }
-
-  100% {
-    background-color: white;
-  }
-
-}
-
 @-webkit-keyframes preloaderCSSBottom {
-  0% {
-    background-color: #3498db;
-  }
-
-  100% {
-    background-color: white;
-  }
-
-}
-
-@keyframes preloaderCSSBottom {
-  0% {
-    background-color: #3498db;
-  }
-
-  100% {
-    background-color: white;
-  }
-
-}
-
-@-webkit-keyframes preloaderCSSTopAfter {
-  0% {
-    background-color: #3498db;
-  }
-
-  100% {
-    background-color: white;
-  }
-
-}
-
-@keyframes preloaderCSSTopAfter {
   0% {
     background-color: #3498db;
   }
@@ -200,6 +165,39 @@ Copyright 2017 New Release
 
 }
 
+@-webkit-keyframes preloaderCSSTopAfter {
+  0% {
+    background-color: #3498db;
+  }
+
+  100% {
+    background-color: white;
+  }
+
+}
+
+@keyframes preloaderCSSBottom {
+  0% {
+    background-color: #3498db;
+  }
+
+  100% {
+    background-color: white;
+  }
+
+}
+
+@keyframes preloaderCSSTop {
+  0% {
+    background-color: #3498db;
+  }
+
+  100% {
+    background-color: white;
+  }
+
+}
+
 @keyframes preloaderCSSBottomAfter {
   0% {
     background-color: black;
@@ -211,21 +209,23 @@ Copyright 2017 New Release
 
 }
 
-showbox {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 5%;
+@keyframes preloaderCSSTopAfter {
+  0% {
+    background-color: #3498db;
+  }
+
+  100% {
+    background-color: white;
+  }
+
 }
 
 .loader1 {
-  position: relative;
-  margin: 0 auto;
-  width: 75px;
+    position: relative;
+    margin: 0 auto;
+    width: 75px;
+  
 }
-
 .loader1:before {
   content: '';
   display: block;
@@ -233,121 +233,85 @@ showbox {
 }
 
 .circular {
-  -webkit-animation: rotate 2s linear infinite;
-  animation: rotate 2s linear infinite;
-  height: 100%;
-  -webkit-transform-origin: center center;
-  transform-origin: center center;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+    -webkit-animation: rotate 2s linear infinite;
+    animation: rotate 2s linear infinite;
+    height: 100%;
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  
 }
 
 .path {
-  stroke-dasharray: 1, 200;
-  stroke-dashoffset: 0;
-  -webkit-animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
-  animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
-  stroke-linecap: round;
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+    -webkit-animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+    animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+  
 }
 
 @keyframes rotate {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    
   }
 
-}
-
-@-webkit-keyframes rotate {
-  from {
-    -webkit-transform: rotate(360deg);
-  }
-
-  to {
-    -webkit-transform: rotate(360deg);
-  }
-
+  
 }
 
 @-webkit-keyframes dash {
-  0% {
-    stroke-dasharray: 1, 200;
-    stroke-dashoffset: 0;
+    0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+    
   }
 
-  50% {
-    stroke-dasharray: 89, 200;
-    stroke-dashoffset: -35px;
+    50% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -35px;
+    
   }
 
-  100% {
-    stroke-dasharray: 89, 200;
-    stroke-dashoffset: -124px;
-  }
-
-}
-
-@keyframes dash {
-  0% {
-    stroke-dasharray: 1, 200;
-    stroke-dashoffset: 0;
-  }
-
-  50% {
-    stroke-dasharray: 89, 200;
-    stroke-dashoffset: -35px;
-  }
-
-  100% {
-    stroke-dasharray: 89, 200;
-    stroke-dashoffset: -124px;
+    100% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -124px;
+    
   }
 
 }
 
-@-webkit-keyframes color {
-  100%,
-  0% {
-    stroke: #67b2e4;
-  }
-
-  40% {
-    stroke: #62d995;
-  }
-
-  66% {
-    stroke: #f5d34b;
-  }
-
-  80%,
-  90% {
-    stroke: #ed796d;
-  }
 
 }
 
 @keyframes color {
-  100%,
-  0% {
+100%,
+0% {
     stroke: #67b2e4;
-  }
+  
+}
 
-  40% {
+40% {
     stroke: #62d995;
-  }
+  
+}
 
-  66% {
+66% {
     stroke: #f5d34b;
-  }
+  
+}
 
-  80%,
-  90% {
+80%,
+90% {
     stroke: #ed796d;
-  }
+  
+}
+
 
 }

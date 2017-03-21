@@ -5,16 +5,19 @@ Author: New Release
 http://newrelease.io
 Copyright 2017 New Release
 */
+
+/* used */
 .checkbox {
   padding-left: 20px;
 }
+/* used */
 
 .checkbox label {
   display: inline-block;
   position: relative;
   padding-left: 5px;
 }
-
+/* used */
 .checkbox label::before {
   content: "";
   display: inline-block;
@@ -30,7 +33,7 @@ Copyright 2017 New Release
   -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
   transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
 }
-
+/* used */
 .checkbox label::after {
   display: inline-block;
   position: absolute;
@@ -44,11 +47,11 @@ Copyright 2017 New Release
   font-size: 11px;
   color: #555555;
 }
-
+/* used */
 .checkbox input[type="checkbox"] {
-  opacity: 0;
+    opacity: 0;
 }
-
+/* used */
 .checkbox input[type="checkbox"]:checked + label::after {
   font-family: 'FontAwesome';
   content: "\f00c";
@@ -70,48 +73,48 @@ Copyright 2017 New Release
 .checkbox.checkbox-inline {
   margin-top: 0;
 }
-
+/* used */
 .checkbox-primary input[type="checkbox"]:checked + label::before {
   background-color: #67b2e4;
   border-color: #67b2e4;
 }
-
+/* used */
 .checkbox-primary input[type="checkbox"]:checked + label::after {
   color: #fff;
 }
-
+/* used */
 .checkbox-danger input[type="checkbox"]:checked + label::before {
   background-color: #ed796d;
   border-color: #ed796d;
 }
-
+/* used */
 .checkbox-danger input[type="checkbox"]:checked + label::after {
   color: #fff;
 }
-
+/* used */
 .checkbox-info input[type="checkbox"]:checked + label::before {
   background-color: #99cbed;
   border-color: #99cbed;
 }
-
+/* used */
 .checkbox-info input[type="checkbox"]:checked + label::after {
   color: #fff;
 }
-
+/* used */
 .checkbox-warning input[type="checkbox"]:checked + label::before {
   background-color: #f5d34b;
   border-color: #f5d34b;
 }
-
+/* used */
 .checkbox-warning input[type="checkbox"]:checked + label::after {
   color: #fff;
 }
-
+/* used */
 .checkbox-success input[type="checkbox"]:checked + label::before {
   background-color: #62d995;
   border-color: #62d995;
 }
-
+/* used */
 .checkbox-success input[type="checkbox"]:checked + label::after {
   color: #fff;
 }

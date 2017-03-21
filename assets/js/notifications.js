@@ -9,36 +9,6 @@ $(function($) {
 
     'use strict';
     $(document).ready(function() {
-        
-        /* Bootstrap alerts */
-        $('#alert-generate').click(function() {
-            if ($('#alert-select').val() == 'success') {
-                $('.alert').remove();
-                $('body').prepend("<div class='alert alert-success global-alert alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>×</a>This alert box could indicate a successful or positive action.</div>");
-                setTimeout(function() {
-                    $('.alert-success').fadeOut();
-                }, 2000);
-            } else if ($('#alert-select').val() == 'info') {
-                $('.alert').remove();
-                $('body').prepend("<div class='alert alert-info global-alert alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>×</a>This alert box indicates an informative change or action.</div>");
-                setTimeout(function() {
-                    $('.alert-info').fadeOut();
-                }, 2000);
-            } else if ($('#alert-select').val() == 'warning') {
-                $('.alert').remove();
-                $('body').prepend("<div class='alert alert-warning global-alert alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>×</a>This alert box indicates a warning.</div>");
-                setTimeout(function() {
-                    $('.alert-warning').fadeOut();
-                }, 2000);
-            } else {
-                $('.alert').remove();
-                $('body').prepend("<div class='alert alert-danger global-alert alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>×</a>This alert box indicates a potentially negative action.</div>");
-                setTimeout(function() {
-                    $('.alert-danger').fadeOut();
-                }, 2000);
-            }
-        });
-
         /* Toastr alerts */
         $('#right').click(function(event) {
             event.stopPropagation();

@@ -5,6 +5,8 @@ Author: New Release
 http://newrelease.io
 Copyright 2017 New Release
 */
+
+/*used*/
 .active-user-acount,
 .not-active-user-acount {
   -webkit-transition: all 0.5s ease;
@@ -12,23 +14,23 @@ Copyright 2017 New Release
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-
+/*used*/
 .done-task {
   color: #62d995 !important;
 }
-
+/*used*/
 .inprogress-task {
   color: #f5d34b !important;
 }
-
+/*used*/
 .hold-task {
   color: #ed796d !important;
 }
-
+/*used*/
 .dashed-row-style tr td {
   border-left: 15px solid #fff !important;
 }
-
+/*used*/
 .table > tbody > tr > td,
 .table > tbody > tr > th,
 .table > thead > tr > td,
@@ -41,31 +43,31 @@ Copyright 2017 New Release
 .table > tfoot > tr > th {
   border-top: 0 !important;
 }
-
+/*used*/
 .users-table-format tr td img {
   width: 6em;
   height: auto;
   float: left;
   margin-right: 0.6em;
 }
-
+/*used*/
 .colored-table-head {
   font-weight: normal;
 }
-
+/*used*/
 .active-user-acount td img {
   border-left: 4px solid #67b2e4 !important;
 }
-
+/*used*/
 .not-active-user-acount td img {
   border-left: 4px solid #C6CCCC !important;
   filter: grayscale(100%);
 }
-
+/*used*/
 .active-user-row {
   color: #67b2e4 !important;
 }
-
+/*used*/
 .not-active-user-row {
   color: #C6CCCC !important;
 }
@@ -91,7 +93,8 @@ Copyright 2017 New Release
   border-radius: 50%;
 }
 
-.content-padding {
+/*used*/
+.  {
   padding: 20px !important;
   padding-left: 10px !important;
   font-weight: 100;
@@ -103,13 +106,13 @@ Copyright 2017 New Release
 .dashboard-th {
   color: #fff;
 }
-
+/*used*/
 .basic-th {
   color: rgba(0, 0, 0, 0.7);
   border-bottom-width: 1px !important;
   font-weight: normal;
 }
-
+/*used*/
 .table.table-hover {
   margin-top: 8px;
 }
