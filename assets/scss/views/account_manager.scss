@@ -1,3 +1,4 @@
+/* Account Management View */
 .account_manager-page {
   .all-income {
     text-align: center;
@@ -14,6 +15,7 @@
 
   }
 
+  /* User Information Box*/
   .account-personal-info {
     color: rgba(0, 0, 0, 0.51);
     font-weight: lighter;
@@ -64,6 +66,7 @@
 
   }
 
+  /* Transactions Chart */
   .account-managment-chart,
   .account-managment-transactions {
     .translateform {
@@ -81,6 +84,7 @@
 
   }
 
+  /* Datepicker */
   .datepicker {
     border: 0px;
     width: 100%;
@@ -105,7 +109,9 @@
         th {
           font-weight: 100;
         }
+
       }
+
     }
 
     .static-width {

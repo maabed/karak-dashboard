@@ -1,6 +1,8 @@
+/* Email View */
 .inbox-container {
   margin-top: 3.6em;
 
+  /* Email Left Side Linkes */
   .inbox-nav {
     background: #2d3446;
     float: left;
@@ -90,6 +92,7 @@
     border-radius: 0px;
     overflow: scroll;
 
+    /* Compose Email View */
     .Compose-table {
       width: 90%;
       margin-left: 1em;
