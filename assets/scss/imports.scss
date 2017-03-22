@@ -2,76 +2,114 @@
 @import "utilities/_mixins";
 @import "main";
 @import "base";
+
 /*! main */
 @import "main";
+
+/*! Buttons */
 @import "utilities/_buttons";
 /*! cards */
 @import "utilities/_cards";
 
+/*! Data Table */
 @import "utilities/_data_table";
 
+/*! Inputs */
 @import "utilities/_inputs";
 
+/*! Lists */
 @import "utilities/_lists";
 
+/*! Loading */
 @import "utilities/_loading";
 
+/*! Menus */
 @import "utilities/_menus";
 
+/*! Modals */
 @import "utilities/_modals";
 
+/*! Notifications */
 @import "utilities/_notifications";
 
+/*! Panels */
 @import "utilities/_panels";
 
+/*! Tables */
 @import "utilities/_tables";
 
+/*! Tabs */
 @import "utilities/_tabs";
 
+/*! UI */
 @import "utilities/_ui";
+
+
 
 /* Views */
 
+/*! Forms */
 @import "views/forms";
 
+/*! Account Manager */
 @import "views/account_manager";
 
+/*! Buttons */
 @import "views/buttons";
 
+/*! Charts */
 @import "views/charts";
 
+/*! Chat */
 @import "views/chat";
 
+/*! Colors */
 @import "views/colors";
 
+/*! Email */
 @import "views/email";
 
+/*! Errors Pages */
 @import "views/errors";
 
+/*! Icons */
 @import "views/icons";
 
+/*! Index */
 @import "views/index";
 
+/*! Invoice */
 @import "views/invoice";
 
+/*! Landing Page */
 @import "views/landing_page";
 
+/*! Loading */
 @import "views/loading";
 
+/*! Lock Screen */
 @import "views/lock_screen";
 
+/*! Login */
 @import "views/login";
 
+/*! Map */
 @import "views/map";
 
+/*! Modals */
 @import "views/modals";
 
+/*! Notifications */
 @import "views/notifications";
 
+/*! Search */
 @import "views/search";
 
+/*! Social */
 @import "views/social";
 
+/*! Tour */
 @import "views/tour";
 
+/*! Forms Wizard*/
 @import "views/wizard";

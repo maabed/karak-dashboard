@@ -1,3 +1,4 @@
+/* Charts View */
 .chart-height {
   height: 300px;
 }
@@ -7,4 +8,8 @@
   font-weight: bold;
   margin: 0px;
   margin-top: 0.7em;
+}
+
+.highcharts-credits {
+	display: none;
 }
