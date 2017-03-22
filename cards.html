@@ -26,16 +26,16 @@
         <!-- Sidebar -->
         <div class="sidebar-wrapper">
             <div class="sidebar-brand" id="company-name">Blue Dashboard</div>
-            <ul class="sidebar-nav">
-                <li>
+            <ul class="sidebar">
+                <li class="sidebar-item">
                     <a href="index.html"><i class="fa fa-tachometer nav-icon" aria-hidden="true"></i>Dashboard</a>
                 </li>
-                <li>
-                    <a class="nav-hyperlink" href="#">
+                <li class="sidebar-item has-submenu">
+                    <a href="#">
                         <i class="fa fa-file-text nav-icon" aria-hidden="true"></i> Forms
-                        <i class="fa fa-angle-left left-arrow rotate" aria-hidden="true"></i>
+                        <i class="fa fa-angle-left left-arrow" aria-hidden="true"></i>
                     </a>
-                    <ul class="submenue">
+                    <ul class="sidebar-submenue">
                         <li class="submenu-li">
                             <a href="forms.html">
                                     Form Elements
@@ -48,22 +48,22 @@
                         </li>
                     </ul>
                 </li>
-                <li>
+                <li class="sidebar-item">
                     <a href="charts.html">
                         <i class="fa fa-pie-chart  nav-icon" aria-hidden="true"></i> Charts
                     </a>
                 </li>
-                <li>
+                <li class="sidebar-item">
                     <a href="inbox.html">
                         <i class="fa fa-envelope nav-icon" aria-hidden="true"></i> Email
                         <span class="label info-mid list-badge">2</span>
                     </a>
                 </li>
-                <li class="selected">
-                    <a class="nav-hyperlink" href="#">
-                        <i class="fa fa-eye   nav-icon" aria-hidden="true"></i> UI Elements<span class="label success-mid list-badge">New</span> <i class="fa fa-angle-left left-arrow rotate" aria-hidden="true"></i>
+                <li class="selected open active sidebar-item has-submenu">
+                    <a href="#">
+                        <i class="fa fa-eye   nav-icon" aria-hidden="true"></i> UI Elements<span class="label success-mid list-badge">New</span> <i class="fa fa-angle-left left-arrow open" aria-hidden="true"></i>
                     </a>
-                    <ul class="submenue">
+                    <ul class="sidebar-submenue">
                         <li class="submenu-li">
                             <a href="icons.html">
                                     Icons
@@ -94,7 +94,7 @@
                                     Tabs
                                 </a>
                         </li>
-                        <li class="submenu-li inner-selected">
+                        <li class="submenu-li">
                             <a href="cards.html" class="inner-selected">
                                     Cards
                                 </a>
@@ -126,29 +126,24 @@
                         </li>
                     </ul>
                 </li>
-                <li>
+                <li class="sidebar-item">
                     <a href="calendar.html">
                         <i class="fa fa-calendar-check-o nav-icon" aria-hidden="true"></i> Calendar
                     </a>
                 </li>
-                <li>
-                    <a href="social.html">
-                        <i class="fa fa-share-alt-square nav-icon" aria-hidden="true"></i> Social
-                    </a>
-                </li>
-                <li>
-                    <a class="nav-hyperlink" href="#">
+                <li class="sidebar-item has-submenu">
+                    <a href="#">
                         <i class="fa fa-star nav-icon" aria-hidden="true"></i>App Views
                         <span class="label warning-mid list-badge">Special</span>
-                        <i class="fa fa-angle-left left-arrow rotate" aria-hidden="true"></i>
+                        <i class="fa fa-angle-left left-arrow" aria-hidden="true"></i>
                     </a>
-                    <ul class="submenue">
+                    <ul class="sidebar-submenue">
                         <li class="submenu-li">
                             <a href="account_manager.html">
                                     Account Management
                                 </a>
                         </li>
-                        <li class="submenu-li">
+                        <li class=" submenu-li">
                             <a href="landing_page.html">
                                     Landing Page
                                 </a>
@@ -158,14 +153,19 @@
                                     Chat View
                                 </a>
                         </li>
+                         <li class="submenu-li">
+                            <a href="social.html">
+                                    Social
+                                </a>
+                        </li>
                     </ul>
                 </li>
-                <li>
-                    <a class="nav-hyperlink" href="#">
+                <li class="sidebar-item has-submenu">
+                    <a href="#">
                         <i class="fa fa-table nav-icon" aria-hidden="true"></i> Tables
-                        <i class="fa fa-angle-left left-arrow rotate" aria-hidden="true"></i>
+                        <i class="fa fa-angle-left left-arrow" aria-hidden="true"></i>
                     </a>
-                    <ul class="submenue">
+                    <ul class="sidebar-submenue">
                         <li class="submenu-li">
                             <a href="tables.html">
                                     Basic Table
@@ -178,12 +178,12 @@
                         </li>
                     </ul>
                 </li>
-                <li>
-                    <a class="nav-hyperlink" href="#">
+                <li class="sidebar-item has-submenu">
+                    <a href="#">
                         <i class="fa fa-map nav-icon" aria-hidden="true"></i> Maps
-                        <i class="fa fa-angle-left left-arrow rotate" aria-hidden="true"></i>
+                        <i class="fa fa-angle-left left-arrow" aria-hidden="true"></i>
                     </a>
-                    <ul class="submenue">
+                    <ul class="sidebar-submenue">
                         <li class="submenu-li">
                             <a href="map.html">
                                     Vector Maps
@@ -196,12 +196,12 @@
                         </li>
                     </ul>
                 </li>
-                <li>
-                    <a class="nav-hyperlink" href="#">
+                <li class="sidebar-item has-submenu">
+                    <a href="#">
                         <i class="fa fa-gift nav-icon" aria-hidden="true"></i> Extra
-                        <i class="fa fa-angle-left left-arrow rotate" aria-hidden="true"></i>
+                        <i class="fa fa-angle-left left-arrow" aria-hidden="true"></i>
                     </a>
-                    <ul class="submenue">
+                    <ul class="sidebar-submenue">
                         <li class="submenu-li">
                             <a href="invoice.html">
                                     Invoice
@@ -264,7 +264,7 @@
                         </div>
                         <div id="user-box" class="user-box right-side-items">
                             <p> Mr.Sami<i class="fa fa-angle-down" aria-hidden="true"></i></p>
-                            <img src="assets/images/Sami.jpg" />
+                            <img src="assets/images/user_01_36.jpg" />
                         </div>
                     </div>
                 </div>
@@ -273,13 +273,13 @@
                     <h5>Notifications</h5>
                     <div class="single-content-row">
                         <a href="#">
-                            <img alt="user name" src="assets/images/Sami.jpg" />
+                            <img alt="user name" src="assets/images/user_01_54.jpg" />
                             <p><b>Mohammad Meshaal</b>wants your confirmation on his Leave Request on 12 Mar 2017</p>
                         </a>
                     </div>
                     <div class="single-content-row">
                         <a href="#">
-                            <img alt="user name" src="assets/images/Team-Member-1-270x250.jpg" />
+                            <img alt="user name" src="assets/images/user_04_54.jpg" />
                             <p><b>Nasir ahmad</b>sent a payment on 11 Mar 2017</p>
                         </a>
                     </div>
@@ -292,28 +292,28 @@
                     <h5>Messages <a class="send-message-link" href="#">Send New Message</a></h5>
                     <div class="single-content-row">
                         <a href="#">
-                            <img alt="user name" alt="user name" src="assets/images/team-member-5.jpg" />
+                            <img alt="user name" alt="user name" src="assets/images/user_02_54.jpg" />
                             <p><b>Layla smith</b>
                                 <br /> Job offer</p>
                         </a>
                     </div>
                     <div class="single-content-row">
                         <a href="#">
-                            <img alt="user name" src="assets/images/Sami.jpg" />
+                            <img alt="user name" src="assets/images/user_01_54.jpg" />
                             <p><b>Mohammad Meshaal</b>
                                 <br />Please send me the work templates</p>
                         </a>
                     </div>
                     <div class="single-content-row">
                         <a href="#">
-                            <img alt="user name" src="assets/images/team-member.jpg" />
+                            <img alt="user name" src="assets/images/user_03_54.jpg" />
                             <p><b>Dana khalid</b>
                                 <br />Do you wanna hang out today?</p>
                         </a>
                     </div>
                     <div class="single-content-row">
                         <a href="#">
-                            <img alt="user name" src="assets/images/Team-Member-1-270x250.jpg" />
+                            <img alt="user name" src="assets/images/user_04_54.jpg" />
                             <p><b>Nasir ahmad</b>
                                 <br />Are we going to the match today?</p>
                         </a>
@@ -403,7 +403,7 @@
                             <p>The image card is a very nice addition to your website so if you need to use it you just have to wrap the image with a <code>.card-image</code> class and then put everything inside the a div with the<code>.card</code> class.</p>
                             <div class="card">
                                 <div class="card-image">
-                                    <img alt="card title" src="assets/images/cards.png-2.gif">
+                                    <img alt="card title" src="assets/images/card_01.jpg">
                                     <span class="card-title">Card Title</span>
                                 </div>
                                 <div class="card-content">
@@ -421,7 +421,7 @@
                             <p>This card gives you the ability to add an image but it also gives you the ability to make a nice effect by hiding some elements which you can display.All you have to do is adding the components in a div with the class <code>.card-reveal</code></p>
                             <div class="card">
                                 <div class="card-image">
-                                    <img alt="card title" class="activator" src="assets/images/cards3.gif">
+                                    <img alt="card title" class="activator" src="assets/images/card_02.jpg">
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
@@ -445,7 +445,7 @@
                                     <p>This card provide the ability to place its components in a horizontal position by add the class <code>horizontal</code> to the parent tag and the <code>.card-stacked</code> class to the children tags.</p>
                                     <div class="card horizontal">
                                         <div class="card-image">
-                                            <img alt="card title" src="assets/images/image1.gif">
+                                            <img alt="card title" src="assets/images/card_03.jpg">
                                         </div>
                                         <div class="card-stacked">
                                             <div class="card-content">
@@ -470,7 +470,7 @@
                                             </div>
                                         </div>
                                         <div class="card-image">
-                                            <img alt="card title" src="assets/images/cards4.gif">
+                                            <img alt="card title" src="assets/images/card_04.jpg">
                                         </div>
                                     </div>
                                 </div>
@@ -551,7 +551,7 @@
         <div class="right-side-section-toggle" data-toggle="modal" data-toggle="modal" data-target="#colors-modal">
             <i class="fa fa-pencil-square-o"></i>
         </div>
-        <div class="modal right fade" id="colors-modal" tabindex="-1" role="dialog" aria-labelledby="right-side-modal-label">
+        <div class="modal right fade colors-modal" id="colors-modal"  tabindex="-1" role="dialog" aria-labelledby="right-side-modal-label">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">

@@ -13,8 +13,6 @@
     <link type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <!-- Bootstrap Core CSS -->
     <link type="text/css" href="assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link type="text/css" rel="stylesheet" href="assets/css/scss-converted.css">
     <!-- Font Awesome library -->
     <link type="text/css" href="assets/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
     <!-- Calendar -->
@@ -25,6 +23,8 @@
     <link type="text/css" rel="stylesheet" href="assets/vendors/animatecss/animate.min.css" />
     <!-- Select2 CSS -->
     <link type="text/css" href="assets/vendors/select2/css/select2.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link type="text/css" href="assets/css/scss-converted.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -32,18 +32,16 @@
         <!-- Sidebar -->
         <div class="sidebar-wrapper">
             <div class="sidebar-brand" id="company-name">Blue Dashboard</div>
-            <ul class="sidebar-nav">
-                <li class="selected">
-                    <a href="index.html">
-                        <i class="fa fa-tachometer nav-icon" aria-hidden="true"></i>Dashboard
-                    </a>
+            <ul class="sidebar">
+                <li class="selected open active sidebar-item">
+                    <a href="index.html"><i class="fa fa-tachometer nav-icon" aria-hidden="true"></i>Dashboard</a>
                 </li>
-                <li>
-                    <a class="nav-hyperlink" href="#">
+                <li class="sidebar-item has-submenu">
+                    <a href="#">
                         <i class="fa fa-file-text nav-icon" aria-hidden="true"></i> Forms
-                        <i class="fa fa-angle-left left-arrow rotate" aria-hidden="true"></i>
+                        <i class="fa fa-angle-left left-arrow" aria-hidden="true"></i>
                     </a>
-                    <ul class="submenue">
+                    <ul class="sidebar-submenue">
                         <li class="submenu-li">
                             <a href="forms.html">
                                     Form Elements
@@ -56,22 +54,22 @@
                         </li>
                     </ul>
                 </li>
-                <li>
+                <li class="sidebar-item">
                     <a href="charts.html">
                         <i class="fa fa-pie-chart  nav-icon" aria-hidden="true"></i> Charts
                     </a>
                 </li>
-                <li>
+                <li class="sidebar-item">
                     <a href="inbox.html">
                         <i class="fa fa-envelope nav-icon" aria-hidden="true"></i> Email
-                        <span class="label label-primary list-badge info-mid">2</span>
+                        <span class="label info-mid list-badge">2</span>
                     </a>
                 </li>
-                <li>
-                    <a class="nav-hyperlink" href="#">
-                        <i class="fa fa-eye   nav-icon" aria-hidden="true"></i> UI Elements<span class="label label-success list-badge success-mid">New</span> <i class="fa fa-angle-left left-arrow rotate" aria-hidden="true"></i>
+                <li class="sidebar-item has-submenu">
+                    <a href="#">
+                        <i class="fa fa-eye   nav-icon" aria-hidden="true"></i> UI Elements<span class="label success-mid list-badge">New</span> <i class="fa fa-angle-left left-arrow" aria-hidden="true"></i>
                     </a>
-                    <ul class="submenue">
+                    <ul class="sidebar-submenue">
                         <li class="submenu-li">
                             <a href="icons.html">
                                     Icons
@@ -134,23 +132,18 @@
                         </li>
                     </ul>
                 </li>
-                <li>
+                <li class="sidebar-item">
                     <a href="calendar.html">
                         <i class="fa fa-calendar-check-o nav-icon" aria-hidden="true"></i> Calendar
                     </a>
                 </li>
-                <li>
-                    <a href="social.html">
-                        <i class="fa fa-share-alt-square nav-icon" aria-hidden="true"></i> Social
-                    </a>
-                </li>
-                <li>
-                    <a class="nav-hyperlink" href="#">
+                <li class="sidebar-item has-submenu">
+                    <a href="#">
                         <i class="fa fa-star nav-icon" aria-hidden="true"></i>App Views
-                        <span class="label label-warning list-badge warning-mid">Special</span>
-                        <i class="fa fa-angle-left left-arrow rotate" aria-hidden="true"></i>
+                        <span class="label warning-mid list-badge">Special</span>
+                        <i class="fa fa-angle-left left-arrow" aria-hidden="true"></i>
                     </a>
-                    <ul class="submenue">
+                    <ul class="sidebar-submenue">
                         <li class="submenu-li">
                             <a href="account_manager.html">
                                     Account Management
@@ -166,14 +159,19 @@
                                     Chat View
                                 </a>
                         </li>
+                         <li class="submenu-li">
+                            <a href="social.html">
+                                    Social
+                                </a>
+                        </li>
                     </ul>
                 </li>
-                <li>
-                    <a class="nav-hyperlink" href="#">
+                <li class="sidebar-item has-submenu">
+                    <a href="#">
                         <i class="fa fa-table nav-icon" aria-hidden="true"></i> Tables
-                        <i class="fa fa-angle-left left-arrow rotate" aria-hidden="true"></i>
+                        <i class="fa fa-angle-left left-arrow" aria-hidden="true"></i>
                     </a>
-                    <ul class="submenue">
+                    <ul class="sidebar-submenue">
                         <li class="submenu-li">
                             <a href="tables.html">
                                     Basic Table
@@ -186,12 +184,12 @@
                         </li>
                     </ul>
                 </li>
-                <li>
-                    <a class="nav-hyperlink" href="#">
+                <li class="sidebar-item has-submenu">
+                    <a href="#">
                         <i class="fa fa-map nav-icon" aria-hidden="true"></i> Maps
-                        <i class="fa fa-angle-left left-arrow rotate" aria-hidden="true"></i>
+                        <i class="fa fa-angle-left left-arrow" aria-hidden="true"></i>
                     </a>
-                    <ul class="submenue">
+                    <ul class="sidebar-submenue">
                         <li class="submenu-li">
                             <a href="map.html">
                                     Vector Maps
@@ -204,12 +202,12 @@
                         </li>
                     </ul>
                 </li>
-                <li>
-                    <a class="nav-hyperlink" href="#">
+                <li class="sidebar-item has-submenu">
+                    <a href="#">
                         <i class="fa fa-gift nav-icon" aria-hidden="true"></i> Extra
-                        <i class="fa fa-angle-left left-arrow rotate" aria-hidden="true"></i>
+                        <i class="fa fa-angle-left left-arrow" aria-hidden="true"></i>
                     </a>
-                    <ul class="submenue">
+                    <ul class="sidebar-submenue">
                         <li class="submenu-li">
                             <a href="invoice.html">
                                     Invoice
@@ -272,7 +270,7 @@
                         </div>
                         <div id="user-box" class="user-box right-side-items">
                             <p> Mr.Sami<i class="fa fa-angle-down" aria-hidden="true"></i></p>
-                            <img src="assets/images/Sami.jpg" />
+                            <img src="assets/images/user_01_36.jpg" />
                         </div>
                     </div>
                 </div>
@@ -281,13 +279,13 @@
                     <h5>Notifications</h5>
                     <div class="single-content-row">
                         <a href="#">
-                            <img alt="user name" src="assets/images/Sami.jpg" />
+                            <img alt="user name" src="assets/images/user_01_54.jpg" />
                             <p><b>Mohammad Meshaal</b>wants your confirmation on his Leave Request on 12 Mar 2017</p>
                         </a>
                     </div>
                     <div class="single-content-row">
                         <a href="#">
-                            <img alt="user name" src="assets/images/Team-Member-1-270x250.jpg" />
+                            <img alt="user name" src="assets/images/user_04_54.jpg" />
                             <p><b>Nasir ahmad</b>sent a payment on 11 Mar 2017</p>
                         </a>
                     </div>
@@ -300,28 +298,28 @@
                     <h5>Messages <a class="send-message-link" href="#">Send New Message</a></h5>
                     <div class="single-content-row">
                         <a href="#">
-                            <img alt="user name" alt="user name" src="assets/images/team-member-5.jpg" />
+                            <img alt="user name" alt="user name" src="assets/images/user_02_54.jpg" />
                             <p><b>Layla smith</b>
                                 <br /> Job offer</p>
                         </a>
                     </div>
                     <div class="single-content-row">
                         <a href="#">
-                            <img alt="user name" src="assets/images/Sami.jpg" />
+                            <img alt="user name" src="assets/images/user_01_54.jpg" />
                             <p><b>Mohammad Meshaal</b>
                                 <br />Please send me the work templates</p>
                         </a>
                     </div>
                     <div class="single-content-row">
                         <a href="#">
-                            <img alt="user name" src="assets/images/team-member.jpg" />
+                            <img alt="user name" src="assets/images/user_03_54.jpg" />
                             <p><b>Dana khalid</b>
                                 <br />Do you wanna hang out today?</p>
                         </a>
                     </div>
                     <div class="single-content-row">
                         <a href="#">
-                            <img alt="user name" src="assets/images/Team-Member-1-270x250.jpg" />
+                            <img alt="user name" src="assets/images/user_04_54.jpg" />
                             <p><b>Nasir ahmad</b>
                                 <br />Are we going to the match today?</p>
                         </a>
@@ -405,15 +403,12 @@
                 <div class="row statistics">
                     <div class="col-md-12">
                         <div class="tabs-container">
-                            <div class="tabs-header">
+                                    <div class="tabs-header">
                                 <div class="statistics-taps">
                                     <ul class="bottom-border-active info-mid">
-                                        <li class="active"><a href="#con3"><i class="fa fa-user"aria-hidden="true"></i>&nbsp;
-Yesterday</a></li>
-                                        <li><a href="#con2"><i class="fa fa-credit-card"aria-hidden="true"></i>&nbsp;
-Last Month</a></li>
-                                        <li><a href="#con1"><i class="fa fa-check"aria-hidden="true"></i>&nbsp;
-Last Year</a></li>
+                                        <li class="active"><a href="#con3"><i class="fa fa-user"aria-hidden="true"></i>&nbsp;Yesterday</a></li>
+                                        <li><a href="#con2"><i class="fa fa-credit-card"aria-hidden="true"></i>&nbsp;Last Month</a></li>
+                                        <li><a href="#con1"><i class="fa fa-check"aria-hidden="true"></i>&nbsp;Last Year</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -677,7 +672,7 @@ Last Year</a></li>
         <div class="right-side-section-toggle" data-toggle="modal" data-toggle="modal" data-target="#colors-modal">
             <i class="fa fa-pencil-square-o"></i>
         </div>
-        <div class="modal right fade" id="colors-modal" tabindex="-1" role="dialog" aria-labelledby="right-side-modal-label">
+        <div class="modal right fade colors-modal" id="colors-modal"  tabindex="-1" role="dialog" aria-labelledby="right-side-modal-label">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">

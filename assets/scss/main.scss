@@ -53,23 +53,8 @@
         }
 
         &>.sidebar-submenue>li>.inner-selected {
-          color: $submenu-selected;
-          margin-left: 50px;
-
-          &:before {
-            color: $black-color;
-            content: '\f105';
-            font-family: FontAwesome;
-            font-size: 15px;
-            font-style: normal;
-            font-weight: normal;
-            left: 30px;
-            padding-right: $small-value;
-            position: absolute;
-            text-decoration: inherit;
-            top: 1px;
-          }
-
+          color: #545353;
+          text-decoration: underline;
         }
 
       }
