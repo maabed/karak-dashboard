@@ -1,15 +1,15 @@
-/* Sidebar */
+/*! Sidebar */
 .wrapper {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
   padding-left: 0px;
-  /* Head */
-  /* Page Wrapper */
-  /* Right side section */
-  /* Footer */
-  /* Media Querys */
+  /*! Head */
+  /*! Page Wrapper */
+  /*! Right side section */
+  /*! Footer */
+  /*! Media Querys */
 }
 .wrapper.toggled {
   padding-left: 250px;
@@ -459,7 +459,7 @@
     display: none;
   }
 }
-/* General custome */
+/*! General custome */
 .no-left-right-padding {
   padding-left: 0em;
   padding-right: 0em;
@@ -522,7 +522,7 @@
 .float-right {
   float: right;
 }
-/* Colors */
+/*! Colors */
 .all-base-colors .col-sm-4 {
   margin-bottom: 1em;
 }
@@ -576,7 +576,7 @@
 .all-base-colors .col-sm-4 .single-color-box.default-border-hover {
   border-left: 40px solid #ecf0f1;
 }
-/* Background colors */
+/*! Background colors */
 .info {
   background-color: #3498db !important;
 }
@@ -655,7 +655,7 @@
 .dark-theme-hover:hover {
   background-color: transparent;
 }
-/* Font colors */
+/*! Font colors */
 .info-font {
   color: #3498db;
 }
@@ -808,6 +808,7 @@ p {
 /*values*/
 /*z-index*/
 /*outline*/
+/*! Select2 customized */
 .select2 {
   border-radius: 0px;
   border: 0px;
@@ -865,6 +866,7 @@ p {
 .select2-container.select2-container--open .select2-dropdown--above .select2-search__field:focus {
   border: 1px solid #67b2e4;
 }
+/*! Input fields customized */
 input:not([type]),
 input[type='text']:not(.flat_email):not(.normal-text):not(.input-mini):not(.main-dashboard-search),
 input[type='password'],
@@ -954,6 +956,7 @@ input:not(.flat_email):not(.search-text-box):not(.select2-search__field):focus {
 .has-error > input {
   border-bottom: 1px solid #a94442;
 }
+/*! Slide toggles */
 .toggleswitch {
   margin-top: 10px;
   margin-bottom: 8px;
@@ -1024,6 +1027,7 @@ input:not(.flat_email):not(.search-text-box):not(.select2-search__field):focus {
 .toggleswitch .ch-toggle-white:checked + label:before {
   background-color: #ffffff;
 }
+/*! Checkboxes */
 .checkbox {
   padding-left: 25px;
 }
@@ -1102,9 +1106,11 @@ input:not(.flat_email):not(.search-text-box):not(.select2-search__field):focus {
 .checkbox-danger input[type='checkbox']:checked + label:after {
   color: #ffffff;
 }
+/*! Circle checkboxes */
 .checkbox-circle label:before {
   border-radius: 50%;
 }
+/*! Yes-No checkboxes */
 .yes-no-check {
   display: inline-block;
   text-align: justify;
@@ -1144,6 +1150,7 @@ input:not(.flat_email):not(.search-text-box):not(.select2-search__field):focus {
   background-color: #677786;
   border-color: #677786;
 }
+/*! Date range */
 .data-range {
   background: #ffffff;
   cursor: pointer;
@@ -1174,10 +1181,11 @@ input:not(.flat_email):not(.search-text-box):not(.select2-search__field):focus {
 .datepicker {
   width: 100%;
 }
+/*! Tag inputs */
 .bootstrap-tagsinput {
   border-radius: 0px;
 }
-/* Dashboasrd Buttons */
+/*! Dashboasrd Buttons */
 button,
 .btn-group,
 input,
@@ -1508,6 +1516,8 @@ a.btn-circle {
   background-color: #67b2e4;
   border-color: #67b2e4;
 }
+/*! Mixins */
+/*! Common UI utilities */
 .arrow-up {
   width: 0px;
   height: 0px;
@@ -1635,6 +1645,10 @@ a.btn-circle {
 .user-info-box .user-info-content:hover {
   background-color: #f1f3f6;
 }
+/*! Modals utility */
+.modal {
+  /*! Right side modal */
+}
 .modal .modal-content {
   border-radius: 0px;
 }
@@ -1711,6 +1725,7 @@ a.btn-circle {
 .modal.right.fade.in .modal-dialog {
   right: 0px;
 }
+/*! Panels utility */
 .panal-font-style,
 .panel .panel-body,
 .panel .panel-footer,
@@ -1800,6 +1815,7 @@ a.btn-circle {
 .code-table td {
   padding-right: 1.5em;
 }
+/*! Tabs utility */
 .tabs-container .tabs-header .statistics-taps {
   width: 100%;
   margin: 0px auto;
@@ -2429,6 +2445,7 @@ a.btn-circle {
 .single-tap .single-tap-title .toggle-icons {
   float: right;
 }
+/*! Lists utility */
 .list-group {
   padding-left: 0px;
   margin-bottom: 20px;
@@ -2500,6 +2517,7 @@ a.btn-circle {
 .list-group .info-mid .glyphicon {
   color: #ffffff;
 }
+/*! Tables utility */
 .users-table .table-head .basic-th,
 .dashed-table .table-head .basic-th,
 .colored-table .table-head .basic-th {
@@ -2581,6 +2599,7 @@ a.btn-circle {
 .colored-table.dashed-row-style td.hold-task {
   color: #ed796d;
 }
+/*! Datatable utility */
 .dataTables_wrapper {
   color: #707a7a;
   font-weight: lighter;
@@ -2786,6 +2805,7 @@ a.btn-circle {
 .dataTables_wrapper .dataTables_wrapper tr.shown td.details-control {
   background: url('../images/details_close.png') no-repeat center center;
 }
+/*! Cards utility */
 .card,
 .card-panel {
   margin: 0.5rem 0px 1rem 0px;
@@ -2924,6 +2944,10 @@ a.btn-circle {
   float: right;
   margin-left: 15px;
   cursor: pointer;
+}
+/*! Menus utility */
+.menu-container {
+  /*! Carousel menu */
 }
 .menu-container .navbar {
   width: 100%;
@@ -3196,6 +3220,7 @@ a.btn-circle {
   height: 100%;
   width: 100%;
 }
+/*! Circle preloading */
 .loader1 {
   margin: 0px auto;
   position: relative;
@@ -3260,6 +3285,7 @@ a.btn-circle {
     stroke-dashoffset: -124px;
   }
 }
+/*! Bar preloader */
 .loader {
   height: 4px;
   margin-top: 45px;
@@ -3299,6 +3325,7 @@ a.btn-circle {
     left: 100%;
   }
 }
+/*! Cube preloader */
 .vertical--center {
   margin: 0px auto;
   background: white;
@@ -3390,6 +3417,7 @@ a.btn-circle {
   margin: 1px auto;
   background: #3498db;
 }
+/*! Placeholder preloader */
 .timeline-item {
   background: #ffffff;
   border: 1px solid;
@@ -3499,6 +3527,7 @@ a.btn-circle {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+/*! Circle progress */
 #basic,
 #bounce,
 #multi,
@@ -3508,6 +3537,7 @@ a.btn-circle {
   height: 100px;
   margin-bottom: 10px;
 }
+/*! Bar progress */
 .BasicInfoLine svg path:last-child {
   stroke-dasharray: 20, 100;
   stroke-dashoffset: 1;
@@ -3531,6 +3561,8 @@ a.btn-circle {
 .progress-thick > svg {
   height: 8px;
 }
+/*! Keyframes */
+/*! Notifications utility */
 .toast-success {
   background-color: #2ecc71;
 }

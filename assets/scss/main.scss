@@ -1,4 +1,4 @@
-/* Sidebar */
+/*! Sidebar */
 .wrapper {
   @include css-effect(all 0.5s ease);
   padding-left: 0px;
@@ -193,7 +193,7 @@
 
   }
 
-  /* Head */
+  /*! Head */
   .main-dashboard-header {
     width: 100%;
     padding-top: $small-value;
@@ -345,7 +345,7 @@
 
   }
 
-  /* Page Wrapper */
+  /*! Page Wrapper */
   .page-content-wrapper {
     width: 100%;
     position: absolute;
@@ -406,7 +406,7 @@
 
   }
 
-  /* Right side section */
+  /*! Right side section */
   .right-side-section-toggle {
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
@@ -520,7 +520,7 @@
 
   }
 
-  /* Footer */
+  /*! Footer */
   .copyright {
     .made-by {
       float: right;
@@ -530,7 +530,7 @@
 
   }
 
-  /* Media Querys */
+  //! Media Querys 
   @media (min-width:768px) {
     .sidebar-wrapper {
       background-color: $white-color;
@@ -560,7 +560,7 @@
 
 }
 
-/* General custome */
+/*! General custome */
 .no-left-right-padding {
   padding-left: 0em;
   padding-right: 0em;
@@ -626,7 +626,7 @@
   float: right;
 }
 
-/* Colors */
+/*! Colors */
 .all-base-colors {
   .col-sm-4 {
     margin-bottom: 1em;
@@ -701,7 +701,7 @@
 
 }
 
-/* Background colors */
+/*! Background colors */
 .info {
   background-color: $info-color !important;
 }
@@ -809,7 +809,7 @@
 
 }
 
-/* Font colors */
+/*! Font colors */
 .info-font {
   color: $info-color;
 }
