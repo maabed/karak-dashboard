@@ -116,352 +116,450 @@
       }
 
     }
-
-    .nav-tabs {
-      border: 0px;
-
-      &>li.active>a {
-        border-left: 0px;
-        border-right: 0px;
-        border-top-left-radius: 0px;
-        border-top-right-radius: 0px;
-      }
-
-      &.list-group {
-        margin-bottom: 0px;
-
-        &.right-arrow {
-          &.success-mid {
-            background-color: $white-color;
-
-            .active {
-              background-color: $success-mid-color;
-              border-color: $success-mid-color;
-
-              a {
-                background-color: $success-mid-color;
-                border-color: $success-mid-color;
-              }
-
-              &:after {
-                border-right: 10px solid $success-mid-color;
-              }
-
-            }
-
-          }
-
-          &.info-mid {
-            background-color: $white-color;
-
-            .active {
-              background-color: $info-mid-color;
-              border-color: $info-mid-color;
-
-              a {
-                background-color: $info-mid-color;
-                border-color: $info-mid-color;
-              }
-
-              &:after {
-                border-right: 10px solid $info-mid-color;
-              }
-
-            }
-
-          }
-
-          &.danger-mid {
-            background-color: $white-color;
-
-            .active {
-              background-color: $danger-mid-color;
-              border-color: $danger-mid-color;
-
-              a {
-                background-color: $danger-mid-color;
-                border-color: $danger-mid-color;
-              }
-
-              &:after {
-                border-right: 10px solid $danger-mid-color;
-              }
-
-            }
-
-          }
-
-          &.warning-mid {
-            background-color: $white-color;
-
-            .active {
-              background-color: $warning-mid-color;
-              border-color: $warning-mid-color;
-
-              a {
-                background-color: $warning-mid-color;
-                border-color: $warning-mid-color;
-              }
-
-              &:after {
-                border-right: 10px solid $warning-mid-color;
-              }
-
-            }
-
-          }
-
-          &.primary-mid {
-            background-color: $white-color;
-
-            .active {
-              background-color: $primary-mid-color;
-              border-color: $primary-mid-color;
-
-              a {
-                background-color: $primary-mid-color;
-                border-color: $primary-mid-color;
-              }
-
-              &:after {
-                border-right: 10px solid $primary-mid-color;
-              }
-
-            }
-
-          }
-
-          &.default-mid {
-            background-color: $white-color;
-
-            .active {
-              background-color: $default-mid-color;
-              border-color: $default-mid-color;
-
-              a {
-                background-color: $default-mid-color;
-                border-color: $default-mid-color;
-              }
-
-              &:after {
-                border-right: 10px solid $default-mid-color;
-              }
-
-            }
-
-          }
-
-        }
-
-        &.left-arrow {
-          &.success-mid {
-            background-color: $white-color;
-
-            .active {
-              background-color: $success-mid-color;
-              border-color: $success-mid-color;
-
-              a {
-                background-color: $success-mid-color;
-                border-color: $success-mid-color;
-              }
-
-              &:after {
-                border-left: 10px solid $success-mid-color;
-              }
-
-            }
-
-          }
-
-          &.info-mid {
-            background-color: $white-color;
-
-            .active {
-              background-color: $info-mid-color;
-              border-color: $info-mid-color;
-
-              a {
-                background-color: $info-mid-color;
-                border-color: $info-mid-color;
-              }
-
-              &:after {
-                border-left: 10px solid $info-mid-color;
-              }
-
-            }
-
-          }
-
-          &.danger-mid {
-            background-color: $white-color;
-
-            .active {
-              background-color: $danger-mid-color;
-              border-color: $danger-mid-color;
-
-              a {
-                background-color: $danger-mid-color;
-                border-color: $danger-mid-color;
-              }
-
-              &:after {
-                border-left: 10px solid $danger-mid-color;
-              }
-
-            }
-
-          }
-
-          &.warning-mid {
-            background-color: $white-color;
-
-            .active {
-              background-color: $warning-mid-color;
-              border-color: $warning-mid-color;
-
-              a {
-                background-color: $warning-mid-color;
-                border-color: $warning-mid-color;
-              }
-
-              &:after {
-                border-left: 10px solid $warning-mid-color;
-              }
-
-            }
-
-          }
-
-          &.primary-mid {
-            background-color: $white-color;
-
-            .active {
-              background-color: $primary-mid-color;
-              border-color: $primary-mid-color;
-
-              a {
-                background-color: $primary-mid-color;
-                border-color: $primary-mid-color;
-              }
-
-              &:after {
-                border-left: 10px solid $primary-mid-color;
-              }
-
-            }
-
-          }
-
-          &.default-mid {
-            background-color: $white-color;
-
-            .active {
-              background-color: $default-mid-color;
-              border-color: $default-mid-color;
-
-              a {
-                background-color: $default-mid-color;
-                border-color: $default-mid-color;
-              }
-
-              &:after {
-                border-left: 10px solid $default-mid-color;
-              }
-
-            }
-
-          }
-
-        }
-
-      }
-
-      &.left-tab-arrow {
-        li {
-          padding: 0px;
-          width: 100%;
-          text-align: center;
-          border: 0px;
-
-          a {
+ .nav-tabs {
             border: 0px;
-            background: none;
-            color: #555555;
 
-            h4 {
-              color: $info-mid-color;
+            &>li.active>a {
+                border-left: 0px;
+                border-right: 0px;
+                border-top-left-radius: 0px;
+                border-top-right-radius: 0px;
             }
 
-          }
+            &.list-group {
+                margin-bottom: 0px;
 
-          &.active {
-            &>a {
-              color: $white-color;
-              border: 0px;
+                &.right-arrow {
+                    &.success-mid {
+                        background-color: $white-color;
+
+                        h4 {
+                            color: $success-mid-color;
+                        }
+
+                        .active {
+                            background-color: $success-mid-color;
+                            border-color: $success-mid-color;
+
+                            a {
+                                background-color: $success-mid-color;
+                                border-color: $success-mid-color;
+
+                                h4 {
+                                    color: $white-color;
+                                }
+
+                            }
+
+                            &:after {
+                                border-right: 10px solid $success-mid-color;
+                            }
+
+                        }
+
+                    }
+
+                    &.info-mid {
+                        background-color: $white-color;
+
+                        h4 {
+                            color: $info-mid-color;
+                        }
+
+                        .active {
+                            background-color: $info-mid-color;
+                            border-color: $info-mid-color;
+
+                            a {
+                                background-color: $info-mid-color;
+                                border-color: $info-mid-color;
+
+                                h4 {
+                                    color: $white-color;
+                                }
+
+                            }
+
+                            &:after {
+                                border-right: 10px solid $info-mid-color;
+                            }
+
+                        }
+
+                    }
+
+                    &.danger-mid {
+                        background-color: $white-color;
+
+                        h4 {
+                            color: $danger-mid-color;
+                        }
+
+                        .active {
+                            background-color: $danger-mid-color;
+                            border-color: $danger-mid-color;
+
+                            h4 {
+                                color: $white-color;
+                            }
+
+                            a {
+                                background-color: $danger-mid-color;
+                                border-color: $danger-mid-color;
+                            }
+
+                            &:after {
+                                border-right: 10px solid $danger-mid-color;
+                            }
+
+                        }
+
+                    }
+
+                    &.warning-mid {
+                        background-color: $white-color;
+
+                        h4 {
+                            color: $warning-mid-color;
+                        }
+
+                        .active {
+                            background-color: $warning-mid-color;
+                            border-color: $warning-mid-color;
+
+                            h4 {
+                                color: $white-color;
+                            }
+
+                            a {
+                                background-color: $warning-mid-color;
+                                border-color: $warning-mid-color;
+                            }
+
+                            &:after {
+                                border-right: 10px solid $warning-mid-color;
+                            }
+
+                        }
+
+                    }
+
+                    &.primary-mid {
+                        background-color: $white-color;
+
+                        h4 {
+                            color: $primary-mid-color;
+                        }
+
+                        .active {
+                            background-color: $primary-mid-color;
+                            border-color: $primary-mid-color;
+
+                            a {
+                                background-color: $primary-mid-color;
+                                border-color: $primary-mid-color;
+
+                                h4 {
+                                    color: $white-color;
+                                }
+
+                            }
+
+                            &:after {
+                                border-right: 10px solid $primary-mid-color;
+                            }
+
+                        }
+
+                    }
+
+                    &.default-mid {
+                        background-color: $white-color;
+
+                        h4 {
+                            color: $default-mid-color;
+                        }
+
+                        .active {
+                            background-color: $default-mid-color;
+                            border-color: $default-mid-color;
+
+                            a {
+                                background-color: $default-mid-color;
+                                border-color: $default-mid-color;
+
+                                h4 {
+                                    color: $white-color;
+                                }
+
+                            }
+
+                            &:after {
+                                border-right: 10px solid $default-mid-color;
+                            }
+
+                        }
+
+                    }
+
+                }
+
+                &.left-arrow {
+                    &.success-mid {
+                        background-color: $white-color;
+
+                        h4 {
+                            color: $success-mid-color;
+                        }
+
+                        .active {
+                            background-color: $success-mid-color;
+                            border-color: $success-mid-color;
+
+                            a {
+                                background-color: $success-mid-color;
+                                border-color: $success-mid-color;
+
+                                h4 {
+                                    color: $white-color;
+                                }
+
+                            }
+
+                            &:after {
+                                border-left: 10px solid $success-mid-color;
+                            }
+
+                        }
+
+                    }
+
+                    &.info-mid {
+                        background-color: $white-color;
+
+                        h4 {
+                            color: $info-mid-color;
+                        }
+
+                        .active {
+                            background-color: $info-mid-color;
+                            border-color: $info-mid-color;
+
+                            a {
+                                background-color: $info-mid-color;
+                                border-color: $info-mid-color;
+
+                                h4 {
+                                    color: $white-color;
+                                }
+
+                            }
+
+                            &:after {
+                                border-left: 10px solid $info-mid-color;
+                            }
+
+                        }
+
+                    }
+
+                    &.danger-mid {
+                        background-color: $white-color;
+
+                        h4 {
+                            color: $danger-mid-color;
+                        }
+
+                        .active {
+                            background-color: $danger-mid-color;
+                            border-color: $danger-mid-color;
+
+                            a {
+                                background-color: $danger-mid-color;
+                                border-color: $danger-mid-color;
+
+                                h4 {
+                                    color: $white-color;
+                                }
+
+                            }
+
+                            &:after {
+                                border-left: 10px solid $danger-mid-color;
+                            }
+
+                        }
+
+                    }
+
+                    &.warning-mid {
+                        background-color: $white-color;
+
+                        h4 {
+                            color: $warning-mid-color;
+                        }
+
+                        .active {
+                            background-color: $warning-mid-color;
+                            border-color: $warning-mid-color;
+
+                            a {
+                                background-color: $warning-mid-color;
+                                border-color: $warning-mid-color;
+
+                                h4 {
+                                    color: $white-color;
+                                }
+
+                            }
+
+                            &:after {
+                                border-left: 10px solid $warning-mid-color;
+                            }
+
+                        }
+
+                    }
+
+                    &.primary-mid {
+                        background-color: $white-color;
+
+                        h4 {
+                            color: $primary-mid-color;
+                        }
+
+                        .active {
+                            background-color: $primary-mid-color;
+                            border-color: $primary-mid-color;
+
+                            a {
+                                background-color: $primary-mid-color;
+                                border-color: $primary-mid-color;
+
+                                h4 {
+                                    color: $white-color;
+                                }
+
+                            }
+
+                            &:after {
+                                border-left: 10px solid $primary-mid-color;
+                            }
+
+                        }
+
+                    }
+
+                    &.default-mid {
+                        background-color: $white-color;
+
+                        h4 {
+                            color: $default-mid-color;
+                        }
+
+                        .active {
+                            background-color: $default-mid-color;
+                            border-color: $default-mid-color;
+
+                            a {
+                                background-color: $default-mid-color;
+                                border-color: $default-mid-color;
+
+                                h4 {
+                                    color: @white-color;
+                                }
+
+                            }
+
+                            &:after {
+                                border-left: 10px solid $default-mid-color;
+                            }
+
+                        }
+
+                    }
+
+                }
+
             }
 
-            &:after {
-              content: '';
-              position: absolute;
-              left: 100%;
-              top: 50%;
-              margin-top: -13px;
-              border-bottom: 13px solid transparent;
-              border-top: 13px solid transparent;
-              // border-left: 10px solid $info-mid-color;
+            &.left-tab-arrow {
+                li {
+                    padding: 0px;
+                    width: 100%;
+                    text-align: center;
+                    border: 0px;
+
+                    a {
+                        border: 0px;
+                        background: none;
+                        color: #555555;
+                    }
+
+                    &.active {
+                        &>a {
+                            color: $white-color;
+                            border: 0px;
+                        }
+
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            left: 100%;
+                            top: 50%;
+                            margin-top: -13px;
+                            border-bottom: 13px solid transparent;
+                            border-top: 13px solid transparent;
+                        }
+
+                        h4 {
+                            color: $white-color;
+                        }
+
+                    }
+
+                }
+
             }
 
-            h4 {
-              color: $white-color;
-            }
+            &.right-tab-arrow {
+                li {
+                    padding: 0px;
+                    width: 100%;
+                    text-align: center;
+                    border: 0px;
 
-          }
+                    a {
+                        border: 0px;
+                        background: none;
+                        color: #555555;
+                    }
+
+                    &.active {
+                        &>a {
+                            color: $white-color;
+                            border: 0px;
+                        }
+
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            left: -0.6em;
+                            top: 50%;
+                            margin-top: -13px;
+                            border-left: 0px;
+                            border-top: 13px solid transparent;
+                            border-bottom: 13px solid transparent;
+                        }
+
+                    }
+
+                }
+
+            }
 
         }
 
-      }
-
-      &.right-tab-arrow {
-        li {
-          padding: 0px;
-          width: 100%;
-          text-align: center;
-          border: 0px;
-
-          a {
-            border: 0px;
-            background: none;
-            color: $info-mid-color;
-          }
-
-          &.active {
-            &>a {
-              // background-color: $info-mid-color;
-              color: $white-color;
-              border: 0px;
-            }
-
-            &:after {
-              content: '';
-              position: absolute;
-              left: -0.6em;
-              top: 50%;
-              margin-top: -13px;
-              border-left: 0px;
-              border-top: 13px solid transparent;
-              border-bottom: 13px solid transparent;
-              // border-right: 10px solid $info-mid-color;
-            }
-
-          }
-
-        }
-
-      }
-
-    }
 
     .nav-pills {
       &>li {

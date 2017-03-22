@@ -1,10 +1,10 @@
 .icon-hover:before {
-    right: 0.5em !important;
+    right: 0.4em !important;
 }
 
 [class^="hvr-"] {
     margin: .4em;
-    padding: 1em;
+    padding: 1em 2em;
     cursor: pointer;
     background: #fff;
     border: 1px solid #ccc;
