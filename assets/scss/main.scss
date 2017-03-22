@@ -71,7 +71,8 @@
           background-color: $submenue-background-color;
           list-style: none;
           color: $submenue-color;
-
+          padding: 0px;
+          
           .submenu-li {
             a {
               border-bottom: 0px;
@@ -243,7 +244,8 @@
         .form-control {
           float: left;
           font-weight: normal;
-          padding-left: 30px;
+          padding-left: 30px !important;
+          border-bottom: 0px !important;
         }
 
         .glyphicon {
@@ -701,103 +703,103 @@
 
 /* Background colors */
 .info {
-  background-color: $info-color;
+  background-color: $info-color !important;
 }
 
 .primary {
-  background-color: $primary-color;
+  background-color: $primary-color !important;
 }
 
 .success-lighter {
-  background-color: $success-lighter-color;
+  background-color: $success-lighter-color !important;
 }
 
 .warning-light {
-  background-color: $warning-light-color;
+  background-color: $warning-light-color !important;
 }
 
 .danger {
-  background-color: $danger-color;
+  background-color: $danger-color !important;
 }
 
 .default {
-  background-color: $white-color;
+  background-color: $white-color !important;
 }
 
 .default-light {
-  background-color: $default-light-color;
+  background-color: $default-light-color !important;
 }
 
 .default-mid {
-  background-color: $default-mid-color;
+  background-color: $default-mid-color !important;
 }
 
 .default-dark {
-  background-color: $default-color;
+  background-color: $default-color !important;
 }
 
 .info-mid {
-  background-color: $info-mid-color;
+  background-color: $info-mid-color !important;
 }
 
 .info-lighter {
-  background-color: #cce5f6;
+  background-color: $info-lighter-color !important;
 }
 
 .default-dark-font {
-  color: $default-color;
+  color: $default-color !important;
 }
 
 .warning-lighter {
-  background-color: $warning-lighter-color;
+  background-color: $warning-lighter-color !important;
 }
 
 .warning-lighter-font {
-  color: $warning-lighter-color;
+  color: $warning-lighter-color !important;
 }
 
 .success {
-  background-color: $success-color;
+  background-color: $success-color !important;
 }
 
 .warning {
-  background-color: $warning-color;
+  background-color: $warning-color !important;
 }
 
 .danger-lighter {
-  background-color: $danger-lighter-color;
+  background-color: $danger-lighter-color !important;
 }
 
 .info-light {
-  background-color: $info-light-color;
+  background-color: $info-light-color !important;
 }
 
 .primary-light {
-  background-color: $primary-light-color;
+  background-color: $primary-light-color !important;
 }
 
 .success-light {
-  background-color: $success-light-color;
+  background-color: $success-light-color !important;
 }
 
 .danger-light {
-  background-color: $danger-light-color;
+  background-color: $danger-light-color !important;
 }
 
 .success-mid {
-  background-color: $success-mid-color;
+  background-color: $success-mid-color !important;
 }
 
 .primary-mid {
-  background-color: $primary-mid-color;
+  background-color: $primary-mid-color !important;
 }
 
 .warning-mid {
-  background-color: $warning-mid-color;
+  background-color: $warning-mid-color !important;
 }
 
 .danger-mid {
-  background-color: $danger-mid-color;
+  background-color: $danger-mid-color !important;
 }
 
 .dark-theme-hover {
