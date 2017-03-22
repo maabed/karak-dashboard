@@ -466,22 +466,22 @@ input {
   .btn-success.active,
   .btn-success:active,
   .open>.dropdown-toggle.btn-success {
-    background-color: @success-mid-color;
-    border-color: @success-mid-color;
+    background-color: $success-mid-color;
+    border-color: $success-mid-color;
   }
 
   .btn-danger.active,
   .btn-danger:active,
   .open>.dropdown-toggle.btn-danger {
-    background-color: @danger-mid-color;
-    border-color: @danger-mid-color;
+    background-color: $danger-mid-color;
+    border-color: $danger-mid-color;
   }
 
   .btn-warning.active,
   .btn-warning:active,
   .open>.dropdown-toggle.btn-warning {
-    background-color: @warning-mid-color;
-    border-color: @warning-mid-color;
+    background-color: $warning-mid-color;
+    border-color: $warning-mid-color;
   }
 
   .btn-primary.active.focus,
@@ -493,8 +493,8 @@ input {
   .open>.dropdown-toggle.btn-primary.focus,
   .open>.dropdown-toggle.btn-primary:focus,
   .open>.dropdown-toggle.btn-primary:hover {
-    background-color: @primary-mid-color;
-    border-color: @primary-mid-color;
+    background-color: $primary-mid-color;
+    border-color: $primary-mid-color;
   }
 
 }
