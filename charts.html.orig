@@ -16,7 +16,11 @@
     <!-- Font Awesome library -->
     <link type="text/css" href="assets/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
     <!-- Custom CSS -->
+<<<<<<< HEAD
+    <link type="text/css" rel="stylesheet" href="assets/css/lessConverted.css">
+=======
     <link type="text/css" rel="stylesheet" href="assets/css/less-converted.css">
+>>>>>>> d5915b989b6e78824ba8dc5c47f21923a5fb5549
 </head>
 
 <body>
