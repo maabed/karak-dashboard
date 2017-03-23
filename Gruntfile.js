@@ -9,7 +9,7 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         files: {
-          'assets/css/scss-converted.css': 'assets/scss/imports.scss'
+          'assets/css/lessConverted.css': 'assets/scss/imports.scss'
         }
       }
     },
