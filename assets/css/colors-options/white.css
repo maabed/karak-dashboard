@@ -1,15 +1,15 @@
-#head {
-    background-color: #fff;
+.main-dashboard-header {
+    background-color: #ffffff;
     box-shadow: 2px 2px 2px #ededed;
 }
 
-#searchTB {
+.search-text-box {
     background-color: #828282;
 }
 
-#company-name {
+.sidebar-brand {
     background-color: #828282;
-    color: #fff;
+    color: #ffffff;
     opacity: 1 !important;
 }
 
@@ -18,8 +18,8 @@
 }
 
 .sidebar-nav li a {
-    border-bottom: 1px solid #fff;
-    border-right: 1px solid #fff;
+    border-bottom: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
 }
 
 .sidebar-nav li a {
@@ -43,14 +43,14 @@
     color: #686868;
 }
 
-#sidebar-wrapper {
-    background-color: #fff;
+.sidebar-wrapper {
+    background-color: #ffffff;
 }
 
 .sidebar-nav li a {
-    border-bottom: 1px solid #E4E5E7;
-    border-right: 1px solid #E4E5E7;
-    color: #34495E;
+    border-bottom: 1px solid #e4e5e7;
+    border-right: 1px solid #e4e5e7;
+    color: #34495e;
 }
 
 .body-header {

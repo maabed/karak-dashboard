@@ -1,0 +1,25 @@
+{
+  "name": "blue-dashboard",
+  "version": "1.0.0",
+  "description": "Blue-dashboard template is a premium admin dashboard theme with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, LESS and Sass.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/new-release/Blue-dashboard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/new-release/Blue-dashboard/issues"
+  },
+  "homepage": "https://github.com/new-release/Blue-dashboard#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-less": "^1.4.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "scss": "^0.2.4"
+  }
+}

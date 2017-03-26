@@ -1,8 +1,24 @@
-/*!
- * FullCalendar v3.1.0 Stylesheet
- * Docs & License: http://fullcalendar.io/
- * (c) 2016 Adam Shaw
- */
+  #wrap {
+      width: 100%;
+      margin: 0 auto;
+  }
+  
+  #calendar {
+      position: relative;
+      margin: 0 auto;
+      width: 100%;
+      background-color: #FFFFFF;
+      border: 1px solid #e9e9e9;
+      padding-top:3.5em;
+  }
+#eventclassName{
+    width:100%;
+}
+  .fc-header-title h2 {
+      color: #2c2c2c !important;
+      font-weight: lighter;
+      font-size:1.7em;
+  }
 
 .fc {
     direction: ltr;
@@ -21,13 +37,11 @@ body .fc {
 
 table,
 table tbody,
-table thead {
+table thead,
+table tr td  {
     border: 0 !important;
 }
 
-table tr td {
-    border: 0 !important;
-}
 
 .fc-day-top {
     border-top: 1px solid #e5e5e5 !important;
@@ -39,7 +53,7 @@ hr {
 
 .gray-text{background-color:green;}
 .add-event-modal{
-    z-index: 9999999999999999999;
+    z-index: 999;
 }
 
 
@@ -86,13 +100,10 @@ hr {
     color: #666;
 }
 
-.fc-unthemed td.fc-today {
-    background: #fcf8e3;
-}
 
 .fc-highlight {
     /* when user is selecting cells */
-    background: #bce8f1;
+    background: #eee;
     opacity: .3;
 }
 
@@ -679,7 +690,7 @@ temporary rendered events).
 }
 /* overpower some of bootstrap's and jqui's styles on <a> tags */
 
-#Right-Side-Section-Togle {
+#Right-Side-Section-Toggle {
     z-index: 99 !important;
     background-color: #fff !important;
 }
@@ -687,7 +698,7 @@ temporary rendered events).
 #apptStartpost, #apptEndpost{
     display: none;
 }
-#Right-Side-Section-Togle:hover {
+#Right-Side-Section-Toggle:hover {
     background-color: #CDCDCD !important;
 }
 
@@ -1979,7 +1990,7 @@ a.fc-event {
 input:not([type]),
 input[type=text]:not(#flat_email):not(.normal-text):not(.input-mini),
 input[type=password],
-input[type=email]:not(#searchTB):not(#flat_email),
+input[type=email]:not(.search-text-box):not(#flat_email),
 input[type=url],
 input[type=time],
 input[type=date],
@@ -2001,19 +2012,18 @@ textarea.materialize-textarea {
     padding: 0;
     box-shadow: none;
     box-sizing: content-box;
-    transition: all 0.3s;
 }
 
 #flat_email {
     padding-left: 10px;
 }
 
-input:not(#searchTB):not(#flat_email):not(.normal-text):not(.input-mini) {
+input:not(.search-text-box):not(#flat_email):not(.normal-text):not(.input-mini) {
     line-height: normal;
 }
 
 button,
-input:not(#searchTB):not(#flat_email):not(.normal-text):not(.input-mini),
+input:not(.search-text-box):not(#flat_email):not(.normal-text):not(.input-mini),
 optgroup,
 select,
 textarea {
@@ -2023,7 +2033,7 @@ textarea {
 }
 
 input:not([type]):not(.normal-text),
-input[type="email" i]:not(#searchTB):not(#flat_email),
+input[type="email" i]:not(.search-text-box):not(#flat_email),
 input[type="number" i],
 input[type="password" i],
 input[type="tel" i],
@@ -2032,7 +2042,7 @@ input[type="text" i] {
     padding: 1px 0px;
 }
 
-input:not(#searchTB):not(#flat_email):not(.normal-text):not(.input-mini),
+input:not(.search-text-box):not(#flat_email):not(.normal-text):not(.input-mini),
 textarea,
 keygen,
 select,
@@ -2053,7 +2063,7 @@ button {
 input:not([type]).validate+label,
 input[type=text].validate+label,
 input[type=password].validate+label,
-input[type=email]:not(#searchTB):not(#flat_email).validate+label,
+input[type=email]:not(.search-text-box):not(#flat_email).validate+label,
 input[type=url].validate+label,
 input[type=time].validate+label,
 input[type=date].validate+label,
@@ -2085,7 +2095,7 @@ textarea.materialize-textarea.validate+label {
 input:not([type])+label:after,
 input[type=text]+label:after,
 input[type=password]+label:after,
-input[type=email]:not(#searchTB):not(#flat_email)+label:after,
+input[type=email]:not(.search-text-box):not(#flat_email)+label:after,
 input[type=url]+label:after,
 input[type=time]+label:after,
 input[type=date]+label:after,
@@ -2105,7 +2115,7 @@ textarea.materialize-textarea+label:after {
 input:not([type])+label:after,
 input[type=text]+label:after,
 input[type=password]+label:after,
-input[type=email]:not(#searchTB):not(#flat_email)+label:after,
+input[type=email]:not(.search-text-box):not(#flat_email)+label:after,
 input[type=url]+label:after,
 input[type=time]+label:after,
 input[type=date]+label:after,
@@ -2133,7 +2143,7 @@ textarea.materialize-textarea+label:after {
     transform: translateY(-140%);
 }
 
-input:not(#searchTB):focus {
+input:not(.search-text-box):focus {
     border-bottom: 1px solid #67b2e4 !important;
 }
 

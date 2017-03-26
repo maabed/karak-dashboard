@@ -1,0 +1,344 @@
+/* Landing Page View */
+.landing-page-container {
+  .homepage-hero-module {
+    border-right: 0px;
+    border-left: 0px;
+    position: relative;
+    height: 50em !important;
+    overflow: hidden;
+
+    @media (max-width:1200px) {
+      height: 40em !important;
+    }
+
+    .no-video,
+    .touch {
+      video {
+        display: none;
+      }
+
+      .poster {
+        display: block;
+      }
+
+    }
+
+    .video-container {
+      position: relative;
+      bottom: 0%;
+      left: 0%;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+
+      .showcase {
+        width: 100%;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.7);
+        height: 100%;
+        position: absolute;
+        z-index: 999;
+        top: 0px;
+
+        .logo {
+          float: left;
+          width: 8em;
+          margin-top: 2em;
+
+          @media (max-width:700px) {
+            margin: 1em auto 0em auto;
+            float: none;
+          }
+
+        }
+
+        h1 {
+          color: @white-color;
+          font-size: 3em;
+          margin-top: 4em;
+
+          @media (max-width:700px) {
+            margin-top: 1em;
+          }
+
+          span {
+            color: @info-color;
+          }
+
+        }
+
+        p {
+          color: @white-color;
+          font-size: 1.2em;
+          line-height: 1.5em;
+          width: 75%;
+          margin: 0px auto;
+          font-weight: 200;
+        }
+
+        .showcase-btns {
+          margin: 2em auto;
+        }
+
+      }
+
+      .filter {
+        z-index: 100;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.4);
+        width: 100%;
+      }
+
+      video {
+        position: absolute;
+        z-index: 0;
+        top: 0px;
+
+        .fillWidth {
+          width: 100%;
+        }
+
+      }
+
+      .poster {
+        img {
+          width: 100%;
+          bottom: 0px;
+          position: absolute;
+        }
+
+      }
+
+    }
+
+  }
+
+  section {
+    margin: 4em 0em;
+
+    h3 {
+      text-align: center;
+      color: @primary-color;
+      font-weight: lighter;
+      margin-bottom: 1em;
+    }
+
+    /* Featurs Section */
+    &.featurs {
+      .item {
+        .featur-img {
+          width: 40em;
+          height: auto;
+          margin: 0px auto;
+
+          @media screen and (max-width:700px) {
+            width: 70%;
+          }
+
+        }
+
+        h4 {
+          color: rgba(0, 0, 0, 0.7);
+          font-weight: 200;
+          text-align: center;
+        }
+
+        p {
+          font-weight: 200;
+          text-align: center;
+          color: rgba(0, 0, 0, 0.4);
+          line-height: 1.5em;
+          width: 75%;
+          margin: 0px auto;
+        }
+
+      }
+
+      .owl-nav {
+        display: none;
+      }
+
+    }
+
+    /* Technologies Section */
+    &.technologies {
+      .col-sm-2 {
+        text-align: center;
+
+        img {
+          margin: 0px auto;
+
+          @media screen and (max-width:700px) {
+            margin: 0px auto;
+          }
+
+        }
+
+      }
+
+    }
+
+    /* Team Section */
+    &.our-team {
+      .text-box-style {
+        border-left: 4px solid @info-mid-color;
+        padding-left: 1em;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .team-box {
+        padding-left: 2em;
+        height: 100%;
+
+        h3 {
+          color: #515151;
+          font-weight: lighter;
+          text-align: left;
+        }
+
+        h1 {
+          text-align: left;
+          font-weight: 200;
+          color: #34495e;
+          margin-top: 3em;
+        }
+
+        p {
+          text-align: left;
+          color: rgba(0, 0, 0, 0.4);
+          font-weight: 200;
+        }
+
+      }
+
+      .team-members-row {
+        height: 20em;
+        overflow: hidden;
+
+        @media screen and (max-width:1194px) {
+          height: 16em;
+        }
+
+        @media screen and (max-width:968px) {
+          height: 14em;
+        }
+
+        @media screen and (max-width:700px) {
+          height: auto;
+        }
+
+        .description-box {
+          background-color: @info-mid-color;
+          color: @white-color;
+          height: 100%;
+
+          h2 {
+            font-weight: lighter;
+            font-size: 3em;
+
+            @media screen and (max-width:1128px) {
+              font-size: 2.1em;
+            }
+
+          }
+
+          p {
+            font-weight: lighter;
+            font-size: 1.7em;
+            color: @white-color;
+
+            @media screen and (max-width:1404px) {
+              font-size: 2em;
+            }
+
+            @media screen and (max-width:1128px) {
+              font-size: 1.3em;
+            }
+
+          }
+
+          div {
+            width: 0px;
+            height: 0px;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            position: absolute;
+            z-index: 99999;
+            top: 45%;
+
+            &.arrow-right {
+              border-left: 20px solid @info-mid-color;
+              right: -1.3em;
+            }
+
+            &.arrow-left {
+              border-right: 20px solid @info-mid-color;
+              left: -1.3em;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+    /* Price Section */
+    &.price-table {
+      .table {
+        text-align: center;
+
+        th,
+        td {
+          border-top: 0px;
+          border-right: 20px solid @white-color;
+          border-left: 20px solid @white-color;
+          font-weight: 200;
+
+          &.highlighted-item {
+            border-bottom-color: @info-mid-color;
+            border-bottom-width: 3px;
+          }
+
+          &.basic-th {
+            text-align: center;
+
+            h4 {
+              font-weight: 200;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+    /* Location Section */
+    &.location-section {
+      margin-bottom: 0px;
+
+      .map {
+        height: 400px;
+        width: 100%;
+      }
+
+    }
+
+  }
+
+  footer {
+    background-color: @info-mid-color;
+    width: 100%;
+    padding: 0.7em 0em;
+    text-align: center;
+    color: @white-color;
+    font-size: 12px;
+  }
+
+}

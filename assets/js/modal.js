@@ -8,7 +8,7 @@ Copyright 2017 New Release
 $(function($) {
 	'use strict';
 	$(document).ready(function() {
-		$('#exampleModal').on('show.bs.modal', function(event) {
+		$('#data-modal').on('show.bs.modal', function(event) {
 			var button = $(event.relatedTarget);
 			var recipient = button.data('whatever');
 			var modal = $(this);

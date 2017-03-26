@@ -167,7 +167,9 @@ $(function() {
   }
 
   $('.select2-init-images').select2({
-    templateResult: formatState
+    templateResult: formatState,
+    minimumResultsForSearch: -1
+
   });
 
 });
