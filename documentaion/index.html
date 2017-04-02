@@ -339,14 +339,18 @@
 
 
 </code></pre>
-<h2 id="grunt">Grunt</h2>
+<h2 id="grunt"><a href="https://gruntjs.com/getting-started">Grunt</a></h2>
 
 <p>In one word: automation. The less work you have to do when performing repetitive tasks like minification, compilation, unit testing, linting, etc, the easier your job becomes. After you&rsquo;ve configured it through a Gruntfile.</p>
 
 <h3 id="getting-started">Getting started</h3>
 
-<p>In Blue dashboard we decided to use a node application by using npm.
+<p>In Blue dashboard we decided to use a node application by using <a href="https://www.npmjs.com/">npm</a>.
 When creating a node application you will need a file called package.json to manage local npm packages.&lsquo;</p>
+
+<blockquote>
+<p>package.json file</p>
+</blockquote>
 <pre class="highlight javascript tab-javascript"><code><span class="p">{</span>
   <span class="s2">"name"</span><span class="p">:</span> <span class="s2">"my_package"</span><span class="p">,</span>
   <span class="s2">"version"</span><span class="p">:</span> <span class="s2">"1.0.0"</span><span class="p">,</span>
@@ -374,21 +378,82 @@ When creating a node application you will need a file called package.json to man
   <span class="p">}</span>
 <span class="p">}</span>
 
+</code></pre>
+<blockquote>
+<p>Gruntfile</p>
+</blockquote>
+<pre class="highlight javascript tab-javascript"><code>
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">grunt</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">grunt</span><span class="p">.</span><span class="nx">loadNpmTasks</span><span class="p">(</span><span class="s1">'grunt-contrib-less'</span><span class="p">);</span>  <span class="c1">//Load grunt less task</span>
+  <span class="nx">grunt</span><span class="p">.</span><span class="nx">loadNpmTasks</span><span class="p">(</span><span class="s1">'grunt-contrib-sass'</span><span class="p">);</span>  <span class="c1">//Load grunt sass task</span>
+  <span class="nx">grunt</span><span class="p">.</span><span class="nx">loadNpmTasks</span><span class="p">(</span><span class="s1">'grunt-contrib-watch'</span><span class="p">);</span> <span class="c1">//Load grunt watch task</span>
+  <span class="c1">// Project configuration.</span>
+  <span class="nx">grunt</span><span class="p">.</span><span class="nx">initConfig</span><span class="p">({</span>
+    <span class="na">pkg</span><span class="p">:</span> <span class="nx">grunt</span><span class="p">.</span><span class="nx">file</span><span class="p">.</span><span class="nx">readJSON</span><span class="p">(</span><span class="s1">'package.json'</span><span class="p">),</span>
+
+    <span class="na">sass</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">dist</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">files</span><span class="p">:</span> <span class="p">{</span>
+          <span class="s1">'assets/css/dist_file'</span><span class="p">:</span> <span class="s1">'assets/scss/source_file'</span>  <span class="c1">//Compile SCSS file</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="na">less</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">development</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">options</span><span class="p">:</span> <span class="p">{</span>
+          <span class="na">paths</span><span class="p">:</span> <span class="p">[</span><span class="s1">'assets/less'</span><span class="p">]</span>
+        <span class="p">},</span>
+        <span class="na">files</span><span class="p">:</span> <span class="p">{</span>
+          <span class="s1">'assets/css/dist_file'</span><span class="p">:</span> <span class="s1">'assets/less/source_file'</span> <span class="c1">//Compile LESS file</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="na">watch</span><span class="p">:{</span>
+      <span class="na">less</span><span class="p">:{</span>
+        <span class="na">files</span><span class="p">:[</span><span class="s1">'assets/less/your_less_file.less'</span><span class="p">],</span> <span class="c1">//monitor LESS files for changes</span>
+        <span class="na">tasks</span><span class="p">:[</span><span class="s1">'less'</span><span class="p">]</span>
+      <span class="p">},</span>
+    <span class="p">}</span>
+  <span class="p">});</span>
+<span class="p">};</span>
 
 </code></pre>
-<ul>
-<li><p>package.json is the file that contains the project dependences such as Grunt, less and sass. To create package.json file you need to initialize nodejs project to do so:</p>
+<h3 id="installation">installation</h3>
 
 <ul>
-<li>You should have <a href="https://nodejs.org/download/">Node JS </a> to run the installation commands using npm.</li>
-<li><code class="prettyprint">npm init</code> to initialize the nodejs project, you can run this in same project directory. go through the preparations steps.</li>
-<li>Fill in the required data in the json file as shown in the example.</li>
-<li>In order to compile the less and sass you will need to add the <code class="prettyprint">grunt-contrip-less</code> and <code class="prettyprint">grunt-contrip-sass</code> to the package.json as shown in the example.</li>
-<li>Installing the CLI globally by running this command <code class="prettyprint">npm install -g grunt-cli</code>.</li>
-<li>Locate <code class="prettyprint">gruntfile.js</code> &amp; <code class="prettyprint">package.json</code> in the Blue Dashboard folder using the terminal.</li>
-<li>Go to your project directory then run the command <code class="prettyprint">npm install</code> to install the packages you added in the package.json file.</li>
+<li><p>In Blue dashboard we decided to use a node application by using npm to compile the SASS and LESS files into CSS files.
+The following commands should be be used in the terminal.</p>
+
+<ul>
+<li>Install the grunt CLI globally by running this command <code class="prettyprint">npm install -g grunt-cli</code> using the terminal.</li>
+<li>To initialize the nodejs project, you can run <code class="prettyprint">npm init</code> in the same project directory, then go through the preparations steps.</li>
+<li>Create Gruntfile manually in your project directory and keep it empty.</li>
+<li>Install the npm desired packages:
+
+<ul>
+<li><code class="prettyprint">npm install grunt --save-dev</code></li>
+<li><code class="prettyprint">npm install grunt-contrib-less --save-dev</code></li>
+<li><code class="prettyprint">npm install grunt-contrib-sass --save-dev</code></li>
+<li><code class="prettyprint">npm install grunt-contrib-watch --save-dev</code></li>
 </ul></li>
-<li><p>package.json file contains information such as :</p>
+<li>You will notice these packages being added under devDependencies in package.json.</li>
+<li>In the gruntfile add the following code as shown in the example.</li>
+<li>Now you can use the grunt commands to compile your LESS and SASS files:
+
+<ul>
+<li>Use <code class="prettyprint">Grunt less</code> to compile less files.</li>
+<li>Use <code class="prettyprint">Grunt sass</code> to compile sass files.</li>
+<li>Use <code class="prettyprint">Grunt watch</code> to keep track of the less or sass files.</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<aside class="success">
+Grunt watch is used to keep track of your less or sass files to compile them immediately when saving changes to the file. 
+</aside>
+
+<ul>
+<li><p>package.json file (example on the right) contains information such as :</p>
 
 <ul>
 <li>name: the current directory name</li>
@@ -405,21 +470,7 @@ When creating a node application you will need a file called package.json to man
 </ul>
 
 <aside class="success">
-Please note that the node application is not the only way that could be used.
-</aside>
-
-<ul>
-<li><p>Now you can use the grunt commands to compile your LESS and SASS files:</p>
-
-<ul>
-<li><code class="prettyprint">Grunt less</code></li>
-<li><code class="prettyprint">Grunt sass</code></li>
-<li><code class="prettyprint">Grunt watch</code></li>
-</ul></li>
-</ul>
-
-<aside class="success">
-Grunt watch is used to keep track of your less or sass files to compile them immediately when saving changes to the file. 
+Please note that the node application is not the only way that could be used, for example you can use <a href="http://koala-app.com/">Koala</a> to compile SASS.
 </aside>
 
 <h2 id="less">LESS</h2>
