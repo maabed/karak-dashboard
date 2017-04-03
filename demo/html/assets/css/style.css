@@ -33,7 +33,6 @@
     position: fixed;
     z-index: 9999;
     width: 250px;
-    padding-left: 1.2em;
     margin-top: -2.9em;
     border-bottom: 1px solid #f1f3f6;
     background-color: #2980b9;
@@ -6683,125 +6682,125 @@ a.btn-circle {
 /*! Account manager */
 
 
-/* Account Management View */
+/* Budget View */
 
-.account_manager-page {
+.buget-page {
     /* User Information Box*/
     /* Transactions Chart */
     /* Datepicker */
     /* Data Table */
 }
 
-.account_manager-page .all-income {
+.buget-page .all-income {
     text-align: center;
     color: #626262;
 }
 
-.account_manager-page .all-income h3,
-.account_manager-page .all-income h2 {
+.buget-page .all-income h3,
+.buget-page .all-income h2 {
     font-weight: lighter;
 }
 
-.account_manager-page .all-income h3 {
+.buget-page .all-income h3 {
     color: #67b2e4;
 }
 
-.account_manager-page .account-personal-info {
+.buget-page .account-personal-info {
     color: rgba(0, 0, 0, 0.51);
     font-weight: lighter;
 }
 
-.account_manager-page .account-personal-info .title {
+.buget-page .account-personal-info .title {
     text-align: center;
 }
 
-.account_manager-page .account-personal-info img {
+.buget-page .account-personal-info img {
     border: 2px solid #67b2e4;
     border-radius: 180px;
     margin: 0px auto;
 }
 
-.account_manager-page .account-personal-info h4 {
+.buget-page .account-personal-info h4 {
     font-weight: lighter;
     color: #67b2e4;
     text-align: center;
 }
 
-.account_manager-page .account-personal-info .user-account-info span {
+.buget-page .account-personal-info .user-account-info span {
     text-align: left;
     line-height: 2.2em;
     color: rgba(0, 0, 0, 0.51);
     font-size: 1em;
 }
 
-.account_manager-page .account-personal-info .user-account-info span i {
+.buget-page .account-personal-info .user-account-info span i {
     color: #67b2e4;
     margin-right: 0.5em;
 }
 
-.account_manager-page .account-personal-info .user-account-info label {
+.buget-page .account-personal-info .user-account-info label {
     font-weight: lighter;
 }
 
-.account_manager-page .account-personal-info .change-account-select {
+.buget-page .account-personal-info .change-account-select {
     color: #67b2e4;
     font-weight: lighter;
     margin-top: 1em;
 }
 
-.account_manager-page .account-managment-chart .translateform .top-margin,
-.account_manager-page .account-managment-transactions .translateform .top-margin {
+.buget-page .account-managment-chart .translateform .top-margin,
+.buget-page .account-managment-transactions .translateform .top-margin {
     margin-top: 0.5em;
 }
 
-.account_manager-page .account-managment-chart .translateform .top-margin .transaction-drop,
-.account_manager-page .account-managment-transactions .translateform .top-margin .transaction-drop {
+.buget-page .account-managment-chart .translateform .top-margin .transaction-drop,
+.buget-page .account-managment-transactions .translateform .top-margin .transaction-drop {
     margin-bottom: 0px;
     margin-top: 9px;
 }
 
-.account_manager-page .datepicker {
+.buget-page .datepicker {
     border: 0px;
     width: 100%;
 }
 
-.account_manager-page .datepicker .datepicker--nav-action path {
+.buget-page .datepicker .datepicker--nav-action path {
     stroke: rgba(0, 0, 0, 0.07);
 }
 
-.account_manager-page .datepicker .datepicker--nav-title {
+.buget-page .datepicker .datepicker--nav-title {
     color: #67b2e4;
     font-weight: lighter;
 }
 
-.account_manager-page .column_searching tbody tr th {
+.buget-page .column_searching tbody tr th {
     font-weight: 100;
 }
 
-.account_manager-page .column_searching .static-width {
+.buget-page .column_searching .static-width {
     width: 30%;
 }
 
-.account_manager-page .column_searching .green-trans {
+.buget-page .column_searching .green-trans {
     color: #62d995;
 }
 
-.account_manager-page .column_searching .red-trans {
+.buget-page .column_searching .red-trans {
     color: #ed796d;
 }
 
-.account_manager-page .transaction-drop {
+.buget-page .transaction-drop {
     margin-bottom: 0px;
     margin-top: 12px;
 }
 
-.account_manager-page .outline-icon-btn span {
+.buget-page .outline-icon-btn span {
     float: right;
     padding-left: 2em;
     padding-top: 0.1em;
 }
 
-.account_manager-page .highcharts-credits {
+.buget-page .highcharts-credits {
     display: none;
 }
 
