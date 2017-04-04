@@ -1,0 +1,43 @@
+/* Search Result View */
+.search-page-container {
+  .icon-addon {
+    position: relative;
+    color: #555555;
+    display: block;
+    overflow: hidden;
+
+    .fa,
+    .glyphicon {
+      position: absolute;
+      color: $nav-icon-color;
+      z-index: 2;
+      left: 10px;
+      font-size: 14px;
+      width: 20px;
+      margin-left: -2.5px;
+      text-align: center;
+      padding: 10px 0px;
+      top: 1px;
+      @include css-effect(all 0.3s ease-in-out);
+    }
+
+    .serach-input {
+      padding-bottom: 0px;
+      float: left;
+      font-weight: normal;
+      padding-left: 2em;
+    }
+
+    &:after,
+    &:before {
+      display: table;
+      content: '';
+    }
+
+    &:after {
+      clear: both;
+    }
+
+  }
+
+}

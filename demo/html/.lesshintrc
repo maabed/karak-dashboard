@@ -1,0 +1,8 @@
+{
+    "fileExtensions": [".less", ".css"],
+
+    "emptyRule": true, // If there are no options for a rule, you can simply enable it by setting it to true
+    "propertyOrdering": false,
+	"importantRule": true,
+	"qualifyingElement":false
+}
