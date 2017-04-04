@@ -404,7 +404,7 @@ $(function($) {
             trailWidth: 1,
             svgStyle: {
                 width: '100%',
-                height: '5px',
+                height: '2px',
                 display: 'block',
                 marginRight: 'auto',
                 marginLeft: 'auto'

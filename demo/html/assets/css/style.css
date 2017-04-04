@@ -36,6 +36,7 @@
     margin-top: -2.9em;
     border-bottom: 1px solid #f1f3f6;
     background-color: #2980b9;
+    height: 3em;
 }
 
 .wrapper .sidebar-wrapper .sidebar-brand:hover {
@@ -2843,6 +2844,10 @@ a.btn-circle {
     border-top: 5px solid #cdcdcd;
 }
 
+.tabs-container .tabs-header .bordered-tab li {
+    min-height: 46px;
+}
+
 .tabs-container .tabs-header.left-tabs-header {
     width: 20%;
     float: left;
@@ -4860,7 +4865,7 @@ a.btn-circle {
     color: #888888;
     position: relative;
     top: 24px;
-    left: 92%;
+    float: right;
     border: 1px solid #e4e5e7;
     background-color: #ffffff;
     padding: 0.2em;
@@ -5754,6 +5759,13 @@ a.btn-circle {
     }
 }
 
+@media (min-width: 979px) {
+    .contacts {
+        display: none;
+    }
+}
+
+
 .inbox-container .split-view .split-right-side .msg-loader {
     display: none;
     position: absolute;
@@ -6579,6 +6591,19 @@ a.btn-circle {
     background-color: #ffffff;
 }
 
+.chat-search::-webkit-input-placeholder {
+  color: #ffffff;
+}
+.chat-search::-moz-placeholder {
+  color: #ffffff;
+}
+.chat-search:-ms-input-placeholder {
+  color: #ffffff;
+}
+.chat-search:-moz-placeholder {
+  color: #ffffff;
+}
+
 .wrapper .user-info-pop {
     left: 1.5em;
     top: 9.1em;
@@ -7291,7 +7316,7 @@ a.btn-circle {
 }
 
 .login-body .login-container.active .card.alt {
-    top: 20px;
+    top: 0px;
     right: 0px;
     width: 100%;
     min-width: 100%;

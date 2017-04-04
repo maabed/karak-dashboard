@@ -292,7 +292,7 @@
             border: 0px;
 
             &.contacts {
-              display: 0px;
+              display: none;
 
               @media (max-width:979px) {
                 display: block;
