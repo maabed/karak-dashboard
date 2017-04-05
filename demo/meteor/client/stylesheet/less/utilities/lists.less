@@ -1,0 +1,102 @@
+/*! Lists utility */
+@import "../global/variables.less";
+
+.list-group {
+  padding-left: 0px;
+  margin-bottom: 20px;
+
+  .list-group-item {
+    .list-badge {
+      float: right;
+    }
+
+    &.event-list-item {
+      border-left: 4px solid @info-mid-color;
+      margin-bottom: 1em;
+
+      h3 {
+        line-height: 0px;
+      }
+
+      p {
+        padding-top: 13px;
+      }
+
+    }
+
+    &:first-child {
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+    }
+
+    .blog-img {
+      width: 100px;
+      padding-left: 0px;
+      margin-left: 0px;
+      border-left: 4px solid @info-mid-color;
+    }
+
+    .list-date {
+      font-size: 13px;
+      margin-top: 15px;
+      margin-bottom: 0px;
+    }
+
+    .bootstrap-switch {
+      border-radius: @no-radius;
+
+      .bootstrap-switch-primary {
+        background-color: @info-mid-color;
+        border-radius: 0px;
+      }
+
+    }
+
+    .bootstrap-switch.bootstrap-switch-wrapper {
+      float: right;
+
+      &.bootstrap-switch-focused {
+        box-shadow: none;
+        border: 1px solid #cccccc;
+      }
+
+    }
+
+    .title-border {
+      border-bottom: 2px solid @info-mid-color;
+      padding-bottom: 5px;
+    }
+
+    .icon-list-border {
+      border: 2px solid @info-mid-color;
+      padding: 7px;
+      border-radius: 50%;
+      position: relative;
+      top: 15px;
+      margin-bottom: 15px;
+    }
+
+    .box-size {
+      width: 90%;
+    }
+
+  }
+
+  &.glyph-color {
+    .glyphicon {
+      margin-right: 10px;
+      color: @primary-light-color;
+    }
+
+  }
+
+  .info-mid {
+    color: @white-color;
+
+    .glyphicon {
+      color: @white-color;
+    }
+
+  }
+
+}
