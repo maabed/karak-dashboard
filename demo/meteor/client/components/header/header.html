@@ -1,0 +1,88 @@
+<template name="header">
+    <div class="page-content-wrapper index-page-container">
+        <div class="main-dashboard-header" id="head">
+            <div class="container-fluid header-container">
+                <i href="#menu-toggle" id="menu-toggle" class="fa fa-bars menu-toggle" aria-hidden="true"></i>
+                <div class="form-group">
+                    <div class="icon-addon addon-md">
+                        <input type="text" placeholder="Type anywhere to search" class="form-control main-dashboard-search search-text-box">
+                        <i class="fa fa-search glyphicon glyphicon-search" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="right-side-head">
+                    <div class="right-side-items notifecations">
+                        <button id="notifications" class="notifications btn btn-default btn-lg btn-link">
+                            <i class="fa fa-bell-o" aria-hidden="true"></i>
+                        </button>
+                        <span id="not-badg" class="badge badge-notify">2</span>
+                    </div>
+                    <div class="right-side-items email">
+                        <button id="messages" class="messages btn btn-default btn-lg btn-link">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        </button>
+                        <span id="message-badg" class="badge badge-notify">4</span>
+                    </div>
+                    <div id="user-box" class="user-box right-side-items">
+                        <p> Mr.Sami<i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                        <img src="/images/user_01_36.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="notifecations-box">
+                <div class="arrow-up"></div>
+                <h5>Notifications</h5>
+                {{#each notifications}}
+                <div class="single-content-row">
+                    <a href="#">
+                        <img alt="user name" src="{{image}}" />
+                        <p><b>{{name}}</b>{{notification}}</p>
+                    </a>
+                </div>
+                {{/each}}
+                <div class="veiw-all-not">
+                    <a href="#">View All</a>
+                </div>
+            </div>
+            <div class="messages-box">
+                <div class="arrow-up"></div>
+                <h5>Messages <a class="send-message-link" href="#">Send New Message</a></h5>
+                {{#each messages}}
+                <div class="single-content-row">
+                    <a href="#">
+                        <img alt="user name" src="{{image}}" />
+                        <p><b>{{name}}</b>
+                            <br />{{message}}</p>
+                    </a>
+                </div>
+                {{/each}}
+                <div class="veiw-all-not">
+                    <a href="#">View All</a>
+                </div>
+            </div>
+            <div class="user-info-box">
+                <div class="arrow-up"></div>
+                <a href="#">
+                    <div class="user-info-content">
+                        <i class="fa fa-user" aria-hidden="true"></i> Proﬁle
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="user-info-content">
+                        <i class="fa fa-cog" aria-hidden="true"></i> Settings
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="user-info-content">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i> Help
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="user-info-content logout">
+                        Log Out
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</template>
