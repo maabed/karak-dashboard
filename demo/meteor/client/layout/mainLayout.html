@@ -1,9 +1,13 @@
 <template name="mainLayout">
     <div class="wrapper">
         {{> sidebar}} 
-        {{> header}}
+        {{> header}} 
         {{> rightSide}}
-        {{> Template.dynamic template=content}}
+        <div class="page-content-wrapper">
+            <div class="container-fluid">
+                {{> Template.dynamic template=content}}
+            </div>
+        </div>
         {{> footer}}
     </div>
 </template>

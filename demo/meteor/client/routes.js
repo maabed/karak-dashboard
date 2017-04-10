@@ -12,3 +12,10 @@ FlowRouter.route('/charts', {
     BlazeLayout.render('mainLayout', { content: 'charts' });
   },
 });
+
+FlowRouter.route('/tables', {
+  name: 'tables',
+  action: () => {
+    BlazeLayout.render('mainLayout', { content: 'tables' });
+  },
+});

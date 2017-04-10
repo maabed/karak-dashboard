@@ -129,7 +129,7 @@ Template.sidebar.helpers({
         hassub: 0,
 
         submenu: [{
-          link: 'tables.html',
+          link: '/tables',
           text: 'Basic Table',
         },
         {
@@ -191,6 +191,7 @@ Template.sidebar.helpers({
 });
 
 $(document).ready(function() {
+
  $('#menu-toggle').click(function(e) {
    e.preventDefault();
    $('.wrapper').toggleClass('toggled');
@@ -232,7 +233,7 @@ $(document).ready(function() {
     current.children('.left-arrow').addClass('open');
     li.addClass('open active');
   }
-   
+  
 });
 
 });
