@@ -190,6 +190,7 @@ Template.sidebar.helpers({
   },
 });
 
+
 $(document).ready(function() {
 
  $('#menu-toggle').click(function(e) {
