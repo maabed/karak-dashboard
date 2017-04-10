@@ -27,6 +27,14 @@ Template.header.helpers({
     }, ],
 });
 
+Template.header.events({
+  'click .menu-toggle'(event) {
+    event.preventDefault();
+    $('.wrapper').toggleClass('toggled');
+  },
+});
+
+
 $(document).ready(function() {
     $('#notifications').click(function() {
         $('.notifecations-box').fadeToggle();

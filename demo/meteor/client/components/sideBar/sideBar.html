@@ -13,14 +13,14 @@
                 </li>
                 {{else}}
                 <li class="sidebar-item has-submenu">
-                    <a href="{{link}}">
+                    <a href="#">
                         <i class="fa fa-file-text nav-icon" aria-hidden="true"></i> {{text}}
                         <i class="fa fa-angle-left left-arrow" aria-hidden="true"></i>
                     </a>
                     <ul class="sidebar-submenue">
                         {{#each submenu}}
                             <li class="submenu-li">
-                                <a href="{{submenu.link}}">
+                                <a href="{{link}}">
                                 {{text}}
                                 </a>
                             </li>
