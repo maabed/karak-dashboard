@@ -2,7 +2,7 @@ Template.sidebar.helpers({
   menuItem() {
     const menuItem = [
       {
-        link: 'index.html',
+        link: '/',
         icon: 'fa-tachometer',
         text: 'Dashboard',
         hassub: 1,
@@ -24,7 +24,7 @@ Template.sidebar.helpers({
         ],
       },
       {
-        link: '#',
+        link: '/charts',
         icon: 'fa-pie-chart',
         text: 'Charts',
         hassub: 1,
