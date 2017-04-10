@@ -1,0 +1,34 @@
+<template name="sidebar">
+    <div class="sidebar-wrapper">
+        <div class="sidebar-brand" id="company-name">
+            <a href="index.html">
+                <img src="/images/logo.png" class="center-block">
+            </a>
+        </div>
+        <ul class="sidebar">
+            {{#each menuItem}} 
+                {{#if hassub}}
+                <li class="open active sidebar-item">
+                    <a href="{{link}}"><i class="fa {{icon}} nav-icon" aria-hidden="true"></i>{{text}}</a>
+                </li>
+                {{else}}
+                <li class="sidebar-item has-submenu">
+                    <a href="{{link}}">
+                        <i class="fa fa-file-text nav-icon" aria-hidden="true"></i> {{text}}
+                        <i class="fa fa-angle-left left-arrow" aria-hidden="true"></i>
+                    </a>
+                    <ul class="sidebar-submenue">
+                        {{#each submenu}}
+                            <li class="submenu-li">
+                                <a href="{{submenu.link}}">
+                                {{text}}
+                                </a>
+                            </li>
+                        {{/each}}
+                    </ul>
+                </li>
+                {{/if}} 
+            {{/each}}
+        </ul>
+    </div>
+</template>

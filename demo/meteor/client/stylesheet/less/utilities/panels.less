@@ -1,0 +1,175 @@
+/*! Panels utility */
+@import "../global/variables.less";
+
+.panal-font-style {
+  font-weight: lighter;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.panel {
+  border-radius: @no-radius;
+
+  .panel-heading {
+    border-radius: @no-radius;
+
+    a {
+      span {
+        color: @panel-icon-color;
+        cursor: pointer;
+        margin-right: @small-value;
+        margin-top: 0.2em;
+
+        &:hover {
+          color: @panel-icon-color;
+        }
+
+      }
+
+    }
+
+    .panel-actions {
+      display: inline;
+      float: right;
+
+      p {
+        color: @panel-icon-color;
+
+        &:hover {
+          color: @panel-icon-hover-color;
+        }
+
+      }
+
+    }
+
+  }
+
+  .panel-body {
+    border-top: 0px;
+    &:extend(.panal-font-style);
+  }
+
+  .panel-footer {
+    border-top: 1px solid #dddddd;
+    background: none;
+    &:extend(.panal-font-style);
+  }
+
+}
+
+.no-borders {
+  border: @no-border;
+  box-shadow: none;
+
+  .panel-heading {
+    border: @no-border;
+    background-color: @panel-head-background-color;
+
+    a {
+      span {
+        .panel-group {
+          .panel {
+            border-radius: 0px;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+.panel-group {
+  .panel {
+    border-radius: @no-radius;
+  }
+
+  .panel-primary {
+    border-color: @panel-border-color;
+
+    .panel-heading {
+      background-color: @primary-mid-color;
+    }
+
+  }
+
+  .panel-success {
+    border-color: @success-light-color;
+
+    .panel-heading {
+      background-color: @success-mid-color;
+    }
+
+  }
+
+  .panel-info {
+    border-color: @info-light-color;
+
+    .panel-heading {
+      background-color: @info-mid-color;
+    }
+
+  }
+
+  .panel-warning {
+    border-color: @warning-light-color;
+
+    .panel-heading {
+      background-color: @warning-mid-color;
+    }
+
+  }
+
+  .panel-danger {
+    border-color: @danger-light-color;
+
+    .panel-heading {
+      background-color: @danger-mid-color;
+    }
+
+  }
+
+  .panel-success,
+  .panel-info,
+  .panel-warning,
+  .panel-danger {
+    .panel-heading {
+      color: @white-color;
+    }
+
+  }
+
+}
+
+.dag_container {
+  div {
+    p {
+      &:extend(.panal-font-style);
+    }
+
+  }
+
+}
+
+.panel-fullscreen {
+  display: block;
+  z-index: 9999;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  overflow: auto;
+}
+
+.code-table {
+  td {
+    padding-right: 1.5em;
+  }
+
+}
