@@ -18,7 +18,7 @@ Template.sidebar.helpers({
           text: 'Form Elements',
         },
         {
-          link: '/form_wizard',
+          link: '/form-wizard',
           text: 'Form Wizard',
         },
         ],
@@ -117,7 +117,7 @@ Template.sidebar.helpers({
           text: 'Social',
         },
         {
-          link: '/landing_page',
+          link: '/landing-page',
           text: 'Landing Page',
         },
         ],
@@ -133,7 +133,7 @@ Template.sidebar.helpers({
           text: 'Basic Table',
         },
         {
-          link: '/data_tables',
+          link: '/data-tables',
           text: 'Data Table',
         },
         ],
@@ -149,7 +149,7 @@ Template.sidebar.helpers({
           text: 'Vector Maps',
         },
         {
-          link: '/gogole_map',
+          link: '/gogole-map',
           text: 'Google Map',
         },
         ],
@@ -177,7 +177,7 @@ Template.sidebar.helpers({
           text: 'Login & Registration',
         },
         {
-          link: '/lock_screen',
+          link: '/lock-screen',
           text: 'Lock Screen',
         },
         {
