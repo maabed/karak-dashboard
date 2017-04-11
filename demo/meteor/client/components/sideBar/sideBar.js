@@ -18,7 +18,7 @@ Template.sidebar.helpers({
           text: 'Form Elements',
         },
         {
-          link: 'form_wizard.html',
+          link: '/form_wizard',
           text: 'Form Wizard',
         },
         ],
@@ -30,7 +30,7 @@ Template.sidebar.helpers({
         hassub: 1,
       },
       {
-        link: 'inbox.html',
+        link: '/inbox',
         icon: 'fa-envelope',
         text: 'Email',
         hassub: 1,
@@ -42,58 +42,58 @@ Template.sidebar.helpers({
         hassub: 0,
 
         submenu: [{
-          link: 'icons.html',
+          link: '/icons',
           text: 'Icons',
         },
         {
-          link: 'colors.html',
+          link: '/colors',
           text: 'Colors',
         },
         {
-          link: 'buttons.html',
+          link: '/buttons',
           text: 'Buttons',
         },
         {
-          link: 'Notifications.html',
+          link: '/Notifications',
           text: 'Notifications',
         },
         {
-          link: 'modals.html',
+          link: '/modals',
           text: 'Modals',
         },
         {
-          link: 'tabs.html',
+          link: '/tabs',
           text: 'Tabs',
         },
         {
-          link: 'cards.html',
+          link: '/cards',
           text: 'Cards',
         },
         {
-          link: 'loading.html',
+          link: '/loading',
           text: 'Loading',
         },
         {
-          link: 'panels.html',
+          link: '/panels',
           text: 'Panels',
         },
         {
-          link: 'lists.html',
+          link: '/lists',
           text: 'Lists',
         },
         {
-          link: 'menus.html',
+          link: '/menus',
           text: 'Menus',
         },
         {
-          link: 'hover.html',
+          link: '/hover',
           text: 'Hover',
         },
         ],
 
       },
       {
-        link: 'calendar.html',
+        link: '/calendar',
         icon: 'fa-calendar-check-o',
         text: 'Calendar',
         hassub: 1,
@@ -105,19 +105,19 @@ Template.sidebar.helpers({
         hassub: 0,
 
         submenu: [{
-          link: 'Budget.html',
+          link: '/Budget',
           text: 'Budget',
         },
         {
-          link: 'chat.html',
+          link: '/chat',
           text: 'Chat',
         },
         {
-          link: 'social.html',
+          link: '/social',
           text: 'Social',
         },
         {
-          link: 'landing_page.html',
+          link: '/landing_page',
           text: 'Landing Page',
         },
         ],
@@ -133,7 +133,7 @@ Template.sidebar.helpers({
           text: 'Basic Table',
         },
         {
-          link: 'data_tables.html',
+          link: '/data_tables',
           text: 'Data Table',
         },
         ],
@@ -145,11 +145,11 @@ Template.sidebar.helpers({
         hassub: 0,
 
         submenu: [{
-          link: 'map.html',
+          link: '/map',
           text: 'Vector Maps',
         },
         {
-          link: 'gogole_map.html',
+          link: '/gogole_map',
           text: 'Google Map',
         },
         ],
@@ -161,27 +161,27 @@ Template.sidebar.helpers({
         hassub: 0,
 
         submenu: [{
-          link: 'invoice.html',
+          link: '/invoice',
           text: 'Invoice',
         },
         {
-          link: 'error400.html',
+          link: '/error400',
           text: '400 Page',
         },
         {
-          link: 'error500.html',
+          link: '/error500',
           text: '500 Page',
         },
         {
-          link: 'login.html',
+          link: '/login',
           text: 'Login & Registration',
         },
         {
-          link: 'lock_screen.html',
+          link: '/lock_screen',
           text: 'Lock Screen',
         },
         {
-          link: 'tour.html',
+          link: '/tour',
           text: 'Tour',
         },
         ],
