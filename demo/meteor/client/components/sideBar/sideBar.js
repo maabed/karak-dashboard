@@ -215,8 +215,8 @@ Template.sidebar.events({
     if (event.which === 13) {
       if ($('.search-text-box').val() != ' ') {
         window.location = 'search.html';
-     }
-   }
+      }
+    }
   },
 });
 
