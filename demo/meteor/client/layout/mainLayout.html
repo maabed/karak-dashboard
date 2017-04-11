@@ -3,11 +3,7 @@
         {{> sidebar}} 
         {{> header}} 
         {{> rightSide}}
-        <div class="page-content-wrapper">
-            <div class="container-fluid">
-                {{> Template.dynamic template=content}}
-            </div>
-        </div>
+        {{> Template.dynamic template=content}}
         {{> footer}}
     </div>
 </template>
