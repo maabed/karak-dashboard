@@ -1,256 +1,257 @@
 <template name="budget">
-<div class="container-fluid buget-page">
-                <div class="row animated fadeInUp hide-on-print">
-                    <div class="col-lg-12">
-                        <div class="col-content body-header">
-                            <a class="page_title pull-right">App Views  /  Account Manager</a>
-                            <h4 class="title">Account Manager Application</h4>
-                            <p>
-                                Fastest way to manage your transactions, payments, investments and more !
-                            </p>
-                        </div>
+    <div class="page-content-wrapper">
+        <div class="container-fluid buget-page">
+            <div class="row animated fadeInUp hide-on-print">
+                <div class="col-lg-12">
+                    <div class="col-content body-header">
+                        <a class="page_title pull-right">App Views  /  Account Manager</a>
+                        <h4 class="title">Account Manager Application</h4>
+                        <p>
+                            Fastest way to manage your transactions, payments, investments and more !
+                        </p>
                     </div>
                 </div>
-                <div class="row hide-on-print">
-                    <div class="col-md-3 animated fadeInUp">
-                        <div class="col-content all-income">
-                            <h1><i class="fa fa-line-chart" aria-hidden="true"></i></h1>
-                            <h2>$1 250, 33</h2>
-                            <h3>Income</h3>
-                        </div>
-                    </div>
-                    <div class="col-md-3 animated fadeInUp">
-                        <div class="col-content all-income">
-                            <h1><i class="fa fa-area-chart" aria-hidden="true"></i></h1>
-                            <h2>$4 203, 03</h2>
-                            <h3>Revenue</h3>
-                        </div>
-                    </div>
-                    <div class="col-md-3 animated fadeInUp">
-                        <div class="col-content all-income">
-                            <h1><i class="fa fa-bar-chart" aria-hidden="true"></i></h1>
-                            <h2>$1 650, 22</h2>
-                            <h3>Assets</h3>
-                        </div>
-                    </div>
-                    <div class="col-md-3 animated fadeInUp">
-                        <div class="col-content all-income">
-                            <h1><i class="fa fa-pie-chart" aria-hidden="true"></i></h1>
-                            <h2>$2 130, 00</h2>
-                            <h3>Investment</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="row hide-on-print">
-                    <div class="col-md-3 animated fadeInUp">
-                        <div class="col-content account-personal-info">
-                            <h5 class="title">Personal Information</h5>
-                            <img src="/images/user_01_120.jpg" class="img-responsive">
-                            <h4>Mr.Mohammad Meshaal</h4>
-                            <div class="user-account-info">
-                                <span><i class="fa fa-id-card" aria-hidden="true"></i><label>99 2344 3456 343</label></span>
-                                <br>
-                                <span><i class="fa fa-user-circle-o" aria-hidden="true"></i><label>Checking account</label></span>
-                                <br>
-                                <span><i class="fa fa-table" aria-hidden="true"></i><label>27 Nov, wednesday</label></span>
-                            </div>
-                            <label class="change-account-select">Change Account:</label>
-                            <select class="select-style select2-init-single" name="change-acc">
-                                <option value="99 2344 3456 343">99 2344 3456 343</option>
-                                <option value="98 3443 6456 241">98 3443 6456 241</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-md-9 animated fadeInUp account-managment-chart">
-                        <div class="col-md-12 no-left-right-padding">
-                            <div class="col-content">
-                                <div id="containerspline"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row hide-on-print">
-                    <div class="col-md-3 animated fadeInUp">
-                        <div class="col-content">
-                            <div class="datepicker-here simple" data-language='en'></div>
-                        </div>
-                    </div>
-                    <div class="col-md-9 animated fadeInUp account-managment-transactions">
-                        <div class="col-md-12 no-left-right-padding">
-                            <div class="col-content">
-                                <h5 class="title">Transaction</h5>
-                                <form id="translateform" class="translateform" method="post" action="">
-                                    <div class="row top-margin">
-                                        <div class="col-sm-6">
-                                            <div class="form-group transaction-drop">
-                                                <select class="select-style select2-init-single" name="changeacc" id="changeacc" required>
-                                                    <option value="">Customer Account No.</option>
-                                                    <option value="99 2344 3456 343">99 2344 3456 343</option>
-                                                    <option value="98 3443 6456 241">98 3443 6456 241</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <div class="input-field col-val">
-                                                    <input rangelength="[10,14]" type="text" onkeypress="return isNumber(event)" required id="Beneficiary" name="Beneficiary">
-                                                    <label for="Beneficiary">Beneficiary Account No.</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <div class="input-field col-val">
-                                                    <input type="text" onkeypress="return isNumber(event)" required id="amount" name="amount">
-                                                    <label for="transfer">Transfer Amount</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <div class="input-field col-val">
-                                                    <input type="text" id="details" name="details" required>
-                                                    <label for="details">Details</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <div class="form-group">
-                                                <div class="input-field col-val">
-                                                    <input type="password" id="pass" name="pass" required>
-                                                    <label for="pass">Transaction Password</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <button type="submit" name="signup1" value="Sign up" id="SubmitForm" class="btn btn-info icon-btn pull-right">
-                                                <span class="fa fa-paper-plane"></span> Submit
-                                            </button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="col-content dataTables_wrapper">
-                            <h5 class="title">Reports</h5>
-                            <select class="select-style select-custom select2-init-single" name="reports" required>
-                                <option value="Transactions Report">Transactions Report</option>
-                                <option value="99 2344 3456 343">Deposits Report</option>
-                                <option value="98 3443 6456 241">withdraw Report</option>
-                            </select>
-                            <br>
-                            <br>
-                            <table id="column_searching" class="table table-responsive column_searching">
-                                <thead class="table-head data-table-head">
-                                    <tr>
-                                        <th class="basic-th">Beneficial Name</th>
-                                        <th class="basic-th">Transfer Amount</th>
-                                        <th class="basic-th">Date</th>
-                                        <th class="basic-th static-width">Details</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th>Mohammad Ahmad</th>
-                                        <th class="green-trans">23 233$</th>
-                                        <th>03 Jan 2017</th>
-                                        <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget maximus nisi.</th>
-                                    </tr>
-                                    <tr>
-                                        <th>Khalid Mustafa</th>
-                                        <th class="green-trans">123$</th>
-                                        <th>07 Dec 2016</th>
-                                        <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam varius porttitor tortor.</th>
-                                    </tr>
-                                    <tr>
-                                        <th>Emad Ahmad</th>
-                                        <th class="red-trans">245 22$</th>
-                                        <th>07 Nov 2016</th>
-                                        <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac sodales metus.</th>
-                                    </tr>
-                                    <tr>
-                                        <th>Naser khalil</th>
-                                        <th class="green-trans">53$</th>
-                                        <th>03 Nov 2016</th>
-                                        <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod quam purus.</th>
-                                    </tr>
-                                    <tr>
-                                        <th>Dana Malik</th>
-                                        <th class="red-trans">443$</th>
-                                        <th>07 Dec 2015</th>
-                                        <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce velit arcu, sagittis.</th>
-                                    </tr>
-                                    <tr>
-                                        <th>Ala'a Saeed</th>
-                                        <th class="red-trans">234$</th>
-                                        <th>17 Oct 2016</th>
-                                        <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pulvinar tincidunt augue.</th>
-                                    </tr>
-                                    <tr>
-                                        <th>Rawan Nael</th>
-                                        <th class="red-trans">654$</th>
-                                        <th>12 Oct 2016</th>
-                                        <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed mi vehicula.</th>
-                                    </tr>
-                                    <tr>
-                                        <th>Kholod Ali</th>
-                                        <th class="red-trans">33 346$</th>
-                                        <th>07 Jan 2016</th>
-                                        <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia imperdiet sollicitudin.</th>
-                                    </tr>
-                                    <tr>
-                                        <th>Osama Mousa</th>
-                                        <th class="red-trans">6 556$</th>
-                                        <th>22 Dec 2015</th>
-                                        <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dapibus ex sed.</th>
-                                    </tr>
-                                    <tr>
-                                        <th>Nader Mohammad</th>
-                                        <th class="red-trans">644$</th>
-                                        <th>01 Dec 2015</th>
-                                        <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pulvinar tincidunt augue.</th>
-                                    </tr>
-                                    <tr>
-                                        <th>Hamzeh Amir</th>
-                                        <th class="green-trans">765$</th>
-                                        <th>14 Nov 2015</th>
-                                        <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod quam purus.</th>
-                                    </tr>
-                                    <tr>
-                                        <th>Wafa'a Yousif</th>
-                                        <th class="red-trans">22$</th>
-                                        <th>03 Mar 2015</th>
-                                        <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod quam purus.</th>
-                                    </tr>
-                                    <tr>
-                                        <th>Sami Husam</th>
-                                        <th class="green-trans">756$</th>
-                                        <th>11 Mar 2015</th>
-                                        <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod quam purus.</th>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <button type="button" class="btn btn-default outline-icon-btn pull-right print hide-on-print">
-                                        <span class="glyphicon glyphicon-print"></span>Save & Print
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-               
             </div>
-
- </template>
+            <div class="row hide-on-print">
+                <div class="col-md-3 animated fadeInUp">
+                    <div class="col-content all-income">
+                        <h1><i class="fa fa-line-chart"  aria-hidden="true"></i></h1>
+                        <h2>$1 250, 33</h2>
+                        <h3>Income</h3>
+                    </div>
+                </div>
+                <div class="col-md-3 animated fadeInUp">
+                    <div class="col-content all-income">
+                        <h1><i class="fa fa-area-chart"  aria-hidden="true"></i></h1>
+                        <h2>$4 203, 03</h2>
+                        <h3>Revenue</h3>
+                    </div>
+                </div>
+                <div class="col-md-3 animated fadeInUp">
+                    <div class="col-content all-income">
+                        <h1><i class="fa fa-bar-chart" aria-hidden="true"></i></h1>
+                        <h2>$1 650, 22</h2>
+                        <h3>Assets</h3>
+                    </div>
+                </div>
+                <div class="col-md-3 animated fadeInUp">
+                    <div class="col-content all-income">
+                        <h1><i class="fa fa-pie-chart" aria-hidden="true"></i></h1>
+                        <h2>$2 130, 00</h2>
+                        <h3>Investment</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row hide-on-print">
+                <div class="col-md-3 animated fadeInUp">
+                    <div class="col-content account-personal-info">
+                        <h5 class="title">Personal Information</h5>
+                        <img src="images/user_01_120.jpg" class="img-responsive">
+                        <h4>Mr.Mohammad Meshaal</h4>
+                        <div class="user-account-info">
+                            <span><i class="fa fa-id-card" aria-hidden="true"></i><label>99 2344 3456 343</label></span>
+                            <br>
+                            <span><i class="fa fa-user-circle-o" aria-hidden="true"></i><label>Checking account</label></span>
+                            <br>
+                            <span><i class="fa fa-table" aria-hidden="true"></i><label>27 Nov, wednesday</label></span>
+                        </div>
+                        <label class="change-account-select">Change Account:</label>
+                        <select class="select-style select2-init-single" name="change-acc">
+                            <option value="99 2344 3456 343">99 2344 3456 343</option>
+                            <option value="98 3443 6456 241">98 3443 6456 241</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-9 animated fadeInUp account-managment-chart">
+                    <div class="col-md-12 no-left-right-padding">
+                        <div class="col-content">
+                            <div id="containerspline"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row hide-on-print">
+                <div class="col-md-3 animated fadeInUp">
+                    <div class="col-content">
+                        <div class="budget-datepicker simple" data-language='en'></div>
+                    </div>
+                </div>
+                <div class="col-md-9 animated fadeInUp account-managment-transactions">
+                    <div class="col-md-12 no-left-right-padding">
+                        <div class="col-content">
+                            <h5 class="title">Transaction</h5>
+                            <form id="translateform" class="translateform" method="post" action="">
+                                <div class="row top-margin">
+                                    <div class="col-sm-6">
+                                        <div class="form-group transaction-drop">
+                                            <select class="select-style select2-init-single" name="changeacc" id="changeacc" required>
+                                                <option value="">Customer Account No.</option>
+                                                <option value="99 2344 3456 343">99 2344 3456 343</option>
+                                                <option value="98 3443 6456 241">98 3443 6456 241</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <div class="input-field col-val">
+                                                <input rangelength="[10,14]" type="text" onkeypress="return isNumber(event)" required id="Beneficiary" name="Beneficiary">
+                                                <label for="Beneficiary">Beneficiary Account No.</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <div class="input-field col-val">
+                                                <input type="text" onkeypress="return isNumber(event)" required id="amount" name="amount">
+                                                <label for="transfer">Transfer Amount</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <div class="input-field col-val">
+                                                <input type="text" id="details" name="details" required>
+                                                <label for="details">Details</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <div class="input-field col-val">
+                                                <input type="password" id="pass" name="pass" required>
+                                                <label for="pass">Transaction Password</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <button type="submit" name="signup1" value="Sign up" id="SubmitForm" class="btn btn-info icon-btn pull-right">
+                                            <span class="fa fa-paper-plane"></span> Submit
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="col-content dataTables_wrapper">
+                        <h5 class="title">Reports</h5>
+                        <select class="select-style select-custom select2-init-single" name="reports" required>
+                            <option value="Transactions Report">Transactions Report</option>
+                            <option value="99 2344 3456 343">Deposits Report</option>
+                            <option value="98 3443 6456 241">withdraw Report</option>
+                        </select>
+                        <br>
+                        <br>
+                        <table id="column_searching" class="table table-responsive column_searching">
+                            <thead class="table-head data-table-head">
+                                <tr>
+                                    <th class="basic-th">Beneficial Name</th>
+                                    <th class="basic-th">Transfer Amount</th>
+                                    <th class="basic-th">Date</th>
+                                    <th class="basic-th static-width">Details</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>Mohammad Ahmad</th>
+                                    <th class="green-trans">23 233$</th>
+                                    <th>03 Jan 2017</th>
+                                    <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget maximus nisi.</th>
+                                </tr>
+                                <tr>
+                                    <th>Khalid Mustafa</th>
+                                    <th class="green-trans">123$</th>
+                                    <th>07 Dec 2016</th>
+                                    <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam varius porttitor tortor.</th>
+                                </tr>
+                                <tr>
+                                    <th>Emad Ahmad</th>
+                                    <th class="red-trans">245 22$</th>
+                                    <th>07 Nov 2016</th>
+                                    <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac sodales metus.</th>
+                                </tr>
+                                <tr>
+                                    <th>Naser khalil</th>
+                                    <th class="green-trans">53$</th>
+                                    <th>03 Nov 2016</th>
+                                    <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod quam purus.</th>
+                                </tr>
+                                <tr>
+                                    <th>Dana Malik</th>
+                                    <th class="red-trans">443$</th>
+                                    <th>07 Dec 2015</th>
+                                    <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce velit arcu, sagittis.</th>
+                                </tr>
+                                <tr>
+                                    <th>Ala'a Saeed</th>
+                                    <th class="red-trans">234$</th>
+                                    <th>17 Oct 2016</th>
+                                    <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pulvinar tincidunt augue.</th>
+                                </tr>
+                                <tr>
+                                    <th>Rawan Nael</th>
+                                    <th class="red-trans">654$</th>
+                                    <th>12 Oct 2016</th>
+                                    <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed mi vehicula.</th>
+                                </tr>
+                                <tr>
+                                    <th>Kholod Ali</th>
+                                    <th class="red-trans">33 346$</th>
+                                    <th>07 Jan 2016</th>
+                                    <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia imperdiet sollicitudin.</th>
+                                </tr>
+                                <tr>
+                                    <th>Osama Mousa</th>
+                                    <th class="red-trans">6 556$</th>
+                                    <th>22 Dec 2015</th>
+                                    <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dapibus ex sed.</th>
+                                </tr>
+                                <tr>
+                                    <th>Nader Mohammad</th>
+                                    <th class="red-trans">644$</th>
+                                    <th>01 Dec 2015</th>
+                                    <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pulvinar tincidunt augue.</th>
+                                </tr>
+                                <tr>
+                                    <th>Hamzeh Amir</th>
+                                    <th class="green-trans">765$</th>
+                                    <th>14 Nov 2015</th>
+                                    <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod quam purus.</th>
+                                </tr>
+                                <tr>
+                                    <th>Wafa'a Yousif</th>
+                                    <th class="red-trans">22$</th>
+                                    <th>03 Mar 2015</th>
+                                    <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod quam purus.</th>
+                                </tr>
+                                <tr>
+                                    <th>Sami Husam</th>
+                                    <th class="green-trans">756$</th>
+                                    <th>11 Mar 2015</th>
+                                    <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod quam purus.</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button type="button" class="btn btn-default outline-icon-btn pull-right print hide-on-print">
+                                    <span class="glyphicon glyphicon-print"></span>Save & Print
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</template>

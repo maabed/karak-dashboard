@@ -12,6 +12,10 @@
     "import/resolver": "meteor",
     "parser": "babel-eslint"
   },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
   "env": {
     "meteor": true,
     "node": true
