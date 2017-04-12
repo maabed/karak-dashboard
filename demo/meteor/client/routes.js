@@ -34,10 +34,10 @@ FlowRouter.route('/social', {
   },
 });
 
-FlowRouter.route('/data_tables', {
-  name: 'data_tables',
+FlowRouter.route('/dataTables', {
+  name: 'dataTables',
   action: () => {
-    BlazeLayout.render('mainLayout', { content: 'data_tables' });
+    BlazeLayout.render('mainLayout', { content: 'dataTables' });
   },
 });
 
