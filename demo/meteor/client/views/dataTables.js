@@ -1,6 +1,6 @@
-Template.dataTables.onCreated(function dataTablesonCreatd() {
+// Template.dataTables.onCreated(function dataTablesonCreated() {
 
-});
+// });
 
 Template.dataTables.onRendered(function dataTablesonRendered() {
   $('#table_id').DataTable();
