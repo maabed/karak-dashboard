@@ -75,3 +75,10 @@ FlowRouter.route('/forms', {
     BlazeLayout.render('mainLayout', { content: 'forms' });
   },
 });
+
+FlowRouter.route('/buttons', {
+  name: 'buttons',
+  action: () => {
+    BlazeLayout.render('mainLayout', { content: 'buttons' });
+  },
+});
