@@ -27,3 +27,10 @@ kadira:flow-router
 kadira:blaze-layout
 
 natestrauser:select2
+dangrossman:bootstrap-daterangepicker
+momentjs:moment
+andrasph:clockpicker
+ajduke:bootstrap-tagsinput
+sergeyt:typeahead
+dbarrett:dropzonejs
+summernote:summernote
