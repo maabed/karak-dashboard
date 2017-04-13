@@ -61,7 +61,7 @@ Template.budget.onRendered(function budgetOnRendered() {
     },
     series: [{
       name: 'Random data',
-      data: (function() {
+      data: (function () {
         // generate an array of random data
         const data = [];
         const time = (new Date()).getTime();
