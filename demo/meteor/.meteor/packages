@@ -28,3 +28,6 @@ kadira:blaze-layout
 
 natestrauser:select2
 ephemer:reactive-datatables
+
+d3js:d3
+emdagon:c3js
