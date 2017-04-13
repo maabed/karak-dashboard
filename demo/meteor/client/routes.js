@@ -76,6 +76,12 @@ FlowRouter.route('/forms', {
   },
 });
 
+
+FlowRouter.route('/tabs', {
+  name: 'tabs',
+  action: () => {
+    BlazeLayout.render('mainLayout', { content: 'tabs' });
+
 FlowRouter.route('/buttons', {
   name: 'buttons',
   action: () => {
