@@ -1,0 +1,447 @@
+<template name="forms">
+    <div class="page-content-wrapper">
+        <div class="container-fluid form-page">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-content body-header">
+                        <a class="page_title pull-right"> Forms /  Forms Elements</a>
+                        <h4 class="title"> Forms </h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="col-content">
+                                <h5 class="title">Default Style</h5>
+                                <p class="header-text">In order to use Karak dashboard customized inputs the input should be wrapped with an <code>.input-field</code> class and the <code>input</code>itself should have an <code>id</code> that is the same as its <code>label</code>.</p>
+                                <form id="form1">
+                                    <div class="row group-content">
+                                        <div class="form-group col-sm-12 no-padding">
+                                            <div class="input-field parent">
+                                                <input id="full_name" name="full_name" type="text" class="validate">
+                                                <label for="full_name">Full Name*</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row group-content">
+                                        <div class="form-group col-sm-6 no-padding-left">
+                                            <div class="input-field parent">
+                                                <input id="email" name="email" type="email" class="validate">
+                                                <label for="email">Email*</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-sm-6 no-padding-right">
+                                            <div class="input-field parent">
+                                                <input id="phone" name="phone" type="text" class="validate">
+                                                <label for="phone">Phone*</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row group-content">
+                                        <div class="form-group col-sm-6 no-padding-left form-select">
+                                            <select class="select-display select2-init-single col-12">
+                                                <option class="Selected">Country</option>
+                                                <option>Jordan</option>
+                                                <option>Usa</option>
+                                                <option>UK</option>
+                                                <option>China</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-sm-6 no-padding-right">
+                                            <div class="input-field parent">
+                                                <input id="city" name="city" type="text" class="validate">
+                                                <label for="city">City*</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row group-content">
+                                        <div class="form-group pull-right">
+                                            <button type="button" class="btn btn-default icon-btn">
+                                                <span class="glyphicon glyphicon-trash"></span> Cancel
+                                            </button>
+                                            <button type="submit" class="btn btn-success dashboard-success icon-btn">
+                                                <span class="glyphicon glyphicon-envelope"></span> Send
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="col-content content-overflow">
+                                <h5 class="title">Login Style</h5>
+                                <form id="form2">
+                                    <div class="row group-content">
+                                        <div class="form-group">
+                                            <div class="input-field parent">
+                                                <input id="user_name" name="user_name" type="text" class="validate">
+                                                <label for="user_name">Username</label>
+                                            </div>
+                                            <div class="input-field parent">
+                                                <input id="password" name="password" type="password" class="validate">
+                                                <label for="password">Password</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row group-content">
+                                        <div class="pull-right">
+                                            <button type="submit" class="btn btn-info icon-btn">
+                                                <span class="glyphicon glyphicon-log-in"></span> login
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <br>
+                            <div class="col-content content-overflow">
+                                <h5 class="title">Login With Icons</h5>
+                                <p class="header-text">Using icons with input fields might be necessary sometimes. In order to use those Icons the <code>input</code> should be wrapped with <code>.input-field</code> class and preceded by the desired icon.</p>
+                                <form id="form3">
+                                    <div class="row form-group group-content">
+                                        <div class="col-sm-6">
+                                            <div class="input-field parent">
+                                                <i class="material-icons prefix"><i class="fa fa-user" aria-hidden="true"></i>
+                                                </i>
+                                                <input id="user_prefix" name="email" type="text" class="validate user_prefix">
+                                                <label for="user_prefix" class="user_prefix">Username</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="input-field parent">
+                                                <i class="material-icons prefix"><i class="fa fa-lock" aria-hidden="true"></i>
+                                                </i>
+                                                <input id="pass_prefix" name="password" type="password" class="validate">
+                                                <label for="pass_prefix">Password</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row group-content">
+                                        <div class="pull-right">
+                                            <button type="submit" class="btn btn-info icon-btn">
+                                                <span class="glyphicon glyphicon-log-in"></span> login
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="col-content">
+                                <h5 class="title">Ranges</h5>
+                                <p class="header-text">Ranges are used by defining an HTML input but gets initialized by the
+                                    <a href="" class="doc-popover" data-trigger="focus" data-toggle="popover" data-content="test">Javascript</a>
+                                </p>
+                                <label class="input-label">Start without params</label>
+                                <input type="text" id="no-params" name="example_name" value="" />
+                                <br>
+                                <label class="input-label">Set type to double and specify range, also showing grid and adding prefix"$"</label>
+                                <input type="text" id="double" name="example_name" value="" />
+                                <br>
+                                <label class="input-label">Using any strings as your values</label>
+                                <input type="text" id="strings" name="example_name" value="" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="col-content">
+                                <h5 class="title">Slide Toggle</h5>
+                                <p class="header-text">To use the customized slide toggle you need add the
+                                    <code>.ch-toggle</code> in addition to color class <code>.ch-toggle-green</code>
+                                </p>
+                                <label class="input-label">Checked</label>
+                                <div class="row">
+                                    <div class="col-sm-12 switch toggleswitch">
+                                        <input id="toggle-checked" class="ch-toggle ch-toggle-green" type="checkbox">
+                                        <label for="toggle-checked"></label>
+                                    </div>
+                                </div>
+                                <label class="input-label">Multiple switches </label>
+                                <div class="row">
+                                    <div class="col-sm-4 switch toggleswitch">
+                                        <input id="toggle-multi-checked" class="ch-toggle ch-toggle-green" type="checkbox" checked="">
+                                        <label for="toggle-multi-checked"></label>
+                                    </div>
+                                    <div class="col-sm-4 switch toggleswitch">
+                                        <input id="toggle-multi-not-checked" class="ch-toggle ch-toggle-green" type="checkbox">
+                                        <label for="toggle-multi-not-checked"></label>
+                                    </div>
+                                    <div class="col-sm-4 switch toggleswitch">
+                                        <input id="toggle-multi-last" class="ch-toggle ch-toggle-green" type="checkbox" checked="">
+                                        <label for="toggle-multi-last"></label>
+                                    </div>
+                                </div>
+                                <label class="input-label">Colored</label>
+                                <div class="row">
+                                    <div class="col-sm-3 switch toggleswitch">
+                                        <input id="toggle-colored-blue" class="ch-toggle ch-toggle-blue" type="checkbox" checked="">
+                                        <label for="toggle-colored-blue"></label>
+                                    </div>
+                                    <div class="col-sm-3 switch toggleswitch">
+                                        <input id="toggle-colored-red" class="ch-toggle ch-toggle-red" type="checkbox" checked="">
+                                        <label for="toggle-colored-red"></label>
+                                    </div>
+                                    <div class="col-sm-3 switch toggleswitch">
+                                        <input id="toggle-colored-navy" class="ch-toggle ch-toggle-navy" type="checkbox" checked="">
+                                        <label for="toggle-colored-navy"></label>
+                                    </div>
+                                    <div class="col-sm-3 switch toggleswitch">
+                                        <input id="toggle-colored-white" class="ch-toggle ch-toggle-white" type="checkbox" checked="">
+                                        <label for="toggle-colored-white"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="col-content">
+                                <h5 class="title">Dropdown select</h5>
+                                <p class="header-text">Customized dropdown select can be used by adding <code>.select2-init-single</code> class to be initialized by <a href="" class="doc-popover" data-trigger="focus" data-toggle="popover" data-content="test">Javascript</a> for the default dropdown or another set of classes such as <code>.select2-init-multiple</code>
+                                </p>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <label class="input-label">Standard</label>
+                                        <select class="select-display select2-init-single selectpicker empty col-12">
+                                            <option value="Oklahoma">Oklahoma</option>
+                                            <option value="Newyork">New york</option>
+                                            <option value="California">California</option>
+                                            <option value="Texas">Texas</option>
+                                            <option value="Florida">Florida</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <label class="input-label">Select boxes with optgroups</label>
+                                        <select class="select-display select2-init-single selectpicker empty col-12">
+                                            <optgroup class="optgroup" label="First group">
+                                                <option value="Football">Football</option>
+                                                <option value="Basketball">Basketball</option>
+                                                <option value="Baseball">Baseball</option>
+                                            </optgroup>
+                                            <optgroup class="optgroup" label="Second Group">
+                                                <option value="Swimming">Swimming</option>
+                                                <option value="Formula">Formula 1</option>
+                                                <option value="Running">Running</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <label class="input-label">Multiple select boxes</label>
+                                        <select class="select2-init-multiple" multiple="multiple">
+                                            <option value="AL">Alabama</option>
+                                            ...
+                                            <option value="WY">Wyoming</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <label class="input-label">Live search</label>
+                                        <select class="select2-init-ajax">
+                                            <option value="3620194" selected="selected">Select a value.</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <label class="input-label">Key words</label>
+                                        <select class="select-display select2-init-images selectpicker empty col-12">
+                                            <option value="jordan">Jordan</option>
+                                            <option value="usa">USA</option>
+                                            <option value="iraq">Iraq</option>
+                                            <option value="uk">UK</option>
+                                            <option value="lebanon">Lebanon</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-content content-overflow">
+                                <h5 class="title"> Checkbox Controls </h5>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <h5 class="blue-title"> Color Options </h5>
+                                        <p class="header-text">In order to use our customized checkboxes you need to give the checkbox a <code>label</code> and wrap them with the <code>.checkbox</code> class.</p>
+                                        <div class="checkbox">
+                                            <input id="checkbox1" type="checkbox" checked>
+                                            <label class="fontsize" for="checkbox1"> A simple checkbox </label>
+                                        </div>
+                                        <div class="checkbox checkbox-primary">
+                                            <input id="checkbox-primary-color" type="checkbox" checked>
+                                            <label class="fontsize" for="checkbox-primary-color"> I agree </label>
+                                        </div>
+                                        <div class="checkbox checkbox-success">
+                                            <input id="checkbox-success-color" type="checkbox" checked>
+                                            <label class="fontsize" for="checkbox-success-color"> Mark </label>
+                                        </div>
+                                        <div class="checkbox checkbox-info">
+                                            <input id="checkbox-info-color" type="checkbox" checked>
+                                            <label class="fontsize" for="checkbox-info-color"> Action</label>
+                                        </div>
+                                        <div class="checkbox checkbox-warning">
+                                            <input id="checkbox-warning-color" type="checkbox" checked>
+                                            <label class="fontsize" for="checkbox-warning-color"> Keep Me Signed in</label>
+                                        </div>
+                                        <div class="checkbox checkbox-danger">
+                                            <input id="checkbox-danger-color" type="checkbox" checked>
+                                            <label class="fontsize" for="checkbox-danger-color"> Mark as read</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <form>
+                                            <h5 class="blue-title">Shape Options </h5>
+                                            <p class="header-text">To give the checkbox a circular shape you need to give the wrapper of the checkboxes a <code>.checkbox-circle</code> class.</p>
+                                            <div class="checkbox checkbox-circle">
+                                                <input id="checkbox-circle-default" type="checkbox">
+                                                <label for="checkbox-circle-default">Default</label>
+                                            </div>
+                                            <div class="checkbox checkbox-circle checkbox-primary">
+                                                <input id="checkbox-circle-primary" type="checkbox">
+                                                <label class="fontsize" for="checkbox-circle-primary">Primary </label>
+                                            </div>
+                                            <div class="checkbox checkbox-circle checkbox-success">
+                                                <input class="checkradius" id="checkbox-circle-success" type="checkbox">
+                                                <label class="fontsize" for="checkbox-circle-success">Success </label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <form>
+                                            <h5 class="blue-title">Yes/No checkboxes </h5>
+                                            <p class="header-text">To use the yes-no checkbox you need to wrap the <code>input</code> with <code>.yes-no-check</code> class and give the checkbox field a unique id to be initialized in the <a href="" class="doc-popover" data-trigger="focus" data-toggle="popover" data-content="test">Javascript</a>.</p>
+                                            <div class="row">
+                                                <div class="col-sm-1.1  yes-no-check">
+                                                    <input id="toggleCheckbox-yes-green" title="Example title" data-group-cls="btn-group-xs" checked="">
+                                                </div>
+                                                <div class="col-sm-1.1 yes-no-check">
+                                                    <input id="toggleCheckbox-yes-primary" title="Example title" data-reverse data-group-cls="btn-group-xs" data-on-active-cls="btn-primary" checked="">
+                                                </div>
+                                                <div class="col-sm-1.1 yes-no-check">
+                                                    <input id="toggleCheckbox-yes-yellow" data-group-cls="btn-group-xs" checked data-on-active-cls="btn-warning">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-1.1 yes-no-check">
+                                                    <input id="toggleCheckbox-yes-big" data-off-icon-cls="glyphicon-thumbs-down" data-on-icon-cls="glyphicon-thumbs-up" data-group-cls="btn-group-ms" checked="">
+                                                </div>
+                                                <div class="col-sm-1.1 yes-no-check">
+                                                    <input id="toggleCheckbox-like" data-off-label="false" data-on-label="false" data-off-icon-cls="glyphicon-thumbs-down" data-on-icon-cls="glyphicon-thumbs-up" data-group-cls="btn-group-xs">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-content">
+                                <h5 class="title">Date Controls</h5>
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5">
+                                        <div class="pb-15">
+                                            <h5 class="blue-title">Range Date Picker</h5>
+                                            <p class="header-text">You can use our customized Range Pickers by adding an <code>input</code> element and giving it a unique name to be initialized in the <a href="" class="doc-popover" data-trigger="focus" data-toggle="popover" data-content="test">Javascript</a>.</p>
+                                            <input type="text" name="daterange" class="form-control simple" value="01/01/2015 1:30 PM - 01/01/2015 2:00 PM" />
+                                        </div>
+                                        <div class="pb-15">
+                                            <label class="input-label">Predefined Ranges</label>
+                                            <div id="reportrange" class="simple data-range">
+                                                <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
+                                                <span></span> <b class="caret"></b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="pb-15">
+                                            <h5 class="blue-title">Simple Date Picker</h5>
+                                            <p class="header-text">If you needed a simple date picker you can define an <code>input</code> element and give it a unique name be initialized in the <a href="" class="doc-popover" data-trigger="focus" data-toggle="popover" data-content="test">Javascript</a>.</p>
+                                            <input type="text" name="birthdate" class="form-control simple" value="10/24/1984" />
+                                        </div>
+                                        <div class="pb-15">
+                                            <label class="input-label">Simple Time Picker</label>
+                                            <div class="input-group clockpicker simple" data-placement="right" data-align="top" data-autoclose="true">
+                                                <input type="text" class="form-control" value="13:14">
+                                                <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-time"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3">
+                                        <div class="pb-15">
+                                            <h5 class="blue-title">Advanced Datepicker</h5>
+                                            <p class="header-text">As for the advanced date picker you define a <code>div</code> element and give it a <code>class</code> attribute to initialize it in the <a href="" class="doc-popover" data-trigger="focus" data-toggle="popover" data-content="test">Javascript</a>.</p>
+                                            <div class="forms-datepicker simple" data-language='en'></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="col-content">
+                                <h5 class="title">Tag Input</h5>
+                                <p class="header-text">To use the Tag Inputs you need to add the <code>data-role</code> attribute to determine which style you want to use.</p>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label class="input-label">Markup</label>
+                                        <input id="markup" type="text" value="Amsterdam,Washington" data-role="tagsinput" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label class="input-label">True multi value</label>
+                                        <select id="multi-val" multiple data-role="tagsinput">
+                                            <option value="Amsterdam">Amsterdam</option>
+                                            <option value="Washington">Washington</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label class="input-label">Objects as tags</label>
+                                        <input class="objects-as-tags" type="text" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label class="input-label">Categorizing tags</label>
+                                        <input class="colored-tags" type="text" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="col-content content-overflow">
+                                <h5 class="title">Drag N' Drop</h5>
+                                <p class="header-text">In order to use the drag and drop area you need to define a <code>form</code> and give it a unique id to initalize it in the <a href="" class="doc-popover" data-trigger="focus" data-toggle="popover" data-content="test">Javascript</a>in addition to the class <code>dropzone</code>.</p>
+                                <div class="dropzone-row">
+                                    <div class="col-sm-12 dropzone-min">
+                                        {{> dropzone url='http://somewebsite.com/upload' id='dropzoneDiv'}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="col-content">
+                                    <h5 class="title">Text Editor</h5>
+                                    <p class="header-text">All you need to do is adding a unique id to a <code>div</code> element and initalize it in the <a href="" class="doc-popover" data-trigger="focus" data-toggle="popover" data-content="test">Javascript</a>.</p>
+                                    <div id="summernote">hello </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{> footer}}
+        </div>
+    </div>
+</template>

@@ -68,3 +68,10 @@ FlowRouter.route('/modals', {
     BlazeLayout.render('mainLayout', { content: 'modals' });
   },
 });
+
+FlowRouter.route('/forms', {
+  name: 'forms',
+  action: () => {
+    BlazeLayout.render('mainLayout', { content: 'forms' });
+  },
+});
