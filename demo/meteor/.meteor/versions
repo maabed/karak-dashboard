@@ -1,3 +1,4 @@
+ahref:dragula@3.5.4
 ajduke:bootstrap-tagsinput@0.7.0
 allow-deny@1.0.5
 andrasph:clockpicker@0.0.2
@@ -15,6 +16,8 @@ caching-compiler@1.1.9
 caching-html-compiler@1.1.2
 callback-hook@1.0.10
 check@1.2.5
+coffeescript@1.0.17
+cosmos:browserify@0.9.4
 cwattrus:open-sans@0.0.1
 dangrossman:bootstrap-daterangepicker@2.1.13
 dbarrett:dropzonejs@4.2.1
