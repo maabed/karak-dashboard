@@ -112,3 +112,10 @@ FlowRouter.route('/panels', {
     BlazeLayout.render('mainLayout', { content: 'panels' });
   },
 });
+
+FlowRouter.route('/hover', {
+  name: 'hover',
+  action: () => {
+    BlazeLayout.render('mainLayout', { content: 'hover' });
+  },
+});
