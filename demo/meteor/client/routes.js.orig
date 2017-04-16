@@ -76,7 +76,6 @@ FlowRouter.route('/forms', {
   },
 });
 
-
 FlowRouter.route('/tabs', {
   name: 'tabs',
   action: () => {
@@ -91,6 +90,19 @@ FlowRouter.route('/buttons', {
   },
 });
 
+<<<<<<< HEAD
+FlowRouter.route('/menus', {
+  name: 'menus',
+  action: () => {
+    BlazeLayout.render('mainLayout', { content: 'menus' });
+  },
+});
+
+FlowRouter.route('/notifications', {
+  name: 'notifications',
+  action: () => {
+    BlazeLayout.render('mainLayout', { content: 'notifications' });
+=======
 
 FlowRouter.route('/cards', {
   name: 'cards',
@@ -110,5 +122,6 @@ FlowRouter.route('/panels', {
   name: 'panels',
   action: () => {
     BlazeLayout.render('mainLayout', { content: 'panels' });
+>>>>>>> f96d03659100486c9bba8e4c9e504f7d088c5167
   },
 });

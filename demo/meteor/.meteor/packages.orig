@@ -39,8 +39,11 @@ dbarrett:dropzonejs
 summernote:summernote
 
 
+<<<<<<< HEAD
+chrismbeckett:toastr
+kevohagan:sweetalert
+=======
 jt6562:bootstrap-3-switch
 ahref:dragula
 
-chrismbeckett:toastr
-kevohagan:sweetalert
+>>>>>>> f96d03659100486c9bba8e4c9e504f7d088c5167

@@ -24,10 +24,10 @@ Template.tabs.onRendered(function tabsOnRendered() {
   });
 });
 
-Template.tabs.helpers(function tabshelpers() {
+Template.tabs.helpers({
 
 });
 
-Template.tabs.events(function tabsevents() {
+Template.tabs.events({
 
 });
