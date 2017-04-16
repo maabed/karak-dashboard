@@ -4,9 +4,9 @@ Template.menus.onCreated(function menusOnCreated() {
 
 Template.menus.onRendered(function menusonRendered() {
   function htmlbodyHeightUpdate() {
-    var height3 = $(window).height();
-    var height1 = $('.nav').height() + 50;
-    var height2 = $('.main').height();
+    const height3 = $(window).height();
+    const height1 = $('.nav').height() + 50;
+    const height2 = $('.main').height();
     if (height2 > height3) {
       $('html').height(Math.max(height1, height3, height2) + 10);
       $('body').height(Math.max(height1, height3, height2) + 10);
@@ -17,41 +17,38 @@ Template.menus.onRendered(function menusonRendered() {
   }
 
   htmlbodyHeightUpdate();
-  $(window).resize(function() {
+  $(window).resize(function () {
     htmlbodyHeightUpdate();
   });
-  $(window).scroll(function() {
-    var height2 = $('.main').height();
+  $(window).scroll(function () {
+    const height2 = $('.main').height();
     htmlbodyHeightUpdate();
   });
 
   $('.dropdown2').hover(
-    function() {
+    function () {
       $('.dropdown-menu', this).stop(true, true).slideDown('fast');
       $(this).toggleClass('open');
     },
-    function() {
+    function () {
       $('.dropdown-menu', this).stop(true, true).slideUp('fast');
       $(this).toggleClass('open');
-    }
-  );
+    });
 
   $('.dropdown2').hover(
-    function() {
+    function () {
       $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).slideDown('400');
       $(this).toggleClass('open');
     },
-    function() {
+    function () {
       $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).slideUp('400');
       $(this).toggleClass('open');
-    }
-  );
-
+    });
 });
 
 Template.menus.helpers(function menushelpers() {
   $('.carousel').carousel({
-    interval: 500
+    interval: 500,
   });
 });
 
