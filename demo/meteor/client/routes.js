@@ -76,7 +76,6 @@ FlowRouter.route('/forms', {
   },
 });
 
-
 FlowRouter.route('/tabs', {
   name: 'tabs',
   action: () => {
@@ -91,9 +90,24 @@ FlowRouter.route('/buttons', {
   },
 });
 
+
 FlowRouter.route('/cards', {
   name: 'cards',
   action: () => {
     BlazeLayout.render('mainLayout', { content: 'cards' });
+  },
+});
+
+FlowRouter.route('/lists', {
+  name: 'lists',
+  action: () => {
+    BlazeLayout.render('mainLayout', { content: 'lists' });
+  },
+});
+
+FlowRouter.route('/panels', {
+  name: 'panels',
+  action: () => {
+    BlazeLayout.render('mainLayout', { content: 'panels' });
   },
 });

@@ -1,0 +1,238 @@
+<template name="panels">
+    <div class="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-content body-header">
+                        <a class="page_title pull-right">UI Elements  /  Panels</a>
+                        <h4 class="title"> Panels </h4>
+                        <p>
+                            You can use the colors classes to change panel background color simply, e.g:
+                        </p>
+                        <table class="code-table">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <code>
+                                                .success-light
+                                            </code>
+                                    </td>
+                                    <td>
+                                        <code>
+                                               .danger-mid 
+                                            </code>
+                                    </td>
+                                    <td>
+                                        <code>
+                                                .success-mid
+                                            </code>
+                                    </td>
+                                    <td>
+                                        <code>
+                                                .warning-light
+                                            </code>
+                                    </td>
+                                    <td>
+                                        <code>
+                                                .info-light
+                                            </code>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="col-content">
+                        <h5 class="title">Panel With Header and Footer</h5>
+                        <p>
+                            In order to use our panels all you have to do is adding the class <code>.no-borders</code> to the div element with the class <code>.panel</code>
+                        </p>
+                        <div class="panel panel-default no-borders">
+                            <div class="panel-heading">Panel Heading</div>
+                            <div class="panel-body">
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the scrambled it to make a type specimen book.
+                                </p>
+                            </div>
+                            <div class="panel-footer">Panel Footer</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="col-content">
+                        <h5 class="title">Collapsible Panel</h5>
+                        <p>
+                            To use the collpase panel the attribute <code>data-toggle</code> to the panel heading and give it the value of <code>collpase</code> and give it a target using the <code>data-target</code> attribute.
+                        </p>
+                        <div class="panel-group">
+                            <div class="panel panel-default no-borders">
+                                <div class="panel-heading dashboard-panel">
+                                    Panel Heading
+                                    <a data-toggle="collapse" data-target="#demo">
+                                        <span class="glyphicon glyphicon-chevron-up float-right"></span>
+                                    </a>
+                                </div>
+                                <div id="demo" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the scrambled.
+                                        </p>
+                                    </div>
+                                    <div class="panel-footer">Panel Footer</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="close_panel_section" class="row">
+                <div class="col-md-12">
+                    <div class="col-content">
+                        <h5 class="title">Close Panel</h5>
+                        <p>
+                            To use the close panel just add a button or an icon to the panel heading and give it the class <code>.close</code>
+                        </p>
+                        <div class="panel panel-default no-borders copyright-wrap" id="copyright-wrap">
+                            <div class="panel-heading">
+                                Panel Heading
+                                <button id="close_panele" type="button" class="close" data-target="#copyright-wrap" data-dismiss="alert">
+                                    <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                                </button>
+                            </div>
+                            <div class="panel-body">
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the scrambled it to make a type specimen book.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="col-content">
+                        <h5 class="title">Panels With Contextual Classes</h5>
+                        <p>
+                            Controlling the color og the panel will be by using class such ass <code>.primary-light</code>,<code>.success-light</code>,<code>.info-light</code>,<code>.warning-light</code> and <code>.danger-light</code>
+                        </p>
+                        <div class="panel-group">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading primary-mid">Panel with panel-primary class</div>
+                                <div class="panel-body">Panel Content</div>
+                            </div>
+                            <div class="panel panel-success">
+                                <div class="panel-heading success-mid">Panel with panel-success class</div>
+                                <div class="panel-body">Panel Content</div>
+                            </div>
+                            <div class="panel panel-info">
+                                <div class="panel-heading info-mid">Panel with panel-info class</div>
+                                <div class="panel-body">Panel Content</div>
+                            </div>
+                            <div class="panel panel-warning">
+                                <div class="panel-heading warning-mid">Panel with panel-warning class</div>
+                                <div class="panel-body">Panel Content</div>
+                            </div>
+                            <div class="panel panel-danger">
+                                <div class="panel-heading danger-mid">Panel with panel-danger class</div>
+                                <div class="panel-body">Panel Content</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="col-content" id="close_panel_section2">
+                        <h5 class="title">Panels With Close and Collapse</h5>
+                        <div class="panel-group">
+                            <div class="panel panel-default no-borders" id="copyright-wrap2">
+                                <div class="panel-heading dashboard-panel">
+                                    Panel Heading
+                                    <button id="close_panele2" type="button" class="close" data-target="#copyright-wrap2" data-dismiss="alert">
+                                        <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                                    </button>
+                                    <a data-toggle="collapse" data-target="#demo2">
+                                        <span class="glyphicon glyphicon-chevron-up float-right"></span>
+                                    </a>
+                                </div>
+                                <div id="demo2" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the scrambled Lorem Ipsum has been the industry's standard dummy text ever since the scrambled Lorem Ipsum has been the industry's.
+                                        </p>
+                                    </div>
+                                    <div class="panel-footer">Panel Footer</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="col-content">
+                        <h5 class="title">Panels With Fullscreen</h5>
+                        <div class="panel panel-default no-borders">
+                            <div class="panel-heading">
+                                Panel Heading
+                                <ul class="list-inline panel-actions">
+                                    <li>
+                                        <p id="panel-fullscreen" role="button" title="Toggle fullscreen">
+                                            <i class="glyphicon glyphicon-resize-full"></i>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="panel-body">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the scrambled Lorem Ipsum has been the industry's standard dummy text ever since the scrambled Lorem Ipsum has been the industry's standard dummy text ever since the scrambled Lorem Ipsum has been.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-content">
+                        <h5 class="title">Drag and Drop</h5>
+                        <p>
+                            In order to use the drag and drop panel you first define a div element with the class <code>dag_container</code> to initailize it using <a href="" class="doc-popover" data-trigger="focus" data-toggle="popover" data-content="test">Javascript</a>.
+                        </p>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div id='right-rm-spill' class='dag_container'>
+                                    <div>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the scrambled it to make a type specimen book Lorem Ipsum has been the industry's standard dummy text ever since the scrambled it to make a type specimen book.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div id='left-rm-spill' class='dag_container'>
+                                    <div>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
