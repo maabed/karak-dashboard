@@ -90,6 +90,14 @@ FlowRouter.route('/buttons', {
   },
 });
 
+
+FlowRouter.route('/cards', {
+  name: 'cards',
+  action: () => {
+    BlazeLayout.render('mainLayout', { content: 'cards' });
+  },
+});
+
 FlowRouter.route('/lists', {
   name: 'lists',
   action: () => {
