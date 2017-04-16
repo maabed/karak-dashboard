@@ -1,0 +1,83 @@
+/*!
+UI style
+Karak dashboard: v1.0.0
+Author: New Release
+http://newrelease.io
+Copyright 2017 New Release
+*/
+
+.right-slide {
+  border-radius: 0px;
+}
+
+.modal.right .modal-dialog {
+  position: fixed;
+  margin: auto;
+  width: 320px;
+  height: 150%;
+}
+
+.modal.right .modal-content {
+  height: 100%;
+}
+
+.modal.right.fade .modal-dialog {
+  right: -320px;
+  -webkit-transition: opacity 0.3s linear, right 0.2s ease-out;
+  -moz-transition: opacity 0.3s linear, right 0.2s ease-out;
+  -o-transition: opacity 0.3s linear, right 0.2s ease-out;
+  transition: opacity 0.3s linear, right 0.2s ease-out;
+}
+
+.modal.right.fade.in .modal-dialog {
+  right: 0;
+}
+/*used*/
+.col-content > img {
+  width: 100%;
+}
+
+.section-label {
+  min-height: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+.inner-contint {
+  padding: 15px;
+}
+
+.select-width {
+  width: 50%;
+  display: inline;
+  margin-bottom: 15px;
+}
+
+.generate-display {
+  float: right;
+  margin-bottom: 15px;
+}
+
+#toastr-form > .radio {
+  margin-bottom: 19px;
+}
+
+
+.col-padding {
+  padding-left: 0px;
+}
+
+.dashboard-container > img {
+  width: 60%;
+  padding-top: 25px;
+}
+
+.alert {
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+.form-labels {
+  display: block;
+  font-size: 13px;
+}

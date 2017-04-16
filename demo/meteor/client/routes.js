@@ -76,6 +76,7 @@ FlowRouter.route('/forms', {
   },
 });
 
+
 FlowRouter.route('/tabs', {
   name: 'tabs',
   action: () => {
@@ -109,5 +110,12 @@ FlowRouter.route('/panels', {
   name: 'panels',
   action: () => {
     BlazeLayout.render('mainLayout', { content: 'panels' });
+  },
+});
+
+FlowRouter.route('/hover', {
+  name: 'hover',
+  action: () => {
+    BlazeLayout.render('mainLayout', { content: 'hover' });
   },
 });
