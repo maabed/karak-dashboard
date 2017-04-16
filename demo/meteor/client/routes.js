@@ -90,6 +90,13 @@ FlowRouter.route('/buttons', {
   },
 });
 
+FlowRouter.route('/lists', {
+  name: 'lists',
+  action: () => {
+    BlazeLayout.render('mainLayout', { content: 'lists' });
+  },
+});
+
 FlowRouter.route('/panels', {
   name: 'panels',
   action: () => {

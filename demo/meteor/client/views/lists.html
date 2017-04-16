@@ -1,0 +1,215 @@
+<template name="lists">
+    <div class="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-content body-header">
+                        <a href="loading.html" class="page_title pull-right">UI Elements / Lists</a>
+                        <h4 class="title"> Lists </h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="col-content content-overflow">
+                        <h5 class="title"> Basic List </h5>
+                        <p>
+                            In order to use the Basic List just define a div element with the class <code>list-group</code> that should contain your items. The inner elements should have the class <code>list-group-item</code>.
+                        </p>
+                        <div class="list-group glyph-color">
+                            <a class="list-group-item">
+                                <div class="glyphicon glyphicon-text-size"></div> First item</a>
+                            <a class="list-group-item">
+                                <div class="glyphicon glyphicon-menu-hamburger"></div> Second item</a>
+                            <a class="list-group-item">
+                                <div class="glyphicon glyphicon-stats"></div> Third item</a>
+                            <a class="list-group-item">
+                                <div class="glyphicon glyphicon-send"></div> Forth item</a>
+                            <a class="list-group-item">
+                                <div class="glyphicon glyphicon-flash"></div> Fifth item</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="col-content content-overflow">
+                        <h5 class="title"> Blog List </h5>
+                        <br>
+                        <p>
+                            The blog list shows you the lists capability to be customized by adding images inside it easily.
+                        </p>
+                        <div class="list-group">
+                            <a class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 col-xs-4">
+                                        <img src="/images/card_01.jpg" class="blog-img side-line">
+                                    </div>
+                                    <div class="col-sm-8 col-xs-8">
+                                        <span>Title goes here Title goes here Title goes here Title goes here.</span>
+                                        <br>
+                                        <p class="list-date">Oct 22, 2016</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 col-xs-4">
+                                        <img src="/images/card_02.jpg" class="blog-img side-line">
+                                    </div>
+                                    <div class="col-sm-8 col-xs-8">
+                                        <span>Title goes here Title goes here Title goes here Title goes here.</span>
+                                        <br>
+                                        <p class="list-date">Aug 20, 2017</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="col-content content-overflow">
+                        <h5 class="title"> List With Badges </h5>
+                        <p>
+                            You can add a badge to each List Item by adding a span element inside and giving it the classes <code>.label</code>,<code>.list-badge</code> in addition to one of the colors classes
+                        </p>
+                        <div class="list-group glyph-color">
+                            <a class="list-group-item">
+                                <div class="glyphicon glyphicon-text-size"></div> New<span class="label info-mid list-badge">12</span></a>
+                            <a class="list-group-item">
+                                <div class="glyphicon glyphicon-flash"></div> Deleted<span class="label info-mid list-badge">5</span></a>
+                            <a class="list-group-item">
+                                <div class="glyphicon glyphicon-send"></div> Warnings<span class="label info-mid list-badge">3</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="col-content content-overflow">
+                        <h5 class="title"> List With Active Item </h5>
+                        <p>
+                            The active item can be highlited by adding any of out colors classes to the <code>li</code> element.
+                        </p>
+                        <ul class="list-group  glyph-color">
+                            <li class="list-group-item info-mid">
+                                <div class="glyphicon glyphicon-text-size"></div> First item</li>
+                            <li class="list-group-item">
+                                <div class="glyphicon glyphicon-flash"></div> Second item</li>
+                            <li class="list-group-item">
+                                <div class="glyphicon glyphicon-send"></div> Third item</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="col-content content-overflow">
+                        <h5 class="title"> Toggle List </h5>
+                        <p>
+                            You can use the toggles as items inside the list by giving the items a <code>name</code> attribute to be initialized in the <a class="doc-popover" data-trigger="focus" data-toggle="popover" data-content="test">Javascript</a>.
+                        </p>
+                        <div class="list-group">
+                            <a class="list-group-item"> First item
+                                        <input class="toggle-align switch" type="checkbox" name="my-checkbox" checked data-size="mini">
+                                    </a>
+                            <a class="list-group-item"> Second item
+                                        <input class="toggle-align" type="checkbox" name="my-checkbox" data-size="mini">
+                                    </a>
+                            <a class="list-group-item"> Third item
+                                        <input class="toggle-align" type="checkbox" name="my-checkbox" checked data-size="mini">
+                                    </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-7">
+                    <div class="col-content content-overflow">
+                        <h5 class="title"> Events List </h5>
+                        <div class="list-group">
+                            <a class="list-group-item event-list-item">
+                                <div class="row">
+                                    <div class="col-sm-1">
+                                        <h3>07</h3>
+                                        <h4>sep</h4></div>
+                                    <div class="col-sm-10">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget.consectetur adipiscing elit. Suspendisse eget.</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item event-list-item">
+                                <div class="row">
+                                    <div class="col-sm-1">
+                                        <h3>14</h3>
+                                        <h4>aug</h4></div>
+                                    <div class="col-sm-10">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget.consectetur adipiscing elit. Suspendisse eget.</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item event-list-item">
+                                <div class="row">
+                                    <div class="col-sm-1">
+                                        <h3>22</h3>
+                                        <h4>dec</h4></div>
+                                    <div class="col-sm-10">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget.consectetur adipiscing elit. Suspendisse eget.</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item event-list-item">
+                                <div class="row">
+                                    <div class="col-sm-1">
+                                        <h3>12</h3>
+                                        <h4>jan</h4></div>
+                                    <div class="col-sm-10">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget.consectetur adipiscing elit. Suspendisse eget.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="col-content content-overflow">
+                        <h5 class="title"> List With Header </h5>
+                        <br>
+                        <ul class="list-group glyph-color">
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-10 no-padding-right">
+                                        <h5 class="title-border">First</h5>
+                                    </div>
+                                    <div class="col-sm-2 no-padding-left">
+                                        <div class="glyphicon glyphicon-flash icon-list-border"></div>
+                                    </div>
+                                </div>
+                                <p class="box-size">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut fringilla libero. Nullam a rhoncus.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-10 no-padding-right">
+                                        <h5 class="title-border">Second</h5>
+                                    </div>
+                                    <div class="col-sm-2 no-padding-left">
+                                        <div class="glyphicon glyphicon-text-size icon-list-border"></div>
+                                    </div>
+                                </div>
+                                <p class="box-size">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut fringilla libero. Nullam a rhoncus.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-10 no-padding-right">
+                                        <h5 class="title-border">Third</h5>
+                                    </div>
+                                    <div class="col-sm-2 no-padding-left">
+                                        <div class="glyphicon  glyphicon-stats icon-list-border"></div>
+                                    </div>
+                                </div>
+                                <p class="box-size">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
