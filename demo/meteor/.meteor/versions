@@ -16,6 +16,7 @@ caching-compiler@1.1.9
 caching-html-compiler@1.1.2
 callback-hook@1.0.10
 check@1.2.5
+chrismbeckett:toastr@2.1.2_1
 coffeescript@1.0.17
 cosmos:browserify@0.9.4
 cwattrus:open-sans@0.0.1
@@ -45,6 +46,7 @@ jquery@1.11.10
 jt6562:bootstrap-3-switch@3.3.2
 kadira:blaze-layout@2.3.0
 kadira:flow-router@2.12.1
+kevohagan:sweetalert@1.0.0
 launch-screen@1.1.1
 less@2.7.9
 livedata@1.0.18
