@@ -83,9 +83,17 @@ FlowRouter.route('/tabs', {
     BlazeLayout.render('mainLayout', { content: 'tabs' });
   },
 });
+
 FlowRouter.route('/buttons', {
   name: 'buttons',
   action: () => {
     BlazeLayout.render('mainLayout', { content: 'buttons' });
+  },
+});
+
+FlowRouter.route('/cards', {
+  name: 'cards',
+  action: () => {
+    BlazeLayout.render('mainLayout', { content: 'cards' });
   },
 });
