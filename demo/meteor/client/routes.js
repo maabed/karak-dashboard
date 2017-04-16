@@ -96,3 +96,10 @@ FlowRouter.route('/menus', {
     BlazeLayout.render('mainLayout', { content: 'menus' });
   },
 });
+
+FlowRouter.route('/notifications', {
+  name: 'notifications',
+  action: () => {
+    BlazeLayout.render('mainLayout', { content: 'notifications' });
+  },
+});
