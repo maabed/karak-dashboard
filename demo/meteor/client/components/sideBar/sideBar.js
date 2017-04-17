@@ -133,7 +133,7 @@ Template.sidebar.helpers({
           text: 'Basic Table',
         },
         {
-          link: '/data-tables',
+          link: '/dataTables',
           text: 'Data Table',
         },
         ],
