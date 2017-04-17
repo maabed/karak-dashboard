@@ -83,12 +83,14 @@ FlowRouter.route('/tabs', {
     BlazeLayout.render('mainLayout', { content: 'tabs' });
   },
 });
+
 FlowRouter.route('/buttons', {
   name: 'buttons',
   action: () => {
     BlazeLayout.render('mainLayout', { content: 'buttons' });
   },
 });
+
 
 FlowRouter.route('/menus', {
   name: 'menus',
@@ -101,5 +103,55 @@ FlowRouter.route('/notifications', {
   name: 'notifications',
   action: () => {
     BlazeLayout.render('mainLayout', { content: 'notifications' });
+  },
+});
+
+FlowRouter.route('/cards', {
+  name: 'cards',
+  action: () => {
+    BlazeLayout.render('mainLayout', { content: 'cards' });
+  },
+});
+
+FlowRouter.route('/lists', {
+  name: 'lists',
+  action: () => {
+    BlazeLayout.render('mainLayout', { content: 'lists' });
+  },
+});
+
+FlowRouter.route('/panels', {
+  name: 'panels',
+  action: () => {
+    BlazeLayout.render('mainLayout', { content: 'panels' });
+  },
+});
+
+FlowRouter.route('/hover', {
+  name: 'hover',
+  action: () => {
+    BlazeLayout.render('mainLayout', { content: 'hover' });
+  },
+});
+
+
+FlowRouter.route('/googleMaps', {
+  name: 'googleMaps',
+  action: () => {
+    BlazeLayout.render('mainLayout', { content: 'googleMaps' });
+  },
+});
+
+FlowRouter.route('/formWizard', {
+  name: 'formWizard',
+  action: () => {
+    BlazeLayout.render('mainLayout', { content: 'formWizard' });
+  },
+});
+
+FlowRouter.route('/inbox', {
+  name: 'inbox',
+  action: () => {
+    BlazeLayout.render('mainLayout', { content: 'inbox' });
   },
 });

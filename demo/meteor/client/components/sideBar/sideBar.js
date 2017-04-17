@@ -18,7 +18,7 @@ Template.sidebar.helpers({
           text: 'Form Elements',
         },
         {
-          link: '/form-wizard',
+          link: '/formWizard',
           text: 'Form Wizard',
         },
         ],
@@ -133,7 +133,7 @@ Template.sidebar.helpers({
           text: 'Basic Table',
         },
         {
-          link: '/data-tables',
+          link: '/dataTables',
           text: 'Data Table',
         },
         ],

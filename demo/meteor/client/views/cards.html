@@ -1,0 +1,187 @@
+<template name="cards">
+    <div class="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-content body-header">
+                        <a href="loading.html" class="page_title pull-right">UI Elements / Cards</a>
+                        <h4 class="title"> Cards </h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="col-content content-overflow">
+                        <h5 class="title">Basic Cards</h5>
+                        <p>In order to use the Basic card you have to wrap your text with <code>.card-content</code>and<code>.white-text</code> which it should be also wrapped with the classes <code>.card</code>,<code>.darken-1</code>.
+                            <br> you also have to put the card title inside a div with the class <code>.card-title</code> and wrap the links below with the class <code>.card-action</code>
+                        </p>
+                        <div class="card info-mid">
+                            <div class="card-content white-text">
+                                <span class="card-title">Card Title</span>
+                                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                                </p>
+                                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                                </p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#" class="default-dahsboard-link">This is a link</a>
+                                <a href="#" class="default-dahsboard-link">This is a link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="col-content content-overflow">
+                        <h5 class="title">Simple Cards</h5>
+                        <p>To use the simple card just put your text inside a div with the class <code>card-panel</code></p>
+                        <div class="card-panel">
+                            <div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information. I require little markup to use.</p>
+                                <br>
+                                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                                </p>
+                                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="col-content content-overflow">
+                        <h5 class="title">Image Card</h5>
+                        <p>The image card is a very nice addition to your website so if you need to use it you just have to wrap the image with a <code>.card-image</code> class and then put everything inside the a div with the<code>.card</code> class.</p>
+                        <div class="card">
+                            <div class="card-image">
+                                <img alt="card title" src="/images/card_01.jpg">
+                                <span class="card-title">Card Title</span>
+                            </div>
+                            <div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div class="card-action">
+                                <button type="button" class="btn btn-link">This is a link</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="col-content content-overflow">
+                        <h5 class="title">Card Reveal</h5>
+                        <p>This card gives you the ability to add an image but it also gives you the ability to make a nice effect by hiding some elements which you can display.All you have to do is adding the components in a div with the class <code>.card-reveal</code></p>
+                        <div class="card">
+                            <div class="card-image">
+                                <img alt="card title" class="activator" src="/images/card_02.jpg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                                <p>I am a very simple card.</p>
+                            </div>
+                            <div class="card-action">
+                                <button type="button" class="btn btn-link">This is a link</button>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="col-content content-overflow">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h5 class="title">Horizontal Card</h5>
+                                <p>This card provide the ability to place its components in a horizontal position by add the class <code>horizontal</code> to the parent tag and the <code>.card-stacked</code> class to the children tags.</p>
+                                <div class="card horizontal">
+                                    <div class="card-image">
+                                        <img alt="card title" src="/images/card_03.jpg">
+                                    </div>
+                                    <div class="card-stacked">
+                                        <div class="card-content">
+                                            <p>I am a very simple card. I am good at containing small bits of information.</p>
+                                        </div>
+                                        <div class="card-action">
+                                            <button type="button" class="btn btn-link">This is a link</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="card horizontal">
+                                    <div class="card-stacked">
+                                        <div class="card-content">
+                                            <p>I am a very simple card. I am good at containing small bits of information.</p>
+                                        </div>
+                                        <div class="card-action">
+                                            <button type="button" class="btn btn-link">This is a link</button>
+                                        </div>
+                                    </div>
+                                    <div class="card-image">
+                                        <img alt="card title" src="/images/card_04.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="col-content content-overflow">
+                        <h5 class="title">Colors Options</h5>
+                        <p>You can also control the color of the card by using the classes <code>.success-mid</code>,<code>.primary-mid</code>,<code>.warning-mid</code> and <code>.danger-mid</code>.</p>
+                        <div class="col-sm-3 no-padding-left">
+                            <div class="card success-mid">
+                                <div class="card-content white-text">
+                                    <span class="card-title">Card Title</span>
+                                    <p>I am a very simple card. I am good at containing small bits of information. I require little markup to use.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#" class="default-dahsboard-link">This is a link</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card primary-mid">
+                                <div class="card-content white-text">
+                                    <span class="card-title">Card Title</span>
+                                    <p>I am a very simple card. I am good at containing small bits of information. I require little markup to use.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#" class="default-dahsboard-link">This is a link</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card warning-mid">
+                                <div class="card-content white-text">
+                                    <span class="card-title">Card Title</span>
+                                    <p>I am a very simple card. I am good at containing small bits of information. I require little markup to use.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#" class="default-dahsboard-link">This is a link</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 no-padding-right">
+                            <div class="card danger-mid">
+                                <div class="card-content white-text">
+                                    <span class="card-title">Card Title</span>
+                                    <p>I am a very simple card. I am good at containing small bits of information. I require little markup to use.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#" class="default-dahsboard-link">This is a link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
