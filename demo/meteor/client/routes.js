@@ -119,3 +119,10 @@ FlowRouter.route('/hover', {
     BlazeLayout.render('mainLayout', { content: 'hover' });
   },
 });
+
+FlowRouter.route('/formWizard', {
+  name: 'formWizard',
+  action: () => {
+    BlazeLayout.render('mainLayout', { content: 'formWizard' });
+  },
+});
