@@ -1,0 +1,145 @@
+<template name="inbox">
+    <div class="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row inbox-container">
+                <div class="col-md-2 inbox-nav">
+                    <a href="compose.html">
+                        <button type="button" class="btn btn-info compose center-block">COMPOSE</button>
+                    </a>
+                    <nav class="inbox-list">
+                        <ul>
+                            <li>
+                                <h6> BROWSE</h6>
+                                <ul>
+                                    <li>
+                                        <a class="SelectedEmail" href="inbox.html"> <i class="fa fa-inbox" aria-hidden="true"></i> Inbox<span class="label info-mid">2</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <i class="fa fa-folder" aria-hidden="true"></i> All mail</a>
+                                        <ul class="Inboxsubmenue">
+                                            <li>
+                                                <a href="#">Important</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Labeled</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <i class="fa fa-paper-plane" aria-hidden="true"></i>Sent</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>Spam</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h6>QUICK VIEW</h6>
+                                <ul>
+                                    <li>
+                                        <a href="#">Documents</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Flagged</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Images</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-10 split-view">
+                    <div class="split-left-side">
+                        <div class="inbox-date">
+                            <div class="current-date">Today &nbsp;&nbsp;</div><a href="#"><i id="refresh-page" class="fa fa-refresh" aria-hidden="true"></i></a></div>
+                        <div class="showbox refresh-loader">
+                            <div class="loader1">
+                                <svg class="circular" viewBox="25 25 50 50">
+                                    <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="overlay-container">
+                            {{#each messages}}
+                            <a class="show-message" data-message-id="0" href="#">
+                                <table class="Emails">
+                                    <tr>
+                                        <td class="inbox-user-image" rowspan="2"><img alt="David Nester" src="{{smallAvatar}}" /></td>
+                                        <td class="inbox-username">{{sender}}</td>
+                                        <td class="Inbox-time">{{time}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="email-title" colspan="2">{{title}}</td>
+                                    </tr>
+                                </table>
+                            </a>
+                            {{/each}}
+                        </div>
+                    </div>
+                    <div class="split-right-side">
+                        <div class="showbox msg-loader">
+                            <div class="loader1">
+                                <svg class="circular" viewBox="25 25 50 50">
+                                    <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="msg-overlay">
+                            <div class="email-content1">
+                                <div class="email-header">
+                                    <div class="btn-group Message-btns">
+                                        <button type="button" class="btn btn-default outline-default reply contacts focus1">Contacts</button>
+                                        <button type="button" class="btn btn-default outline-default reply focus1">Reply</button>
+                                        <button type="button" class="btn btn-default outline-default reply focus1">Reply all</button>
+                                        <button type="button" class="btn btn-default outline-default reply focus1">Forward</button>
+                                        <button type="button" class="btn btn-default outline-default reply">Mark as read</button>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default outline-default reply dropdown-toggle" data-toggle="dropdown">
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu Delete" role="menu">
+                                                <li><a href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="email-content-top">
+                                    <div class="user-image">
+                                        <img class="img-responsive" id="avatar" alt="user image" src="/images/user_01_54.jpg" />
+                                    </div>
+                                    <div class="sender-info">
+                                        <h5 id="sender">David Nester</h5>
+                                        <p id="date">Today at 1:33pm</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <h4 id="title">Email Title Gose Here Email Title Gose Here</h4>
+                                </div>
+                                <p class="Emai-text">
+                                    Dear Sir or Madam:
+                                    <br />
+                                    <p id="body" class="Emai-text">
+                                        I have recently ordered a new pair of soccer cleats (item #6542951) from your website on June 21. I received the order on June 26. Unfortunately, when I opened it, I saw that the cleats were used. The cleats had dirt all over it and there was a small tear in front of the part where the left toe would go. My order number is AF26168156.Sincerely, Signature
+                                    </p>
+                                    <br />
+                                    <p class="Emai-text">Signature</p>
+                                </p>
+                                <div id="summernote-inbox"></div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="row no-padding">
+                            <div class="col-sm-6 col-sm-offset-8">
+                                <button type="button" class="btn btn-success dashboard-success button-style icon-btn">
+                                    <span class="glyphicon glyphicon-envelope"></span> Reply
+                                </button>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

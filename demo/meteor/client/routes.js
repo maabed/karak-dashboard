@@ -134,3 +134,10 @@ FlowRouter.route('/formWizard', {
     BlazeLayout.render('mainLayout', { content: 'formWizard' });
   },
 });
+
+FlowRouter.route('/inbox', {
+  name: 'inbox',
+  action: () => {
+    BlazeLayout.render('mainLayout', { content: 'inbox' });
+  },
+});
