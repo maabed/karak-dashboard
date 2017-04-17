@@ -119,3 +119,10 @@ FlowRouter.route('/hover', {
     BlazeLayout.render('mainLayout', { content: 'hover' });
   },
 });
+
+FlowRouter.route('/googleMaps', {
+  name: 'googleMaps',
+  action: () => {
+    BlazeLayout.render('mainLayout', { content: 'googleMaps' });
+  },
+});
