@@ -18,7 +18,7 @@ Template.sidebar.helpers({
           text: 'Form Elements',
         },
         {
-          link: '/form-wizard',
+          link: '/formWizard',
           text: 'Form Wizard',
         },
         ],
