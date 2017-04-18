@@ -40,6 +40,9 @@ summernote:summernote
 
 
 
+derelinguo:progressbarjs
+
+
 chrismbeckett:toastr
 kevohagan:sweetalert
 
@@ -48,3 +51,4 @@ ahref:dragula
 danappelxx:hover.css
 dburles:google-maps
 percolate:google-api
+

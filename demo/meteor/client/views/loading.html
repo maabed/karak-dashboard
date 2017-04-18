@@ -1,0 +1,173 @@
+<template name="loading">
+    <div class="page-content-wrapper">
+        <div class="container-fluid loading-page">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-content body-header">
+                        <a href="loading.html" class="page_title pull-right">UI Elements / Loading & Progress</a>
+                        <h4 class="title"> Loading & Progress </h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="col-content content-overflow">
+                        <h5 class="title">Circle Progress</h5>
+                        <p>
+                            In order to use the Circle progress you should first define a div element with a unique id so you can initialize it using <a href="" class="doc-popover" data-trigger="focus" data-toggle="popover" data-content="test">Javascript</a>.
+                        </p>
+                        <label class="small-label">Select type:</label>
+                        <select class="form-control select2-init-single" id="progress-select" name="progress-select">
+                            <option value="basic">Basic circle</option>
+                            <option value="bounce">Bounce easing</option>
+                            <option value="multiple">Multiple properties</option>
+                            <option value="Semi">Basic Semicircle</option>
+                            <option value="SemiText">Semicircle with text</option>
+                        </select>
+                        <label class="small-label">Select color:</label>
+                        <input type="color" id="Color" value="#67b2e4">
+                        <span id="circleGenerate" class="glyphicon glyphicon-cog circleGenerate"></span>
+                        <div id="progress-container" class="center-block progress-container">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="col-content content-overflow">
+                                <h5 class="title">Placeholder Loader</h5>
+                                <p>
+                                    To use this famous loader you have to define two div elements, the first one should have the class <code>.timeline-item</code> and inside it you have to define another div element with the classes <code>.animated-background</code> and <code>.facebook</code>. then you have to define multiple lines inside that elements that represents the header, subheader and content.
+                                </p>
+                                <div class="timeline-item">
+                                    <div class="animated-background facebook">
+                                        <div class="background-masker header-top"></div>
+                                        <div class="background-masker header-left"></div>
+                                        <div class="background-masker header-right"></div>
+                                        <div class="background-masker header-bottom"></div>
+                                        <div class="background-masker subheader-left"></div>
+                                        <div class="background-masker subheader-right"></div>
+                                        <div class="background-masker subheader-bottom"></div>
+                                        <div class="background-masker content-top"></div>
+                                        <div class="background-masker content-first-end"></div>
+                                        <div class="background-masker content-second-line"></div>
+                                        <div class="background-masker content-second-end"></div>
+                                        <div class="background-masker content-third-line"></div>
+                                        <div class="background-masker content-third-end"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-content content-overflow">
+                                <h5 class="title">Indeterminate loader</h5>
+                                <p>
+                                    In order to use these loaders you will have to <a href="" class="doc-popover" data-trigger="focus" data-toggle="popover" data-content="test">use</a>.
+                                </p>
+                                <div class="col-sm-4">
+                                    <div class="showbox">
+                                        <div class="loader1">
+                                            <svg class="circular" viewBox="25 25 50 50">
+                                                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="loader"></div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div id="loader" class="vertical--center">
+                                        <div class="vertical-center__element">
+                                            <span class="preloader preloader--top"></span>
+                                            <span class="preloader preloader--bottom"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="col-content content-overflow static-height">
+                        <h5 class="title">Progress Bars</h5>
+                        <p class="paragraph">The progress bars are a very usefull tool in any website. to use our customized progress bars just add a dive element with a unique <code>id</code> to initialize it in <a href="" class="doc-popover" data-trigger="focus" data-toggle="popover" data-content="test">Javascript</a>.</p>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h5 class="medium-title">Simple bar </h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-11 button-sync">
+                                <div id="line"></div>
+                            </div>
+                            <div class="col-sm-1">
+                                <span id="BasicLGenerate" class="glyphicon glyphicon-cog"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h5 class="medium-title">Colored bar </h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-11 button-sync">
+                                <div id="colored"></div>
+                            </div>
+                            <div class="col-sm-1">
+                                <span id="ColorGenerate" class="glyphicon glyphicon-cog"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h5 class="medium-title">Percentage bar </h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-11 button-sync">
+                                <div id="percent"></div>
+                            </div>
+                            <div class="col-sm-1">
+                                <span id="PercentGenerate" class="glyphicon glyphicon-cog"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="col-content content-overflow static-height">
+                        <h5 class="title">Color Options</h5>
+                        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rutrum pellentesque magna eget scelerisque. Quisque.</p>
+                        <br>
+                        <div id="BasicInfoLine" class="BasicInfoLine"></div>
+                        <br>
+                        <div id="BasicSuccessLine" class="BasicSuccessLine"></div>
+                        <br>
+                        <div id="BasicPrimaryLine" class="BasicPrimaryLine"></div>
+                        <br>
+                        <div id="BasicWarningLine" class="BasicWarningLine"></div>
+                        <br>
+                        <div id="BasicDangerLine" class="BasicDangerLine"></div>
+                        <br>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="col-content content-overflow static-height">
+                        <h5 class="title">Bar Sizes</h5>
+                        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rutrum pellentesque magna eget scelerisque. Quisque.</p>
+                        <br>
+                        <code>.progress-thick</code>
+                        <div id="BasicthickLine" class="BasicthickLine progress-thick"></div>
+                        <code>.progress-thin</code>
+                        <div id="BasicthinLine" class="BasicthinLine progress-thin"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

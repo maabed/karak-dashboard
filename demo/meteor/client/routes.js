@@ -76,7 +76,6 @@ FlowRouter.route('/forms', {
   },
 });
 
-
 FlowRouter.route('/tabs', {
   name: 'tabs',
   action: () => {
@@ -91,6 +90,12 @@ FlowRouter.route('/buttons', {
   },
 });
 
+FlowRouter.route('/loading', {
+  name: 'loading',
+  action: () => {
+    BlazeLayout.render('mainLayout', { content: 'loading' });
+  },
+});
 
 FlowRouter.route('/menus', {
   name: 'menus',
@@ -133,7 +138,6 @@ FlowRouter.route('/hover', {
     BlazeLayout.render('mainLayout', { content: 'hover' });
   },
 });
-
 
 FlowRouter.route('/googleMaps', {
   name: 'googleMaps',
