@@ -149,7 +149,7 @@ Template.sidebar.helpers({
           text: 'Vector Maps',
         },
         {
-          link: '/googleMap',
+          link: '/googleMaps',
           text: 'Google Map',
         },
         ],
