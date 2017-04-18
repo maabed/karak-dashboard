@@ -119,3 +119,10 @@ FlowRouter.route('/hover', {
     BlazeLayout.render('mainLayout', { content: 'hover' });
   },
 });
+
+FlowRouter.route('/vectorMaps', {
+  name: 'vectorMaps',
+  action: () => {
+    BlazeLayout.render('mainLayout', { content: 'vectorMaps' });
+  },
+});
