@@ -6,29 +6,244 @@
             </a>
         </div>
         <ul class="sidebar">
-            {{#each menuItem}} 
-                {{#if hassub}}
-                <li class="open active sidebar-item">
-                    <a href="{{link}}"><i class="fa {{icon}} nav-icon" aria-hidden="true"></i>{{text}}</a>
-                </li>
-                {{else}}
-                <li class="sidebar-item has-submenu">
-                    <a href="#">
-                        <i class="fa fa-file-text nav-icon" aria-hidden="true"></i> {{text}}
-                        <i class="fa fa-angle-left left-arrow" aria-hidden="true"></i>
-                    </a>
-                    <ul class="sidebar-submenue">
-                        {{#each submenu}}
-                            <li class="submenu-li">
-                                <a href="{{link}}">
-                                {{text}}
+            <li class="sidebar-item {{isActive '/'}}">
+                <a href="/"><i class="fa fa-tachometer nav-icon" aria-hidden="true"></i>Dashboard</a>
+            </li>
+            <li class="sidebar-item has-submenu {{isActive 'forms'}} {{isActive 'wizard'}}">
+                <a href="#">
+                    <i class="fa fa-file-text nav-icon" aria-hidden="true"></i> Forms
+                    <i class="fa fa-angle-left left-arrow" aria-hidden="true"></i>
+                </a>
+                <ul class="sidebar-submenue">
+                    <li class="submenu-li">
+                        <a href="/forms">
+                                    Form Elements
                                 </a>
-                            </li>
-                        {{/each}}
-                    </ul>
-                </li>
-                {{/if}} 
-            {{/each}}
+                    </li>
+                    <li class="submenu-li">
+                        <a href="/wizard">
+                                    Form Wizard
+                                </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar-item {{isActive 'charts'}}">
+                <a href="/charts">
+                    <i class="fa fa-pie-chart nav-icon" aria-hidden="true"></i> Charts
+                </a>
+            </li>
+            <li class="sidebar-item {{isActive 'inbox'}} {{isActive 'compose'}}">
+                <a href="/inbox">
+                    <i class="fa fa-envelope nav-icon" aria-hidden="true"></i> Email
+                    <span class="label info-mid list-badge">2</span>
+                </a>
+            </li>
+            <li class="sidebar-item has-submenu 
+            {{isActive 'icons'}}
+            {{isActive 'colors'}}
+            {{isActive 'buttons'}}
+            {{isActive 'notifications'}}
+            {{isActive 'modals'}}
+            {{isActive 'tabs'}}
+            {{isActive 'cards'}}
+            {{isActive 'loading'}}
+            {{isActive 'panels'}}
+            {{isActive 'lists'}}
+            {{isActive 'menus'}}
+            {{isActive 'hover'}}
+            ">
+                <a href="#">
+                    <i class="fa fa-eye nav-icon" aria-hidden="true"></i> UI Elements<span class="label success-mid list-badge">New</span> <i class="fa fa-angle-left left-arrow" aria-hidden="true"></i>
+                </a>
+                <ul class="sidebar-submenue">
+                    <li class="submenu-li">
+                        <a href="/icons">
+                                    Icons
+                                </a>
+                    </li>
+                    <li class="submenu-li">
+                        <a href="/colors">
+                                    Colors
+                                </a>
+                    </li>
+                    <li class="submenu-li">
+                        <a href="/buttons">
+                                    Buttons
+                                </a>
+                    </li>
+                    <li class="submenu-li">
+                        <a href="/notifications">
+                                    Notifications
+                                </a>
+                    </li>
+                    <li class="submenu-li">
+                        <a href="/modals">
+                                    Modals
+                                </a>
+                    </li>
+                    <li class="submenu-li">
+                        <a href="/tabs">
+                                    Tabs
+                                </a>
+                    </li>
+                    <li class="submenu-li">
+                        <a href="/cards">
+                                    Cards
+                                </a>
+                    </li>
+                    <li class="submenu-li">
+                        <a href="/loading">
+                                    Loading & Progress
+                                </a>
+                    </li>
+                    <li class="submenu-li">
+                        <a href="/panels">
+                                    Panels
+                                </a>
+                    </li>
+                    <li class="submenu-li">
+                        <a href="/lists">
+                                    Lists
+                                </a>
+                    </li>
+                    <li class="submenu-li">
+                        <a href="/menus">
+                                    Menus
+                                </a>
+                    </li>
+                    <li class="submenu-li">
+                        <a href="/hover">
+                                    Hover
+                                </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar-item {{isActive 'calendar'}}">
+                <a href="/calendar">
+                    <i class="fa fa-calendar-check-o nav-icon" aria-hidden="true"></i> Calendar
+                </a>
+            </li>
+            <li class="sidebar-item has-submenu  
+            {{isActive'Budget'}}
+            {{isActive'chat'}}
+            {{isActive'social'}}
+            {{isActive'landing_page'}}
+            ">
+                <a href="#">
+                    <i class="fa fa-star nav-icon" aria-hidden="true"></i>App Views
+                    <span class="label warning-mid list-badge">Special</span>
+                    <i class="fa fa-angle-left left-arrow" aria-hidden="true"></i>
+                </a>
+                <ul class="sidebar-submenue">
+                    <li class="submenu-li">
+                        <a href="/Budget">
+                                    Budget
+                                </a>
+                    </li>
+                    <li class="submenu-li">
+                        <a href="/chat">
+                                    Chat
+                                </a>
+                    </li>
+                    <li class="submenu-li">
+                        <a href="/social">
+                                    Social
+                                </a>
+                    </li>
+                    <li class=" submenu-li">
+                        <a href="/landing_page">
+                                    Landing Page
+                                </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar-item has-submenu
+            {{isActive'tables'}}
+            {{isActive'data_tables'}}
+            ">
+                <a href="#">
+                    <i class="fa fa-table nav-icon" aria-hidden="true"></i> Tables
+                    <i class="fa fa-angle-left left-arrow" aria-hidden="true"></i>
+                </a>
+                <ul class="sidebar-submenue">
+                    <li class="submenu-li">
+                        <a href="/tables">
+                                    Basic Table
+                                </a>
+                    </li>
+                    <li class="submenu-li">
+                        <a href="/data_tables">
+                                    Data Table
+                                </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar-item has-submenu
+            {{isActive'map'}}
+            {{isActive'google_map'}}
+            ">
+                <a href="#">
+                    <i class="fa fa-map nav-icon" aria-hidden="true"></i> Maps
+                    <i class="fa fa-angle-left left-arrow" aria-hidden="true"></i>
+                </a>
+                <ul class="sidebar-submenue">
+                    <li class="submenu-li">
+                        <a href="/map">
+                                    Vector Maps
+                                </a>
+                    </li>
+                    <li class="submenu-li">
+                        <a href="/google_map">
+                                    Google Maps
+                                </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar-item has-submenu
+            {{isActive'invoice'}}
+            {{isActive'error400'}}
+            {{isActive'error500'}}
+            {{isActive'login'}}
+            {{isActive'lock_screen'}}
+            {{isActive'tour'}}
+            ">
+                <a href="#">
+                    <i class="fa fa-gift nav-icon" aria-hidden="true"></i> Extra
+                    <i class="fa fa-angle-left left-arrow" aria-hidden="true"></i>
+                </a>
+                <ul class="sidebar-submenue">
+                    <li class="submenu-li">
+                        <a href="/invoice">
+                                    Invoice
+                                </a>
+                    </li>
+                    <li class="submenu-li">
+                        <a href="/error400">
+                                    400 Page
+                                </a>
+                    </li>
+                    <li class="submenu-li">
+                        <a href="/error500">
+                                    500 Page
+                                </a>
+                    </li>
+                    <li class="submenu-li">
+                        <a href="/login">
+                                    Login & Registration
+                                </a>
+                    </li>
+                    <li class="submenu-li">
+                        <a href="/lock_screen">
+                                    Lock Screen
+                                </a>
+                    </li>
+                    <li class="submenu-li">
+                        <a href="/tour">
+                                    Tour
+                                </a>
+                    </li>
+                </ul>
+            </li>
         </ul>
     </div>
 </template>

@@ -1,196 +1,3 @@
-Template.sidebar.helpers({
-  menuItem() {
-    const menuItem = [
-      {
-        link: '/',
-        icon: 'fa-tachometer',
-        text: 'Dashboard',
-        hassub: 1,
-      },
-      {
-        link: '#',
-        icon: 'fa-file-text',
-        text: 'Forms',
-        hassub: 0,
-
-        submenu: [{
-          link: '/forms',
-          text: 'Form Elements',
-        },
-        {
-          link: '/formWizard',
-          text: 'Form Wizard',
-        },
-        ],
-      },
-      {
-        link: '/charts',
-        icon: 'fa-pie-chart',
-        text: 'Charts',
-        hassub: 1,
-      },
-      {
-        link: '/inbox',
-        icon: 'fa-envelope',
-        text: 'Email',
-        hassub: 1,
-      },
-      {
-        link: '#',
-        icon: 'fa-eye ',
-        text: 'UI Elements',
-        hassub: 0,
-
-        submenu: [{
-          link: '/icons',
-          text: 'Icons',
-        },
-        {
-          link: '/colors',
-          text: 'Colors',
-        },
-        {
-          link: '/buttons',
-          text: 'Buttons',
-        },
-        {
-          link: '/Notifications',
-          text: 'Notifications',
-        },
-        {
-          link: '/modals',
-          text: 'Modals',
-        },
-        {
-          link: '/tabs',
-          text: 'Tabs',
-        },
-        {
-          link: '/cards',
-          text: 'Cards',
-        },
-        {
-          link: '/loading',
-          text: 'Loading',
-        },
-        {
-          link: '/panels',
-          text: 'Panels',
-        },
-        {
-          link: '/lists',
-          text: 'Lists',
-        },
-        {
-          link: '/menus',
-          text: 'Menus',
-        },
-        {
-          link: '/hover',
-          text: 'Hover',
-        },
-        ],
-
-      },
-      {
-        link: '/calendar',
-        icon: 'fa-calendar-check-o',
-        text: 'Calendar',
-        hassub: 1,
-      },
-      {
-        link: '#',
-        icon: 'fa-star',
-        text: 'App Views',
-        hassub: 0,
-
-        submenu: [{
-          link: '/Budget',
-          text: 'Budget',
-        },
-        {
-          link: '/chat',
-          text: 'Chat',
-        },
-        {
-          link: '/social',
-          text: 'Social',
-        },
-        {
-          link: '/landing-page',
-          text: 'Landing Page',
-        },
-        ],
-      },
-      {
-        link: '#',
-        icon: 'fa-table',
-        text: 'Tables',
-        hassub: 0,
-
-        submenu: [{
-          link: '/tables',
-          text: 'Basic Table',
-        },
-        {
-          link: '/dataTables',
-          text: 'Data Table',
-        },
-        ],
-      },
-      {
-        link: '#',
-        icon: 'fa-map',
-        text: 'Maps',
-        hassub: 0,
-
-        submenu: [{
-          link: '/map',
-          text: 'Vector Maps',
-        },
-        {
-          link: '/googleMaps',
-          text: 'Google Map',
-        },
-        ],
-      },
-      {
-        link: '#',
-        icon: 'fa-gift',
-        text: 'Extra',
-        hassub: 0,
-
-        submenu: [{
-          link: '/invoice',
-          text: 'Invoice',
-        },
-        {
-          link: '/error400',
-          text: '400 Page',
-        },
-        {
-          link: '/error500',
-          text: '500 Page',
-        },
-        {
-          link: '/login',
-          text: 'Login & Registration',
-        },
-        {
-          link: '/lock-screen',
-          text: 'Lock Screen',
-        },
-        {
-          link: '/tour',
-          text: 'Tour',
-        },
-        ],
-      }];
-    return menuItem;
-  },
-});
-
-
 Template.sidebar.events({
   'click .has-submenu > a'(event, instance) {
     event.preventDefault();
@@ -224,4 +31,20 @@ Template.sidebar.onRendered(function() {
  $('.sidebar-submenue').hide();
  $('.sidebar').find('li.selected').find('.sidebar-submenue').css('display', 'block');
  $('.sidebar-submenue > li > a').not( '.chat-view-navbar .sidebar-submenue > li > a').css('margin-left', '40px');
+});
+
+Template.sidebar.helpers({
+    'isActive': function (itemName) {
+
+        if (FlowRouter.getRouteName() == itemName) {
+            console.log(itemName + ' > Active');
+            return 'selected';
+        }
+
+        else {
+            console.log(itemName + ' > none');
+            return '';
+        }
+
+    },
 });
