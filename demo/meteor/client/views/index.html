@@ -1,3 +1,351 @@
 <template name="index">
-	<h1 style="padding-top: 100px;">index</h1>
+    <div class="page-content-wrapper index-page-container">
+        <div class="container-fluid">
+            <div class="row animated fadeInUp">
+                <div class="col-lg-12">
+                    <div class="col-content body-header">
+                        <h4 class="title">Welcome to Karak dashboard</h4>
+                        <p>
+                            Special Dashboard for small, medium and large webapp with very clean and aesthetic style and feel.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 animated fadeInUp">
+                    <div class="col-content">
+                        <div id="containerspline"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 animated fadeInUp">
+                    <div class="row">
+                        <div class="col-sm-6 animated fadeInUp">
+                            <div class="col-content all-income">
+                                <h1><i class="fa fa-line-chart" aria-hidden="true"></i></h1>
+                                <h2>$1 250,33</h2>
+                                <h3>All Income</h3>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 animated fadeInUp">
+                            <div class="col-content all-income invers">
+                                <h1><i class="fa fa-exchange" aria-hidden="true"></i></h1>
+                                <h2>$3 620,12</h2>
+                                <h3>Transactions</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-12 animated fadeInUp">
+                            <div class="col-content">
+                                <h5 class="title">Today Income <span class="flat-style"><i class="fa fa-money" aria-hidden="true"></i>&nbsp;860K</span></h5>
+                                <br>
+                                <div id="containerexchange"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row statistics">
+                <div class="col-md-12">
+                    <div class="tabs-container">
+                        <div class="tabs-header">
+                            <div class="statistics-taps">
+                                <ul class="bottom-border-active info-mid">
+                                    <li class="active"><a href="#con3"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Yesterday</a></li>
+                                    <li><a href="#con2"><i class="fa fa-credit-card" aria-hidden="true"></i>&nbsp;Last Month</a></li>
+                                    <li><a href="#con1"><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Last Year</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div class="statistics-item" id="con3">
+                                <div class="row">
+                                    <div class="col-sm-2 centerlize-reponsive">
+                                        <img class="img-responsive" src="/images/st-1.png" />
+                                        <h4 class="bold">220,000 USD</h4>
+                                        <h4 class="lighter">Revenue</h4>
+                                    </div>
+                                    <div class="col-sm-2 centerlize-reponsive">
+                                        <img class="img-responsive" src="/images/st-2.png" />
+                                        <h4 class="bold">120,000 USD</h4>
+                                        <h4 class="lighter">Transactions</h4>
+                                    </div>
+                                    <div class="col-sm-2 centerlize-reponsive">
+                                        <img class="img-responsive" src="/images/st-3.png" />
+                                        <h4 class="bold">502,000 USD</h4>
+                                        <h4 class="lighter">Loans</h4>
+                                    </div>
+                                    <div class="col-sm-2 centerlize-reponsive">
+                                        <img class="img-responsive" src="/images/st-4.png" />
+                                        <h4 class="bold">122,000 USD</h4>
+                                        <h4 class="lighter">Investment</h4>
+                                    </div>
+                                    <div class="col-sm-2 centerlize-reponsive">
+                                        <img class="img-responsive" src="/images/st-5.png" />
+                                        <h4 class="bold">750,000 USD</h4>
+                                        <h4 class="lighter">Deposits</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="statistics-item" id="con2">
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <img class="img-responsive" src="/images/st-1.png" />
+                                        <h4 class="bold">1220,000 USD</h4>
+                                        <h4 class="lighter">Revenue</h4>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <img class="img-responsive" src="/images/st-2.png" />
+                                        <h4 class="bold">400,000 USD</h4>
+                                        <h4 class="lighter">Transactions</h4>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <img class="img-responsive" src="/images/st-3.png" />
+                                        <h4 class="bold">602,000 USD</h4>
+                                        <h4 class="lighter">Loans</h4>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <img class="img-responsive" src="/images/st-4.png" />
+                                        <h4 class="bold">2,000 USD</h4>
+                                        <h4 class="lighter">Investment</h4>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <img class="img-responsive" src="/images/st-5.png" />
+                                        <h4 class="bold">550,000 USD</h4>
+                                        <h4 class="lighter">Deposits</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="statistics-item" id="con1">
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <img class="img-responsive" src="/images/st-1.png" />
+                                        <h4 class="bold">290,000 USD</h4>
+                                        <h4 class="lighter">Revenue</h4>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <img class="img-responsive" src="/images/st-2.png" />
+                                        <h4 class="bold">130,000 USD</h4>
+                                        <h4 class="lighter">Transactions</h4>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <img class="img-responsive" src="/images/st-3.png" />
+                                        <h4 class="bold">420,000 USD</h4>
+                                        <h4 class="lighter">Loans</h4>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <img class="img-responsive" src="/images/st-4.png" />
+                                        <h4 class="bold">324,000 USD</h4>
+                                        <h4 class="lighter">Investment</h4>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <img class="img-responsive" src="/images/st-5.png" />
+                                        <h4 class="bold">950,000 USD</h4>
+                                        <h4 class="lighter">Deposits</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 animated fadeInUp">
+                    <div class="col-content content-overflow">
+                        <h5 class="title">Calendar</h5>
+                        <div id='calendar' class="calendar-layout"></div>
+                    </div>
+                </div>
+                <div class="col-md-6 animated fadeInUp">
+                    <div class="col-content content-overflow">
+                        <h5 class="title">Worldwide Annual Sales</h5>
+                        <br>
+                        <div id="container-index"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 activities animated fadeInUp">
+                    <div class="col-content static-height">
+                        <h5 class="title">Activities Log<a class="activities-year">2016</a></h5>
+                        <div class="activities-log">
+                            <div class="single-log-box">
+                                <h5>Jan, 18 Wednesday <span class="flat-style"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;3:15 PM</span></h5>
+                                <p>
+                                    Dipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                            <div class="single-log-box">
+                                <h5>Feb, 6 Monday<span class="flat-style"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;6:10 PM</span></h5>
+                                <p>
+                                    Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                            <div class="single-log-box">
+                                <h5>Jun, 6 Tuesday<span class="flat-style"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;11:15 AM</span></h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                            <div class="single-log-box">
+                                <h5>Jul, 6 Thursday<span class="flat-style"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;7:00 AM</span></h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                </p>
+                            </div>
+                            <div class="single-log-box">
+                                <h5>Aug, 6 Sunday<span class="flat-style"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;4:15 PM</span></h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 animated fadeInUp">
+                    <div class="col-content static-height">
+                        <h5 class="title">To Do List<a class="add-task"><i class="fa fa-plus-circle" aria-hidden="true"></i></a></h5>
+                        <div class="to-do-list">
+                            <div class="single-to-do-box">
+                                <div class="checkbox checkbox-success checkbox-inline">
+                                    <input type="checkbox" id="to-do-first-checkbox" value="option" checked="">
+                                    <label class="done-task" for="to-do-first-checkbox">Lorem ipsum dolor sit.. </label>
+                                </div>
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                <h6>Today</h6>
+                            </div>
+                            <div class="single-to-do-box">
+                                <div class="checkbox checkbox-success checkbox-inline">
+                                    <input id="to-do-second-checkbox" type="checkbox">
+                                    <label for="to-do-second-checkbox">
+                                        Consectetur adipiscing elit..
+                                    </label>
+                                </div>
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                <h6>Wednesday</h6>
+                            </div>
+                            <div class="single-to-do-box">
+                                <div class="checkbox checkbox-success checkbox-inline">
+                                    <input id="to-do-third-checkbox" type="checkbox">
+                                    <label for="to-do-third-checkbox">
+                                        Consectetur adipiscing elit..
+                                    </label>
+                                </div>
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                <h6>05 Oct</h6>
+                            </div>
+                            <div class="single-to-do-box">
+                                <div class="checkbox checkbox-success checkbox-inline">
+                                    <input id="to-do-forth-checkbox" type="checkbox">
+                                    <label for="to-do-forth-checkbox">
+                                        Sit amet, consectetur adipiscing..
+                                    </label>
+                                </div>
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                <h6>10 Oct</h6>
+                            </div>
+                            <div class="single-to-do-box">
+                                <div class="checkbox checkbox-success checkbox-inline">
+                                    <input id="to-do-fifth-checkbox" type="checkbox">
+                                    <label for="to-do-fifth-checkbox">
+                                        Adipiscing elit consectetur ..
+                                    </label>
+                                </div>
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                <h6>18 Oct</h6>
+                            </div>
+                            <div class="single-to-do-box">
+                                <div class="checkbox checkbox-success checkbox-inline">
+                                    <input id="to-do-sixth-checkbox" type="checkbox">
+                                    <label for="to-do-sixth-checkbox">
+                                        Lorem ipsum dolor sit..
+                                    </label>
+                                </div>
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                <h6>18 Oct</h6>
+                            </div>
+                            <div class="single-to-do-box">
+                                <div class="checkbox checkbox-success checkbox-inline">
+                                    <input id="to-do-seventh-checkbox" type="checkbox">
+                                    <label for="to-do-seventh-checkbox">
+                                        Sit amet, consectetur..
+                                    </label>
+                                </div>
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                <h6>18 Oct</h6>
+                            </div>
+                            <div class="single-to-do-box">
+                                <div class="checkbox checkbox-success checkbox-inline">
+                                    <input id="to-do-eighth-checkbox" type="checkbox">
+                                    <label for="to-do-eighth-checkbox">
+                                        Consectetur adipiscing..
+                                    </label>
+                                </div>
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                <h6>18 Oct</h6>
+                            </div>
+                            <div class="single-to-do-box">
+                                <div class="checkbox checkbox-success checkbox-inline">
+                                    <input id="to-do-ninth-checkbox" type="checkbox">
+                                    <label for="to-do-ninth-checkbox">
+                                        Lorem ipsum dolor sit..
+                                    </label>
+                                </div>
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                <h6>18 Oct</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal right fade" id="add-event" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content add-event-modal">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel2">
+                            From: <label id="apptStartTime"></label><br>
+                            To:  <label id="apptEndTime"></label>
+                            <!-- hidden Items-->
+                            <label id="apptStartpost"></label><br>
+                            <label id="apptEndpost"></label>
+                            <!-- end hidden items -->
+                            </h4>
+                </div>
+                <div class="modal-body">
+                    <form id="createAppointmentForm" class="form-horizontal">
+                        <div class="control-group">
+                            <div class="controls">
+                                <div class="input-field parent">
+                                    <input name="name" id="name" type="text" class="validate">
+                                    <label for="name"><i class="fa fa-calendar-o" aria-hidden="true"></i>Event Name</label>
+                                </div>
+                                <div class="input-field parent">
+                                    <input id="location" name="location" type="text" class="validate">
+                                    <label for="location"><i class="fa fa-map-marker" aria-hidden="true"></i>Location</label>
+                                </div>
+                                <div class="input-field parent">
+                                    <input name="Notes" id="notes" type="text" class="validate">
+                                    <label for="Notes"><i class="fa fa-sticky-note" aria-hidden="true"></i>Notes</label>
+                                </div>
+                                <select id="eventclassName" class="select-display selectpicker form-control empty select2-init-images">
+                                    <option value="default">Default Color</option>
+                                    <option value="worning">Warning</option>
+                                    <option value="info">Info</option>
+                                    <option value="success">Success</option>
+                                    <option value="important">Important</option>
+                                </select>
+                                <label id="apptAllDay"></label>
+                            </div>
+                        </div>
+                    </form>
+                    <button type="submit" id="submitButton" class="btn btn-info icon-btn btn-block">
+                        <span class="fa fa-plus"></span> Add Event</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
