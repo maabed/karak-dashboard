@@ -159,3 +159,4 @@ FlowRouter.route('/inbox', {
     BlazeLayout.render('mainLayout', { content: 'inbox' });
   },
 });
+
