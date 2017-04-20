@@ -160,3 +160,9 @@ FlowRouter.route('/inbox', {
   },
 });
 
+FlowRouter.route('/error500', {
+  name: 'error500',
+  action: () => {
+    BlazeLayout.render('errorLayout', { content: 'error500' });
+  },
+});
