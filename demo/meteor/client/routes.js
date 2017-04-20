@@ -160,3 +160,11 @@ FlowRouter.route('/inbox', {
   },
 });
 
+/* Errors Layout Views */
+
+FlowRouter.route('/error400', {
+  name: 'error400',
+  action: () => {
+    BlazeLayout.render('errorLayout', { content: 'error400' });
+  },
+});
