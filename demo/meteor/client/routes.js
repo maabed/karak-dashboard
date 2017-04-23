@@ -160,3 +160,18 @@ FlowRouter.route('/inbox', {
   },
 });
 
+/* Flat layout */
+
+FlowRouter.route('/error400', {
+  name: 'error400',
+  action: () => {
+    BlazeLayout.render('flatLayout', { content: 'error400' });
+  },
+});
+
+FlowRouter.route('/error500', {
+  name: 'error500',
+  action: () => {
+    BlazeLayout.render('flatLayout', { content: 'error500' });
+  },
+});
