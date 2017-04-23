@@ -146,10 +146,10 @@ FlowRouter.route('/googleMaps', {
   },
 });
 
-FlowRouter.route('/formWizard', {
-  name: 'formWizard',
+FlowRouter.route('/wizard', {
+  name: 'wizard',
   action: () => {
-    BlazeLayout.render('mainLayout', { content: 'formWizard' });
+    BlazeLayout.render('mainLayout', { content: 'wizard' });
   },
 });
 
