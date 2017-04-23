@@ -38,13 +38,34 @@ Template.sidebar.helpers({
 
         if (FlowRouter.getRouteName() == itemName) {
             console.log(itemName + ' > Active');
-            return 'selected';
+            return 'selected open active';
         }
 
         else {
             console.log(itemName + ' > none');
             return '';
         }
+    },
+    'opened': function (itemName) {
+        if (FlowRouter.getRouteName() == itemName) {
+            console.log(itemName + ' > Active');
+            return 'open';
+        }
 
+        else {
+            console.log(itemName + ' > none');
+            return '';
+        }
+    },
+    'inner': function (itemName) {
+        if (FlowRouter.getRouteName() == itemName) {
+            console.log(itemName + ' > Active');
+            return 'inner-selected';
+        }
+
+        else {
+            console.log(itemName + ' > none');
+            return '';
+        }
     },
 });

@@ -12,16 +12,16 @@
             <li class="sidebar-item has-submenu {{isActive 'forms'}} {{isActive 'wizard'}}">
                 <a href="#">
                     <i class="fa fa-file-text nav-icon" aria-hidden="true"></i> Forms
-                    <i class="fa fa-angle-left left-arrow" aria-hidden="true"></i>
+                    <i class="fa fa-angle-left left-arrow {{opened 'forms'}} {{opened 'wizard'}}" aria-hidden="true"></i>
                 </a>
                 <ul class="sidebar-submenue">
                     <li class="submenu-li">
-                        <a href="/forms">
+                        <a href="/forms" class="{{inner 'forms'}}">
                                     Form Elements
                                 </a>
                     </li>
                     <li class="submenu-li">
-                        <a href="/wizard">
+                        <a href="/wizard" class="{{inner 'wizard'}}">
                                     Form Wizard
                                 </a>
                     </li>
@@ -53,66 +53,79 @@
             {{isActive 'hover'}}
             ">
                 <a href="#">
-                    <i class="fa fa-eye nav-icon" aria-hidden="true"></i> UI Elements<span class="label success-mid list-badge">New</span> <i class="fa fa-angle-left left-arrow" aria-hidden="true"></i>
+                    <i class="fa fa-eye nav-icon" aria-hidden="true"></i> UI Elements<span class="label success-mid list-badge">New</span> 
+                    <i class="fa fa-angle-left left-arrow            
+                    {{opened 'icons'}}
+                    {{opened 'colors'}}
+                    {{opened 'buttons'}}
+                    {{opened 'notifications'}}
+                    {{opened 'modals'}}
+                    {{opened 'tabs'}}
+                    {{opened 'cards'}}
+                    {{opened 'loading'}}
+                    {{opened 'panels'}}
+                    {{opened 'lists'}}
+                    {{opened 'menus'}}
+                    {{opened 'hover'}}" aria-hidden="true"></i>
                 </a>
                 <ul class="sidebar-submenue">
                     <li class="submenu-li">
-                        <a href="/icons">
+                        <a href="/icons" class="{{inner 'icons'}}">
                                     Icons
                                 </a>
                     </li>
                     <li class="submenu-li">
-                        <a href="/colors">
+                        <a href="/colors" class="{{inner 'colors'}}">
                                     Colors
                                 </a>
                     </li>
                     <li class="submenu-li">
-                        <a href="/buttons">
+                        <a href="/buttons" class="{{inner 'buttons'}}">
                                     Buttons
                                 </a>
                     </li>
                     <li class="submenu-li">
-                        <a href="/notifications">
+                        <a href="/notifications" class="{{inner 'notifications'}}">
                                     Notifications
                                 </a>
                     </li>
                     <li class="submenu-li">
-                        <a href="/modals">
+                        <a href="/modals" class="{{inner 'modals'}}">
                                     Modals
                                 </a>
                     </li>
                     <li class="submenu-li">
-                        <a href="/tabs">
+                        <a href="/tabs" class="{{inner 'tabs'}}">
                                     Tabs
                                 </a>
                     </li>
                     <li class="submenu-li">
-                        <a href="/cards">
+                        <a href="/cards" class="{{inner 'cards'}}">
                                     Cards
                                 </a>
                     </li>
                     <li class="submenu-li">
-                        <a href="/loading">
+                        <a href="/loading" class="{{inner 'loading'}}">
                                     Loading & Progress
                                 </a>
                     </li>
                     <li class="submenu-li">
-                        <a href="/panels">
+                        <a href="/panels" class="{{inner 'panels'}}">
                                     Panels
                                 </a>
                     </li>
                     <li class="submenu-li">
-                        <a href="/lists">
+                        <a href="/lists" class="{{inner 'lists'}}">
                                     Lists
                                 </a>
                     </li>
                     <li class="submenu-li">
-                        <a href="/menus">
+                        <a href="/menus" class="{{inner 'menus'}}">
                                     Menus
                                 </a>
                     </li>
                     <li class="submenu-li">
-                        <a href="/hover">
+                        <a href="/hover" class="{{inner 'hover'}}">
                                     Hover
                                 </a>
                     </li>
@@ -124,121 +137,139 @@
                 </a>
             </li>
             <li class="sidebar-item has-submenu  
-            {{isActive'Budget'}}
-            {{isActive'chat'}}
-            {{isActive'social'}}
-            {{isActive'landing_page'}}
+            {{isActive 'Budget'}}
+            {{isActive 'chat'}}
+            {{isActive 'social'}}
+            {{isActive 'landing_page'}}
             ">
                 <a href="#">
                     <i class="fa fa-star nav-icon" aria-hidden="true"></i>App Views
                     <span class="label warning-mid list-badge">Special</span>
-                    <i class="fa fa-angle-left left-arrow" aria-hidden="true"></i>
+                    <i class="fa fa-angle-left left-arrow
+                    {{opened 'Budget'}}
+                    {{opened 'chat'}}
+                    {{opened 'social'}}
+                    {{opened 'landing_page'}}
+                    " aria-hidden="true"></i>
                 </a>
                 <ul class="sidebar-submenue">
                     <li class="submenu-li">
-                        <a href="/Budget">
+                        <a href="/Budget" class="{{inner 'budget'}}">
                                     Budget
                                 </a>
                     </li>
                     <li class="submenu-li">
-                        <a href="/chat">
+                        <a href="/chat" class="{{inner 'chat'}}">
                                     Chat
                                 </a>
                     </li>
                     <li class="submenu-li">
-                        <a href="/social">
+                        <a href="/social" class="{{inner 'social'}}">
                                     Social
                                 </a>
                     </li>
                     <li class=" submenu-li">
-                        <a href="/landing_page">
+                        <a href="/landing_page" class="{{inner 'landing_page'}}">
                                     Landing Page
                                 </a>
                     </li>
                 </ul>
             </li>
             <li class="sidebar-item has-submenu
-            {{isActive'tables'}}
-            {{isActive'data_tables'}}
+            {{isActive 'tables'}}
+            {{isActive 'data_tables'}}
             ">
                 <a href="#">
                     <i class="fa fa-table nav-icon" aria-hidden="true"></i> Tables
-                    <i class="fa fa-angle-left left-arrow" aria-hidden="true"></i>
+                    <i class="fa fa-angle-left left-arrow
+                    {{opened 'tables'}}
+                    {{opened 'data_tables'}}
+                    " aria-hidden="true"></i>
                 </a>
                 <ul class="sidebar-submenue">
                     <li class="submenu-li">
-                        <a href="/tables">
+                        <a href="/tables" class="{{inner 'tables'}}">
                                     Basic Table
                                 </a>
                     </li>
                     <li class="submenu-li">
-                        <a href="/data_tables">
+                        <a href="/data_tables" class="{{inner 'data_tables'}}">
                                     Data Table
                                 </a>
                     </li>
                 </ul>
             </li>
             <li class="sidebar-item has-submenu
-            {{isActive'map'}}
-            {{isActive'google_map'}}
+            {{isActive 'map'}}
+            {{isActive 'google_map'}}
             ">
                 <a href="#">
                     <i class="fa fa-map nav-icon" aria-hidden="true"></i> Maps
-                    <i class="fa fa-angle-left left-arrow" aria-hidden="true"></i>
+                    <i class="fa fa-angle-left left-arrow
+                    {{opened 'map'}}
+                    {{opened 'google_map'}}
+                    " aria-hidden="true"></i>
                 </a>
                 <ul class="sidebar-submenue">
                     <li class="submenu-li">
-                        <a href="/map">
+                        <a href="/map" class="{{inner 'map'}}">
                                     Vector Maps
                                 </a>
                     </li>
                     <li class="submenu-li">
-                        <a href="/google_map">
+                        <a href="/google_map" class="{{inner 'google_map'}}">
                                     Google Maps
                                 </a>
                     </li>
                 </ul>
             </li>
             <li class="sidebar-item has-submenu
-            {{isActive'invoice'}}
-            {{isActive'error400'}}
-            {{isActive'error500'}}
-            {{isActive'login'}}
-            {{isActive'lock_screen'}}
-            {{isActive'tour'}}
+            {{isActive 'invoice'}}
+            {{isActive 'error400'}}
+            {{isActive 'error500'}}
+            {{isActive 'login'}}
+            {{isActive 'lock_screen'}}
+            {{isActive 'tour'}}
             ">
                 <a href="#">
                     <i class="fa fa-gift nav-icon" aria-hidden="true"></i> Extra
-                    <i class="fa fa-angle-left left-arrow" aria-hidden="true"></i>
+                    <i class="fa fa-angle-left left-arrow
+                    {{opened 'invoice'}}
+                    {{opened 'error400'}}
+                    {{opened 'error500'}}
+                    {{opened 'login'}}
+                    {{opened 'lock_screen'}}
+                    {{opened 'tour'}}
+                    " aria-hidden="true"></i>
                 </a>
                 <ul class="sidebar-submenue">
                     <li class="submenu-li">
-                        <a href="/invoice">
+                        <a href="/invoice" class="{{inner 'invoice'}}">
                                     Invoice
                                 </a>
                     </li>
                     <li class="submenu-li">
-                        <a href="/error400">
+                        <a href="/error400" class="{{inner 'error400'}}">
                                     400 Page
                                 </a>
                     </li>
                     <li class="submenu-li">
-                        <a href="/error500">
+                        <a href="/error500" class="{{inner 'error500'}}">
                                     500 Page
                                 </a>
                     </li>
                     <li class="submenu-li">
-                        <a href="/login">
+                        <a href="/login" class="{{inner 'login'}}">
                                     Login & Registration
                                 </a>
                     </li>
                     <li class="submenu-li">
-                        <a href="/lock_screen">
+                        <a href="/lock_screen" class="{{inner 'lock_screen'}}">
                                     Lock Screen
                                 </a>
                     </li>
                     <li class="submenu-li">
-                        <a href="/tour">
+                        <a href="/tour" class="{{inner 'tour'}}">
                                     Tour
                                 </a>
                     </li>
