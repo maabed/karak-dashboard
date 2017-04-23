@@ -216,7 +216,7 @@ Template.index.onRendered(function indexonRendered() {
       $('#add-event #apptStartTime').text(eventstart);
       $('#add-event #apptEndTime').text(evntend);
       $('#add-event #apptAllDay').text(allDay);
-      $('#add-event').modal('toggle');
+      $('#add-event').modal('show');
     },
     events: [{
       title: 'All Day Event',
