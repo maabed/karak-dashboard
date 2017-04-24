@@ -175,3 +175,24 @@ FlowRouter.route('/error500', {
     BlazeLayout.render('flatLayout', { content: 'error500' });
   },
 });
+
+FlowRouter.route('/login', {
+  name: 'login',
+  action: () => {
+    BlazeLayout.render('flatLayout', { content: 'login' });
+  },
+});
+
+FlowRouter.route('/lockScreen', {
+  name: 'lockScreen',
+  action: () => {
+    BlazeLayout.render('flatLayout', { content: 'lockScreen' });
+  },
+});
+
+FlowRouter.route('/landingPage', {
+  name: 'landingPage',
+  action: () => {
+    BlazeLayout.render('flatLayout', { content: 'landingPage' });
+  },
+});
