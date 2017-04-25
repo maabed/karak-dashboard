@@ -90,13 +90,6 @@ FlowRouter.route('/buttons', {
   },
 });
 
-FlowRouter.route('/loading', {
-  name: 'loading',
-  action: () => {
-    BlazeLayout.render('mainLayout', { content: 'loading' });
-  },
-});
-
 FlowRouter.route('/menus', {
   name: 'menus',
   action: () => {
