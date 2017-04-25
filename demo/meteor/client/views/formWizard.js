@@ -1,8 +1,8 @@
-Template.formWizard.onCreated(function formWizardOnCreated() {
+Template.wizard.onCreated(function wizardOnCreated() {
 
 });
 
-Template.formWizard.onRendered(function formWizardonRendered() {
+Template.wizard.onRendered(function wizardonRendered() {
   $('#rootwizard').bootstrapWizard({
     onNext: function() {
       $('#first_name-resault').html($('#first_name').val());
@@ -23,11 +23,11 @@ Template.formWizard.onRendered(function formWizardonRendered() {
   $('[data-toggle="popover"]').popover();
 });
 
-Template.formWizard.helpers({
+Template.wizard.helpers({
 
 });
 
-Template.formWizard.events({
+Template.wizard.events({
   'click #submit-wizard'(event, instance) {
     setTimeout(function () {
       swal({

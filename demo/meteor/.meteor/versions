@@ -85,6 +85,7 @@ reactive-dict@1.1.8
 reactive-var@1.0.11
 reload@1.1.11
 retry@1.0.9
+richsilv:owl-carousel@0.1.0
 routepolicy@1.0.12
 rzymek:fullcalendar@2.7.2
 sergeyt:typeahead@0.11.1_9
@@ -106,3 +107,4 @@ underscore@1.0.10
 url@1.1.0
 webapp@1.3.14
 webapp-hashing@1.0.9
+zimme:active-route@2.3.2

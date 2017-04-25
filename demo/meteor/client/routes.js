@@ -146,10 +146,10 @@ FlowRouter.route('/googleMaps', {
   },
 });
 
-FlowRouter.route('/formWizard', {
-  name: 'formWizard',
+FlowRouter.route('/wizard', {
+  name: 'wizard',
   action: () => {
-    BlazeLayout.render('mainLayout', { content: 'formWizard' });
+    BlazeLayout.render('mainLayout', { content: 'wizard' });
   },
 });
 
@@ -157,5 +157,42 @@ FlowRouter.route('/inbox', {
   name: 'inbox',
   action: () => {
     BlazeLayout.render('mainLayout', { content: 'inbox' });
+  },
+});
+
+/* Flat layout */
+
+FlowRouter.route('/error400', {
+  name: 'error400',
+  action: () => {
+    BlazeLayout.render('flatLayout', { content: 'error400' });
+  },
+});
+
+FlowRouter.route('/error500', {
+  name: 'error500',
+  action: () => {
+    BlazeLayout.render('flatLayout', { content: 'error500' });
+  },
+});
+
+FlowRouter.route('/login', {
+  name: 'login',
+  action: () => {
+    BlazeLayout.render('flatLayout', { content: 'login' });
+  },
+});
+
+FlowRouter.route('/lockScreen', {
+  name: 'lockScreen',
+  action: () => {
+    BlazeLayout.render('flatLayout', { content: 'lockScreen' });
+  },
+});
+
+FlowRouter.route('/landingPage', {
+  name: 'landingPage',
+  action: () => {
+    BlazeLayout.render('flatLayout', { content: 'landingPage' });
   },
 });
