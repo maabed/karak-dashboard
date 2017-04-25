@@ -6,7 +6,7 @@
             </a>
         </div>
         <ul class="sidebar">
-            <li class="sidebar-item {{isActive '/'}}">
+            <li class="sidebar-item {{isActive 'index'}}">
                 <a href="/"><i class="fa fa-tachometer nav-icon" aria-hidden="true"></i>Dashboard</a>
             </li>
             <li class="sidebar-item has-submenu {{isActive 'forms'}} {{isActive 'wizard'}}">
@@ -137,24 +137,24 @@
                 </a>
             </li>
             <li class="sidebar-item has-submenu  
-            {{isActive 'Budget'}}
+            {{isActive 'budget'}}
             {{isActive 'chat'}}
             {{isActive 'social'}}
-            {{isActive 'landing_page'}}
+            {{isActive 'landing-page'}}
             ">
                 <a href="#">
                     <i class="fa fa-star nav-icon" aria-hidden="true"></i>App Views
                     <span class="label warning-mid list-badge">Special</span>
                     <i class="fa fa-angle-left left-arrow
-                    {{opened 'Budget'}}
+                    {{opened 'budget'}}
                     {{opened 'chat'}}
                     {{opened 'social'}}
-                    {{opened 'landing_page'}}
+                    {{opened 'landing-page'}}
                     " aria-hidden="true"></i>
                 </a>
                 <ul class="sidebar-submenue">
                     <li class="submenu-li">
-                        <a href="/Budget" class="{{inner 'budget'}}">
+                        <a href="/budget" class="{{inner 'budget'}}">
                                     Budget
                                 </a>
                     </li>
@@ -169,7 +169,7 @@
                                 </a>
                     </li>
                     <li class=" submenu-li">
-                        <a href="/landing_page" class="{{inner 'landing_page'}}">
+                        <a href="/landing-page" class="{{inner 'landing-page'}}">
                                     Landing Page
                                 </a>
                     </li>
@@ -177,13 +177,13 @@
             </li>
             <li class="sidebar-item has-submenu
             {{isActive 'tables'}}
-            {{isActive 'data_tables'}}
+            {{isActive 'dataTables'}}
             ">
                 <a href="#">
                     <i class="fa fa-table nav-icon" aria-hidden="true"></i> Tables
                     <i class="fa fa-angle-left left-arrow
                     {{opened 'tables'}}
-                    {{opened 'data_tables'}}
+                    {{opened 'dataTables'}}
                     " aria-hidden="true"></i>
                 </a>
                 <ul class="sidebar-submenue">
@@ -193,7 +193,7 @@
                                 </a>
                     </li>
                     <li class="submenu-li">
-                        <a href="/data_tables" class="{{inner 'data_tables'}}">
+                    <a href="/data-tables" class="{{inner 'dataTables'}}">
                                     Data Table
                                 </a>
                     </li>

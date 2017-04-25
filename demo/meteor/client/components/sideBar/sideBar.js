@@ -1,6 +1,5 @@
 Template.sidebar.events({
-  'click .has-submenu > a'(event, instance) {
-    event.preventDefault();
+  'click .sidebar-item > a'(event, instance) {
     const $this = $(event.target).parent().find('.sidebar-submenue');
     $('.sidebar-submenue').not($this).hide(300);
     $this.toggle(300);
@@ -29,6 +28,7 @@ Template.sidebar.events({
 
 Template.sidebar.onRendered(function() {
  $('.sidebar-submenue').hide();
+ $('.sidebar').find('.sidebar-submenue').css('display', 'none');
  $('.sidebar').find('li.selected').find('.sidebar-submenue').css('display', 'block');
  $('.sidebar-submenue > li > a').not( '.chat-view-navbar .sidebar-submenue > li > a').css('margin-left', '40px');
 });

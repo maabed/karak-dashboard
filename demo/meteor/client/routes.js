@@ -34,7 +34,7 @@ FlowRouter.route('/social', {
   },
 });
 
-FlowRouter.route('/dataTables', {
+FlowRouter.route('/data-tables', {
   name: 'dataTables',
   action: () => {
     BlazeLayout.render('mainLayout', { content: 'dataTables' });
@@ -80,6 +80,13 @@ FlowRouter.route('/tabs', {
   name: 'tabs',
   action: () => {
     BlazeLayout.render('mainLayout', { content: 'tabs' });
+  },
+});
+
+FlowRouter.route('/loading', {
+  name: 'loading',
+  action: () => {
+    BlazeLayout.render('mainLayout', { content: 'loading' });
   },
 });
 
@@ -132,7 +139,7 @@ FlowRouter.route('/hover', {
   },
 });
 
-FlowRouter.route('/googleMaps', {
+FlowRouter.route('/google-maps', {
   name: 'googleMaps',
   action: () => {
     BlazeLayout.render('mainLayout', { content: 'googleMaps' });
@@ -155,14 +162,14 @@ FlowRouter.route('/inbox', {
 
 /* Flat layout */
 
-FlowRouter.route('/error400', {
+FlowRouter.route('/error-400', {
   name: 'error400',
   action: () => {
     BlazeLayout.render('flatLayout', { content: 'error400' });
   },
 });
 
-FlowRouter.route('/error500', {
+FlowRouter.route('/error-500', {
   name: 'error500',
   action: () => {
     BlazeLayout.render('flatLayout', { content: 'error500' });
@@ -176,14 +183,14 @@ FlowRouter.route('/login', {
   },
 });
 
-FlowRouter.route('/lockScreen', {
+FlowRouter.route('/lock-screen', {
   name: 'lockScreen',
   action: () => {
     BlazeLayout.render('flatLayout', { content: 'lockScreen' });
   },
 });
 
-FlowRouter.route('/landingPage', {
+FlowRouter.route('/landing-page', {
   name: 'landingPage',
   action: () => {
     BlazeLayout.render('flatLayout', { content: 'landingPage' });
