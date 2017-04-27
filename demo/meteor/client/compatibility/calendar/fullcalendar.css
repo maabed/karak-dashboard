@@ -47,10 +47,6 @@ table tr td  {
     border-top: 1px solid #e5e5e5 !important;
 }
 
-hr {
-    border-color: #fff !important;
-}
-
 .gray-text{background-color:green;}
 .add-event-modal{
     z-index: 999;
