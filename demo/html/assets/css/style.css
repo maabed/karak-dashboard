@@ -5630,7 +5630,12 @@ a.btn-circle {
     border-bottom: 1px solid #e4e5e7;
     box-shadow: none;
     border-radius: 0px;
-    padding: 0.5em, 0em, 0.5em, 0em;
+    padding: 0.5em 0em 0.5em 0em;
+}
+
+.inbox-container .split-view .Compose-table .to .bootstrap-tagsinput input,
+.inbox-container .split-view .Compose-table .cc .bootstrap-tagsinput input {
+    width: 3em;
 }
 
 .inbox-container .split-view .Compose-table .form-group .Email-lable {
