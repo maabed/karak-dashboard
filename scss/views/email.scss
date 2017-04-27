@@ -128,6 +128,9 @@
           box-shadow: none;
           border-radius: 0px;
           @include padding-diffrent-values(0.5em, 0em, 0.5em, 0em);
+          input {
+            width: 3em;
+          }
         }
 
       }

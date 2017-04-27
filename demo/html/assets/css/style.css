@@ -1476,6 +1476,9 @@ input:not(.flat_email):not(.search-text-box):not(.select2-search__field):focus {
     border-radius: 0px;
 }
 
+.dropzone {
+    border: 2px dashed rgba(0, 0, 0, 0.3);
+}
 
 /*! Dashboasrd Buttons */
 
@@ -5627,7 +5630,12 @@ a.btn-circle {
     border-bottom: 1px solid #e4e5e7;
     box-shadow: none;
     border-radius: 0px;
-    padding: 0.5em, 0em, 0.5em, 0em;
+    padding: 0.5em 0em 0.5em 0em;
+}
+
+.inbox-container .split-view .Compose-table .to .bootstrap-tagsinput input,
+.inbox-container .split-view .Compose-table .cc .bootstrap-tagsinput input {
+    width: 3em;
 }
 
 .inbox-container .split-view .Compose-table .form-group .Email-lable {
@@ -6046,7 +6054,7 @@ a.btn-circle {
 
 .wrapper .sidebar-wrapper.chat-view-navbar .left-side-footer {
     background-color: #22252b;
-    padding: 5px 20px;
+    padding: 12px 20px;
     width: 18.9em;
     position: fixed;
     bottom: 0em;
@@ -6069,7 +6077,7 @@ a.btn-circle {
 }
 
 .wrapper .sidebar-wrapper.chat-view-navbar .left-side-footer img {
-    width:  7em;
+    width: 12em;
     margin: 0px auto;
 }
 
@@ -6978,6 +6986,7 @@ a.btn-circle {
     font-size: 14px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    height: 100vh;
 }
 
 .login-body .backgroundimg {
@@ -7384,6 +7393,7 @@ a.btn-circle {
 
 .error-body {
     background-color: #ffffff;
+    height: 100vh;
 }
 
 .error-body .message-position {
@@ -7647,6 +7657,7 @@ a.btn-circle {
     font-size: 14px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    height: 100vh;
 }
 
 .lock-page .container {

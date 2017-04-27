@@ -211,7 +211,7 @@ $(function($) {
       }
     });
 
-    $(".daterangepicker").find(".calendar.left").css("width", "50%");
+    $(".daterangepicker").find(".calendar.left").css("width", "49%");
     $(".daterangepicker").find(".calendar.right").css("width", "49%");
 
     var start = moment().subtract(29, 'days');
