@@ -203,3 +203,10 @@ FlowRouter.route('/landing-page', {
     BlazeLayout.render('flatLayout', { content: 'landingPage' });
   },
 });
+
+FlowRouter.route('/chat', {
+  name: 'chat',
+  action: () => {
+    BlazeLayout.render('flatLayout', { content: 'chat' });
+  },
+});
