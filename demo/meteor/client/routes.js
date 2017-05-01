@@ -160,6 +160,13 @@ FlowRouter.route('/inbox', {
   },
 });
 
+FlowRouter.route('/compose', {
+  name: 'compose',
+  action: () => {
+    BlazeLayout.render('mainLayout', { content: 'compose' });
+  },
+});
+
 /* Flat layout */
 
 FlowRouter.route('/error-400', {
