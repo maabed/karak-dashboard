@@ -167,6 +167,13 @@ FlowRouter.route('/compose', {
   },
 });
 
+FlowRouter.route('/calendar', {
+  name: 'calendar',
+  action: () => {
+    BlazeLayout.render('mainLayout', { content: 'calendar' });
+  },
+});
+
 /* Flat layout */
 
 FlowRouter.route('/error-400', {
