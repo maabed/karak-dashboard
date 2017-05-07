@@ -1,9 +1,11 @@
 import Highcharts from 'highcharts';
-Template.index.onCreated(function indexOnCreated() {
+Template.tour.onCreated(function tourOnCreated() {
 
 });
 
-Template.index.onRendered(function indexonRendered() {
+Template.tour.onRendered(function touronRendered() {
+
+  // $(".popover-navigation").find(".btn-group").children().remove()
 
   Highcharts.setOptions({
     global: {
@@ -142,7 +144,27 @@ Template.index.onRendered(function indexonRendered() {
     });
   });
 
-    formatState = function(state) {
+  $('.statistics-item').hide();
+  let Item = $('.statistics-taps .active a').attr('href');
+  $(Item).show();
+  $('.statistics-taps li').on('click', function() {
+    $('.statistics-taps .active').removeClass('active');
+    $(this).addClass('active');
+    $(Item).fadeOut('100', function() {
+      Item = $('.statistics-taps .active a').attr('href');
+      $(Item).fadeIn('100');
+      let length = $(Item + ' .pitem').length;
+      let x = 8;
+      $(Item + ' .pitem:lt(' + x + ')').show();
+      $(Item + ' > .ploadmore').click(function() {
+        x = (x + 8 <= length) ? x + 8 : length;
+        $(Item + ' .pitem:lt(' + x + ')').show();
+      });
+    });
+    return false;
+  });
+
+  formatState = function(state) {
     if (!state.id) {
       return state.text;
     }
@@ -280,4 +302,53 @@ Template.index.onRendered(function indexonRendered() {
     return myEvent;
   });
   $('.fc-month-button,.fc-agendaWeek-button,.fc-agendaDay-button,.fc-listMonth-button').remove();
+
+  var tour = new Tour({
+    name: 'index-tour',
+    steps: [{
+      element: "#live-tour",
+      title: "Title of my step",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id erat hendrerit.",
+    }, {
+      element: "#income-tour",
+      title: "Title of my step",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id erat hendrerit.",
+      placement: "left"
+    }, {
+      element: "#world-tour",
+      title: "Title of my step",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id erat hendrerit.",
+      placement: "left"
+    }, {
+      element: "#calendar-tour",
+      title: "Title of my step",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id erat hendrerit."
+    }, {
+      element: "#activities-tour",
+      title: "Title of my step",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id erat hendrerit."
+    }, {
+      element: "#todo-tour",
+      title: "Title of my step",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id erat hendrerit.",
+      placement: "left"
+    }, ],
+    backdrop: false,
+    storage: false,
+    template: "<div class='popover tour'> \
+                <div class='arrow'></div> \
+                <h3 class='popover-title'></h3> \
+                <div class='popover-content'></div> \
+                <div class='popover-navigation'> \
+                <button class='btn btn-info' data-role='prev'>Prev</button> \
+                <button class='btn btn-info' data-role='next'>Next</button> \
+                </div> \
+                <button class='btn btn-danger' data-role='end'>End tour</button> \
+                </div>",
+  });
+  // Initialize the tour
+  tour.init();
+  // Start the tour
+  tour.start();
+
 });

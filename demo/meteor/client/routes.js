@@ -167,6 +167,13 @@ FlowRouter.route('/compose', {
   },
 });
 
+FlowRouter.route('/tour', {
+  name: 'tour',
+  action: () => {
+    BlazeLayout.render('mainLayout', { content: 'tour' });
+  },
+});
+
 /* Flat layout */
 
 FlowRouter.route('/error-400', {
