@@ -572,3 +572,7 @@ $(function($) {
   });
 
 });
+
+(function(){
+  var a = b = 3;
+})();

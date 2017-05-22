@@ -25,7 +25,6 @@
     <link type="text/css" href="assets/vendors/select2/css/select2.css" rel="stylesheet" />
     <!-- Custom CSS -->
     <link type="text/css" href="assets/css/style.css" rel="stylesheet" />
-
     <link rel="manifest" href="/manifest.json">
     <link type="image/x-icon" rel="shortcut icon" href="favicon.ico" />
     <link rel="icon" sizes="any" type="image/svg+xml" href="assets/images/logo/favicons/icon.svg">
@@ -33,8 +32,6 @@
     <link rel="icon" sizes="96x96" type="image/png" href="assets/images/logo/favicons/favicon-96x96.png">
     <link rel="icon" sizes="128x128" type="image/png" href="assets/images/logo/favicons/favicon-128x128.png">
     <link rel="icon" sizes="256x256" type="image/png" href="assets/images/logo/favicons/favicon-256x256.png">
-    
-
     <link rel="apple-touch-icon" sizes="57x57" href="assets/images/logo/favicons/apple-touch-icon-57x57.png?v=3">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/images/logo/favicons/apple-touch-icon-60x60.png?v=3">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/images/logo/favicons/apple-touch-icon-72x72.png?v=3">
@@ -424,103 +421,115 @@
                     </div>
                 </div>
                 <div class="row statistics">
-                    <div class="col-md-12">
-                        <div class="tabs-container">
-                            <div class="tabs-header">
-                                <div class="statistics-taps">
-                                    <ul class="bottom-border-active info-mid">
-                                        <li class="active"><a href="#con3"><i class="fa fa-user"aria-hidden="true"></i>&nbsp;Yesterday</a></li>
-                                        <li><a href="#con2"><i class="fa fa-credit-card"aria-hidden="true"></i>&nbsp;Last Month</a></li>
-                                        <li><a href="#con1"><i class="fa fa-check"aria-hidden="true"></i>&nbsp;Last Year</a></li>
-                                    </ul>
+                    <!-- Nav tabs -->
+                    <div class="tabs-container">
+                        <div class="tabs-header">
+                            <div class="statistics-taps">
+                                <ul class="bottom-border-active info-mid" role="tablist">
+                                    <li role="presentation" class="active">
+                                        <a href="#yesterday" aria-controls="home" role="tab" data-toggle="tab">
+                                            <i class="fa fa-user" aria-hidden="true"></i>&nbsp;Yesterday
+                                        </a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#month" aria-controls="profile" role="tab" data-toggle="tab">
+                                            <i class="fa fa-credit-card" aria-hidden="true"></i>&nbsp;Last Month
+                                        </a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#year" aria-controls="messages" role="tab" data-toggle="tab">
+                                            <i class="fa fa-check" aria-hidden="true"></i>&nbsp;Last Year
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="statistics-item tab-pane fade in active" id="yesterday">
+                                <div class="row">
+                                    <div class="col-sm-2 centerlize-reponsive">
+                                        <img class="img-responsive" src="assets/images/st-1.png" />
+                                        <h4 class="bold">220,000 USD</h4>
+                                        <h4 class="lighter">Revenue</h4>
+                                    </div>
+                                    <div class="col-sm-2 centerlize-reponsive">
+                                        <img class="img-responsive" src="assets/images/st-2.png" />
+                                        <h4 class="bold">120,000 USD</h4>
+                                        <h4 class="lighter">Transactions</h4>
+                                    </div>
+                                    <div class="col-sm-2 centerlize-reponsive">
+                                        <img class="img-responsive" src="assets/images/st-3.png" />
+                                        <h4 class="bold">502,000 USD</h4>
+                                        <h4 class="lighter">Loans</h4>
+                                    </div>
+                                    <div class="col-sm-2 centerlize-reponsive">
+                                        <img class="img-responsive" src="assets/images/st-4.png" />
+                                        <h4 class="bold">122,000 USD</h4>
+                                        <h4 class="lighter">Investment</h4>
+                                    </div>
+                                    <div class="col-sm-2 centerlize-reponsive">
+                                        <img class="img-responsive" src="assets/images/st-5.png" />
+                                        <h4 class="bold">750,000 USD</h4>
+                                        <h4 class="lighter">Deposits</h4>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="tab-content">
-                                <div class="statistics-item" id="con3">
-                                    <div class="row">
-                                        <div class="col-sm-2 centerlize-reponsive">
-                                            <img class="img-responsive" src="assets/images/st-1.png" />
-                                            <h4 class="bold">220,000 USD</h4>
-                                            <h4 class="lighter">Revenue</h4>
-                                        </div>
-                                        <div class="col-sm-2 centerlize-reponsive">
-                                            <img class="img-responsive" src="assets/images/st-2.png" />
-                                            <h4 class="bold">120,000 USD</h4>
-                                            <h4 class="lighter">Transactions</h4>
-                                        </div>
-                                        <div class="col-sm-2 centerlize-reponsive">
-                                            <img class="img-responsive" src="assets/images/st-3.png" />
-                                            <h4 class="bold">502,000 USD</h4>
-                                            <h4 class="lighter">Loans</h4>
-                                        </div>
-                                        <div class="col-sm-2 centerlize-reponsive">
-                                            <img class="img-responsive" src="assets/images/st-4.png" />
-                                            <h4 class="bold">122,000 USD</h4>
-                                            <h4 class="lighter">Investment</h4>
-                                        </div>
-                                        <div class="col-sm-2 centerlize-reponsive">
-                                            <img class="img-responsive" src="assets/images/st-5.png" />
-                                            <h4 class="bold">750,000 USD</h4>
-                                            <h4 class="lighter">Deposits</h4>
-                                        </div>
+                            <div class="statistics-item tab-pane fade" id="month">
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <img class="img-responsive" src="assets/images/st-1.png" />
+                                        <h4 class="bold">1220,000 USD</h4>
+                                        <h4 class="lighter">Revenue</h4>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <img class="img-responsive" src="assets/images/st-2.png" />
+                                        <h4 class="bold">400,000 USD</h4>
+                                        <h4 class="lighter">Transactions</h4>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <img class="img-responsive" src="assets/images/st-3.png" />
+                                        <h4 class="bold">602,000 USD</h4>
+                                        <h4 class="lighter">Loans</h4>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <img class="img-responsive" src="assets/images/st-4.png" />
+                                        <h4 class="bold">2,000 USD</h4>
+                                        <h4 class="lighter">Investment</h4>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <img class="img-responsive" src="assets/images/st-5.png" />
+                                        <h4 class="bold">550,000 USD</h4>
+                                        <h4 class="lighter">Deposits</h4>
                                     </div>
                                 </div>
-                                <div class="statistics-item" id="con2">
-                                    <div class="row">
-                                        <div class="col-sm-2">
-                                            <img class="img-responsive" src="assets/images/st-1.png" />
-                                            <h4 class="bold">1220,000 USD</h4>
-                                            <h4 class="lighter">Revenue</h4>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <img class="img-responsive" src="assets/images/st-2.png" />
-                                            <h4 class="bold">400,000 USD</h4>
-                                            <h4 class="lighter">Transactions</h4>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <img class="img-responsive" src="assets/images/st-3.png" />
-                                            <h4 class="bold">602,000 USD</h4>
-                                            <h4 class="lighter">Loans</h4>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <img class="img-responsive" src="assets/images/st-4.png" />
-                                            <h4 class="bold">2,000 USD</h4>
-                                            <h4 class="lighter">Investment</h4>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <img class="img-responsive" src="assets/images/st-5.png" />
-                                            <h4 class="bold">550,000 USD</h4>
-                                            <h4 class="lighter">Deposits</h4>
-                                        </div>
+                            </div>
+                            <div class="statistics-item tab-pane fade" id="year">
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <img class="img-responsive" src="assets/images/st-1.png" />
+                                        <h4 class="bold">290,000 USD</h4>
+                                        <h4 class="lighter">Revenue</h4>
                                     </div>
-                                </div>
-                                <div class="statistics-item" id="con1">
-                                    <div class="row">
-                                        <div class="col-sm-2">
-                                            <img class="img-responsive" src="assets/images/st-1.png" />
-                                            <h4 class="bold">290,000 USD</h4>
-                                            <h4 class="lighter">Revenue</h4>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <img class="img-responsive" src="assets/images/st-2.png" />
-                                            <h4 class="bold">130,000 USD</h4>
-                                            <h4 class="lighter">Transactions</h4>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <img class="img-responsive" src="assets/images/st-3.png" />
-                                            <h4 class="bold">420,000 USD</h4>
-                                            <h4 class="lighter">Loans</h4>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <img class="img-responsive" src="assets/images/st-4.png" />
-                                            <h4 class="bold">324,000 USD</h4>
-                                            <h4 class="lighter">Investment</h4>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <img class="img-responsive" src="assets/images/st-5.png" />
-                                            <h4 class="bold">950,000 USD</h4>
-                                            <h4 class="lighter">Deposits</h4>
-                                        </div>
+                                    <div class="col-sm-2">
+                                        <img class="img-responsive" src="assets/images/st-2.png" />
+                                        <h4 class="bold">130,000 USD</h4>
+                                        <h4 class="lighter">Transactions</h4>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <img class="img-responsive" src="assets/images/st-3.png" />
+                                        <h4 class="bold">420,000 USD</h4>
+                                        <h4 class="lighter">Loans</h4>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <img class="img-responsive" src="assets/images/st-4.png" />
+                                        <h4 class="bold">324,000 USD</h4>
+                                        <h4 class="lighter">Investment</h4>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <img class="img-responsive" src="assets/images/st-5.png" />
+                                        <h4 class="bold">950,000 USD</h4>
+                                        <h4 class="lighter">Deposits</h4>
                                     </div>
                                 </div>
                             </div>
