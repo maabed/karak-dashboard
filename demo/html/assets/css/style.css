@@ -7899,12 +7899,23 @@ a.btn-circle {
     padding-right: 0px;
 }
 
-.map-container .map-layout {
-    width: 100%;
-    height: 100vh;
+.map-container .VectorMap{
+    padding-top: 10em
 }
 
-
+.mapael .mapTooltip {
+    position: absolute;
+    background-color: #fff;
+    moz-opacity: 0.70;
+    opacity: 0.70;
+    filter: alpha(opacity=70);
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 1000;
+    max-width: 200px;
+    display: none;
+    color: #343434;
+}
 /*! Googlre Maps */
 
 
