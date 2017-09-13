@@ -167,6 +167,11 @@ FlowRouter.route('/compose', {
   },
 });
 
+FlowRouter.route('/tour', {
+  name: 'tour',
+  action: () => {
+    BlazeLayout.render('mainLayout', { content: 'tour' });
+
 FlowRouter.route('/calendar', {
   name: 'calendar',
   action: () => {
@@ -175,7 +180,6 @@ FlowRouter.route('/calendar', {
 });
 
 /* Flat layout */
-
 FlowRouter.route('/error-400', {
   name: 'error400',
   action: () => {
