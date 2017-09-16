@@ -1,0 +1,35 @@
+/*! Mixins */
+
+.padding-diffrent-values(@value1, @value2, @value3, @value4) {
+  padding: @value1, @value2, @value3, @value4;
+}
+
+.margin(@value1, @value2, @value3, @value4) {
+  margin: @value1, @value2, @value3, @value4;
+}
+
+.css-effect(@transition) {
+  -webkit-transition: @transition;
+  -moz-transition: @transition;
+  -o-transition: @transition;
+  transition: @transition;
+}
+
+.padding(@paddingvalue) {
+  padding: @paddingvalue;
+}
+
+.placeholder(@color) {
+  &::-webkit-input-placeholder {
+    color: @color;
+  }
+
+  &::-moz-placeholder {
+    color: @color;
+  }
+
+  &:-ms-input-placeholder {
+    color: @color;
+  }
+
+}
