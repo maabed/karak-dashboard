@@ -1,3 +1,6 @@
+body {
+  background-color: red; }
+
 /*! Mixins */
 /*! Sidebar */
 .wrapper {
@@ -6123,4 +6126,4 @@ input:not(.flat_email):not(.search-text-box):not(.select2-search__field):focus {
   .rootwizard .tab-content .pager {
     float: right; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=scss_converted.css.map */

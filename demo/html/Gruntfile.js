@@ -9,7 +9,7 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         files: {
-          'assets/css/scss_converted.css': 'assets/scss/imports.scss'
+          'assets/css/style.css': 'assets/scss/imports.scss'
         }
       }
     },
@@ -27,6 +27,10 @@ module.exports = function(grunt) {
       less:{
         files:['assets/less/**/*.less'],
         tasks:['less']
+      },
+      sass:{
+        files:['assets/scss/**/*.scss'],
+        tasks:['sass']
       },
     }
   });
