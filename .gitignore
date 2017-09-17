@@ -43,6 +43,7 @@
 .pmd
 .project
 .sass-cache
+/demo/html/.sass-cache
 .settings
 .Spotlight-V100
 .Trashes
