@@ -1,6 +1,7 @@
 @import "global/_variables";
+
 @import "utilities/_mixins";
-@import "main";
+
 @import "base";
 
 /*! main */
@@ -8,6 +9,7 @@
 
 /*! Buttons */
 @import "utilities/_buttons";
+
 /*! cards */
 @import "utilities/_cards";
 
@@ -43,8 +45,6 @@
 
 /*! UI */
 @import "utilities/_ui";
-
-
 
 /* Views */
 

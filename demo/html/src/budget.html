@@ -2,34 +2,28 @@
 <html lang="en">
 
 <head>
-    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Karak dashboard</title>  
+    <meta name="description" content="Special Dashboard for small, medium and large webapp with very clean and aesthetic style and feel">
+    <meta name="author" content="newrelease.io">
+    <title>Karak dashboard | Budget</title>
     
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <!-- Fonts -->
-    <link type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <!-- Bootstrap Core CSS -->
+    <link type="text/css" href="assets/vendors/google-fonts/google-fonts.css" rel="stylesheet">
+    <!-- Bootstrap core CSS-->
     <link type="text/css" href="assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome library -->
     <link type="text/css" href="assets/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
-
-    <!-- Calendar -->
-    <link href='assets/vendors/calendar/fullcalendar.css' rel='stylesheet' />
-    <link href="assets/vendors/calendar/fullcalendar.print.css" rel='stylesheet' media='print' />
-    <link type="text/css" rel="stylesheet" href="assets/css/calendar_index.css">
-    <!-- Loading animation CSS -->
+    <!-- Loading animation -->
     <link type="text/css" rel="stylesheet" href="assets/vendors/animatecss/animate.min.css" />
-    <!-- Select2 CSS -->
-    <link type="text/css" href="assets/vendors/select2/css/select2.css" rel="stylesheet" />
-    
-    <!-- Custom CSS -->
-    <link type="text/css" href="assets/css/style.css" rel="stylesheet" />
+    <!-- DatePickers -->
+    <link type="text/css" rel="stylesheet" type="text/css" href="assets/vendors/datepickers/daterangepicker.css" />
+    <link type="text/css" rel="stylesheet" type="text/css" href="assets/vendors/air-datepicker/css/datepicker.min.css">
+    <!-- Select2 dropdown-->
+    <link type="text/css" rel="stylesheet" href="assets/vendors/select2/css/select2.min.css">
+    <!-- Karak dashboard forms element -->
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css">
 
     <link rel="manifest" href="/manifest.json">
     <link type="image/x-icon" rel="shortcut icon" href="favicon.ico" />
@@ -38,6 +32,8 @@
     <link rel="icon" sizes="96x96" type="image/png" href="assets/images/logo/favicons/favicon-96x96.png">
     <link rel="icon" sizes="128x128" type="image/png" href="assets/images/logo/favicons/favicon-128x128.png">
     <link rel="icon" sizes="256x256" type="image/png" href="assets/images/logo/favicons/favicon-256x256.png">
+    
+
     <link rel="apple-touch-icon" sizes="57x57" href="assets/images/logo/favicons/apple-touch-icon-57x57.png?v=3">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/images/logo/favicons/apple-touch-icon-60x60.png?v=3">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/images/logo/favicons/apple-touch-icon-72x72.png?v=3">
@@ -47,21 +43,19 @@
     <link rel="apple-touch-icon" sizes="144x144" href="assets/images/logo/favicons/apple-touch-icon-144x144.png?v=3">
     <link rel="apple-touch-icon" sizes="152x152" href="assets/images/logo/favicons/apple-touch-icon-152x152.png?v=3">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/logo/favicons/apple-touch-icon-180x180.png?v=3">
-
 </head>
 
 <body>
     <div class="wrapper">
-        
         <!-- Sidebar -->
         <div class="sidebar-wrapper">
             <div class="sidebar-brand" id="company-name">
                 <a href="index.html">
-                    <img src="assets/images/logo.png" class="center-block" alt="company-logo" title="company-logo">
+                    <img src="assets/images/logo.png" class="center-block">
                 </a>
             </div>
             <ul class="sidebar">
-                <li class="selected open active sidebar-item">
+                <li class="sidebar-item">
                     <a href="index.html"><i class="fa fa-tachometer nav-icon" aria-hidden="true"></i>Dashboard</a>
                 </li>
                 <li class="sidebar-item has-submenu">
@@ -165,15 +159,15 @@
                         <i class="fa fa-calendar-check-o nav-icon" aria-hidden="true"></i> Calendar
                     </a>
                 </li>
-                <li class="sidebar-item has-submenu">
+                <li class="selected open active sidebar-item has-submenu">
                     <a href="#">
                         <i class="fa fa-star nav-icon" aria-hidden="true"></i>App Views
                         <span class="label warning-mid list-badge">Special</span>
-                        <i class="fa fa-angle-left left-arrow" aria-hidden="true"></i>
+                        <i class="fa fa-angle-left left-arrow open" aria-hidden="true"></i>
                     </a>
                     <ul class="sidebar-submenue">
                         <li class="submenu-li">
-                            <a href="budget.html">
+                            <a href="budget.html" class="inner-selected">
                                     Budget
                                 </a>
                         </li>
@@ -187,7 +181,7 @@
                                     Social
                                 </a>
                         </li>
-                        <li class="submenu-li">
+                        <li class=" submenu-li">
                             <a href="landing_page.html">
                                     Landing Page
                                 </a>
@@ -271,14 +265,11 @@
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
-
         <!-- Page Content -->
-        <div class="page-content-wrapper index-page-container">
-            
-            <!-- header -->
-            <div class="main-dashboard-header" id="head">
+        <div class="page-content-wrapper">
+            <div class="main-dashboard-header hide-on-print" id="head">
                 <div class="container-fluid header-container">
-                    <a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars menu-toggle" aria-hidden="true"></i></a>
+                    <i href="#menu-toggle" id="menu-toggle" class="fa fa-bars menu-toggle" aria-hidden="true"></i>
                     <div class="form-group">
                         <div class="icon-addon addon-md">
                             <input type="text" placeholder="Type anywhere to search" class="form-control main-dashboard-search search-text-box">
@@ -300,9 +291,9 @@
                         </div>
                         <div id="user-box" class="user-box right-side-items">
                             <p> Mr.Sami<i class="fa fa-angle-down" aria-hidden="true"></i></p>
-                            <img src="assets/images/user_01_36.jpg" alt="Mr.Sami" title="Mr.Sami"/>
+                            <img src="assets/images/user_01_36.jpg" />
                         </div>
-                    </div> 
+                    </div>
                 </div>
                 <div class="notifecations-box">
                     <div class="arrow-up"></div>
@@ -325,10 +316,10 @@
                 </div>
                 <div class="messages-box">
                     <div class="arrow-up"></div>
-                    <h5>Messages <a class="send-message-link" href="#">Send New Message</a></h5>
+                    <h5>Messages <a class="send-message-link"href="#">Send New Message</a></h5>
                     <div class="single-content-row">
                         <a href="#">
-                            <img alt="user name" src="assets/images/user_02_54.jpg" />
+                            <img alt="user name" alt="user name" src="assets/images/user_02_54.jpg" />
                             <p><b>Layla smith</b>
                                 <br /> Job offer</p>
                         </a>
@@ -383,328 +374,264 @@
                     </a>
                 </div>
             </div>
-            <!--/header-->
-
-            <div class="container-fluid">
-                <div class="row animated fadeInUp">
+            <div class="container-fluid buget-page">
+                <div class="row animated fadeInUp hide-on-print">
                     <div class="col-lg-12">
                         <div class="col-content body-header">
-                            <h4 class="title">Welcome to Karak dashboard</h4>
+                            <a class="page_title pull-right">App Views  /  Account Manager</a>
+                            <h4 class="title">Account Manager Application</h4>
                             <p>
-                                Special Dashboard for small, medium and large webapp with very clean and aesthetic style and feel.
+                                Fastest way to manage your transactions, payments, investments and more !
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-8 animated fadeInUp">
+                <div class="row hide-on-print">
+                    <div class="col-md-3 animated fadeInUp">
+                        <div class="col-content all-income">
+                            <h1><i class="fa fa-line-chart"aria-hidden="true"></i></h1>
+                            <h2>$1 250, 33</h2>
+                            <h3>Income</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3 animated fadeInUp">
+                        <div class="col-content all-income">
+                            <h1><i class="fa fa-area-chart"aria-hidden="true"></i></h1>
+                            <h2>$4 203, 03</h2>
+                            <h3>Revenue</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3 animated fadeInUp">
+                        <div class="col-content all-income">
+                            <h1><i class="fa fa-bar-chart"aria-hidden="true"></i></h1>
+                            <h2>$1 650, 22</h2>
+                            <h3>Assets</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3 animated fadeInUp">
+                        <div class="col-content all-income">
+                            <h1><i class="fa fa-pie-chart"aria-hidden="true"></i></h1>
+                            <h2>$2 130, 00</h2>
+                            <h3>Investment</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row hide-on-print">
+                    <div class="col-md-3 animated fadeInUp">
+                        <div class="col-content account-personal-info">
+                            <h5 class="title">Personal Information</h5>
+                            <img src="assets/images/user_01_120.jpg" class="img-responsive">
+                            <h4>Mr.Mohammad Meshaal</h4>
+                            <div class="user-account-info">
+                                <span><i class="fa fa-id-card"aria-hidden="true"></i><label>99 2344 3456 343</label></span>
+                                <br>
+                                <span><i class="fa fa-user-circle-o"aria-hidden="true"></i><label>Checking account</label></span>
+                                <br>
+                                <span><i class="fa fa-table"aria-hidden="true"></i><label>27 Nov, wednesday</label></span>
+                            </div>
+                            <label class="change-account-select">Change Account:</label>
+                            <select class="select-style select2-init-single" name="change-acc">
+                                <option value="99 2344 3456 343">99 2344 3456 343</option>
+                                <option value="98 3443 6456 241">98 3443 6456 241</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-9 animated fadeInUp account-managment-chart">
+                        <div class="col-md-12 no-left-right-padding">
+                            <div class="col-content">
+                                <div id="containerspline"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row hide-on-print">
+                    <div class="col-md-3 animated fadeInUp">
                         <div class="col-content">
-                            <div id="containerspline"></div>
+                            <div class="datepicker-here simple" data-language='en'></div>
                         </div>
                     </div>
-                    <div class="col-md-4 animated fadeInUp">
-                        <div class="row">
-                            <div class="col-sm-6 animated fadeInUp">
-                                <div class="col-content all-income">
-                                    <h1><i class="fa fa-line-chart" aria-hidden="true"></i></h1>
-                                    <h2>$1 250,33</h2>
-                                    <h3>All Income</h3>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 animated fadeInUp">
-                                <div class="col-content all-income invers">
-                                    <h1><i class="fa fa-exchange" aria-hidden="true"></i></h1>
-                                    <h2>$3 620,12</h2>
-                                    <h3>Transactions</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row">
-                            <div class="col-sm-12 animated fadeInUp">
-                                <div class="col-content">
-                                    <h5 class="title">Today Income <span class="flat-style"><i class="fa fa-money" aria-hidden="true"></i>&nbsp;860K</span></h5>
-                                    <br>
-                                    <div id="containerexchange"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row statistics">
-                    <div class="col-sm-12">
-                        <!-- Nav tabs -->
-                        <div class="tabs-container">
-                            <div class="tabs-header">
-                                <div class="statistics-taps">
-                                    <ul class="bottom-border-active info-mid" role="tablist">
-                                        <li role="presentation" class="active">
-                                            <a href="#yesterday" aria-controls="home" role="tab" data-toggle="tab">
-                                                <i class="fa fa-user" aria-hidden="true"></i>&nbsp;Yesterday
-                                            </a>
-                                        </li>
-                                        <li role="presentation">
-                                            <a href="#month" aria-controls="profile" role="tab" data-toggle="tab">
-                                                <i class="fa fa-credit-card" aria-hidden="true"></i>&nbsp;Last Month
-                                            </a>
-                                        </li>
-                                        <li role="presentation">
-                                            <a href="#year" aria-controls="messages" role="tab" data-toggle="tab">
-                                                <i class="fa fa-check" aria-hidden="true"></i>&nbsp;Last Year
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- Tab panes -->
-                            <div class="tab-content">
-                                <div class="statistics-item tab-pane fade in active" id="yesterday">
-                                    <div class="row">
-                                        <div class="col-sm-2 centerlize-reponsive">
-                                            <img class="img-responsive" src="assets/images/st-1.png" alt="Revenue" title="Revenue" />
-                                            <h4 class="bold">220,000 USD</h4>
-                                            <h4 class="lighter">Revenue</h4>
+                    <div class="col-md-9 animated fadeInUp account-managment-transactions">
+                        <div class="col-md-12 no-left-right-padding">
+                            <div class="col-content">
+                                <h5 class="title">Transaction</h5>
+                                <form id="translateform" class="translateform" method="post" action="">
+                                    <div class="row top-margin">
+                                        <div class="col-sm-6">
+                                            <div class="form-group transaction-drop">
+                                                <select class="select-style select2-init-single" name="changeacc" id="changeacc" required>
+                                                    <option value="">Customer Account No.</option>
+                                                    <option value="99 2344 3456 343">99 2344 3456 343</option>
+                                                    <option value="98 3443 6456 241">98 3443 6456 241</option>
+                                                </select>
+                                            </div>
                                         </div>
-                                        <div class="col-sm-2 centerlize-reponsive">
-                                            <img class="img-responsive" src="assets/images/st-2.png" alt="Transactions" title="Transactions" />
-                                            <h4 class="bold">120,000 USD</h4>
-                                            <h4 class="lighter">Transactions</h4>
-                                        </div>
-                                        <div class="col-sm-2 centerlize-reponsive">
-                                            <img class="img-responsive" src="assets/images/st-3.png" alt="Loans" title="Loans" />
-                                            <h4 class="bold">502,000 USD</h4>
-                                            <h4 class="lighter">Loans</h4>
-                                        </div>
-                                        <div class="col-sm-2 centerlize-reponsive">
-                                            <img class="img-responsive" src="assets/images/st-4.png" alt="Investment" title="Investment" />
-                                            <h4 class="bold">122,000 USD</h4>
-                                            <h4 class="lighter">Investment</h4>
-                                        </div>
-                                        <div class="col-sm-2 centerlize-reponsive">
-                                            <img class="img-responsive" src="assets/images/st-5.png" alt="Deposits" title="Deposits" />
-                                            <h4 class="bold">750,000 USD</h4>
-                                            <h4 class="lighter">Deposits</h4>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <div class="input-field col-val">
+                                                    <input rangelength="[10,14]" type="text" onkeypress="return isNumber(event)" required id="Beneficiary" name="Beneficiary">
+                                                    <label for="Beneficiary">Beneficiary Account No.</label>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="statistics-item tab-pane fade" id="month">
                                     <div class="row">
-                                        <div class="col-sm-2">
-                                            <img class="img-responsive" src="assets/images/st-1.png" alt="Revenue" title="Revenue" />
-                                            <h4 class="bold">1220,000 USD</h4>
-                                            <h4 class="lighter">Revenue</h4>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <div class="input-field col-val">
+                                                    <input type="text" onkeypress="return isNumber(event)" required id="amount" name="amount">
+                                                    <label for="transfer">Transfer Amount</label>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="col-sm-2">
-                                            <img class="img-responsive" src="assets/images/st-2.png" alt="Transactions" title="Transactions" />
-                                            <h4 class="bold">400,000 USD</h4>
-                                            <h4 class="lighter">Transactions</h4>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <img class="img-responsive" src="assets/images/st-3.png" alt="Loans" title="Loans" />
-                                            <h4 class="bold">602,000 USD</h4>
-                                            <h4 class="lighter">Loans</h4>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <img class="img-responsive" src="assets/images/st-4.png" alt="Investment" title="Investment" />
-                                            <h4 class="bold">2,000 USD</h4>
-                                            <h4 class="lighter">Investment</h4>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <img class="img-responsive" src="assets/images/st-5.png" alt="Deposits" title="Deposits"/>
-                                            <h4 class="bold">550,000 USD</h4>
-                                            <h4 class="lighter">Deposits</h4>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <div class="input-field col-val">
+                                                    <input type="text" id="details" name="details" required>
+                                                    <label for="details">Details</label>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="statistics-item tab-pane fade" id="year">
                                     <div class="row">
-                                        <div class="col-sm-2">
-                                            <img class="img-responsive" src="assets/images/st-1.png" alt="Revenue" title="Revenue"/>
-                                            <h4 class="bold">290,000 USD</h4>
-                                            <h4 class="lighter">Revenue</h4>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <img class="img-responsive" src="assets/images/st-2.png" alt="Transactions" title="Transactions"/>
-                                            <h4 class="bold">130,000 USD</h4>
-                                            <h4 class="lighter">Transactions</h4>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <img class="img-responsive" src="assets/images/st-3.png" alt="Loans" title="Loans" />
-                                            <h4 class="bold">420,000 USD</h4>
-                                            <h4 class="lighter">Loans</h4>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <img class="img-responsive" src="assets/images/st-4.png" alt="Investment" title="Investment"/>
-                                            <h4 class="bold">324,000 USD</h4>
-                                            <h4 class="lighter">Investment</h4>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <img class="img-responsive" src="assets/images/st-5.png" alt="Deposits" title="Deposits"/>
-                                            <h4 class="bold">950,000 USD</h4>
-                                            <h4 class="lighter">Deposits</h4>
+                                        <div class="col-sm-12">
+                                            <div class="form-group">
+                                                <div class="input-field col-val">
+                                                    <input type="password" id="pass" name="pass" required>
+                                                    <label for="pass">Transaction Password</label>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <button type="submit" name="signup1" value="Sign up" id="SubmitForm" class="btn btn-info icon-btn pull-right">
+                                                <span class="fa fa-paper-plane"></span> Submit
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6 animated fadeInUp">
-                        <div class="col-content content-overflow">
-                            <h5 class="title">Calendar</h5>
-                            <div id='calendar' class="calendar-layout"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 animated fadeInUp">
-                        <div class="col-content content-overflow">
-                            <h5 class="title">Worldwide Annual Sales</h5>
+                    <div class="col-lg-12">
+                        <div class="col-content dataTables_wrapper">
+                            <h5 class="title">Reports</h5>
+                            <select class="select-style select-custom select2-init-single" name="reports" required>
+                                <option value="Transactions Report">Transactions Report</option>
+                                <option value="99 2344 3456 343">Deposits Report</option>
+                                <option value="98 3443 6456 241">withdraw Report</option>
+                            </select>
                             <br>
-                            <div id="container-index"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 activities animated fadeInUp">
-                        <div class="col-content static-height">
-                            <h5 class="title">Activities Log<a class="activities-year">2016</a></h5>
-                            <div class="activities-log">
-                                <div class="single-log-box">
-                                    <h5>Jan, 18 Wednesday <span class="flat-style"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;3:15 PM</span></h5>
-                                    <p>
-                                        Dipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </p>
-                                </div>
-                                <div class="single-log-box">
-                                    <h5>Feb, 6 Monday<span class="flat-style"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;6:10 PM</span></h5>
-                                    <p>
-                                        Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </p>
-                                </div>
-                                <div class="single-log-box">
-                                    <h5>Jun, 6 Tuesday<span class="flat-style"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;11:15 AM</span></h5>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </p>
-                                </div>
-                                <div class="single-log-box">
-                                    <h5>Jul, 6 Thursday<span class="flat-style"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;7:00 AM</span></h5>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                                    </p>
-                                </div>
-                                <div class="single-log-box">
-                                    <h5>Aug, 6 Sunday<span class="flat-style"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;4:15 PM</span></h5>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 animated fadeInUp">
-                        <div class="col-content static-height">
-                            <h5 class="title">To Do List<a class="add-task"><i class="fa fa-plus-circle" aria-hidden="true"></i></a></h5>
-                            <div class="to-do-list">
-                                <div class="single-to-do-box">
-                                    <div class="checkbox checkbox-success checkbox-inline">
-                                        <input type="checkbox" id="to-do-first-checkbox" value="option" checked="">
-                                        <label class="done-task" for="to-do-first-checkbox">Lorem ipsum dolor sit.. </label>
-                                    </div>
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
-                                    <h6>Today</h6>
-                                </div>
-                                <div class="single-to-do-box">
-                                    <div class="checkbox checkbox-success checkbox-inline">
-                                        <input id="to-do-second-checkbox" type="checkbox">
-                                        <label for="to-do-second-checkbox">
-                                            Consectetur adipiscing elit..
-                                        </label>
-                                    </div>
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
-                                    <h6>Wednesday</h6>
-                                </div>
-                                <div class="single-to-do-box">
-                                    <div class="checkbox checkbox-success checkbox-inline">
-                                        <input id="to-do-third-checkbox" type="checkbox">
-                                        <label for="to-do-third-checkbox">
-                                            Consectetur adipiscing elit..
-                                        </label>
-                                    </div>
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
-                                    <h6>05 Oct</h6>
-                                </div>
-                                <div class="single-to-do-box">
-                                    <div class="checkbox checkbox-success checkbox-inline">
-                                        <input id="to-do-forth-checkbox" type="checkbox">
-                                        <label for="to-do-forth-checkbox">
-                                            Sit amet, consectetur adipiscing..
-                                        </label>
-                                    </div>
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
-                                    <h6>10 Oct</h6>
-                                </div>
-                                <div class="single-to-do-box">
-                                    <div class="checkbox checkbox-success checkbox-inline">
-                                        <input id="to-do-fifth-checkbox" type="checkbox">
-                                        <label for="to-do-fifth-checkbox">
-                                            Adipiscing elit consectetur ..
-                                        </label>
-                                    </div>
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
-                                    <h6>18 Oct</h6>
-                                </div>
-                                <div class="single-to-do-box">
-                                    <div class="checkbox checkbox-success checkbox-inline">
-                                        <input id="to-do-sixth-checkbox" type="checkbox">
-                                        <label for="to-do-sixth-checkbox">
-                                            Lorem ipsum dolor sit..
-                                        </label>
-                                    </div>
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
-                                    <h6>18 Oct</h6>
-                                </div>
-                                <div class="single-to-do-box">
-                                    <div class="checkbox checkbox-success checkbox-inline">
-                                        <input id="to-do-seventh-checkbox" type="checkbox">
-                                        <label for="to-do-seventh-checkbox">
-                                            Sit amet, consectetur..
-                                        </label>
-                                    </div>
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
-                                    <h6>18 Oct</h6>
-                                </div>
-                                <div class="single-to-do-box">
-                                    <div class="checkbox checkbox-success checkbox-inline">
-                                        <input id="to-do-eighth-checkbox" type="checkbox">
-                                        <label for="to-do-eighth-checkbox">
-                                            Consectetur adipiscing..
-                                        </label>
-                                    </div>
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
-                                    <h6>18 Oct</h6>
-                                </div>
-                                <div class="single-to-do-box">
-                                    <div class="checkbox checkbox-success checkbox-inline">
-                                        <input id="to-do-ninth-checkbox" type="checkbox">
-                                        <label for="to-do-ninth-checkbox">
-                                            Lorem ipsum dolor sit..
-                                        </label>
-                                    </div>
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
-                                    <h6>18 Oct</h6>
+                            <br>
+                            <table id="column_searching" class="table table-responsive column_searching">
+                                <thead class="table-head data-table-head">
+                                    <tr>
+                                        <th class="basic-th">Beneficial Name</th>
+                                        <th class="basic-th">Transfer Amount</th>
+                                        <th class="basic-th">Date</th>
+                                        <th class="basic-th static-width">Details</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>Mohammad Ahmad</th>
+                                        <th class="green-trans">23 233$</th>
+                                        <th>03 Jan 2017</th>
+                                        <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget maximus nisi.</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Khalid Mustafa</th>
+                                        <th class="green-trans">123$</th>
+                                        <th>07 Dec 2016</th>
+                                        <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam varius porttitor tortor.</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Emad Ahmad</th>
+                                        <th class="red-trans">245 22$</th>
+                                        <th>07 Nov 2016</th>
+                                        <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac sodales metus.</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Naser khalil</th>
+                                        <th class="green-trans">53$</th>
+                                        <th>03 Nov 2016</th>
+                                        <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod quam purus.</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Dana Malik</th>
+                                        <th class="red-trans">443$</th>
+                                        <th>07 Dec 2015</th>
+                                        <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce velit arcu, sagittis.</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Ala'a Saeed</th>
+                                        <th class="red-trans">234$</th>
+                                        <th>17 Oct 2016</th>
+                                        <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pulvinar tincidunt augue.</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Rawan Nael</th>
+                                        <th class="red-trans">654$</th>
+                                        <th>12 Oct 2016</th>
+                                        <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed mi vehicula.</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Kholod Ali</th>
+                                        <th class="red-trans">33 346$</th>
+                                        <th>07 Jan 2016</th>
+                                        <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia imperdiet sollicitudin.</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Osama Mousa</th>
+                                        <th class="red-trans">6 556$</th>
+                                        <th>22 Dec 2015</th>
+                                        <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dapibus ex sed.</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Nader Mohammad</th>
+                                        <th class="red-trans">644$</th>
+                                        <th>01 Dec 2015</th>
+                                        <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pulvinar tincidunt augue.</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Hamzeh Amir</th>
+                                        <th class="green-trans">765$</th>
+                                        <th>14 Nov 2015</th>
+                                        <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod quam purus.</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Wafa'a Yousif</th>
+                                        <th class="red-trans">22$</th>
+                                        <th>03 Mar 2015</th>
+                                        <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod quam purus.</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Sami Husam</th>
+                                        <th class="green-trans">756$</th>
+                                        <th>11 Mar 2015</th>
+                                        <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod quam purus.</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button type="button" class="btn btn-default outline-icon-btn pull-right print hide-on-print">
+                                        <span class="glyphicon glyphicon-print"></span>Save & Print
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="container-fixed-lg footer">
+                <div class="container-fixed-lg footer hide-on-print">
                     <div class="copyright sm-text-center">
                         <p class="small no-margin pull-left sm-pull-reset">
                             <span class="hint-text">Copyright © 2017 </span>
                             <span class="font-montserrat"><b>New Release</b></span>.
                             <span class="hint-text">All rights reserved. </span>
-                            <span class="sm-block"><a href="#" class="m-l-10 m-r-10">Terms of use</a> | <a href="#" class="m-l-10">Privacy Policy</a></span>
+                            <span class="sm-block"><a href="#"class="m-l-10 m-r-10">Terms of use</a> | <a href="#"class="m-l-10">Privacy Policy</a></span>
                         </p>
                         <p class="small no-margin pull-right sm-pull-reset">
                             <h6 class="made-by">Made By  <b>New Release</b></h6>
@@ -714,7 +641,6 @@
                 </div>
             </div>
         </div>
-        
         <div class="right-side-section-toggle" data-toggle="modal" data-toggle="modal" data-target="#colors-modal">
             <i class="fa fa-pencil-square-o"></i>
         </div>
@@ -850,89 +776,40 @@
             </div>
             <!-- modal-dialog -->
         </div>
-
-        <div class="modal right fade" id="add-event" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content add-event-modal">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel2">
-                            From: <label id="apptStartTime"></label><br>
-                            To:  <label id="apptEndTime"></label>
-                            <!-- hidden Items-->
-                            <label id="apptStartpost"></label><br>
-                            <label id="apptEndpost"></label>
-                            <!-- end hidden items -->
-                            </h4>
-                    </div>
-                    <div class="modal-body">
-                        <form id="createAppointmentForm" class="form-horizontal">
-                            <div class="control-group">
-                                <div class="controls">
-                                    <div class="input-field parent">
-                                        <input name="name" id="name" type="text" class="validate">
-                                        <label for="name"><i class="fa fa-calendar-o" aria-hidden="true"></i>Event Name</label>
-                                    </div>
-                                    <div class="input-field parent">
-                                        <input id="location" name="location" type="text" class="validate">
-                                        <label for="location"><i class="fa fa-map-marker" aria-hidden="true"></i>Location</label>
-                                    </div>
-                                    <div class="input-field parent">
-                                        <input name="Notes" id="notes" type="text" class="validate">
-                                        <label for="Notes"><i class="fa fa-sticky-note" aria-hidden="true"></i>Notes</label>
-                                    </div>
-                                    <select id="eventclassName" class="select-display selectpicker form-control empty select2-init-images">
-                                        <option value="default">Default Color</option>
-                                        <option value="worning">Warning</option>
-                                        <option value="info">Info</option>
-                                        <option value="success">Success</option>
-                                        <option value="important">Important</option>
-                                    </select>
-                                    <label id="apptAllDay"></label>
-                                </div>
-                            </div>
-                        </form>
-                        <button type="submit" id="submitButton" class="btn btn-info icon-btn btn-block">
-                            <span class="fa fa-plus"></span> Add Event</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
+    </div>
+    <!-- /#page-content-wrapper -->
+    <!-- /#wrapper -->
     </div>
     <!-- Page layout JS -->
     <script type="text/javascript" src="assets/vendors/jquery/jquery-3.1.1.js"></script>
-    <!-- materialize framework -->
+    <!-- Materialze JS library -->
     <script type="text/javascript" src="assets/vendors/materialize/materializeGlobal.js"></script>
     <script type="text/javascript" src="assets/vendors/materialize/materializeForms.js"></script>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript" src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/js/main.js"></script>
-    <script type="text/javascript" src="assets/vendors/chart.js/chart.bundle.min.js"></script>
     <script type="text/javascript" src="assets/js/notifications_boxs.js"></script>
-    <script type="text/javascript" src="assets/js/taps.js"></script>
-    <!-- Calendar JS -->
-    <script src="assets/vendors/calendar/lib/moment.min.js"></script>
-    <script src="assets/vendors/calendar/fullcalendar.min.js"></script>
-    <script src="assets/js/calendar.js"></script>
-    <!-- HighCharts -->
-    <script type="text/javascript" src="https://code.highcharts.com/highcharts.js"></script>
-    <!-- Map -->
-    <script type="text/javascript" src="assets/js/map.js"></script>
-    <script type="text/javascript" src="assets/vendors/highmaps/code/modules/map.js"></script>
-    <script type="text/javascript" src="assets/vendors/highmaps/code/modules/data.js"></script>
-    <script type="text/javascript" src="assets/vendors/highmaps/code/modules/exporting.js"></script>
-    <script type="text/javascript" src="assets/vendors/highmaps/code/custom/world.js"></script>
-    <script type="text/javascript" src="assets/js/right-side-colors-picker.js"></script>
-    <!--Dynamic colors-->
+    <!-- Charts -->
+    <script type="text/javascript" src="assets/vendors/highcharts/highcharts.js"></script>
+    <script type="text/javascript" src="assets/vendors/highcharts/modules/data.js"></script>
+    <script type="text/javascript" src="assets/vendors/highcharts/modules/exporting.js"></script>
+    <!-- Dynamic colors JS -->
     <script type="text/javascript" src="assets/js/nav_colors_change.js"></script>
     <script type="text/javascript" src="assets/js/right-side-colors-picker.js"></script>
     <script type="text/javascript" src="assets/js/page-ready-theam.js"></script>
     <link id="default-color-picker" rel="stylesheet" />
+    <!-- Datepickers JS -->
+    <script type="text/javascript" src="assets/vendors/air-datepicker/js/datepicker.min.js"></script>
+    <script type="text/javascript" src="assets/vendors/air-datepicker/js/datepicker.en.js"></script>
+    <!-- Valedation -->
+    <script type="text/javascript" src="assets/vendors/jquery-validation/jquery.validate.min.js"></script>
+    <!-- Data Tabel -->
+    <script type="text/javascript" src="assets/vendors/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="assets/vendors/datatables/extensions/Buttons/js/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" src="assets/vendors/datatables/extensions/Buttons/js/buttons.html5.min.js"></script>
+    <!-- Karak dashboard main JS file  -->
+    <script type="text/javascript" src="assets/js/main.js"></script>
     <!-- Select2 dropdown JS -->
     <script type="text/javascript" src="assets/vendors/select2/js/select2.min.js"></script>
-    <!-- Index page JS -->
-    <script type="text/javascript" src="assets/js/index.js"></script>
+    <script type="text/javascript" src="assets/js/account-manager.js"></script>
 </body>
 
 </html>

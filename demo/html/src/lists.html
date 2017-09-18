@@ -2,34 +2,22 @@
 <html lang="en">
 
 <head>
-    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>Karak dashboard</title>  
-    
+    <title>Karak dashboard | Lists</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <!-- Fonts -->
-    <link type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link type="text/css" href="assets/vendors/google-fonts/google-fonts.css" rel="stylesheet">
     <!-- Bootstrap Core CSS -->
     <link type="text/css" href="assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="assets/vendors/toggle/css/bootstrap3/bootstrap-switch.min.css">
     <!-- Font Awesome library -->
     <link type="text/css" href="assets/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
-
-    <!-- Calendar -->
-    <link href='assets/vendors/calendar/fullcalendar.css' rel='stylesheet' />
-    <link href="assets/vendors/calendar/fullcalendar.print.css" rel='stylesheet' media='print' />
-    <link type="text/css" rel="stylesheet" href="assets/css/calendar_index.css">
-    <!-- Loading animation CSS -->
-    <link type="text/css" rel="stylesheet" href="assets/vendors/animatecss/animate.min.css" />
-    <!-- Select2 CSS -->
-    <link type="text/css" href="assets/vendors/select2/css/select2.css" rel="stylesheet" />
-    
-    <!-- Custom CSS -->
-    <link type="text/css" href="assets/css/style.css" rel="stylesheet" />
+    <!-- Karak dashboard core CSS -->
+    <link type="text/css" href="assets/css/style.css" rel="stylesheet">
 
     <link rel="manifest" href="/manifest.json">
     <link type="image/x-icon" rel="shortcut icon" href="favicon.ico" />
@@ -38,6 +26,8 @@
     <link rel="icon" sizes="96x96" type="image/png" href="assets/images/logo/favicons/favicon-96x96.png">
     <link rel="icon" sizes="128x128" type="image/png" href="assets/images/logo/favicons/favicon-128x128.png">
     <link rel="icon" sizes="256x256" type="image/png" href="assets/images/logo/favicons/favicon-256x256.png">
+    
+
     <link rel="apple-touch-icon" sizes="57x57" href="assets/images/logo/favicons/apple-touch-icon-57x57.png?v=3">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/images/logo/favicons/apple-touch-icon-60x60.png?v=3">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/images/logo/favicons/apple-touch-icon-72x72.png?v=3">
@@ -47,21 +37,19 @@
     <link rel="apple-touch-icon" sizes="144x144" href="assets/images/logo/favicons/apple-touch-icon-144x144.png?v=3">
     <link rel="apple-touch-icon" sizes="152x152" href="assets/images/logo/favicons/apple-touch-icon-152x152.png?v=3">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/logo/favicons/apple-touch-icon-180x180.png?v=3">
-
 </head>
 
 <body>
     <div class="wrapper">
-        
         <!-- Sidebar -->
         <div class="sidebar-wrapper">
             <div class="sidebar-brand" id="company-name">
                 <a href="index.html">
-                    <img src="assets/images/logo.png" class="center-block" alt="company-logo" title="company-logo">
+                    <img src="assets/images/logo.png" class="center-block">
                 </a>
             </div>
             <ul class="sidebar">
-                <li class="selected open active sidebar-item">
+                <li class="sidebar-item">
                     <a href="index.html"><i class="fa fa-tachometer nav-icon" aria-hidden="true"></i>Dashboard</a>
                 </li>
                 <li class="sidebar-item has-submenu">
@@ -93,9 +81,9 @@
                         <span class="label info-mid list-badge">2</span>
                     </a>
                 </li>
-                <li class="sidebar-item has-submenu">
+                <li class="selected open active sidebar-item has-submenu">
                     <a href="#">
-                        <i class="fa fa-eye   nav-icon" aria-hidden="true"></i> UI Elements<span class="label success-mid list-badge">New</span> <i class="fa fa-angle-left left-arrow" aria-hidden="true"></i>
+                        <i class="fa fa-eye   nav-icon" aria-hidden="true"></i> UI Elements<span class="label success-mid list-badge">New</span> <i class="fa fa-angle-left left-arrow open" aria-hidden="true"></i>
                     </a>
                     <ul class="sidebar-submenue">
                         <li class="submenu-li">
@@ -144,7 +132,7 @@
                                 </a>
                         </li>
                         <li class="submenu-li">
-                            <a href="lists.html">
+                            <a href="lists.html" class="inner-selected">
                                     Lists
                                 </a>
                         </li>
@@ -187,7 +175,7 @@
                                     Social
                                 </a>
                         </li>
-                        <li class="submenu-li">
+                        <li class=" submenu-li">
                             <a href="landing_page.html">
                                     Landing Page
                                 </a>
@@ -271,14 +259,12 @@
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
-
         <!-- Page Content -->
-        <div class="page-content-wrapper index-page-container">
-            
+        <div class="page-content-wrapper">
             <!-- header -->
             <div class="main-dashboard-header" id="head">
                 <div class="container-fluid header-container">
-                    <a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars menu-toggle" aria-hidden="true"></i></a>
+                    <i href="#menu-toggle" id="menu-toggle" class="fa fa-bars menu-toggle" aria-hidden="true"></i>
                     <div class="form-group">
                         <div class="icon-addon addon-md">
                             <input type="text" placeholder="Type anywhere to search" class="form-control main-dashboard-search search-text-box">
@@ -300,9 +286,9 @@
                         </div>
                         <div id="user-box" class="user-box right-side-items">
                             <p> Mr.Sami<i class="fa fa-angle-down" aria-hidden="true"></i></p>
-                            <img src="assets/images/user_01_36.jpg" alt="Mr.Sami" title="Mr.Sami"/>
+                            <img src="assets/images/user_01_36.jpg" />
                         </div>
-                    </div> 
+                    </div>
                 </div>
                 <div class="notifecations-box">
                     <div class="arrow-up"></div>
@@ -328,7 +314,7 @@
                     <h5>Messages <a class="send-message-link" href="#">Send New Message</a></h5>
                     <div class="single-content-row">
                         <a href="#">
-                            <img alt="user name" src="assets/images/user_02_54.jpg" />
+                            <img alt="user name" alt="user name" src="assets/images/user_02_54.jpg" />
                             <p><b>Layla smith</b>
                                 <br /> Job offer</p>
                         </a>
@@ -384,317 +370,214 @@
                 </div>
             </div>
             <!--/header-->
-
             <div class="container-fluid">
-                <div class="row animated fadeInUp">
-                    <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-md-12">
                         <div class="col-content body-header">
-                            <h4 class="title">Welcome to Karak dashboard</h4>
+                            <a href="loading.html" class="page_title pull-right">UI Elements / Lists</a>
+                            <h4 class="title"> Lists </h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="col-content content-overflow">
+                            <h5 class="title"> Basic List </h5>
                             <p>
-                                Special Dashboard for small, medium and large webapp with very clean and aesthetic style and feel.
+                                In order to use the Basic List just define a div element with the class <code>list-group</code> that should contain your items. The inner elements should have the class <code>list-group-item</code>.
                             </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-8 animated fadeInUp">
-                        <div class="col-content">
-                            <div id="containerspline"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 animated fadeInUp">
-                        <div class="row">
-                            <div class="col-sm-6 animated fadeInUp">
-                                <div class="col-content all-income">
-                                    <h1><i class="fa fa-line-chart" aria-hidden="true"></i></h1>
-                                    <h2>$1 250,33</h2>
-                                    <h3>All Income</h3>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 animated fadeInUp">
-                                <div class="col-content all-income invers">
-                                    <h1><i class="fa fa-exchange" aria-hidden="true"></i></h1>
-                                    <h2>$3 620,12</h2>
-                                    <h3>Transactions</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row">
-                            <div class="col-sm-12 animated fadeInUp">
-                                <div class="col-content">
-                                    <h5 class="title">Today Income <span class="flat-style"><i class="fa fa-money" aria-hidden="true"></i>&nbsp;860K</span></h5>
-                                    <br>
-                                    <div id="containerexchange"></div>
-                                </div>
+                            <div class="list-group glyph-color">
+                                <a class="list-group-item">
+                                    <div class="glyphicon glyphicon-text-size"></div> First item</a>
+                                <a class="list-group-item">
+                                    <div class="glyphicon glyphicon-menu-hamburger"></div> Second item</a>
+                                <a class="list-group-item">
+                                    <div class="glyphicon glyphicon-stats"></div> Third item</a>
+                                <a class="list-group-item">
+                                    <div class="glyphicon glyphicon-send"></div> Forth item</a>
+                                <a class="list-group-item">
+                                    <div class="glyphicon glyphicon-flash"></div> Fifth item</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row statistics">
-                    <div class="col-sm-12">
-                        <!-- Nav tabs -->
-                        <div class="tabs-container">
-                            <div class="tabs-header">
-                                <div class="statistics-taps">
-                                    <ul class="bottom-border-active info-mid" role="tablist">
-                                        <li role="presentation" class="active">
-                                            <a href="#yesterday" aria-controls="home" role="tab" data-toggle="tab">
-                                                <i class="fa fa-user" aria-hidden="true"></i>&nbsp;Yesterday
-                                            </a>
-                                        </li>
-                                        <li role="presentation">
-                                            <a href="#month" aria-controls="profile" role="tab" data-toggle="tab">
-                                                <i class="fa fa-credit-card" aria-hidden="true"></i>&nbsp;Last Month
-                                            </a>
-                                        </li>
-                                        <li role="presentation">
-                                            <a href="#year" aria-controls="messages" role="tab" data-toggle="tab">
-                                                <i class="fa fa-check" aria-hidden="true"></i>&nbsp;Last Year
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- Tab panes -->
-                            <div class="tab-content">
-                                <div class="statistics-item tab-pane fade in active" id="yesterday">
-                                    <div class="row">
-                                        <div class="col-sm-2 centerlize-reponsive">
-                                            <img class="img-responsive" src="assets/images/st-1.png" alt="Revenue" title="Revenue" />
-                                            <h4 class="bold">220,000 USD</h4>
-                                            <h4 class="lighter">Revenue</h4>
-                                        </div>
-                                        <div class="col-sm-2 centerlize-reponsive">
-                                            <img class="img-responsive" src="assets/images/st-2.png" alt="Transactions" title="Transactions" />
-                                            <h4 class="bold">120,000 USD</h4>
-                                            <h4 class="lighter">Transactions</h4>
-                                        </div>
-                                        <div class="col-sm-2 centerlize-reponsive">
-                                            <img class="img-responsive" src="assets/images/st-3.png" alt="Loans" title="Loans" />
-                                            <h4 class="bold">502,000 USD</h4>
-                                            <h4 class="lighter">Loans</h4>
-                                        </div>
-                                        <div class="col-sm-2 centerlize-reponsive">
-                                            <img class="img-responsive" src="assets/images/st-4.png" alt="Investment" title="Investment" />
-                                            <h4 class="bold">122,000 USD</h4>
-                                            <h4 class="lighter">Investment</h4>
-                                        </div>
-                                        <div class="col-sm-2 centerlize-reponsive">
-                                            <img class="img-responsive" src="assets/images/st-5.png" alt="Deposits" title="Deposits" />
-                                            <h4 class="bold">750,000 USD</h4>
-                                            <h4 class="lighter">Deposits</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="statistics-item tab-pane fade" id="month">
-                                    <div class="row">
-                                        <div class="col-sm-2">
-                                            <img class="img-responsive" src="assets/images/st-1.png" alt="Revenue" title="Revenue" />
-                                            <h4 class="bold">1220,000 USD</h4>
-                                            <h4 class="lighter">Revenue</h4>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <img class="img-responsive" src="assets/images/st-2.png" alt="Transactions" title="Transactions" />
-                                            <h4 class="bold">400,000 USD</h4>
-                                            <h4 class="lighter">Transactions</h4>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <img class="img-responsive" src="assets/images/st-3.png" alt="Loans" title="Loans" />
-                                            <h4 class="bold">602,000 USD</h4>
-                                            <h4 class="lighter">Loans</h4>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <img class="img-responsive" src="assets/images/st-4.png" alt="Investment" title="Investment" />
-                                            <h4 class="bold">2,000 USD</h4>
-                                            <h4 class="lighter">Investment</h4>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <img class="img-responsive" src="assets/images/st-5.png" alt="Deposits" title="Deposits"/>
-                                            <h4 class="bold">550,000 USD</h4>
-                                            <h4 class="lighter">Deposits</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="statistics-item tab-pane fade" id="year">
-                                    <div class="row">
-                                        <div class="col-sm-2">
-                                            <img class="img-responsive" src="assets/images/st-1.png" alt="Revenue" title="Revenue"/>
-                                            <h4 class="bold">290,000 USD</h4>
-                                            <h4 class="lighter">Revenue</h4>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <img class="img-responsive" src="assets/images/st-2.png" alt="Transactions" title="Transactions"/>
-                                            <h4 class="bold">130,000 USD</h4>
-                                            <h4 class="lighter">Transactions</h4>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <img class="img-responsive" src="assets/images/st-3.png" alt="Loans" title="Loans" />
-                                            <h4 class="bold">420,000 USD</h4>
-                                            <h4 class="lighter">Loans</h4>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <img class="img-responsive" src="assets/images/st-4.png" alt="Investment" title="Investment"/>
-                                            <h4 class="bold">324,000 USD</h4>
-                                            <h4 class="lighter">Investment</h4>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <img class="img-responsive" src="assets/images/st-5.png" alt="Deposits" title="Deposits"/>
-                                            <h4 class="bold">950,000 USD</h4>
-                                            <h4 class="lighter">Deposits</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 animated fadeInUp">
+                    <div class="col-md-6">
                         <div class="col-content content-overflow">
-                            <h5 class="title">Calendar</h5>
-                            <div id='calendar' class="calendar-layout"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 animated fadeInUp">
-                        <div class="col-content content-overflow">
-                            <h5 class="title">Worldwide Annual Sales</h5>
+                            <h5 class="title"> Blog List </h5>
                             <br>
-                            <div id="container-index"></div>
+                            <p>
+                                The blog list shows you the lists capability to be customized by adding images inside it easily.
+                            </p>
+                            <div class="list-group">
+                                <a class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-sm-4 col-xs-4">
+                                            <img src="assets/images/card_01.jpg" class="blog-img side-line">
+                                        </div>
+                                        <div class="col-sm-8 col-xs-8">
+                                            <span>Title goes here Title goes here Title goes here Title goes here.</span>
+                                            <br>
+                                            <p class="list-date">Oct 22, 2016</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-sm-4 col-xs-4">
+                                            <img src="assets/images/card_02.jpg" class="blog-img side-line">
+                                        </div>
+                                        <div class="col-sm-8 col-xs-8">
+                                            <span>Title goes here Title goes here Title goes here Title goes here.</span>
+                                            <br>
+                                            <p class="list-date">Aug 20, 2017</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6 activities animated fadeInUp">
-                        <div class="col-content static-height">
-                            <h5 class="title">Activities Log<a class="activities-year">2016</a></h5>
-                            <div class="activities-log">
-                                <div class="single-log-box">
-                                    <h5>Jan, 18 Wednesday <span class="flat-style"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;3:15 PM</span></h5>
-                                    <p>
-                                        Dipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </p>
-                                </div>
-                                <div class="single-log-box">
-                                    <h5>Feb, 6 Monday<span class="flat-style"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;6:10 PM</span></h5>
-                                    <p>
-                                        Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </p>
-                                </div>
-                                <div class="single-log-box">
-                                    <h5>Jun, 6 Tuesday<span class="flat-style"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;11:15 AM</span></h5>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </p>
-                                </div>
-                                <div class="single-log-box">
-                                    <h5>Jul, 6 Thursday<span class="flat-style"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;7:00 AM</span></h5>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                                    </p>
-                                </div>
-                                <div class="single-log-box">
-                                    <h5>Aug, 6 Sunday<span class="flat-style"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;4:15 PM</span></h5>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    </p>
-                                </div>
+                    <div class="col-md-4">
+                        <div class="col-content content-overflow">
+                            <h5 class="title"> List With Badges </h5>
+                            <p>
+                                You can add a badge to each List Item by adding a span element inside and giving it the classes <code>.label</code>,<code>.list-badge</code> in addition to one of the colors classes
+                            </p>
+                            <div class="list-group glyph-color">
+                                <a class="list-group-item">
+                                    <div class="glyphicon glyphicon-text-size"></div> New<span class="label info-mid list-badge">12</span></a>
+                                <a class="list-group-item">
+                                    <div class="glyphicon glyphicon-flash"></div> Deleted<span class="label info-mid list-badge">5</span></a>
+                                <a class="list-group-item">
+                                    <div class="glyphicon glyphicon-send"></div> Warnings<span class="label info-mid list-badge">3</span></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 animated fadeInUp">
-                        <div class="col-content static-height">
-                            <h5 class="title">To Do List<a class="add-task"><i class="fa fa-plus-circle" aria-hidden="true"></i></a></h5>
-                            <div class="to-do-list">
-                                <div class="single-to-do-box">
-                                    <div class="checkbox checkbox-success checkbox-inline">
-                                        <input type="checkbox" id="to-do-first-checkbox" value="option" checked="">
-                                        <label class="done-task" for="to-do-first-checkbox">Lorem ipsum dolor sit.. </label>
-                                    </div>
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
-                                    <h6>Today</h6>
-                                </div>
-                                <div class="single-to-do-box">
-                                    <div class="checkbox checkbox-success checkbox-inline">
-                                        <input id="to-do-second-checkbox" type="checkbox">
-                                        <label for="to-do-second-checkbox">
-                                            Consectetur adipiscing elit..
-                                        </label>
-                                    </div>
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
-                                    <h6>Wednesday</h6>
-                                </div>
-                                <div class="single-to-do-box">
-                                    <div class="checkbox checkbox-success checkbox-inline">
-                                        <input id="to-do-third-checkbox" type="checkbox">
-                                        <label for="to-do-third-checkbox">
-                                            Consectetur adipiscing elit..
-                                        </label>
-                                    </div>
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
-                                    <h6>05 Oct</h6>
-                                </div>
-                                <div class="single-to-do-box">
-                                    <div class="checkbox checkbox-success checkbox-inline">
-                                        <input id="to-do-forth-checkbox" type="checkbox">
-                                        <label for="to-do-forth-checkbox">
-                                            Sit amet, consectetur adipiscing..
-                                        </label>
-                                    </div>
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
-                                    <h6>10 Oct</h6>
-                                </div>
-                                <div class="single-to-do-box">
-                                    <div class="checkbox checkbox-success checkbox-inline">
-                                        <input id="to-do-fifth-checkbox" type="checkbox">
-                                        <label for="to-do-fifth-checkbox">
-                                            Adipiscing elit consectetur ..
-                                        </label>
-                                    </div>
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
-                                    <h6>18 Oct</h6>
-                                </div>
-                                <div class="single-to-do-box">
-                                    <div class="checkbox checkbox-success checkbox-inline">
-                                        <input id="to-do-sixth-checkbox" type="checkbox">
-                                        <label for="to-do-sixth-checkbox">
-                                            Lorem ipsum dolor sit..
-                                        </label>
-                                    </div>
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
-                                    <h6>18 Oct</h6>
-                                </div>
-                                <div class="single-to-do-box">
-                                    <div class="checkbox checkbox-success checkbox-inline">
-                                        <input id="to-do-seventh-checkbox" type="checkbox">
-                                        <label for="to-do-seventh-checkbox">
-                                            Sit amet, consectetur..
-                                        </label>
-                                    </div>
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
-                                    <h6>18 Oct</h6>
-                                </div>
-                                <div class="single-to-do-box">
-                                    <div class="checkbox checkbox-success checkbox-inline">
-                                        <input id="to-do-eighth-checkbox" type="checkbox">
-                                        <label for="to-do-eighth-checkbox">
-                                            Consectetur adipiscing..
-                                        </label>
-                                    </div>
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
-                                    <h6>18 Oct</h6>
-                                </div>
-                                <div class="single-to-do-box">
-                                    <div class="checkbox checkbox-success checkbox-inline">
-                                        <input id="to-do-ninth-checkbox" type="checkbox">
-                                        <label for="to-do-ninth-checkbox">
-                                            Lorem ipsum dolor sit..
-                                        </label>
-                                    </div>
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
-                                    <h6>18 Oct</h6>
-                                </div>
+                    <div class="col-md-4">
+                        <div class="col-content content-overflow">
+                            <h5 class="title"> List With Active Item </h5>
+                            <p>
+                                The active item can be highlited by adding any of out colors classes to the <code>li</code> element.
+                            </p>
+                            <ul class="list-group  glyph-color">
+                                <li class="list-group-item info-mid">
+                                    <div class="glyphicon glyphicon-text-size"></div> First item</li>
+                                <li class="list-group-item">
+                                    <div class="glyphicon glyphicon-flash"></div> Second item</li>
+                                <li class="list-group-item">
+                                    <div class="glyphicon glyphicon-send"></div> Third item</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="col-content content-overflow">
+                            <h5 class="title"> Toggle List </h5>
+                            <p>
+                                You can use the toggles as items inside the list by giving the items a <code>name</code> attribute to be initialized in the <a class="doc-popover" data-trigger="focus" data-toggle="popover" data-content="test">Javascript</a>.</p>
+                            </p>
+                            <div class="list-group">
+                                <a class="list-group-item"> First item
+                                        <input class="toggle-align" type="checkbox" name="my-checkbox" checked data-size="mini">
+                                    </a>
+                                <a class="list-group-item"> Second item
+                                        <input class="toggle-align" type="checkbox" name="my-checkbox" data-size="mini">
+                                    </a>
+                                <a class="list-group-item"> Third item
+                                        <input class="toggle-align" type="checkbox" name="my-checkbox" checked data-size="mini">
+                                    </a>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="col-content content-overflow">
+                            <h5 class="title"> Events List </h5>
+                            <div class="list-group">
+                                <a class="list-group-item event-list-item">
+                                    <div class="row">
+                                        <div class="col-sm-1">
+                                            <h3>07</h3>
+                                            <h4>sep</h4></div>
+                                        <div class="col-sm-10">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget.consectetur adipiscing elit. Suspendisse eget.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="list-group-item event-list-item">
+                                    <div class="row">
+                                        <div class="col-sm-1">
+                                            <h3>14</h3>
+                                            <h4>aug</h4></div>
+                                        <div class="col-sm-10">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget.consectetur adipiscing elit. Suspendisse eget.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="list-group-item event-list-item">
+                                    <div class="row">
+                                        <div class="col-sm-1">
+                                            <h3>22</h3>
+                                            <h4>dec</h4></div>
+                                        <div class="col-sm-10">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget.consectetur adipiscing elit. Suspendisse eget.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="list-group-item event-list-item">
+                                    <div class="row">
+                                        <div class="col-sm-1">
+                                            <h3>12</h3>
+                                            <h4>jan</h4></div>
+                                        <div class="col-sm-10">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget.consectetur adipiscing elit. Suspendisse eget.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="col-content content-overflow">
+                            <h5 class="title"> List With Header </h5>
+                            <br>
+                            <ul class="list-group glyph-color">
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-sm-10 no-padding-right">
+                                            <h5 class="title-border">First</h5>
+                                        </div>
+                                        <div class="col-sm-2 no-padding-left">
+                                            <div class="glyphicon glyphicon-flash icon-list-border"></div>
+                                        </div>
+                                    </div>
+                                    <p class="box-size">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut fringilla libero. Nullam a rhoncus.</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-sm-10 no-padding-right">
+                                            <h5 class="title-border">Second</h5>
+                                        </div>
+                                        <div class="col-sm-2 no-padding-left">
+                                            <div class="glyphicon glyphicon-text-size icon-list-border"></div>
+                                        </div>
+                                    </div>
+                                    <p class="box-size">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut fringilla libero. Nullam a rhoncus.</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-sm-10 no-padding-right">
+                                            <h5 class="title-border">Third</h5>
+                                        </div>
+                                        <div class="col-sm-2 no-padding-left">
+                                            <div class="glyphicon  glyphicon-stats icon-list-border"></div>
+                                        </div>
+                                    </div>
+                                    <p class="box-size">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -713,8 +596,9 @@
                     </div>
                 </div>
             </div>
+            <!-- /#page-content-wrapper -->
         </div>
-        
+        <!-- /#wrapper -->
         <div class="right-side-section-toggle" data-toggle="modal" data-toggle="modal" data-target="#colors-modal">
             <i class="fa fa-pencil-square-o"></i>
         </div>
@@ -850,89 +734,21 @@
             </div>
             <!-- modal-dialog -->
         </div>
-
-        <div class="modal right fade" id="add-event" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content add-event-modal">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel2">
-                            From: <label id="apptStartTime"></label><br>
-                            To:  <label id="apptEndTime"></label>
-                            <!-- hidden Items-->
-                            <label id="apptStartpost"></label><br>
-                            <label id="apptEndpost"></label>
-                            <!-- end hidden items -->
-                            </h4>
-                    </div>
-                    <div class="modal-body">
-                        <form id="createAppointmentForm" class="form-horizontal">
-                            <div class="control-group">
-                                <div class="controls">
-                                    <div class="input-field parent">
-                                        <input name="name" id="name" type="text" class="validate">
-                                        <label for="name"><i class="fa fa-calendar-o" aria-hidden="true"></i>Event Name</label>
-                                    </div>
-                                    <div class="input-field parent">
-                                        <input id="location" name="location" type="text" class="validate">
-                                        <label for="location"><i class="fa fa-map-marker" aria-hidden="true"></i>Location</label>
-                                    </div>
-                                    <div class="input-field parent">
-                                        <input name="Notes" id="notes" type="text" class="validate">
-                                        <label for="Notes"><i class="fa fa-sticky-note" aria-hidden="true"></i>Notes</label>
-                                    </div>
-                                    <select id="eventclassName" class="select-display selectpicker form-control empty select2-init-images">
-                                        <option value="default">Default Color</option>
-                                        <option value="worning">Warning</option>
-                                        <option value="info">Info</option>
-                                        <option value="success">Success</option>
-                                        <option value="important">Important</option>
-                                    </select>
-                                    <label id="apptAllDay"></label>
-                                </div>
-                            </div>
-                        </form>
-                        <button type="submit" id="submitButton" class="btn btn-info icon-btn btn-block">
-                            <span class="fa fa-plus"></span> Add Event</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
     </div>
     <!-- Page layout JS -->
     <script type="text/javascript" src="assets/vendors/jquery/jquery-3.1.1.js"></script>
-    <!-- materialize framework -->
-    <script type="text/javascript" src="assets/vendors/materialize/materializeGlobal.js"></script>
-    <script type="text/javascript" src="assets/vendors/materialize/materializeForms.js"></script>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript" src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
-    <script type="text/javascript" src="assets/vendors/chart.js/chart.bundle.min.js"></script>
     <script type="text/javascript" src="assets/js/notifications_boxs.js"></script>
-    <script type="text/javascript" src="assets/js/taps.js"></script>
-    <!-- Calendar JS -->
-    <script src="assets/vendors/calendar/lib/moment.min.js"></script>
-    <script src="assets/vendors/calendar/fullcalendar.min.js"></script>
-    <script src="assets/js/calendar.js"></script>
-    <!-- HighCharts -->
-    <script type="text/javascript" src="https://code.highcharts.com/highcharts.js"></script>
-    <!-- Map -->
-    <script type="text/javascript" src="assets/js/map.js"></script>
-    <script type="text/javascript" src="assets/vendors/highmaps/code/modules/map.js"></script>
-    <script type="text/javascript" src="assets/vendors/highmaps/code/modules/data.js"></script>
-    <script type="text/javascript" src="assets/vendors/highmaps/code/modules/exporting.js"></script>
-    <script type="text/javascript" src="assets/vendors/highmaps/code/custom/world.js"></script>
-    <script type="text/javascript" src="assets/js/right-side-colors-picker.js"></script>
-    <!--Dynamic colors-->
+    <!-- Bootstrap switch library JS -->
+    <script type="text/javascript" src="assets/vendors/toggle/js/bootstrap-switch.min.js"></script>
+    <!-- Lists page JS -->
+    <script type="text/javascript" src="assets/js/lists.js"></script>
+    <!-- Dynamic colors JS -->
     <script type="text/javascript" src="assets/js/nav_colors_change.js"></script>
     <script type="text/javascript" src="assets/js/right-side-colors-picker.js"></script>
     <script type="text/javascript" src="assets/js/page-ready-theam.js"></script>
     <link id="default-color-picker" rel="stylesheet" />
-    <!-- Select2 dropdown JS -->
-    <script type="text/javascript" src="assets/vendors/select2/js/select2.min.js"></script>
-    <!-- Index page JS -->
-    <script type="text/javascript" src="assets/js/index.js"></script>
 </body>
 
 </html>
