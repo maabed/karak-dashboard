@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
@@ -18,7 +18,7 @@ module.exports = function(grunt) {
           evalCode: false,
           indentChar: " ",
           indentLevel: 0,
-          indentSize: 4,
+          indentSize: 2,
           indentWithTabs: false,
           jslintHappy: false,
           keepArrayIndentation: false,
@@ -41,6 +41,7 @@ module.exports = function(grunt) {
         }
       }
     },
+
     less: {
       development: {
         options: {
@@ -51,10 +52,11 @@ module.exports = function(grunt) {
         }
       }
     },
-    watch:{
-      less:{
-        files:['assets/less/**/*.less'],
-        tasks:['less']
+    
+    watch: {
+      less: {
+        files: ['assets/less/**/*.less'],
+        tasks: ['less']
       },
     }
   });
