@@ -7,11 +7,11 @@ Copyright 2017 New Release
 */
 $(function($) {
 
-    'use strict';
+  'use strict';
 
-    $(document).ready(function() {
-        $('#summernote-compose').summernote({
-            height: 200,
-        });
+  $(document).ready(function() {
+    $('#summernote-compose').summernote({
+      height: 200,
     });
+  });
 });
