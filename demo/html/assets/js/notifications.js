@@ -5,12 +5,12 @@ Author: New Release
 http://newrelease.io
 Copyright 2017 New Release
 */
-$(function($) {
+$(function ($) {
 
     'use strict';
-    $(document).ready(function() {
+    $(document).ready(function () {
         /* Toastr alerts */
-        $('#right').click(function(event) {
+        $('#right').click(function (event) {
             event.stopPropagation();
             toastr.remove();
             toastr.options = {
@@ -24,7 +24,8 @@ $(function($) {
             }
             toastr['success']('Top Right!');
         });
-        $('#bottom-right').click(function(event) {
+
+        $('#bottom-right').click(function (event) {
             event.stopPropagation();
             toastr.remove();
             toastr.options = {
@@ -39,8 +40,7 @@ $(function($) {
             toastr['info']('Bottom Right!');
         });
 
-
-        $('#bottom-left').click(function(event) {
+        $('#bottom-left').click(function (event) {
             event.stopPropagation();
             toastr.remove();
             toastr.options = {
@@ -55,8 +55,7 @@ $(function($) {
             toastr['warning']('Bottom Left!');
         });
 
-
-        $('#left').click(function(event) {
+        $('#left').click(function (event) {
             event.stopPropagation();
             toastr.remove();
             toastr.options = {
@@ -71,8 +70,7 @@ $(function($) {
             toastr['error']('Top Left!');
         });
 
-
-        $('#full').click(function(event) {
+        $('#full').click(function (event) {
             event.stopPropagation();
             toastr.remove();
             toastr.options = {
@@ -87,8 +85,7 @@ $(function($) {
             toastr['success']('top full width!');
         });
 
-
-        $('#bottom-full').click(function(event) {
+        $('#bottom-full').click(function (event) {
             event.stopPropagation();
             toastr.remove();
             toastr.options = {
@@ -103,8 +100,7 @@ $(function($) {
             toastr['info']('bottom full width!');
         });
 
-
-        $('#center').click(function(event) {
+        $('#center').click(function (event) {
             event.stopPropagation();
             toastr.remove();
             toastr.options = {
@@ -119,8 +115,7 @@ $(function($) {
             toastr['warning']('Top Center!');
         });
 
-
-        $('#bottom-center').click(function(event) {
+        $('#bottom-center').click(function (event) {
             event.stopPropagation();
             toastr.remove();
             toastr.options = {
@@ -133,40 +128,40 @@ $(function($) {
                 'hideMethod': 'fadeOut'
             };
             toastr['error']('Bottom Center!');
-        });    
+        });
 
         /* Sweet alerts */
-        $('#sweet-generate').click(function() {
+        $('#sweet-generate').click(function () {
             if ($('#sweet-select').val() == 'basic') {
                 swal('Here is a message!');
             } else if ($('#sweet-select').val() == 'success') {
                 swal('Good job!', 'You clicked the button!', 'success');
             } else if ($('#sweet-select').val() == 'warning') {
                 swal({
-                        title: 'Are you sure?',
-                        text: 'You will not be able to recover this imaginary file!',
-                        type: 'warning',
-                        showCancelButton: true,
-                        confirmButtonColor: '#DD6B55',
-                        confirmButtonText: 'Yes, delete it!',
-                        closeOnConfirm: false
-                    },
-                    function() {
+                    title: 'Are you sure?',
+                    text: 'You will not be able to recover this imaginary file!',
+                    type: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#DD6B55',
+                    confirmButtonText: 'Yes, delete it!',
+                    closeOnConfirm: false
+                },
+                    function () {
                         swal('Deleted!', 'Your imaginary file has been deleted.', 'success');
                     });
             } else if ($('#sweet-select').val() == 'execute') {
                 swal({
-                        title: 'Are you sure?',
-                        text: 'You will not be able to recover this imaginary file!',
-                        type: 'warning',
-                        showCancelButton: true,
-                        confirmButtonColor: '#DD6B55',
-                        confirmButtonText: 'Yes, delete it!',
-                        cancelButtonText: 'No, cancel plx!',
-                        closeOnConfirm: false,
-                        closeOnCancel: false
-                    },
-                    function(isConfirm) {
+                    title: 'Are you sure?',
+                    text: 'You will not be able to recover this imaginary file!',
+                    type: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#DD6B55',
+                    confirmButtonText: 'Yes, delete it!',
+                    cancelButtonText: 'No, cancel plx!',
+                    closeOnConfirm: false,
+                    closeOnCancel: false
+                },
+                    function (isConfirm) {
                         if (isConfirm) {
                             swal('Deleted!', 'Your imaginary file has been deleted.', 'success');
                         } else {
@@ -197,15 +192,15 @@ $(function($) {
                 });
             } else if ($('#sweet-select').val() == 'Prompt') {
                 swal({
-                        title: 'An input!',
-                        text: 'Write something interesting:',
-                        type: 'input',
-                        showCancelButton: true,
-                        closeOnConfirm: false,
-                        animation: 'slide-from-top',
-                        inputPlaceholder: 'Write something'
-                    },
-                    function(inputValue) {
+                    title: 'An input!',
+                    text: 'Write something interesting:',
+                    type: 'input',
+                    showCancelButton: true,
+                    closeOnConfirm: false,
+                    animation: 'slide-from-top',
+                    inputPlaceholder: 'Write something'
+                },
+                    function (inputValue) {
                         if (inputValue === false)
                             return false;
                         if (inputValue === '') {
