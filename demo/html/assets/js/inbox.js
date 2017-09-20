@@ -30,7 +30,7 @@ $(function($) {
         $('.msg-loader').css('display', 'none');
       }, 500);
     });
-    $('.contacts').click(function(){
+    $('.contacts').click(function() {
       $('.split-right-side').removeClass('responsive-message');
       $('.split-left-side').removeClass('hide-contacts');
     });

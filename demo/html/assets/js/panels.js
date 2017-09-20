@@ -1,4 +1,4 @@
-﻿/*!
+/*!
 Panels JS
 Karak dashboard: v1.0.0
 Author: New Release

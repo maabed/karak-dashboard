@@ -6,8 +6,8 @@ http://newrelease.io
 Copyright 2017 New Release
 */
 $(document).ready(function() {
-    $('#menu-toggle').click(function(e) {
-        e.preventDefault();
-        $('.wrapper').toggleClass('toggled');
-    });
+  $('#menu-toggle').click(function(e) {
+    e.preventDefault();
+    $('.wrapper').toggleClass('toggled');
+  });
 });

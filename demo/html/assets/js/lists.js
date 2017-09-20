@@ -7,10 +7,10 @@ Copyright 2017 New Release
 */
 $(function($) {
 
-	'use strict';
+  'use strict';
 
-	$(document).ready(function() {
-		$("[name='my-checkbox']").bootstrapSwitch();
-	});
+  $(document).ready(function() {
+    $("[name='my-checkbox']").bootstrapSwitch();
+  });
 
 });

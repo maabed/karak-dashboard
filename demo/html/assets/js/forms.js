@@ -114,7 +114,7 @@ $(function($) {
       $('#toggleCheckbox-like').prop('disabled', false);
     });
 
-/* Tags input */
+    /* Tags input */
     /* Colored tags */
     var cities = new Bloodhound({
       datumTokenizer: Bloodhound.tokenizers.obj.whitespace('text'),

@@ -27,7 +27,7 @@ $(function($) {
       htmlbodyHeightUpdate();
     });
     $(window).scroll(function() {
-    var height2 = $('.main').height();
+      var height2 = $('.main').height();
       htmlbodyHeightUpdate();
     });
 

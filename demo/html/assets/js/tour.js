@@ -10,7 +10,7 @@ $(function($) {
   $('document').ready(function() {
     $(".popover-navigation").find(".btn-group").children().remove();
     var tour = new Tour({
-      name : 'index-tour',
+      name: 'index-tour',
       steps: [{
         element: "#live-tour",
         title: "Title of my step",

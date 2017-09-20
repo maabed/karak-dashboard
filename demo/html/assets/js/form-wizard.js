@@ -11,7 +11,7 @@ $(function($) {
 
   $(document).ready(function() {
     $('#rootwizard').bootstrapWizard({
-       onNext: function() {
+      onNext: function() {
         $('#first_name-resault').html($('#first_name').val());
         $('#last_name-resault').html($('#last_name').val());
         $('#email-resault').html($('#email').val());
