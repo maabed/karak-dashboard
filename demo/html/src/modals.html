@@ -2,34 +2,21 @@
 <html lang="en">
 
 <head>
-    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>Karak dashboard</title>  
-    
+    <title>Karak dashboard | Modals</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <!-- Fonts -->
-    <link type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link type="text/css" href="assets/vendors/google-fonts/google-fonts.css" rel="stylesheet">
     <!-- Bootstrap Core CSS -->
     <link type="text/css" href="assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Karak dashboard core CSS -->
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css">
     <!-- Font Awesome library -->
     <link type="text/css" href="assets/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
-
-    <!-- Calendar -->
-    <link href='assets/vendors/calendar/fullcalendar.css' rel='stylesheet' />
-    <link href="assets/vendors/calendar/fullcalendar.print.css" rel='stylesheet' media='print' />
-    <link type="text/css" rel="stylesheet" href="assets/css/calendar_index.css">
-    <!-- Loading animation CSS -->
-    <link type="text/css" rel="stylesheet" href="assets/vendors/animatecss/animate.min.css" />
-    <!-- Select2 CSS -->
-    <link type="text/css" href="assets/vendors/select2/css/select2.css" rel="stylesheet" />
-    
-    <!-- Custom CSS -->
-    <link type="text/css" href="assets/css/style.css" rel="stylesheet" />
 
     <link rel="manifest" href="/manifest.json">
     <link type="image/x-icon" rel="shortcut icon" href="favicon.ico" />
@@ -38,6 +25,8 @@
     <link rel="icon" sizes="96x96" type="image/png" href="assets/images/logo/favicons/favicon-96x96.png">
     <link rel="icon" sizes="128x128" type="image/png" href="assets/images/logo/favicons/favicon-128x128.png">
     <link rel="icon" sizes="256x256" type="image/png" href="assets/images/logo/favicons/favicon-256x256.png">
+    
+
     <link rel="apple-touch-icon" sizes="57x57" href="assets/images/logo/favicons/apple-touch-icon-57x57.png?v=3">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/images/logo/favicons/apple-touch-icon-60x60.png?v=3">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/images/logo/favicons/apple-touch-icon-72x72.png?v=3">
@@ -47,21 +36,19 @@
     <link rel="apple-touch-icon" sizes="144x144" href="assets/images/logo/favicons/apple-touch-icon-144x144.png?v=3">
     <link rel="apple-touch-icon" sizes="152x152" href="assets/images/logo/favicons/apple-touch-icon-152x152.png?v=3">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/logo/favicons/apple-touch-icon-180x180.png?v=3">
-
 </head>
 
 <body>
     <div class="wrapper">
-        
         <!-- Sidebar -->
         <div class="sidebar-wrapper">
             <div class="sidebar-brand" id="company-name">
                 <a href="index.html">
-                    <img src="assets/images/logo.png" class="center-block" alt="company-logo" title="company-logo">
+                    <img src="assets/images/logo.png" class="center-block">
                 </a>
             </div>
             <ul class="sidebar">
-                <li class="selected open active sidebar-item">
+                <li class="sidebar-item">
                     <a href="index.html"><i class="fa fa-tachometer nav-icon" aria-hidden="true"></i>Dashboard</a>
                 </li>
                 <li class="sidebar-item has-submenu">
@@ -93,9 +80,9 @@
                         <span class="label info-mid list-badge">2</span>
                     </a>
                 </li>
-                <li class="sidebar-item has-submenu">
+                <li class="selected open active sidebar-item has-submenu">
                     <a href="#">
-                        <i class="fa fa-eye   nav-icon" aria-hidden="true"></i> UI Elements<span class="label success-mid list-badge">New</span> <i class="fa fa-angle-left left-arrow" aria-hidden="true"></i>
+                        <i class="fa fa-eye   nav-icon" aria-hidden="true"></i> UI Elements<span class="label success-mid list-badge">New</span> <i class="fa fa-angle-left left-arrow open" aria-hidden="true"></i>
                     </a>
                     <ul class="sidebar-submenue">
                         <li class="submenu-li">
@@ -119,7 +106,7 @@
                                 </a>
                         </li>
                         <li class="submenu-li">
-                            <a href="modals.html">
+                            <a href="modals.html" class="inner-selected">
                                     Modals
                                 </a>
                         </li>
@@ -187,7 +174,7 @@
                                     Social
                                 </a>
                         </li>
-                        <li class="submenu-li">
+                        <li class=" submenu-li">
                             <a href="landing_page.html">
                                     Landing Page
                                 </a>
@@ -271,14 +258,12 @@
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
-
         <!-- Page Content -->
-        <div class="page-content-wrapper index-page-container">
-            
+        <div class="page-content-wrapper">
             <!-- header -->
             <div class="main-dashboard-header" id="head">
                 <div class="container-fluid header-container">
-                    <a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars menu-toggle" aria-hidden="true"></i></a>
+                    <i href="#menu-toggle" id="menu-toggle" class="fa fa-bars menu-toggle" aria-hidden="true"></i>
                     <div class="form-group">
                         <div class="icon-addon addon-md">
                             <input type="text" placeholder="Type anywhere to search" class="form-control main-dashboard-search search-text-box">
@@ -300,9 +285,9 @@
                         </div>
                         <div id="user-box" class="user-box right-side-items">
                             <p> Mr.Sami<i class="fa fa-angle-down" aria-hidden="true"></i></p>
-                            <img src="assets/images/user_01_36.jpg" alt="Mr.Sami" title="Mr.Sami"/>
+                            <img src="assets/images/user_01_36.jpg" />
                         </div>
-                    </div> 
+                    </div>
                 </div>
                 <div class="notifecations-box">
                     <div class="arrow-up"></div>
@@ -328,7 +313,7 @@
                     <h5>Messages <a class="send-message-link" href="#">Send New Message</a></h5>
                     <div class="single-content-row">
                         <a href="#">
-                            <img alt="user name" src="assets/images/user_02_54.jpg" />
+                            <img alt="user name" alt="user name" src="assets/images/user_02_54.jpg" />
                             <p><b>Layla smith</b>
                                 <br /> Job offer</p>
                         </a>
@@ -384,164 +369,88 @@
                 </div>
             </div>
             <!--/header-->
-
-            <div class="container-fluid">
-                <div class="row animated fadeInUp">
-                    <div class="col-lg-12">
+            <div class="container-fluid modals-page-container">
+                <div class="row">
+                    <div class="col-md-12">
                         <div class="col-content body-header">
-                            <h4 class="title">Welcome to Karak dashboard</h4>
-                            <p>
-                                Special Dashboard for small, medium and large webapp with very clean and aesthetic style and feel.
-                            </p>
+                            <a class="page_title pull-right">UI Elements  /  Modals</a>
+                            <h4 class="title"> Modals </h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla consequat massa egestas fermentum. Maecenas quis est ac ante hendrerit.</p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-8 animated fadeInUp">
+                    <div class="col-md-4">
                         <div class="col-content">
-                            <div id="containerspline"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 animated fadeInUp">
-                        <div class="row">
-                            <div class="col-sm-6 animated fadeInUp">
-                                <div class="col-content all-income">
-                                    <h1><i class="fa fa-line-chart" aria-hidden="true"></i></h1>
-                                    <h2>$1 250,33</h2>
-                                    <h3>All Income</h3>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 animated fadeInUp">
-                                <div class="col-content all-income invers">
-                                    <h1><i class="fa fa-exchange" aria-hidden="true"></i></h1>
-                                    <h2>$3 620,12</h2>
-                                    <h3>Transactions</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row">
-                            <div class="col-sm-12 animated fadeInUp">
-                                <div class="col-content">
-                                    <h5 class="title">Today Income <span class="flat-style"><i class="fa fa-money" aria-hidden="true"></i>&nbsp;860K</span></h5>
-                                    <br>
-                                    <div id="containerexchange"></div>
+                            <h5 class="title"> Middle Of The Page Modal </h5>
+                            <p>Standard modal, just add <code>.middle-dialog</code> to get it to work.</p>
+                            <i class="fa fa-eye preview" data-toggle="modal" data-target="#middle-modal"></i>
+                            <img alt="Middle Of The Page Modal" src="assets/images/modals/middle.svg" class="center-block img-border">
+                            <!-- Modal -->
+                            <div class="modal fade" id="middle-modal" tabindex="-1" role="dialog" aria-labelledby="middle-modal-label">
+                                <div class="modal-dialog middle-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="middle-modal-label">Modal title</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare urna turpis, et dignissim quam vestibulum ac. Phasellus scelerisque massa quis ligula lacinia, eget rhoncus dolor tincidunt. Sed in aliquet dui, in vehicula nisi. Mauris molestie sem vitae volutpat luctus.
+                                            <br>
+                                            <br> Quisque nulla mauris, aliquam ac iaculis sed, placerat at nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas nec eleifend nisl. Proin posuere, enim in aliquet condimentum, justo dui gravida dolor, eget auctor massa nisl quis risus. Sed nibh lacus, pulvinar a ullamcorper at, condimentum vel ante. Cras enim justo, interdum sit amet magna eu, tincidunt iaculis turpis. Nunc consectetur egestas aliquet. Cras scelerisque consequat enim, at efficitur nibh. Donec in nulla non mi euismod porta id faucibus dui. Nulla semper et est nec varius. Cras iaculis sed turpis vel aliquet.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary dashboard-primary btn-md modal-close" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-info button-style icon-btn">Search</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row statistics">
-                    <div class="col-sm-12">
-                        <!-- Nav tabs -->
-                        <div class="tabs-container">
-                            <div class="tabs-header">
-                                <div class="statistics-taps">
-                                    <ul class="bottom-border-active info-mid" role="tablist">
-                                        <li role="presentation" class="active">
-                                            <a href="#yesterday" aria-controls="home" role="tab" data-toggle="tab">
-                                                <i class="fa fa-user" aria-hidden="true"></i>&nbsp;Yesterday
-                                            </a>
-                                        </li>
-                                        <li role="presentation">
-                                            <a href="#month" aria-controls="profile" role="tab" data-toggle="tab">
-                                                <i class="fa fa-credit-card" aria-hidden="true"></i>&nbsp;Last Month
-                                            </a>
-                                        </li>
-                                        <li role="presentation">
-                                            <a href="#year" aria-controls="messages" role="tab" data-toggle="tab">
-                                                <i class="fa fa-check" aria-hidden="true"></i>&nbsp;Last Year
-                                            </a>
-                                        </li>
-                                    </ul>
+                    <!--Large modal-->
+                    <div class="col-md-4">
+                        <div class="col-content">
+                            <h5 class="title">Flat Modal</h5>
+                            <p>A modal without the <code>.modal-content</code><code>.modal-header</code><code>.modal-footer</code> classes</p>
+                            <i class="fa fa-eye preview" data-toggle="modal" data-target="#flat-modal"></i>
+                            <img alt="Flat modal" src="assets/images/modals/flat.svg" id="flat" class="center-block img-border">
+                            <!-- Modal -->
+                            <div class="modal fade" id="flat-modal" tabindex="-1" role="dialog" aria-labelledby="flat-modal-label">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-body">
+                                        <div class="jumbotron">
+                                            <input type="text" placeholder="Type anywhere to search" class="form-control flat_email">
+                                            <i class="fa fa-search glyphicon glyphicon-search" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <!-- Tab panes -->
-                            <div class="tab-content">
-                                <div class="statistics-item tab-pane fade in active" id="yesterday">
-                                    <div class="row">
-                                        <div class="col-sm-2 centerlize-reponsive">
-                                            <img class="img-responsive" src="assets/images/st-1.png" alt="Revenue" title="Revenue" />
-                                            <h4 class="bold">220,000 USD</h4>
-                                            <h4 class="lighter">Revenue</h4>
+                        </div>
+                    </div>
+                    <!-- Small modal -->
+                    <div class="col-md-4">
+                        <div class="col-content" id="small-parent">
+                            <h5 class="title"> Top Modal </h5>
+                            <p>Small modal, just add <code>.modal-sm</code> to the <code>.modal-dialog</code> to get it to work.</p>
+                            <i class="fa fa-eye preview" data-toggle="modal" data-target="#top-modal"></i>
+                            <img src="assets/images/modals/top.svg" id="small" class="center-block img-border">
+                            <!-- Modal -->
+                            <div class="modal fade" id="top-modal" tabindex="-1" role="dialog" aria-labelledby="top-modal-label">
+                                <div class="modal-dialog modal-sm" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="top-modal-label">Modal title</h4>
                                         </div>
-                                        <div class="col-sm-2 centerlize-reponsive">
-                                            <img class="img-responsive" src="assets/images/st-2.png" alt="Transactions" title="Transactions" />
-                                            <h4 class="bold">120,000 USD</h4>
-                                            <h4 class="lighter">Transactions</h4>
+                                        <div class="modal-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tristique rhoncus arcu, id ornare felis. Vivamus sollicitudin elit rhoncus, tempus.
+                                            <br>
+                                            <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tristique rhoncus arcu, id ornare felis. Vivamus sollicitudin elit rhoncus, tempus.
                                         </div>
-                                        <div class="col-sm-2 centerlize-reponsive">
-                                            <img class="img-responsive" src="assets/images/st-3.png" alt="Loans" title="Loans" />
-                                            <h4 class="bold">502,000 USD</h4>
-                                            <h4 class="lighter">Loans</h4>
-                                        </div>
-                                        <div class="col-sm-2 centerlize-reponsive">
-                                            <img class="img-responsive" src="assets/images/st-4.png" alt="Investment" title="Investment" />
-                                            <h4 class="bold">122,000 USD</h4>
-                                            <h4 class="lighter">Investment</h4>
-                                        </div>
-                                        <div class="col-sm-2 centerlize-reponsive">
-                                            <img class="img-responsive" src="assets/images/st-5.png" alt="Deposits" title="Deposits" />
-                                            <h4 class="bold">750,000 USD</h4>
-                                            <h4 class="lighter">Deposits</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="statistics-item tab-pane fade" id="month">
-                                    <div class="row">
-                                        <div class="col-sm-2">
-                                            <img class="img-responsive" src="assets/images/st-1.png" alt="Revenue" title="Revenue" />
-                                            <h4 class="bold">1220,000 USD</h4>
-                                            <h4 class="lighter">Revenue</h4>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <img class="img-responsive" src="assets/images/st-2.png" alt="Transactions" title="Transactions" />
-                                            <h4 class="bold">400,000 USD</h4>
-                                            <h4 class="lighter">Transactions</h4>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <img class="img-responsive" src="assets/images/st-3.png" alt="Loans" title="Loans" />
-                                            <h4 class="bold">602,000 USD</h4>
-                                            <h4 class="lighter">Loans</h4>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <img class="img-responsive" src="assets/images/st-4.png" alt="Investment" title="Investment" />
-                                            <h4 class="bold">2,000 USD</h4>
-                                            <h4 class="lighter">Investment</h4>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <img class="img-responsive" src="assets/images/st-5.png" alt="Deposits" title="Deposits"/>
-                                            <h4 class="bold">550,000 USD</h4>
-                                            <h4 class="lighter">Deposits</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="statistics-item tab-pane fade" id="year">
-                                    <div class="row">
-                                        <div class="col-sm-2">
-                                            <img class="img-responsive" src="assets/images/st-1.png" alt="Revenue" title="Revenue"/>
-                                            <h4 class="bold">290,000 USD</h4>
-                                            <h4 class="lighter">Revenue</h4>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <img class="img-responsive" src="assets/images/st-2.png" alt="Transactions" title="Transactions"/>
-                                            <h4 class="bold">130,000 USD</h4>
-                                            <h4 class="lighter">Transactions</h4>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <img class="img-responsive" src="assets/images/st-3.png" alt="Loans" title="Loans" />
-                                            <h4 class="bold">420,000 USD</h4>
-                                            <h4 class="lighter">Loans</h4>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <img class="img-responsive" src="assets/images/st-4.png" alt="Investment" title="Investment"/>
-                                            <h4 class="bold">324,000 USD</h4>
-                                            <h4 class="lighter">Investment</h4>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <img class="img-responsive" src="assets/images/st-5.png" alt="Deposits" title="Deposits"/>
-                                            <h4 class="bold">950,000 USD</h4>
-                                            <h4 class="lighter">Deposits</h4>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary dashboard-primary btn-md modal-close" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-info button-style icon-btn">Search</button>
                                         </div>
                                     </div>
                                 </div>
@@ -550,151 +459,82 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6 animated fadeInUp">
-                        <div class="col-content content-overflow">
-                            <h5 class="title">Calendar</h5>
-                            <div id='calendar' class="calendar-layout"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 animated fadeInUp">
-                        <div class="col-content content-overflow">
-                            <h5 class="title">Worldwide Annual Sales</h5>
-                            <br>
-                            <div id="container-index"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 activities animated fadeInUp">
-                        <div class="col-content static-height">
-                            <h5 class="title">Activities Log<a class="activities-year">2016</a></h5>
-                            <div class="activities-log">
-                                <div class="single-log-box">
-                                    <h5>Jan, 18 Wednesday <span class="flat-style"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;3:15 PM</span></h5>
-                                    <p>
-                                        Dipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </p>
-                                </div>
-                                <div class="single-log-box">
-                                    <h5>Feb, 6 Monday<span class="flat-style"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;6:10 PM</span></h5>
-                                    <p>
-                                        Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </p>
-                                </div>
-                                <div class="single-log-box">
-                                    <h5>Jun, 6 Tuesday<span class="flat-style"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;11:15 AM</span></h5>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </p>
-                                </div>
-                                <div class="single-log-box">
-                                    <h5>Jul, 6 Thursday<span class="flat-style"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;7:00 AM</span></h5>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                                    </p>
-                                </div>
-                                <div class="single-log-box">
-                                    <h5>Aug, 6 Sunday<span class="flat-style"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;4:15 PM</span></h5>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    </p>
+                    <div class="col-md-6">
+                        <div class="col-content">
+                            <h5 class="title">Data Modal</h5>
+                            <p>By using the <code>data-whatever</code>attribute you can send data from the button element to the input field in the modal.</p>
+                            <i class="fa fa-eye preview" data-toggle="modal" data-target="#data-modal" data-whatever="@mdo"></i>
+                            <img alt="Data Modal" src="assets/images/modals/top.svg" id="data" class="center-block img-border">
+                            <div class="modal fade" id="data-modal" tabindex="-1" role="dialog" aria-labelledby="data-modal-label">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4>Login</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc iaculis venenatis felis at venenatis. Sed eros neque, vestibulum sit amet.
+                                            <br>
+                                            <br>
+                                            <form>
+                                                <div class="form-group">
+                                                    <div class="input-field">
+                                                        <input id="email" type="email" class="validate">
+                                                        <label for="email" class="small-size" id="email-label">Email</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="input-field">
+                                                        <input id="password" type="password" class="validate">
+                                                        <label for="password" class="small-size" id="password-label">Password</label>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary dashboard-primary btn-md modal-close" data-dismiss="modal">Cancel</button>
+                                            <button type="button" class="btn btn-info button-style icon-btn">Login</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 animated fadeInUp">
-                        <div class="col-content static-height">
-                            <h5 class="title">To Do List<a class="add-task"><i class="fa fa-plus-circle" aria-hidden="true"></i></a></h5>
-                            <div class="to-do-list">
-                                <div class="single-to-do-box">
-                                    <div class="checkbox checkbox-success checkbox-inline">
-                                        <input type="checkbox" id="to-do-first-checkbox" value="option" checked="">
-                                        <label class="done-task" for="to-do-first-checkbox">Lorem ipsum dolor sit.. </label>
+                    <div class="col-md-6">
+                        <div class="col-content">
+                            <h5 class="title">Right Side Modal</h5>
+                            <p>Just add the class <code>.right</code> with the <code>.modal</code> class to have a right side modal.</p>
+                            <i class="fa fa-eye preview" data-toggle="modal" data-toggle="modal" data-target="#right-side-modal"></i>
+                            <img alt="Right side modal" src="assets/images/modals/right.svg" class="center-block img-border">
+                            <!-- Modal -->
+                            <div class="modal right fade" id="right-side-modal" tabindex="-1" role="dialog" aria-labelledby="right-side-modal-label">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="right-side-modal-label">Right Sidebar</h4>
+                                        </div>
+                                        <div class="modal-body custome-margin">
+                                            <p class="right-modal-content">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum. Lorem ipsum dolor sit amet.
+                                            </p>
+                                            <br>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <button type="button" class="btn btn-info center-block right-button">Action</button>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <button type="button" class="btn btn-primary center-block right-button">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
-                                    <h6>Today</h6>
+                                    <!-- modal-content -->
                                 </div>
-                                <div class="single-to-do-box">
-                                    <div class="checkbox checkbox-success checkbox-inline">
-                                        <input id="to-do-second-checkbox" type="checkbox">
-                                        <label for="to-do-second-checkbox">
-                                            Consectetur adipiscing elit..
-                                        </label>
-                                    </div>
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
-                                    <h6>Wednesday</h6>
-                                </div>
-                                <div class="single-to-do-box">
-                                    <div class="checkbox checkbox-success checkbox-inline">
-                                        <input id="to-do-third-checkbox" type="checkbox">
-                                        <label for="to-do-third-checkbox">
-                                            Consectetur adipiscing elit..
-                                        </label>
-                                    </div>
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
-                                    <h6>05 Oct</h6>
-                                </div>
-                                <div class="single-to-do-box">
-                                    <div class="checkbox checkbox-success checkbox-inline">
-                                        <input id="to-do-forth-checkbox" type="checkbox">
-                                        <label for="to-do-forth-checkbox">
-                                            Sit amet, consectetur adipiscing..
-                                        </label>
-                                    </div>
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
-                                    <h6>10 Oct</h6>
-                                </div>
-                                <div class="single-to-do-box">
-                                    <div class="checkbox checkbox-success checkbox-inline">
-                                        <input id="to-do-fifth-checkbox" type="checkbox">
-                                        <label for="to-do-fifth-checkbox">
-                                            Adipiscing elit consectetur ..
-                                        </label>
-                                    </div>
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
-                                    <h6>18 Oct</h6>
-                                </div>
-                                <div class="single-to-do-box">
-                                    <div class="checkbox checkbox-success checkbox-inline">
-                                        <input id="to-do-sixth-checkbox" type="checkbox">
-                                        <label for="to-do-sixth-checkbox">
-                                            Lorem ipsum dolor sit..
-                                        </label>
-                                    </div>
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
-                                    <h6>18 Oct</h6>
-                                </div>
-                                <div class="single-to-do-box">
-                                    <div class="checkbox checkbox-success checkbox-inline">
-                                        <input id="to-do-seventh-checkbox" type="checkbox">
-                                        <label for="to-do-seventh-checkbox">
-                                            Sit amet, consectetur..
-                                        </label>
-                                    </div>
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
-                                    <h6>18 Oct</h6>
-                                </div>
-                                <div class="single-to-do-box">
-                                    <div class="checkbox checkbox-success checkbox-inline">
-                                        <input id="to-do-eighth-checkbox" type="checkbox">
-                                        <label for="to-do-eighth-checkbox">
-                                            Consectetur adipiscing..
-                                        </label>
-                                    </div>
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
-                                    <h6>18 Oct</h6>
-                                </div>
-                                <div class="single-to-do-box">
-                                    <div class="checkbox checkbox-success checkbox-inline">
-                                        <input id="to-do-ninth-checkbox" type="checkbox">
-                                        <label for="to-do-ninth-checkbox">
-                                            Lorem ipsum dolor sit..
-                                        </label>
-                                    </div>
-                                    <i class="fa fa-trash" aria-hidden="true"></i>
-                                    <h6>18 Oct</h6>
-                                </div>
+                                <!-- modal-dialog -->
                             </div>
+                            <!-- modal -->
                         </div>
                     </div>
                 </div>
@@ -714,7 +554,6 @@
                 </div>
             </div>
         </div>
-        
         <div class="right-side-section-toggle" data-toggle="modal" data-toggle="modal" data-target="#colors-modal">
             <i class="fa fa-pencil-square-o"></i>
         </div>
@@ -726,6 +565,7 @@
                         <h5 class="modal-title" id="right-side-modal-label">Color Options</h5>
                     </div>
                     <div class="modal-body custome-margin">
+                        <br>
                         <div class="row">
                             <div class="col-md-12">
                                 <p>Color makes it different Customize and Preview your dashboard.</p>
@@ -850,89 +690,19 @@
             </div>
             <!-- modal-dialog -->
         </div>
-
-        <div class="modal right fade" id="add-event" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content add-event-modal">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel2">
-                            From: <label id="apptStartTime"></label><br>
-                            To:  <label id="apptEndTime"></label>
-                            <!-- hidden Items-->
-                            <label id="apptStartpost"></label><br>
-                            <label id="apptEndpost"></label>
-                            <!-- end hidden items -->
-                            </h4>
-                    </div>
-                    <div class="modal-body">
-                        <form id="createAppointmentForm" class="form-horizontal">
-                            <div class="control-group">
-                                <div class="controls">
-                                    <div class="input-field parent">
-                                        <input name="name" id="name" type="text" class="validate">
-                                        <label for="name"><i class="fa fa-calendar-o" aria-hidden="true"></i>Event Name</label>
-                                    </div>
-                                    <div class="input-field parent">
-                                        <input id="location" name="location" type="text" class="validate">
-                                        <label for="location"><i class="fa fa-map-marker" aria-hidden="true"></i>Location</label>
-                                    </div>
-                                    <div class="input-field parent">
-                                        <input name="Notes" id="notes" type="text" class="validate">
-                                        <label for="Notes"><i class="fa fa-sticky-note" aria-hidden="true"></i>Notes</label>
-                                    </div>
-                                    <select id="eventclassName" class="select-display selectpicker form-control empty select2-init-images">
-                                        <option value="default">Default Color</option>
-                                        <option value="worning">Warning</option>
-                                        <option value="info">Info</option>
-                                        <option value="success">Success</option>
-                                        <option value="important">Important</option>
-                                    </select>
-                                    <label id="apptAllDay"></label>
-                                </div>
-                            </div>
-                        </form>
-                        <button type="submit" id="submitButton" class="btn btn-info icon-btn btn-block">
-                            <span class="fa fa-plus"></span> Add Event</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
     </div>
     <!-- Page layout JS -->
-    <script type="text/javascript" src="assets/vendors/jquery/jquery-3.1.1.js"></script>
-    <!-- materialize framework -->
-    <script type="text/javascript" src="assets/vendors/materialize/materializeGlobal.js"></script>
-    <script type="text/javascript" src="assets/vendors/materialize/materializeForms.js"></script>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript" src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/js/main.js"></script>
-    <script type="text/javascript" src="assets/vendors/chart.js/chart.bundle.min.js"></script>
-    <script type="text/javascript" src="assets/js/notifications_boxs.js"></script>
-    <script type="text/javascript" src="assets/js/taps.js"></script>
-    <!-- Calendar JS -->
-    <script src="assets/vendors/calendar/lib/moment.min.js"></script>
-    <script src="assets/vendors/calendar/fullcalendar.min.js"></script>
-    <script src="assets/js/calendar.js"></script>
-    <!-- HighCharts -->
-    <script type="text/javascript" src="https://code.highcharts.com/highcharts.js"></script>
-    <!-- Map -->
-    <script type="text/javascript" src="assets/js/map.js"></script>
-    <script type="text/javascript" src="assets/vendors/highmaps/code/modules/map.js"></script>
-    <script type="text/javascript" src="assets/vendors/highmaps/code/modules/data.js"></script>
-    <script type="text/javascript" src="assets/vendors/highmaps/code/modules/exporting.js"></script>
-    <script type="text/javascript" src="assets/vendors/highmaps/code/custom/world.js"></script>
-    <script type="text/javascript" src="assets/js/right-side-colors-picker.js"></script>
-    <!--Dynamic colors-->
+    <script src="assets/vendors/jquery/jquery-3.1.1.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/notifications_boxs.js"></script>
+    <!-- Modal page JS -->
+    <script src="assets/js/modal.js"></script>
+    <!-- Dynamic colors JS -->
     <script type="text/javascript" src="assets/js/nav_colors_change.js"></script>
     <script type="text/javascript" src="assets/js/right-side-colors-picker.js"></script>
     <script type="text/javascript" src="assets/js/page-ready-theam.js"></script>
     <link id="default-color-picker" rel="stylesheet" />
-    <!-- Select2 dropdown JS -->
-    <script type="text/javascript" src="assets/vendors/select2/js/select2.min.js"></script>
-    <!-- Index page JS -->
-    <script type="text/javascript" src="assets/js/index.js"></script>
 </body>
 
 </html>

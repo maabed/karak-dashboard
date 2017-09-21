@@ -2,14 +2,26 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-includes');
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
+    includes: {
+      files: {
+        src: ['*.html'], // Source files
+        dest: './', // Destination directory
+        flatten: true,
+        cwd: 'src' // DIRECTORY FOR COMPILED FILES OR CURRENT WORKING DIRECTORY
+      }
+    },
     sass: {
       dist: {
+        options: {
+          style: 'expanded'
+        },
         files: {
-          'assets/css/scss_converted.css': 'assets/scss/imports.scss'
+          'assets/css/style.css': 'assets/scss/imports.scss'
         }
       }
     },
@@ -19,7 +31,7 @@ module.exports = function(grunt) {
           paths: ['assets/less']
         },
         files: {
-          'assets/css/less_converted.css': 'assets/less/imports.less'
+          'assets/css/style.css': 'assets/less/imports.less'
         }
       }
     },
@@ -28,6 +40,20 @@ module.exports = function(grunt) {
         files:['assets/less/**/*.less'],
         tasks:['less']
       },
+      sass:{
+        files:['assets/scss/**/*.scss'],
+        tasks:['sass']
+      },
+      includes: {
+        files: ['src/**/*.html'],
+        tasks: ['includes']
+      },
     }
   });
+
+  // Default task(s) to RUN on "GRUNT" COMMAND
+  grunt.registerTask('default', ['includes', 'sass', 'watch']);
+
+  grunt.registerTask('lesscss', ['includes', 'less', 'watch']);
+
 };
