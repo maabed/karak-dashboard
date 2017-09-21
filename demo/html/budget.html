@@ -2,24 +2,28 @@
 <html lang="en">
 
 <head>
+    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
-    <meta name="description" content="Special Dashboard for small, medium and large webapp with very clean and aesthetic style and feel">
-    <meta name="author" content="newrelease.io">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
     <title>Karak dashboard | Budget</title>
     
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <!-- Fonts -->
     <link type="text/css" href="assets/vendors/google-fonts/google-fonts.css" rel="stylesheet">
-    <!-- Bootstrap core CSS-->
+    <!-- Bootstrap Core CSS -->
     <link type="text/css" href="assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome library -->
     <link type="text/css" href="assets/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+
     <!-- Loading animation -->
     <link type="text/css" rel="stylesheet" href="assets/vendors/animatecss/animate.min.css" />
     <!-- DatePickers -->
-    <link type="text/css" rel="stylesheet" type="text/css" href="assets/vendors/datepickers/daterangepicker.css" />
-    <link type="text/css" rel="stylesheet" type="text/css" href="assets/vendors/air-datepicker/css/datepicker.min.css">
+    <link type="text/css" rel="stylesheet" href="assets/vendors/datepickers/daterangepicker.css" />
+    <link type="text/css" rel="stylesheet" href="assets/vendors/air-datepicker/css/datepicker.min.css">
     <!-- Select2 dropdown-->
     <link type="text/css" rel="stylesheet" href="assets/vendors/select2/css/select2.min.css">
     <!-- Karak dashboard forms element -->
@@ -32,8 +36,6 @@
     <link rel="icon" sizes="96x96" type="image/png" href="assets/images/logo/favicons/favicon-96x96.png">
     <link rel="icon" sizes="128x128" type="image/png" href="assets/images/logo/favicons/favicon-128x128.png">
     <link rel="icon" sizes="256x256" type="image/png" href="assets/images/logo/favicons/favicon-256x256.png">
-    
-
     <link rel="apple-touch-icon" sizes="57x57" href="assets/images/logo/favicons/apple-touch-icon-57x57.png?v=3">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/images/logo/favicons/apple-touch-icon-60x60.png?v=3">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/images/logo/favicons/apple-touch-icon-72x72.png?v=3">
@@ -51,7 +53,7 @@
         <div class="sidebar-wrapper">
             <div class="sidebar-brand" id="company-name">
                 <a href="index.html">
-                    <img src="assets/images/logo.png" class="center-block">
+                    <img src="assets/images/logo.png" class="center-block" alt="Karak Dashboard" title="Karak Dashboard">
                 </a>
             </div>
             <ul class="sidebar">
@@ -267,9 +269,11 @@
         <!-- /#sidebar-wrapper -->
         <!-- Page Content -->
         <div class="page-content-wrapper">
-            <div class="main-dashboard-header hide-on-print" id="head">
+            
+            <!-- header -->
+            <div class="main-dashboard-header" id="head">
                 <div class="container-fluid header-container">
-                    <i href="#menu-toggle" id="menu-toggle" class="fa fa-bars menu-toggle" aria-hidden="true"></i>
+                    <a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars menu-toggle" aria-hidden="true"></i></a>
                     <div class="form-group">
                         <div class="icon-addon addon-md">
                             <input type="text" placeholder="Type anywhere to search" class="form-control main-dashboard-search search-text-box">
@@ -291,9 +295,9 @@
                         </div>
                         <div id="user-box" class="user-box right-side-items">
                             <p> Mr.Sami<i class="fa fa-angle-down" aria-hidden="true"></i></p>
-                            <img src="assets/images/user_01_36.jpg" />
+                            <img src="assets/images/user_01_36.jpg" alt="Mr.Sami" title="Mr.Sami"/>
                         </div>
-                    </div>
+                    </div> 
                 </div>
                 <div class="notifecations-box">
                     <div class="arrow-up"></div>
@@ -316,10 +320,10 @@
                 </div>
                 <div class="messages-box">
                     <div class="arrow-up"></div>
-                    <h5>Messages <a class="send-message-link"href="#">Send New Message</a></h5>
+                    <h5>Messages <a class="send-message-link" href="#">Send New Message</a></h5>
                     <div class="single-content-row">
                         <a href="#">
-                            <img alt="user name" alt="user name" src="assets/images/user_02_54.jpg" />
+                            <img alt="user name" src="assets/images/user_02_54.jpg" />
                             <p><b>Layla smith</b>
                                 <br /> Job offer</p>
                         </a>
@@ -374,6 +378,8 @@
                     </a>
                 </div>
             </div>
+            <!--/header-->
+
             <div class="container-fluid buget-page">
                 <div class="row animated fadeInUp hide-on-print">
                     <div class="col-lg-12">
@@ -389,28 +395,28 @@
                 <div class="row hide-on-print">
                     <div class="col-md-3 animated fadeInUp">
                         <div class="col-content all-income">
-                            <h1><i class="fa fa-line-chart"aria-hidden="true"></i></h1>
+                            <h1><i class="fa fa-line-chart" aria-hidden="true"></i></h1>
                             <h2>$1 250, 33</h2>
                             <h3>Income</h3>
                         </div>
                     </div>
                     <div class="col-md-3 animated fadeInUp">
                         <div class="col-content all-income">
-                            <h1><i class="fa fa-area-chart"aria-hidden="true"></i></h1>
+                            <h1><i class="fa fa-area-chart" aria-hidden="true"></i></h1>
                             <h2>$4 203, 03</h2>
                             <h3>Revenue</h3>
                         </div>
                     </div>
                     <div class="col-md-3 animated fadeInUp">
                         <div class="col-content all-income">
-                            <h1><i class="fa fa-bar-chart"aria-hidden="true"></i></h1>
+                            <h1><i class="fa fa-bar-chart" aria-hidden="true"></i></h1>
                             <h2>$1 650, 22</h2>
                             <h3>Assets</h3>
                         </div>
                     </div>
                     <div class="col-md-3 animated fadeInUp">
                         <div class="col-content all-income">
-                            <h1><i class="fa fa-pie-chart"aria-hidden="true"></i></h1>
+                            <h1><i class="fa fa-pie-chart" aria-hidden="true"></i></h1>
                             <h2>$2 130, 00</h2>
                             <h3>Investment</h3>
                         </div>
@@ -420,14 +426,14 @@
                     <div class="col-md-3 animated fadeInUp">
                         <div class="col-content account-personal-info">
                             <h5 class="title">Personal Information</h5>
-                            <img src="assets/images/user_01_120.jpg" class="img-responsive">
+                            <img src="assets/images/user_01_120.jpg" class="img-responsive" alt="user" title="user">
                             <h4>Mr.Mohammad Meshaal</h4>
                             <div class="user-account-info">
-                                <span><i class="fa fa-id-card"aria-hidden="true"></i><label>99 2344 3456 343</label></span>
+                                <span><i class="fa fa-id-card" aria-hidden="true"></i><label>99 2344 3456 343</label></span>
                                 <br>
-                                <span><i class="fa fa-user-circle-o"aria-hidden="true"></i><label>Checking account</label></span>
+                                <span><i class="fa fa-user-circle-o" aria-hidden="true"></i><label>Checking account</label></span>
                                 <br>
-                                <span><i class="fa fa-table"aria-hidden="true"></i><label>27 Nov, wednesday</label></span>
+                                <span><i class="fa fa-table" aria-hidden="true"></i><label>27 Nov, wednesday</label></span>
                             </div>
                             <label class="change-account-select">Change Account:</label>
                             <select class="select-style select2-init-single" name="change-acc">
@@ -454,7 +460,7 @@
                         <div class="col-md-12 no-left-right-padding">
                             <div class="col-content">
                                 <h5 class="title">Transaction</h5>
-                                <form id="translateform" class="translateform" method="post" action="">
+                                <form id="translateform" class="translateform" method="post" action="/">
                                     <div class="row top-margin">
                                         <div class="col-sm-6">
                                             <div class="form-group transaction-drop">
@@ -479,7 +485,7 @@
                                             <div class="form-group">
                                                 <div class="input-field col-val">
                                                     <input type="text" onkeypress="return isNumber(event)" required id="amount" name="amount">
-                                                    <label for="transfer">Transfer Amount</label>
+                                                    <label for="amount">Transfer Amount</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -519,6 +525,7 @@
                         <div class="col-content dataTables_wrapper">
                             <h5 class="title">Reports</h5>
                             <select class="select-style select-custom select2-init-single" name="reports" required>
+                                <option value="">Select</option>
                                 <option value="Transactions Report">Transactions Report</option>
                                 <option value="99 2344 3456 343">Deposits Report</option>
                                 <option value="98 3443 6456 241">withdraw Report</option>
@@ -625,23 +632,23 @@
                         </div>
                     </div>
                 </div>
-                <div class="container-fixed-lg footer hide-on-print">
+                <div class="container-fixed-lg footer">
                     <div class="copyright sm-text-center">
                         <p class="small no-margin pull-left sm-pull-reset">
-                            <span class="hint-text">Copyright © 2017 </span>
+                            <span class="hint-text">Copyright &copy; 2017 </span>
                             <span class="font-montserrat"><b>New Release</b></span>.
                             <span class="hint-text">All rights reserved. </span>
-                            <span class="sm-block"><a href="#"class="m-l-10 m-r-10">Terms of use</a> | <a href="#"class="m-l-10">Privacy Policy</a></span>
+                            <span class="sm-block"><a href="#" class="m-l-10 m-r-10">Terms of use</a> | <a href="#" class="m-l-10">Privacy Policy</a></span>
                         </p>
-                        <p class="small no-margin pull-right sm-pull-reset">
-                            <h6 class="made-by">Made By  <b>New Release</b></h6>
-                        </p>
+                        <h6 class="small no-margin pull-right sm-pull-reset">
+                            <span class="made-by">Made By  <b>New Release</b></span>
+                        </h6>
                         <div class="clearfix"></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="right-side-section-toggle" data-toggle="modal" data-toggle="modal" data-target="#colors-modal">
+        <div class="right-side-section-toggle" data-toggle="modal" data-target="#colors-modal">
             <i class="fa fa-pencil-square-o"></i>
         </div>
         <div class="modal right fade colors-modal" id="colors-modal" tabindex="-1" role="dialog" aria-labelledby="right-side-modal-label">
@@ -779,7 +786,7 @@
     </div>
     <!-- /#page-content-wrapper -->
     <!-- /#wrapper -->
-    </div>
+
     <!-- Page layout JS -->
     <script type="text/javascript" src="assets/vendors/jquery/jquery-3.1.1.js"></script>
     <!-- Materialze JS library -->
@@ -795,7 +802,7 @@
     <script type="text/javascript" src="assets/js/nav_colors_change.js"></script>
     <script type="text/javascript" src="assets/js/right-side-colors-picker.js"></script>
     <script type="text/javascript" src="assets/js/page-ready-theam.js"></script>
-    <link id="default-color-picker" rel="stylesheet" />
+    <!--<link id="default-color-picker" rel="stylesheet" />-->
     <!-- Datepickers JS -->
     <script type="text/javascript" src="assets/vendors/air-datepicker/js/datepicker.min.js"></script>
     <script type="text/javascript" src="assets/vendors/air-datepicker/js/datepicker.en.js"></script>
