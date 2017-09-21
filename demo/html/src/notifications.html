@@ -2,19 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    
+    include "partials/head-meta.html"
+    
     <title>Karak dashboard | Notifications</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <!-- Fonts -->
-    <link type="text/css" href="assets/vendors/google-fonts/google-fonts.css" rel="stylesheet">
-    <!-- Bootstrap Core CSS -->
-    <link type="text/css" href="assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome library -->
-    <link type="text/css" href="assets/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    
+    include "partials/head-common-css.html"
+    
     <!-- UI CSS file -->
     <link type="text/css" href="assets/css/ui.css" rel="stylesheet">
     <!-- Toastr alert CSS -->
@@ -26,24 +20,7 @@
     <!-- Forms CSS -->
     <link type="text/css" rel="stylesheet" href="assets/css/style.css">
 
-    <link rel="manifest" href="/manifest.json">
-    <link type="image/x-icon" rel="shortcut icon" href="favicon.ico" />
-    <link rel="icon" sizes="any" type="image/svg+xml" href="assets/images/logo/favicons/icon.svg">
-    <link rel="icon" sizes="64x64" type="image/png" href="assets/images/logo/favicons/favicon-64x64.png">
-    <link rel="icon" sizes="96x96" type="image/png" href="assets/images/logo/favicons/favicon-96x96.png">
-    <link rel="icon" sizes="128x128" type="image/png" href="assets/images/logo/favicons/favicon-128x128.png">
-    <link rel="icon" sizes="256x256" type="image/png" href="assets/images/logo/favicons/favicon-256x256.png">
-    
-
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/logo/favicons/apple-touch-icon-57x57.png?v=3">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/logo/favicons/apple-touch-icon-60x60.png?v=3">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/logo/favicons/apple-touch-icon-72x72.png?v=3">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/logo/favicons/apple-touch-icon-76x76.png?v=3">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/logo/favicons/apple-touch-icon-114x114.png?v=3">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/logo/favicons/apple-touch-icon-120x120.png?v=3">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/logo/favicons/apple-touch-icon-144x144.png?v=3">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/logo/favicons/apple-touch-icon-152x152.png?v=3">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/logo/favicons/apple-touch-icon-180x180.png?v=3">
+    include "partials/head-icons.html"
 </head>
 
 <body>
@@ -52,7 +29,7 @@
         <div class="sidebar-wrapper">
             <div class="sidebar-brand" id="company-name">
                 <a href="index.html">
-                    <img src="assets/images/logo.png" class="center-block">
+                    <img src="assets/images/logo.png" class="center-block" alt="Karak Dashboard" title="Karak Dashboard">
                 </a>
             </div>
             <ul class="sidebar">
@@ -268,115 +245,9 @@
         <!-- /#sidebar-wrapper -->
         <!-- Page Content -->
         <div class="page-content-wrapper">
-            <!-- header -->
-            <div class="main-dashboard-header" id="head">
-                <div class="container-fluid header-container">
-                    <i href="#menu-toggle" id="menu-toggle" class="fa fa-bars menu-toggle" aria-hidden="true"></i>
-                    <div class="form-group">
-                        <div class="icon-addon addon-md">
-                            <input type="text" placeholder="Type anywhere to search" class="form-control main-dashboard-search search-text-box">
-                            <i class="fa fa-search glyphicon glyphicon-search" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <div class="right-side-head">
-                        <div class="right-side-items notifecations">
-                            <button id="notifications" class="notifications btn btn-default btn-lg btn-link">
-                                <i class="fa fa-bell-o" aria-hidden="true"></i>
-                            </button>
-                            <span id="not-badg" class="badge badge-notify">2</span>
-                        </div>
-                        <div class="right-side-items email">
-                            <button id="messages" class="messages btn btn-default btn-lg btn-link">
-                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                            </button>
-                            <span id="message-badg" class="badge badge-notify">4</span>
-                        </div>
-                        <div id="user-box" class="user-box right-side-items">
-                            <p> Mr.Sami<i class="fa fa-angle-down" aria-hidden="true"></i></p>
-                            <img src="assets/images/user_01_36.jpg" />
-                        </div>
-                    </div>
-                </div>
-                <div class="notifecations-box">
-                    <div class="arrow-up"></div>
-                    <h5>Notifications</h5>
-                    <div class="single-content-row">
-                        <a href="#">
-                            <img alt="user name" src="assets/images/user_01_54.jpg" />
-                            <p><b>Mohammad Meshaal</b>wants your confirmation on his Leave Request on 12 Mar 2017</p>
-                        </a>
-                    </div>
-                    <div class="single-content-row">
-                        <a href="#">
-                            <img alt="user name" src="assets/images/user_04_54.jpg" />
-                            <p><b>Nasir ahmad</b>sent a payment on 11 Mar 2017</p>
-                        </a>
-                    </div>
-                    <div class="veiw-all-not">
-                        <a href="#">View All</a>
-                    </div>
-                </div>
-                <div class="messages-box">
-                    <div class="arrow-up"></div>
-                    <h5>Messages <a class="send-message-link" href="#">Send New Message</a></h5>
-                    <div class="single-content-row">
-                        <a href="#">
-                            <img alt="user name" alt="user name" src="assets/images/user_02_54.jpg" />
-                            <p><b>Layla smith</b>
-                                <br /> Job offer</p>
-                        </a>
-                    </div>
-                    <div class="single-content-row">
-                        <a href="#">
-                            <img alt="user name" src="assets/images/user_01_54.jpg" />
-                            <p><b>Mohammad Meshaal</b>
-                                <br />Please send me the work templates</p>
-                        </a>
-                    </div>
-                    <div class="single-content-row">
-                        <a href="#">
-                            <img alt="user name" src="assets/images/user_03_54.jpg" />
-                            <p><b>Dana khalid</b>
-                                <br />Do you wanna hang out today?</p>
-                        </a>
-                    </div>
-                    <div class="single-content-row">
-                        <a href="#">
-                            <img alt="user name" src="assets/images/user_04_54.jpg" />
-                            <p><b>Nasir ahmad</b>
-                                <br />Are we going to the match today?</p>
-                        </a>
-                    </div>
-                    <div class="veiw-all-not">
-                        <a href="#">View All</a>
-                    </div>
-                </div>
-                <div class="user-info-box">
-                    <div class="arrow-up"></div>
-                    <a href="#">
-                        <div class="user-info-content">
-                            <i class="fa fa-user" aria-hidden="true"></i> Proﬁle
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="user-info-content">
-                            <i class="fa fa-cog" aria-hidden="true"></i> Settings
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="user-info-content">
-                            <i class="fa fa-info-circle" aria-hidden="true"></i> Help
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="user-info-content logout">
-                            Log Out
-                            <i class="fa fa-sign-out" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <!--/header-->
+            
+            include "partials/header.html"
+            
             <div class="container-fluid notifications-page">
                 <div class="row">
                     <div class="col-md-12">
@@ -392,7 +263,7 @@
                         <div class="col-content notifications-style">
                             <h5 class="title"> Sweet alerts </h5>
                             <p class="header-text">To use the sweet alerts all you have to do is initializing the desired style using <a href="" class="doc-popover" data-trigger="focus" data-toggle="popover" data-content="test">Javascript</a>.</p>
-                            <img class="img-border" src="assets/images/notifications/sweet-01.png">
+                            <img class="img-border" src="assets/images/notifications/sweet-01.png" alt="Sweet alerts" title="Sweet alerts">
                             <br>
                             <br>
                             <label class="small-label">Select type:</label>
@@ -433,7 +304,7 @@
                             <h5 class="title"> Top Left </h5>
                             <p>Just use <code>#left</code> inside the button you want to use to have a top left alert</p>
                             <i id="left" class="fa fa-eye preview"></i>
-                            <img class="img-border" src="assets/images/iconsPdf-01.svg">
+                            <img class="img-border" src="assets/images/iconsPdf-01.svg" alt="Top Left" title="Top Left">
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -441,7 +312,7 @@
                             <h5 class="title"> Top Right </h5>
                             <p>Just use <code>#right</code> inside the button you want to use to have a top right alert</p>
                             <i id="right" class="fa fa-eye preview"></i>
-                            <img class="img-border" src="assets/images/iconsPdf-02.svg">
+                            <img class="img-border" src="assets/images/iconsPdf-02.svg" alt="Top Right" title="Top Right">
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -449,7 +320,7 @@
                             <h5 class="title"> Top Center </h5>
                             <p>Just use <code>#center</code> inside the button you want to use to have a top center alert</p>
                             <i id="center" class="fa fa-eye preview"></i>
-                            <img class="img-border" src="assets/images/top_center.svg">
+                            <img class="img-border" src="assets/images/top_center.svg" alt="Top Center" title="Top Center">
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -457,7 +328,7 @@
                             <h5 class="title"> Top Full </h5>
                             <p>Just use <code>#full</code> inside the button you want to use to have a full top alert</p>
                             <i id="full" class="fa fa-eye preview"></i>
-                            <img class="img-border" src="assets/images/top_full.svg">
+                            <img class="img-border" src="assets/images/top_full.svg" alt="Top Full" title="Top Full">
                         </div>
                     </div>
                 </div>
@@ -467,7 +338,7 @@
                             <h5 class="title"> Bottom Left </h5>
                             <p>Just use <code>#bottom-left</code> inside the button you want to use to have a bottom left alert</p>
                             <i id="bottom-left" class="fa fa-eye preview"></i>
-                            <img class="img-border" src="assets/images/iconsPdf-03.svg">
+                            <img class="img-border" src="assets/images/iconsPdf-03.svg" alt="Bottom Left" title="Bottom Left">
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -475,7 +346,7 @@
                             <h5 class="title"> Bottom Right </h5>
                             <p>Just use <code>#bottom-right</code> inside the button you want to use to have a bottom right alert</p>
                             <i id="bottom-right" class="fa fa-eye preview"></i>
-                            <img class="img-border" src="assets/images/iconsPdf-04.svg">
+                            <img class="img-border" src="assets/images/iconsPdf-04.svg" alt="Bottom Right" title="Bottom Right">
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -483,7 +354,7 @@
                             <h5 class="title"> Bottom Center </h5>
                             <p>Just use <code>#bottom-center</code> inside the button you want to use to have a bottom center alert</p>
                             <i id="bottom-center" class="fa fa-eye preview"></i>
-                            <img class="img-border" src="assets/images/bottom_center.svg">
+                            <img class="img-border" src="assets/images/bottom_center.svg" alt="Bottom Center" title="Bottom Center">
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -491,7 +362,7 @@
                             <h5 class="title"> Bottom Full </h5>
                             <p>Just use <code>#bottom-full</code> inside the button you want to use to have a bottom full alert</p>
                             <i id="bottom-full" class="fa fa-eye preview"></i>
-                            <img class="img-border" src="assets/images/bottom_full.svg">
+                            <img class="img-border" src="assets/images/bottom_full.svg" alt="Bottom Full" title="Bottom Full">
                         </div>
                     </div>
                 </div>
@@ -543,159 +414,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="container-fixed-lg footer">
-                    <div class="copyright sm-text-center">
-                        <p class="small no-margin pull-left sm-pull-reset">
-                            <span class="hint-text">Copyright © 2017 </span>
-                            <span class="font-montserrat"><b>New Release</b></span>.
-                            <span class="hint-text">All rights reserved. </span>
-                            <span class="sm-block"><a href="#" class="m-l-10 m-r-10">Terms of use</a> | <a href="#" class="m-l-10">Privacy Policy</a></span>
-                        </p>
-                        <p class="small no-margin pull-right sm-pull-reset">
-                            <h6 class="made-by">Made By  <b>New Release</b></h6>
-                        </p>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
+                include "partials/footer.html"
             </div>
             <!-- /#page-content-wrapper -->
         </div>
         <!-- /#wrapper -->
-        <div class="right-side-section-toggle" data-toggle="modal" data-toggle="modal" data-target="#colors-modal">
-            <i class="fa fa-pencil-square-o"></i>
-        </div>
-        <div class="modal right fade colors-modal" id="colors-modal" tabindex="-1" role="dialog" aria-labelledby="right-side-modal-label">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h5 class="modal-title" id="right-side-modal-label">Color Options</h5>
-                    </div>
-                    <div class="modal-body custome-margin">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <p>Color makes it different Customize and Preview your dashboard.</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h5 class="title">Recommended</h5>
-                            </div>
-                        </div>
-                        <div class="row p-15">
-                            <div class="col-md-6 single-menue-color-box no-padding-righ">
-                                <div id="default-color-btn" class="single-menue-color pointer-hover">
-                                    <div class="col-sm-12 default-menue-color">
-                                        <p>
-                                            Header
-                                            <br /> #3b97d2
-                                        </p>
-                                        <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
-                                    </div>
-                                    <div class="col-sm-12 simple-border">
-                                        <p>
-                                            Sidebar Nav
-                                            <br /> #fffff
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 single-menue-color-box no-padding-righ">
-                                <div id="orang-color-btn" class="single-menue-color pointer-hover">
-                                    <div class="col-sm-12 orange-menue-color">
-                                        <p>
-                                            Header
-                                            <br /> #f5d34b
-                                        </p>
-                                        <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
-                                    </div>
-                                    <div class="col-sm-12 simple-border">
-                                        <p>
-                                            Sidebar Nav
-                                            <br /> #ffffff
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row p-15">
-                                <div class="col-md-6 single-menue-color-box no-padding-righ">
-                                    <div id="dark2-color-btn" class="single-menue-color pointer-hover">
-                                        <div class="col-sm-12 dark-menue-color2">
-                                            <p>
-                                                Header
-                                                <br /> #262930
-                                            </p>
-                                            <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="col-sm-12 dark-nav-color2">
-                                            <p>
-                                                Sidebar Nav
-                                                <br /> #2a2e35
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 single-menue-color-box no-padding-righ">
-                                    <div id="dark1-color-btn" class="single-menue-color pointer-hover">
-                                        <div class="col-sm-12 dark-menue-color">
-                                            <p>
-                                                Header
-                                                <br /> #2b3643
-                                            </p>
-                                            <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="col-sm-12 dark-nav-color">
-                                            <p>
-                                                Sidebar Nav
-                                                <br /> #364150
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row p-15">
-                                <div class="col-md-6 single-menue-color-box no-padding-righ">
-                                    <div id="whit-color-btn" class="single-menue-color pointer-hover">
-                                        <div class="col-sm-12 simple-border wight-head">
-                                            <p>
-                                                Header
-                                                <br /> #ffffff
-                                            </p>
-                                            <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="col-sm-12 simple-border wight-head">
-                                            <p>
-                                                Sidebar Nav
-                                                <br /> #ffffff
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 single-menue-color-box no-padding-righ">
-                                    <div id="green-color-btn" class="single-menue-color pointer-hover">
-                                        <div class="col-sm-12 green-menue-color">
-                                            <p>
-                                                Header
-                                                <br /> #62d995
-                                            </p>
-                                            <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="col-sm-12 simple-border">
-                                            <p>
-                                                Sidebar Nav
-                                                <br /> #ffffff
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- modal-content -->
-            </div>
-            <!-- modal-dialog -->
-        </div>
+        include "partials/color-modal.html"
     </div>
     <!-- Page layout JS -->
     <script type="text/javascript" src="assets/vendors/jquery/jquery-3.1.1.js"></script>
@@ -710,11 +434,7 @@
     <script type="text/javascript" src="assets/vendors/select2/js/select2.min.js"></script>
     <!-- Notifications page JS -->
     <script type="text/javascript" src="assets/js/notifications.js"></script>
-    <!-- Dynamic colors JS -->
-    <script type="text/javascript" src="assets/js/nav_colors_change.js"></script>
-    <script type="text/javascript" src="assets/js/right-side-colors-picker.js"></script>
-    <script type="text/javascript" src="assets/js/page-ready-theam.js"></script>
-    <link id="default-color-picker" rel="stylesheet" />
+    include "partials/foot-color-js.html"
 </body>
 
 </html>
