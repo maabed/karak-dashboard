@@ -16,9 +16,9 @@
     <!-- Dropzone library -->
     <link type="text/css" rel="stylesheet" href="assets/vendors/drop-zone/dropzone.css">
     <!-- DatePickers -->
-    <link type="text/css" rel="stylesheet" type="text/css" href="assets/vendors/datepickers/daterangepicker.css" />
-    <link type="text/css" rel="stylesheet" type="text/css" href="assets/vendors/air-datepicker/css/datepicker.min.css">
-    <link type="text/css" rel="stylesheet" type="text/css" href="assets/vendors/clockpicker/bootstrap-clockpicker.min.css">
+    <link type="text/css" rel="stylesheet" href="assets/vendors/datepickers/daterangepicker.css" />
+    <link type="text/css" rel="stylesheet" href="assets/vendors/air-datepicker/css/datepicker.min.css">
+    <link type="text/css" rel="stylesheet" href="assets/vendors/clockpicker/bootstrap-clockpicker.min.css">
     <!-- Ranges sliders library -->
     <link type="text/css" rel="stylesheet" href="assets/vendors/ion-slider/css/ion.rangeSlider.css">
     <link type="text/css" rel="stylesheet" href="assets/vendors/ion-slider/css/ion.rangeSlider.skinNice.css">
@@ -36,7 +36,7 @@
         <div class="sidebar-wrapper">
             <div class="sidebar-brand" id="company-name">
                 <a href="index.html">
-                    <img src="assets/images/logo.png" class="center-block">
+                    <img src="assets/images/logo.png" class="center-block" alt="Karak Dashboard" title="Karak Dashboard">
                 </a>
             </div>
             <ul class="sidebar">
@@ -357,7 +357,7 @@
                                 <div class="row form-group group-content">
                                     <div class="col-sm-6">
                                         <div class="input-field parent">
-                                            <i class="material-icons prefix"><i class="fa fa-user"aria-hidden="true"></i>
+                                            <i class="material-icons prefix"><i class="fa fa-user" aria-hidden="true"></i>
                                             </i>
                                             <input id="user_prefix" name="email" type="text" class="validate user_prefix">
                                             <label for="user_prefix" class="user_prefix">Username</label>
@@ -365,7 +365,7 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="input-field parent">
-                                            <i class="material-icons prefix"><i class="fa fa-lock"aria-hidden="true"></i>
+                                            <i class="material-icons prefix"><i class="fa fa-lock" aria-hidden="true"></i>
                                             </i>
                                             <input id="pass_prefix" name="password" type="password" class="validate">
                                             <label for="pass_prefix">Password</label>
@@ -490,7 +490,6 @@
                                     <label class="input-label">Multiple select boxes</label>
                                     <select class="select2-init-multiple" multiple="multiple">
                                         <option value="AL">Alabama</option>
-                                        ...
                                         <option value="WY">Wyoming</option>
                                     </select>
                                 </div>
@@ -577,21 +576,21 @@
                                         <p class="header-text">To use the yes-no checkbox you need to wrap the <code>input</code> with <code>.yes-no-check</code> class and give the checkbox field a unique id to be initialized in the <a href="" class="doc-popover" data-trigger="focus" data-toggle="popover" data-content="test">Javascript</a>.</p>
                                         <div class="row">
                                             <div class="col-sm-1.1  yes-no-check">
-                                                <input id="toggleCheckbox-yes-green" title="Example title" data-group-cls="btn-group-xs" checked="">
+                                                <input type="checkbox" id="toggleCheckbox-yes-green" title="Example title" data-group-cls="btn-group-xs" checked="">
                                             </div>
                                             <div class="col-sm-1.1 yes-no-check">
-                                                <input id="toggleCheckbox-yes-primary" title="Example title" data-reverse data-group-cls="btn-group-xs" data-on-active-cls="btn-primary" checked="">
+                                                <input type="checkbox" id="toggleCheckbox-yes-primary" title="Example title" data-reverse data-group-cls="btn-group-xs" data-on-active-cls="btn-primary" checked="">
                                             </div>
                                             <div class="col-sm-1.1 yes-no-check">
-                                                <input id="toggleCheckbox-yes-yellow" data-group-cls="btn-group-xs" checked data-on-active-cls="btn-warning">
+                                                <input type="checkbox" id="toggleCheckbox-yes-yellow" data-group-cls="btn-group-xs" checked data-on-active-cls="btn-warning">
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-sm-1.1 yes-no-check">
-                                                <input id="toggleCheckbox-yes-big" data-off-icon-cls="glyphicon-thumbs-down" data-on-icon-cls="glyphicon-thumbs-up" data-group-cls="btn-group-ms" checked="">
+                                                <input type="checkbox" id="toggleCheckbox-yes-big" data-off-icon-cls="glyphicon-thumbs-down" data-on-icon-cls="glyphicon-thumbs-up" data-group-cls="btn-group-ms" checked="">
                                             </div>
                                             <div class="col-sm-1.1 yes-no-check">
-                                                <input id="toggleCheckbox-like" data-off-label="false" data-on-label="false" data-off-icon-cls="glyphicon-thumbs-down" data-on-icon-cls="glyphicon-thumbs-up" data-group-cls="btn-group-xs">
+                                                <input type="checkbox" id="toggleCheckbox-like" data-off-label="false" data-on-label="false" data-off-icon-cls="glyphicon-thumbs-down" data-on-icon-cls="glyphicon-thumbs-up" data-group-cls="btn-group-xs">
                                             </div>
                                         </div>
                                     </form>
@@ -735,16 +734,16 @@
     <link href="assets/vendors/summernote/summernote.css" rel="stylesheet">
     <script type="text/javascript" src="assets/vendors/summernote/summernote.js"></script>
     <!-- datepicker scripts -->
-    <script type="text/javascript" type="text/javascript" src="assets/vendors/datepickers/daterangepicker.js"></script>
-    <script type="text/javascript" type="text/javascript" src="assets/vendors/air-datepicker/js/datepicker.min.js"></script>
-    <script type="text/javascript" type="text/javascript" src="assets/vendors/air-datepicker/js/datepicker.en.js"></script>
-    <script type="text/javascript" type="text/javascript" src="assets/vendors/clockpicker/bootstrap-clockpicker.min.js"></script>
+    <script type="text/javascript" src="assets/vendors/datepickers/daterangepicker.js"></script>
+    <script type="text/javascript" src="assets/vendors/air-datepicker/js/datepicker.min.js"></script>
+    <script type="text/javascript" src="assets/vendors/air-datepicker/js/datepicker.en.js"></script>
+    <script type="text/javascript" src="assets/vendors/clockpicker/bootstrap-clockpicker.min.js"></script>
     <!-- Ranges sliders library -->
     <script type="text/javascript" src="assets/vendors/ion-slider/js/ion.rangeSlider.min.js"></script>
     <!-- Dynamic colors JS -->
     <script type="text/javascript" src="assets/js/right-side-colors-picker.js"></script>
     <script type="text/javascript" src="assets/js/page-ready-theam.js"></script>
-    <link id="default-color-picker" rel="stylesheet" />
+    <!--<link id="default-color-picker" rel="stylesheet" />-->
     <!-- Forms page JS -->
     <script type="text/javascript" src='assets/js/forms.js'></script>
     <!-- Validation JS -->
