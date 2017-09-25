@@ -2,21 +2,25 @@
 <html lang="en">
 
 <head>
+    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    
     <title>Karak dashboard | Maps</title>
+
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <!-- Fonts -->
     <link type="text/css" href="assets/vendors/google-fonts/google-fonts.css" rel="stylesheet">
     <!-- Bootstrap Core CSS -->
     <link type="text/css" href="assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link type="text/css" rel="stylesheet" href="assets/css/style.css">
     <!-- Font Awesome library -->
     <link type="text/css" href="assets/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css">
 
     <link rel="manifest" href="/manifest.json">
     <link type="image/x-icon" rel="shortcut icon" href="favicon.ico" />
@@ -25,8 +29,6 @@
     <link rel="icon" sizes="96x96" type="image/png" href="assets/images/logo/favicons/favicon-96x96.png">
     <link rel="icon" sizes="128x128" type="image/png" href="assets/images/logo/favicons/favicon-128x128.png">
     <link rel="icon" sizes="256x256" type="image/png" href="assets/images/logo/favicons/favicon-256x256.png">
-    
-
     <link rel="apple-touch-icon" sizes="57x57" href="assets/images/logo/favicons/apple-touch-icon-57x57.png?v=3">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/images/logo/favicons/apple-touch-icon-60x60.png?v=3">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/images/logo/favicons/apple-touch-icon-72x72.png?v=3">
@@ -36,6 +38,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="assets/images/logo/favicons/apple-touch-icon-144x144.png?v=3">
     <link rel="apple-touch-icon" sizes="152x152" href="assets/images/logo/favicons/apple-touch-icon-152x152.png?v=3">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/logo/favicons/apple-touch-icon-180x180.png?v=3">
+
 </head>
 
 <body>
@@ -44,7 +47,7 @@
         <div class="sidebar-wrapper">
             <div class="sidebar-brand" id="company-name">
                 <a href="index.html">
-                    <img src="assets/images/logo.png" class="center-block">
+                    <img src="assets/images/logo.png" class="center-block" alt="company-name" title="company-name">
                 </a>
             </div>
             <ul class="sidebar">
@@ -260,9 +263,11 @@
         <!-- /#sidebar-wrapper -->
         <!-- Page Content -->
         <div class="page-content-wrapper map-container">
+            
+            <!-- header -->
             <div class="main-dashboard-header" id="head">
                 <div class="container-fluid header-container">
-                    <i href="#menu-toggle" id="menu-toggle" class="fa fa-bars menu-toggle" aria-hidden="true"></i>
+                    <a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars menu-toggle" aria-hidden="true"></i></a>
                     <div class="form-group">
                         <div class="icon-addon addon-md">
                             <input type="text" placeholder="Type anywhere to search" class="form-control main-dashboard-search search-text-box">
@@ -284,9 +289,9 @@
                         </div>
                         <div id="user-box" class="user-box right-side-items">
                             <p> Mr.Sami<i class="fa fa-angle-down" aria-hidden="true"></i></p>
-                            <img src="assets/images/user_01_36.jpg" />
+                            <img src="assets/images/user_01_36.jpg" alt="Mr.Sami" title="Mr.Sami"/>
                         </div>
-                    </div>
+                    </div> 
                 </div>
                 <div class="notifecations-box">
                     <div class="arrow-up"></div>
@@ -312,7 +317,7 @@
                     <h5>Messages <a class="send-message-link" href="#">Send New Message</a></h5>
                     <div class="single-content-row">
                         <a href="#">
-                            <img alt="user name" alt="user name" src="assets/images/user_02_54.jpg" />
+                            <img alt="user name" src="assets/images/user_02_54.jpg" />
                             <p><b>Layla smith</b>
                                 <br /> Job offer</p>
                         </a>
@@ -367,13 +372,15 @@
                     </a>
                 </div>
             </div>
+            <!--/header-->
+            
             <div class="VectorMap">
                 <div class="map">Alternative content</div>
             </div>
         </div>
         <!-- /#page-content-wrapper -->
         <!-- /#wrapper -->
-        <div class="right-side-section-toggle" data-toggle="modal" data-toggle="modal" data-target="#colors-modal">
+        <div class="right-side-section-toggle" data-toggle="modal" data-target="#colors-modal">
             <i class="fa fa-pencil-square-o"></i>
         </div>
         <div class="modal right fade colors-modal" id="colors-modal" tabindex="-1" role="dialog" aria-labelledby="right-side-modal-label">
@@ -523,7 +530,7 @@
     <script type="text/javascript" src="assets/js/nav_colors_change.js"></script>
     <script type="text/javascript" src="assets/js/right-side-colors-picker.js"></script>
     <script type="text/javascript" src="assets/js/page-ready-theam.js"></script>
-    <link id="default-color-picker" rel="stylesheet" />
+    <!--<link id="default-color-picker" rel="stylesheet" />-->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"
             charset="utf-8"></script>

@@ -2,21 +2,16 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    
+    include "partials/head-meta.html"
+
     <title>Karak dashboard | Tour</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <!-- Fonts -->
-    <link type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <!-- Bootstrap Core CSS -->
-    <link type="text/css" href="assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    include "partials/head-common-css.html"
+
     <!-- Custom CSS -->
     <link type="text/css" rel="stylesheet" href="assets/css/style.css">
-    <!-- Font Awesome library -->
-    <link type="text/css" href="assets/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    
     <!-- Calendar -->
     <link href='assets/vendors/calendar/fullcalendar.css' rel='stylesheet' />
     <link href="assets/vendors/calendar/fullcalendar.print.css" rel='stylesheet' media='print' />
@@ -27,23 +22,7 @@
     <link type="text/css" href="assets/vendors/select2/css/select2.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap_tour/css/bootstrap-tour.min.css">
 
-    <link rel="manifest" href="/manifest.json">
-    <link type="image/x-icon" rel="shortcut icon" href="favicon.ico" />
-    <link rel="icon" sizes="any" type="image/svg+xml" href="assets/images/logo/favicons/icon.svg">
-    <link rel="icon" sizes="64x64" type="image/png" href="assets/images/logo/favicons/favicon-64x64.png">
-    <link rel="icon" sizes="96x96" type="image/png" href="assets/images/logo/favicons/favicon-96x96.png">
-    <link rel="icon" sizes="128x128" type="image/png" href="assets/images/logo/favicons/favicon-128x128.png">
-    <link rel="icon" sizes="256x256" type="image/png" href="assets/images/logo/favicons/favicon-256x256.png">    
-
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/logo/favicons/apple-touch-icon-57x57.png?v=3">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/logo/favicons/apple-touch-icon-60x60.png?v=3">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/logo/favicons/apple-touch-icon-72x72.png?v=3">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/logo/favicons/apple-touch-icon-76x76.png?v=3">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/logo/favicons/apple-touch-icon-114x114.png?v=3">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/logo/favicons/apple-touch-icon-120x120.png?v=3">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/logo/favicons/apple-touch-icon-144x144.png?v=3">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/logo/favicons/apple-touch-icon-152x152.png?v=3">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/logo/favicons/apple-touch-icon-180x180.png?v=3">
+    include "partials/head-icons.html"
 </head>
 
 <body>
@@ -52,7 +31,7 @@
         <div class="sidebar-wrapper">
             <div class="sidebar-brand" id="company-name">
                 <a href="index.html">
-                    <img src="assets/images/logo.png" class="center-block">
+                    <img src="assets/images/logo.png" class="center-block" alt="company-name" title="company-name">
                 </a>
             </div>
             <ul class="sidebar">
@@ -268,114 +247,9 @@
         <!-- /#sidebar-wrapper -->
         <!-- Page Content -->
         <div class="page-content-wrapper index-page-container">
-            <div class="main-dashboard-header" id="head">
-                <div class="container-fluid header-container">
-                    <i href="#menu-toggle" id="menu-toggle" class="fa fa-bars menu-toggle" aria-hidden="true"></i>
-                    <div class="form-group">
-                        <div class="icon-addon addon-md">
-                            <input type="text" placeholder="Type anywhere to search" class="form-control main-dashboard-search search-text-box">
-                            <i class="fa fa-search glyphicon glyphicon-search" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <div class="right-side-head">
-                        <div class="right-side-items notifecations">
-                            <button id="notifications" class="notifications btn btn-default btn-lg btn-link">
-                                <i class="fa fa-bell-o" aria-hidden="true"></i>
-                            </button>
-                            <span id="not-badg" class="badge badge-notify">2</span>
-                        </div>
-                        <div class="right-side-items email">
-                            <button id="messages" class="messages btn btn-default btn-lg btn-link">
-                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                            </button>
-                            <span id="message-badg" class="badge badge-notify">4</span>
-                        </div>
-                        <div id="user-box" class="user-box right-side-items">
-                            <p> Mr.Sami<i class="fa fa-angle-down" aria-hidden="true"></i></p>
-                            <img src="assets/images/user_01_36.jpg" />
-                        </div>
-                    </div>
-                </div>
-                <div class="notifecations-box">
-                    <div class="arrow-up"></div>
-                    <h5>Notifications</h5>
-                    <div class="single-content-row">
-                        <a href="#">
-                            <img alt="user name" src="assets/images/user_01_54.jpg" />
-                            <p><b>Mohammad Meshaal</b>wants your confirmation on his Leave Request on 12 Mar 2017</p>
-                        </a>
-                    </div>
-                    <div class="single-content-row">
-                        <a href="#">
-                            <img alt="user name" src="assets/images/user_04_54.jpg" />
-                            <p><b>Nasir ahmad</b>sent a payment on 11 Mar 2017</p>
-                        </a>
-                    </div>
-                    <div class="veiw-all-not">
-                        <a href="#">View All</a>
-                    </div>
-                </div>
-                <div class="messages-box">
-                    <div class="arrow-up"></div>
-                    <h5>Messages <a class="send-message-link" href="#">Send New Message</a></h5>
-                    <div class="single-content-row">
-                        <a href="#">
-                            <img alt="user name" alt="user name" src="assets/images/user_02_54.jpg" />
-                            <p><b>Layla smith</b>
-                                <br /> Job offer</p>
-                        </a>
-                    </div>
-                    <div class="single-content-row">
-                        <a href="#">
-                            <img alt="user name" src="assets/images/user_01_54.jpg" />
-                            <p><b>Mohammad Meshaal</b>
-                                <br />Please send me the work templates</p>
-                        </a>
-                    </div>
-                    <div class="single-content-row">
-                        <a href="#">
-                            <img alt="user name" src="assets/images/user_03_54.jpg" />
-                            <p><b>Dana khalid</b>
-                                <br />Do you wanna hang out today?</p>
-                        </a>
-                    </div>
-                    <div class="single-content-row">
-                        <a href="#">
-                            <img alt="user name" src="assets/images/user_04_54.jpg" />
-                            <p><b>Nasir ahmad</b>
-                                <br />Are we going to the match today?</p>
-                        </a>
-                    </div>
-                    <div class="veiw-all-not">
-                        <a href="#">View All</a>
-                    </div>
-                </div>
-                <div class="user-info-box">
-                    <div class="arrow-up"></div>
-                    <a href="#">
-                        <div class="user-info-content">
-                            <i class="fa fa-user" aria-hidden="true"></i> Proﬁle
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="user-info-content">
-                            <i class="fa fa-cog" aria-hidden="true"></i> Settings
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="user-info-content">
-                            <i class="fa fa-info-circle" aria-hidden="true"></i> Help
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="user-info-content logout">
-                            Log Out
-                            <i class="fa fa-sign-out" aria-hidden="true"></i>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <!--/header-->
+            
+            include "partials/header.html"
+            
             <div class="container-fluid">
                 <div class="row animated fadeInUp">
                     <div class="col-lg-12">
@@ -397,14 +271,14 @@
                         <div class="row">
                             <div class="col-sm-6 animated fadeInUp">
                                 <div class="col-content all-income" id="income-tour">
-                                    <h1><i class="fa fa-line-chart"aria-hidden="true"></i></h1>
+                                    <h1><i class="fa fa-line-chart" aria-hidden="true">&nbsp;</i></h1>
                                     <h2>$1 250, 33</h2>
                                     <h3>All Income</h3>
                                 </div>
                             </div>
                             <div class="col-sm-6 animated fadeInUp">
                                 <div class="col-content all-income invers">
-                                    <h1><i class="fa fa-exchange"aria-hidden="true"></i></h1>
+                                    <h1><i class="fa fa-exchange" aria-hidden="true">&nbsp;</i></h1>
                                     <h2>$3 620, 12</h2>
                                     <h3>Transactions</h3>
                                 </div>
@@ -414,7 +288,7 @@
                         <div class="row">
                             <div class="col-sm-12 animated fadeInUp">
                                 <div class="col-content">
-                                    <h5 class="title">Today Income <span class="flat-style"><i class="fa fa-money"aria-hidden="true"></i>&nbsp;
+                                    <h5 class="title">Today Income <span class="flat-style"><i class="fa fa-money" aria-hidden="true"></i>&nbsp;
 860K</span></h5>
                                     <br>
                                     <div id="containerexchange"></div>
@@ -430,17 +304,17 @@
                             <div class="statistics-taps">
                                 <ul class="bottom-border-active info-mid" role="tablist">
                                     <li role="presentation" class="active">
-                                        <a href="#yesterday" aria-controls="home" role="tab" data-toggle="tab">
+                                        <a href="#yesterday" aria-controls="yesterday" role="tab" data-toggle="tab">
                                             <i class="fa fa-user" aria-hidden="true"></i>&nbsp;Yesterday
                                         </a>
                                     </li>
                                     <li role="presentation">
-                                        <a href="#month" aria-controls="profile" role="tab" data-toggle="tab">
+                                        <a href="#month" aria-controls="month" role="tab" data-toggle="tab">
                                             <i class="fa fa-credit-card" aria-hidden="true"></i>&nbsp;Last Month
                                         </a>
                                     </li>
                                     <li role="presentation">
-                                        <a href="#year" aria-controls="messages" role="tab" data-toggle="tab">
+                                        <a href="#year" aria-controls="year" role="tab" data-toggle="tab">
                                             <i class="fa fa-check" aria-hidden="true"></i>&nbsp;Last Year
                                         </a>
                                     </li>
@@ -452,27 +326,27 @@
                             <div class="statistics-item tab-pane fade in active" id="yesterday">
                                 <div class="row">
                                     <div class="col-sm-2 centerlize-reponsive">
-                                        <img class="img-responsive" src="assets/images/st-1.png" />
+                                        <img class="img-responsive" src="assets/images/st-1.png" alt="Revenue" title="Revenue" />
                                         <h4 class="bold">220,000 USD</h4>
                                         <h4 class="lighter">Revenue</h4>
                                     </div>
                                     <div class="col-sm-2 centerlize-reponsive">
-                                        <img class="img-responsive" src="assets/images/st-2.png" />
+                                        <img class="img-responsive" src="assets/images/st-2.png" alt="Transactions" title="Transactions" />
                                         <h4 class="bold">120,000 USD</h4>
                                         <h4 class="lighter">Transactions</h4>
                                     </div>
                                     <div class="col-sm-2 centerlize-reponsive">
-                                        <img class="img-responsive" src="assets/images/st-3.png" />
+                                        <img class="img-responsive" src="assets/images/st-3.png" alt="Loans" title="Loans" />
                                         <h4 class="bold">502,000 USD</h4>
                                         <h4 class="lighter">Loans</h4>
                                     </div>
                                     <div class="col-sm-2 centerlize-reponsive">
-                                        <img class="img-responsive" src="assets/images/st-4.png" />
+                                        <img class="img-responsive" src="assets/images/st-4.png" alt="Investment" title="Investment" />
                                         <h4 class="bold">122,000 USD</h4>
                                         <h4 class="lighter">Investment</h4>
                                     </div>
                                     <div class="col-sm-2 centerlize-reponsive">
-                                        <img class="img-responsive" src="assets/images/st-5.png" />
+                                        <img class="img-responsive" src="assets/images/st-5.png" alt="Deposits" title="Deposits"  />
                                         <h4 class="bold">750,000 USD</h4>
                                         <h4 class="lighter">Deposits</h4>
                                     </div>
@@ -481,27 +355,27 @@
                             <div class="statistics-item tab-pane fade" id="month">
                                 <div class="row">
                                     <div class="col-sm-2">
-                                        <img class="img-responsive" src="assets/images/st-1.png" />
+                                        <img class="img-responsive" src="assets/images/st-1.png" alt="Revenue" title="Revenue" />
                                         <h4 class="bold">1220,000 USD</h4>
                                         <h4 class="lighter">Revenue</h4>
                                     </div>
                                     <div class="col-sm-2">
-                                        <img class="img-responsive" src="assets/images/st-2.png" />
+                                        <img class="img-responsive" src="assets/images/st-2.png" alt="Transactions" title="Transactions" />
                                         <h4 class="bold">400,000 USD</h4>
                                         <h4 class="lighter">Transactions</h4>
                                     </div>
                                     <div class="col-sm-2">
-                                        <img class="img-responsive" src="assets/images/st-3.png" />
+                                        <img class="img-responsive" src="assets/images/st-3.png" alt="Loans" title="Loans" />
                                         <h4 class="bold">602,000 USD</h4>
                                         <h4 class="lighter">Loans</h4>
                                     </div>
                                     <div class="col-sm-2">
-                                        <img class="img-responsive" src="assets/images/st-4.png" />
+                                        <img class="img-responsive" src="assets/images/st-4.png" alt="Investment" title="Investment" />
                                         <h4 class="bold">2,000 USD</h4>
                                         <h4 class="lighter">Investment</h4>
                                     </div>
                                     <div class="col-sm-2">
-                                        <img class="img-responsive" src="assets/images/st-5.png" />
+                                        <img class="img-responsive" src="assets/images/st-5.png" alt="Deposits" title="Deposits" />
                                         <h4 class="bold">550,000 USD</h4>
                                         <h4 class="lighter">Deposits</h4>
                                     </div>
@@ -510,27 +384,27 @@
                             <div class="statistics-item tab-pane fade" id="year">
                                 <div class="row">
                                     <div class="col-sm-2">
-                                        <img class="img-responsive" src="assets/images/st-1.png" />
+                                        <img class="img-responsive" src="assets/images/st-1.png" alt="Revenue" title="Revenue" />
                                         <h4 class="bold">290,000 USD</h4>
                                         <h4 class="lighter">Revenue</h4>
                                     </div>
                                     <div class="col-sm-2">
-                                        <img class="img-responsive" src="assets/images/st-2.png" />
+                                        <img class="img-responsive" src="assets/images/st-2.png" alt="Transactions" title="Transactions" />
                                         <h4 class="bold">130,000 USD</h4>
                                         <h4 class="lighter">Transactions</h4>
                                     </div>
                                     <div class="col-sm-2">
-                                        <img class="img-responsive" src="assets/images/st-3.png" />
+                                        <img class="img-responsive" src="assets/images/st-3.png" alt="Loans" title="Loans" />
                                         <h4 class="bold">420,000 USD</h4>
                                         <h4 class="lighter">Loans</h4>
                                     </div>
                                     <div class="col-sm-2">
-                                        <img class="img-responsive" src="assets/images/st-4.png" />
+                                        <img class="img-responsive" src="assets/images/st-4.png" alt="Investment" title="Investment" />
                                         <h4 class="bold">324,000 USD</h4>
                                         <h4 class="lighter">Investment</h4>
                                     </div>
                                     <div class="col-sm-2">
-                                        <img class="img-responsive" src="assets/images/st-5.png" />
+                                        <img class="img-responsive" src="assets/images/st-5.png" alt="Deposits" title="Deposits" />
                                         <h4 class="bold">950,000 USD</h4>
                                         <h4 class="lighter">Deposits</h4>
                                     </div>
@@ -567,16 +441,16 @@ To:<label id="apptEndTime"></label>
                                             <div class="controls">
                                                 <div class="input-field parent">
                                                     <input name="patientName" id="patientName" type="text" class="validate">
-                                                    <label for="name"><i class="fa fa-calendar-o" aria-hidden="true"></i>&nbsp; Event Name</label>
+                                                    <label for="patientName"><i class="fa fa-calendar-o" aria-hidden="true"></i>&nbsp; Event Name</label>
                                                 </div>
                                                 <div class="input-field parent">
                                                     <input id="location" name="Location" type="text" class="validate">
-                                                    <label for="Location"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; Location
+                                                    <label for="location"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; Location
                                                     </label>
                                                 </div>
                                                 <div class="input-field parent">
                                                     <input name="Notes" id="notes" type="text" class="validate">
-                                                    <label for="Notes"><i class="fa fa-sticky-note" aria-hidden="true"></i>&nbsp; Notes
+                                                    <label for="notes"><i class="fa fa-sticky-note" aria-hidden="true"></i>&nbsp; Notes
                                                     </label>
                                                 </div>
                                                 <select id="eventclassName" style="width:100%" class="select-display selectpicker form-control empty select2-init-images">
@@ -609,31 +483,31 @@ To:<label id="apptEndTime"></label>
                             <h5 id="activities-log" class="title">Activities Log<a class="activities-year">2016</a></h5>
                             <div class="activities-log">
                                 <div class="single-log-box">
-                                    <h5>Jan, 18 Wednesday <span class="flat-style"><i class="fa fa-clock-o"aria-hidden="true"></i>&nbsp;3:15 PM</span></h5>
+                                    <h5>Jan, 18 Wednesday <span class="flat-style"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;3:15 PM</span></h5>
                                     <p>
                                         Dipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                     </p>
                                 </div>
                                 <div class="single-log-box">
-                                    <h5>Feb, 6 Monday<span class="flat-style"><i class="fa fa-clock-o"aria-hidden="true"></i>&nbsp;6:10 PM</span></h5>
+                                    <h5>Feb, 6 Monday<span class="flat-style"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;6:10 PM</span></h5>
                                     <p>
                                         Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                     </p>
                                 </div>
                                 <div class="single-log-box">
-                                    <h5>Jun, 6 Tuesday<span class="flat-style"><i class="fa fa-clock-o"aria-hidden="true"></i>&nbsp;11:15 AM</span></h5>
+                                    <h5>Jun, 6 Tuesday<span class="flat-style"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;11:15 AM</span></h5>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                     </p>
                                 </div>
                                 <div class="single-log-box">
-                                    <h5>Jul, 6 Thursday<span class="flat-style"><i class="fa fa-clock-o"aria-hidden="true"></i>&nbsp;7:00 AM</span></h5>
+                                    <h5>Jul, 6 Thursday<span class="flat-style"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;7:00 AM</span></h5>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                                     </p>
                                 </div>
                                 <div class="single-log-box">
-                                    <h5>Aug, 6 Sunday<span class="flat-style"><i class="fa fa-clock-o"aria-hidden="true"></i>&nbsp;4:15 PM</span></h5>
+                                    <h5>Aug, 6 Sunday<span class="flat-style"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;4:15 PM</span></h5>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                     </p>
@@ -643,7 +517,7 @@ To:<label id="apptEndTime"></label>
                     </div>
                     <div class="col-md-6 animated fadeInUp">
                         <div class="col-content static-height">
-                            <h5 class="title">To Do List<a class="add-task"><i class="fa fa-plus-circle"aria-hidden="true"></i></a></h5>
+                            <h5 class="title">To Do List<a class="add-task"><i class="fa fa-plus-circle" aria-hidden="true"></i></a></h5>
                             <div class="to-do-list">
                                 <div class="single-to-do-box">
                                     <div class="checkbox checkbox-success checkbox-inline">
@@ -737,159 +611,12 @@ To:<label id="apptEndTime"></label>
                         </div>
                     </div>
                 </div>
-                <div class="container-fixed-lg footer">
-                    <div class="copyright sm-text-center">
-                        <p class="small no-margin pull-left sm-pull-reset">
-                            <span class="hint-text">Copyright © 2017 </span>
-                            <span class="font-montserrat"><b>New Release</b></span>.
-                            <span class="hint-text">All rights reserved. </span>
-                            <span class="sm-block"><a href="#"class="m-l-10 m-r-10">Terms of use</a> | <a href="#"class="m-l-10">Privacy Policy</a></span>
-                        </p>
-                        <p class="small no-margin pull-right sm-pull-reset">
-                            <h6 class="made-by">Made By  <b>New Release</b></h6>
-                        </p>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
+                include "partials/footer.html"
             </div>
             <!-- /#page-content-wrapper -->
         </div>
         <!-- /#wrapper -->
-        <div class="right-side-section-toggle" data-toggle="modal" data-toggle="modal" data-target="#colors-modal">
-            <i class="fa fa-pencil-square-o"></i>
-        </div>
-        <div class="modal right fade colors-modal" id="colors-modal" tabindex="-1" role="dialog" aria-labelledby="right-side-modal-label">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h5 class="modal-title" id="right-side-modal-label">Color Options</h5>
-                    </div>
-                    <div class="modal-body custome-margin">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <p>Color makes it different Customize and Preview your dashboard.</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h5 class="title">Recommended</h5>
-                            </div>
-                        </div>
-                        <div class="row p-15">
-                            <div class="col-md-6 single-menue-color-box no-padding-righ">
-                                <div id="default-color-btn" class="single-menue-color pointer-hover">
-                                    <div class="col-sm-12 default-menue-color">
-                                        <p>
-                                            Header
-                                            <br /> #3b97d2
-                                        </p>
-                                        <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
-                                    </div>
-                                    <div class="col-sm-12 simple-border">
-                                        <p>
-                                            Sidebar Nav
-                                            <br /> #fffff
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 single-menue-color-box no-padding-righ">
-                                <div id="orang-color-btn" class="single-menue-color pointer-hover">
-                                    <div class="col-sm-12 orange-menue-color">
-                                        <p>
-                                            Header
-                                            <br /> #f5d34b
-                                        </p>
-                                        <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
-                                    </div>
-                                    <div class="col-sm-12 simple-border">
-                                        <p>
-                                            Sidebar Nav
-                                            <br /> #ffffff
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row p-15">
-                                <div class="col-md-6 single-menue-color-box no-padding-righ">
-                                    <div id="dark2-color-btn" class="single-menue-color pointer-hover">
-                                        <div class="col-sm-12 dark-menue-color2">
-                                            <p>
-                                                Header
-                                                <br /> #262930
-                                            </p>
-                                            <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="col-sm-12 dark-nav-color2">
-                                            <p>
-                                                Sidebar Nav
-                                                <br /> #2a2e35
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 single-menue-color-box no-padding-righ">
-                                    <div id="dark1-color-btn" class="single-menue-color pointer-hover">
-                                        <div class="col-sm-12 dark-menue-color">
-                                            <p>
-                                                Header
-                                                <br /> #2b3643
-                                            </p>
-                                            <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="col-sm-12 dark-nav-color">
-                                            <p>
-                                                Sidebar Nav
-                                                <br /> #364150
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row p-15">
-                                <div class="col-md-6 single-menue-color-box no-padding-righ">
-                                    <div id="whit-color-btn" class="single-menue-color pointer-hover">
-                                        <div class="col-sm-12 simple-border wight-head">
-                                            <p>
-                                                Header
-                                                <br /> #ffffff
-                                            </p>
-                                            <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="col-sm-12 simple-border wight-head">
-                                            <p>
-                                                Sidebar Nav
-                                                <br /> #ffffff
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 single-menue-color-box no-padding-righ">
-                                    <div id="green-color-btn" class="single-menue-color pointer-hover">
-                                        <div class="col-sm-12 green-menue-color">
-                                            <p>
-                                                Header
-                                                <br /> #62d995
-                                            </p>
-                                            <i class="fa fa-check-circle-o selected-theme" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="col-sm-12 simple-border">
-                                            <p>
-                                                Sidebar Nav
-                                                <br /> #ffffff
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- modal-content -->
-            </div>
-            <!-- modal-dialog -->
-        </div>
+        include "partials/color-modal.html"
     </div>
     <!-- Page layout JS -->
     <script type="text/javascript" src="assets/vendors/jquery/jquery-3.1.1.js"></script>
@@ -914,11 +641,7 @@ To:<label id="apptEndTime"></label>
     <script type="text/javascript" src="assets/vendors/highmaps/code/modules/data.js"></script>
     <script type="text/javascript" src="assets/vendors/highmaps/code/modules/exporting.js"></script>
     <script type="text/javascript" src="assets/vendors/highmaps/code/custom/world.js"></script>
-    <!--Dynamic colors-->
-    <script type="text/javascript" src="assets/js/nav_colors_change.js"></script>
-    <script type="text/javascript" src="assets/js/right-side-colors-picker.js"></script>
-    <script type="text/javascript" src="assets/js/page-ready-theam.js"></script>
-    <link id="default-color-picker" rel="stylesheet" />
+    include "partials/foot-color-js.html"
     <!-- Select2 dropdown JS -->
     <script type="text/javascript" src="assets/vendors/select2/js/select2.min.js"></script>
     <!-- Index page JS -->

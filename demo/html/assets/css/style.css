@@ -5751,7 +5751,7 @@ input:not(.flat_email):not(.search-text-box):not(.select2-search__field):focus {
   font-weight: lighter;
   text-align: left;
 }
-.landing-page-container section.our-team .team-box h1 {
+.landing-page-container section.our-team .team-box h2 {
   text-align: left;
   font-weight: 200;
   color: #34495e;

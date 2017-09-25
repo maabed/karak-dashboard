@@ -52,8 +52,8 @@ module.exports = function(grunt) {
   });
 
   // Default task(s) to RUN on "GRUNT" COMMAND
-  grunt.registerTask('default', ['includes', 'sass', 'watch']);
+  grunt.registerTask('scsstocss', ['includes', 'sass', 'watch']);
 
-  grunt.registerTask('lesscss', ['includes', 'less', 'watch']);
+  grunt.registerTask('lesstocss', ['includes', 'less', 'watch']);
 
 };

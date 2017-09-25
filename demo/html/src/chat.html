@@ -2,42 +2,20 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    
+    include "partials/head-meta.html"
+
     <title>Karak dashboard | Chat</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link type="text/css" href="assets/vendors/google-fonts/google-fonts.css" rel="stylesheet">
-    <!-- Bootstrap Core CSS -->
-    <link type="text/css" href="assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome library -->
-    <link type="text/css" href="assets/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+
+    include "partials/head-common-css.html"
+
     <link rel="stylesheet" href="assets/vendors/animatecss/animate.min.css" />
     <link rel="stylesheet" href="assets/vendors/toggle/css/bootstrap3/bootstrap-switch.css">
     <link type="text/css" href="assets/vendors/hover.css/hover-min.css" rel="stylesheet" />
     <!-- Karak dashboard core CSS -->
     <link type="text/css" rel="stylesheet" href="assets/css/style.css">
 
-    <link rel="manifest" href="/manifest.json">
-    <link type="image/x-icon" rel="shortcut icon" href="favicon.ico" />
-    <link rel="icon" sizes="any" type="image/svg+xml" href="assets/images/logo/favicons/icon.svg">
-    <link rel="icon" sizes="64x64" type="image/png" href="assets/images/logo/favicons/favicon-64x64.png">
-    <link rel="icon" sizes="96x96" type="image/png" href="assets/images/logo/favicons/favicon-96x96.png">
-    <link rel="icon" sizes="128x128" type="image/png" href="assets/images/logo/favicons/favicon-128x128.png">
-    <link rel="icon" sizes="256x256" type="image/png" href="assets/images/logo/favicons/favicon-256x256.png">
-    
-
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/logo/favicons/apple-touch-icon-57x57.png?v=3">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/logo/favicons/apple-touch-icon-60x60.png?v=3">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/logo/favicons/apple-touch-icon-72x72.png?v=3">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/logo/favicons/apple-touch-icon-76x76.png?v=3">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/logo/favicons/apple-touch-icon-114x114.png?v=3">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/logo/favicons/apple-touch-icon-120x120.png?v=3">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/logo/favicons/apple-touch-icon-144x144.png?v=3">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/logo/favicons/apple-touch-icon-152x152.png?v=3">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/logo/favicons/apple-touch-icon-180x180.png?v=3">
+    include "partials/head-icons.html"
 </head>
 
 <body>
@@ -72,7 +50,7 @@
                         <form class="online-offline-form">
                             <div class="radio">
                                 <label>
-                                    <input type="radio" checked="true" name="optradio">Online</label>
+                                    <input type="radio" checked="checked" name="optradio">Online</label>
                             </div>
                             <div class="radio">
                                 <label>
@@ -202,7 +180,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-6 left-side-chat-lest">
-                            <i href="#menu-toggle" id="menu-toggle" class="menu-toggle fa fa-bars" aria-hidden="true"></i>
+                            <i data-href="#menu-toggle" id="menu-toggle" class="menu-toggle fa fa-bars" aria-hidden="true"></i>
                             <h4>#general</h4>
                             <ul class="chat-header-list">
                                 <li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i><p>2</p></a></li>
@@ -294,7 +272,7 @@
                                     </li>
                                 </ul>
                                 <br>
-                                <iframe class="chat-video" width="400" height="315" src="https://www.youtube.com/embed/FG0fTKAqZ5g" frameborder="0" allowfullscreen></iframe>
+                                <iframe class="chat-video" width="400" height="315" src="https://www.youtube.com/embed/FG0fTKAqZ5g" allowfullscreen></iframe>
                             </div>
                         </div>
                     </li>
@@ -348,7 +326,7 @@
                         <div class="col-md-12 no-padding">
                             <div class="list-group">
                                 <label class="prv-lbl" for="private">Private</label>
-                                <input class="toggle-align" type="checkbox" name="my-checkbox" checked data-size="mini">
+                                <input id="private" class="toggle-align" type="checkbox" name="my-checkbox" checked data-size="mini">
                             </div>
                         </div>
                         <div class="col-sm-12 no-left-right-padding">
@@ -356,12 +334,12 @@
                                 <div class="control-group">
                                     <div class="controls">
                                         <div class="input-field parent">
-                                            <input id="cname" name="Channel" type="text" class="validate">
-                                            <label for="Channel"><i class="fa fa-info" aria-hidden="true"></i>&nbsp;Channel Name</label>
+                                            <input id="cname1" name="Channel" type="text" class="validate">
+                                            <label for="cname1"><i class="fa fa-info" aria-hidden="true"></i>&nbsp;Channel Name</label>
                                         </div>
                                         <div class="input-field parent">
                                             <input id="invite" name="Invite" type="text" class="validate">
-                                            <label for="Invite"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;Invite</label>
+                                            <label for="invite"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;Invite</label>
                                         </div>
                                     </div>
                                 </div>
@@ -394,18 +372,18 @@
                     </div>
                     <div class="modal-body">
                         <div class="col-sm-12 no-left-right-padding">
-                            <form id="createAppointmentForm" class="form-horizontal">
+                            <form id="createAppointmentForm1" class="form-horizontal">
                                 <div class="control-group">
                                     <div class="controls">
                                         <div class="input-field parent">
                                             <input id="cname" name="conversation" type="text" class="validate">
-                                            <label for="conversation">Start conversation</label>
+                                            <label for="cname">Start conversation</label>
                                         </div>
                                         <div class="list-group">
                                             <a href="#" class="list-group-item">
                                                 <div class="row">
                                                     <div class="col-sm-5">
-                                                        <img src="assets/images/card_01.jpg" class="blog-img side-line">
+                                                        <img src="assets/images/card_01.jpg" class="blog-img side-line" alt="card_01" title="card_01">
                                                     </div>
                                                     <div class="col-sm-7">
                                                         <span class="list-par">Mohammad Meshaal</span>
@@ -417,7 +395,7 @@
                                             <a href="#" class="list-group-item">
                                                 <div class="row">
                                                     <div class="col-sm-5">
-                                                        <img src="assets/images/card_02.jpg" class="blog-img side-line">
+                                                        <img src="assets/images/card_02.jpg" class="blog-img side-line" alt="card_02" title="card_02">
                                                     </div>
                                                     <div class="col-sm-7">
                                                         <span class="list-par">Rayan Amarat</span>
