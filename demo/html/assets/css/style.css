@@ -28,6 +28,10 @@ p {
   outline-offset: 0px;
 }
 
+body[lang=ar] {
+  @import url("../../vendors/bootstrap-rtl/bootstrap-rtl.min.css");
+}
+
 /*! main */
 /*! Sidebar */
 .wrapper {

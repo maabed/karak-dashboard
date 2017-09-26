@@ -1,0 +1,4 @@
+body[lang=ar] {
+  // Styles here will apply only if the body has the "ar" lang attribute.
+  @import url("../../vendors/bootstrap-rtl/bootstrap-rtl.min.css");
+}
