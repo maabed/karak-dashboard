@@ -1496,6 +1496,30 @@ html[lang=ar] a.icon-btn span {
   padding-left: 0;
   padding-right: 2em;
 }
+html[lang=ar] .rootwizard .tab-content .pager {
+  float: left;
+}
+html[lang=ar] .rootwizard .tab-content .pager li {
+  float: left;
+}
+html[lang=ar] .rootwizard .tab-content .pager li button {
+  padding-right: 12px;
+  padding-left: 2em;
+}
+html[lang=ar] .rootwizard .tab-content .pager li.next .glyphicon-chevron-right {
+  transform: rotate(180deg);
+  padding-right: 0;
+  padding-left: 2em;
+}
+html[lang=ar] .rootwizard .tab-content .pager li.previous .glyphicon-chevron-left {
+  transform: rotate(180deg);
+  padding-right: 0;
+  padding-left: 2em;
+}
+html[lang=ar] .rootwizard .tab-content .pager li.previous button {
+  margin-right: 0;
+  margin-left: 0.5em;
+}
 html[lang=ar] .wrapper .index-page-container .col-content .title .activities-year,
 html[lang=ar] .wrapper .index-page-container .col-content .title .add-task,
 html[lang=ar] .wrapper .index-page-container .col-content .title .flat-style {

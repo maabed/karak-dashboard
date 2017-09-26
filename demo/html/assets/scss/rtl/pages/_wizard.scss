@@ -1,0 +1,38 @@
+.rootwizard {
+  .tab-content {
+    .pager {
+      float: left;
+
+      li {
+        float: left;
+        
+        button {
+          padding-right: 12px;
+          padding-left: 2em;
+        }
+
+        &.next {
+          .glyphicon-chevron-right {
+            transform: rotate(180deg);
+            padding-right: 0;
+            padding-left: 2em;
+          }
+        }
+
+        &.previous {
+          .glyphicon-chevron-left {
+            float: right;
+            transform: rotate(180deg);
+            padding-right: 2em;
+            padding-left: 0;
+          }
+
+          button {
+            margin-right: 0;
+            margin-left: 0.5em;
+          }
+        }
+      }
+    }
+  }
+}
