@@ -1455,6 +1455,19 @@ html[lang=ar] .wrapper .main-dashboard-header .form-group {
   margin-left: 0;
   margin-right: 0.5em;
 }
+html[lang=ar] .wrapper .right-side-section-toggle {
+  right: auto;
+  left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+html[lang=ar] .modal.right .modal-dialog {
+  right: auto;
+  left: 0;
+  margin-left: 0;
+}
 html[lang=ar] .wrapper .page-content-wrapper .col-content.body-header {
   border-left: none;
   border-right: 5px solid #3b97d2;

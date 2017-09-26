@@ -6,7 +6,9 @@ html[lang=ar] {
   @import
     'components/sidebar',
     'components/layout',
-    'components/header';
+    'components/header',
+    'components/colorOptionsSide',
+    'components/modal';
 
   // Shared
   @import 'shared';
