@@ -1,4 +1,9 @@
-body[lang=ar] {
+html[lang=ar] {
   // Styles here will apply only if the body has the "ar" lang attribute.
-  @import url("../../vendors/bootstrap-rtl/bootstrap-rtl.min.css");
+  @import '../../vendors/bootstrap-rtl/_bootstrap-rtl.min';
+
+  // Compoennts
+  @import
+    'components/sidebar',
+    'components/layout';
 }
