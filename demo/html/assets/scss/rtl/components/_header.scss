@@ -1,0 +1,41 @@
+.wrapper {
+  .main-dashboard-header {
+    .right-side-head {
+      float: left;
+      margin-right: 0;
+      margin-left: 19.4em;
+
+      .right-side-items {
+        float: right;
+        margin-left: 0;
+        margin-right: 1em;
+
+        i.fa-angle-down {
+          margin-left: 0;
+          margin-right: 1.5em;
+        }
+
+        .badge-notify {
+          left: 0.6em;
+          right: auto;
+        }
+        
+        p {
+          float: left;
+        }
+
+        img {
+          float: right;
+          margin-right: 0;
+          margin-left: 0.5em;
+        }
+      }
+    }
+
+    .form-group {
+      float: right;
+      margin-left: 0;
+      margin-right: 0.5em;
+    }
+  }
+}
