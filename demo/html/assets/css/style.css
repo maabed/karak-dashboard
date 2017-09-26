@@ -1468,6 +1468,44 @@ html[lang=ar] .modal.right .modal-dialog {
   left: 0;
   margin-left: 0;
 }
+html[lang=ar] .wrapper .index-page-container .col-content .title .activities-year,
+html[lang=ar] .wrapper .index-page-container .col-content .title .add-task,
+html[lang=ar] .wrapper .index-page-container .col-content .title .flat-style {
+  float: left;
+}
+html[lang=ar] .wrapper .index-page-container .col-content.static-height .activities-log .single-to-do-box,
+html[lang=ar] .wrapper .index-page-container .col-content.static-height .to-do-list .single-to-do-box {
+  text-align: right;
+}
+html[lang=ar] .wrapper .index-page-container .col-content.static-height .activities-log .single-to-do-box i,
+html[lang=ar] .wrapper .index-page-container .col-content.static-height .activities-log .single-to-do-box h6,
+html[lang=ar] .wrapper .index-page-container .col-content.static-height .to-do-list .single-to-do-box i,
+html[lang=ar] .wrapper .index-page-container .col-content.static-height .to-do-list .single-to-do-box h6 {
+  float: left;
+}
+html[lang=ar] .wrapper .index-page-container .col-content.static-height .activities-log .single-to-do-box .checkbox.checkbox-inline,
+html[lang=ar] .wrapper .index-page-container .col-content.static-height .to-do-list .single-to-do-box .checkbox.checkbox-inline {
+  padding-right: 0;
+  padding-left: 20px;
+}
+html[lang=ar] .wrapper .index-page-container .col-content.static-height .activities-log .single-to-do-box .checkbox.checkbox-inline label,
+html[lang=ar] .wrapper .index-page-container .col-content.static-height .to-do-list .single-to-do-box .checkbox.checkbox-inline label {
+  padding-right: 20px !important;
+}
+html[lang=ar] .wrapper .index-page-container .col-content.static-height .activities-log .single-to-do-box .checkbox.checkbox-inline label:before,
+html[lang=ar] .wrapper .index-page-container .col-content.static-height .to-do-list .single-to-do-box .checkbox.checkbox-inline label:before {
+  left: auto;
+  right: 0;
+}
+html[lang=ar] .wrapper .index-page-container .col-content.static-height .activities-log .single-to-do-box .checkbox.checkbox-inline label:after,
+html[lang=ar] .wrapper .index-page-container .col-content.static-height .to-do-list .single-to-do-box .checkbox.checkbox-inline label:after {
+  left: auto;
+  right: 3px;
+}
+html[lang=ar] .wrapper .index-page-container .col-content.static-height .activities-log .single-log-box .flat-style,
+html[lang=ar] .wrapper .index-page-container .col-content.static-height .to-do-list .single-log-box .flat-style {
+  float: left;
+}
 html[lang=ar] .wrapper .page-content-wrapper .col-content.body-header {
   border-left: none;
   border-right: 5px solid #3b97d2;

@@ -10,6 +10,10 @@ html[lang=ar] {
     'components/colorOptionsSide',
     'components/modal';
 
+  // Pages
+  @import
+    'pages/index';
+
   // Shared
   @import 'shared';
 }

@@ -1,0 +1,49 @@
+.wrapper {
+  .index-page-container {
+    .col-content {
+      .title {
+        .activities-year,
+        .add-task,
+        .flat-style {
+          float: left;
+        }
+      }
+
+      &.static-height {
+        .activities-log .single-to-do-box,
+        .to-do-list .single-to-do-box {
+          text-align: right;
+
+          i,
+          h6 {
+            float: left;
+          }
+
+          .checkbox.checkbox-inline {
+            padding-right: 0;
+            padding-left: 20px;
+
+            label {
+              padding-right: 20px !important;
+
+              &:before {
+                left: auto;
+                right: 0;
+              }
+
+              &:after {
+                left: auto;
+                right: 3px;
+              }
+            }
+          }
+        }
+
+        .activities-log .single-log-box .flat-style,
+        .to-do-list .single-log-box .flat-style {
+          float: left;
+        }
+      }
+    }
+  }
+}
