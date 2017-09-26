@@ -1418,6 +1418,37 @@ html[lang=ar] .wrapper .sidebar-wrapper .sidebar li a .list-badge {
     padding-right: 250px;
   }
 }
+html[lang=ar] .wrapper .main-dashboard-header .right-side-head {
+  float: left;
+  margin-right: 0;
+  margin-left: 19.4em;
+}
+html[lang=ar] .wrapper .main-dashboard-header .right-side-head .right-side-items {
+  float: right;
+  margin-left: 0;
+  margin-right: 1em;
+}
+html[lang=ar] .wrapper .main-dashboard-header .right-side-head .right-side-items i.fa-angle-down {
+  margin-left: 0;
+  margin-right: 1.5em;
+}
+html[lang=ar] .wrapper .main-dashboard-header .right-side-head .right-side-items .badge-notify {
+  left: 0.6em;
+  right: auto;
+}
+html[lang=ar] .wrapper .main-dashboard-header .right-side-head .right-side-items p {
+  float: left;
+}
+html[lang=ar] .wrapper .main-dashboard-header .right-side-head .right-side-items img {
+  float: right;
+  margin-right: 0;
+  margin-left: 0.5em;
+}
+html[lang=ar] .wrapper .main-dashboard-header .form-group {
+  float: right;
+  margin-left: 0;
+  margin-right: 0.5em;
+}
 
 /*! main */
 /*! Sidebar */
