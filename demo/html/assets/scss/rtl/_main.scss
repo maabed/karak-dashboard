@@ -7,4 +7,7 @@ html[lang=ar] {
     'components/sidebar',
     'components/layout',
     'components/header';
+
+  // Shared
+  @import 'shared';
 }

@@ -1412,6 +1412,12 @@ html[lang=ar] .wrapper .sidebar-wrapper .sidebar li a .list-badge {
   right: auto;
   left: 3em;
 }
+html[lang=ar] .pull-right {
+  float: left !important;
+}
+html[lang=ar] .pull-left {
+  float: right !important;
+}
 @media (min-width: 768px) {
   html[lang=ar] .wrapper {
     padding-left: 0;
@@ -1448,6 +1454,10 @@ html[lang=ar] .wrapper .main-dashboard-header .form-group {
   float: right;
   margin-left: 0;
   margin-right: 0.5em;
+}
+html[lang=ar] .wrapper .page-content-wrapper .col-content.body-header {
+  border-left: none;
+  border-right: 5px solid #3b97d2;
 }
 
 /*! main */

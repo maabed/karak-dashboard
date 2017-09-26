@@ -1,3 +1,11 @@
+.pull-right {
+  float: left !important;
+}
+
+.pull-left {
+  float: right !important;
+}
+
 .wrapper {
   @media (min-width: 768px) {
     padding-left: 0;
