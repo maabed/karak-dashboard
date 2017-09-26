@@ -1468,6 +1468,34 @@ html[lang=ar] .modal.right .modal-dialog {
   left: 0;
   margin-left: 0;
 }
+html[lang=ar] .input-field label {
+  left: auto;
+  right: 0;
+}
+html[lang=ar] .input-field .prefix {
+  left: 0;
+}
+html[lang=ar] .select2-container--default .select2-selection--single .select2-selection__arrow {
+  right: auto;
+  left: 1px;
+}
+html[lang=ar] .select2-container--default .select2-selection--single .select2-selection__rendered {
+  text-align: right;
+  padding-left: 20px;
+  padding-right: 8px;
+}
+html[lang=ar] .select2-container--default .select2-search__field,
+html[lang=ar] .select2-container--default .select2-results__option {
+  text-align: right;
+}
+html[lang=ar] button.icon-btn span,
+html[lang=ar] .btn-group.icon-btn span,
+html[lang=ar] input.icon-btn span,
+html[lang=ar] a.icon-btn span {
+  float: left;
+  padding-left: 0;
+  padding-right: 2em;
+}
 html[lang=ar] .wrapper .index-page-container .col-content .title .activities-year,
 html[lang=ar] .wrapper .index-page-container .col-content .title .add-task,
 html[lang=ar] .wrapper .index-page-container .col-content .title .flat-style {
