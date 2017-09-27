@@ -10,12 +10,13 @@ html[lang=ar] {
     'components/colorOptionsSide',
     'components/modal',
     'components/inputs',
-    'components/buttons',
-    'pages/wizard';
+    'components/buttons';
 
   // Pages
   @import
-    'pages/index';
+    'pages/index',
+    'pages/wizard',
+    'pages/chat';
 
   // Shared
   @import 'shared';

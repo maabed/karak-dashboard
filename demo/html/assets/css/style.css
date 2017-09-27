@@ -1496,30 +1496,6 @@ html[lang=ar] a.icon-btn span {
   padding-left: 0;
   padding-right: 2em;
 }
-html[lang=ar] .rootwizard .tab-content .pager {
-  float: left;
-}
-html[lang=ar] .rootwizard .tab-content .pager li {
-  float: left;
-}
-html[lang=ar] .rootwizard .tab-content .pager li button {
-  padding-right: 12px;
-  padding-left: 2em;
-}
-html[lang=ar] .rootwizard .tab-content .pager li.next .glyphicon-chevron-right {
-  transform: rotate(180deg);
-  padding-right: 0;
-  padding-left: 2em;
-}
-html[lang=ar] .rootwizard .tab-content .pager li.previous .glyphicon-chevron-left {
-  transform: rotate(180deg);
-  padding-right: 0;
-  padding-left: 2em;
-}
-html[lang=ar] .rootwizard .tab-content .pager li.previous button {
-  margin-right: 0;
-  margin-left: 0.5em;
-}
 html[lang=ar] .wrapper .index-page-container .col-content .title .activities-year,
 html[lang=ar] .wrapper .index-page-container .col-content .title .add-task,
 html[lang=ar] .wrapper .index-page-container .col-content .title .flat-style {
@@ -1557,6 +1533,73 @@ html[lang=ar] .wrapper .index-page-container .col-content.static-height .to-do-l
 html[lang=ar] .wrapper .index-page-container .col-content.static-height .activities-log .single-log-box .flat-style,
 html[lang=ar] .wrapper .index-page-container .col-content.static-height .to-do-list .single-log-box .flat-style {
   float: left;
+}
+html[lang=ar] .rootwizard .tab-content .pager {
+  float: left;
+}
+html[lang=ar] .rootwizard .tab-content .pager li {
+  float: left;
+}
+html[lang=ar] .rootwizard .tab-content .pager li button {
+  padding-right: 12px;
+  padding-left: 2em;
+}
+html[lang=ar] .rootwizard .tab-content .pager li.next .glyphicon-chevron-right {
+  transform: rotate(180deg);
+  padding-right: 0;
+  padding-left: 2em;
+}
+html[lang=ar] .rootwizard .tab-content .pager li.previous .glyphicon-chevron-left {
+  float: right;
+  transform: rotate(180deg);
+  padding-right: 2em;
+  padding-left: 0;
+}
+html[lang=ar] .rootwizard .tab-content .pager li.previous button {
+  margin-right: 0;
+  margin-left: 0.5em;
+}
+html[lang=ar] .inbox-container .inbox-nav .inbox-list ul {
+  padding-left: 0;
+  padding-right: 0.5em;
+}
+html[lang=ar] .inbox-container .inbox-nav .inbox-list ul li a i {
+  margin-right: 0;
+  margin-left: 0.6em;
+}
+html[lang=ar] .inbox-container .inbox-nav .inbox-list ul li a span {
+  margin-left: 0;
+  margin-right: 1em;
+  float: left;
+  margin-top: 14px;
+}
+html[lang=ar] .inbox-container .inbox-nav .inbox-list ul li .Inboxsubmenue {
+  margin-left: 0;
+  margin-right: 1em;
+}
+html[lang=ar] .inbox-container .split-view .split-right-side .email-header .Message-btns {
+  float: right;
+}
+html[lang=ar] .inbox-container .split-view .split-right-side .email-content-top .user-image,
+html[lang=ar] .inbox-container .split-view .split-right-side .email-content-top .sender-info {
+  float: right;
+}
+html[lang=ar] .inbox-container .split-view .split-right-side .email-content-top .sender-info h5,
+html[lang=ar] .inbox-container .split-view .split-right-side .email-content-top .sender-info p {
+  text-align: right;
+}
+html[lang=ar] .inbox-container .split-view .split-right-side .email-content-top h4 {
+  text-align: right;
+  margin-left: 0;
+  margin-right: 1em;
+}
+html[lang=ar] .inbox-container .split-view .split-right-side .Emai-text {
+  text-align: right;
+}
+html[lang=ar] .inbox-container .split-view .split-left-side .inbox-date a i {
+  float: left;
+  margin-right: 0;
+  margin-left: 1em;
 }
 html[lang=ar] .wrapper .page-content-wrapper .col-content.body-header {
   border-left: none;
