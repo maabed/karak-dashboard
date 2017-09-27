@@ -1468,6 +1468,9 @@ html[lang=ar] .modal.right .modal-dialog {
   left: 0;
   margin-left: 0;
 }
+html[lang=ar] .modals-page-container .preview {
+  float: left;
+}
 html[lang=ar] .input-field label {
   left: auto;
   right: 0;
@@ -1606,6 +1609,10 @@ html[lang=ar] .inbox-container .split-view .split-left-side .inbox-date a i {
 }
 html[lang=ar] .all-base-colors .col-sm-4 .single-color-box {
   padding: 0.2em 0.5em 0.2em 0;
+}
+html[lang=ar] .colors-page .single-menue-color-box .preview {
+  right: auto;
+  left: 1.5em;
 }
 html[lang=ar] .wrapper .page-content-wrapper .col-content.body-header {
   border-left: none;
