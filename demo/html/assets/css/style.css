@@ -496,6 +496,12 @@ p {
   padding-left: 0em;
   padding-right: 0em;
 }
+@media (max-width: 767px) {
+  .no-left-right-padding {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 
 .blue-title {
   color: #3b97d2;
@@ -549,6 +555,22 @@ p {
 .col-md-3.no-left-right-padding {
   padding-left: 0em;
   padding-right: 0em;
+}
+@media (max-width: 767px) {
+  .col-lg-12.no-left-right-padding,
+  .col-lg-8.no-left-right-padding,
+  .col-lg-4.no-left-right-padding,
+  .col-md-8.no-left-right-padding,
+  .col-md-4.no-left-right-padding,
+  .col-md-5.no-left-right-padding,
+  .col-md-7.no-left-right-padding,
+  .col-md-12.no-left-right-padding,
+  .col-md-6.no-left-right-padding,
+  .col-md-2.no-left-right-padding,
+  .col-md-3.no-left-right-padding {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .info-mid {
@@ -852,9 +874,21 @@ p {
 .no-padding-left {
   padding-left: 0px;
 }
+@media (max-width: 767px) {
+  .no-padding-left {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 
 .no-padding-right {
   padding-right: 0px;
+}
+@media (max-width: 767px) {
+  .no-padding-right {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .no-padding-bottom {
@@ -6217,6 +6251,11 @@ input:not(.flat_email):not(.search-text-box):not(.select2-search__field):focus {
   -moz-transition: 0.3s ease;
   -o-transition: 0.3s ease;
   transition: 0.3s ease;
+}
+@media (max-width: 700px) {
+  .login-body .login-container .card.alt {
+    right: 0;
+  }
 }
 .login-body .login-container .card.alt .toggle {
   top: 0.5em;

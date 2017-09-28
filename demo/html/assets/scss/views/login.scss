@@ -64,8 +64,10 @@
         border-radius: 100%;
         box-shadow: none;
         padding: 0px;
+        @media(max-width:700px) {
+          right: 0;
+        }
         @include css-effect(.3s ease);
-
         .toggle {
           top: 0.5em;
           position: relative;

@@ -449,7 +449,7 @@
         .css-effect(all 0.5s ease);
       }
 
-      &.no-padding-righ {
+      &.no-padding-right {
         padding-right: 0px;
       }
 
@@ -573,6 +573,10 @@
 .no-left-right-padding {
   padding-left: 0em;
   padding-right: 0em;
+  @media(max-width:767px) {
+    padding-left: 15px;
+    padding-right: 15px; 
+  }
 }
 
 .blue-title {
@@ -619,6 +623,10 @@
   &.no-left-right-padding {
     padding-left: 0em;
     padding-right: 0em;
+    @media(max-width:767px) {
+      padding-left: 15px;
+      padding-right: 15px; 
+    }
   }
 
 }
@@ -946,10 +954,18 @@
 
 .no-padding-left {
   padding-left: 0px;
+  @media(max-width:767px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .no-padding-right {
   padding-right: 0px;
+  @media(max-width:767px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .no-padding-bottom {
