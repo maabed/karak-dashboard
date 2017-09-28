@@ -136,3 +136,19 @@
   }
 
 }
+
+
+@media (max-width:768px) {
+  .messages-box, .notifecations-box {
+    width: 100%;
+    right: 0;
+    max-width: 350px;
+  }
+  .messages-box .arrow-up {
+    margin-right: 154px;
+  }
+  .notifecations-box .arrow-up {
+    margin-right: 208px;
+  }
+
+}

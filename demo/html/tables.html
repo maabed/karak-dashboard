@@ -266,7 +266,7 @@
 			<div class="main-dashboard-header" id="head">
 			    <div class="container-fluid header-container">
 			        <a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars menu-toggle" aria-hidden="true"></i></a>
-			        <div class="form-group">
+			        <div class="form-group hidden-xs">
 			            <div class="icon-addon addon-md">
 			                <input type="text" placeholder="Type anywhere to search" class="form-control main-dashboard-search search-text-box">
 			                <i class="fa fa-search glyphicon glyphicon-search" aria-hidden="true"></i>
@@ -389,81 +389,83 @@
 							<p>
 								Just apply the Activation classes(e.g:<code>.active-user-row</code>/<code>.not-active-user-row</code>) to make user row appropriate colors.
 							</p>
-							<table class="table table-hover users-table">
-								<thead class="table-head">
-									<tr>
-										<th class="basic-th col-sm-3">User info.</th>
-										<th class="basic-th col-sm-3">Job Description</th>
-										<th class="basic-th col-sm-1">Country</th>
-										<th class="basic-th col-sm-2">Email</th>
-										<th class="basic-th col-sm-2">Last Update</th>
-										<th class="basic-th col-sm-1">Activation</th>
-									</tr>
-								</thead>
-								<tbody class="users-table-body">
-									<tr class="active-user-acount">
-										<td>
-											<img src="assets/images/user_01_74.jpg" alt="Sami Ali" title="Sami Ali" />
-											<p><b>Sami Ali</b>
-												<br> Project Manager</p>
-										</td>
-										<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-										<td class="static-width">Jordan</td>
-										<td class="email-field">email@domin.com</td>
-										<td>April 13,2014 10:13</td>
-										<td class="active-user-row"><i class="fa fa-thumbs-o-up info-font" aria-hidden="true"></i>&nbsp;Yes</td>
-									</tr>
-									<tr class="active-user-acount">
-										<td>
-											<img src="assets/images/user_02_74.jpg" alt="Rania Jaber" title="Rania Jaber"/>
-											<p><b>Rania Jaber</b>
-												<br> UI Designer</p>
-										</td>
-										<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </td>
-										<td class="static-width">Lebanon</td>
-										<td class="email-field">email@domin.com</td>
-										<td>April 13,2014 10:13</td>
-										<td class="active-user-row"><i class="fa fa-thumbs-o-up info-font" aria-hidden="true"></i>&nbsp;Yes</td>
-									</tr>
-									<tr class="active-user-acount">
-										<td>
-											<img src="assets/images/user_04_74.jpg" alt="Albert Bailee" title="Albert Bailee"/>
-											<p><b>Albert Bailee</b>
-												<br>Web Developer</p>
-										</td>
-										<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </td>
-										<td class="static-width">United States</td>
-										<td class="email-field">email@domin.com</td>
-										<td>April 13,2014 10:13</td>
-										<td class="active-user-row"><i class="fa fa-thumbs-o-up info-font" aria-hidden="true"></i>&nbsp;Yes</td>
-									</tr>
-									<tr class="not-active-user-acount">
-										<td>
-											<img src="assets/images/user_03_74.jpg" alt="Ria Yong" title="Ria Yong"/>
-											<p><b>Ria Yong</b>
-												<br>Account Manager</p>
-										</td>
-										<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </td>
-										<td class="static-width">United States </td>
-										<td class="email-field">email@domin.com</td>
-										<td>April 13,2014 10:13</td>
-										<td class="not-active-user-row"><i class="fa fa-thumbs-o-down danger-font" aria-hidden="true"></i> &nbsp;No
-										</td>
-									</tr>
-									<tr class="not-active-user-acount">
-										<td>
-											<img src="assets/images/user_06_74.jpg" alt="Ali Mosa" title="Ali Mosa"/>
-											<p><b>Ali Mosa</b>
-												<br>UX Researcher</p>
-										</td>
-										<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </td>
-										<td class="static-width">Jordan</td>
-										<td class="email-field">email@domin.com</td>
-										<td>April 13,2014 10:13</td>
-										<td class="not-active-user-row"><i class="fa fa-thumbs-o-down danger-font" aria-hidden="true"></i> &nbsp;No</td>
-									</tr>
-								</tbody>
-							</table>
+							<div class="table-responsive">
+								<table class="table table-hover users-table">
+									<thead class="table-head">
+										<tr>
+											<th class="basic-th col-sm-3">User info.</th>
+											<th class="basic-th col-sm-3">Job Description</th>
+											<th class="basic-th col-sm-1">Country</th>
+											<th class="basic-th col-sm-2">Email</th>
+											<th class="basic-th col-sm-2">Last Update</th>
+											<th class="basic-th col-sm-1">Activation</th>
+										</tr>
+									</thead>
+									<tbody class="users-table-body">
+										<tr class="active-user-acount">
+											<td>
+												<img src="assets/images/user_01_74.jpg" alt="Sami Ali" title="Sami Ali" />
+												<p><b>Sami Ali</b>
+													<br> Project Manager</p>
+											</td>
+											<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+											<td class="static-width">Jordan</td>
+											<td class="email-field">email@domin.com</td>
+											<td>April 13,2014 10:13</td>
+											<td class="active-user-row"><i class="fa fa-thumbs-o-up info-font" aria-hidden="true"></i>&nbsp;Yes</td>
+										</tr>
+										<tr class="active-user-acount">
+											<td>
+												<img src="assets/images/user_02_74.jpg" alt="Rania Jaber" title="Rania Jaber"/>
+												<p><b>Rania Jaber</b>
+													<br> UI Designer</p>
+											</td>
+											<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </td>
+											<td class="static-width">Lebanon</td>
+											<td class="email-field">email@domin.com</td>
+											<td>April 13,2014 10:13</td>
+											<td class="active-user-row"><i class="fa fa-thumbs-o-up info-font" aria-hidden="true"></i>&nbsp;Yes</td>
+										</tr>
+										<tr class="active-user-acount">
+											<td>
+												<img src="assets/images/user_04_74.jpg" alt="Albert Bailee" title="Albert Bailee"/>
+												<p><b>Albert Bailee</b>
+													<br>Web Developer</p>
+											</td>
+											<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </td>
+											<td class="static-width">United States</td>
+											<td class="email-field">email@domin.com</td>
+											<td>April 13,2014 10:13</td>
+											<td class="active-user-row"><i class="fa fa-thumbs-o-up info-font" aria-hidden="true"></i>&nbsp;Yes</td>
+										</tr>
+										<tr class="not-active-user-acount">
+											<td>
+												<img src="assets/images/user_03_74.jpg" alt="Ria Yong" title="Ria Yong"/>
+												<p><b>Ria Yong</b>
+													<br>Account Manager</p>
+											</td>
+											<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </td>
+											<td class="static-width">United States </td>
+											<td class="email-field">email@domin.com</td>
+											<td>April 13,2014 10:13</td>
+											<td class="not-active-user-row"><i class="fa fa-thumbs-o-down danger-font" aria-hidden="true"></i> &nbsp;No
+											</td>
+										</tr>
+										<tr class="not-active-user-acount">
+											<td>
+												<img src="assets/images/user_06_74.jpg" alt="Ali Mosa" title="Ali Mosa"/>
+												<p><b>Ali Mosa</b>
+													<br>UX Researcher</p>
+											</td>
+											<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </td>
+											<td class="static-width">Jordan</td>
+											<td class="email-field">email@domin.com</td>
+											<td>April 13,2014 10:13</td>
+											<td class="not-active-user-row"><i class="fa fa-thumbs-o-down danger-font" aria-hidden="true"></i> &nbsp;No</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -474,63 +476,65 @@
 							<p>
 								Just apply the Dashed class(<code>.dashed-row-style</code>) to make the table Dashed style.
 							</p>
-							<table class="table dashed-row-style dashed-table">
-								<thead class="table-head no-left-right-padding">
-									<tr>
-										<th class="basic-th col-sm-4">Operation Name</th>
-										<th class="basic-th col-sm-3">From</th>
-										<th class="basic-th col-sm-3">To</th>
-										<th class="basic-th col-sm-2">Status</th>
-									</tr>
-								</thead>
-								<tbody class="users-table-format">
-									<tr class="active-user-acount no-left-right-padding">
-										<td>
-											<b>Requirements Gathering</b>
-										</td>
-										<td class="static-width">Jan, 18 Wednesday</td>
-										<td class="email-field">February, 20 Thursday</td>
-										<td class="email-field done-task"><i class="fa fa-check" aria-hidden="true"></i> &nbsp;Done
-										</td>
-									</tr>
-									<tr class="active-user-acount">
-										<td>
-											<b>UX/UI Design</b>
-										</td>
-										<td class="static-width">Jan, 18 Wednesday</td>
-										<td class="email-field">February, 20 Thursday</td>
-										<td class="email-field done-task"><i class="fa fa-check" aria-hidden="true"></i> &nbsp;Done
-										</td>
-									</tr>
-									<tr class="active-user-acount">
-										<td>
-											<b>Fron-end & Back-end Development</b>
-										</td>
-										<td class="static-width">Jan, 18 Wednesday</td>
-										<td class="email-field">February, 20 Thursday</td>
-										<td class="email-field inprogress-task"><i class="fa fa-spinner" aria-hidden="true"></i>&nbsp;Inprogress
-										</td>
-									</tr>
-									<tr class="active-user-acount">
-										<td>
-											<b>Testing</b>
-										</td>
-										<td class="static-width">Jan, 18 Wednesday</td>
-										<td class="email-field">February, 20 Thursday</td>
-										<td class="email-field hold-task"><i class="fa fa-ban" aria-hidden="true"></i>&nbsp;Hold
-										</td>
-									</tr>
-									<tr class="active-user-acount">
-										<td>
-											<b>Maintenance</b>
-										</td>
-										<td class="static-width">Jan, 18 Wednesday</td>
-										<td class="email-field">February, 20 Thursday</td>
-										<td class="hold-task"><i class="fa fa-ban" aria-hidden="true"></i>&nbsp;Hold
-										</td>
-									</tr>
-								</tbody>
-							</table>
+							<div class="table-responsive">
+								<table class="table dashed-row-style dashed-table">
+									<thead class="table-head no-left-right-padding">
+										<tr>
+											<th class="basic-th col-sm-4">Operation Name</th>
+											<th class="basic-th col-sm-3">From</th>
+											<th class="basic-th col-sm-3">To</th>
+											<th class="basic-th col-sm-2">Status</th>
+										</tr>
+									</thead>
+									<tbody class="users-table-format">
+										<tr class="active-user-acount no-left-right-padding">
+											<td>
+												<b>Requirements Gathering</b>
+											</td>
+											<td class="static-width">Jan, 18 Wednesday</td>
+											<td class="email-field">February, 20 Thursday</td>
+											<td class="email-field done-task"><i class="fa fa-check" aria-hidden="true"></i> &nbsp;Done
+											</td>
+										</tr>
+										<tr class="active-user-acount">
+											<td>
+												<b>UX/UI Design</b>
+											</td>
+											<td class="static-width">Jan, 18 Wednesday</td>
+											<td class="email-field">February, 20 Thursday</td>
+											<td class="email-field done-task"><i class="fa fa-check" aria-hidden="true"></i> &nbsp;Done
+											</td>
+										</tr>
+										<tr class="active-user-acount">
+											<td>
+												<b>Fron-end & Back-end Development</b>
+											</td>
+											<td class="static-width">Jan, 18 Wednesday</td>
+											<td class="email-field">February, 20 Thursday</td>
+											<td class="email-field inprogress-task"><i class="fa fa-spinner" aria-hidden="true"></i>&nbsp;Inprogress
+											</td>
+										</tr>
+										<tr class="active-user-acount">
+											<td>
+												<b>Testing</b>
+											</td>
+											<td class="static-width">Jan, 18 Wednesday</td>
+											<td class="email-field">February, 20 Thursday</td>
+											<td class="email-field hold-task"><i class="fa fa-ban" aria-hidden="true"></i>&nbsp;Hold
+											</td>
+										</tr>
+										<tr class="active-user-acount">
+											<td>
+												<b>Maintenance</b>
+											</td>
+											<td class="static-width">Jan, 18 Wednesday</td>
+											<td class="email-field">February, 20 Thursday</td>
+											<td class="hold-task"><i class="fa fa-ban" aria-hidden="true"></i>&nbsp;Hold
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
 						</div>
 					</div>
 					<div class="col-md-4">
@@ -539,40 +543,42 @@
 							<p>You can change the table's heads color using add any color class (eg:<code>.info-mid</code>).</p>
 							<div class="row">
 								<div class="col-md-12">
-									<table class="table table-responsive colored-table">
-										<thead class="table-head info-mid colord-table-head">
-											<tr>
-												<th class="dashboard-th colored-table-head">
-													<p>Player Name</p></th>
-												<th class="dashboard-th colored-table-head">
-													<p>Team</p></th>
-												<th class="dashboard-th colored-table-head">
-													<p>Country</p></th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>Messi</td>
-												<td>Barcelona</td>
-												<td>Argentina</td>
-											</tr>
-											<tr>
-												<td>Ronaldinho</td>
-												<td>Querétaro</td>
-												<td>Brazil</td>
-											</tr>
-											<tr>
-												<td>Cristiano Ronaldo</td>
-												<td>Real Madrid</td>
-												<td>Portugal</td>
-											</tr>
-											<tr>
-												<td>Gonzalo Higuain</td>
-												<td>Juventus</td>
-												<td>Argentina</td>
-											</tr>
-										</tbody>
-									</table>
+									<div class="table-responsive">
+										<table class="table table-responsive colored-table">
+											<thead class="table-head info-mid colord-table-head">
+												<tr>
+													<th class="dashboard-th colored-table-head">
+														<p>Player Name</p></th>
+													<th class="dashboard-th colored-table-head">
+														<p>Team</p></th>
+													<th class="dashboard-th colored-table-head">
+														<p>Country</p></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Messi</td>
+													<td>Barcelona</td>
+													<td>Argentina</td>
+												</tr>
+												<tr>
+													<td>Ronaldinho</td>
+													<td>Querétaro</td>
+													<td>Brazil</td>
+												</tr>
+												<tr>
+													<td>Cristiano Ronaldo</td>
+													<td>Real Madrid</td>
+													<td>Portugal</td>
+												</tr>
+												<tr>
+													<td>Gonzalo Higuain</td>
+													<td>Juventus</td>
+													<td>Argentina</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
 								</div>
 							</div>
 						</div>
