@@ -47,7 +47,8 @@
             <div class="sidebar-brand" id="company-name">
                 <a href="index.html">
                     <img src="assets/images/logo.png" class="center-block" alt="company-name" title="company-name">
-                </a>            </div>
+                </a>
+            </div>
             <ul class="sidebar">
                 <li class="sidebar-item">
                     <a href="index.html"><i class="fa fa-tachometer nav-icon" aria-hidden="true"></i>Dashboard</a>
@@ -266,7 +267,7 @@
             <div class="main-dashboard-header" id="head">
                 <div class="container-fluid header-container">
                     <a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars menu-toggle" aria-hidden="true"></i></a>
-                    <div class="form-group">
+                    <div class="form-group hidden-xs">
                         <div class="icon-addon addon-md">
                             <input type="text" placeholder="Type anywhere to search" class="form-control main-dashboard-search search-text-box">
                             <i class="fa fa-search glyphicon glyphicon-search" aria-hidden="true"></i>
@@ -481,82 +482,84 @@
                             <div class="clearfix"></div>
                             <div class="col-sm-12">
                                 <h3 class="table-title">Invoice Summary</h3>
-                                <table class="table table-responsive table-bordered">
-                                    <thead class="table-head">
-                                        <tr>
-                                            <th>Month</th>
-                                            <th>Deduction From salary</th>
-                                            <th>Holidays</th>
-                                            <th>Subtotal</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>July</td>
-                                            <td>$290.00</td>
-                                            <td>2</td>
-                                            <td>$2800.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Augest</td>
-                                            <td>$871.00</td>
-                                            <td>9</td>
-                                            <td>$1640.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td>September</td>
-                                            <td>$912.00</td>
-                                            <td>2</td>
-                                            <td>$2730.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td>October</td>
-                                            <td>$0.00</td>
-                                            <td>0</td>
-                                            <td>$3100.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td>November</td>
-                                            <td>$102.00</td>
-                                            <td>1</td>
-                                            <td>$2951.00</td>
-                                        </tr>
-                                        <tr class="no-background">
-                                            <td class="sub-total" colspan="2">
-                                            </td>
-                                            <td class="sub-total top-sub">
-                                                <b>Subtotal</b>
-                                            </td>
-                                            <td class="sub-total top-sub">
-                                                <b>$9860.00</b>
-                                            </td>
-                                        </tr>
-                                        <tr class="no-background">
-                                            <td class="sub-total" colspan="2">
-                                            </td>
-                                            <td class="sub-total">
-                                                <b>Deduction From Salary :</b>
-                                            </td>
-                                            <td class="sub-total">
-                                                <b>$2190.00</b>
-                                            </td>
-                                        </tr>
-                                        <tr class="no-background">
-                                            <td class="sub-total" colspan="2">
-                                            </td>
-                                            <td class="sub-total">
-                                                <b>Total :</b>
-                                            </td>
-                                            <td class="sub-total">
-                                                <b>$9860.00</b>
-                                            </td>
-                                        </tr>
-                                        <tr class="no-background">
-                                            <td class="sub-total" colspan="4">
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <div class="table-responsive">
+                                    <table class="table table-responsive table-bordered">
+                                        <thead class="table-head">
+                                            <tr>
+                                                <th>Month</th>
+                                                <th>Deduction From salary</th>
+                                                <th>Holidays</th>
+                                                <th>Subtotal</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>July</td>
+                                                <td>$290.00</td>
+                                                <td>2</td>
+                                                <td>$2800.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Augest</td>
+                                                <td>$871.00</td>
+                                                <td>9</td>
+                                                <td>$1640.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>September</td>
+                                                <td>$912.00</td>
+                                                <td>2</td>
+                                                <td>$2730.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>October</td>
+                                                <td>$0.00</td>
+                                                <td>0</td>
+                                                <td>$3100.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>November</td>
+                                                <td>$102.00</td>
+                                                <td>1</td>
+                                                <td>$2951.00</td>
+                                            </tr>
+                                            <tr class="no-background">
+                                                <td class="sub-total" colspan="2">
+                                                </td>
+                                                <td class="sub-total top-sub">
+                                                    <b>Subtotal</b>
+                                                </td>
+                                                <td class="sub-total top-sub">
+                                                    <b>$9860.00</b>
+                                                </td>
+                                            </tr>
+                                            <tr class="no-background">
+                                                <td class="sub-total" colspan="2">
+                                                </td>
+                                                <td class="sub-total">
+                                                    <b>Deduction From Salary :</b>
+                                                </td>
+                                                <td class="sub-total">
+                                                    <b>$2190.00</b>
+                                                </td>
+                                            </tr>
+                                            <tr class="no-background">
+                                                <td class="sub-total" colspan="2">
+                                                </td>
+                                                <td class="sub-total">
+                                                    <b>Total :</b>
+                                                </td>
+                                                <td class="sub-total">
+                                                    <b>$9860.00</b>
+                                                </td>
+                                            </tr>
+                                            <tr class="no-background">
+                                                <td class="sub-total" colspan="4">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                                 <div class="row hide-on-print">
                                     <div class="col-sm-2 col-sm-offset-10">
                                         <button type="button" onclick="printbtn()" class="btn btn-default outline-icon-btn">

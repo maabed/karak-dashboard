@@ -199,6 +199,7 @@ p {
 }
 .wrapper .main-dashboard-header .menu-toggle {
   display: none;
+  color: #fff;
 }
 @media (max-width: 768px) {
   .wrapper .main-dashboard-header .menu-toggle {
@@ -485,14 +486,21 @@ p {
   }
 }
 @media (max-width: 768px) {
-  .right-side-head {
-    display: none;
+  .wrapper .main-dashboard-header .right-side-head {
+    display: inline-block;
+    margin-right: 0;
   }
 }
 /*! General custome */
 .no-left-right-padding {
   padding-left: 0em;
   padding-right: 0em;
+}
+@media (max-width: 767px) {
+  .no-left-right-padding {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .blue-title {
@@ -547,6 +555,22 @@ p {
 .col-md-3.no-left-right-padding {
   padding-left: 0em;
   padding-right: 0em;
+}
+@media (max-width: 767px) {
+  .col-lg-12.no-left-right-padding,
+  .col-lg-8.no-left-right-padding,
+  .col-lg-4.no-left-right-padding,
+  .col-md-8.no-left-right-padding,
+  .col-md-4.no-left-right-padding,
+  .col-md-5.no-left-right-padding,
+  .col-md-7.no-left-right-padding,
+  .col-md-12.no-left-right-padding,
+  .col-md-6.no-left-right-padding,
+  .col-md-2.no-left-right-padding,
+  .col-md-3.no-left-right-padding {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .info-mid {
@@ -850,9 +874,21 @@ p {
 .no-padding-left {
   padding-left: 0px;
 }
+@media (max-width: 767px) {
+  .no-padding-left {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 
 .no-padding-right {
   padding-right: 0px;
+}
+@media (max-width: 767px) {
+  .no-padding-right {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .no-padding-bottom {
@@ -2911,6 +2947,22 @@ input:not(.flat_email):not(.search-text-box):not(.select2-search__field):focus {
   margin: 10px auto;
   transition: transform 0.3s;
 }
+@media (max-width: 767px) {
+  .menu-container .navbar.nav-down-toggle .navbar-collapse {
+    width: 100%;
+  }
+  .menu-container .navbar.nav-down-toggle .navbar-nav {
+    float: none;
+    margin: 0;
+    width: 100%;
+  }
+  .menu-container .navbar.nav-down-toggle .navbar-nav li:last-child {
+    padding: 0;
+  }
+  .menu-container .navbar.nav-down-toggle .nav-collapse {
+    top: 51px;
+  }
+}
 .menu-container .carousel .item {
   height: 25.9em;
   overflow: hidden;
@@ -3005,7 +3057,7 @@ input:not(.flat_email):not(.search-text-box):not(.select2-search__field):focus {
   box-shadow: none;
   background-color: #eeeeee;
   padding-left: 10px;
-  width: 92%;
+  width: 89%;
   display: inline;
 }
 .modal.right .modal-dialog {
@@ -3254,6 +3306,7 @@ input:not(.flat_email):not(.search-text-box):not(.select2-search__field):focus {
   position: relative;
   text-decoration: none;
   text-shadow: none;
+  border-bottom: 5px solid transparent;
 }
 .tabs-container .tabs-header .statistics-taps ul li.active {
   float: left;
@@ -3997,6 +4050,21 @@ input:not(.flat_email):not(.search-text-box):not(.select2-search__field):focus {
   background-color: #f1f3f6;
 }
 
+@media (max-width: 768px) {
+  .messages-box, .notifecations-box {
+    width: 100%;
+    right: 0;
+    max-width: 350px;
+  }
+
+  .messages-box .arrow-up {
+    margin-right: 154px;
+  }
+
+  .notifecations-box .arrow-up {
+    margin-right: 208px;
+  }
+}
 /* Views */
 /*! Forms */
 /* form Page View */
@@ -4737,6 +4805,11 @@ input:not(.flat_email):not(.search-text-box):not(.select2-search__field):focus {
 }
 .wrapper .chat-cotainer .message-box ul li .msg-content .msg-text .chat-video {
   border: 1px solid #eeeeee;
+}
+@media (max-width: 500px) {
+  .wrapper .chat-cotainer .message-box ul li .msg-content .msg-text .chat-video {
+    width: 100%;
+  }
 }
 .wrapper .chat-cotainer .chat-footer {
   position: absolute;
@@ -6179,6 +6252,11 @@ input:not(.flat_email):not(.search-text-box):not(.select2-search__field):focus {
   -o-transition: 0.3s ease;
   transition: 0.3s ease;
 }
+@media (max-width: 700px) {
+  .login-body .login-container .card.alt {
+    right: 0;
+  }
+}
 .login-body .login-container .card.alt .toggle {
   top: 0.5em;
   position: relative;
@@ -6535,6 +6613,13 @@ input:not(.flat_email):not(.search-text-box):not(.select2-search__field):focus {
 .notifications-page .row .col-content.static-hover-cont {
   height: 195px;
 }
+@media (max-width: 768px) {
+  .notifications-page .row .col-content.static-hover-cont {
+    height: auto;
+    padding: 40px 0;
+    text-align: center;
+  }
+}
 .notifications-page .row .col-content .preview {
   color: #888888;
   position: relative;
@@ -6635,7 +6720,6 @@ input:not(.flat_email):not(.search-text-box):not(.select2-search__field):focus {
 .social-left-section .post-container,
 .social-right-section .post-container {
   background-color: #ffffff;
-  height: 20em;
 }
 .social-left-section .post-container .post,
 .social-right-section .post-container .post {

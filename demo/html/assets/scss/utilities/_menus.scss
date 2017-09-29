@@ -353,6 +353,27 @@
 
     }
 
+    @media(max-width:767px) {
+      &.nav-down-toggle {
+        .navbar-collapse {
+          width: 100%;
+        }
+        .navbar-nav {
+          float: none;
+          margin: 0;
+          width: 100%;
+          li {
+            &:last-child {
+              padding: 0;
+            }
+          }
+        }
+        .nav-collapse {
+          top: 51px;
+        }
+      }
+    }
+
   }
 /*! Carousel menu */
   .carousel {
