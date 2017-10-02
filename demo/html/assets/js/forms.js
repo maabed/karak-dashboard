@@ -54,9 +54,7 @@ $(function($) {
       return repo.full_name || repo.text;
     }
 
-    $('.select2-init-single').select2();
-
-    $('.select2-init-multiple').select2();
+    $('.select2-init-single, .select2-init-multiple').select2();
 
     $(".select2-init-images").select2({
       templateResult: formatState
@@ -89,29 +87,28 @@ $(function($) {
     });
 
     /* yes-no checkboxes */
-    $('#toggleCheckbox-yes-green').checkboxpicker();
-    $('#toggleCheckbox-yes-green').change(function() {
-      $('#toggleCheckbox-yes-green').prop('disabled', false);
+    $('#toggleCheckbox-yes-green').checkboxpicker().change(function() {
+      $(this).prop('disabled', false);
+    });
+    
+
+    $('#toggleCheckbox-yes-primary').checkboxpicker().change(function() {
+      $(this).prop('disabled', false);
     });
 
-    $('#toggleCheckbox-yes-primary').checkboxpicker();
-    $('#toggleCheckbox-yes-primary').change(function() {
-      $('#toggleCheckbox-yes-primary').prop('disabled', false);
-    });
 
-    $('#toggleCheckbox-yes-yellow').checkboxpicker();
-    $('#toggleCheckbox-yes-yellow').change(function() {
-      $('#toggleCheckbox-yes-yellow').prop('disabled', false);
+    $('#toggleCheckbox-yes-yellow').checkboxpicker().change(function() {
+      $(this).prop('disabled', false);
     });
+    
 
-    $('#toggleCheckbox-yes-big').checkboxpicker();
-    $('#toggleCheckbox-yes-big').change(function() {
-      $('#toggleCheckbox-yes-big').prop('disabled', false);
+    $('#toggleCheckbox-yes-big').checkboxpicker().change(function() {
+      $(this).prop('disabled', false);
     });
+    
 
-    $('#toggleCheckbox-like').checkboxpicker();
-    $('#toggleCheckbox-like').change(function() {
-      $('#toggleCheckbox-like').prop('disabled', false);
+    $('#toggleCheckbox-like').checkboxpicker().change(function() {
+      $(this).prop('disabled', false);
     });
 
 /* Tags input */
