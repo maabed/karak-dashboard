@@ -11,9 +11,11 @@ $(function($) {
     $(document).ready(function() {
         if (localStorage.getItem("cssfile") && localStorage.getItem("head")) {
             $('#sidebar-wrapper').css('background-color', '#fff');
-            $('.sidebar-nav li a').css('border-bottom', '1px solid #E4E5E7');
-            $('.sidebar-nav li a').css('border-right', '1px solid #E4E5E7');
-            $('.sidebar-nav li a').css('color', '#34495E');
+            $('.sidebar-nav li a').css({
+              'border-bottom': '1px solid #E4E5E7',
+              'border-right': '1px solid #E4E5E7',
+              'color': '#34495E'
+            });
             $('.nav-icon').css('color', '#C6C4DB')
             $('.user-box p').css('color', '#fff');
             $('.head-box i').css('color', '#fff');
