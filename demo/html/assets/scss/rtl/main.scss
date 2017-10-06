@@ -1,0 +1,28 @@
+@import '../../vendors/bootstrap-rtl/_bootstrap-rtl.min';
+
+// Compoennts
+@import
+  'components/sidebar',
+  'components/layout',
+  'components/header',
+  'components/colorOptionsSide',
+  'components/modal',
+  'components/inputs',
+  'components/buttons',
+  'components/dataTables';
+
+// Pages
+@import
+  'pages/index',
+  'pages/wizard',
+  'pages/chat',
+  'pages/colors';
+
+// Shared
+@import 'shared';
+
+
+.wrapper #colors-modal .single-menue-color-box .single-menue-color .col-sm-12 .selected-theme {
+  left: 0.5em;
+  right: auto;
+}

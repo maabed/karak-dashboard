@@ -39,3 +39,70 @@
     }
   }
 }
+
+
+/* User settings dropdown */
+.user-info-box {
+  left: 1.8em;
+  right: auto;
+  .arrow-up {
+    margin-left: 0.3em;
+  }
+  .user-info-content .fa {
+    margin-left: 0.5em;
+  }
+}
+
+.arrow-up {
+  float: left;
+}
+
+.messages-box {
+  left: 10.7em;
+  right: auto;
+}
+
+.notifecations-box {
+  left: 14.6em;
+  right: auto;
+}
+
+.messages-box .arrow-up, .notifecations-box .arrow-up {
+    
+}
+
+.messages-box,
+.notifecations-box {
+
+  .arrow-up {
+    margin-left: 1.8em;
+    margin-right: auto;
+  }
+
+  h5 {
+    padding: 0em 1em 0em 0em ;
+  }
+
+  .single-content-row {
+    img {
+      float: right;
+      margin-left: 0.5em;
+      margin-right: auto;
+    }
+
+    p {
+      b {
+        margin-left: 0.5em;
+        margin-right: auto;
+      }
+
+    }
+  }
+
+  .send-message-link {
+    float: left;
+    margin-right: auto;
+    margin-left: 1em;
+  }
+
+}
