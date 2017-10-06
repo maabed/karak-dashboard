@@ -1997,4 +1997,17 @@ a.icon-btn span {
   right: auto;
 }
 
+/* Email Page */
+.inbox-container .inbox-nav {
+  float: right;
+}
+.inbox-container .split-view .split-left-side {
+  float: right;
+}
+.inbox-container .split-view .split-left-side .Emails .Inbox-time {
+  text-align: left;
+  padding-left: 6px;
+  padding-right: inherit;
+}
+
 /*# sourceMappingURL=style-rtl.css.map */
