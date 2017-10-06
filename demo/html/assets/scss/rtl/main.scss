@@ -84,3 +84,34 @@
   right: 1em;
   left: inherit;
 }
+
+.buget-page .account-personal-info .user-account-info span i {
+    margin-left: 0.5em;
+    margin-right: auto;
+}
+
+.social-left-section .post-container .previous-post .post-table tr td.post-textbox-row .post-user-name, .social-right-section .post-container .previous-post .post-table tr td.post-textbox-row .post-user-name {
+  float: right;
+  margin-left: 0.5em;
+  margin-right: auto;
+}
+.social-left-section .post-container .previous-post .post-table tr td.post-textbox-row .post-time, .social-right-section .post-container .previous-post .post-table tr td.post-textbox-row .post-time {
+  float: right;
+}
+.social-left-section .post-container .post .post-icons i, .social-right-section .post-container .post .post-icons i {
+  margin-left: 0.5em;
+  margin-right: auto
+}
+.social-left-section .singl-right-div, .social-right-section .singl-right-div {
+  float: right;
+  margin: 0em 0 0em 2em;
+}
+.social-left-section .trinding-margin .single-trending-content img, .social-right-section .trinding-margin .single-trending-content img {
+  float: right;
+  margin-left: 0.5em;
+  margin-right: auto;
+}
+.social-left-section .post-container .previous-post .post-icons i, .social-right-section .post-container .previous-post .post-icons i {
+  margin-left: 0.5em;
+  margin-right: auto;
+}
