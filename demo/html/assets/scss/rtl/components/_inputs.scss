@@ -28,3 +28,18 @@
     text-align: right
   }
 }
+
+.checkbox {
+  label {
+    &:before {
+      left: auto;
+      right: 0;
+    }
+    &:after {
+      padding-left: inherit;
+      padding-right: 3px;
+      left: auto;
+      right: 0;
+    }
+  }
+}

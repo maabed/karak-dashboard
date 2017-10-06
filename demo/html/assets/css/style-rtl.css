@@ -1846,6 +1846,17 @@ th {
   text-align: right;
 }
 
+.checkbox label:before {
+  left: auto;
+  right: 0;
+}
+.checkbox label:after {
+  padding-left: inherit;
+  padding-right: 3px;
+  left: auto;
+  right: 0;
+}
+
 button.icon-btn span,
 .btn-group.icon-btn span,
 input.icon-btn span,
