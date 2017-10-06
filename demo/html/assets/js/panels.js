@@ -12,19 +12,19 @@ $(function($) {
   $(document).ready(function() {
 
     $('#demo').on('hide.bs.collapse', function() {
-      $('.panel-heading a').html('<span class="glyphicon glyphicon-chevron-down float-right"></span>');
+      $('.panel-heading a').html('<span class="glyphicon glyphicon-chevron-down pull-right"></span>');
     });
 
     $('#demo').on('show.bs.collapse', function() {
-      $('.panel-heading a').html('<span class="glyphicon glyphicon-chevron-up float-right"></span>');
+      $('.panel-heading a').html('<span class="glyphicon glyphicon-chevron-up pull-right"></span>');
     });
 
     $('#demo2').on('hide.bs.collapse', function() {
-      $('.panel-heading a').html('<span class="glyphicon glyphicon-chevron-down float-right"></span>');
+      $('.panel-heading a').html('<span class="glyphicon glyphicon-chevron-down pull-right"></span>');
     });
 
     $('#demo2').on('show.bs.collapse', function() {
-      $('.panel-heading a').html('<span class="glyphicon glyphicon-chevron-up float-right"></span>');
+      $('.panel-heading a').html('<span class="glyphicon glyphicon-chevron-up pull-right"></span>');
     });
 
     $('#close_panele').click(function() {

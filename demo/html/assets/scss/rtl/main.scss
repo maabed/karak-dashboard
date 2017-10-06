@@ -21,10 +21,27 @@
 // Shared
 @import 'shared';
 
+.no-padding-left {
+  padding-right: 0;
+}
+
+.no-padding-right {
+  padding-left: 0;
+}
+
+
+.wrapper .page-content-wrapper .container-fluid .col-content.body-header .page_title {
+  float: left;
+}
 
 .wrapper #colors-modal .single-menue-color-box .single-menue-color .col-sm-12 .selected-theme {
   left: 0.5em;
   right: auto;
+}
+
+.dataTables_wrapper .dataTables_filter {
+    float: left;
+    text-align: left;
 }
 
 
@@ -41,4 +58,29 @@
       padding-right: inherit;
     }
   }
+}
+
+/* Tabs */
+.single-tap .single-tap-title {
+  text-align: right; 
+  .toggle-icon1, .toggle-icons {
+    float: left;
+  }
+}
+
+.panel .panel-heading .panel-actions {
+  float: left;
+}
+
+.list-group .list-group-item .bootstrap-switch.bootstrap-switch-wrapper {
+  float: left;
+}
+
+.menu-container .navbar.nav-style .navbar-collapse .navbar-nav .dropdown-menu li a .thumbnail {
+  right: 100%;
+  left: auto;
+}
+.menu-container .carousel .item .single-slider .slider-title {
+  right: 1em;
+  left: inherit;
 }

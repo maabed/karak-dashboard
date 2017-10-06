@@ -1984,7 +1984,11 @@ a.icon-btn span {
 
 .colors-page .single-menue-color-box .preview {
   right: auto;
-  left: 1.5em;
+  left: 0;
+}
+
+.colors-page .colors-library .col-sm-12 .col-sm-3 {
+  text-align: left;
 }
 
 .wrapper .page-content-wrapper .col-content.body-header {
@@ -1992,9 +1996,26 @@ a.icon-btn span {
   border-right: 5px solid #3b97d2;
 }
 
+.no-padding-left {
+  padding-right: 0;
+}
+
+.no-padding-right {
+  padding-left: 0;
+}
+
+.wrapper .page-content-wrapper .container-fluid .col-content.body-header .page_title {
+  float: left;
+}
+
 .wrapper #colors-modal .single-menue-color-box .single-menue-color .col-sm-12 .selected-theme {
   left: 0.5em;
   right: auto;
+}
+
+.dataTables_wrapper .dataTables_filter {
+  float: left;
+  text-align: left;
 }
 
 /* Email Page */
@@ -2008,6 +2029,32 @@ a.icon-btn span {
   text-align: left;
   padding-left: 6px;
   padding-right: inherit;
+}
+
+/* Tabs */
+.single-tap .single-tap-title {
+  text-align: right;
+}
+.single-tap .single-tap-title .toggle-icon1, .single-tap .single-tap-title .toggle-icons {
+  float: left;
+}
+
+.panel .panel-heading .panel-actions {
+  float: left;
+}
+
+.list-group .list-group-item .bootstrap-switch.bootstrap-switch-wrapper {
+  float: left;
+}
+
+.menu-container .navbar.nav-style .navbar-collapse .navbar-nav .dropdown-menu li a .thumbnail {
+  right: 100%;
+  left: auto;
+}
+
+.menu-container .carousel .item .single-slider .slider-title {
+  right: 1em;
+  left: inherit;
 }
 
 /*# sourceMappingURL=style-rtl.css.map */

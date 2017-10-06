@@ -10,7 +10,17 @@
   .single-menue-color-box {
     .preview {
       right: auto;
-      left: 1.5em;
+      left: 0;
+    }
+  }
+}
+
+.colors-page {
+  .colors-library {
+    .col-sm-12 {
+      .col-sm-3 {
+        text-align: left;
+      }
     }
   }
 }
