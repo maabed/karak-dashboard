@@ -115,3 +115,15 @@
   margin-left: 0.5em;
   margin-right: auto;
 }
+
+.users-table .users-table-body tr td img, .dashed-table .users-table-body tr td img, .colored-table .users-table-body tr td img {
+  float: right;
+  margin-left: 0.6em;
+  margin-right: auto;
+}
+.users-table .users-table-body .active-user-acount img, .dashed-table .users-table-body .active-user-acount img, .colored-table .users-table-body .active-user-acount img {
+  border: none;
+  border-right: 4px solid #67b2e4;
+}
+
+
