@@ -5791,7 +5791,6 @@ input:not(.flat_email):not(.search-text-box):not(.select2-search__field):focus {
   height: 100%;
   position: absolute;
   top: 0px;
-  /*background-image: url('../images/login.jpg');*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
