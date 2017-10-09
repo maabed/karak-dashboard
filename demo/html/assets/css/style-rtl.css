@@ -1683,6 +1683,9 @@ th {
   float: right !important;
 }
 
+/****************************
+******* SIDEBAR *************
+*****************************/
 .wrapper .sidebar-wrapper {
   left: auto;
   right: 250px;
@@ -1705,6 +1708,9 @@ th {
   left: 3em;
 }
 
+/****************************
+******** LAYOUT *************
+*****************************/
 .pull-right {
   float: left !important;
 }
@@ -1720,6 +1726,9 @@ th {
   }
 }
 
+/****************************
+******** HEADER *************
+*****************************/
 .wrapper .main-dashboard-header .right-side-head {
   float: left;
   margin-right: 0;
@@ -1805,6 +1814,9 @@ th {
   margin-left: 1em;
 }
 
+/****************************
+***** COLOR OPTIONS *********
+*****************************/
 .wrapper .right-side-section-toggle {
   right: auto;
   left: 0;
@@ -1814,6 +1826,9 @@ th {
   border-bottom-right-radius: 5px;
 }
 
+/****************************
+******** MODAL **************
+*****************************/
 .modal.right .modal-dialog {
   right: auto;
   left: 0;
@@ -1824,6 +1839,9 @@ th {
   float: left;
 }
 
+/****************************
+******** INPUTS *************
+*****************************/
 .input-field label {
   left: auto;
   right: 0;
@@ -1857,6 +1875,9 @@ th {
   right: 0;
 }
 
+/****************************
+******** BUTTONS *************
+*****************************/
 button.icon-btn span,
 .btn-group.icon-btn span,
 input.icon-btn span,
@@ -1866,10 +1887,20 @@ a.icon-btn span {
   padding-right: 2em;
 }
 
+/****************************
+******** DATA TABLES ********
+*****************************/
 .dataTables_wrapper .dataTables_paginate {
   text-align: left;
 }
+.dataTables_wrapper .dataTables_filter {
+  float: left;
+  text-align: left;
+}
 
+/****************************
+*********** INDEX ***********
+*****************************/
 .wrapper .page-content-wrapper.index-page-container .col-content .title .activities-year,
 .wrapper .page-content-wrapper.index-page-container .col-content .title .add-task,
 .wrapper .page-content-wrapper.index-page-container .col-content .title .flat-style {
@@ -1909,6 +1940,9 @@ a.icon-btn span {
   float: left;
 }
 
+/****************************
+*********** Wizard ***********
+*****************************/
 .rootwizard .tab-content .pager {
   float: left;
 }
@@ -1935,6 +1969,9 @@ a.icon-btn span {
   margin-left: 0.5em;
 }
 
+/****************************
+*********** CHAT ***********
+*****************************/
 .inbox-container .inbox-nav .inbox-list ul {
   padding-left: 0;
   padding-right: 0.5em;
@@ -1978,6 +2015,9 @@ a.icon-btn span {
   margin-left: 1em;
 }
 
+/****************************
+*********** CHAT ***********
+*****************************/
 .all-base-colors .col-sm-4 .single-color-box {
   padding: 0.2em 0.5em 0.2em 0;
 }
@@ -1991,6 +2031,9 @@ a.icon-btn span {
   text-align: left;
 }
 
+/****************************
+*********** SHARED ***********
+*****************************/
 .wrapper .page-content-wrapper .col-content.body-header {
   border-left: none;
   border-right: 5px solid #3b97d2;
@@ -2013,12 +2056,38 @@ a.icon-btn span {
   right: auto;
 }
 
-.dataTables_wrapper .dataTables_filter {
-  float: left;
-  text-align: left;
+/****************************
+*********** SOCIAL ***********
+*****************************/
+.social-left-section .post-container .post .post-icons i, .social-right-section .post-container .post .post-icons i {
+  margin-left: 0.5em;
+  margin-right: auto;
+}
+.social-left-section .post-container .previous-post .post-icons i, .social-right-section .post-container .previous-post .post-icons i {
+  margin-left: 0.5em;
+  margin-right: auto;
+}
+.social-left-section .post-container .previous-post .post-table tr td.post-textbox-row .post-user-name, .social-right-section .post-container .previous-post .post-table tr td.post-textbox-row .post-user-name {
+  float: right;
+  margin-left: 0.5em;
+  margin-right: auto;
+}
+.social-left-section .post-container .previous-post .post-table tr td.post-textbox-row .post-time, .social-right-section .post-container .previous-post .post-table tr td.post-textbox-row .post-time {
+  float: right;
+}
+.social-left-section .singl-right-div, .social-right-section .singl-right-div {
+  float: right;
+  margin: 0em 0 0em 2em;
+}
+.social-left-section .trinding-margin .single-trending-content img, .social-right-section .trinding-margin .single-trending-content img {
+  float: right;
+  margin-left: 0.5em;
+  margin-right: auto;
 }
 
-/* Email Page */
+/****************************
+*********** EMAIL ***********
+*****************************/
 .inbox-container .inbox-nav {
   float: right;
 }
@@ -2031,7 +2100,9 @@ a.icon-btn span {
   padding-right: inherit;
 }
 
-/* Tabs */
+/****************************
+*********** TABS ***********
+*****************************/
 .single-tap .single-tap-title {
   text-align: right;
 }
@@ -2039,6 +2110,9 @@ a.icon-btn span {
   float: left;
 }
 
+/****************************
+*********** PANELS ***********
+*****************************/
 .panel .panel-heading .panel-actions {
   float: left;
 }
@@ -2047,6 +2121,9 @@ a.icon-btn span {
   float: left;
 }
 
+/****************************
+*********** MENUS ***********
+*****************************/
 .menu-container .navbar.nav-style .navbar-collapse .navbar-nav .dropdown-menu li a .thumbnail {
   right: 100%;
   left: auto;
@@ -2062,43 +2139,14 @@ a.icon-btn span {
   margin-right: auto;
 }
 
-.social-left-section .post-container .previous-post .post-table tr td.post-textbox-row .post-user-name, .social-right-section .post-container .previous-post .post-table tr td.post-textbox-row .post-user-name {
-  float: right;
-  margin-left: 0.5em;
-  margin-right: auto;
-}
-
-.social-left-section .post-container .previous-post .post-table tr td.post-textbox-row .post-time, .social-right-section .post-container .previous-post .post-table tr td.post-textbox-row .post-time {
-  float: right;
-}
-
-.social-left-section .post-container .post .post-icons i, .social-right-section .post-container .post .post-icons i {
-  margin-left: 0.5em;
-  margin-right: auto;
-}
-
-.social-left-section .singl-right-div, .social-right-section .singl-right-div {
-  float: right;
-  margin: 0em 0 0em 2em;
-}
-
-.social-left-section .trinding-margin .single-trending-content img, .social-right-section .trinding-margin .single-trending-content img {
-  float: right;
-  margin-left: 0.5em;
-  margin-right: auto;
-}
-
-.social-left-section .post-container .previous-post .post-icons i, .social-right-section .post-container .previous-post .post-icons i {
-  margin-left: 0.5em;
-  margin-right: auto;
-}
-
+/****************************
+*********** TABLES ***********
+*****************************/
 .users-table .users-table-body tr td img, .dashed-table .users-table-body tr td img, .colored-table .users-table-body tr td img {
   float: right;
   margin-left: 0.6em;
   margin-right: auto;
 }
-
 .users-table .users-table-body .active-user-acount img, .dashed-table .users-table-body .active-user-acount img, .colored-table .users-table-body .active-user-acount img {
   border: none;
   border-right: 4px solid #67b2e4;
