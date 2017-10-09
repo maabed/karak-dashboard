@@ -32,7 +32,8 @@ module.exports = function(grunt) {
           paths: ['assets/less']
         },
         files: {
-          'assets/css/style.css': 'assets/less/imports.less'
+          'assets/css/style.css': 'assets/less/imports.less',
+          'assets/css/style-rtl.css': 'assets/less/rtl/main.less'
         }
       }
     },
