@@ -17,9 +17,11 @@ $(function($) {
       $('.main-dashboard-search ').css('background-color', '#3B97D2');
       $('#company-name').css('background-color', '#2980B9');
       $('.sidebar-wrapper').css('background-color', '#fff');
-      $('.sidebar li a').css('border-bottom', '1px solid #E4E5E7');
-      $('.sidebar li a').css('border-right', '1px solid #E4E5E7');
-      $('.sidebar li a').css('color', '#34495E');
+      $('.sidebar li a').css({
+        'border-bottom': '1px solid #E4E5E7',
+        'border-right': '1px solid #E4E5E7',
+        'color': '#34495E'
+      });
       $('.nav-icon').css('color', '#C6C4DB');
       $('.user-box p').css('color', '#fff');
       $('.head-box i').css('color', '#fff');
@@ -40,9 +42,11 @@ $(function($) {
       $('.main-dashboard-search').css('background-color', '#f5d34b');
       $('#company-name').css('background-color', '#f1c40f');
       $('.sidebar-wrapper').css('background-color', '#fff');
-      $('.sidebar li a').css('border-bottom', '1px solid #E4E5E7');
-      $('.sidebar li a').css('border-right', '1px solid #E4E5E7');
-      $('.sidebar li a').css('color', '#34495E');
+      $('.sidebar li a').css({
+        'border-bottom': '1px solid #E4E5E7',
+        'border-right': '1px solid #E4E5E7',
+        'color': '#34495E'
+      });
       $('.nav-icon').css('color', '#C6C4DB');
       $('.user-box p').css('color', '#fff');
       $('.head-box i').css('color', '#fff');
@@ -63,9 +67,11 @@ $(function($) {
       $('.main-dashboard-search').css('background-color', '#62d995');
       $('#company-name').css('background-color', '#2ecc71');
       $('.sidebar-wrapper').css('background-color', '#fff');
-      $('.sidebar li a').css('border-bottom', '1px solid #E4E5E7');
-      $('.sidebar li a').css('border-right', '1px solid #E4E5E7');
-      $('.sidebar li a').css('color', '#34495E');
+      $('.sidebar li a').css({
+        'border-bottom': '1px solid #E4E5E7',
+        'border-right': '1px solid #E4E5E7',
+        'color': '#34495E'
+      });
       $('.nav-icon').css('color', '#C6C4DB');
       $('.user-box p').css('color', '#fff');
       $('.head-box i').css('color', '#fff');
@@ -91,9 +97,11 @@ $(function($) {
       $('.user-box p').css('color', '#686868');
       $('.head-box i').css('color', '#686868');
       $('.sidebar-wrapper').css('background-color', '#fff');
-      $('.sidebar li a').css('border-bottom', '1px solid #E4E5E7');
-      $('.sidebar li a').css('border-right', '1px solid #E4E5E7');
-      $('.sidebar li a').css('color', '#34495E');
+      $('.sidebar li a').css({
+        'border-bottom': '1px solid #E4E5E7',
+        'border-right': '1px solid #E4E5E7',
+        'color': '#34495E'
+      });
       $('.sidebar .selected a .nav-icon').css('color', '#828282');
       $('.selected-theme').hide();
       $('#whit-color-btn > .col-sm-12 > .selected-theme').show();
@@ -110,9 +118,11 @@ $(function($) {
       $('.main-dashboard-search').css('background-color', '#2b3643');
       $('#company-name').css('background-color', '#303b49');
       $('.sidebar-wrapper').css('background-color', '#364150');
-      $('.sidebar li a').css('border-bottom', '1px solid #3d4957');
-      $('.sidebar li a').css('border-right', '1px solid #3d4957');
-      $('.sidebar li a').css('color', '#b0b4c4');
+      $('.sidebar li a').css({
+        'border-bottom': '1px solid #3d4957',
+        'border-right': '1px solid #3d4957',
+        'color': '#b0b4c4'
+      });
       $('.sidebar li').addClass('dark-theme-hover');
       $('.nav-icon').css('color', '#667287');
       $('.user-box p').css('color', '#fff');
@@ -135,9 +145,11 @@ $(function($) {
       $('.main-dashboard-search').css('background-color', '#262930');
       $('#company-name').css('background-color', '#282b32');
       $('.sidebar-wrapper').css('background-color', '#2a2e35');
-      $('.sidebar li a').css('border-bottom', '1px solid #262930');
-      $('.sidebar li a').css('border-right', '1px solid #262930');
-      $('.sidebar li a').css('color', '#5b616d');
+      $('.sidebar li a').css({
+        'border-bottom': '1px solid #262930',
+        'border-right': '1px solid #262930',
+        'color': '#5b616d'
+      });
       $('.sidebar li').addClass('dark-theme-hover');
       $('.nav-icon').css('color', '#767d8a');
       $('.user-box p').css('color', '#fff');

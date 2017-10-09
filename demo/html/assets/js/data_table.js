@@ -25,7 +25,7 @@ $(function($) {
       }
     };
     $('#ajax_table').DataTable({
-      ajax: '../ajax/object.txt',
+      ajax: 'assets/ajax/object.txt',
       columns: [{
         data: 'name'
       }, {
@@ -134,20 +134,13 @@ $(function($) {
 
 
     $('.buttons-copy').attr('id', 'copy-button');
-    $('#copy-button').removeAttr('class');
-    $('#copy-button').addClass('btn btn-default outline-default');
-    $('#copy-button').append("<i id='Copy-table-icon' class='fa fa-files-o' aria-hidden='true'></i>");
-
+    $('#copy-button').removeAttr('class').addClass('btn btn-default outline-default').append("<i id='Copy-table-icon' class='fa fa-files-o' aria-hidden='true'></i>");
 
     $('.buttons-excel').attr('id', 'excel-button');
-    $('#excel-button').removeAttr('class');
-    $('#excel-button').addClass('btn btn-default outline-default');
-    $('#excel-button').append("<span id='Excel-table-icon' class='fa fa-file-excel-o' aria-hidden='true'></span>");
-
+    $('#excel-button').removeAttr('class').addClass('btn btn-default outline-default').append("<span id='Excel-table-icon' class='fa fa-file-excel-o' aria-hidden='true'></span>");
 
     $('.buttons-pdf').attr('id', 'pdf-button');
-    $('#pdf-button').removeAttr('class');
-    $('#pdf-button').addClass('btn btn-default outline-default');
-    $('#pdf-button').append("<i id='Pdf-table-icon' class='fa fa-file-pdf-o' aria-hidden='true'></i>");
+    $('#pdf-button').removeAttr('class').addClass('btn btn-default outline-default').append("<i id='Pdf-table-icon' class='fa fa-file-pdf-o' aria-hidden='true'></i>");
+
   });
 });
