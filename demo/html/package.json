@@ -21,6 +21,11 @@
     "grunt-contrib-less": "^1.4.0",
     "grunt-contrib-sass": "^1.0.0 ",
     "grunt-contrib-watch": "^1.0.0",
-    "grunt-includes": "^1.0.0"
+    "grunt-includes": "^1.0.0",
+    "gulp": "^3.9.1",
+    "gulp-file-include": "^0.13.7",
+    "gulp-less": "^3.3.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^1.4.0"
   }
 }
