@@ -20,7 +20,7 @@ gulp.task('less', function () {
 gulp.task('fileinclude', function() {
   gulp.src(['src/*.html'])
     .pipe(fileinclude({
-      prefix: '',
+      prefix: '@@',
       basepath: 'src/'
     }))
     .pipe(gulp.dest('./'));
@@ -29,13 +29,13 @@ gulp.task('fileinclude', function() {
 gulp.task('watch', function() {
   gulp.watch('assets/scss/**/*.scss', ['scss']);
   gulp.watch('assets/less/**/*.less', ['less']);
-  //gulp.watch('src/**/*.html', ['fileinclude']);
+  gulp.watch('src/**/*.html', ['fileinclude']);
 });
 
-gulp.task('lesstocss', ['less', 'watch'], function() {
+gulp.task('lesstocss', ['less', 'fileinclude', 'watch'], function() {
 
 });
 
-gulp.task('scsstocss', ['scss', 'watch'], function() {
+gulp.task('scsstocss', ['scss', 'fileinclude', 'watch'], function() {
 
 });
