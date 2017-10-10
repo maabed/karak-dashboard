@@ -1,3 +1,48 @@
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Global -> Global Variables
+2. Utilities -> Mixins
+3. Base
+4. Main CSS
+5. Utilities -> Button
+6. Utilities -> Cards
+7. Utilities -> Data Tables
+8. Utilities -> Inputs
+9. Utilities -> Lists
+10. Utilities -> Loading
+11. Utilities -> Menus
+12. Utilities -> Modal
+13. Utilities -> Notification
+14. Utilities -> Panels
+15. Utilities -> Tables
+16. Utilities -> Tabs
+17. Utilities -> UI
+18. Views -> Forms
+19. Views -> Account Manager
+20. Views -> Buttons
+21. Views -> Charts
+22. Views -> Chat
+23. Views -> Colors
+24. Views -> Email
+25. Views -> Errors
+26. Views -> Icons
+27. Views -> Index
+28. Views -> Invoice
+29. Views -> Landing
+30. Views -> Loading
+31. Views -> Lock Screen
+32. Views -> Login
+33. Views -> Map
+34. Views -> Modals
+35. Views -> Notification
+36. Views -> Search
+37. Views -> Social
+38. Views -> Tour
+39. Views -> Wizard
+40. Views -> Google Maps
+
+-------------------------------------------------------------------*/
 /*! Mixins */
 body {
   font-family: 'Open Sans', sans-serif;
@@ -6969,6 +7014,12 @@ input:not(.flat_email):not(.search-text-box):not(.select2-search__field):focus {
 }
 .rootwizard .tab-content .pager {
   float: right;
+}
+
+/*! Googlre Maps */
+/* Google Map View */
+.map-layout {
+  height: 100vh;
 }
 
 /*# sourceMappingURL=style.css.map */
