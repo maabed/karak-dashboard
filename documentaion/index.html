@@ -273,7 +273,7 @@
 <li><p>App Views </p>
 
 <ul>
-<li>Budget</li>
+<li>Account management</li>
 <li>Landing page</li>
 <li>Chat View</li>
 <li>Social</li>
@@ -294,13 +294,17 @@
 
 <ul>
 <li>Invoice</li>
-<li>400 Page</li>
+<li>404 page</li>
 <li>500 page</li>
 <li>Login &amp; registration </li>
 <li>Lock screen</li>
 <li>Tour</li>
 </ul></li>
 </ul>
+
+<aside class="success">
+All the above pages are also supported in RTL (Right-to-Left) format.
+</aside>
 
 <h3 id="configs">Configs</h3>
 
@@ -349,7 +353,7 @@
 When creating a node application you will need a file called package.json to manage local npm packages.&lsquo;</p>
 
 <blockquote>
-<p>package.json file</p>
+<p>package.json -&gt; Click Javascript tab to view file</p>
 </blockquote>
 <pre class="highlight javascript tab-javascript"><code><span class="p">{</span>
   <span class="s2">"name"</span><span class="p">:</span> <span class="s2">"my_package"</span><span class="p">,</span>
@@ -380,7 +384,7 @@ When creating a node application you will need a file called package.json to man
 
 </code></pre>
 <blockquote>
-<p>Gruntfile</p>
+<p>Gruntfile -&gt; Click Javascript tab to view file</p>
 </blockquote>
 <pre class="highlight javascript tab-javascript"><code>
 <span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">grunt</span><span class="p">)</span> <span class="p">{</span>
@@ -429,29 +433,18 @@ When creating a node application you will need a file called package.json to man
 <h3 id="installation">installation</h3>
 
 <ul>
-<li><p>In Karak dashboard we decided to use a node application by using npm to compile the SASS and LESS files into CSS files.
-The following commands should be be used in the terminal.</p>
+<li><p>In Karak dashboard we decided to use a node application by using npm to compile the SASS and LESS files into CSS files. We already did the heavy lifting of configuring Grunt, so this theme is shipped with Gruntfile.js, which means you just have to run following commands in the terminal.</p>
 
 <ul>
 <li>Install the grunt CLI globally by running this command <code class="prettyprint">npm install -g grunt-cli</code> using the terminal.</li>
-<li>To initialize the nodejs project, you can run <code class="prettyprint">npm init</code> in the same project directory, then go through the preparations steps.</li>
-<li>Create Gruntfile manually in your project directory and keep it empty.</li>
-<li>Install the npm desired packages:
-
-<ul>
-<li><code class="prettyprint">npm install grunt --save-dev</code></li>
-<li><code class="prettyprint">npm install grunt-contrib-less --save-dev</code></li>
-<li><code class="prettyprint">npm install grunt-contrib-sass --save-dev</code></li>
-<li><code class="prettyprint">npm install grunt-contrib-watch --save-dev</code></li>
-</ul></li>
-<li>You will notice these packages being added under devDependencies in package.json.</li>
-<li>In the gruntfile add the following code as shown in the example.</li>
+<li>You will notice that all the devDependencies are added in package.json.</li>
+<li>To install these devDependencies we used in Grunt, you can run <code class="prettyprint">npm install</code> in the same project directory.</li>
+<li>Also you will notice that all the Grunt configurations are added in Gruntfile.js.</li>
 <li>Now you can use the grunt commands to compile your LESS and SASS files:
 
 <ul>
-<li>Use <code class="prettyprint">Grunt less</code> to compile less files.</li>
-<li>Use <code class="prettyprint">Grunt sass</code> to compile sass files.</li>
-<li>Use <code class="prettyprint">Grunt watch</code> to keep track of the less or sass files.</li>
+<li><code class="prettyprint">grunt scsstocss</code> to compile sass files.</li>
+<li><code class="prettyprint">grunt lesstocss</code> to compile less files.</li>
 </ul></li>
 </ul></li>
 </ul>
@@ -459,27 +452,11 @@ The following commands should be be used in the terminal.</p>
 <aside class="success">
 Grunt watch is used to keep track of your less or sass files to compile them immediately when saving changes to the file. 
 </aside>
+  
 
 <ul>
-<li><p>package.json file (example on the right) contains information such as :</p>
-
-<ul>
-<li>name: the current directory name</li>
-<li>version: always 1.0.0</li>
-<li>description: info from the readme, else an empty string &ldquo;&rdquo;</li>
-<li>main: always index.js</li>
-<li>scripts: by default creates a empty test script</li>
-<li>keywords: empty</li>
-<li>author: empty</li>
-<li>license: ISC</li>
-<li>bugs: info from the current directory, if present</li>
-<li>homepage: info from the current directory, if present</li>
-</ul></li>
+<li>You will see grunt watch is already active by running above commands, so every time you change SASS or LESS files, Grunt watch detects it and autocompiles it to CSS</li>
 </ul>
-
-<aside class="success">
-Please note that the node application is not the only way that could be used, for example you can use <a href="http://koala-app.com/">Koala</a> to compile SASS.
-</aside>
 
 <h2 id="less">LESS</h2>
 
@@ -2173,25 +2150,25 @@ You can read DataTables <a href="https://datatables.net/examples/index">document
 </code></pre>
 <h1 id="app-views">App Views</h1>
 
-<h2 id="account-management">Budget</h2>
+<h2 id="account-management">Account Management</h2>
 
-<p>You can manage your personal banking accounts using the Budget view.
+<p>You can manage your personal banking accounts using the account management view.
 <br>
 <br>
 <img src="images/account_managment.png"></p>
 
 <ul>
-<li>Budget View includes :
+<li>Account management View includes :
 
 <ul>
-<li>Budget library.</li>
+<li>Account management library.</li>
 <li>Date Picker. (Check the forms section for further information)</li>
 <li>Charts. (Check the charts section for further information)</li>
 <li>DataTables. (Check the tables section for further information)</li>
 </ul></li>
 </ul>
 <pre class="highlight html tab-html"><code>
-<span class="c">&lt;!-- Budget library --&gt;</span>
+<span class="c">&lt;!-- Account management library --&gt;</span>
 
 <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"assets/js/account-manager.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
 
@@ -2439,6 +2416,22 @@ You can read DataTables <a href="https://datatables.net/examples/index">document
 </ul>
 
 <p><img src="images/invoice.png"></p>
+
+<h1 id="rtl-right-to-left">RTL (Right to Left)</h1>
+<pre class="highlight html tab-html"><code>
+<span class="c">&lt;!-- RTL CSS --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">type=</span><span class="s">"text/css"</span> <span class="na">href=</span><span class="s">"assets/css/style-rtl.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="nt">/&gt;</span>
+
+</code></pre>
+<p>Karak Dashboard suuports the RTL (Right to Left) text direction feature.</p>
+
+<ul>
+<li>Use RTL for languages written from right to left (like Hebrew or Arabic)</li>
+<li>All pages mentioned above supports this text direction feature.</li>
+<li>All you have to do to use this feature is to include the Karak dashboard RTL style file and copy the source code to your HTML page.</li>
+</ul>
+
+<p><img src="images/rtl.png"></p>
 
       </div>
       <div class="dark-box">
