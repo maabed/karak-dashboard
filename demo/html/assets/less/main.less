@@ -4,53 +4,71 @@
   padding-left: 0px;
 
   &.toggled {
-    padding-left: 250px;
+    padding-left: @menu-width-open;
 
     .sidebar-wrapper {
-      width: 250px;
+      width: @menu-width-open;
     }
 
   }
 
   .sidebar-wrapper {
     position: fixed;
-    left: 250px;
+    background-color: @menu-background;
+    left: @menu-width-close;
     width: 0px;
     height: 100%;
-    margin-left: -250px;
+    margin-left: -@menu-width-close;
     overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 9999;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 
     .sidebar-brand {
       color: @white-color;
       font-weight: bold;
       font-size: 17px;
       line-height: 50px;
-      position: fixed;
+      overflow: hidden;
       z-index: @front-off;
-      width: 250px;
-      padding-left: 1.2em;
-      margin-top: -2.9em;
       border-bottom: @flat-border;
-      background-color: @info-darker-color;
       height: 3em;
-
-      &:hover {
-        background-color: @info-darker-color;
+      a {
+        text-decoration: none;
+      }
+      .nav-icon {
+        padding: 9px 20px;
+        width: 60px;
+        text-align: center;
+      }
+      img {
+        max-width: 80px;
+        display: inline-block;
       }
 
+      .toggle-menu {
+        display: inline-block;
+        position: relative;
+        top: 1px;
+        color: #eaeef3;
+        right: 10px;
+      }
     }
 
     .sidebar {
       position: absolute;
-      top: 0px;
-      width: 250px;
+      top: 50px;
+      width: @menu-width-open;
       margin: 0px;
       padding: 0px;
       list-style: none;
 
       .selected {
         a .nav-icon {
-          color: @info-mid-color;
+          color: #eaeef3;
         }
 
         &>.sidebar-submenue>li {
@@ -65,7 +83,6 @@
 
       li {
         .css-effect(all 0.5s ease);
-        text-indent: 20px;
         line-height: 40px;
         position: relative;
 
@@ -102,20 +119,24 @@
           text-decoration: none;
           font-weight: lighter;
           font-size: 14px;
-          border-bottom: @nav-link-border;
-          color: @primary-color;
+          border-bottom: 1px solid @menu-text-color;
+          color: @menu-text-color;
+          padding: 4px 0;
 
           .nav-icon {
             float: left;
-            margin-top: @large-value;
-            color: @nav-icon-color;
+            padding: 9px 20px;
+            font-size: 22px;
+            color: #eaeef3;
+            width: 60px;
+            text-align: center;
           }
 
           .left-arrow {
             color: @submenue-color;
             float: right;
             margin-right: @large-value;
-            margin-top: @large-value;
+            margin-top: 12px;
 
             &:before {
               float: right;
@@ -145,7 +166,7 @@
             position: absolute;
             text-indent: 0px;
             right: 3em;
-            top: 1.25em;
+            top: 17px;
             width: auto;
             text-align: center;
           }
@@ -163,16 +184,16 @@
       }
 
       .selected a {
-        background-color: @background-color;
+        background-color: @menu-background-color;
         border-right: 0px;
-        border-left: @left-selected-border;
         border-bottom: 0px;
+        color: #eaeef3;
       }
 
     }
 
     .sidebar li:hover {
-      background-color: @submenue-background-color;
+      background-color: @menu-background-color;
     }
 
     .selected {
@@ -187,6 +208,13 @@
 
       }
 
+    }
+
+    &:hover {
+      left: @menu-width-open;
+      margin-left: -@menu-width-open;
+      width: @menu-width-open;
+      
     }
 
   }
@@ -542,9 +570,7 @@
   /*! Media Querys */
   @media (min-width:768px) {
     .sidebar-wrapper {
-      background-color: @white-color;
-      margin-top: 3.5em;
-      width: 250px;
+      width: @menu-width-close;
     }
 
     .page-content-wrapper {
@@ -557,7 +583,7 @@
 
 @media (min-width:768px) {
   .wrapper {
-    padding-left: 250px;
+    padding-left: @menu-width-close;
   }
 
 }
@@ -566,6 +592,9 @@
   .wrapper .main-dashboard-header .right-side-head {
     display: inline-block;
     margin-right: 0;
+  }
+  .wrapper .sidebar-wrapper .sidebar-brand img {
+    margin-left: 20px;
   }
 }
 
