@@ -73,8 +73,8 @@
 
         &>.sidebar-submenue>li {
           .inner-selected {
-            color: #545353;
             text-decoration: underline;
+            background: #67b2e4;
           }
 
         }
@@ -184,10 +184,12 @@
       }
 
       .selected a {
-        background-color: @menu-background-color;
         border-right: 0px;
         border-bottom: 0px;
         color: #eaeef3;
+      }
+      .selected > a {
+        background: @menu-background-color;
       }
 
     }
@@ -200,7 +202,6 @@
       .sidebar-submenue {
         .submenu-li {
           a {
-            background-color: @submenue-background-color;
             border-left: 0px;
           }
 
