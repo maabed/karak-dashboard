@@ -102,10 +102,10 @@ p {
   overflow-y: auto;
   overflow-x: hidden;
   z-index: 9999;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 .wrapper .sidebar-wrapper .sidebar-brand {
   color: #ffffff;
@@ -241,7 +241,7 @@ p {
 .wrapper .sidebar-wrapper .sidebar .selected > a {
   background-color: #39a1d9;
 }
-.wrapper .sidebar-wrapper .sidebar li:hover {
+.wrapper .sidebar-wrapper .sidebar li:hover > a {
   background-color: #39a1d9;
 }
 .wrapper .sidebar-wrapper .sidebar li:hover a {
@@ -5565,6 +5565,33 @@ input:not(.flat_email):not(.search-text-box):not(.select2-search__field):focus {
 .wrapper .page-content-wrapper.index-page-container .all-income.invers h3 {
   color: #ffffff;
 }
+.wrapper .page-content-wrapper.index-page-container .all-income .all-income-left {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30%;
+  text-align: center;
+  position: relative;
+}
+.wrapper .page-content-wrapper.index-page-container .all-income .all-income-left i {
+  font-size: 50px;
+  color: #67b2e4;
+}
+.wrapper .page-content-wrapper.index-page-container .all-income .all-income-left i:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 5px;
+  height: 100%;
+  left: -15px;
+  top: 0;
+  background-color: #67b2e4;
+}
+.wrapper .page-content-wrapper.index-page-container .all-income .all-income-right {
+  display: inline-block;
+  vertical-align: middle;
+  width: 68%;
+  text-align: left;
+}
 .wrapper .page-content-wrapper.index-page-container .statistics-taps li {
   margin: 0px auto;
   text-align: center;
@@ -5584,6 +5611,10 @@ input:not(.flat_email):not(.search-text-box):not(.select2-search__field):focus {
 }
 .wrapper .page-content-wrapper.index-page-container .statistics-item .col-sm-2 h4 {
   line-height: 1.5em;
+}
+.wrapper .page-content-wrapper.index-page-container .home-charts {
+  background-color: #ffffff;
+  padding: 1em;
 }
 .wrapper .page-content-wrapper.index-page-container .col-content .title .flat-style {
   float: right;

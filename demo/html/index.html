@@ -27,7 +27,8 @@
     <link type="text/css" rel="stylesheet" href="assets/vendors/animatecss/animate.min.css" />
     <!-- Select2 CSS -->
     <link type="text/css" href="assets/vendors/select2/css/select2.css" rel="stylesheet" />
-    
+    <!-- MorrisJS -->
+    <link type="text/css" href="assets/vendors/morrisjs/morris.css" rel="stylesheet" />
     <!-- Custom CSS -->
     <link type="text/css" href="assets/css/style.css" rel="stylesheet" />
 
@@ -394,9 +395,53 @@
                     <div class="col-lg-12">
                         <div class="col-content body-header">
                             <h4 class="title"><b>Welcome to Karak dashboard</b></h4>
-                            <p>
-                                Special Dashboard for small, medium and large webapp with very clean and aesthetic style and feel.
-                            </p>
+                            <p>Special Dashboard for small, medium and large webapp with very clean and aesthetic style and feel.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3 animated fadeInUp">
+                        <div class="col-content all-income">
+                            <div class="all-income-left">
+                                <i class="fa fa-line-chart" aria-hidden="true">&nbsp;</i>
+                            </div>
+                            <div class="all-income-right">
+                                <h2><b>Income</b></h2>
+                                <h2><b>$1 250,33</b></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 animated fadeInUp">
+                        <div class="col-content all-income">
+                            <div class="all-income-left">
+                                <i class="fa fa-exchange" aria-hidden="true">&nbsp;</i>
+                            </div>
+                            <div class="all-income-right">
+                                <h2><b>Revenue</b></h2>
+                                <h2><b>$3 620,12</b></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 animated fadeInUp">
+                        <div class="col-content all-income">
+                            <div class="all-income-left">
+                                <i class="fa fa-bar-chart" aria-hidden="true">&nbsp;</i>
+                            </div>
+                            <div class="all-income-right">
+                                <h2><b>Assets</b></h2>
+                                <h2><b>$3 150,33</b></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 animated fadeInUp">
+                        <div class="col-content all-income">
+                            <div class="all-income-left">
+                                <i class="fa fa-pie-chart" aria-hidden="true">&nbsp;</i>
+                            </div>
+                            <div class="all-income-right">
+                                <h2><b>Investment</b></h2>
+                                <h2><b>$12 250,33</b></h2>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -407,6 +452,16 @@
                         </div>
                     </div>
                     <div class="col-md-4 animated fadeInUp">
+                        <div class="row">
+                            <div class="col-sm-12 animated fadeInUp">
+                                <div class="col-content">
+                                    <h5 class="title">Today Income <span class="flat-style"><i class="fa fa-money" aria-hidden="true"></i>&nbsp;860K</span></h5>
+                                    <br>
+                                    <div id="containerexchange"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
                         <div class="row">
                             <div class="col-sm-6 animated fadeInUp">
                                 <div class="col-content all-income">
@@ -423,17 +478,29 @@
                                 </div>
                             </div>
                         </div>
-                        <br>
-                        <div class="row">
-                            <div class="col-sm-12 animated fadeInUp">
-                                <div class="col-content">
-                                    <h5 class="title">Today Income <span class="flat-style"><i class="fa fa-money" aria-hidden="true"></i>&nbsp;860K</span></h5>
-                                    <br>
-                                    <div id="containerexchange"></div>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 animated fadeInUp">
+                        <div class="home-charts">
+                            <h4 class="no-margin pb-15">Daily Sales</h4>
+                            <div id="donut"></div>
                         </div>
                     </div>
+                    <div class="col-md-4 animated fadeInUp">
+                        <div class="home-charts">
+                            <h4 class="no-margin pb-15">Statistics</h4>
+                            <div id="bar"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 animated fadeInUp">
+                        <div class="home-charts">
+                            <h4 class="no-margin pb-15">Total Revenue</h4>
+                            <div id="graph"></div>
+                        </div>
+                    </div>
+                    
                 </div>
                 <div class="row statistics">
                     <div class="col-sm-12">
@@ -919,6 +986,9 @@
     <script src="assets/vendors/calendar/lib/moment.min.js"></script>
     <script src="assets/vendors/calendar/fullcalendar.min.js"></script>
     <script src="assets/js/calendar.js"></script>
+    <!-- MorrisJS -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+    <script type="text/javascript" src="assets/vendors/morrisjs/morris.min.js"></script>
     <!-- HighCharts -->
     <script type="text/javascript" src="https://code.highcharts.com/highcharts.js"></script>
     <!-- Map -->

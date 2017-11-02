@@ -21,8 +21,8 @@ $(document).ready(function() {
  $('.has-submenu > a').click(function(e) {
   e.preventDefault();
    var $this = $(this).parent().find('.sidebar-submenue');
-   $('.sidebar-submenue').not($this).hide(300);
-   $this.toggle(300);
+   $('.sidebar-submenue').not($this).slideUp(200);
+   $this.slideToggle(200);
  });
 
  /* search  */

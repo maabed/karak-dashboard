@@ -12,6 +12,58 @@ $(function($) {
   $(document).ready(function() {
     $(".fc-month-button,.fc-agendaWeek-button,.fc-agendaDay-button,.fc-listMonth-button").remove();
 
+    Morris.Donut({
+      element: 'donut',
+      data: [
+        {value: 70, label: 'In Store Sales'},
+        {value: 15, label: 'Sales Online'},
+        {value: 10, label: 'Sales in Mall'},
+        {value: 5, label: 'Return Sales'}
+      ],
+      backgroundColor: '#ccc',
+      labelColor: '#060',
+      colors: [
+        '#D96956',
+        '#47D99B',
+        '#BE5FDF',
+        '#D9BD47'
+      ],
+      formatter: function (x) { return x + "%"}
+    });
+
+    Morris.Bar({
+      element: 'bar',
+      data: [
+        {x: '2011 Q1', y: 3, z: 2, a: 3},
+        {x: '2011 Q2', y: 2, z: null, a: 1},
+        {x: '2011 Q3', y: 0, z: 2, a: 4},
+        {x: '2011 Q4', y: 2, z: 4, a: 3}
+      ],
+      xkey: 'x',
+      ykeys: ['y', 'z', 'a'],
+      labels: ['Y', 'Z', 'A']
+    }).on('click', function(i, row){
+      console.log(i, row);
+    });
+
+    Morris.Area({
+      element: 'graph',
+      behaveLikeLine: true,
+      data: [
+        {x: '2011 Q1', y: 3, z: 3},
+        {x: '2011 Q2', y: 2, z: 1},
+        {x: '2011 Q3', y: 2, z: 4},
+        {x: '2011 Q4', y: 3, z: 3}
+      ],
+      xkey: 'x',
+      ykeys: ['y', 'z'],
+      labels: ['Y', 'Z']
+    });
+
+
+
+
+
     Highcharts.setOptions({
       global: {
         useUTC: false

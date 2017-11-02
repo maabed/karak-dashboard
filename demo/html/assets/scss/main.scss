@@ -22,10 +22,10 @@
     overflow-y: auto;
     overflow-x: hidden;
     z-index: 9999;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
 
     .sidebar-brand {
       color: $white-color;
@@ -187,7 +187,9 @@
     }
 
     .sidebar li:hover {
-      background-color: $menu-background-color;
+      &>a {
+        background-color: $menu-background-color;
+      }
       a {
         color: #eaeef3;
       }
