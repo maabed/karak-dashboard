@@ -34,6 +34,13 @@ $(document).ready(function() {
    }
  });
 
+ $('.search-header').on('click', function(){
+    $('.search-text-box').toggleClass('active').focus();
+ });
+ $('.search-text-box').blur(function(){
+  $(this).removeClass('active');
+ });
+
  $('.sidebar').find('li.selected').find('.sidebar-submenue').css('display', 'block');
 
 

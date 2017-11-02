@@ -28,7 +28,8 @@ $(function($) {
         '#BE5FDF',
         '#D9BD47'
       ],
-      formatter: function (x) { return x + "%"}
+      formatter: function (x) { return x + "%"},
+      resize: true
     });
 
     Morris.Bar({
@@ -41,7 +42,8 @@ $(function($) {
       ],
       xkey: 'x',
       ykeys: ['y', 'z', 'a'],
-      labels: ['Y', 'Z', 'A']
+      labels: ['Y', 'Z', 'A'],
+      resize: true
     }).on('click', function(i, row){
       console.log(i, row);
     });
@@ -57,7 +59,8 @@ $(function($) {
       ],
       xkey: 'x',
       ykeys: ['y', 'z'],
-      labels: ['Y', 'Z']
+      labels: ['Y', 'Z'],
+      resize: true
     });
 
 

@@ -10,6 +10,19 @@
       width: $menu-width-open;
     }
 
+    .main-dashboard-header {
+      width: calc(100% - 250px);
+      left: 250px;
+      .left-side-items {
+        &.logo {
+          display: none;
+        }
+        &:nth-child(2):before {
+          display: none;
+        }
+      }
+    }
+
   }
 
   .sidebar-wrapper {
@@ -230,14 +243,18 @@
 
   /*! Head */
   .main-dashboard-header {
-    width: 100%;
+    width: calc(100% - 60px);
     padding-top: $small-value;
-    height: 3.55em;
+    height: 50px;
     color: $white-color;
     position: fixed;
     z-index: 999;
     background-color: $header-background;
-
+    left: 60px;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
     .menu-toggle {
       display: none;
       color: #fff;
@@ -254,8 +271,7 @@
 
     .form-group {
       width: 20%;
-      float: left;
-      margin-left: $small-value;
+      margin-bottom: 0;
 
       @media(max-width:700px) {
         width: 80%;
@@ -269,32 +285,34 @@
         .main-dashboard-search {
           border: 0px;
           box-shadow: none;
-          color: $white-color;
           font-size: 1em;
-          padding-top: 0.2em;
-          border-bottom-color: $white-color;
+          border-bottom: 2px solid #39a1d9;
           @include placeholder($white-color);
-          background-color: $header-background;
+          background-color: transparent;
+          width: 260px;
+          visibility: hidden;
+          border-radius: 0;
+          &.active {
+            visibility: visible;
+          }
         }
 
         .form-control {
           float: left;
           font-weight: normal;
-          padding-left: 30px !important;
-          border-bottom: 0px !important;
+          padding-left: 40px !important;
         }
 
         .glyphicon {
-          color: $white-color;
           position: absolute;
           z-index: 2;
           left: 10px;
-          font-size: 14px;
+          font-size: 16px;
           width: 20px;
           margin-left: -2.5px;
           text-align: center;
           padding: 10px 0px;
-          top: 1px;
+          top: -1px;
           @include css-effect(all 0.3s ease-in-out);
         }
 
@@ -311,72 +329,76 @@
       }
 
     }
-
-    .right-side-head {
-      float: right;
-      margin-right: 19.4em;
-
-      .right-side-items {
-        float: left;
-        position: relative;
-        margin-left: 1em;
-        color: $white-color;
-        font-size: 14px;
-        font-weight: lighter;
-        cursor: pointer;
-
-        i {
-          color: $white-color;
-
-          &.fa-angle-down {
-            margin-left: 1.5em;
-          }
-
-        }
-
-        @include css-effect(all 0.5s ease);
-
-        .messages {
-          &:hover {
-            background-color: transparent;
-            border-color: transparent;
-          }
-        }
-
-        .notifications {
-          border: 0px;
-          background: transparent;
-        }
-
-        .badge-notify {
-          background: $background-color;
-          position: absolute;
-          top: 0em;
-          right: 0.6em;
-          border-radius: 2px;
-          font-weight: normal;
-          padding: 0.3em 0.5em;
-          font-size: 10px;
-          color: $badge-notify-color;
-        }
-
-        img {
-          width: 35px;
-          height: 35px;
-          border: $white-color-border;
-          border-radius: $circle;
-          float: left;
-          margin-right: $small-value;
-        }
-
-        p {
-          margin-top: $small-value;
-          float: right;
-          color: $white-color;
-        }
-
+    .left-side-items {
+      position: relative;
+      margin-right: 1em;
+      font-size: 14px;
+      font-weight: lighter;
+      cursor: pointer;
+      display: inline-block;
+      vertical-align: middle;
+      
+      &:before {
+        content: "";
+        width: 1px;
+        height: 25px;
+        background: #aaa;
+        position: absolute;
+        left: -8px;
+        top: 5px;
+      }
+      &:first-child:before {
+        display: none;
       }
 
+      @include css-effect(all 0.5s ease);
+
+      .messages {
+        &:hover {
+          background-color: transparent;
+          border-color: transparent;
+        }
+      }
+
+      .notifications {
+        border: 0px;
+        background: transparent;
+      }
+
+      .badge-notify {
+        background: $badge-notify-color;
+        position: absolute;
+        top: 0em;
+        right: 0.6em;
+        border-radius: 2px;
+        font-weight: normal;
+        padding: 0.3em 0.5em;
+        font-size: 10px;
+        color: $white-color;
+      }
+
+      &.logo {
+        img {
+          max-width: 80px;
+        }
+      }
+      
+
+    }
+
+    .right-side-head {
+      img {
+        width: 35px;
+        height: 35px;
+        border: $white-color-border;
+        border-radius: $circle;
+        float: left;
+        margin-left: $small-value;
+      }
+      p {
+        margin-top: 10px;
+        float: left;
+      }
     }
 
   }
@@ -387,10 +409,10 @@
     position: absolute;
 
     .container-fluid {
-      padding: 0px 30px 20px 30px;
+      padding: 0px 25px 20px 25px;
 
       &.header-container {
-        padding: 0em 0.8em;
+        padding: 0px 25px;
       }
 
       .col-content {
@@ -424,7 +446,7 @@
         }
 
         .title {
-          color: #34495e;
+          color: $paragraph-color;
           font-weight: bold;
           margin: 0px;
           margin-top: 0.7em;
