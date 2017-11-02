@@ -5625,10 +5625,6 @@ input:not(.flat_email):not(.search-text-box):not(.select2-search__field):focus {
 .wrapper .page-content-wrapper.index-page-container .statistics-item .col-sm-2 h4 {
   line-height: 1.5em;
 }
-.wrapper .page-content-wrapper.index-page-container .home-charts {
-  background-color: #ffffff;
-  padding: 1em;
-}
 .wrapper .page-content-wrapper.index-page-container .col-content .title .flat-style {
   float: right;
   color: #848484;

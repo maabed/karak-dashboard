@@ -129,26 +129,29 @@
 
                 <div class="row">
                     <div class="col-md-4 animated fadeInUp">
-                        <div class="home-charts">
-                            <h4 class="no-margin pb-15">Daily Sales</h4>
+                        <div class="col-content content-overflow">
+                            <h5 class="title">Daily Sales</h5>
+                            <br>
                             <div id="donut"></div>
                         </div>
                     </div>
                     <div class="col-md-4 animated fadeInUp">
-                        <div class="home-charts">
-                            <h4 class="no-margin pb-15">Statistics</h4>
+                        <div class="col-content content-overflow">
+                            <h5 class="title">Statistics</h5>
+                            <br>
                             <div id="bar"></div>
                         </div>
                     </div>
                     <div class="col-md-4 animated fadeInUp">
-                        <div class="home-charts">
-                            <h4 class="no-margin pb-15">Total Revenue</h4>
+                        <div class="col-content content-overflow">
+                            <h5 class="title">Total Revenue</h5>
+                            <br>
                             <div id="graph"></div>
                         </div>
                     </div>
-                    
                 </div>
-                <!-- 
+                
+                <!--
                 <div class="row statistics">
                     <div class="col-sm-12">
                         
@@ -267,15 +270,16 @@
                         </div>
                     </div>
                 </div> 
-                
+                -->
+
                 <div class="row">
-                    <div class="col-md-6 animated fadeInUp">
+                    <!--<div class="col-md-6 animated fadeInUp">
                         <div class="col-content content-overflow">
                             <h5 class="title">Calendar</h5>
                             <div id='calendar' class="calendar-layout"></div>
                         </div>
-                    </div>
-                    <div class="col-md-6 animated fadeInUp">
+                    </div>-->
+                    <div class="col-md-12 animated fadeInUp">
                         <div class="col-content content-overflow">
                             <h5 class="title">Worldwide Annual Sales</h5>
                             <br>
@@ -283,6 +287,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!--
                 <div class="row">
                     <div class="col-md-6 activities animated fadeInUp">
                         <div class="col-content static-height">
@@ -416,9 +422,10 @@
                             </div>
                         </div>
                     </div>
-                    -->
+                    
                     include "partials/footer.html"
                 </div>
+                -->
                 
             </div>
         </div>
@@ -495,12 +502,14 @@
     <!-- HighCharts -->
     <script type="text/javascript" src="https://code.highcharts.com/highcharts.js"></script>
     <!-- Map -->
+    <script type="text/javascript" src="assets/vendors/mapael/jquery.mapael.js"></script>
     <script type="text/javascript" src="assets/js/map.js"></script>
     <script type="text/javascript" src="assets/vendors/highmaps/code/modules/map.js"></script>
     <script type="text/javascript" src="assets/vendors/highmaps/code/modules/data.js"></script>
     <script type="text/javascript" src="assets/vendors/highmaps/code/modules/exporting.js"></script>
     <script type="text/javascript" src="assets/vendors/highmaps/code/custom/world.js"></script>
     <script type="text/javascript" src="assets/js/right-side-colors-picker.js"></script>
+    
     <!--Dynamic colors-->
 
     include "partials/foot-color-js.html"
