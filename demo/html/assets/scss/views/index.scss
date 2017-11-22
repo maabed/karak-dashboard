@@ -7,7 +7,7 @@
 
             h2 {
                 font-weight: lighter;
-
+                font-size: 28px;
                 @media(max-width:1400px) {
                     font-size: 1.5em;
                 }
@@ -16,8 +16,7 @@
 
             h3 {
                 font-weight: lighter;
-                color: $info-mid-color;
-
+                font-size: 26px;
                 @media(max-width:1400px) {
                     font-size: 1.3em;
                 }
@@ -61,6 +60,32 @@
                 text-align: left;
             }
 
+        }
+
+        .team-block {
+            .team-block-left {
+                display: inline-block;
+                vertical-align: middle;
+                width: 30%;
+                text-align: center;
+                position: relative;
+                margin-right: 5px;
+                img {
+                    border-radius: 50%;
+                }
+            }
+            .team-block-right {
+                display: inline-block;
+                vertical-align: middle;
+                width: 66%;
+                text-align: left;
+                h3, p {
+                    margin: 10px 0;
+                }
+                h3 {
+                    font-size: 20px;
+                }
+            }
         }
 
         /* Tabs */
